@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "./dist/index.js",
   "style": "./dist/common.css",
@@ -10,6 +10,7 @@
     "name": "redneckz",
     "email": "vasyaselsky@yandex.ru"
   },
+  "files": ["lib", "dist"],
   "repository": {
     "url": "https://github.com/redneckz/wildless-cms-uni-blocks.git"
   },
