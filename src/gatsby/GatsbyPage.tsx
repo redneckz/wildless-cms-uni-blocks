@@ -5,7 +5,7 @@ import type { BlockContent } from '../Blocks';
 import { ContentPage } from '../ContentPage';
 import type { ContentPageDef } from '../types';
 
-import '@demo/ui-kit/dist/common.css';
+import '@redneckz/wildless-cms-uni-blocks/dist/common.css';
 
 const { jsx, jsxs } = runtime as any;
 setup(jsx, jsxs);
