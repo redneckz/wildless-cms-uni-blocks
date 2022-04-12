@@ -1,0 +1,2 @@
+export { GatsbyPage } from './GatsbyPage';
+

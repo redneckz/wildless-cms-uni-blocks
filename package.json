@@ -1,0 +1,35 @@
+{
+  "name": "@redneckz/wildless-cms-uni-blocks",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "style": "./dist/common.css",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "author": {
+    "name": "redneckz",
+    "email": "vasyaselsky@yandex.ru"
+  },
+  "repository": {
+    "url": "https://github.com/redneckz/wildless-cms-uni-blocks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/redneckz/wildless-cms-uni-blocks/issues"
+  },
+  "scripts": {
+    "build": "rimraf ./lib && tsc --build --verbose && npm run build:commonjs && npm run build:style",
+    "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
+    "build:style": "tailwindcss -i ./src/common.css -o ./dist/common.css --minify"
+  },
+  "dependencies": {
+    "@redneckz/uni-jsx": "^0.1.2"
+  },
+  "peerDependencies": {
+    "gatsby": "^4.11.2"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.3",
+    "tailwindcss": "^3.0.23"
+  }
+}
