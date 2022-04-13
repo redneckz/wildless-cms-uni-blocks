@@ -15,4 +15,4 @@ type PageData<D extends string> = Record<D, ContentPageDef<BlockContent>>;
 export const GatsbyPage =
   <D extends string>(discriminator: D) =>
   ({ data }: PageProps<PageData<D>>) =>
-    <ContentPage {...data[discriminator]} />;
+    <ContentPage data={data[discriminator]} />;

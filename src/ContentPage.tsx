@@ -1,15 +1,24 @@
-import { JSX } from '@redneckz/uni-jsx';
-import { Blocks } from './Blocks';
-import type { BlockContent } from './Blocks';
-import type { BlockDef, ContentPageDef } from './types';
+import { JSX } from "@redneckz/uni-jsx";
+import { Blocks } from "./Blocks";
+import type { BlockContent } from "./Blocks";
+import type { BlockDef, ContentPageDef } from "./types";
 
-export const ContentPage = JSX<ContentPageDef<BlockContent>>(({ style: pageStyle, blocks }) => (
-  <section className={`grid grid-cols-12 ${style2className(pageStyle)}`}>
-    {blocks && blocks.map(renderBlock)}
-  </section>
-));
+export interface ContentPageProps {
+  data: ContentPageDef<BlockContent>;
+}
 
-function renderBlock({ type, style, content, blocks }: BlockDef<BlockContent>, i: number) {
+export const ContentPage = JSX<ContentPageProps>(
+  ({ data: { style: pageStyle, blocks } }) => (
+    <section className={`grid grid-cols-12 ${style2className(pageStyle)}`}>
+      {blocks && blocks.map(renderBlock)}
+    </section>
+  )
+);
+
+function renderBlock(
+  { type, style, content, blocks }: BlockDef<BlockContent>,
+  i: number
+) {
   if (!(type in Blocks)) {
     console.warn(`No block with "${type}" is registered`);
     return null;
@@ -18,7 +27,9 @@ function renderBlock({ type, style, content, blocks }: BlockDef<BlockContent>, i
   return (
     <BlockComponent
       key={`${type}-${i}`}
-      className={`border-dashed border-2 border-sky-500 p-4 ${style2className(style)}`}
+      className={`border-dashed border-2 border-sky-500 p-4 ${style2className(
+        style
+      )}`}
       {...content}
     >
       {blocks && blocks.map(renderBlock)}
@@ -27,5 +38,5 @@ function renderBlock({ type, style, content, blocks }: BlockDef<BlockContent>, i
 }
 
 function style2className(style: string[] | undefined | null): string {
-  return style ? style.join(' ') : '';
+  return style ? style.join(" ") : "";
 }
