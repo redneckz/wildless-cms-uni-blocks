@@ -7,5 +7,5 @@ export type BlockContent = PlaceholderContent | TextContent;
 
 export const Blocks = {
   Text,
-  Placeholder
+  Placeholder,
 };

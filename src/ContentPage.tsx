@@ -1,7 +1,7 @@
-import { JSX } from "@redneckz/uni-jsx";
-import { Blocks } from "./Blocks";
-import type { BlockContent } from "./Blocks";
-import type { BlockDef, ContentPageDef } from "./types";
+import { JSX } from '@redneckz/uni-jsx';
+import { Blocks } from './Blocks';
+import type { BlockContent } from './Blocks';
+import type { BlockDef, ContentPageDef } from './types';
 
 export interface ContentPageProps {
   data: ContentPageDef<BlockContent>;
@@ -38,5 +38,5 @@ function renderBlock(
 }
 
 function style2className(style: string[] | undefined | null): string {
-  return style ? style.join(" ") : "";
+  return style ? style.join(' ') : '';
 }

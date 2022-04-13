@@ -1,7 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 
-export interface PlaceholderContent {
-}
+export interface PlaceholderContent {}
 
 export interface PlaceholderProps extends PlaceholderContent {
   className?: string;

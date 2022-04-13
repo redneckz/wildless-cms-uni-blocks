@@ -32,5 +32,5 @@ export const GraphQL = {
     date: Date
     style: [String!]
     blocks: [Block!]
-  `
+  `,
 };
