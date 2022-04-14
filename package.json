@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "license": "MIT",
   "main": "./dist/index.js",
   "style": "./dist/common.css",
@@ -26,7 +26,7 @@
     "build:style": "postcss './src/**/*.css' --env production --dir ./dist"
   },
   "dependencies": {
-    "@redneckz/uni-jsx": "^0.1.2"
+    "@redneckz/uni-jsx": "^0.1.3"
   },
   "peerDependencies": {
     "gatsby": "^4.11.3"
