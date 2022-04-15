@@ -17,6 +17,7 @@ export const GraphQL = {
     type BlockContent {
       primary: String
       secondary: String
+      __html: String
     }
 
     type Block {
