@@ -1,4 +1,4 @@
-export type { BlockDef, ContentPageDef } from './types';
+export type { BlockDef, ContentPageDef, Img, ImgSource, Picture } from './types';
 
 export type { BlockContent } from './Blocks';
 export { Blocks } from './Blocks';
