@@ -9,19 +9,36 @@ import type {
   TiffOptions,
   WebpOptions,
 } from 'sharp';
+import type { PlaceholderContent } from './Placeholder';
+import type { RichTextContent } from './RichText';
+import type { TextContent } from './Text';
+import type { TextWithImageContent } from './TextWithImage';
 
-export interface BlockDef<BlockContent> {
+export type BlockContent =
+  | TextContent
+  | TextWithImageContent
+  | RichTextContent
+  | PlaceholderContent;
+
+export interface BlockDef {
   type: string;
   style?: string[];
   content?: BlockContent;
-  blocks?: BlockDef<BlockContent>[];
+  blocks?: BlockDef[];
 }
 
-export interface ContentPageDef<BlockContent> {
+export interface ContentPageMeta {
   title: string;
   slug: string;
+  description?: string;
+  keywords?: string[];
+  robots?: string[];
+  og?: Record<string, string>;
+}
+
+export interface ContentPageDef extends ContentPageMeta {
   style?: string[];
-  blocks?: BlockDef<BlockContent>[];
+  blocks?: BlockDef[];
 }
 
 export interface Img {
@@ -45,7 +62,7 @@ export interface ImgSource {
 }
 
 export interface Picture extends Img, ImgSource {
-  sources: ImgSource[];
+  sources?: ImgSource[];
 }
 
 export const GraphQL = {

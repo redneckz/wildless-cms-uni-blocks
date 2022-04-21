@@ -1,0 +1,1 @@
+export { ContentPageRepository } from './ContentPageRepository';

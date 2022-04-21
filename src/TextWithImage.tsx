@@ -11,15 +11,11 @@ export interface TextWithImageProps extends TextWithImageContent {
   className?: string;
 }
 
-export const TextWithImage = JSX<TextWithImageProps>(
-  ({ className, primary, image }) => {
-    return (
-      <div className={className || ''}>
-        {primary && (
-          <p className="font-bold text-slate-700 leading-snug">{primary}</p>
-        )}
-        {image && <Img image={image} />}
-      </div>
-    );
-  }
-);
+export const TextWithImage = JSX<TextWithImageProps>(({ className, primary, image }) => {
+  return (
+    <div className={className || ''}>
+      {primary && <p className="font-bold text-slate-700 leading-snug">{primary}</p>}
+      {image && <Img image={image} />}
+    </div>
+  );
+});
