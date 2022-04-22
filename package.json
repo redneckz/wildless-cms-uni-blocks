@@ -1,19 +1,34 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "license": "MIT",
   "main": "./dist/index.js",
-  "style": "./dist/common.css",
   "module": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "author": {
-    "name": "redneckz",
-    "email": "vasyaselsky@yandex.ru"
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./dist/index.js",
+      "types": "./lib/index.d.ts"
+    },
+    "./lib/common.css": "./lib/common.css",
+    "./lib/content-page-repository": {
+      "import": "./lib/content-page-repository/index.js",
+      "require": "./dist/content-page-repository/index.js",
+      "types": "./lib/content-page-repository/index.d.ts"
+    },
+    "./*.json": "./*.json",
+    "./*.js": "./*.js",
+    "./*.cjs": "./*.cjs"
   },
   "files": [
     "lib",
     "dist"
   ],
+  "author": {
+    "name": "redneckz",
+    "email": "vasyaselsky@yandex.ru"
+  },
   "repository": {
     "url": "https://github.com/redneckz/wildless-cms-uni-blocks.git"
   },
@@ -23,7 +38,7 @@
   "scripts": {
     "build": "rimraf ./lib && tsc --build --verbose && npm run build:commonjs && npm run build:style",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
-    "build:style": "postcss './src/**/*.css' --env production --dir ./dist",
+    "build:style": "postcss './src/**/*.css' --env production --dir ./lib",
     "test": "jest --coverage"
   },
   "dependencies": {

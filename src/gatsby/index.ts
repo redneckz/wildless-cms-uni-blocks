@@ -1,2 +1,1 @@
 export { GatsbyPage } from './GatsbyPage';
-
