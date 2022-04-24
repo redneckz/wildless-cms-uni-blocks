@@ -9,10 +9,10 @@ import type {
   TiffOptions,
   WebpOptions,
 } from 'sharp';
-import type { PlaceholderContent } from './Placeholder';
-import type { RichTextContent } from './RichText';
-import type { TextContent } from './Text';
-import type { TextWithImageContent } from './TextWithImage';
+import type { PlaceholderContent } from './Placeholder.js';
+import type { RichTextContent } from './RichText.js';
+import type { TextContent } from './Text.js';
+import type { TextWithImageContent } from './TextWithImage.js';
 
 export type BlockContent =
   | TextContent

@@ -19,6 +19,7 @@
     "rootDir": "src",
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     /* Advanced Options */
     "skipLibCheck": true
   },

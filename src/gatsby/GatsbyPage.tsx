@@ -1,8 +1,8 @@
 import { setup } from '@redneckz/uni-jsx';
 import type { PageProps } from 'gatsby';
 import runtime from 'react/jsx-runtime';
-import { ContentPage } from '../ContentPage';
-import type { ContentPageDef } from '../types';
+import { ContentPage } from '../ContentPage.js';
+import type { ContentPageDef } from '../types.js';
 
 import '@redneckz/wildless-cms-uni-blocks/dist/common.css';
 

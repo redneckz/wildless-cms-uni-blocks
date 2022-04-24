@@ -1,1 +1,1 @@
-export { GatsbyPage } from './GatsbyPage';
+export { GatsbyPage } from './GatsbyPage.js';

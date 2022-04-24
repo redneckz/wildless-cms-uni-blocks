@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ContentPageMeta } from './types';
+import type { ContentPageMeta } from './types.js';
 
 export interface ContentPageHeadProps {
   HeadComponent: Function;

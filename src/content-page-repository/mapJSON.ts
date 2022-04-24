@@ -12,7 +12,7 @@ export async function mapJSON<T>(
     const values = data.map((_, i) => mapJSON(_, mapper, [String(i)].concat(key)));
     return Promise.all(values) as any;
   } else if (typeof data === 'object' && (data as any).toString() === '[object Object]') {
-    const subKeys = Object.keys(data);
+    const subKeys = Object.keys(data as any);
     const values = subKeys.map((k) => mapJSON(data[k], mapper, [k].concat(key)));
     const pairs = (await Promise.all(values)).map((_, i) => ({
       [subKeys[i]]: _,
