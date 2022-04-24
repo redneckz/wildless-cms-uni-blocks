@@ -1,4 +1,4 @@
-import { mapJSON } from './mapJSON.js';
+import { mapJSON } from './mapJSON';
 
 describe('mapJSON', () => {
   it('should map scalars', async () => {
