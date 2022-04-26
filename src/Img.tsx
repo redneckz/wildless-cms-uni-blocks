@@ -17,5 +17,5 @@ export const Img = JSX<TextWithImageProps>(({ className, image }) => (
 ));
 
 export function formatToMimeType(format: ImgSource['format']): string | undefined {
-  return format && `image/${format}`;
+  return format ? `image/${String(format)}` : undefined;
 }

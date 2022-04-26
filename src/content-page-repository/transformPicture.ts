@@ -56,6 +56,6 @@ function transformSrc(src: string, { format, size }: TransformationOptions & Img
 
   const suffix = [size?.width, size?.height].filter(Boolean).join('-');
   return `${path.basename(src, path.extname(src))}${suffix ? `-${suffix}` : ''}.${
-    format || path.extname(src)
+    String(format) || path.extname(src)
   }`;
 }

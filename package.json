@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.15",
+  "version": "0.2.16",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -49,35 +49,49 @@
     "build": "rimraf ./lib && tsc --build --verbose && npm run build:commonjs && npm run build:style",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
     "build:style": "postcss './src/**/*.css' --env production --dir ./lib",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "cosmos": "cosmos",
+    "cosmos:export": "cosmos-export"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
   },
   "dependencies": {
-    "@redneckz/uni-jsx": "^0.1.5",
+    "@redneckz/uni-jsx": "^0.1.6",
     "glob": "^8.0.1",
     "remark-html": "^15.0.1",
     "remark-parse": "^10.0.1",
     "sharp": "^0.30.4",
     "unified": "^10.1.2"
   },
-  "peerDependencies": {
-    "gatsby": "^4.11.3"
-  },
-  "peerDependenciesMeta": {
-    "gatsby": {
-      "optional": true
-    }
-  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "autoprefixer": "^10.4.4",
+    "css-loader": "^6.7.1",
     "cssnano": "^5.1.7",
+    "html-webpack-plugin": "^5.5.0",
     "jest": "^27.5.1",
     "postcss": "^8.4.12",
     "postcss-cli": "^9.1.0",
+    "postcss-loader": "^6.2.1",
     "prettier": "2.6.2",
+    "react-cosmos": "^5.7.2",
     "rimraf": "^3.0.2",
+    "style-loader": "^3.3.1",
     "tailwindcss": "^3.0.24",
     "ts-jest": "^27.1.4",
-    "typescript": "^4.6.3"
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
   }
 }

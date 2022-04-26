@@ -7,5 +7,5 @@ module.exports = {
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
   coverageReporters: ['json', 'lcov'],
-  rootDir: 'src',
+  roots: ['<rootDir>/src/'],
 };
