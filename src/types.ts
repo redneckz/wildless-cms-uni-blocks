@@ -13,12 +13,14 @@ import type { PlaceholderContent } from './Placeholder';
 import type { RichTextContent } from './RichText';
 import type { TextContent } from './Text';
 import type { TextWithImageContent } from './TextWithImage';
+import type { ProductBlockContent } from './ProductBlock';
 
 export type BlockContent =
   | TextContent
   | TextWithImageContent
   | RichTextContent
-  | PlaceholderContent;
+  | PlaceholderContent
+  | ProductBlockContent;
 
 export interface BlockDef {
   type: string;

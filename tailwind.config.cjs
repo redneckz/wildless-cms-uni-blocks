@@ -9,8 +9,13 @@ module.exports = {
       },
       colors: {
         brand: '#42ab44',
+        'second-primary': '#7d7e7f',
+        'second-light': '#f5f7f9',
       },
     },
   },
   plugins: [],
+  safelist: [{
+    pattern: /col-.*/
+  }]
 };
