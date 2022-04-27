@@ -1,6 +1,6 @@
-export type { BlockDef, ContentPageMeta, ContentPageDef, Img, ImgSource, Picture } from './types.js';
+export type { BlockDef, ContentPageMeta, ContentPageDef, Img, ImgSource, Picture } from './types';
 
-export { Blocks } from './Blocks.js';
+export { Blocks } from './Blocks';
 
-export { ContentPageHead } from './ContentPageHead.js';
-export { ContentPage } from './ContentPage.js';
+export { ContentPageHead } from './ContentPageHead';
+export { ContentPage } from './ContentPage';

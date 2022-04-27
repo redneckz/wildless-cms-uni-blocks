@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { SVG } from './SVG'; // TODO Add explicit .js
+import { SVG } from './SVG';
 
 export interface LogoProps {
   className?: string;

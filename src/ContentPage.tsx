@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Blocks } from './Blocks.js';
-import type { BlockDef, ContentPageDef } from './types.js';
+import { Blocks } from './Blocks';
+import type { BlockDef, ContentPageDef } from './types';
 
 export interface ContentPageProps {
   data: ContentPageDef;

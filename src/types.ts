@@ -9,10 +9,10 @@ import type {
   TiffOptions,
   WebpOptions,
 } from 'sharp';
-import type { PlaceholderContent } from './Placeholder.js';
-import type { RichTextContent } from './RichText.js';
-import type { TextContent } from './Text.js';
-import type { TextWithImageContent } from './TextWithImage.js';
+import type { PlaceholderContent } from './Placeholder';
+import type { RichTextContent } from './RichText';
+import type { TextContent } from './Text';
+import type { TextWithImageContent } from './TextWithImage';
 
 export type BlockContent =
   | TextContent
@@ -64,27 +64,3 @@ export interface ImgSource {
 export interface Picture extends Img, ImgSource {
   sources?: ImgSource[];
 }
-
-export const GraphQL = {
-  Block: `
-    type BlockContent {
-      primary: String
-      secondary: String
-      __html: String
-    }
-
-    type Block {
-      type: String!
-      style: [String!]
-      content: BlockContent
-      blocks: [Block!]
-    }
-  `,
-  Page: `
-    title: String!
-    slug: String
-    date: Date
-    style: [String!]
-    blocks: [Block!]
-  `,
-};

@@ -1,1 +1,1 @@
-export { ContentPageRepository } from './ContentPageRepository.js';
+export { ContentPageRepository } from './ContentPageRepository';

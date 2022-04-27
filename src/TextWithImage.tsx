@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Img } from './Img.js';
-import type { Picture } from './types.js';
+import { Img } from './Img';
+import type { Picture } from './types';
 
 export interface TextWithImageContent {
   primary?: string;

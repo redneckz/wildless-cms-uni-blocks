@@ -1,8 +1,8 @@
 import glob from 'glob';
 import util from 'util';
-import type { ContentPageDef } from '../types.js';
-import type { TransformationOptions } from './TransformationOptions.js';
-import { transformContentPage } from './transformContentPage.js';
+import type { ContentPageDef } from '../types';
+import type { TransformationOptions } from './TransformationOptions';
+import { transformContentPage } from './transformContentPage';
 
 const find = util.promisify(glob);
 

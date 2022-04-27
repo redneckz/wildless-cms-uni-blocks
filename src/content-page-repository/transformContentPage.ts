@@ -1,10 +1,10 @@
 import fs from 'fs';
 import util from 'util';
-import type { ContentPageDef, Picture } from '../types.js';
-import { mapJSON } from './mapJSON.js';
-import type { TransformationOptions } from './TransformationOptions.js';
-import { transformMarkdown } from './transformMarkdown.js';
-import { transformPicture } from './transformPicture.js';
+import type { ContentPageDef, Picture } from '../types';
+import { mapJSON } from './mapJSON';
+import type { TransformationOptions } from './TransformationOptions';
+import { transformMarkdown } from './transformMarkdown';
+import { transformPicture } from './transformPicture';
 
 const readFile = util.promisify(fs.readFile);
 
