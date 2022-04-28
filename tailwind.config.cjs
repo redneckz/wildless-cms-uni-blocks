@@ -15,6 +15,7 @@ module.exports = {
         brand: '#42ab44',
         'second-primary': '#7d7e7f',
         'second-light': '#f5f7f9',
+        promo: '#f7f8c5'
       },
       minHeight: (theme) => ({
         ...theme('spacing'),
@@ -27,7 +28,7 @@ module.exports = {
   plugins: [],
   safelist: [
     {
-      pattern: /col-.*/,
+      pattern: /(col|grid|p|pt)-.*/,
     },
   ],
 };

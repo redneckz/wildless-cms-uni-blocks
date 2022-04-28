@@ -10,9 +10,9 @@ export interface BlockItemProps extends BlockItemContent {
 
 export const BlockItem = JSX<BlockItemProps>(({ className, text, children }) => {
   return (
-    <div className={`inline-block ${className || ''}`} role="listitem">
-      <div className="inline-block w-[7px] h-[2px] bg-brand align-middle"></div>
-      <span className="text-base text-second-primary font-normal font-sans mx-3 align-middle">
+    <div className={`inline-block flex items-center ${className || ''}`} role="listitem">
+      <div className="inline-block min-w-[7px] h-[2px] bg-brand"></div>
+      <span className="text-base text-second-primary font-normal font-sans mx-3">
         {text || children}
       </span>
     </div>

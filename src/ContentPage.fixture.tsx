@@ -1,9 +1,5 @@
 import './setup-fixture';
 
-import {ContentPage} from './ContentPage';
+import { ContentPage } from './ContentPage';
 
-const data = require('./ContentPage.page.json');
-
-export default <ContentPage data={data}/>;
-
-
+export default <ContentPage data={require('./ContentPage.page.json')} />;

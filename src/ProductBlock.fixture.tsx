@@ -1,7 +1,7 @@
-import './setup-fixture';
-
 import { ProductBlock } from './ProductBlock';
 import { Picture } from './types';
+
+import './setup-fixture';
 
 const image: Picture = {
   src: 'worker.png',
