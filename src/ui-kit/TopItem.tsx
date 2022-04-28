@@ -1,15 +1,13 @@
 import { JSX } from '@redneckz/uni-jsx';
+import type { ButtonContent } from './Button';
 
-export interface TopItemContent {
-  text?: string;
-  href?: string;
-  target?: '_blank' | '_self' | '_parent' | '_top' | string;
+export interface TopItemContent extends ButtonContent {
   active?: boolean;
-  onClick?: () => any;
 }
 
 export interface TopItemProps extends TopItemContent {
   className?: string;
+  onClick?: () => any;
 }
 
 export const TopItem = JSX<TopItemProps>(

@@ -1,15 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
+import type { ButtonContent, ButtonProps } from './Button';
 
-export interface PrimaryButtonContent {
-  text?: string;
-  href?: string;
-  target?: '_blank' | '_self' | '_parent' | '_top' | string;
-  onClick?: () => any;
-}
-
-export interface PrimaryButtonProps extends PrimaryButtonContent {
-  className?: string;
-}
+export type PrimaryButtonContent = ButtonContent;
+export type PrimaryButtonProps = ButtonProps;
 
 export const PrimaryButton = JSX<PrimaryButtonProps>(
   ({ className, text, href, target, onClick, children }) => {
