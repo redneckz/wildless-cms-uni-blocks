@@ -7,6 +7,10 @@ module.exports = {
       fontFamily: {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
       },
+      fontSize: {
+        title: ['2rem', '2.5rem'],
+        title2: ['2.5rem', '3rem'],
+      },
       colors: {
         brand: '#42ab44',
         'second-primary': '#7d7e7f',
@@ -18,19 +22,12 @@ module.exports = {
       minWidth: (theme) => ({
         ...theme('spacing'),
       }),
-      fontSize: (theme) => ({
-        ...theme('spacing'),
-      }),
-      paddingSize: (theme) => ({
-        ...theme('spacing'),
-      }),
-      borderRadius: (theme) => ({
-        ...theme('spacing'),
-      }),
     },
   },
   plugins: [],
-  safelist: [{
-    pattern: /col-.*/
-  }]
+  safelist: [
+    {
+      pattern: /col-.*/,
+    },
+  ],
 };
