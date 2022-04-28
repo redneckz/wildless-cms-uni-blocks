@@ -4,6 +4,7 @@ import { ProductColumnBlock } from './ProductColumnBlock';
 import { RichText } from './RichText';
 import { Text } from './Text';
 import { TextWithImage } from './TextWithImage';
+import { ProductBlock } from './ProductBlock';
 
 export const Blocks = {
   Header,
@@ -12,4 +13,5 @@ export const Blocks = {
   TextWithImage,
   RichText,
   Placeholder,
+  ProductBlock,
 };
