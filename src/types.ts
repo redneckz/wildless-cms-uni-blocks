@@ -9,12 +9,14 @@ import type {
   TiffOptions,
   WebpOptions,
 } from 'sharp';
+import type { HeaderContent } from './Header';
 import type { PlaceholderContent } from './Placeholder';
 import type { RichTextContent } from './RichText';
 import type { TextContent } from './Text';
 import type { TextWithImageContent } from './TextWithImage';
 
 export type BlockContent =
+  | HeaderContent
   | TextContent
   | TextWithImageContent
   | RichTextContent

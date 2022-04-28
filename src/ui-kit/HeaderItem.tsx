@@ -9,7 +9,7 @@ export const HeaderItem = JSX<HeaderItemProps>(
     const textStyle = active ? 'text-brand' : 'text-black hover:text-brand';
     return (
       <a
-        className={`${linkStyle} border-0 border-b-2 border-solid inline-block bg-transparent py-2 mx-4 text-center font-sans no-underline ${
+        className={`${linkStyle} border-0 border-b-2 border-solid inline-block bg-transparent py-2 text-center font-sans no-underline ${
           className || ''
         }`}
         href={href}
