@@ -1,30 +1,29 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { PrimaryButton } from './ui-kit/PrimaryButton';
-import { Picture } from './types';
 import { Icons } from './Icons';
 import { Img } from './Img';
+import { Picture } from './types';
 import { ButtonContent } from './ui-kit/Button';
-
+import { PrimaryButton } from './ui-kit/PrimaryButton';
+import { BlockItem } from './ui-kit/BlockItem';
 export interface Benefit {
   label: string;
   description?: string;
   icon?: keyof typeof Icons;
 }
-
 export interface ProductBlockContent {
   title?: string;
   description?: string | Node;
   image?: Picture;
   benefits?: Benefit[];
+  items?: string[];
   button?: ButtonContent;
 }
-
 export interface ProductBlockProps extends ProductBlockContent {
   className?: string;
 }
 
 export const ProductBlock = JSX<ProductBlockProps>((props) => {
-  const { className, title, description, benefits, button, image } = props;
+  const { className, title, description, benefits, button, image, items } = props;
   return (
     <section
       className={`font-sans bg-white rounded-[40px] h-[470px] flex relative overflow-hidden ${className}`}
@@ -35,7 +34,14 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
           <div className="font-normal text-base text-second-primary mb-7">{description}</div>
         )}
         {benefits && <div className="flex gap-6">{benefits.map(renderBenefit)}</div>}
-        {button && (
+        {items && (
+          <section className="flex flex-col" role="list">
+            {items?.map((_) => (
+              <BlockItem key={_} className="mt-6" text={_} />
+            ))}
+          </section>
+        )}
+        {button && button.text && (
           <div className="mt-auto">
             <PrimaryButton {...button} />
           </div>
