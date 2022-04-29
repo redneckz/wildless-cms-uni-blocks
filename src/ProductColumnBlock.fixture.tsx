@@ -1,6 +1,6 @@
-import { ProductColumnBlock } from './ProductColumnBlock';
-
 import './setup-fixture';
+
+import { ProductColumnBlock } from './ProductColumnBlock';
 
 export default {
   default: (

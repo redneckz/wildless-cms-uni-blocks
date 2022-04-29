@@ -1,6 +1,6 @@
-import { Header } from './Header';
-
 import './setup-fixture';
+
+import { Header } from './Header';
 
 export default (
   <Header
