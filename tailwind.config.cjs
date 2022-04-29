@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx,json}'],
   theme: {
     extend: {
       fontFamily: {
@@ -28,7 +28,7 @@ module.exports = {
   plugins: [],
   safelist: [
     {
-      pattern: /(col|grid|p|pt)-.*/,
+      pattern: /col-.*/,
     },
   ],
 };
