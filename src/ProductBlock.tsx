@@ -12,13 +12,12 @@ export interface Benefit {
 }
 export interface ProductBlockContent {
   title?: string;
-  description?: string | Node;
+  description?: string;
   image?: Picture;
   benefits?: Benefit[];
   items?: string[];
   button?: ButtonContent;
 }
-
 export interface ProductBlockProps extends ProductBlockContent {
   className?: string;
 }
