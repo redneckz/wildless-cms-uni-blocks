@@ -26,15 +26,17 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
   const { className, title, description, benefits, button, image, items } = props;
   return (
     <section
-      className={`font-sans bg-white rounded-[40px] h-[470px] flex relative overflow-hidden ${className}`}
+      className={`font-sans bg-white rounded-[40px] h-[470px] flex justify-between relative overflow-hidden ${className}`}
     >
       <div className={['flex', 'flex-col', 'p-11', image && 'pr-0'].filter(Boolean).join(' ')}>
         {title && <h1 className="font-medium text-title2 m-0 mb-4 whitespace-pre-wrap">{title}</h1>}
         {description && (
           <div className="font-normal text-base text-second-primary mb-7">{description}</div>
         )}
-        {benefits && <div className="flex gap-6">{benefits.map(renderBenefit)}</div>}
-        {items && (
+        {benefits && benefits.length && (
+          <div className="flex gap-6">{benefits.map(renderBenefit)}</div>
+        )}
+        {items && items.length && (
           <section className="flex flex-col" role="list">
             {items?.map((_) => (
               <BlockItem key={_} className="mt-6" text={_} />
