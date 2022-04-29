@@ -1,6 +1,6 @@
-import { TopItem } from './TopItem';
-
 import '../setup-fixture';
+
+import { TopItem } from './TopItem';
 
 export default {
   default: <TopItem href="https://www.rshb.ru/" target="_blank" text="Экосистема Своё" />,

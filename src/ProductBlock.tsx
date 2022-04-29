@@ -18,6 +18,7 @@ export interface ProductBlockContent {
   items?: string[];
   button?: ButtonContent;
 }
+
 export interface ProductBlockProps extends ProductBlockContent {
   className?: string;
 }

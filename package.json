@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.16",
+  "version": "0.2.20",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -55,8 +55,8 @@
     "cosmos:export": "cosmos-export"
   },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "peerDependenciesMeta": {
     "react": {
