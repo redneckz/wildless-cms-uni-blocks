@@ -1,12 +1,13 @@
-import './setup-fixture';
+import { context } from './setup-fixture';
 
 import { Header } from './Header';
 
 export default (
   <Header
+    context={context}
     topItems={[
       {
-        href: 'http://localhost:5001/',
+        href: '/',
         text: 'Экосистема Своё',
         items: [
           {
@@ -44,12 +45,14 @@ export default (
         ],
       },
       {
-        href: 'https://business.ru/',
+        href: 'https://rshb.ru/',
         text: 'Бизнес клиентам',
+        target: '_blank',
       },
       {
-        href: 'https://private.ru/',
+        href: 'https://rshb.ru/',
         text: 'Частным клиентам',
+        target: '_blank',
       },
     ]}
   />

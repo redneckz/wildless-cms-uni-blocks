@@ -1,4 +1,4 @@
-import './setup-fixture';
+import { context } from './setup-fixture';
 
 import { ProductBlock } from './ProductBlock';
 import { Picture } from './types';
@@ -10,7 +10,7 @@ const image: Picture = {
 export default {
   default: (
     <ProductBlock
-      className="w-[1280px]"
+      context={context}
       title={'Оплата проходит \nв 180 странах мира'}
       description="Онлайн-платформа, объединяющая современные решения для фермеров: продажа и покупка товаров, модернизация вашего бизнеса, поиск сотрудников, льготное финансирование"
       benefits={[
@@ -32,7 +32,7 @@ export default {
       ]}
       button={{
         target: '_self',
-        href: 'https://google.com',
+        href: '/foo-page',
         text: 'Оформить карту',
       }}
       image={image}
@@ -40,7 +40,7 @@ export default {
   ),
   'with items': (
     <ProductBlock
-      className="w-[1280px]"
+      context={context}
       title={'Оплата проходит \nв 180 странах мира'}
       items={[
         'Совершайте любые личные покупки',
@@ -48,9 +48,9 @@ export default {
         'Расходы для бизнеса на УСН 15% позволят снизить налоговую базу',
       ]}
       button={{
-        target: '_self',
-        href: 'https://google.com',
+        href: 'https://rshb.ru',
         text: 'Оформить карту',
+        target: '_blank',
       }}
       image={image}
     />

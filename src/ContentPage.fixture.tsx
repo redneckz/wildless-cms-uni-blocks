@@ -1,4 +1,4 @@
-import './setup-fixture';
+import { context } from './setup-fixture';
 
 import { BlockDecorator, ContentPage } from './ContentPage';
 
@@ -21,10 +21,17 @@ const blockDecorator: BlockDecorator = ({ blockClassName, block, render }) => (
 );
 
 export default {
-  default: <ContentPage className="bg-second-light" data={require('./ContentPage.page.json')} />,
+  default: (
+    <ContentPage
+      context={context}
+      className="bg-second-light"
+      data={require('./ContentPage.page.json')}
+    />
+  ),
   editor: (
     <div style={{ background: "url('grid.svg')" }}>
       <ContentPage
+        context={context}
         className="bg-transparent"
         data={require('./ContentPage.page.json')}
         blockDecorator={blockDecorator}

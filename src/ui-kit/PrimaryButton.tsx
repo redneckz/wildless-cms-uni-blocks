@@ -1,7 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ButtonContent, ButtonProps } from './Button';
+import type { LinkContent } from './Link';
+import type { ButtonProps } from './Button';
 
-export type PrimaryButtonContent = ButtonContent;
+export type PrimaryButtonContent = LinkContent;
 export type PrimaryButtonProps = ButtonProps;
 
 export const PrimaryButton = JSX<PrimaryButtonProps>(

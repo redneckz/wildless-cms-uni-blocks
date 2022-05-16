@@ -1,5 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Blocks } from './Blocks';
+import type { ContentPageContext } from './ContentPageContext';
 import type { BlockDef, ContentPageDef } from './types';
 
 interface BlockDecoratorProps<VNode> {
@@ -13,6 +14,7 @@ export type BlockDecorator<VNode = any> = (props: BlockDecoratorProps<VNode>) =>
 export interface ContentPageProps {
   className?: string;
   data: ContentPageDef;
+  context: ContentPageContext;
   blockDecorator?: BlockDecorator;
 }
 
@@ -20,7 +22,12 @@ const defaultBlockDecorator: BlockDecorator = ({ blockClassName, block, render }
   render({ blockClassName, block });
 
 export const ContentPage = JSX<ContentPageProps>(
-  ({ className, data: { style: pageStyle, blocks }, blockDecorator = defaultBlockDecorator }) => {
+  ({
+    className,
+    data: { style: pageStyle, blocks },
+    context,
+    blockDecorator = defaultBlockDecorator,
+  }) => {
     return (
       <section className={`grid grid-cols-12 ${style2className(pageStyle)} ${className}`}>
         {blocks && blocks.map(renderBlock)}
@@ -41,7 +48,12 @@ export const ContentPage = JSX<ContentPageProps>(
         render: (props) => {
           const { content, blocks } = props.block;
           return (
-            <BlockComponent key={`${type}-${i}`} className={props.blockClassName} {...content}>
+            <BlockComponent
+              key={`${type}-${i}`}
+              className={props.blockClassName}
+              context={context}
+              {...content}
+            >
               {blocks && blocks.map(renderBlock)}
             </BlockComponent>
           );

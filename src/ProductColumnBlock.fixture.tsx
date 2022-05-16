@@ -1,10 +1,11 @@
-import './setup-fixture';
+import { context } from './setup-fixture';
 
 import { ProductColumnBlock } from './ProductColumnBlock';
 
 export default {
   default: (
     <ProductColumnBlock
+      context={context}
       title="Кредит на всё, что хочется!"
       items={[
         'Совершайте любые личные покупки',
@@ -13,13 +14,13 @@ export default {
       ]}
       button={{
         text: 'Подробнее',
-        href: 'https://rshb.ru',
-        target: '_blank',
+        href: '/foo-page',
       }}
     />
   ),
   promo: (
     <ProductColumnBlock
+      context={context}
       title="Кредит на всё, что хочется!"
       items={[
         'Совершайте любые личные покупки',

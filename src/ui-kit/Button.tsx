@@ -1,10 +1,6 @@
-export interface ButtonContent {
-  text?: string;
-  href?: string;
-  target?: '_blank' | '_self' | '_parent' | '_top' | string;
-}
+import type { LinkContent } from './Link';
 
-export interface ButtonProps extends ButtonContent {
+export interface ButtonProps extends LinkContent {
   className?: string;
-  onClick?: () => any;
+  onClick?: (ev: MouseEvent) => any;
 }

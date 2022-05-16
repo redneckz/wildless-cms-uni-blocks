@@ -1,10 +1,13 @@
 import { JSX } from '@redneckz/uni-jsx';
+import type { ContentPageContext } from './ContentPageContext';
 import { Icons } from './Icons';
 import { Img } from './Img';
 import { Picture } from './types';
-import { ButtonContent } from './ui-kit/Button';
-import { PrimaryButton } from './ui-kit/PrimaryButton';
 import { BlockItem } from './ui-kit/BlockItem';
+import type { LinkContent } from './ui-kit/Link';
+import { PrimaryButton } from './ui-kit/PrimaryButton';
+import { useLink } from './useLink';
+
 export interface Benefit {
   label: string;
   description?: string;
@@ -16,14 +19,16 @@ export interface ProductBlockContent {
   image?: Picture;
   benefits?: Benefit[];
   items?: string[];
-  button?: ButtonContent;
+  button?: LinkContent;
 }
 export interface ProductBlockProps extends ProductBlockContent {
   className?: string;
+  context: ContentPageContext;
 }
 
 export const ProductBlock = JSX<ProductBlockProps>((props) => {
-  const { className, title, description, benefits, button, image, items } = props;
+  const { className, context, title, description, benefits, button, image, items } = props;
+
   return (
     <section
       className={`font-sans bg-white rounded-[40px] h-[470px] flex justify-between relative overflow-hidden ${className}`}
@@ -45,7 +50,7 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
         )}
         {button && button.text && (
           <div className="mt-auto">
-            <PrimaryButton {...button} />
+            <PrimaryButton {...useLink(context, button)} />
           </div>
         )}
       </div>

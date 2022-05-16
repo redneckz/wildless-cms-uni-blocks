@@ -17,7 +17,7 @@
       "content": {
         "topItems": [
           {
-            "href": "http://localhost:5001/",
+            "href": "/",
             "text": "Экосистема Своё",
             "items": [
               {
@@ -55,12 +55,14 @@
             ]
           },
           {
-            "href": "https://business.ru/",
-            "text": "Бизнес клиентам"
+            "href": "https://rshb.ru/",
+            "text": "Бизнес клиентам",
+            "target": "_blank"
           },
           {
-            "href": "https://private.ru/",
-            "text": "Частным клиентам"
+            "href": "https://rshb.ru/",
+            "text": "Частным клиентам",
+            "target": "_blank"
           }
         ]
       }
@@ -89,9 +91,8 @@
           }
         ],
         "button": {
-          "target": "_self",
-          "href": "https://rshb.ru/",
-          "text": "Оформить карту"
+          "text": "Оформить карту",
+          "href": "/credit-cards"
         },
         "image": {
           "src": "worker.png",
@@ -114,7 +115,7 @@
         ],
         "button": {
           "text": "Подробнее",
-          "href": "https://rshb.ru"
+          "href": "/credits"
         },
         "promo": true
       }
@@ -131,7 +132,7 @@
         ],
         "button": {
           "text": "Подробнее",
-          "href": "https://rshb.ru"
+          "href": "/credits"
         }
       }
     },
@@ -169,7 +170,7 @@
         ],
         "button": {
           "text": "Подробнее",
-          "href": "https://rshb.ru"
+          "href": "/credits"
         },
         "promo": true
       }
@@ -184,7 +185,7 @@
         ],
         "button": {
           "text": "Подробнее",
-          "href": "https://rshb.ru"
+          "href": "/credits"
         }
       }
     },
@@ -209,7 +210,7 @@
         ],
         "button": {
           "text": "Подробнее",
-          "href": "https://rshb.ru"
+          "href": "/credits"
         }
       }
     }
