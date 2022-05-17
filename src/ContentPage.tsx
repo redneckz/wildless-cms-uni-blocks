@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Blocks } from './Blocks';
-import { LikeControl } from './ui-kit/LikeControl';
+import { LikeControl } from './LikeControl';
 import type { ContentPageContext } from './ContentPageContext';
 import type { BlockDef, ContentPageDef } from './types';
 
@@ -32,7 +32,9 @@ export const ContentPage = JSX<ContentPageProps>(
     return (
       <section className={`grid grid-cols-12 ${style2className(pageStyle)} ${className}`}>
         {blocks && blocks.map(renderBlock)}
-        {likeControl && <LikeControl context={context} />}
+        {likeControl && (
+          <LikeControl className="fixed bottom-0 right-0 rounded-tl-lg" context={context} />
+        )}
       </section>
     );
 

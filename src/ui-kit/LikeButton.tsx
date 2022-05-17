@@ -1,10 +1,4 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { ContentPageContext } from '../ContentPageContext';
-
-export interface LikeControlProps {
-  className?: string;
-  context: ContentPageContext;
-}
 
 export interface LikeButtonProps {
   className?: string;
@@ -31,24 +25,12 @@ export const LIKE_ICON = (
   </svg>
 );
 
-export const LikeControl = JSX<LikeControlProps>(({ className, context }) => {
-  const likeService = context.useLikeService();
-
-  return (
-    <div
-      className={`fixed bottom-0 right-0 border-second-light border-2 bg-white rounded-tl-lg flex w-[125px] items-center justify-center gap-3 p-2 font-sans ${
-        className || ''
-      }`}
-    >
-      <LikeButton onClick={likeService.like} />
-      <LikeButton onClick={likeService.dislike} className="rotate-180" />
-      <span className="select-none">{likeService.likeCount}</span>
-    </div>
-  );
-});
-
 export const LikeButton = JSX<LikeButtonProps>(({ className, onClick }) => (
-  <button type="button" className={`border-0 w-6 bg-inherit ${className || ''}`} onClick={onClick}>
+  <button
+    type="button"
+    className={`border-0 w-[24px] bg-inherit ${className || ''}`}
+    onClick={onClick}
+  >
     {LIKE_ICON}
   </button>
 ));
