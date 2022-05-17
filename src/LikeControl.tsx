@@ -12,12 +12,12 @@ export const LikeControl = JSX<LikeControlProps>(({ className, context }) => {
 
   return (
     <div
-      className={`border-second-light border-2 bg-white flex w-[125px] items-center justify-center gap-3 p-2 font-sans ${
+      className={`border-second-light border-2 border-solid bg-white flex w-[125px] items-center justify-center gap-3 p-2 font-sans ${
         className || ''
       }`}
     >
       <LikeButton onClick={likeService.like} />
-      <LikeButton onClick={likeService.dislike} className="rotate-[180deg]" />
+      <LikeButton onClick={likeService.dislike} className="rotate-180" />
       <span className="select-none">{likeService.likeCount}</span>
     </div>
   );
