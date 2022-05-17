@@ -13,6 +13,15 @@ export const context: ContentPageContext = {
       console.log(url);
     },
   }),
+  useLikeService: () => ({
+    likeCount: 0,
+    like: () => {
+      console.log('like');
+    },
+    dislike: () => {
+      console.log('dislike');
+    },
+  }),
   handlerDecorator: (): any => (ev: Event) => {
     ev.preventDefault();
     console.log(ev.target, ev);
