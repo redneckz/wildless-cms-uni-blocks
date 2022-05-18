@@ -1,5 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Blocks } from './Blocks';
+import { LikeControl } from './LikeControl';
 import type { ContentPageContext } from './ContentPageContext';
 import type { BlockDef, ContentPageDef } from './types';
 
@@ -24,13 +25,16 @@ const defaultBlockDecorator: BlockDecorator = ({ blockClassName, block, render }
 export const ContentPage = JSX<ContentPageProps>(
   ({
     className,
-    data: { style: pageStyle, blocks },
+    data: { style: pageStyle, blocks, likeControl },
     context,
     blockDecorator = defaultBlockDecorator,
   }) => {
     return (
       <section className={`grid grid-cols-12 ${style2className(pageStyle)} ${className}`}>
         {blocks && blocks.map(renderBlock)}
+        {likeControl && (
+          <LikeControl className="fixed bottom-0 right-0 rounded-tl-lg" context={context} />
+        )}
       </section>
     );
 

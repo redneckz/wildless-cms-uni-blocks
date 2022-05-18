@@ -7,7 +7,7 @@ import type {
   PngOptions,
   ResizeOptions,
   TiffOptions,
-  WebpOptions
+  WebpOptions,
 } from 'sharp';
 import type { HeaderContent } from './Header';
 import type { PlaceholderContent } from './Placeholder';
@@ -45,6 +45,7 @@ export interface ContentPageMeta {
 export interface ContentPageDef extends ContentPageMeta {
   style?: string[];
   blocks?: BlockDef[];
+  likeControl?: boolean;
 }
 
 export interface Img {

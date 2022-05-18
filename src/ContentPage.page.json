@@ -10,6 +10,7 @@
   },
   "date": "2022-04-08",
   "style": ["gap-5 p-20 pt-0"],
+  "likeControl": true,
   "blocks": [
     {
       "type": "Header",
