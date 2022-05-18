@@ -4,7 +4,7 @@ export interface UserData {
 }
 
 const AUTH_PREFIX = 'guest';
-const LOCAL_STORAGE_NAME = 'likesToken';
+const STORAGE_KEY = 'likesToken';
 
 export function LikeAPI(projectId: string, baseURL: string) {
   async function getLikeCount(nodeId: string): Promise<number> {
@@ -100,11 +100,15 @@ export function LikeAPI(projectId: string, baseURL: string) {
 
   async function auth(): Promise<UserData> {
     try {
-      const userData: UserData = JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_NAME) || '');
+      const userData: UserData = JSON.parse(globalThis.localStorage.getItem(STORAGE_KEY) || '');
       if (userData?.token) {
         return userData;
       }
+    } catch (e) {
+      // do nothing
+    }
 
+    try {
       const response = await fetch(`${baseURL}/assist/v1/public/auth`, {
         method: 'POST',
         mode: 'cors',
@@ -118,7 +122,7 @@ export function LikeAPI(projectId: string, baseURL: string) {
 
       const { token, name } = await response.json();
 
-      window.localStorage.setItem(LOCAL_STORAGE_NAME, JSON.stringify({ token, name }));
+      globalThis.localStorage.setItem(STORAGE_KEY, JSON.stringify({ token, name }));
 
       return { token, name } as UserData;
     } catch (e) {
