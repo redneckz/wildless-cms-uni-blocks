@@ -24,14 +24,14 @@ export const ProductColumnBlock = JSX<ProductColumnBlockProps>(
         className={`relative p-8 bg-white text-black font-sans rounded-[40px] ${className || ''}`}
       >
         <p className="text-title font-medium m-0">{title}</p>
-        {items && items.length && (
+        {items?.length ? (
           <section className="flex flex-col" role="list">
-            {items?.map((_) => (
+            {items.map((_) => (
               <BlockItem key={_} className="mt-6" text={_} />
             ))}
           </section>
-        )}
-        {button && button.text && <PrimaryButton className="mt-12" {...useLink(context, button)} />}
+        ) : null}
+        {button?.text ? <PrimaryButton className="mt-12" {...useLink(context, button)} /> : null}
         {promo && (
           <div className="absolute right-0 bottom-0 bg-promo font-normal px-12 py-3 text-xl rounded-tl-[74px] rounded-br-[40px]">
             Акция

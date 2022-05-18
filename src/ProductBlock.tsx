@@ -13,6 +13,7 @@ export interface Benefit {
   description?: string;
   icon?: keyof typeof Icons;
 }
+
 export interface ProductBlockContent {
   title?: string;
   description?: string;
@@ -21,6 +22,7 @@ export interface ProductBlockContent {
   items?: string[];
   button?: LinkContent;
 }
+
 export interface ProductBlockProps extends ProductBlockContent {
   className?: string;
   context: ContentPageContext;
@@ -38,21 +40,19 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
         {description && (
           <div className="font-normal text-base text-second-primary mb-7">{description}</div>
         )}
-        {benefits && benefits.length && (
-          <div className="flex gap-6">{benefits.map(renderBenefit)}</div>
-        )}
-        {items && items.length && (
+        {benefits?.length ? <div className="flex gap-6">{benefits.map(renderBenefit)}</div> : null}
+        {items?.length ? (
           <section className="flex flex-col" role="list">
-            {items?.map((_) => (
+            {items.map((_) => (
               <BlockItem key={_} className="mt-6" text={_} />
             ))}
           </section>
-        )}
-        {button && button.text && (
+        ) : null}
+        {button?.text ? (
           <div className="mt-auto">
             <PrimaryButton {...useLink(context, button)} />
           </div>
-        )}
+        ) : null}
       </div>
       {image && <div className="h-full flex">{<Img image={image} className="flex" />}</div>}
     </section>
