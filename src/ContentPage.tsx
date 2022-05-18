@@ -30,10 +30,14 @@ export const ContentPage = JSX<ContentPageProps>(
     blockDecorator = defaultBlockDecorator,
   }) => {
     return (
-      <section className={`grid grid-cols-12 ${style2className(pageStyle)} ${className}`}>
-        {blocks && blocks.map(renderBlock)}
+      <section>
+        <div className={`grid grid-cols-12 ${style2className(pageStyle)} ${className}`}>
+          {blocks && blocks.map(renderBlock)}
+        </div>
         {likeControl && (
-          <LikeControl className="fixed bottom-0 right-0 rounded-tl-lg" context={context} />
+          <div className="flex justify-end sticky bottom-0 pointer-events-none">
+            <LikeControl className="rounded-tl-lg pointer-events-auto" context={context} />
+          </div>
         )}
       </section>
     );
