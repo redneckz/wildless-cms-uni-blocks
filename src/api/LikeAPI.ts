@@ -11,7 +11,7 @@ const AUTH_PREFIX = 'guest';
 const STORAGE_KEY = 'likesToken';
 
 export function LikeAPI(projectId: string, baseURL: string) {
-  async function getLikesCount(nodeIds: string[]): Promise<LikeData[]> {
+  async function getLikeCount(...nodeIds: string[]): Promise<LikeData[]> {
     if (!nodeIds.length) {
       return [];
     }
@@ -34,34 +34,6 @@ export function LikeAPI(projectId: string, baseURL: string) {
     } catch (e) {
       console.error(e);
       return [];
-    }
-  }
-
-  async function getLikeCount(nodeId: string): Promise<number> {
-    if (!nodeId) {
-      return 0;
-    }
-
-    const { token: Authorization } = await auth();
-
-    const params = { node_id: nodeId };
-    const url = `${baseURL}/assist/v1/public/projects/${projectId}/nodes/likes?${new URLSearchParams(
-      params,
-    )}`;
-
-    try {
-      const response = await fetch(url, {
-        method: 'GET',
-        mode: 'cors',
-        headers: { 'Content-Type': 'application/json', Authorization },
-      });
-
-      const { likes } = await response.json();
-
-      return likes || 0;
-    } catch (e) {
-      console.error(e);
-      return 0;
     }
   }
 
@@ -162,7 +134,6 @@ export function LikeAPI(projectId: string, baseURL: string) {
   }
 
   return {
-    getLikesCount,
     getLikeCount,
     like,
     dislike,
