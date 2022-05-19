@@ -1,12 +1,42 @@
-export interface UserData {
+interface UserData {
   token: string;
   name: string;
+}
+export interface LikeData {
+  node_id: string;
+  value: number;
 }
 
 const AUTH_PREFIX = 'guest';
 const STORAGE_KEY = 'likesToken';
 
 export function LikeAPI(projectId: string, baseURL: string) {
+  async function getNodesLikeCount(nodeIds: string[]): Promise<LikeData[]> {
+    if (!nodeIds.length) {
+      return [];
+    }
+
+    const { token: Authorization } = await auth();
+
+    try {
+      const response = await fetch(`/assist/v1/public/projects/${projectId}/nodes/likes`, {
+        method: 'POST',
+        mode: 'cors',
+        headers: { 'Content-Type': 'application/json', Authorization },
+        body: JSON.stringify({
+          node_ids: nodeIds,
+        }),
+      });
+
+      const { likes } = await response.json();
+
+      return likes || [];
+    } catch (e) {
+      console.error(e);
+      return [];
+    }
+  }
+
   async function getLikeCount(nodeId: string): Promise<number> {
     if (!nodeId) {
       return 0;
