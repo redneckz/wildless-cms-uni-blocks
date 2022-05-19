@@ -1,4 +1,4 @@
-const SafeIcon = (
+const SafeIcon = () => (
   <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path
       fillRule="evenodd"
@@ -26,7 +26,7 @@ const SafeIcon = (
     />
   </svg>
 );
-const CalendarIcon = (
+const CalendarIcon = () => (
   <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <circle cx="9.853" cy="9.854" r="1.104" stroke="#42AB44" strokeWidth="1.333" />
     <path
@@ -49,7 +49,7 @@ const CalendarIcon = (
     />
   </svg>
 );
-const MoneyIcon = (
+const MoneyIcon = () => (
   <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 23">
     <path
       fillRule="evenodd"
