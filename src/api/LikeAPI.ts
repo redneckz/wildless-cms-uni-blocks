@@ -11,7 +11,7 @@ const AUTH_PREFIX = 'guest';
 const STORAGE_KEY = 'likesToken';
 
 export function LikeAPI(projectId: string, baseURL: string) {
-  async function getNodesLikeCount(nodeIds: string[]): Promise<LikeData[]> {
+  async function getLikesCount(nodeIds: string[]): Promise<LikeData[]> {
     if (!nodeIds.length) {
       return [];
     }
@@ -162,6 +162,7 @@ export function LikeAPI(projectId: string, baseURL: string) {
   }
 
   return {
+    getLikesCount,
     getLikeCount,
     like,
     dislike,
