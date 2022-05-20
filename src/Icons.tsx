@@ -1,54 +1,3 @@
-const SafeIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-    <path
-      fill="#42AB44"
-      fillRule="evenodd"
-      d="M12.173 10.255c0-.695.564-1.259 1.259-1.259h.264a1.795 1.795 0 0 1 0 3.59h-.264v.037h.515a.63.63 0 1 1 0 1.259h-.515v.148a.63.63 0 1 1-1.259 0v-.172a.63.63 0 0 1 0-1.21v-2.393Zm1.259 1.073h.264a.537.537 0 0 0 0-1.073h-.264v1.073Z"
-      clipRule="evenodd"
-    />
-    <path
-      fill="#42AB44"
-      fillRule="evenodd"
-      d="M13.603 15.918a4.09 4.09 0 1 0 0-8.18 4.09 4.09 0 0 0 0 8.18Zm0 1.259a5.348 5.348 0 1 0 0-10.697 5.348 5.348 0 0 0 0 10.697Z"
-      clipRule="evenodd"
-    />
-    <path
-      fill="#000"
-      fillRule="evenodd"
-      d="M8.216 4.018a.63.63 0 0 0-.629-.63h-.565a2.517 2.517 0 0 0-2.517 2.518V17.75a2.517 2.517 0 0 0 2.517 2.517h14.234a2.517 2.517 0 0 0 2.517-2.517V5.906a2.517 2.517 0 0 0-2.517-2.517H11.928a.63.63 0 0 0 0 1.258H21.257c.695 0 1.258.564 1.258 1.259V17.75c0 .695-.563 1.258-1.258 1.258H7.022a1.258 1.258 0 0 1-1.259-1.258V5.906c0-.695.564-1.259 1.259-1.259h.565a.63.63 0 0 0 .63-.63Z"
-      clipRule="evenodd"
-    />
-    <path
-      fill="#000"
-      fillRule="evenodd"
-      d="M2.554 4.591a.63.63 0 0 0-.629.63v13.214c0 .347.282.629.63.629h4.441a.63.63 0 1 1 0 1.258H2.554a1.888 1.888 0 0 1-1.887-1.887V5.22c0-1.043.845-1.888 1.887-1.888h.29a.63.63 0 1 1 0 1.258h-.29Z"
-      clipRule="evenodd"
-    />
-  </svg>
-);
-const MoneyIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-    <circle cx="9.853" cy="9.854" r="1.104" stroke="#42AB44" strokeWidth="1.333" />
-    <path
-      stroke="#42AB44"
-      strokeWidth="1.333"
-      d="M15.916 14.812a1.104 1.104 0 1 1-2.208 0 1.104 1.104 0 0 1 2.208 0Z"
-    />
-    <path stroke="#42AB44" strokeLinecap="round" strokeWidth="1.333" d="m15.037 9.5-5.41 5.666" />
-    <path
-      fill="#000"
-      fillRule="evenodd"
-      d="m14.52 2.195 7.875 7.874c.26.26.26.683 0 .943l-11.3 11.3a.667.667 0 0 1-.942 0L2.28 14.436a.667.667 0 0 1 0-.943l1.681-1.681a.667.667 0 1 0-.943-.943L1.336 12.55a2 2 0 0 0 0 2.829l7.874 7.874a2 2 0 0 0 2.829 0l11.3-11.3a2 2 0 0 0 0-2.828l-7.875-7.874a2 2 0 0 0-2.829 0L9.617 4.27a.667.667 0 1 0 .943.943l3.018-3.018c.26-.26.683-.26.943 0Z"
-      clipRule="evenodd"
-    />
-    <path
-      stroke="#000"
-      strokeLinecap="round"
-      strokeWidth="1.333"
-      d="M3.334 4.253h2.333M2.666 8.586h2M4.666 6.586h2.333"
-    />
-  </svg>
-);
 const CalendarIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
     <path
@@ -115,7 +64,5 @@ const PercentageSquareIcon = () => (
 export const Icons = {
   EmptyWalletIcon,
   PercentageSquareIcon,
-  SafeIcon,
   CalendarIcon,
-  MoneyIcon,
 };

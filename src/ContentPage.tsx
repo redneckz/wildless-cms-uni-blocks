@@ -32,7 +32,7 @@ export const ContentPage = JSX<ContentPageProps>(
     return (
       <section className="relative">
         <div className={`grid grid-cols-12 ${style2className(pageStyle)} ${className}`}>
-          {blocks && blocks.map(renderBlock)}
+          {blocks?.length ? blocks.map(renderBlock) : null}
         </div>
         {likeControl && (
           <div className="flex items-end absolute bottom-0 right-0 h-full pointer-events-none">
@@ -65,7 +65,7 @@ export const ContentPage = JSX<ContentPageProps>(
               context={context}
               {...content}
             >
-              {blocks && blocks.map(renderBlock)}
+              {blocks?.length ? blocks.map(renderBlock) : null}
             </BlockComponent>
           );
         },

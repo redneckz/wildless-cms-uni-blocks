@@ -6,6 +6,7 @@ import { Picture } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { LinkContent } from './ui-kit/Link';
 import { PrimaryButton } from './ui-kit/PrimaryButton';
+import { Breadcrumb, BreadcrumbProps } from './ui-kit/Breadcrumb';
 import { useLink } from './useLink';
 
 export interface Benefit {
@@ -17,6 +18,7 @@ export interface Benefit {
 export interface ProductBlockContent {
   title?: string;
   description?: string;
+  breadcrumbs?: BreadcrumbProps[];
   image?: Picture;
   benefits?: Benefit[];
   items?: string[];
@@ -29,7 +31,8 @@ export interface ProductBlockProps extends ProductBlockContent {
 }
 
 export const ProductBlock = JSX<ProductBlockProps>((props) => {
-  const { className, context, title, description, benefits, buttons, image, items } = props;
+  const { className, context, title, description, breadcrumbs, benefits, buttons, image, items } =
+    props;
 
   return (
     <section
@@ -38,6 +41,24 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
       }`}
     >
       <div className={'flex text-primary-text flex-col'}>
+        {breadcrumbs?.length ? (
+          <div className="text-xs mb-6">
+            {breadcrumbs
+              .map((breadcrumb, i) => (
+                <Breadcrumb
+                  key={String(i)}
+                  {...useLink(context, { className: 'text-secondary', ...breadcrumb })}
+                />
+              ))
+              .reduce((prev, curr, i) => [
+                prev,
+                <span key={`delimiter_${i}`} className="text-secondary mx-2">
+                  /
+                </span>,
+                curr,
+              ])}
+          </div>
+        ) : null}
         {title && (
           <h1 className="font-medium text-title2 m-0 max-w-[600px] whitespace-pre-wrap">{title}</h1>
         )}
@@ -49,8 +70,8 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
         ) : null}
         {items?.length ? (
           <section className="flex flex-col mt-4" role="list">
-            {items.map((_) => (
-              <BlockItem key={_} className="mt-6" text={_} />
+            {items.map((_, i) => (
+              <BlockItem key={String(i)} className="mt-6" text={_} />
             ))}
           </section>
         ) : null}
@@ -69,9 +90,9 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
   );
 });
 
-function renderBenefit(benefit: Benefit, index: number) {
+function renderBenefit(benefit: Benefit, i: number) {
   return (
-    <div key={index} className="flex gap-4 items-center">
+    <div key={String(i)} className="flex gap-4 items-center">
       {benefit.icon && (
         <div className="h-11 w-11 min-w-11 min-h-11 bg-main rounded-full p-[10px] box-border">
           {Icons[benefit.icon]()}

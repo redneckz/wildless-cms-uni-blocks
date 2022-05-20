@@ -30,11 +30,13 @@ export const Header = JSX<HeaderProps>(({ className, context, topItems }) => {
     <div className={`py-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`}>
       <div className="flex items-center">
         <Logo className="mr-8" />
-        {topItems?.map((_) => (
-          <TopItem key={_.href} active={_ === activeTopItem} {...useLink(context, _)} />
-        ))}
+        {topItems?.length
+          ? topItems.map((_, i) => (
+              <TopItem key={String(i)} active={_ === activeTopItem} {...useLink(context, _)} />
+            ))
+          : null}
       </div>
-      {activeTopItem?.items && (
+      {activeTopItem?.items?.length ? (
         <div className="mt-10">
           {activeTopItem.items.map((_) => (
             <HeaderItem
@@ -45,7 +47,7 @@ export const Header = JSX<HeaderProps>(({ className, context, topItems }) => {
             />
           ))}
         </div>
-      )}
+      ) : null}
     </div>
   );
 });
