@@ -5,6 +5,7 @@ import { Logo } from './ui-kit/Logo';
 import { TopItem } from './ui-kit/TopItem';
 import type { Router, ContentPageContext } from './ContentPageContext';
 import { useLink } from './useLink';
+import { HeaderRightBlock } from './HeaderRightBlock';
 
 type HeaderMenuItem = LinkContent;
 
@@ -32,9 +33,10 @@ export const Header = JSX<HeaderProps>(({ className, context, topItems }) => {
         <Logo className="mr-8" />
         {topItems?.length
           ? topItems.map((_, i) => (
-              <TopItem key={String(i)} active={_ === activeTopItem} {...useLink(context, _)} />
-            ))
+            <TopItem key={String(i)} active={_ === activeTopItem} {...useLink(context, _)} />
+          ))
           : null}
+        <HeaderRightBlock className="ml-auto" />
       </div>
       {activeTopItem?.items?.length ? (
         <div className="mt-10">
