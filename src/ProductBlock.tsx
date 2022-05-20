@@ -67,7 +67,7 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
   );
 });
 
-function renderBenefit(benefit, index) {
+function renderBenefit(benefit: Benefit, index: number) {
   return (
     <div key={index} className="flex gap-4 items-center w-min">
       {benefit.icon && (
