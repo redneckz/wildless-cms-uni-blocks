@@ -75,7 +75,7 @@ function renderBenefit(benefit, index) {
           {Icons[benefit.icon]()}
         </div>
       )}
-      <div className="flex gap-1 flex-col">
+      <div className="flex gap-1 flex-col h-full">
         <h4 className="font-medium text-xl m-0 whitespace-nowrap">{benefit.label}</h4>
         {benefit.description && (
           <div className="font-normal text-sm text-second-primary">{benefit.description}</div>
