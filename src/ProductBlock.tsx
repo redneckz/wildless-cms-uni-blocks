@@ -43,8 +43,8 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
         {benefits?.length ? <div className="flex gap-6">{benefits.map(renderBenefit)}</div> : null}
         {items?.length ? (
           <section className="flex flex-col" role="list">
-            {items.map((_) => (
-              <BlockItem key={_} className="mt-6" text={_} />
+            {items.map((_, i) => (
+              <BlockItem key={String(i)} className="mt-6" text={_} />
             ))}
           </section>
         ) : null}
@@ -59,9 +59,9 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
   );
 });
 
-function renderBenefit(benefit, index) {
+function renderBenefit(benefit: Benefit, i: number) {
   return (
-    <div key={index} className="flex gap-4 items-center">
+    <div key={String(i)} className="flex gap-4 items-center">
       {benefit.icon && (
         <div className="h-11 w-11 min-w-11 min-h-11 bg-second-light rounded-full p-[10px] box-border">
           {Icons[benefit.icon]()}
