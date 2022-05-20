@@ -12,9 +12,10 @@ module.exports = {
         title2: ['2.5rem', '3rem'],
       },
       colors: {
+        main: '#F0F4F0',
         brand: '#42ab44',
-        'second-primary': '#7d7e7f',
-        'second-light': '#f5f7f9',
+        'primary-text': '#1c1c1c',
+        secondary: '#9FA79F',
         promo: '#f7f8c5',
       },
       minHeight: (theme) => ({

@@ -22,11 +22,7 @@ const blockDecorator: BlockDecorator = ({ blockClassName, block, render }) => (
 
 export default {
   default: (
-    <ContentPage
-      context={context}
-      className="bg-second-light"
-      data={require('./ContentPage.page.json')}
-    />
+    <ContentPage context={context} className="bg-main" data={require('./ContentPage.page.json')} />
   ),
   editor: (
     <div style={{ background: "url('grid.svg')" }}>
