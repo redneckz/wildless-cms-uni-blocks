@@ -33,16 +33,24 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
 
   return (
     <section
-      className={`font-sans bg-white rounded-[40px] h-[470px] flex justify-between relative overflow-hidden ${className}`}
+      className={`font-sans bg-white rounded-[40px] flex justify-between relative overflow-hidden ${
+        className || ''
+      }`}
     >
       <div className={['flex', 'flex-col', 'p-11', image && 'pr-0'].filter(Boolean).join(' ')}>
-        {title && <h1 className="font-medium text-title2 m-0 mb-4 whitespace-pre-wrap">{title}</h1>}
-        {description && (
-          <div className="font-normal text-base text-second-primary mb-7">{description}</div>
+        {title && (
+          <h1 className="font-medium text-title2 m-0 max-w-[600px] whitespace-pre-wrap">{title}</h1>
         )}
-        {benefits?.length ? <div className="flex gap-6">{benefits.map(renderBenefit)}</div> : null}
+        {description && (
+          <div className="font-normal text-base text-second-primary max-w-[600px] mt-4">
+            {description}
+          </div>
+        )}
+        {benefits?.length ? (
+          <div className="flex gap-6 mt-7">{benefits.map(renderBenefit)}</div>
+        ) : null}
         {items?.length ? (
-          <section className="flex flex-col" role="list">
+          <section className="flex flex-col mt-4" role="list">
             {items.map((_) => (
               <BlockItem key={_} className="mt-6" text={_} />
             ))}
@@ -50,25 +58,25 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
         ) : null}
         {button?.text ? (
           <div className="mt-auto">
-            <PrimaryButton {...useLink(context, button)} />
+            <PrimaryButton {...useLink(context, button)} className="mt-8" />
           </div>
         ) : null}
       </div>
-      {image && <div className="h-full flex">{<Img image={image} className="flex" />}</div>}
+      {image && <Img image={image} className="flex ml-auto mt-auto" />}
     </section>
   );
 });
 
 function renderBenefit(benefit, index) {
   return (
-    <div key={index} className="flex gap-4 items-center">
+    <div key={index} className="flex gap-4 items-center w-min">
       {benefit.icon && (
         <div className="h-11 w-11 min-w-11 min-h-11 bg-second-light rounded-full p-[10px] box-border">
           {Icons[benefit.icon]()}
         </div>
       )}
       <div className="flex gap-1 flex-col">
-        <h4 className="font-medium text-xl m-0">{benefit.label}</h4>
+        <h4 className="font-medium text-xl m-0 whitespace-nowrap">{benefit.label}</h4>
         {benefit.description && (
           <div className="font-normal text-sm text-second-primary">{benefit.description}</div>
         )}

@@ -12,7 +12,7 @@ export const Img = JSX<TextWithImageProps>(({ className, image }) => (
       image.sources.map(({ src, format }) => (
         <source key={src} srcSet={src} type={formatToMimeType(format)} />
       ))}
-    <img src={image.src} alt={image.alt} title={image.title} />
+    <img src={image.src} alt={image.alt} title={image.title} {...image?.size} />
   </picture>
 ));
 

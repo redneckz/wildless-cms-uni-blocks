@@ -5,13 +5,17 @@ import { Picture } from './types';
 
 const image: Picture = {
   src: 'worker.png',
+  format: 'webp',
+  size: {
+    width: 424,
+  },
 };
 
 export default {
   default: (
     <ProductBlock
       context={context}
-      title={'Оплата проходит \nв 180 странах мира'}
+      title={'Оплата проходит в 180 странах мира'}
       description="Онлайн-платформа, объединяющая современные решения для фермеров: продажа и покупка товаров, модернизация вашего бизнеса, поиск сотрудников, льготное финансирование"
       benefits={[
         {
