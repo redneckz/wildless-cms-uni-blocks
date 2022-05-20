@@ -26,8 +26,8 @@ export const ProductColumnBlock = JSX<ProductColumnBlockProps>(
         <p className="text-title font-medium m-0">{title}</p>
         {items?.length ? (
           <section className="flex flex-col" role="list">
-            {items.map((_) => (
-              <BlockItem key={_} className="mt-6" text={_} />
+            {items.map((_, i) => (
+              <BlockItem key={String(i)} className="mt-6" text={_} />
             ))}
           </section>
         ) : null}
