@@ -15,6 +15,7 @@ module.exports = {
         brand: '#42ab44',
         'second-primary': '#7d7e7f',
         'second-light': '#f5f7f9',
+        'secondary': '#9FA79F',
         promo: '#f7f8c5',
       },
       minHeight: (theme) => ({

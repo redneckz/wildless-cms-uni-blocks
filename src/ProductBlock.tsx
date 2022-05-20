@@ -6,6 +6,7 @@ import { Picture } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { LinkContent } from './ui-kit/Link';
 import { PrimaryButton } from './ui-kit/PrimaryButton';
+import { Breadcrumb, BreadcrumbProps } from './ui-kit/Breadcrumb';
 import { useLink } from './useLink';
 
 export interface Benefit {
@@ -17,6 +18,7 @@ export interface Benefit {
 export interface ProductBlockContent {
   title?: string;
   description?: string;
+  breadcrumbs?: BreadcrumbProps[];
   image?: Picture;
   benefits?: Benefit[];
   items?: string[];
@@ -29,13 +31,20 @@ export interface ProductBlockProps extends ProductBlockContent {
 }
 
 export const ProductBlock = JSX<ProductBlockProps>((props) => {
-  const { className, context, title, description, benefits, button, image, items } = props;
+  const { className, context, title, description, breadcrumbs, benefits, button, image, items } = props;
 
   return (
     <section
       className={`font-sans bg-white rounded-[40px] h-[470px] flex justify-between relative overflow-hidden ${className}`}
     >
       <div className={['flex', 'flex-col', 'p-11', image && 'pr-0'].filter(Boolean).join(' ')}>
+        {breadcrumbs && breadcrumbs.length && (
+          <div className="text-xs mb-6">
+            {breadcrumbs?.map((breadcrumb) => (
+              <Breadcrumb {...useLink(context, { className: 'text-secondary', ...breadcrumb })} />
+            )).reduce((prev, curr) => [prev, <span className="text-secondary mx-2">/</span>, curr])}
+          </div>
+        )}
         {title && <h1 className="font-medium text-title2 m-0 mb-4 whitespace-pre-wrap">{title}</h1>}
         {description && (
           <div className="font-normal text-base text-second-primary mb-7">{description}</div>
