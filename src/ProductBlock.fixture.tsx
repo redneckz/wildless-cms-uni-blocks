@@ -55,19 +55,7 @@ export default {
     <ProductBlock
       context={context}
       title={'Оплата проходит \nв 180 странах мира'}
-      breadcrumbs={[
-        {
-          text: 'Главная',
-          href: '/',
-        },
-        {
-          text: 'Кредитные карты',
-          href: '/credit',
-        },
-        {
-          text: 'Кредитная карта Своя Union Pay',
-        },
-      ]}
+      breadcrumbs={[]}
       items={[
         'Совершайте любые личные покупки',
         'Используйте корпоративную карту как обычную дебетовую, если вы ИП',

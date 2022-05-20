@@ -38,13 +38,13 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
       className={`font-sans bg-white rounded-[40px] h-[470px] flex justify-between relative overflow-hidden ${className}`}
     >
       <div className={['flex', 'flex-col', 'p-11', image && 'pr-0'].filter(Boolean).join(' ')}>
-        {breadcrumbs && breadcrumbs.length && (
+        {breadcrumbs?.length ? (
           <div className="text-xs mb-6">
-            {breadcrumbs?.map((breadcrumb) => (
-              <Breadcrumb {...useLink(context, { className: 'text-secondary', ...breadcrumb })} />
+            {breadcrumbs.map((breadcrumb, i) => (
+              <Breadcrumb key={String(i)} {...useLink(context, { className: 'text-secondary', ...breadcrumb })} />
             )).reduce((prev, curr) => [prev, <span className="text-secondary mx-2">/</span>, curr])}
           </div>
-        )}
+        ) : null}
         {title && <h1 className="font-medium text-title2 m-0 mb-4 whitespace-pre-wrap">{title}</h1>}
         {description && (
           <div className="font-normal text-base text-second-primary mb-7">{description}</div>
