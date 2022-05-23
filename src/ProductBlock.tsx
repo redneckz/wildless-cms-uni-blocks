@@ -4,7 +4,7 @@ import { Icons } from './Icons';
 import { Img } from './Img';
 import { Picture } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
-import type { LinkContent } from './ui-kit/Link';
+import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
 import { Breadcrumb, BreadcrumbProps } from './ui-kit/Breadcrumb';
 import { useLink } from './useLink';
@@ -22,7 +22,7 @@ export interface ProductBlockContent {
   image?: Picture;
   benefits?: Benefit[];
   items?: string[];
-  buttons?: LinkContent[];
+  buttons?: ButtonProps[];
 }
 
 export interface ProductBlockProps extends ProductBlockContent {
@@ -36,11 +36,11 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
 
   return (
     <section
-      className={`font-sans bg-white p-11 pr-[7.5rem] rounded-[40px] flex justify-between relative overflow-hidden ${
+      className={`font-sans bg-white p-11 pr-[7.5rem] rounded-[40px] flex justify-between items-stretch ${
         className || ''
       }`}
     >
-      <div className="flex text-primary-text flex-col">
+      <div className="flex flex-col text-primary-text">
         {breadcrumbs?.length ? (
           <div className="text-xs mb-6">
             {breadcrumbs
@@ -69,23 +69,28 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
           <div className="flex gap-6 mt-7">{benefits.map(renderBenefit)}</div>
         ) : null}
         {items?.length ? (
-          <section className="flex flex-col mt-4" role="list">
+          <section role="list">
             {items.map((_, i) => (
               <BlockItem key={String(i)} className="mt-6" text={_} />
             ))}
           </section>
         ) : null}
         {buttons?.length ? (
-          <div className="mt-auto flex gap-4">
+          <div className="flex mt-auto gap-4">
             {buttons.map((button, index) =>
               button?.text ? (
-                <Button key={String(index)} {...useLink(context, button)} className="mt-8" variant={button.variant} />
+                <Button
+                  key={String(index)}
+                  {...useLink(context, button)}
+                  className="mt-8"
+                  variant={button.variant}
+                />
               ) : null,
             )}
           </div>
         ) : null}
       </div>
-      {image && <Img image={image} className="flex ml-auto mt-auto" />}
+      {image && <Img image={image} className="mt-auto" />}
     </section>
   );
 });

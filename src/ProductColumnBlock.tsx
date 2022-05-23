@@ -1,14 +1,14 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import { BlockItem } from './ui-kit/BlockItem';
-import type { LinkContent } from './ui-kit/Link';
+import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
 import { useLink } from './useLink';
 
 export interface ProductColumnBlockContent {
   title?: string;
   items?: string[];
-  button?: LinkContent;
+  button?: ButtonProps;
   promo?: boolean;
 }
 
