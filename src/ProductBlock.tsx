@@ -77,16 +77,7 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
         ) : null}
         {buttons?.length ? (
           <div className="flex mt-auto gap-4">
-            {buttons.map((button, index) =>
-              button?.text ? (
-                <Button
-                  key={String(index)}
-                  {...useLink(context, button)}
-                  className="mt-8"
-                  variant={button.variant}
-                />
-              ) : null,
-            )}
+            {buttons.map((button, index) => renderButton(button, index, context))}
           </div>
         ) : null}
       </div>
@@ -111,4 +102,15 @@ function renderBenefit(benefit: Benefit, i: number) {
       </div>
     </div>
   );
+}
+
+function renderButton(button: ButtonProps, i: number, context: ContentPageContext) {
+  return button?.text ? (
+    <Button
+      key={String(i)}
+      {...useLink(context, button)}
+      className="mt-8"
+      variant={button.variant}
+    />
+  ) : null;
 }
