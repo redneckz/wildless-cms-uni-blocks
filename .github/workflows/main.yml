@@ -21,6 +21,12 @@ jobs:
       - run: npm test
         env:
           CI: true
+      - uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: |
+            dist/
+            lib/
 
   publish:
     if: github.ref == 'refs/heads/main'
@@ -32,6 +38,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - uses: actions/download-artifact@v3
+        with:
+          name: dist
       - run: |
           npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
           npm publish --access=public --ignore-scripts
