@@ -3,6 +3,18 @@
 
 @layer utilities {
   .rotate-180 {
-    transform: rotate(180deg)
+    transform: rotate(180deg);
   }
+}
+
+.btn {
+  @apply inline-block rounded-3xl px-9 py-3.5 text-center font-sans no-underline;
+}
+
+.btn.btn-primary {
+  @apply text-white bg-brand;
+}
+
+.btn.btn-secondary {
+  @apply text-brand bg-main;
 }

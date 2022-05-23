@@ -10,6 +10,16 @@ const image: Picture = {
     width: 300,
     height: 300,
   },
+  sources: [
+    {
+      src: 'money-1.png',
+      format: 'webp',
+      size: {
+        width: 300,
+        height: 300,
+      },
+    }
+  ]
 };
 
 export default {
@@ -53,11 +63,13 @@ export default {
           href: 'https://rshb.ru',
           text: 'Оформить карту',
           target: '_blank',
+          variant: 'primary',
         },
         {
           href: 'https://rshb.ru',
           text: 'Подробнее',
           target: '_blank',
+          variant: 'secondary',
         },
       ]}
       image={image}
@@ -78,11 +90,13 @@ export default {
           href: 'https://rshb.ru',
           text: 'Оформить карту',
           target: '_blank',
+          variant: 'primary',
         },
         {
           href: 'https://rshb.ru',
           text: 'Подробнее',
           target: '_blank',
+          variant: 'secondary',
         },
       ]}
       image={image}

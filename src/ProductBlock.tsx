@@ -5,7 +5,7 @@ import { Img } from './Img';
 import { Picture } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { LinkContent } from './ui-kit/Link';
-import { PrimaryButton } from './ui-kit/PrimaryButton';
+import { Button } from './ui-kit/Button';
 import { Breadcrumb, BreadcrumbProps } from './ui-kit/Breadcrumb';
 import { useLink } from './useLink';
 
@@ -40,7 +40,7 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
         className || ''
       }`}
     >
-      <div className={'flex text-primary-text flex-col'}>
+      <div className="flex text-primary-text flex-col">
         {breadcrumbs?.length ? (
           <div className="text-xs mb-6">
             {breadcrumbs
@@ -79,7 +79,7 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
           <div className="mt-auto flex gap-4">
             {buttons.map((button, index) =>
               button?.text ? (
-                <PrimaryButton key={String(index)} {...useLink(context, button)} className="mt-8" />
+                <Button key={String(index)} {...useLink(context, button)} className="mt-8" variant={button.variant} />
               ) : null,
             )}
           </div>

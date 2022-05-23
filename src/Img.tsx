@@ -9,8 +9,8 @@ export interface TextWithImageProps {
 export const Img = JSX<TextWithImageProps>(({ className, image }) => (
   <picture className={className || ''}>
     {image.sources?.length
-      ? image.sources.map(({ src, format }) => (
-          <source key={src} srcSet={src} type={formatToMimeType(format)} />
+      ? image.sources.map(({ src, format }, index) => (
+          <source key={`${index}_${src}`} srcSet={src} type={formatToMimeType(format)} />
         ))
       : null}
     <img src={image.src} alt={image.alt} title={image.title} {...image?.size} />

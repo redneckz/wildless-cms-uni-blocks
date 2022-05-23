@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { LinkContent } from './ui-kit/Link';
-import { PrimaryButton } from './ui-kit/PrimaryButton';
+import { Button } from './ui-kit/Button';
 import { useLink } from './useLink';
 
 export interface ProductColumnBlockContent {
@@ -31,7 +31,7 @@ export const ProductColumnBlock = JSX<ProductColumnBlockProps>(
             ))}
           </section>
         ) : null}
-        {button?.text ? <PrimaryButton className="mt-12" {...useLink(context, button)} /> : null}
+        {button?.text ? <Button className="mt-12" {...useLink(context, button)} /> : null}
         {promo && (
           <div className="absolute right-0 bottom-0 bg-promo font-normal px-12 py-3 text-xl rounded-tl-[74px] rounded-br-[40px]">
             Акция
