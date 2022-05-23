@@ -10,16 +10,6 @@ const image: Picture = {
     width: 300,
     height: 300,
   },
-  sources: [
-    {
-      src: 'money-1.png',
-      format: 'webp',
-      size: {
-        width: 300,
-        height: 300,
-      },
-    }
-  ]
 };
 
 export default {
