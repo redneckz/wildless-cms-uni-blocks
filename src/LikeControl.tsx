@@ -12,7 +12,7 @@ export const LikeControl = JSX<LikeControlProps>(({ className, context }) => {
 
   return (
     <div
-      className={`border-second-light border-2 border-solid bg-white flex w-[125px] items-center justify-center gap-3 p-2 font-sans ${
+      className={`border-main border-2 border-solid bg-white flex w-[125px] items-center justify-center gap-3 p-2 font-sans ${
         className || ''
       }`}
     >

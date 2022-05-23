@@ -30,13 +30,16 @@ export const ContentPage = JSX<ContentPageProps>(
     blockDecorator = defaultBlockDecorator,
   }) => {
     return (
-      <section>
+      <section className="relative">
         <div className={`grid grid-cols-12 ${style2className(pageStyle)} ${className}`}>
           {blocks?.length ? blocks.map(renderBlock) : null}
         </div>
         {likeControl && (
-          <div className="flex justify-end sticky bottom-0 pointer-events-none">
-            <LikeControl className="rounded-tl-lg pointer-events-auto" context={context} />
+          <div className="flex items-end absolute bottom-0 right-0 h-full pointer-events-none">
+            <LikeControl
+              className="rounded-tl-lg sticky bottom-0 pointer-events-auto"
+              context={context}
+            />
           </div>
         )}
       </section>
