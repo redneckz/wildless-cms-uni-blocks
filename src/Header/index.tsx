@@ -1,11 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent } from './ui-kit/Link';
-import { HeaderItem } from './ui-kit/HeaderItem';
-import { Logo } from './ui-kit/Logo';
-import { TopItem } from './ui-kit/TopItem';
-import type { Router, ContentPageContext } from './ContentPageContext';
-import { useLink } from './useLink';
-import { HeaderRightBlock } from './HeaderRightBlock';
+import type { LinkContent } from '../ui-kit/Link';
+import { HeaderItem } from '../ui-kit/HeaderItem';
+import { Logo } from '../ui-kit/Logo';
+import { TopItem } from '../ui-kit/TopItem';
+import type { Router, ContentPageContext } from '../ContentPageContext';
+import { useLink } from '../useLink';
+import { HeaderSecondaryMenu } from './HeaderSecondaryMenu';
 
 type HeaderMenuItem = LinkContent;
 
@@ -14,6 +14,7 @@ interface TopMenuItem extends HeaderMenuItem {
 }
 
 export interface HeaderContent {
+  location?: string,
   topItems?: TopMenuItem[];
 }
 
@@ -22,7 +23,7 @@ export interface HeaderProps extends HeaderContent {
   context: ContentPageContext;
 }
 
-export const Header = JSX<HeaderProps>(({ className, context, topItems }) => {
+export const Header = JSX<HeaderProps>(({ className, location, context, topItems }) => {
   const router = context.useRouter();
 
   const activeTopItem = topItems?.find(isTopItemActive(router));
@@ -36,7 +37,7 @@ export const Header = JSX<HeaderProps>(({ className, context, topItems }) => {
             <TopItem key={String(i)} active={_ === activeTopItem} {...useLink(context, _)} />
           ))
           : null}
-        <HeaderRightBlock className="ml-auto" />
+        <HeaderSecondaryMenu location={location} className="ml-auto" />
       </div>
       {activeTopItem?.items?.length ? (
         <div className="mt-10">

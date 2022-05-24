@@ -1,10 +1,11 @@
-import { context } from './setup-fixture';
+import { context } from '../setup-fixture';
 
-import { Header } from './Header';
+import { Header } from './index';
 
 export default (
   <Header
     context={context}
+    location='Москва'
     topItems={[
       {
         href: '/',
