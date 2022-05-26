@@ -1,6 +1,6 @@
 import { context } from './setup-fixture';
 
-import { ProductBlock } from './ProductBlock';
+import { ProductTile } from './ProductTile';
 import { Picture } from './types';
 
 const image: Picture = {
@@ -14,7 +14,7 @@ const image: Picture = {
 
 export default {
   default: (
-    <ProductBlock
+    <ProductTile
       context={context}
       title={'Потребительский кредит наличными'}
       description="Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт."
@@ -53,20 +53,20 @@ export default {
           href: 'https://rshb.ru',
           text: 'Оформить карту',
           target: '_blank',
-          variant: 'primary',
+          version: 'primary',
         },
         {
           href: 'https://rshb.ru',
           text: 'Подробнее',
           target: '_blank',
-          variant: 'secondary',
+          version: 'secondary',
         },
       ]}
       image={image}
     />
   ),
   'with items': (
-    <ProductBlock
+    <ProductTile
       context={context}
       title={'Оплата проходит \nв 180 странах мира'}
       breadcrumbs={[]}
@@ -80,13 +80,13 @@ export default {
           href: 'https://rshb.ru',
           text: 'Оформить карту',
           target: '_blank',
-          variant: 'primary',
+          version: 'primary',
         },
         {
           href: 'https://rshb.ru',
           text: 'Подробнее',
           target: '_blank',
-          variant: 'secondary',
+          version: 'secondary',
         },
       ]}
       image={image}

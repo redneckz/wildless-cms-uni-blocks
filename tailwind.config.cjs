@@ -8,7 +8,7 @@ module.exports = {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
-        title: ['2rem', '2.5rem'],
+        title: ['1.75rem', '2.5rem'],
         title2: ['2.5rem', '3rem'],
       },
       colors: {
