@@ -2,29 +2,19 @@
   "title": "Кредиты",
   "slug": "credits",
   "description": "Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.",
-  "keywords": [
-    "кредит",
-    "акция"
-  ],
-  "robots": [
-    "index",
-    "follow"
-  ],
+  "keywords": ["кредит", "акция"],
+  "robots": ["index", "follow"],
   "og": {
     "type": "article",
     "url": "https://foo.com/bar/baz"
   },
   "date": "2022-04-08",
-  "style": [
-    "gap-5 p-20 pt-0"
-  ],
+  "style": ["gap-5 p-20 pt-0"],
   "likeControl": true,
   "blocks": [
     {
       "type": "Header",
-      "style": [
-        "col-span-12"
-      ],
+      "style": ["col-span-12"],
       "content": {
         "topItems": [
           {
@@ -80,10 +70,7 @@
     },
     {
       "type": "ProductTile",
-      "style": [
-        "col-span-8",
-        "h-[308px]"
-      ],
+      "style": ["col-span-8", "h-[308px]"],
       "content": {
         "title": "Кредиты",
         "items": [
@@ -111,10 +98,7 @@
     {
       "type": "ProductTile",
       "variant": "secondary",
-      "style": [
-        "col-span-4",
-        "h-[308px]"
-      ],
+      "style": ["col-span-4", "h-[308px]"],
       "content": {
         "title": "Ипотека",
         "description": "Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %",
@@ -130,10 +114,7 @@
     },
     {
       "type": "ProductTile",
-      "style": [
-        "col-span-6",
-        "h-[308px]"
-      ],
+      "style": ["col-span-6", "h-[308px]"],
       "content": {
         "title": "Банковские пластиковые карты",
         "items": [
@@ -160,10 +141,7 @@
     },
     {
       "type": "ProductTile",
-      "style": [
-        "col-span-6",
-        "h-[308px]"
-      ],
+      "style": ["col-span-6", "h-[308px]"],
       "content": {
         "title": "Премиальные продукты",
         "description": "Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус",
@@ -186,9 +164,7 @@
     },
     {
       "type": "ProductTile",
-      "style": [
-        "col-span-12"
-      ],
+      "style": ["col-span-12"],
       "content": {
         "title": "Экосистема «СВОЕ», созданная для людей",
         "items": [
@@ -216,9 +192,7 @@
     },
     {
       "type": "ProductTile",
-      "style": [
-        "col-span-4"
-      ],
+      "style": ["col-span-4"],
       "variant": "secondary",
       "content": {
         "title": "Драгоценные металлы",
@@ -237,9 +211,7 @@
     },
     {
       "type": "ProductTile",
-      "style": [
-        "col-span-4"
-      ],
+      "style": ["col-span-4"],
       "variant": "secondary",
       "content": {
         "title": "Банковские ячейки",
@@ -259,9 +231,7 @@
     },
     {
       "type": "ProductTile",
-      "style": [
-        "col-span-4"
-      ],
+      "style": ["col-span-4"],
       "variant": "secondary",
       "content": {
         "title": "Вклады и сбережения",
