@@ -82,7 +82,7 @@
           {
             "text": "Подробнее",
             "href": "/credit-cards",
-            "variant": "secondary"
+            "version": "secondary"
           }
         ],
         "image": {
@@ -97,7 +97,7 @@
     },
     {
       "type": "ProductTile",
-      "variant": "secondary",
+      "version": "secondary",
       "style": ["col-span-4", "h-[308px]"],
       "content": {
         "title": "Ипотека",
@@ -106,7 +106,7 @@
           {
             "text": "Подробнее",
             "href": "/credits",
-            "variant": "secondary"
+            "version": "secondary"
           }
         ],
         "promo": true
@@ -126,7 +126,7 @@
           {
             "text": "Подробнее",
             "href": "/credits",
-            "variant": "secondary"
+            "version": "secondary"
           }
         ],
         "image": {
@@ -149,7 +149,7 @@
           {
             "text": "Подробнее",
             "href": "/credits",
-            "variant": "secondary"
+            "version": "secondary"
           }
         ],
         "image": {
@@ -177,7 +177,7 @@
           {
             "text": "Подробнее",
             "href": "/credits",
-            "variant": "secondary"
+            "version": "secondary"
           }
         ],
         "image": {
@@ -193,7 +193,7 @@
     {
       "type": "ProductTile",
       "style": ["col-span-4"],
-      "variant": "secondary",
+      "version": "secondary",
       "content": {
         "title": "Драгоценные металлы",
         "items": [
@@ -204,7 +204,7 @@
           {
             "text": "Подробнее",
             "href": "/credits",
-            "variant": "secondary"
+            "version": "secondary"
           }
         ]
       }
@@ -212,7 +212,7 @@
     {
       "type": "ProductTile",
       "style": ["col-span-4"],
-      "variant": "secondary",
+      "version": "secondary",
       "content": {
         "title": "Банковские ячейки",
         "items": [
@@ -224,7 +224,7 @@
           {
             "text": "Подробнее",
             "href": "/credits",
-            "variant": "secondary"
+            "version": "secondary"
           }
         ]
       }
@@ -232,7 +232,7 @@
     {
       "type": "ProductTile",
       "style": ["col-span-4"],
-      "variant": "secondary",
+      "version": "secondary",
       "content": {
         "title": "Вклады и сбережения",
         "items": [
@@ -244,7 +244,7 @@
           {
             "text": "Подробнее",
             "href": "/credits",
-            "variant": "secondary"
+            "version": "secondary"
           }
         ]
       }

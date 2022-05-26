@@ -17,7 +17,7 @@ import type { TextContent } from './Text';
 import type { TextWithImageContent } from './TextWithImage';
 import type { ProductTileContent } from './ProductTile';
 
-export type BlockVariant = 'primary' | 'secondary';
+export type BlockVersion = 'primary' | 'secondary';
 
 export type BlockContent =
   | ProductColumnBlockContent
@@ -31,7 +31,7 @@ export type BlockContent =
 export interface BlockDef {
   type: string;
   style?: string[];
-  variant?: BlockVariant;
+  version?: BlockVersion;
   content?: BlockContent;
   blocks?: BlockDef[];
 }

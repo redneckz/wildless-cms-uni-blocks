@@ -53,13 +53,13 @@ export default {
           href: 'https://rshb.ru',
           text: 'Оформить карту',
           target: '_blank',
-          variant: 'primary',
+          version: 'primary',
         },
         {
           href: 'https://rshb.ru',
           text: 'Подробнее',
           target: '_blank',
-          variant: 'secondary',
+          version: 'secondary',
         },
       ]}
       image={image}
@@ -80,13 +80,13 @@ export default {
           href: 'https://rshb.ru',
           text: 'Оформить карту',
           target: '_blank',
-          variant: 'primary',
+          version: 'primary',
         },
         {
           href: 'https://rshb.ru',
           text: 'Подробнее',
           target: '_blank',
-          variant: 'secondary',
+          version: 'secondary',
         },
       ]}
       image={image}

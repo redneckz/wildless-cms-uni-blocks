@@ -1,30 +1,30 @@
 import { JSX } from '@redneckz/uni-jsx';
 
-type BlockItemVariant = 'primary' | 'secondary';
+type BlockItemVersion = 'primary' | 'secondary';
 export interface BlockItemContent {
   text?: string;
 }
 
 export interface BlockItemProps extends BlockItemContent {
   className?: string;
-  variant?: BlockItemVariant;
+  version?: BlockItemVersion;
 }
 
-const variantListStyleMap: Record<BlockItemVariant, string> = {
+const listStyleMap: Record<BlockItemVersion, string> = {
   primary: 'bg-brand',
   secondary: 'bg-white',
 }
 
-const variantTextStyleMap: Record<BlockItemVariant, string> = {
+const textStyleMap: Record<BlockItemVersion, string> = {
   primary: 'text-primary-text',
   secondary: 'text-white',
 }
 
-export const BlockItem = JSX<BlockItemProps>(({ className, text, children, variant = 'primary' }) => {
+export const BlockItem = JSX<BlockItemProps>(({ className, text, children, version = 'primary' }) => {
   return (
     <div className={`inline-block flex items-center ${className || ''}`} role="listitem">
-      <div className={`inline-block w-[8px] h-[8px] rounded-full ${variantListStyleMap[variant]}`}></div>
-      <span className={`text-base font-normal font-sans mx-3 ${variantTextStyleMap[variant]}`}>
+      <div className={`inline-block w-[8px] h-[8px] rounded-full ${listStyleMap[version]}`}></div>
+      <span className={`text-base font-normal font-sans mx-3 ${textStyleMap[version]}`}>
         {text || children}
       </span>
     </div>

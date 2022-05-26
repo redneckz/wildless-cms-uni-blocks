@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import { Icons } from './Icons';
 import { Img } from './Img';
-import { BlockVariant, Picture } from './types';
+import { BlockVersion, Picture } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
@@ -27,22 +27,19 @@ export interface ProductTileContent {
 
 export interface ProductTileProps extends ProductTileContent {
   className?: string;
-  variant?: BlockVariant;
+  version?: BlockVersion;
   context: ContentPageContext;
 }
 
-const variantProductBlockStyleMap: Record<BlockVariant, string> = {
+const productBlockStyleMap: Record<BlockVersion, string> = {
   primary: 'bg-white text-primary-text',
   secondary: 'bg-brand text-white',
 }
 
-export const ProductTile = JSX<ProductTileProps>((props) => {
-  const { className, context, title, description, breadcrumbs, benefits, buttons, image, items, variant = 'primary' } =
-    props;
-
+export const ProductTile = JSX<ProductTileProps>(({ className, context, title, description, breadcrumbs, benefits, buttons, image, items, version = 'primary' }) => {
   return (
     <section
-      className={`font-sans p-9 rounded-[40px] flex justify-between items-stretch relative ${className || ''} ${variantProductBlockStyleMap[variant]}`}
+      className={`font-sans p-9 rounded-[40px] flex justify-between items-stretch relative ${className || ''} ${productBlockStyleMap[version]}`}
     >
       <div className="flex flex-col">
         {breadcrumbs?.length ? (
@@ -69,7 +66,7 @@ export const ProductTile = JSX<ProductTileProps>((props) => {
         {items?.length ? (
           <section className="space-y-2.5 mt-5" role="list">
             {items.map((_, i) => (
-              <BlockItem key={String(i)} text={_} variant={variant} />
+              <BlockItem key={String(i)} text={_} version={version} />
             ))}
           </section>
         ) : null}
@@ -108,7 +105,7 @@ function renderButton(button: ButtonProps, i: number, context: ContentPageContex
       key={String(i)}
       {...useLink(context, button)}
       className="mt-8"
-      variant={button.variant}
+      version={button.version}
     />
   ) : null;
 }
