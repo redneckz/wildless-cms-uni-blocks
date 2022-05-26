@@ -15,7 +15,9 @@ import type { ProductColumnBlockContent } from './ProductColumnBlock';
 import type { RichTextContent } from './RichText';
 import type { TextContent } from './Text';
 import type { TextWithImageContent } from './TextWithImage';
-import type { ProductBlockContent } from './ProductBlock';
+import type { ProductTileContent } from './ProductTile';
+
+export type BlockVariant = 'primary' | 'secondary';
 
 export type BlockContent =
   | ProductColumnBlockContent
@@ -24,11 +26,12 @@ export type BlockContent =
   | TextWithImageContent
   | RichTextContent
   | PlaceholderContent
-  | ProductBlockContent;
+  | ProductTileContent;
 
 export interface BlockDef {
   type: string;
   style?: string[];
+  variant?: BlockVariant;
   content?: BlockContent;
   blocks?: BlockDef[];
 }
@@ -58,13 +61,13 @@ export interface ImgSource {
   src: string;
   format?: keyof FormatEnum;
   options?:
-    | JpegOptions
-    | PngOptions
-    | WebpOptions
-    | AvifOptions
-    | HeifOptions
-    | GifOptions
-    | TiffOptions;
+  | JpegOptions
+  | PngOptions
+  | WebpOptions
+  | AvifOptions
+  | HeifOptions
+  | GifOptions
+  | TiffOptions;
   size?: ResizeOptions;
 }
 

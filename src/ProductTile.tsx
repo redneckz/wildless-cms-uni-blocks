@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import { Icons } from './Icons';
 import { Img } from './Img';
-import { Picture } from './types';
+import { BlockVariant, Picture } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
@@ -15,7 +15,7 @@ export interface Benefit {
   icon?: keyof typeof Icons;
 }
 
-export interface ProductBlockContent {
+export interface ProductTileContent {
   title?: string;
   description?: string;
   breadcrumbs?: BreadcrumbProps[];
@@ -25,22 +25,26 @@ export interface ProductBlockContent {
   buttons?: ButtonProps[];
 }
 
-export interface ProductBlockProps extends ProductBlockContent {
+export interface ProductTileProps extends ProductTileContent {
   className?: string;
+  variant?: BlockVariant;
   context: ContentPageContext;
 }
 
-export const ProductBlock = JSX<ProductBlockProps>((props) => {
-  const { className, context, title, description, breadcrumbs, benefits, buttons, image, items } =
+const variantProductBlockStyleMap: Record<BlockVariant, string> = {
+  primary: 'bg-white text-primary-text',
+  secondary: 'bg-brand text-white',
+}
+
+export const ProductTile = JSX<ProductTileProps>((props) => {
+  const { className, context, title, description, breadcrumbs, benefits, buttons, image, items, variant = 'primary' } =
     props;
 
   return (
     <section
-      className={`font-sans bg-white p-11 pr-[7.5rem] rounded-[40px] flex justify-between items-stretch ${
-        className || ''
-      }`}
+      className={`font-sans p-9 rounded-[40px] flex justify-between items-stretch relative ${className || ''} ${variantProductBlockStyleMap[variant]}`}
     >
-      <div className="flex flex-col text-primary-text">
+      <div className="flex flex-col">
         {breadcrumbs?.length ? (
           <div className="text-xs mb-6">
             {breadcrumbs
@@ -60,7 +64,7 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
           </div>
         ) : null}
         {title && (
-          <h1 className="font-medium text-title2 m-0 max-w-[600px] whitespace-pre-wrap">{title}</h1>
+          <h1 className="font-medium text-title m-0 whitespace-pre-wrap">{title}</h1>
         )}
         {description && (
           <div className="font-normal text-base max-w-[600px] mt-4">{description}</div>
@@ -69,9 +73,9 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
           <div className="flex gap-6 mt-7">{benefits.map(renderBenefit)}</div>
         ) : null}
         {items?.length ? (
-          <section role="list">
+          <section className="space-y-2.5 mt-5" role="list">
             {items.map((_, i) => (
-              <BlockItem key={String(i)} className="mt-6" text={_} />
+              <BlockItem key={String(i)} text={_} variant={variant} />
             ))}
           </section>
         ) : null}
@@ -81,7 +85,7 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
           </div>
         ) : null}
       </div>
-      {image && <Img image={image} className="mt-auto" />}
+      {image && <Img image={image} className="absolute bottom-9 right-9" />}
     </section>
   );
 });

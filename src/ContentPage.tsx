@@ -57,11 +57,12 @@ export const ContentPage = JSX<ContentPageProps>(
         blockClassName: style2className(block.style),
         block,
         render: (props) => {
-          const { content, blocks } = props.block;
+          const { variant, content, blocks } = props.block;
           return (
             <BlockComponent
               key={`${type}-${i}`}
               className={props.blockClassName}
+              variant={variant}
               context={context}
               {...content}
             >
