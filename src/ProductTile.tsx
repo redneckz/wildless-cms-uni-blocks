@@ -47,20 +47,14 @@ export const ProductTile = JSX<ProductTileProps>((props) => {
       <div className="flex flex-col">
         {breadcrumbs?.length ? (
           <div className="text-xs mb-6">
-            {breadcrumbs
-              .map((breadcrumb, i) => (
+            {join(<span className="text-secondary mx-2">/</span>)
+              (breadcrumbs.map((breadcrumb, i) => (
                 <Breadcrumb
                   key={String(i)}
                   {...useLink(context, { className: 'text-secondary', ...breadcrumb })}
                 />
-              ))
-              .reduce((prev, curr, i) => [
-                prev,
-                <span key={`delimiter_${i}`} className="text-secondary mx-2">
-                  /
-                </span>,
-                curr,
-              ])}
+              )))
+            }
           </div>
         ) : null}
         {title && (
@@ -117,4 +111,11 @@ function renderButton(button: ButtonProps, i: number, context: ContentPageContex
       variant={button.variant}
     />
   ) : null;
+}
+
+function join<E>(sep: E): (list: E[]) => E[] {
+  return (list) => list.reduce(
+    (acc, el) => (acc.length ? acc.concat(sep, el) : [el]),
+    [] as E[]
+  );
 }
