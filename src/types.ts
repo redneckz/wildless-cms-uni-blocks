@@ -19,6 +19,8 @@ import type { ProductTileContent } from './ProductTile';
 
 export type BlockVersion = 'primary' | 'secondary';
 
+export type ColorPalette = 'pc' | 'bc' | 'eo';
+
 export type BlockContent =
   | ProductColumnBlockContent
   | HeaderContent
@@ -49,6 +51,7 @@ export interface ContentPageDef extends ContentPageMeta {
   style?: string[];
   blocks?: BlockDef[];
   likeControl?: boolean;
+  colorPalette?: ColorPalette,
 }
 
 export interface Img {

@@ -13,10 +13,26 @@ module.exports = {
       },
       colors: {
         main: '#F0F4F0',
-        brand: '#42ab44',
-        'primary-text': '#1c1c1c',
-        secondary: '#9FA79F',
-        'secondary-hover': '#E5F3E5',
+        primary: {
+          main: 'var(--color-primary-main)',
+          hover: 'var(--color-primary-hover)',
+          active: 'var(--color-primary-active)',
+          // Text
+          text: '#1C1C1C',
+        },
+        secondary: {
+          hover: 'var(--color-secondary-hover)',
+          active: 'var(--color-secondary-active)',
+          // Gray
+          light: '#F5F7F9',
+          dark: '#E2E4E5',
+          // Text
+          text: '#7D7E7F',
+        },
+
+        // Deprecated. // TODO: Remove this shit
+        //secondary: '#9FA79F',
+        //'secondary-hover': '#E5F3E5',
         promo: '#f7f8c5',
       },
       minHeight: (theme) => ({
