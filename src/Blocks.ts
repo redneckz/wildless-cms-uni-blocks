@@ -1,4 +1,4 @@
-import { Header } from './Header';
+import { Header } from './Header/index';
 import { Placeholder } from './Placeholder';
 import { ProductColumnBlock } from './ProductColumnBlock';
 import { RichText } from './RichText';
