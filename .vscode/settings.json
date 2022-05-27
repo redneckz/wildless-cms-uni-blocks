@@ -2,5 +2,11 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "javascript.preferences.importModuleSpecifierEnding": "js",
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "json.schemas": [
+    {
+      "fileMatch": ["cosmos.config.json"],
+      "url": "http://json.schemastore.org/cosmos-config"
+    }
+  ]
 }

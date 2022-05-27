@@ -1,5 +1,6 @@
 {
   "globalImports": ["src/common.css"],
   "port": 5001,
-  "staticPath": "cosmos-static"
+  "staticPath": "cosmos-static",
+  "exportPath": "docs"
 }
