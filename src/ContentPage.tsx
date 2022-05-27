@@ -25,12 +25,12 @@ const defaultBlockDecorator: BlockDecorator = ({ blockClassName, block, render }
 export const ContentPage = JSX<ContentPageProps>(
   ({
     className,
-    data: { style: pageStyle, blocks, likeControl },
+    data: { style: pageStyle, blocks, likeControl, colorPalette = 'pc' },
     context,
     blockDecorator = defaultBlockDecorator,
   }) => {
     return (
-      <section className="relative">
+      <section className="relative" data-theme={colorPalette}>
         <div className={`grid grid-cols-12 ${style2className(pageStyle)} ${className}`}>
           {blocks?.length ? blocks.map(renderBlock) : null}
         </div>

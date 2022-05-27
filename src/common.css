@@ -1,3 +1,28 @@
+/* Private clients | Green */
+[data-theme='pc'] {
+  --color-primary-main: #42ab44;
+  --color-primary-hover: #248341;
+  --color-primary-active: #245f34;
+  --color-secondary-hover: #c5e2c6;
+  --color-secondary-active: #d8f2d9;
+}
+/* Business clients | Light-Green */
+[data-theme='bc'] {
+  --color-primary-main: #83b83e;
+  --color-primary-hover: #5c921d;
+  --color-primary-active: #3c5e10;
+  --color-secondary-hover: #e8f4d9;
+  --color-secondary-active: #d8e3ca;
+}
+/* Ecosystem own | Yellow */
+[data-theme='eo'] {
+  --color-primary-main: #ddb63d;
+  --color-primary-hover: #bb9727;
+  --color-primary-active: #7e630c;
+  --color-secondary-hover: #f1ecdd;
+  --color-secondary-active: #e5dec7;
+}
+
 @tailwind components;
 @tailwind utilities;
 

@@ -21,7 +21,11 @@ export const Logo = JSX<LogoProps>(({ className, href, children }) => {
       href={href || 'https://rshb.ru/'}
       target="_blank"
     >
-      <SVG className="text-brand w-10" viewBox="0 0 40 45" paths={LOGO_PATHS.map((d) => ({ d }))} />
+      <SVG
+        className="text-primary-main w-10"
+        viewBox="0 0 40 45"
+        paths={LOGO_PATHS.map((d) => ({ d }))}
+      />
       <span className="text-black text-base font-medium ml-2.5">
         {children || 'Россельхозбанк'}
       </span>

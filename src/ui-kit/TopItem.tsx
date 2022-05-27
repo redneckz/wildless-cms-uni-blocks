@@ -12,8 +12,8 @@ export interface TopItemProps extends TopItemContent {
 
 export const TopItem = JSX<TopItemProps>(
   ({ className, text, href, target, active, onClick, children }) => {
-    const linkStyle = active ? 'border-brand rounded-3xl' : 'border-transparent';
-    const textStyle = active ? 'text-brand' : 'text-black hover:text-brand';
+    const linkStyle = active ? 'border-primary-main rounded-3xl' : 'border-transparent';
+    const textStyle = active ? 'text-primary-main' : 'text-black hover:text-primary-main';
     return (
       <a
         className={`${linkStyle} border border-solid inline-block bg-transparent px-4 py-2 text-center font-sans no-underline ${

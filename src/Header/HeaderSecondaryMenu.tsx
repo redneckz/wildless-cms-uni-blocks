@@ -7,34 +7,36 @@ export interface HeaderSecondaryMenuProps {
 }
 
 interface SecondaryMenuBtn {
-  icon: string,
-  className?: string,
+  icon: string;
+  className?: string;
 }
 
-const menuBtns: SecondaryMenuBtn[] = [{
-  icon: 'LoupeIcon',
-  className: 'text-primary-text hover:text-brand',
-}, {
-  icon: 'ProfileIcon',
-  className: 'text-primary-text hover:text-brand',
-}, {
-  icon: 'GridIcon',
-  className: 'text-main hover:text-secondary-hover w-[32px]',
-}]
+const menuBtns: SecondaryMenuBtn[] = [
+  {
+    icon: 'LoupeIcon',
+    className: 'text-primary-text hover:text-primary-main',
+  },
+  {
+    icon: 'ProfileIcon',
+    className: 'text-primary-text hover:text-primary-main',
+  },
+  {
+    icon: 'GridIcon',
+    className: 'text-main hover:text-secondary-text-hover w-[32px]',
+  },
+];
 
 export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(({ location, className }) => {
   return (
-    <div
-      className={`flex items-center ${className || ''}`}
-    >
+    <div className={`flex items-center ${className || ''}`}>
       <a
-        className={`mr-5 font-sans text-primary-text text-sm hover:text-brand no-underline`}
+        className={`mr-5 font-sans text-primary-text text-sm hover:text-primary-main no-underline`}
         href="#"
       >
         {location}
       </a>
       <a
-        className={`mr-7 font-sans text-primary-text text-sm hover:text-brand no-underline`}
+        className={`mr-7 font-sans text-primary-text text-sm hover:text-primary-main no-underline`}
         href="#"
       >
         Офисы и банкоматы
@@ -49,7 +51,9 @@ const renderMenuBtn = (btn: SecondaryMenuBtn, i: number) => {
     <button
       key={String(i)}
       type="button"
-      className={`mr-5 border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${btn.className || ''}`}
+      className={`mr-5 border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${
+        btn.className || ''
+      }`}
     >
       {Icons[btn.icon]()}
     </button>
