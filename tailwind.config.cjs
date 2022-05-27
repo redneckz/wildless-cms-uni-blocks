@@ -29,11 +29,6 @@ module.exports = {
           // Text
           text: '#7D7E7F',
         },
-
-        // Deprecated. // TODO: Remove this shit
-        //secondary: '#9FA79F',
-        //'secondary-hover': '#E5F3E5',
-        promo: '#f7f8c5',
       },
       minHeight: (theme) => ({
         ...theme('spacing'),

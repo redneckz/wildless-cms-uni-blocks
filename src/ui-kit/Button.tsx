@@ -20,14 +20,18 @@ const buttonDisabledStyleMap: Record<ButtonVersion, string> = {
   secondary: 'bg-secondary-light text-secondary-text',
 };
 
+const styleButton = 'inline-block rounded-3xl px-9 py-3.5 text-center font-sans';
+
 export const Button = JSX<ButtonProps>(
   ({ className, text, href, target, onClick, children, disabled, version = 'primary' }) => {
     if (disabled) {
       return (
         <div
-          className={`inline-block rounded-3xl px-9 py-3.5 text-center font-sans select-none ${
-            buttonDisabledStyleMap[version]
-          } ${className || ''}`}
+          role="button"
+          area-disabled="true"
+          className={`${styleButton} select-none ${buttonDisabledStyleMap[version]} ${
+            className || ''
+          }`}
         >
           <span className="text-sm font-medium">{text || children}</span>
         </div>
@@ -36,9 +40,7 @@ export const Button = JSX<ButtonProps>(
 
     return (
       <a
-        className={`inline-block rounded-3xl px-9 py-3.5 text-center font-sans no-underline ${
-          buttonStyleMap[version]
-        } ${className || ''}`}
+        className={`${styleButton} no-underline ${buttonStyleMap[version]} ${className || ''}`}
         href={href}
         target={target}
         onClick={onClick}

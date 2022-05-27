@@ -1,12 +1,3 @@
-@tailwind components;
-@tailwind utilities;
-
-@layer utilities {
-  .rotate-180 {
-    transform: rotate(180deg);
-  }
-}
-
 /* Private clients | Green */
 [data-theme='pc'] {
   --color-primary-main: #42ab44;
@@ -30,4 +21,13 @@
   --color-primary-active: #7e630c;
   --color-secondary-hover: #f1ecdd;
   --color-secondary-active: #e5dec7;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .rotate-180 {
+    transform: rotate(180deg);
+  }
 }
