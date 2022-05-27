@@ -69,7 +69,7 @@
       }
     },
     {
-      "type": "ProductTile",
+      "type": "Tile",
       "style": ["col-span-8", "h-[308px]"],
       "content": {
         "title": "Кредиты",
@@ -96,7 +96,7 @@
       }
     },
     {
-      "type": "ProductTile",
+      "type": "Tile",
       "version": "secondary",
       "style": ["col-span-4", "h-[308px]"],
       "content": {
@@ -113,7 +113,7 @@
       }
     },
     {
-      "type": "ProductTile",
+      "type": "Tile",
       "style": ["col-span-6", "h-[308px]"],
       "content": {
         "title": "Банковские пластиковые карты",
@@ -140,7 +140,7 @@
       }
     },
     {
-      "type": "ProductTile",
+      "type": "Tile",
       "style": ["col-span-6", "h-[308px]"],
       "content": {
         "title": "Премиальные продукты",
@@ -163,7 +163,7 @@
       }
     },
     {
-      "type": "ProductTile",
+      "type": "Tile",
       "style": ["col-span-12"],
       "content": {
         "title": "Экосистема «СВОЕ», созданная для людей",
@@ -191,7 +191,7 @@
       }
     },
     {
-      "type": "ProductTile",
+      "type": "Tile",
       "style": ["col-span-4"],
       "version": "secondary",
       "content": {
@@ -210,7 +210,7 @@
       }
     },
     {
-      "type": "ProductTile",
+      "type": "Tile",
       "style": ["col-span-4"],
       "version": "secondary",
       "content": {
@@ -230,7 +230,7 @@
       }
     },
     {
-      "type": "ProductTile",
+      "type": "Tile",
       "style": ["col-span-4"],
       "version": "secondary",
       "content": {

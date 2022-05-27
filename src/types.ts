@@ -9,13 +9,14 @@ import type {
   TiffOptions,
   WebpOptions,
 } from 'sharp';
-import type { HeaderContent } from './Header';
+import type { HeaderContent } from './Header/index';
 import type { PlaceholderContent } from './Placeholder';
 import type { ProductColumnBlockContent } from './ProductColumnBlock';
 import type { RichTextContent } from './RichText';
 import type { TextContent } from './Text';
 import type { TextWithImageContent } from './TextWithImage';
-import type { ProductTileContent } from './ProductTile';
+import type { TileContent } from './Tile';
+import type { ProductBlockContent } from './ProductBlock';
 
 export type BlockVersion = 'primary' | 'secondary';
 
@@ -26,7 +27,8 @@ export type BlockContent =
   | TextWithImageContent
   | RichTextContent
   | PlaceholderContent
-  | ProductTileContent;
+  | ProductBlockContent
+  | TileContent;
 
 export interface BlockDef {
   type: string;
@@ -61,13 +63,13 @@ export interface ImgSource {
   src: string;
   format?: keyof FormatEnum;
   options?:
-  | JpegOptions
-  | PngOptions
-  | WebpOptions
-  | AvifOptions
-  | HeifOptions
-  | GifOptions
-  | TiffOptions;
+    | JpegOptions
+    | PngOptions
+    | WebpOptions
+    | AvifOptions
+    | HeifOptions
+    | GifOptions
+    | TiffOptions;
   size?: ResizeOptions;
 }
 
