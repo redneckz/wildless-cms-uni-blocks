@@ -100,7 +100,7 @@
     "webpack-cli": "^4.9.2"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,css}": "prettier --write",
-    "*.{js,jsx,ts,tsx,css,json}": ["cosmos-export", "git add ./docs"]
+    "src/**/*.{js,jsx,ts,tsx,css}": "prettier --write",
+    "src/**/*.{js,jsx,ts,tsx,css,json}": ["cosmos-export", "git add ./docs"]
   }
 }
