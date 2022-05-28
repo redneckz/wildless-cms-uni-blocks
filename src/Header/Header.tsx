@@ -14,7 +14,7 @@ interface TopMenuItem extends HeaderMenuItem {
 }
 
 export interface HeaderContent {
-  location?: string,
+  location?: string;
   topItems?: TopMenuItem[];
 }
 
@@ -29,18 +29,19 @@ export const Header = JSX<HeaderProps>(({ className, location, context, topItems
   const activeTopItem = topItems?.find(isTopItemActive(router));
   const activeSubItem = activeTopItem?.items?.find(isSubItemActive(router));
   return (
-    <div className={`py-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`}>
+    <div className={`pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`}>
       <div className="flex items-center">
         <Logo className="mr-8" />
         {topItems?.length
           ? topItems.map((_, i) => (
-            <TopItem key={String(i)} active={_ === activeTopItem} {...useLink(context, _)} />
-          ))
+              <TopItem key={String(i)} active={_ === activeTopItem} {...useLink(context, _)} />
+            ))
           : null}
         <HeaderSecondaryMenu location={location} className="ml-auto" />
       </div>
+      <div className="mt-5 h-[1px] bg-main-divider" />
       {activeTopItem?.items?.length ? (
-        <div className="mt-10">
+        <div className="mt-5">
           {activeTopItem.items.map((_) => (
             <HeaderItem
               key={_.href}
@@ -57,7 +58,7 @@ export const Header = JSX<HeaderProps>(({ className, location, context, topItems
 
 const isURL = (href?: string) => href?.includes('//');
 
-const withoutQuery = (href?: string) => (href || '').replace(/\/?\?.+/, '');
+const withoutQuery = (href?: string) => (href || '').replace(/\/?\?.*/, '');
 
 function isTopItemActive({ href, pathname }: Router): (item: HeaderMenuItem) => boolean {
   return (item) => {
@@ -65,7 +66,7 @@ function isTopItemActive({ href, pathname }: Router): (item: HeaderMenuItem) => 
     if (isURL(itemHref)) {
       return Boolean(href && href.startsWith(itemHref));
     }
-    return Boolean(item.href && pathname.startsWith(itemHref));
+    return Boolean(itemHref && pathname.startsWith(itemHref));
   };
 }
 

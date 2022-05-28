@@ -3,5 +3,21 @@
   "port": 5001,
   "staticPath": "cosmos-static",
   "exportPath": "docs",
-  "publicUrl": "./"
+  "publicUrl": "./",
+  "ui": {
+    "responsivePreview": {
+      "devices": [
+        {
+          "label": "Desktop 1366x768",
+          "width": 1366,
+          "height": 768
+        },
+        {
+          "label": "Desktop 1920x1080",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    }
+  }
 }

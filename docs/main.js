@@ -4612,7 +4612,7 @@ module.exports = parent;
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.top-4{top:1rem}.right-4{right:1rem}.bottom-0{bottom:0}.right-0{right:0}.bottom-9{bottom:2.25rem}.right-9{right:2.25rem}.col-auto{grid-column:auto}.col-span-1{grid-column:span 1/span 1}.col-span-2{grid-column:span 2/span 2}.col-span-3{grid-column:span 3/span 3}.col-span-4{grid-column:span 4/span 4}.col-span-5{grid-column:span 5/span 5}.col-span-6{grid-column:span 6/span 6}.col-span-7{grid-column:span 7/span 7}.col-span-8{grid-column:span 8/span 8}.col-span-9{grid-column:span 9/span 9}.col-span-10{grid-column:span 10/span 10}.col-span-11{grid-column:span 11/span 11}.col-span-12{grid-column:span 12/span 12}.col-span-full{grid-column:1/-1}.col-start-1{grid-column-start:1}.col-start-2{grid-column-start:2}.col-start-3{grid-column-start:3}.col-start-4{grid-column-start:4}.col-start-5{grid-column-start:5}.col-start-6{grid-column-start:6}.col-start-7{grid-column-start:7}.col-start-8{grid-column-start:8}.col-start-9{grid-column-start:9}.col-start-10{grid-column-start:10}.col-start-11{grid-column-start:11}.col-start-12{grid-column-start:12}.col-start-13{grid-column-start:13}.col-start-auto{grid-column-start:auto}.col-end-1{grid-column-end:1}.col-end-2{grid-column-end:2}.col-end-3{grid-column-end:3}.col-end-4{grid-column-end:4}.col-end-5{grid-column-end:5}.col-end-6{grid-column-end:6}.col-end-7{grid-column-end:7}.col-end-8{grid-column-end:8}.col-end-9{grid-column-end:9}.col-end-10{grid-column-end:10}.col-end-11{grid-column-end:11}.col-end-12{grid-column-end:12}.col-end-13{grid-column-end:13}.col-end-auto{grid-column-end:auto}.m-0{margin:0}.mx-2{margin-left:.5rem;margin-right:.5rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.mt-6{margin-top:1.5rem}.mt-12{margin-top:3rem}.mb-6{margin-bottom:1.5rem}.mt-4{margin-top:1rem}.mt-7{margin-top:1.75rem}.mt-5{margin-top:1.25rem}.mt-auto{margin-top:auto}.mt-8{margin-top:2rem}.mt-2{margin-top:.5rem}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mt-10{margin-top:2.5rem}.ml-2\\.5{margin-left:.625rem}.ml-2{margin-left:.5rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-8{height:2rem}.h-\\[308px\\]{height:308px}.h-full{height:100%}.h-11{height:2.75rem}.h-\\[8px\\]{height:8px}.min-h-11{min-height:2.75rem}.w-full{width:100%}.w-8{width:2rem}.w-\\[125px\\]{width:125px}.w-11{width:2.75rem}.w-\\[32px\\]{width:32px}.w-\\[24px\\]{width:24px}.w-\\[8px\\]{width:8px}.w-\\[36px\\]{width:36px}.w-10{width:2.5rem}.min-w-11{min-width:2.75rem}.max-w-\\[600px\\]{max-width:600px}.rotate-180{--tw-rotate:180deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-col-resize{cursor:col-resize}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.resize{resize:both}.grid-flow-col-dense{grid-auto-flow:column dense}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-col-reverse{flex-direction:column-reverse}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-5{gap:1.25rem}.gap-3{gap:.75rem}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.space-y-2\\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.625rem*var(--tw-space-y-reverse));margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.5rem*var(--tw-space-y-reverse));margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)))}.whitespace-pre-wrap{white-space:pre-wrap}.rounded-full{border-radius:9999px}.rounded-\\[40px\\]{border-radius:40px}.rounded-3xl{border-radius:1.5rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-tl-\\[74px\\]{border-top-left-radius:74px}.rounded-br-\\[40px\\]{border-bottom-right-radius:40px}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-0{border-width:0}.border-b-2{border-bottom-width:2px}.border-solid{border-style:solid}.border-main{--tw-border-opacity:1;border-color:rgb(240 244 240/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-brand{--tw-border-opacity:1;border-color:rgb(66 171 68/var(--tw-border-opacity))}.border-b-brand{--tw-border-opacity:1;border-bottom-color:rgb(66 171 68/var(--tw-border-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgb(240 244 240/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-white{background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-promo,.bg-white{--tw-bg-opacity:1}.bg-promo{background-color:rgb(247 248 197/var(--tw-bg-opacity))}.bg-brand{--tw-bg-opacity:1;background-color:rgb(66 171 68/var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.p-20{padding:5rem}.p-2{padding:.5rem}.p-8{padding:2rem}.p-9{padding:2.25rem}.p-\\[10px\\]{padding:10px}.p-0{padding:0}.px-12{padding-left:3rem;padding-right:3rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.py-8{padding-bottom:2rem;padding-top:2rem}.px-20{padding-left:5rem;padding-right:5rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-3\\.5{padding-bottom:.875rem;padding-top:.875rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.px-4{padding-left:1rem;padding-right:1rem}.pt-0{padding-top:0}.text-center{text-align:center}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-title{font-size:1.75rem;line-height:2.5rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-bold{font-weight:700}.leading-snug{line-height:1.375}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-primary-text{--tw-text-opacity:1;color:rgb(28 28 28/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-secondary{--tw-text-opacity:1;color:rgb(159 167 159/var(--tw-text-opacity))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity))}.text-main{color:rgb(240 244 240/var(--tw-text-opacity))}.text-brand,.text-main{--tw-text-opacity:1}.text-brand{color:rgb(66 171 68/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.rotate-180{transform:rotate(180deg)}.hover\\:text-brand:hover{--tw-text-opacity:1;color:rgb(66 171 68/var(--tw-text-opacity))}.hover\\:text-secondary-hover:hover{--tw-text-opacity:1;color:rgb(229 243 229/var(--tw-text-opacity))}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n}\n",null],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:#42ab44;--color-primary-hover:#248341;--color-primary-active:#245f34;--color-secondary-hover:#c5e2c6;--color-secondary-active:#d8f2d9}[data-theme=bc]{--color-primary-main:#83b83e;--color-primary-hover:#5c921d;--color-primary-active:#3c5e10;--color-secondary-hover:#e8f4d9;--color-secondary-active:#d8e3ca}[data-theme=eo]{--color-primary-main:#ddb63d;--color-primary-hover:#bb9727;--color-primary-active:#7e630c;--color-secondary-hover:#f1ecdd;--color-secondary-active:#e5dec7}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.top-4{top:1rem}.right-4{right:1rem}.bottom-0{bottom:0}.right-0{right:0}.bottom-9{bottom:2.25rem}.right-9{right:2.25rem}.left-0{left:0}.-bottom-2{bottom:-.5rem}.col-auto{grid-column:auto}.col-span-1{grid-column:span 1/span 1}.col-span-2{grid-column:span 2/span 2}.col-span-3{grid-column:span 3/span 3}.col-span-4{grid-column:span 4/span 4}.col-span-5{grid-column:span 5/span 5}.col-span-6{grid-column:span 6/span 6}.col-span-7{grid-column:span 7/span 7}.col-span-8{grid-column:span 8/span 8}.col-span-9{grid-column:span 9/span 9}.col-span-10{grid-column:span 10/span 10}.col-span-11{grid-column:span 11/span 11}.col-span-12{grid-column:span 12/span 12}.col-span-full{grid-column:1/-1}.col-start-1{grid-column-start:1}.col-start-2{grid-column-start:2}.col-start-3{grid-column-start:3}.col-start-4{grid-column-start:4}.col-start-5{grid-column-start:5}.col-start-6{grid-column-start:6}.col-start-7{grid-column-start:7}.col-start-8{grid-column-start:8}.col-start-9{grid-column-start:9}.col-start-10{grid-column-start:10}.col-start-11{grid-column-start:11}.col-start-12{grid-column-start:12}.col-start-13{grid-column-start:13}.col-start-auto{grid-column-start:auto}.col-end-1{grid-column-end:1}.col-end-2{grid-column-end:2}.col-end-3{grid-column-end:3}.col-end-4{grid-column-end:4}.col-end-5{grid-column-end:5}.col-end-6{grid-column-end:6}.col-end-7{grid-column-end:7}.col-end-8{grid-column-end:8}.col-end-9{grid-column-end:9}.col-end-10{grid-column-end:10}.col-end-11{grid-column-end:11}.col-end-12{grid-column-end:12}.col-end-13{grid-column-end:13}.col-end-auto{grid-column-end:auto}.m-0{margin:0}.mx-2{margin-left:.5rem;margin-right:.5rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.mb-6{margin-bottom:1.5rem}.mt-4{margin-top:1rem}.mt-7{margin-top:1.75rem}.mt-5{margin-top:1.25rem}.mt-auto{margin-top:auto}.mt-8{margin-top:2rem}.mt-2{margin-top:.5rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.ml-2\\.5{margin-left:.625rem}.ml-2{margin-left:.5rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-8{height:2rem}.h-\\[308px\\]{height:308px}.h-full{height:100%}.h-11{height:2.75rem}.h-\\[1px\\]{height:1px}.h-\\[8px\\]{height:8px}.h-\\[2px\\]{height:2px}.min-h-11{min-height:2.75rem}.w-full{width:100%}.w-8{width:2rem}.w-\\[125px\\]{width:125px}.w-11{width:2.75rem}.w-\\[32px\\]{width:32px}.w-\\[24px\\]{width:24px}.w-\\[8px\\]{width:8px}.w-\\[36px\\]{width:36px}.w-10{width:2.5rem}.min-w-11{min-width:2.75rem}.max-w-\\[600px\\]{max-width:600px}.rotate-180{--tw-rotate:180deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-col-resize{cursor:col-resize}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.resize{resize:both}.grid-flow-col-dense{grid-auto-flow:column dense}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-col-reverse{flex-direction:column-reverse}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-5{gap:1.25rem}.gap-3{gap:.75rem}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.space-y-2\\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.625rem*var(--tw-space-y-reverse));margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.5rem*var(--tw-space-y-reverse));margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)))}.whitespace-pre-wrap{white-space:pre-wrap}.rounded-full{border-radius:9999px}.rounded-\\[40px\\]{border-radius:40px}.rounded-3xl{border-radius:1.5rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-0{border-width:0}.border-solid{border-style:solid}.border-main{--tw-border-opacity:1;border-color:rgb(240 244 240/var(--tw-border-opacity))}.border-primary-main{border-color:var(--color-primary-main)}.border-transparent{border-color:transparent}.bg-main{--tw-bg-opacity:1;background-color:rgb(240 244 240/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main-divider{--tw-bg-opacity:1;background-color:rgb(235 237 240/var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main{background-color:var(--color-primary-main)}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgb(245 247 249/var(--tw-bg-opacity))}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgb(226 228 229/var(--tw-bg-opacity))}.p-20{padding:5rem}.p-2{padding:.5rem}.p-9{padding:2.25rem}.p-\\[10px\\]{padding:10px}.p-0{padding:0}.px-20{padding-left:5rem;padding-right:5rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-3\\.5{padding-bottom:.875rem;padding-top:.875rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.pt-0{padding-top:0}.pt-5{padding-top:1.25rem}.pb-8{padding-bottom:2rem}.text-center{text-align:center}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-xs{font-size:.75rem;line-height:1rem}.text-title{font-size:1.75rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-bold{font-weight:700}.leading-snug{line-height:1.375}.text-primary-text{--tw-text-opacity:1;color:rgb(28 28 28/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity))}.text-main{--tw-text-opacity:1;color:rgb(240 244 240/var(--tw-text-opacity))}.text-primary-main{color:var(--color-primary-main)}.text-secondary-text{--tw-text-opacity:1;color:rgb(125 126 127/var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.rotate-180{transform:rotate(180deg)}.hover\\:bg-primary-hover:hover{background-color:var(--color-primary-hover)}.hover\\:bg-secondary-hover:hover{background-color:var(--color-secondary-hover)}.hover\\:text-primary-main:hover{color:var(--color-primary-main)}.hover\\:text-secondary-hover:hover{color:var(--color-secondary-hover)}.active\\:bg-primary-active:active{background-color:var(--color-primary-active)}.active\\:bg-secondary-active:active{background-color:var(--color-secondary-active)}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: #42ab44;\n  --color-primary-hover: #248341;\n  --color-primary-active: #245f34;\n  --color-secondary-hover: #c5e2c6;\n  --color-secondary-active: #d8f2d9;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: #83b83e;\n  --color-primary-hover: #5c921d;\n  --color-primary-active: #3c5e10;\n  --color-secondary-hover: #e8f4d9;\n  --color-secondary-active: #d8e3ca;\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: #ddb63d;\n  --color-primary-hover: #bb9727;\n  --color-primary-active: #7e630c;\n  --color-secondary-hover: #f1ecdd;\n  --color-secondary-active: #e5dec7;\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n}\n",null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -33532,7 +33532,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 6925:
+/***/ 3666:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -33669,16 +33669,15 @@ const context = {
 
 
 const HeaderItem = JSX(({ className, text, href, target, active, onClick, children }) => {
-    const linkStyle = active ? 'border-b-brand' : 'border-transparent';
-    const textStyle = active ? 'text-brand' : 'text-black hover:text-brand';
-    return (jsx("a", { className: `${linkStyle} border-0 border-b-2 border-solid inline-block bg-transparent py-2 text-center font-sans no-underline ${className || ''}`, href: href, target: target, onClick: onClick, children: jsx("span", { className: `${textStyle} text-base font-normal`, children: text || children }) }));
+    const textStyle = active ? 'text-primary-main' : 'text-primary-text hover:text-primary-main';
+    return (jsxs("a", { className: `relative inline-block bg-transparent text-center no-underline ${className || ''}`, href: href, target: target, onClick: onClick, children: [jsx("span", { className: `font-sans font-normal text-base ${textStyle}`, children: text || children }), active ? (jsx("div", { className: "absolute left-0 -bottom-2 w-full h-[2px] bg-primary-main" })) : null] }));
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/SVG.tsx
 
 
-const SVG = JSX(({ className, viewBox, fill = 'none', paths }) => {
-    return (jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className: className, viewBox: viewBox, fill: fill, children: paths.map(({ d, fill }, i) => jsx("path", { d: d, fill: fill || 'currentColor' }, i)) }));
+const SVG = JSX(({ className, viewBox, fill = 'none', paths, ...commonOptions }) => {
+    return (jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className: className, viewBox: viewBox, fill: fill, children: paths.map(({ d, fill, ...options }, i) => (jsx("path", { d: d, fill: fill || 'currentColor', ...commonOptions, ...options }, i))) }));
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Logo.tsx
@@ -33693,16 +33692,16 @@ const LOGO_PATHS = [
     'M27.66 40.79c.27-.14.55-.28.8-.43v-5.98h-.8v6.4Z',
 ];
 const Logo = JSX(({ className, href, children }) => {
-    return (jsxs("a", { className: `inline-flex items-center font-sans no-underline ${className || ''}`, href: href || 'https://rshb.ru/', target: "_blank", children: [jsx(SVG, { className: "text-brand w-10", viewBox: "0 0 40 45", paths: LOGO_PATHS.map((d) => ({ d })) }), jsx("span", { className: "text-black text-base font-medium ml-2.5", children: children || 'Россельхозбанк' })] }));
+    return (jsxs("a", { className: `inline-flex items-center font-sans no-underline ${className || ''}`, href: href || 'https://rshb.ru/', target: "_blank", children: [jsx(SVG, { className: "text-primary-main w-10", viewBox: "0 0 40 45", paths: LOGO_PATHS.map((d) => ({ d })) }), jsx("span", { className: "text-black text-base font-medium ml-2.5", children: children || 'Россельхозбанк' })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/TopItem.tsx
 
 
-const TopItem = JSX(({ className, text, href, target, active, onClick, children }) => {
-    const linkStyle = active ? 'border-brand rounded-3xl' : 'border-transparent';
-    const textStyle = active ? 'text-brand' : 'text-black hover:text-brand';
-    return (jsx("a", { className: `${linkStyle} border border-solid inline-block bg-transparent px-4 py-2 text-center font-sans no-underline ${className || ''}`, href: href, target: target, onClick: onClick, children: jsx("span", { className: `${textStyle} text-base font-normal`, children: text || children }) }));
+const TopItem = JSX(({ className, text, href, target, active, flat, onClick, children }) => {
+    const linkStyle = active ? 'border-primary-main rounded-3xl' : 'border-transparent';
+    const textStyle = active ? 'text-primary-main' : 'text-primary-text hover:text-primary-main';
+    return (jsx("a", { className: `inline-block border border-solid bg-transparent text-center no-underline ${flat ? '' : 'px-4 py-2'} ${linkStyle} ${className || ''}`, href: href, target: target, onClick: onClick, children: jsx("span", { className: `font-sans font-normal text-sm ${textStyle}`, children: text || children }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/useLink.ts
@@ -33740,28 +33739,22 @@ const Icons = {
     GridIcon,
 };
 
+;// CONCATENATED MODULE: ./src/Header/HeaderSecondaryMenuButton.tsx
+
+
+const HeaderSecondaryMenuButton = JSX(({ className, children }) => (jsx("button", { type: "button", className: `border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${className || ''}`, disabled: true, children: children })));
+
 ;// CONCATENATED MODULE: ./src/Header/HeaderSecondaryMenu.tsx
 
 
 
-const menuBtns = [{
-        icon: 'LoupeIcon',
-        className: 'text-primary-text hover:text-brand',
-    }, {
-        icon: 'ProfileIcon',
-        className: 'text-primary-text hover:text-brand',
-    }, {
-        icon: 'GridIcon',
-        className: 'text-main hover:text-secondary-hover w-[32px]',
-    }];
-const HeaderSecondaryMenu = JSX(({ location, className }) => {
-    return (jsxs("div", { className: `flex items-center ${className || ''}`, children: [jsx("a", { className: `mr-5 font-sans text-primary-text text-sm hover:text-brand no-underline`, href: "#", children: location }), jsx("a", { className: `mr-7 font-sans text-primary-text text-sm hover:text-brand no-underline`, href: "#", children: "\u041E\u0444\u0438\u0441\u044B \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u044B" }), menuBtns.map(renderMenuBtn)] }));
-});
-const renderMenuBtn = (btn, i) => {
-    return (jsx("button", { type: "button", className: `mr-5 border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${btn.className || ''}`, children: Icons[btn.icon]() }, String(i)));
-};
 
-;// CONCATENATED MODULE: ./src/Header/index.tsx
+
+const HeaderSecondaryMenu = JSX(({ location, className }) => {
+    return (jsxs("div", { className: `flex items-center ${className || ''}`, children: [jsx(TopItem, { className: "mr-5", flat: true, href: "#", text: location }), jsx(TopItem, { className: "mr-7", flat: true, href: "#", text: "\u041E\u0444\u0438\u0441\u044B \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u044B" }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", children: LoupeIcon() }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", children: ProfileIcon() }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-main hover:text-secondary-hover w-[32px]", children: GridIcon() })] }));
+});
+
+;// CONCATENATED MODULE: ./src/Header/Header.tsx
 
 
 
@@ -33773,19 +33766,19 @@ const Header = JSX(({ className, location, context, topItems }) => {
     const router = context.useRouter();
     const activeTopItem = topItems?.find(isTopItemActive(router));
     const activeSubItem = activeTopItem?.items?.find(isSubItemActive(router));
-    return (jsxs("div", { className: `py-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`, children: [jsxs("div", { className: "flex items-center", children: [jsx(Logo, { className: "mr-8" }), topItems?.length
+    return (jsxs("div", { className: `pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`, children: [jsxs("div", { className: "flex items-center", children: [jsx(Logo, { className: "mr-8" }), topItems?.length
                         ? topItems.map((_, i) => (jsx(TopItem, { active: _ === activeTopItem, ...useLink(context, _) }, String(i))))
-                        : null, jsx(HeaderSecondaryMenu, { location: location, className: "ml-auto" })] }), activeTopItem?.items?.length ? (jsx("div", { className: "mt-10", children: activeTopItem.items.map((_) => (jsx(HeaderItem, { className: "mr-8", active: _ === activeSubItem, ...useLink(context, _) }, _.href))) })) : null] }));
+                        : null, jsx(HeaderSecondaryMenu, { location: location, className: "ml-auto" })] }), jsx("div", { className: "mt-5 h-[1px] bg-main-divider" }), activeTopItem?.items?.length ? (jsx("div", { className: "mt-5", children: activeTopItem.items.map((_) => (jsx(HeaderItem, { className: "mr-8", active: _ === activeSubItem, ...useLink(context, _) }, _.href))) })) : null] }));
 });
 const isURL = (href) => href?.includes('//');
-const withoutQuery = (href) => (href || '').replace(/\/?\?.+/, '');
+const withoutQuery = (href) => (href || '').replace(/\/?\?.*/, '');
 function isTopItemActive({ href, pathname }) {
     return (item) => {
         const itemHref = withoutQuery(item.href);
         if (isURL(itemHref)) {
             return Boolean(href && href.startsWith(itemHref));
         }
-        return Boolean(item.href && pathname.startsWith(itemHref));
+        return Boolean(itemHref && pathname.startsWith(itemHref));
     };
 }
 function isSubItemActive({ href, pathname }) {
@@ -33794,47 +33787,14 @@ function isSubItemActive({ href, pathname }) {
     };
 }
 
+;// CONCATENATED MODULE: ./src/Header/index.ts
+
+
 ;// CONCATENATED MODULE: ./src/Placeholder.tsx
 
 
 const Placeholder = JSX(({ className, children }) => {
     return jsx("div", { className: className || '', children: children });
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/BlockItem.tsx
-
-
-const listStyleMap = {
-    primary: 'bg-brand',
-    secondary: 'bg-white',
-};
-const textStyleMap = {
-    primary: 'text-primary-text',
-    secondary: 'text-white',
-};
-const BlockItem = JSX(({ className, text, children, version = 'primary' }) => {
-    return (jsxs("div", { className: `inline-block flex items-center ${className || ''}`, role: "listitem", children: [jsx("div", { className: `inline-block w-[8px] h-[8px] rounded-full ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mx-3 ${textStyleMap[version]}`, children: text || children })] }));
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/Button.tsx
-
-
-const buttonStyleMap = {
-    primary: 'text-white bg-brand',
-    secondary: 'text-brand bg-main',
-};
-const Button = JSX(({ className, text, href, target, onClick, children, version = 'primary' }) => {
-    return (jsx("a", { className: `inline-block rounded-3xl px-9 py-3.5 text-center font-sans no-underline ${buttonStyleMap[version]} ${className || ''}`, href: href, target: target, onClick: onClick, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
-});
-
-;// CONCATENATED MODULE: ./src/ProductColumnBlock.tsx
-
-
-
-
-
-const ProductColumnBlock = JSX(({ className, context, title, items, button, promo }) => {
-    return (jsxs("div", { className: `relative p-8 bg-white text-black font-sans rounded-[40px] ${className || ''}`, children: [jsx("p", { className: "text-title font-medium m-0", children: title }), items?.length ? (jsx("section", { className: "flex flex-col", role: "list", children: items.map((_, i) => (jsx(BlockItem, { className: "mt-6", text: _ }, String(i)))) })) : null, button?.text ? jsx(Button, { className: "mt-12", ...useLink(context, button) }) : null, promo && (jsx("div", { className: "absolute right-0 bottom-0 bg-promo font-normal px-12 py-3 text-xl rounded-tl-[74px] rounded-br-[40px]", children: "\u0410\u043A\u0446\u0438\u044F" }))] }));
 });
 
 ;// CONCATENATED MODULE: ./src/RichText.tsx
@@ -33869,6 +33829,40 @@ function formatToMimeType(format) {
 
 const TextWithImage = JSX(({ className, primary, image }) => {
     return (jsxs("div", { className: className || '', children: [primary && jsx("p", { className: "font-bold text-slate-700 leading-snug", children: primary }), image && jsx(Img, { image: image })] }));
+});
+
+;// CONCATENATED MODULE: ./src/ui-kit/BlockItem.tsx
+
+
+const listStyleMap = {
+    primary: 'bg-primary-main',
+    secondary: 'bg-white',
+};
+const textStyleMap = {
+    primary: 'text-primary-text',
+    secondary: 'text-white',
+};
+const BlockItem = JSX(({ className, text, children, version = 'primary' }) => {
+    return (jsxs("div", { className: `inline-block flex items-center ${className || ''}`, role: "listitem", children: [jsx("div", { className: `inline-block w-[8px] h-[8px] rounded-full ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mx-3 ${textStyleMap[version]}`, children: text || children })] }));
+});
+
+;// CONCATENATED MODULE: ./src/ui-kit/Button.tsx
+
+
+const buttonStyleMap = {
+    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
+    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
+};
+const buttonDisabledStyleMap = {
+    primary: 'bg-secondary-dark text-secondary-text',
+    secondary: 'bg-secondary-light text-secondary-text',
+};
+const styleButton = 'inline-block rounded-3xl px-9 py-3.5 text-center font-sans';
+const Button = JSX(({ className, text, href, target, onClick, children, disabled, version = 'primary' }) => {
+    if (disabled) {
+        return (jsx("div", { role: "button", "area-disabled": "true", className: `${styleButton} select-none ${buttonDisabledStyleMap[version]} ${className || ''}`, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
+    }
+    return (jsx("a", { className: `${styleButton} no-underline ${buttonStyleMap[version]} ${className || ''}`, href: href, target: target, onClick: onClick, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Breadcrumb.tsx
@@ -33916,10 +33910,8 @@ function join(sep) {
 
 
 
-
 const Blocks = {
     Header: Header,
-    ProductColumnBlock: ProductColumnBlock,
     Text: Text,
     TextWithImage: TextWithImage,
     RichText: RichText,
@@ -33956,8 +33948,8 @@ const LikeControl = JSX(({ className, context }) => {
 
 
 const defaultBlockDecorator = ({ blockClassName, block, render }) => render({ blockClassName, block });
-const ContentPage = JSX(({ className, data: { style: pageStyle, blocks, likeControl }, context, blockDecorator = defaultBlockDecorator, }) => {
-    return (jsxs("section", { className: "relative", children: [jsx("div", { className: `grid grid-cols-12 ${style2className(pageStyle)} ${className}`, children: blocks?.length ? blocks.map(renderBlock) : null }), likeControl && (jsx("div", { className: "flex items-end absolute bottom-0 right-0 h-full pointer-events-none", children: jsx(LikeControl, { className: "rounded-tl-lg sticky bottom-0 pointer-events-auto", context: context }) }))] }));
+const ContentPage = JSX(({ className, data: { style: pageStyle, blocks, likeControl, colorPalette = 'pc' }, context, blockDecorator = defaultBlockDecorator, }) => {
+    return (jsxs("section", { className: "relative", "data-theme": colorPalette, children: [jsx("div", { className: `grid grid-cols-12 ${style2className(pageStyle)} ${className}`, children: blocks?.length ? blocks.map(renderBlock) : null }), likeControl && (jsx("div", { className: "flex items-end absolute bottom-0 right-0 h-full pointer-events-none", children: jsx(LikeControl, { className: "rounded-tl-lg sticky bottom-0 pointer-events-auto", context: context }) }))] }));
     function renderBlock(block, i) {
         const { type } = block;
         if (!(type in Blocks)) {
@@ -33996,7 +33988,7 @@ const blockDecorator = ({ blockClassName, block, render }) => (jsxs("div", { cla
 
 
 
-/* harmony default export */ const Header_fixture = (jsx(Header, { context: context, location: '\u041C\u043E\u0441\u043A\u0432\u0430', topItems: [
+/* harmony default export */ const Header_fixture = (jsx(Header, { context: context, location: "\u041C\u043E\u0441\u043A\u0432\u0430", topItems: [
         {
             href: '/',
             text: 'Экосистема Своё',
@@ -34006,7 +33998,7 @@ const blockDecorator = ({ blockClassName, block, render }) => (jsxs("div", { cla
                     text: 'Кредитные карты',
                 },
                 {
-                    href: '/',
+                    href: '/debit-cards',
                     text: 'Дебетовые карты',
                 },
                 {
@@ -34052,30 +34044,6 @@ const blockDecorator = ({ blockClassName, block, render }) => (jsxs("div", { cla
 
 
 /* harmony default export */ const LikeControl_fixture = (jsx(LikeControl, { context: context }));
-
-;// CONCATENATED MODULE: ./src/ProductColumnBlock.fixture.tsx
-
-
-
-/* harmony default export */ const ProductColumnBlock_fixture = ({
-    default: (jsx(ProductColumnBlock, { context: context, title: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u0432\u0441\u0451, \u0447\u0442\u043E \u0445\u043E\u0447\u0435\u0442\u0441\u044F!", items: [
-            'Совершайте любые личные покупки',
-            'Используйте корпоративную карту как обычную дебетовую, если вы ИП',
-            'Расходы для бизнеса на УСН 15% позволят снизить налоговую базу',
-        ], button: {
-            text: 'Подробнее',
-            href: '/foo-page',
-        } })),
-    promo: (jsx(ProductColumnBlock, { context: context, title: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u0432\u0441\u0451, \u0447\u0442\u043E \u0445\u043E\u0447\u0435\u0442\u0441\u044F!", items: [
-            'Совершайте любые личные покупки',
-            'Используйте корпоративную карту как обычную дебетовую, если вы ИП',
-            'Расходы для бизнеса на УСН 15% позволят снизить налоговую базу',
-        ], button: {
-            text: 'Подробнее',
-            href: 'https://rshb.ru',
-            target: '_blank',
-        }, promo: true })),
-});
 
 ;// CONCATENATED MODULE: ./src/ProductTile.fixture.tsx
 
@@ -34163,8 +34131,14 @@ const ProductTile_fixture_image = {
 
 
 /* harmony default export */ const Button_fixture = ({
-    primary: (jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "primary" })),
-    secondary: (jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "secondary" })),
+    'primary (Private clients)': (jsx("div", { "data-theme": "pc", children: jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "primary" }) })),
+    'secondary (Private clients)': (jsx("div", { "data-theme": "pc", children: jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "secondary" }) })),
+    'primary (Business clients)': (jsx("div", { "data-theme": "bc", children: jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "primary" }) })),
+    'secondary (Business clients)': (jsx("div", { "data-theme": "bc", children: jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "secondary" }) })),
+    'primary (Ecosystem own)': (jsx("div", { "data-theme": "eo", children: jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "primary" }) })),
+    'secondary (Ecosystem own)': (jsx("div", { "data-theme": "eo", children: jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "secondary" }) })),
+    'primary (disabled)': (jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "primary", disabled: true })),
+    'secondary (disabled)': (jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "secondary", disabled: true })),
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/HeaderItem.fixture.tsx
@@ -34201,7 +34175,7 @@ const ProductTile_fixture_image = {
 
 ;// CONCATENATED MODULE: ./src/cosmos.decorator.tsx
 
-/* harmony default export */ const cosmos_decorator = (({ children }) => (jsx("div", { style: { backgroundColor: 'rgba(51, 51, 51, 0.05)', height: 'calc(100vh - 20px)' }, children: children })));
+/* harmony default export */ const cosmos_decorator = (({ children }) => (jsx("div", { style: { backgroundColor: 'rgba(51, 51, 51, 0.05)', height: 'calc(100vh - 20px)' }, "data-theme": "pc", children: children })));
 
 ;// CONCATENATED MODULE: ./node_modules/react-cosmos/dist/plugins/webpack/client/userDeps.js
 // This file is automatically generated by Cosmos. Add it to .gitignore and
@@ -34209,7 +34183,6 @@ const ProductTile_fixture_image = {
 
 // Keeping global imports here is superior to making them bundle entry points
 // because this way they become hot-reloadable.
-
 
 
 
@@ -34233,7 +34206,6 @@ const fixtures = {
   'src/ContentPage.fixture.tsx': { module: { default: ContentPage_fixture } },
   'src/Header/Header.fixture.tsx': { module: { default: Header_fixture } },
   'src/LikeControl.fixture.tsx': { module: { default: LikeControl_fixture } },
-  'src/ProductColumnBlock.fixture.tsx': { module: { default: ProductColumnBlock_fixture } },
   'src/ProductTile.fixture.tsx': { module: { default: ProductTile_fixture } },
   'src/ui-kit/BlockItem.fixture.tsx': { module: { default: BlockItem_fixture } },
   'src/ui-kit/Button.fixture.tsx': { module: { default: Button_fixture } },
@@ -36034,7 +36006,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(6925),
+  var _require = __webpack_require__(3666),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;
