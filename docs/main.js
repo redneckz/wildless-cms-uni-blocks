@@ -33532,7 +33532,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 3666:
+/***/ 6245:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -33650,6 +33650,48 @@ const context = {
             console.log(url);
         },
     }),
+    useSitemap: () => ({
+        topItems: [
+            {
+                href: '/',
+                text: 'Экосистема Своё',
+                items: [
+                    {
+                        href: '/credit-cards',
+                        text: 'Кредитные карты',
+                    },
+                    {
+                        href: '/debit-cards',
+                        text: 'Дебетовые карты',
+                    },
+                    {
+                        href: '/credits',
+                        text: 'Кредиты',
+                    },
+                    {
+                        href: '/deposits',
+                        text: 'Вклады',
+                    },
+                    {
+                        href: '/investment',
+                        text: 'Инвестиции',
+                    },
+                    {
+                        href: '/mortgage',
+                        text: 'Ипотека',
+                    },
+                    {
+                        href: '/insurance',
+                        text: 'Страхование',
+                    },
+                    {
+                        href: '/transfers',
+                        text: 'Переводы',
+                    },
+                ],
+            },
+        ],
+    }),
     useLikeService: () => ({
         likeCount: 0,
         like: () => {
@@ -33754,24 +33796,20 @@ const HeaderSecondaryMenu = JSX(({ location, className }) => {
     return (jsxs("div", { className: `flex items-center ${className || ''}`, children: [jsx(TopItem, { className: "mr-5", flat: true, href: "#", text: location }), jsx(TopItem, { className: "mr-7", flat: true, href: "#", text: "\u041E\u0444\u0438\u0441\u044B \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u044B" }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", children: LoupeIcon() }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", children: ProfileIcon() }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-main hover:text-secondary-hover w-[32px]", children: GridIcon() })] }));
 });
 
-;// CONCATENATED MODULE: ./src/Header/Header.tsx
-
-
-
-
-
-
-
-const Header = JSX(({ className, location, context, topItems }) => {
-    const router = context.useRouter();
-    const activeTopItem = topItems?.find(isTopItemActive(router));
-    const activeSubItem = activeTopItem?.items?.find(isSubItemActive(router));
-    return (jsxs("div", { className: `pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`, children: [jsxs("div", { className: "flex items-center", children: [jsx(Logo, { className: "mr-8" }), topItems?.length
-                        ? topItems.map((_, i) => (jsx(TopItem, { active: _ === activeTopItem, ...useLink(context, _) }, String(i))))
-                        : null, jsx(HeaderSecondaryMenu, { location: location, className: "ml-auto" })] }), jsx("div", { className: "mt-5 h-[1px] bg-main-divider" }), activeTopItem?.items?.length ? (jsx("div", { className: "mt-5", children: activeTopItem.items.map((_) => (jsx(HeaderItem, { className: "mr-8", active: _ === activeSubItem, ...useLink(context, _) }, _.href))) })) : null] }));
-});
+;// CONCATENATED MODULE: ./src/utils/url.ts
 const isURL = (href) => href?.includes('//');
 const withoutQuery = (href) => (href || '').replace(/\/?\?.*/, '');
+
+;// CONCATENATED MODULE: ./src/Header/isSubItemActive.ts
+
+function isSubItemActive({ href, pathname }) {
+    return (item) => {
+        return withoutQuery(item.href) === (isURL(item.href) ? withoutQuery(href) : pathname);
+    };
+}
+
+;// CONCATENATED MODULE: ./src/Header/isTopItemActive.ts
+
 function isTopItemActive({ href, pathname }) {
     return (item) => {
         const itemHref = withoutQuery(item.href);
@@ -33781,11 +33819,37 @@ function isTopItemActive({ href, pathname }) {
         return Boolean(itemHref && pathname.startsWith(itemHref));
     };
 }
-function isSubItemActive({ href, pathname }) {
-    return (item) => {
-        return withoutQuery(item.href) === (isURL(item.href) ? withoutQuery(href) : pathname);
-    };
+
+;// CONCATENATED MODULE: ./src/Header/mergeTopItems.ts
+const cmp = (a) => (b) => a?.href === b?.href;
+const substitute = (items, substitution) => (items || []).map((_) => substitution?.find(cmp(_)) || _);
+const subtract = (minuend, subtrahend) => (minuend || []).filter((_) => !subtrahend?.find(cmp(_)));
+function mergeTopItems(left, right) {
+    return substitute(left, right).concat(subtract(right, left));
 }
+
+;// CONCATENATED MODULE: ./src/Header/Header.tsx
+
+
+
+
+
+
+
+
+
+
+const Header = JSX(({ className, location, context, topItems }) => {
+    const router = context.useRouter();
+    const sitemap = context.useSitemap();
+    const mergedItems = mergeTopItems(sitemap.topItems, topItems);
+    const activeTopItem = mergedItems.find(isTopItemActive(router));
+    const subItems = activeTopItem?.items;
+    const activeSubItem = subItems?.find(isSubItemActive(router));
+    const topMenu = mergedItems.map((_, i) => (jsx(TopItem, { active: _ === activeTopItem, ...useLink(context, _) }, String(i))));
+    const subMenu = subItems?.map((_) => (jsx(HeaderItem, { className: "mr-8", active: _ === activeSubItem, ...useLink(context, _) }, _.href)));
+    return (jsxs("div", { className: `pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`, children: [jsxs("div", { className: "flex items-center", children: [jsx(Logo, { className: "mr-8" }), topMenu, jsx(HeaderSecondaryMenu, { location: location, className: "ml-auto" })] }), jsx("div", { className: "mt-5 h-[1px] bg-main-divider" }), jsx("div", { className: "mt-5", children: subMenu })] }));
+});
 
 ;// CONCATENATED MODULE: ./src/Header/index.ts
 
@@ -33989,44 +34053,6 @@ const blockDecorator = ({ blockClassName, block, render }) => (jsxs("div", { cla
 
 
 /* harmony default export */ const Header_fixture = (jsx(Header, { context: context, location: "\u041C\u043E\u0441\u043A\u0432\u0430", topItems: [
-        {
-            href: '/',
-            text: 'Экосистема Своё',
-            items: [
-                {
-                    href: '/credit-cards',
-                    text: 'Кредитные карты',
-                },
-                {
-                    href: '/debit-cards',
-                    text: 'Дебетовые карты',
-                },
-                {
-                    href: '/credits',
-                    text: 'Кредиты',
-                },
-                {
-                    href: '/deposits',
-                    text: 'Вклады',
-                },
-                {
-                    href: '/investment',
-                    text: 'Инвестиции',
-                },
-                {
-                    href: '/mortgage',
-                    text: 'Ипотека',
-                },
-                {
-                    href: '/insurance',
-                    text: 'Страхование',
-                },
-                {
-                    href: '/transfers',
-                    text: 'Переводы',
-                },
-            ],
-        },
         {
             href: 'https://rshb.ru/',
             text: 'Бизнес клиентам',
@@ -36006,7 +36032,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(3666),
+  var _require = __webpack_require__(6245),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;
