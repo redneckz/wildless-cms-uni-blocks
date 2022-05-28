@@ -1,4 +1,4 @@
-const CalendarIcon = () => (
+export const CalendarIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
     <path
       stroke="#1C1C1C"
@@ -17,7 +17,8 @@ const CalendarIcon = () => (
     />
   </svg>
 );
-const EmptyWalletIcon = () => (
+
+export const EmptyWalletIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
     <path
       stroke="#292D32"
@@ -42,7 +43,8 @@ const EmptyWalletIcon = () => (
     />
   </svg>
 );
-const PercentageSquareIcon = () => (
+
+export const PercentageSquareIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
     <path
       stroke="#1C1C1C"
@@ -61,7 +63,7 @@ const PercentageSquareIcon = () => (
   </svg>
 );
 
-const LoupeIcon = () => (
+export const LoupeIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
     <path
       stroke="currentColor"
@@ -73,7 +75,7 @@ const LoupeIcon = () => (
   </svg>
 );
 
-const ProfileIcon = () => (
+export const ProfileIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
     <path
       stroke="currentColor"
@@ -92,7 +94,7 @@ const ProfileIcon = () => (
   </svg>
 );
 
-const GridIcon = () => (
+export const GridIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32">
     <rect y=".5" width="32" height="32" rx="16" fill="currentColor" />
     <path

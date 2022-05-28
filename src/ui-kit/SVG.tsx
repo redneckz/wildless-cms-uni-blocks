@@ -1,21 +1,32 @@
 import { JSX } from '@redneckz/uni-jsx';
 
-interface SVGPath {
-  d: string;
+interface SVGPathOptions {
   fill?: string;
+  stroke?: string;
+  strokeLinecap?: string;
+  strokeLinejoin?: string;
+  strokeWidth?: string;
+  strokeMiterlimit?: string;
 }
 
-export interface SVGProps {
+interface SVGPath extends SVGPathOptions {
+  d: string;
+}
+
+export interface SVGProps extends SVGPathOptions {
   className?: string;
   viewBox?: string;
-  fill?: string;
-  paths: SVGPath[]
+  paths: SVGPath[];
 }
 
-export const SVG = JSX<SVGProps>(({ className, viewBox, fill = 'none', paths }) => {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox={viewBox} fill={fill}>
-      {paths.map(({ d, fill }, i) => <path key={i} d={d} fill={fill || 'currentColor'} />)}
-    </svg>
-  );
-});
+export const SVG = JSX<SVGProps>(
+  ({ className, viewBox, fill = 'none', paths, ...commonOptions }) => {
+    return (
+      <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox={viewBox} fill={fill}>
+        {paths.map(({ d, fill, ...options }, i) => (
+          <path key={i} d={d} fill={fill || 'currentColor'} {...commonOptions} {...options} />
+        ))}
+      </svg>
+    );
+  },
+);

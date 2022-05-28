@@ -12,7 +12,10 @@ module.exports = {
         title2: ['2.5rem', '3rem'],
       },
       colors: {
-        main: '#F0F4F0',
+        main: {
+          DEFAULT: '#F0F4F0',
+          divider: '#EBEDF0',
+        },
         primary: {
           main: 'var(--color-primary-main)',
           hover: 'var(--color-primary-hover)',

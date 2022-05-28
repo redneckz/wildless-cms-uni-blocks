@@ -1,11 +1,10 @@
 import { context } from '../setup-fixture';
-
-import { Header } from './index';
+import { Header } from './Header';
 
 export default (
   <Header
     context={context}
-    location='Москва'
+    location="Москва"
     topItems={[
       {
         href: '/',
@@ -16,7 +15,7 @@ export default (
             text: 'Кредитные карты',
           },
           {
-            href: '/',
+            href: '/debit-cards',
             text: 'Дебетовые карты',
           },
           {

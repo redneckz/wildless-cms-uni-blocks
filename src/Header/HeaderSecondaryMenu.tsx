@@ -1,61 +1,27 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Icons } from '../Icons';
+import { GridIcon, LoupeIcon, ProfileIcon } from '../Icons';
+import { TopItem } from '../ui-kit/TopItem';
+import { HeaderSecondaryMenuButton } from './HeaderSecondaryMenuButton';
 
-export interface HeaderSecondaryMenuProps {
+interface HeaderSecondaryMenuProps {
   location?: string;
   className?: string;
 }
 
-interface SecondaryMenuBtn {
-  icon: string;
-  className?: string;
-}
-
-const menuBtns: SecondaryMenuBtn[] = [
-  {
-    icon: 'LoupeIcon',
-    className: 'text-primary-text hover:text-primary-main',
-  },
-  {
-    icon: 'ProfileIcon',
-    className: 'text-primary-text hover:text-primary-main',
-  },
-  {
-    icon: 'GridIcon',
-    className: 'text-main hover:text-secondary-text-hover w-[32px]',
-  },
-];
-
 export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(({ location, className }) => {
   return (
     <div className={`flex items-center ${className || ''}`}>
-      <a
-        className={`mr-5 font-sans text-primary-text text-sm hover:text-primary-main no-underline`}
-        href="#"
-      >
-        {location}
-      </a>
-      <a
-        className={`mr-7 font-sans text-primary-text text-sm hover:text-primary-main no-underline`}
-        href="#"
-      >
-        Офисы и банкоматы
-      </a>
-      {menuBtns.map(renderMenuBtn)}
+      <TopItem className="mr-5" flat={true} href="#" text={location} />
+      <TopItem className="mr-7" flat={true} href="#" text="Офисы и банкоматы" />
+      <HeaderSecondaryMenuButton className="mr-5 text-primary-text hover:text-primary-main">
+        {LoupeIcon()}
+      </HeaderSecondaryMenuButton>
+      <HeaderSecondaryMenuButton className="mr-5 text-primary-text hover:text-primary-main">
+        {ProfileIcon()}
+      </HeaderSecondaryMenuButton>
+      <HeaderSecondaryMenuButton className="mr-5 text-main hover:text-secondary-hover w-[32px]">
+        {GridIcon()}
+      </HeaderSecondaryMenuButton>
     </div>
   );
 });
-
-const renderMenuBtn = (btn: SecondaryMenuBtn, i: number) => {
-  return (
-    <button
-      key={String(i)}
-      type="button"
-      className={`mr-5 border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${
-        btn.className || ''
-      }`}
-    >
-      {Icons[btn.icon]()}
-    </button>
-  );
-};
