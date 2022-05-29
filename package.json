@@ -53,7 +53,7 @@
     "test": "jest --coverage",
     "cosmos": "cosmos",
     "cosmos:export": "cosmos-export",
-    "prepare": "husky install"
+    "prepare": "husky install || exit 0"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
