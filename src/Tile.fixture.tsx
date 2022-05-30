@@ -35,7 +35,7 @@ export default {
       />
     </div>
   ),
-  ipoteka: (
+  mortgage: (
     <div className={`grid grid-cols-12`}>
       <Tile
         context={context}
@@ -43,7 +43,7 @@ export default {
         className={'col-span-4 h-[308px]'}
         title={'Ипотека'}
         description={
-          'Ши  рокий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %'
+          'Широкий выбор ипотечных программ с государственной поддержкой. Специальные предложения от 12,2 %'
         }
         buttons={[
           {
@@ -117,67 +117,6 @@ export default {
           },
         ]}
         image={image}
-      />
-    </div>
-  ),
-  'drag-metall': (
-    <div className={`grid grid-cols-12`}>
-      <Tile
-        context={context}
-        version={'secondary'}
-        className={'col-span-4 h-[308px]'}
-        title={'Драгоценные металлы'}
-        items={['Счета в драгоценных металлах', 'Слитки  и монеты из драгоценных металлов']}
-        buttons={[
-          {
-            href: 'https://rshb.ru',
-            text: 'Подробнее',
-            target: '_blank',
-            version: 'secondary',
-          },
-        ]}
-      />
-    </div>
-  ),
-  'bank-cell': (
-    <div className={`grid grid-cols-12`}>
-      <Tile
-        context={context}
-        version={'secondary'}
-        className={'col-span-4 h-[308px]'}
-        title={'Банковские ячейки'}
-        items={['Полная конфиденциальность', 'Разный размер ячеек', 'Оформление доверенностей']}
-        buttons={[
-          {
-            href: 'https://rshb.ru',
-            text: 'Подробнее',
-            target: '_blank',
-            version: 'secondary',
-          },
-        ]}
-      />
-    </div>
-  ),
-  deposit: (
-    <div className={`grid grid-cols-12`}>
-      <Tile
-        context={context}
-        version={'secondary'}
-        className={'col-span-4 h-[308px]'}
-        title={'Вклады и сбережения'}
-        items={[
-          'Доходность по вкладам  до 15% годовых',
-          'Минимальная сумма вклада  от 3000 Р',
-          'Минимальный срок вклада от 1 месяца',
-        ]}
-        buttons={[
-          {
-            href: 'https://rshb.ru',
-            text: 'Подробнее',
-            target: '_blank',
-            version: 'secondary',
-          },
-        ]}
       />
     </div>
   ),
