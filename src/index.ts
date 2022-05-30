@@ -6,3 +6,5 @@ export { LikeAPI } from './api/LikeAPI';
 
 export { ContentPageHead } from './ContentPageHead';
 export { ContentPage } from './ContentPage';
+
+export * as url from './utils/url';

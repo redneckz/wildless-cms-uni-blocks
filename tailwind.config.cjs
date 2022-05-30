@@ -13,7 +13,10 @@ module.exports = {
         'title-lg': ['2.5rem', '3rem'], //40px 48px
       },
       colors: {
-        main: '#F0F4F0',
+        main: {
+          DEFAULT: '#F0F4F0',
+          divider: '#EBEDF0',
+        },
         primary: {
           main: 'var(--color-primary-main)',
           hover: 'var(--color-primary-hover)',

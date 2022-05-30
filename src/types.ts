@@ -11,10 +11,10 @@ import type {
 } from 'sharp';
 import type { HeaderContent } from './Header';
 import type { PlaceholderContent } from './Placeholder';
+import type { ProductTileContent } from './ProductTile';
 import type { RichTextContent } from './RichText';
 import type { TextContent } from './Text';
 import type { TextWithImageContent } from './TextWithImage';
-import type { ProductTileContent } from './ProductTile';
 
 export type BlockVersion = 'primary' | 'secondary';
 
@@ -49,7 +49,7 @@ export interface ContentPageDef extends ContentPageMeta {
   style?: string[];
   blocks?: BlockDef[];
   likeControl?: boolean;
-  colorPalette?: ColorPalette,
+  colorPalette?: ColorPalette;
 }
 
 export interface Img {
@@ -62,13 +62,13 @@ export interface ImgSource {
   src: string;
   format?: keyof FormatEnum;
   options?:
-  | JpegOptions
-  | PngOptions
-  | WebpOptions
-  | AvifOptions
-  | HeifOptions
-  | GifOptions
-  | TiffOptions;
+    | JpegOptions
+    | PngOptions
+    | WebpOptions
+    | AvifOptions
+    | HeifOptions
+    | GifOptions
+    | TiffOptions;
   size?: ResizeOptions;
 }
 
