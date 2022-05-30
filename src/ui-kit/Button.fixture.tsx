@@ -3,6 +3,65 @@ import '../setup-fixture';
 import { Button } from './Button';
 
 export default {
+  all: (
+    <div className="font-sans overflow-hidden">
+      <div>
+        <p>Private clients</p>
+        <div className="flex gap-6" data-theme="pc">
+          <Button href="https://www.rshb.ru/" target="_blank" text="Primary" version="primary" />
+          <Button
+            href="https://www.rshb.ru/"
+            target="_blank"
+            text="Secondary"
+            version="secondary"
+          />
+        </div>
+      </div>
+      <div>
+        <p>Business clients</p>
+        <div className="flex gap-6" data-theme="bc">
+          <Button href="https://www.rshb.ru/" target="_blank" text="Primary" version="primary" />
+          <Button
+            href="https://www.rshb.ru/"
+            target="_blank"
+            text="Secondary"
+            version="secondary"
+          />
+        </div>
+      </div>
+      <div>
+        <p>Ecosystem own</p>
+        <div className="flex gap-6" data-theme="eo">
+          <Button href="https://www.rshb.ru/" target="_blank" text="Primary" version="primary" />
+          <Button
+            href="https://www.rshb.ru/"
+            target="_blank"
+            text="Secondary"
+            version="secondary"
+          />
+        </div>
+      </div>
+      <div>
+        <p>Disabled</p>
+        <div className="flex gap-6">
+          <Button
+            href="https://www.rshb.ru/"
+            target="_blank"
+            text="Primary"
+            version="primary"
+            disabled
+          />
+          <Button
+            href="https://www.rshb.ru/"
+            target="_blank"
+            text="Secondary"
+            version="secondary"
+            disabled
+          />
+        </div>
+      </div>
+    </div>
+  ),
   'primary (Private clients)': (
     <div data-theme="pc">
       <Button href="https://www.rshb.ru/" target="_blank" text="Сайт РСХБ" version="primary" />
