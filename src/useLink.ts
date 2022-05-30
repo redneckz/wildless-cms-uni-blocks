@@ -1,19 +1,23 @@
-import { ContentPageContext } from './ContentPageContext';
+import { HandlerDecorator, Router } from './ContentPageContext';
 import type { LinkContent } from './ui-kit/Link';
+import { isURL, toRelativeHref } from './utils/url';
 
-const defaultHandlerDecorator: <F extends Function>(_: F) => F = (_) => _;
+const defaultHandlerDecorator: HandlerDecorator = (_) => _;
 
 export function useLink(
-  { useRouter, handlerDecorator = defaultHandlerDecorator }: ContentPageContext,
+  {
+    router,
+    handlerDecorator = defaultHandlerDecorator,
+  }: { router: Router; handlerDecorator?: HandlerDecorator },
   link: Partial<LinkContent>,
 ) {
-  const router = useRouter();
-  const { href, target } = link;
+  const href = toRelativeHref(link.href, router.href);
   return {
     ...link,
+    href,
     onClick: handlerDecorator((ev: MouseEvent) => {
-      const isLocalHref = href && !href.includes('//');
-      const isLocalTarget = !target || target === '_self';
+      const isLocalHref = href && !isURL(href);
+      const isLocalTarget = !link.target || link.target === '_self';
       if (isLocalHref && isLocalTarget) {
         ev.preventDefault();
         router.push(href);

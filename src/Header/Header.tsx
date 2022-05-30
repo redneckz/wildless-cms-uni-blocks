@@ -18,6 +18,7 @@ export interface HeaderProps extends HeaderContent {
 export const Header = JSX<HeaderProps>(({ className, location, context, topItems }) => {
   const router = context.useRouter();
   const sitemap = context.useSitemap();
+  const { handlerDecorator } = context;
 
   const mergedItems = mergeTopItems(sitemap.topItems, topItems);
   const activeTopItem = mergedItems.find(isTopItemActive(router));
@@ -25,7 +26,11 @@ export const Header = JSX<HeaderProps>(({ className, location, context, topItems
   const activeSubItem = subItems?.find(isSubItemActive(router));
 
   const topMenu = mergedItems.map((_, i) => (
-    <TopItem key={String(i)} active={_ === activeTopItem} {...useLink(context, _)} />
+    <TopItem
+      key={String(i)}
+      active={_ === activeTopItem}
+      {...useLink({ router, handlerDecorator }, _)}
+    />
   ));
 
   const subMenu = subItems?.map((_) => (
@@ -33,7 +38,7 @@ export const Header = JSX<HeaderProps>(({ className, location, context, topItems
       key={_.href}
       className="mr-8"
       active={_ === activeSubItem}
-      {...useLink(context, _)}
+      {...useLink({ router, handlerDecorator }, _)}
     />
   ));
 

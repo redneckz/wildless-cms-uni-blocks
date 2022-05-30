@@ -5,8 +5,11 @@ import type { ContentPageContext } from './ContentPageContext';
 const { jsx, jsxs } = runtime as any;
 setup(jsx, jsxs);
 
+const TEST_ORIGIN = 'http://localhost:5001';
+
 export const context: ContentPageContext = {
   useRouter: () => ({
+    href: `${TEST_ORIGIN}/credits`,
     pathname: '/credits',
     query: {},
     push: (url: string) => {
@@ -16,39 +19,39 @@ export const context: ContentPageContext = {
   useSitemap: () => ({
     topItems: [
       {
-        href: '/',
+        href: TEST_ORIGIN,
         text: 'Экосистема Своё',
         items: [
           {
-            href: '/credit-cards',
+            href: `${TEST_ORIGIN}/credit-cards`,
             text: 'Кредитные карты',
           },
           {
-            href: '/debit-cards',
+            href: `${TEST_ORIGIN}/debit-cards`,
             text: 'Дебетовые карты',
           },
           {
-            href: '/credits',
+            href: `${TEST_ORIGIN}/credits`,
             text: 'Кредиты',
           },
           {
-            href: '/deposits',
+            href: `${TEST_ORIGIN}/deposits`,
             text: 'Вклады',
           },
           {
-            href: '/investment',
+            href: `${TEST_ORIGIN}/investment`,
             text: 'Инвестиции',
           },
           {
-            href: '/mortgage',
+            href: `${TEST_ORIGIN}/mortgage`,
             text: 'Ипотека',
           },
           {
-            href: '/insurance',
+            href: `${TEST_ORIGIN}/insurance`,
             text: 'Страхование',
           },
           {
-            href: '/transfers',
+            href: `https://rshb.ru/transfers`,
             text: 'Переводы',
           },
         ],

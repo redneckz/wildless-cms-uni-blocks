@@ -33642,8 +33642,10 @@ var jsx_runtime = __webpack_require__(5893);
 
 const { jsx: setup_fixture_jsx, jsxs: setup_fixture_jsxs } = jsx_runtime;
 setup(setup_fixture_jsx, setup_fixture_jsxs);
+const TEST_ORIGIN = 'http://localhost:5001';
 const context = {
     useRouter: () => ({
+        href: `${TEST_ORIGIN}/credits`,
         pathname: '/credits',
         query: {},
         push: (url) => {
@@ -33653,39 +33655,39 @@ const context = {
     useSitemap: () => ({
         topItems: [
             {
-                href: '/',
+                href: TEST_ORIGIN,
                 text: 'Экосистема Своё',
                 items: [
                     {
-                        href: '/credit-cards',
+                        href: `${TEST_ORIGIN}/credit-cards`,
                         text: 'Кредитные карты',
                     },
                     {
-                        href: '/debit-cards',
+                        href: `${TEST_ORIGIN}/debit-cards`,
                         text: 'Дебетовые карты',
                     },
                     {
-                        href: '/credits',
+                        href: `${TEST_ORIGIN}/credits`,
                         text: 'Кредиты',
                     },
                     {
-                        href: '/deposits',
+                        href: `${TEST_ORIGIN}/deposits`,
                         text: 'Вклады',
                     },
                     {
-                        href: '/investment',
+                        href: `${TEST_ORIGIN}/investment`,
                         text: 'Инвестиции',
                     },
                     {
-                        href: '/mortgage',
+                        href: `${TEST_ORIGIN}/mortgage`,
                         text: 'Ипотека',
                     },
                     {
-                        href: '/insurance',
+                        href: `${TEST_ORIGIN}/insurance`,
                         text: 'Страхование',
                     },
                     {
-                        href: '/transfers',
+                        href: `https://rshb.ru/transfers`,
                         text: 'Переводы',
                     },
                 ],
@@ -33746,16 +33748,38 @@ const TopItem = JSX(({ className, text, href, target, active, flat, onClick, chi
     return (jsx("a", { className: `inline-block border border-solid bg-transparent text-center no-underline ${flat ? '' : 'px-4 py-2'} ${linkStyle} ${className || ''}`, href: href, target: target, onClick: onClick, children: jsx("span", { className: `font-sans font-normal text-sm ${textStyle}`, children: text || children }) }));
 });
 
+;// CONCATENATED MODULE: ./src/utils/url.ts
+const isURL = (href) => href?.includes('//');
+const withoutQuery = (href) => (href || '').replace(/\/?\?.*/, '');
+const getOrigin = (href) => {
+    if (isURL(href)) {
+        const url = href;
+        const protoSeparator = '://';
+        const endOfProto = url.indexOf(protoSeparator);
+        const endOfOrigin = url.indexOf('/', endOfProto + protoSeparator.length);
+        return endOfOrigin !== -1 ? url.substring(0, endOfOrigin) : url;
+    }
+    return undefined;
+};
+const toRelativeHref = (href, baseURL) => {
+    if (!href) {
+        return href;
+    }
+    const origin = getOrigin(baseURL);
+    return origin ? href.replace(origin, '') || '/' : href;
+};
+
 ;// CONCATENATED MODULE: ./src/useLink.ts
+
 const defaultHandlerDecorator = (_) => _;
-function useLink({ useRouter, handlerDecorator = defaultHandlerDecorator }, link) {
-    const router = useRouter();
-    const { href, target } = link;
+function useLink({ router, handlerDecorator = defaultHandlerDecorator, }, link) {
+    const href = toRelativeHref(link.href, router.href);
     return {
         ...link,
+        href,
         onClick: handlerDecorator((ev) => {
-            const isLocalHref = href && !href.includes('//');
-            const isLocalTarget = !target || target === '_self';
+            const isLocalHref = href && !isURL(href);
+            const isLocalTarget = !link.target || link.target === '_self';
             if (isLocalHref && isLocalTarget) {
                 ev.preventDefault();
                 router.push(href);
@@ -33795,10 +33819,6 @@ const HeaderSecondaryMenuButton = JSX(({ className, children }) => (jsx("button"
 const HeaderSecondaryMenu = JSX(({ location, className }) => {
     return (jsxs("div", { className: `flex items-center ${className || ''}`, children: [jsx(TopItem, { className: "mr-5", flat: true, href: "#", text: location }), jsx(TopItem, { className: "mr-7", flat: true, href: "#", text: "\u041E\u0444\u0438\u0441\u044B \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u044B" }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", children: LoupeIcon() }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", children: ProfileIcon() }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-main hover:text-secondary-hover w-[32px]", children: GridIcon() })] }));
 });
-
-;// CONCATENATED MODULE: ./src/utils/url.ts
-const isURL = (href) => href?.includes('//');
-const withoutQuery = (href) => (href || '').replace(/\/?\?.*/, '');
 
 ;// CONCATENATED MODULE: ./src/Header/isSubItemActive.ts
 
@@ -33842,12 +33862,13 @@ function mergeTopItems(left, right) {
 const Header = JSX(({ className, location, context, topItems }) => {
     const router = context.useRouter();
     const sitemap = context.useSitemap();
+    const { handlerDecorator } = context;
     const mergedItems = mergeTopItems(sitemap.topItems, topItems);
     const activeTopItem = mergedItems.find(isTopItemActive(router));
     const subItems = activeTopItem?.items;
     const activeSubItem = subItems?.find(isSubItemActive(router));
-    const topMenu = mergedItems.map((_, i) => (jsx(TopItem, { active: _ === activeTopItem, ...useLink(context, _) }, String(i))));
-    const subMenu = subItems?.map((_) => (jsx(HeaderItem, { className: "mr-8", active: _ === activeSubItem, ...useLink(context, _) }, _.href)));
+    const topMenu = mergedItems.map((_, i) => (jsx(TopItem, { active: _ === activeTopItem, ...useLink({ router, handlerDecorator }, _) }, String(i))));
+    const subMenu = subItems?.map((_) => (jsx(HeaderItem, { className: "mr-8", active: _ === activeSubItem, ...useLink({ router, handlerDecorator }, _) }, _.href)));
     return (jsxs("div", { className: `pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`, children: [jsxs("div", { className: "flex items-center", children: [jsx(Logo, { className: "mr-8" }), topMenu, jsx(HeaderSecondaryMenu, { location: location, className: "ml-auto" })] }), jsx("div", { className: "mt-5 h-[1px] bg-main-divider" }), jsx("div", { className: "mt-5", children: subMenu })] }));
 });
 
@@ -33954,14 +33975,16 @@ const productBlockStyleMap = {
     primary: 'bg-white text-primary-text',
     secondary: 'bg-brand text-white',
 };
-const ProductTile = JSX(({ className, context, title, description, breadcrumbs, benefits, buttons, image, items, version = 'primary' }) => {
-    return (jsxs("section", { className: `font-sans p-9 rounded-[40px] flex justify-between items-stretch relative ${className || ''} ${productBlockStyleMap[version]}`, children: [jsxs("div", { className: "flex flex-col", children: [breadcrumbs?.length ? (jsx("div", { className: "text-xs mb-6", children: join(jsx("span", { className: "text-secondary mx-2", children: "/" }))(breadcrumbs.map((breadcrumb, i) => (jsx(Breadcrumb, { ...useLink(context, { className: 'text-secondary', ...breadcrumb }) }, String(i))))) })) : null, title && (jsx("h1", { className: "font-medium text-title m-0 whitespace-pre-wrap", children: title })), description && (jsx("div", { className: "font-normal text-base max-w-[600px] mt-4", children: description })), benefits?.length ? (jsx("div", { className: "flex gap-6 mt-7", children: benefits.map(renderBenefit) })) : null, items?.length ? (jsx("section", { className: "space-y-2.5 mt-5", role: "list", children: items.map((_, i) => (jsx(BlockItem, { text: _, version: version }, String(i)))) })) : null, buttons?.length ? (jsx("div", { className: "flex mt-auto gap-4", children: buttons.map((button, index) => renderButton(button, index, context)) })) : null] }), image && jsx(Img, { image: image, className: "absolute bottom-9 right-9" })] }));
+const ProductTile = JSX(({ className, context, title, description, breadcrumbs, benefits, buttons, image, items, version = 'primary', }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    return (jsxs("section", { className: `font-sans p-9 rounded-[40px] flex justify-between items-stretch relative ${className || ''} ${productBlockStyleMap[version]}`, children: [jsxs("div", { className: "flex flex-col", children: [breadcrumbs?.length ? (jsx("div", { className: "text-xs mb-6", children: join(jsx("span", { className: "text-secondary mx-2", children: "/" }))(breadcrumbs.map((breadcrumb, i) => (jsx(Breadcrumb, { ...useLink({ router, handlerDecorator }, { className: 'text-secondary', ...breadcrumb }) }, String(i))))) })) : null, title && jsx("h1", { className: "font-medium text-title m-0 whitespace-pre-wrap", children: title }), description && (jsx("div", { className: "font-normal text-base max-w-[600px] mt-4", children: description })), benefits?.length ? (jsx("div", { className: "flex gap-6 mt-7", children: benefits.map(renderBenefit) })) : null, items?.length ? (jsx("section", { className: "space-y-2.5 mt-5", role: "list", children: items.map((_, i) => (jsx(BlockItem, { text: _, version: version }, String(i)))) })) : null, buttons?.length ? (jsx("div", { className: "flex mt-auto gap-4", children: buttons.map((button, index) => renderButton(useLink({ router, handlerDecorator }, button), index)) })) : null] }), image && jsx(Img, { image: image, className: "absolute bottom-9 right-9" })] }));
 });
 function renderBenefit(benefit, i) {
     return (jsxs("div", { className: "flex gap-4 items-center", children: [benefit.icon && (jsx("div", { className: "h-11 w-11 min-w-11 min-h-11 bg-main rounded-full p-[10px] box-border", children: Icons[benefit.icon]() })), jsxs("div", { className: "flex gap-1 flex-col h-full", children: [jsx("h4", { className: "font-medium text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary", children: benefit.description }))] })] }, String(i)));
 }
-function renderButton(button, i, context) {
-    return button?.text ? (jsx(Button, { ...useLink(context, button), className: "mt-8", version: button.version }, String(i))) : null;
+function renderButton(button, i) {
+    return button?.text ? (jsx(Button, { ...button, className: "mt-8", version: button.version }, String(i))) : null;
 }
 function join(sep) {
     return (list) => list.reduce((acc, el) => (acc.length ? acc.concat(sep, el) : [el]), []);
