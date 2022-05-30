@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.33",
+  "version": "0.2.34",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -16,6 +16,16 @@
       "require": "./dist/*.js",
       "types": "./lib/*.d.ts"
     },
+    "./lib/Header": {
+      "import": "./lib/Header/index.js",
+      "require": "./dist/Header/index.js",
+      "types": "./lib/Header/index.d.ts"
+    },
+    "./lib/Header/*.js": {
+      "import": "./lib/Header/*.js",
+      "require": "./dist/Header/*.js",
+      "types": "./lib/Header/*.d.ts"
+    },
     "./lib/common.css": "./lib/common.css",
     "./lib/content-page-repository": {
       "import": "./lib/content-page-repository/index.js",
@@ -26,6 +36,11 @@
       "import": "./lib/content-page-repository/*.js",
       "require": "./dist/content-page-repository/*.js",
       "types": "./lib/content-page-repository/*.d.ts"
+    },
+    "./lib/utils/*.js": {
+      "import": "./lib/utils/*.js",
+      "require": "./dist/utils/*.js",
+      "types": "./lib/utils/*.d.ts"
     },
     "./*.json": "./*.json",
     "./*.js": "./*.js",
