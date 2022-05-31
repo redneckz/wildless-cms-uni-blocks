@@ -7,13 +7,19 @@ export interface TextWithImageProps {
 }
 
 export const Img = JSX<TextWithImageProps>(({ className, image }) => (
-  <picture className={className || ''}>
+  <picture className={`flex ${className || ''}`}>
     {image.sources?.length
       ? image.sources.map(({ src, format }, index) => (
           <source key={`${index}_${src}`} srcSet={src} type={formatToMimeType(format)} />
         ))
       : null}
-    <img src={image.src} alt={image.alt} title={image.title} {...image?.size} />
+    <img
+      src={image.src}
+      alt={image.alt}
+      title={image.title}
+      {...image?.size}
+      className={`mt-auto w-full`}
+    />
   </picture>
 ));
 

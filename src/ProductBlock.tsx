@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import { Icons } from './Icons';
 import { Img } from './Img';
-import { BlockVersion, Picture } from './types';
+import { Picture } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
@@ -15,7 +15,7 @@ export interface Benefit {
   icon?: keyof typeof Icons;
 }
 
-export interface ProductTileContent {
+export interface ProductBlockContent {
   title?: string;
   description?: string;
   breadcrumbs?: BreadcrumbProps[];
@@ -25,39 +25,17 @@ export interface ProductTileContent {
   buttons?: ButtonProps[];
 }
 
-export interface ProductTileProps extends ProductTileContent {
-  className?: string;
-  version?: BlockVersion;
+export interface ProductBlockProps extends ProductBlockContent {
   context: ContentPageContext;
 }
 
-const productBlockStyleMap: Record<BlockVersion, string> = {
-  primary: 'bg-white text-primary-text',
-  secondary: 'bg-brand text-white',
-};
-
-export const ProductTile = JSX<ProductTileProps>(
-  ({
-    className,
-    context,
-    title,
-    description,
-    breadcrumbs,
-    benefits,
-    buttons,
-    image,
-    items,
-    version = 'primary',
-  }) => {
+export const ProductBlock = JSX<ProductBlockProps>(
+  ({ context, title, description, breadcrumbs, benefits, buttons, image, items }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
 
     return (
-      <section
-        className={`font-sans p-9 rounded-[40px] flex justify-between items-stretch relative ${
-          className || ''
-        } ${productBlockStyleMap[version]}`}
-      >
+      <div className="font-sans flex justify-between items-stretch">
         <div className="flex flex-col">
           {breadcrumbs?.length ? (
             <div className="text-xs mb-6">
@@ -84,7 +62,7 @@ export const ProductTile = JSX<ProductTileProps>(
           {items?.length ? (
             <section className="space-y-2.5 mt-5" role="list">
               {items.map((_, i) => (
-                <BlockItem key={String(i)} text={_} version={version} />
+                <BlockItem key={String(i)} text={_} />
               ))}
             </section>
           ) : null}
@@ -96,8 +74,8 @@ export const ProductTile = JSX<ProductTileProps>(
             </div>
           ) : null}
         </div>
-        {image && <Img image={image} className="absolute bottom-9 right-9" />}
-      </section>
+        {image && <Img image={image} className="mt-auto" />}
+      </div>
     );
   },
 );

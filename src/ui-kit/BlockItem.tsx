@@ -23,8 +23,10 @@ const textStyleMap: Record<BlockItemVersion, string> = {
 export const BlockItem = JSX<BlockItemProps>(
   ({ className, text, children, version = 'primary' }) => {
     return (
-      <div className={`inline-block flex items-center ${className || ''}`} role="listitem">
-        <div className={`inline-block w-[8px] h-[8px] rounded-full ${listStyleMap[version]}`}></div>
+      <div className={`inline-block flex ${className || ''}`} role="listitem">
+        <div
+          className={`inline-block w-[8px] h-[8px] rounded-full mt-2 ${listStyleMap[version]}`}
+        ></div>
         <span className={`text-base font-normal font-sans mx-3 ${textStyleMap[version]}`}>
           {text || children}
         </span>

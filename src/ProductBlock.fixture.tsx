@@ -1,6 +1,6 @@
 import { context } from './setup-fixture';
 
-import { ProductTile } from './ProductTile';
+import { ProductBlock } from './ProductBlock';
 import { Picture } from './types';
 
 const image: Picture = {
@@ -14,7 +14,7 @@ const image: Picture = {
 
 export default {
   default: (
-    <ProductTile
+    <ProductBlock
       context={context}
       title={'Потребительский кредит наличными'}
       description="Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт."
@@ -66,7 +66,7 @@ export default {
     />
   ),
   'with items': (
-    <ProductTile
+    <ProductBlock
       context={context}
       title={'Оплата проходит \nв 180 странах мира'}
       breadcrumbs={[]}
