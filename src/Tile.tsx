@@ -24,38 +24,43 @@ export interface TileProps extends TileContent {
 const tileStyleMap: Record<BlockVersion, string> = {
   primary: 'bg-white text-primary-text',
   secondary: 'bg-brand text-white',
-}
+};
 
-export const Tile = JSX<TileProps>(({ className, context, title, description, buttons, image, items, version = 'primary' }) => {
-  return (
-    <section
-      className={`font-sans p-9 rounded-[40px] flex justify-between items-stretch relative ${className || ''} ${tileStyleMap[version]}`}
-    >
-      <div className="flex flex-col">
-        {title && (
-          <h1 className="font-medium text-title m-0 whitespace-pre-wrap">{title}</h1>
-        )}
-        {description && (
-          <div className="font-normal text-base max-w-[600px] mt-4">{description}</div>
-        )}
-        {items?.length ? (
-          <section className="space-y-2.5 mt-5" role="list">
-            {items.map((_, i) => (
-              <BlockItem key={String(i)} text={_} version={version} />
-            ))}
-          </section>
-        ) : null}
-        {buttons?.length ? (
-          <div className="flex mt-auto gap-4">
-            {buttons.map((button, index) => renderButton(button, index, context))}
+export const Tile = JSX<TileProps>(
+  ({ className, context, title, description, buttons, image, items, version = 'primary' }) => {
+    return (
+      <section
+        className={`font-sans p-9 rounded-[40px] flex justify-between items-stretch relative ${
+          className || ''
+        } ${tileStyleMap[version]}`}
+      >
+        <div className="flex flex-col w-full">
+          {title && <h1 className="font-medium text-title m-0 whitespace-pre-wrap">{title}</h1>}
+          <div className="flex flex-row justify-between h-full">
+            <div className="flex flex-col">
+              {description && (
+                <div className="font-normal text-base max-w-[600px] mt-4">{description}</div>
+              )}
+              {items?.length ? (
+                <section className="space-y-2.5 mt-5" role="list">
+                  {items.map((_, i) => (
+                    <BlockItem key={String(i)} text={_} version={version} />
+                  ))}
+                </section>
+              ) : null}
+              {buttons?.length ? (
+                <div className="flex mt-auto gap-4">
+                  {buttons.map((button, index) => renderButton(button, index, context))}
+                </div>
+              ) : null}
+            </div>
+            {image && <Img image={image} />}
           </div>
-        ) : null}
-      </div>
-      {image && <Img image={image} className="absolute bottom-9 right-9" />}
-    </section>
-  );
-});
-
+        </div>
+      </section>
+    );
+  },
+);
 
 function renderButton(button: ButtonProps, i: number, context: ContentPageContext) {
   return button?.text ? (
