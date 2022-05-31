@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
-import { Icons } from './Icons';
+import * as Icons from './Icons/index';
 import { Img } from './Img';
 import { BlockVersion, Picture } from './types';
 import { BlockItem } from './ui-kit/BlockItem';

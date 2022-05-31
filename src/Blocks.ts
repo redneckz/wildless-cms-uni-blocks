@@ -4,6 +4,8 @@ import { RichText } from './RichText';
 import { Text } from './Text';
 import { TextWithImage } from './TextWithImage';
 import { ProductTile } from './ProductTile';
+import { StepsBlock } from './StepsBlock';
+import { AdvantagesBlock } from './AdvantagesBlock';
 
 export const Blocks = {
   Header,
@@ -12,4 +14,6 @@ export const Blocks = {
   RichText,
   Placeholder,
   ProductTile,
+  StepsBlock,
+  AdvantagesBlock,
 };

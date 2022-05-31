@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { GridIcon, LoupeIcon, ProfileIcon } from '../Icons';
+import { GridIcon, LoupeIcon, ProfileIcon } from '../Icons/index';
 import { TopItem } from '../ui-kit/TopItem';
 import { HeaderSecondaryMenuButton } from './HeaderSecondaryMenuButton';
 
