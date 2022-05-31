@@ -15,7 +15,7 @@ import type { RichTextContent } from './RichText';
 import type { TextContent } from './Text';
 import type { TextWithImageContent } from './TextWithImage';
 import type { TileContent } from './Tile';
-import type { ProductBlockContent } from './ProductBlock';
+import type { ProductBlockInnerContent } from './ProductBlockInner';
 
 export type BlockVersion = 'primary' | 'secondary';
 
@@ -27,7 +27,7 @@ export type BlockContent =
   | TextWithImageContent
   | RichTextContent
   | PlaceholderContent
-  | ProductBlockContent
+  | ProductBlockInnerContent
   | TileContent;
 
 export interface BlockDef {

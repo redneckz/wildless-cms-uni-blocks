@@ -4,7 +4,7 @@ import { RichText } from './RichText';
 import { Text } from './Text';
 import { TextWithImage } from './TextWithImage';
 import { Tile } from './Tile';
-import { ProductBlockContainer } from './ProductBlockContainer';
+import { ProductBlock } from './ProductBlock';
 import { StepsBlock } from './StepsBlock';
 import { AdvantagesBlock } from './AdvantagesBlock';
 
@@ -15,7 +15,7 @@ export const Blocks = {
   RichText,
   Placeholder,
   Tile,
-  ProductBlockContainer,
+  ProductBlock,
   StepsBlock,
   AdvantagesBlock,
 };
