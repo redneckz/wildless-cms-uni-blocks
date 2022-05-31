@@ -17,7 +17,7 @@ export default {
     <div className={`grid grid-cols-12`}>
       <Tile
         context={context}
-        className={'col-span-8 h-[308px]'}
+        className={'col-span-8 min-h-[308px]'}
         title={'Кредиты'}
         items={[
           'Кредитный лимит до 10 млн ₽',
@@ -40,7 +40,7 @@ export default {
       <Tile
         context={context}
         version={'secondary'}
-        className={'col-span-4 h-[308px]'}
+        className={'col-span-4 min-h-[308px]'}
         title={'Ипотека'}
         description={
           'Широкий выбор ипотечных программ с государственной поддержкой. Специальные предложения от 12,2 %'
@@ -60,7 +60,7 @@ export default {
     <div className={`grid grid-cols-12`}>
       <Tile
         context={context}
-        className={'col-span-6 h-[308px]'}
+        className={'col-span-6 min-h-[308px]'}
         title={'Банковские пластиковые карты'}
         items={['Счета в разных валютах', 'Бесплатное обслуживание', 'Кэшбэк до 15% от покупок']}
         buttons={[
@@ -79,7 +79,7 @@ export default {
     <div className={`grid grid-cols-12`}>
       <Tile
         context={context}
-        className={'col-span-6 h-[308px]'}
+        className={'col-span-6 min-h-[308px]'}
         title={'Премиальные продукты'}
         description={
           'Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус'
@@ -100,7 +100,7 @@ export default {
     <div className={`grid grid-cols-12`}>
       <Tile
         context={context}
-        className={'col-span-12 h-[308px]'}
+        className={'col-span-12 min-h-[308px]'}
         title={'Экосистема «СВОЕ», созданная для людей'}
         items={[
           'Качественные фермерские продукты напрямую от производителей',
