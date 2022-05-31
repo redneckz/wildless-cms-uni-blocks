@@ -7,23 +7,24 @@ export interface TopItemContent extends LinkContent {
 
 export interface TopItemProps extends TopItemContent {
   className?: string;
+  flat?: boolean;
   onClick?: (ev: MouseEvent) => any;
 }
 
 export const TopItem = JSX<TopItemProps>(
-  ({ className, text, href, target, active, onClick, children }) => {
-    const linkStyle = active ? 'border-brand rounded-3xl' : 'border-transparent';
-    const textStyle = active ? 'text-brand' : 'text-black hover:text-brand';
+  ({ className, text, href, target, active, flat, onClick, children }) => {
+    const linkStyle = active ? 'border-primary-main rounded-3xl' : 'border-transparent';
+    const textStyle = active ? 'text-primary-main' : 'text-primary-text hover:text-primary-main';
     return (
       <a
-        className={`${linkStyle} border border-solid inline-block bg-transparent px-4 py-2 text-center font-sans no-underline ${
-          className || ''
-        }`}
+        className={`inline-block border border-solid bg-transparent text-center no-underline ${
+          flat ? '' : 'px-4 py-2'
+        } ${linkStyle} ${className || ''}`}
         href={href}
         target={target}
         onClick={onClick}
       >
-        <span className={`${textStyle} text-base font-normal`}>{text || children}</span>
+        <span className={`font-sans font-normal text-sm ${textStyle}`}>{text || children}</span>
       </a>
     );
   },

@@ -25,7 +25,7 @@ export default {
     <ContentPage context={context} className="bg-main" data={require('./ContentPage.page.json')} />
   ),
   editor: (
-    <div style={{ background: "url('grid.svg')" }}>
+    <div style={{ background: "url('grid.svg')", height: '100%' }}>
       <ContentPage
         context={context}
         className="bg-transparent"

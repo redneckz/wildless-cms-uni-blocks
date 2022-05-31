@@ -1,3 +1,5 @@
+import type { HeaderContent } from './Header';
+
 export interface Router {
   pathname: string;
   query: Record<string, string | string[] | undefined>;
@@ -12,8 +14,11 @@ export interface LikeService {
   dislike: () => void;
 }
 
+export type HandlerDecorator = <F extends Function>(handler: F) => F;
+
 export interface ContentPageContext {
   useRouter: () => Router;
+  useSitemap: () => HeaderContent;
   useLikeService: () => LikeService;
-  handlerDecorator?: <F extends Function>(handler: F) => F;
+  handlerDecorator?: HandlerDecorator;
 }

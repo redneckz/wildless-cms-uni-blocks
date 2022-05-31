@@ -1,22 +1,14 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent } from '../ui-kit/Link';
+import type { ContentPageContext } from '../ContentPageContext';
 import { HeaderItem } from '../ui-kit/HeaderItem';
 import { Logo } from '../ui-kit/Logo';
 import { TopItem } from '../ui-kit/TopItem';
-import type { Router, ContentPageContext } from '../ContentPageContext';
 import { useLink } from '../useLink';
+import type { HeaderContent } from './HeaderContent';
 import { HeaderSecondaryMenu } from './HeaderSecondaryMenu';
-
-type HeaderMenuItem = LinkContent;
-
-interface TopMenuItem extends HeaderMenuItem {
-  items?: HeaderMenuItem[];
-}
-
-export interface HeaderContent {
-  location?: string,
-  topItems?: TopMenuItem[];
-}
+import { isSubItemActive } from './isSubItemActive';
+import { isTopItemActive } from './isTopItemActive';
+import { mergeTopItems } from './mergeTopItems';
 
 export interface HeaderProps extends HeaderContent {
   className?: string;
@@ -25,52 +17,40 @@ export interface HeaderProps extends HeaderContent {
 
 export const Header = JSX<HeaderProps>(({ className, location, context, topItems }) => {
   const router = context.useRouter();
+  const sitemap = context.useSitemap();
+  const { handlerDecorator } = context;
 
-  const activeTopItem = topItems?.find(isTopItemActive(router));
-  const activeSubItem = activeTopItem?.items?.find(isSubItemActive(router));
+  const mergedItems = mergeTopItems(sitemap.topItems, topItems);
+  const activeTopItem = mergedItems.find(isTopItemActive(router));
+  const subItems = activeTopItem?.items;
+  const activeSubItem = subItems?.find(isSubItemActive(router));
+
+  const topMenu = mergedItems.map((_, i) => (
+    <TopItem
+      key={String(i)}
+      active={_ === activeTopItem}
+      {...useLink({ router, handlerDecorator }, _)}
+    />
+  ));
+
+  const subMenu = subItems?.map((_) => (
+    <HeaderItem
+      key={_.href}
+      className="mr-8"
+      active={_ === activeSubItem}
+      {...useLink({ router, handlerDecorator }, _)}
+    />
+  ));
+
   return (
-    <div className={`py-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`}>
+    <div className={`pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`}>
       <div className="flex items-center">
         <Logo className="mr-8" />
-        {topItems?.length
-          ? topItems.map((_, i) => (
-            <TopItem key={String(i)} active={_ === activeTopItem} {...useLink(context, _)} />
-          ))
-          : null}
+        {topMenu}
         <HeaderSecondaryMenu location={location} className="ml-auto" />
       </div>
-      {activeTopItem?.items?.length ? (
-        <div className="mt-10">
-          {activeTopItem.items.map((_) => (
-            <HeaderItem
-              key={_.href}
-              className="mr-8"
-              active={_ === activeSubItem}
-              {...useLink(context, _)}
-            />
-          ))}
-        </div>
-      ) : null}
+      <div className="mt-5 h-[1px] bg-main-divider" />
+      <div className="mt-5">{subMenu}</div>
     </div>
   );
 });
-
-const isURL = (href?: string) => href?.includes('//');
-
-const withoutQuery = (href?: string) => (href || '').replace(/\/?\?.+/, '');
-
-function isTopItemActive({ href, pathname }: Router): (item: HeaderMenuItem) => boolean {
-  return (item) => {
-    const itemHref = withoutQuery(item.href);
-    if (isURL(itemHref)) {
-      return Boolean(href && href.startsWith(itemHref));
-    }
-    return Boolean(item.href && pathname.startsWith(itemHref));
-  };
-}
-
-function isSubItemActive({ href, pathname }: Router): (item: HeaderMenuItem) => boolean {
-  return (item) => {
-    return withoutQuery(item.href) === (isURL(item.href) ? withoutQuery(href) : pathname);
-  };
-}

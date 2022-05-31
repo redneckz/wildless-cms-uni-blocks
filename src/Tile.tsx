@@ -23,11 +23,13 @@ export interface TileProps extends TileContent {
 
 const tileStyleMap: Record<BlockVersion, string> = {
   primary: 'bg-white text-primary-text',
-  secondary: 'bg-brand text-white',
+  secondary: 'bg-primary-main text-white',
 };
 
 export const Tile = JSX<TileProps>(
   ({ className, context, title, description, buttons, image, items, version = 'primary' }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
     return (
       <section
         className={`font-sans p-9 rounded-[40px] flex justify-between items-stretch relative ${
@@ -50,7 +52,9 @@ export const Tile = JSX<TileProps>(
               ) : null}
               {buttons?.length ? (
                 <div className="flex mt-auto gap-4">
-                  {buttons.map((button, index) => renderButton(button, index, context))}
+                  {buttons.map((button, index) =>
+                    renderButton(useLink({ router, handlerDecorator }, button), index),
+                  )}
                 </div>
               ) : null}
             </div>
@@ -62,13 +66,8 @@ export const Tile = JSX<TileProps>(
   },
 );
 
-function renderButton(button: ButtonProps, i: number, context: ContentPageContext) {
+function renderButton(button: ButtonProps, i: number) {
   return button?.text ? (
-    <Button
-      key={String(i)}
-      {...useLink(context, button)}
-      className="mt-8"
-      version={button.version}
-    />
+    <Button key={String(i)} {...button} className="mt-8" version={button.version} />
   ) : null;
 }

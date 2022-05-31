@@ -5,18 +5,20 @@ export type HeaderItemProps = TopItemProps;
 
 export const HeaderItem = JSX<HeaderItemProps>(
   ({ className, text, href, target, active, onClick, children }) => {
-    const linkStyle = active ? 'border-b-brand' : 'border-transparent';
-    const textStyle = active ? 'text-brand' : 'text-black hover:text-brand';
+    const textStyle = active ? 'text-primary-main' : 'text-primary-text hover:text-primary-main';
     return (
       <a
-        className={`${linkStyle} border-0 border-b-2 border-solid inline-block bg-transparent py-2 text-center font-sans no-underline ${
+        className={`relative inline-block bg-transparent text-center no-underline ${
           className || ''
         }`}
         href={href}
         target={target}
         onClick={onClick}
       >
-        <span className={`${textStyle} text-base font-normal`}>{text || children}</span>
+        <span className={`font-sans font-normal text-base ${textStyle}`}>{text || children}</span>
+        {active ? (
+          <div className="absolute left-0 -bottom-2 w-full h-[2px] bg-primary-main" />
+        ) : null}
       </a>
     );
   },

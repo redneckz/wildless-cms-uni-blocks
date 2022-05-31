@@ -11,7 +11,7 @@ export interface BlockItemProps extends BlockItemContent {
 }
 
 const listStyleMap: Record<BlockItemVersion, string> = {
-  primary: 'bg-brand',
+  primary: 'bg-primary-main',
   secondary: 'bg-white',
 };
 

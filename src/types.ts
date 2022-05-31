@@ -11,7 +11,6 @@ import type {
 } from 'sharp';
 import type { HeaderContent } from './Header/index';
 import type { PlaceholderContent } from './Placeholder';
-import type { ProductColumnBlockContent } from './ProductColumnBlock';
 import type { RichTextContent } from './RichText';
 import type { TextContent } from './Text';
 import type { TextWithImageContent } from './TextWithImage';
@@ -20,8 +19,9 @@ import type { ProductBlockContent } from './ProductBlock';
 
 export type BlockVersion = 'primary' | 'secondary';
 
+export type ColorPalette = 'pc' | 'bc' | 'eo';
+
 export type BlockContent =
-  | ProductColumnBlockContent
   | HeaderContent
   | TextContent
   | TextWithImageContent
@@ -51,6 +51,7 @@ export interface ContentPageDef extends ContentPageMeta {
   style?: string[];
   blocks?: BlockDef[];
   likeControl?: boolean;
+  colorPalette?: ColorPalette;
 }
 
 export interface Img {
