@@ -7,7 +7,7 @@ export interface TextWithImageProps {
 }
 
 export const Img = JSX<TextWithImageProps>(({ className, image }) => (
-  <picture className={`flex ${className || ''}`}>
+  <picture className={`${className || ''}`}>
     {image.sources?.length
       ? image.sources.map(({ src, format }, index) => (
           <source key={`${index}_${src}`} srcSet={src} type={formatToMimeType(format)} />

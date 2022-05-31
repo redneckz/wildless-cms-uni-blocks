@@ -1,9 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
-import { Icons } from './Icons';
-import { BlockVersion, Picture } from './types';
-import type { ButtonProps } from './ui-kit/Button';
-import { Button } from './ui-kit/Button';
+import * as Icons from './Icons/index';
 import { ProductBlockInner, ProductBlockInnerContent } from './ProductBlockInner';
 
 export interface Benefit {

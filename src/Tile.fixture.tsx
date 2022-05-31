@@ -6,19 +6,30 @@ import { Picture } from './types';
 const image: Picture = {
   src: 'money-1.png',
   format: 'webp',
-  size: {
-    width: 300,
-    height: 300,
-  },
+};
+
+const image2: Picture = {
+  src: 'credit-card-1.png',
+  format: 'webp',
+};
+
+const image3: Picture = {
+  src: 'column-1.png',
+  format: 'webp',
+};
+
+const image4: Picture = {
+  src: 'globe-1.png',
+  format: 'webp',
 };
 
 export default {
   credit: (
-    <div className={`grid grid-cols-12`}>
+    <div className="grid grid-cols-12">
       <Tile
         context={context}
-        className={'col-span-8 min-h-[308px]'}
-        title={'Кредиты'}
+        className="col-span-8"
+        title="Кредиты"
         items={[
           'Кредитный лимит до 10 млн ₽',
           'Кредиты наличными на любые цели',
@@ -36,12 +47,12 @@ export default {
     </div>
   ),
   mortgage: (
-    <div className={`grid grid-cols-12`}>
+    <div className="grid grid-cols-12">
       <Tile
         context={context}
-        version={'secondary'}
-        className={'col-span-4 min-h-[308px]'}
-        title={'Ипотека'}
+        version="secondary"
+        className="col-span-4"
+        title="Ипотека"
         description={
           'Широкий выбор ипотечных программ с государственной поддержкой. Специальные предложения от 12,2 %'
         }
@@ -57,11 +68,11 @@ export default {
     </div>
   ),
   'credit-card': (
-    <div className={`grid grid-cols-12`}>
+    <div className="grid grid-cols-12">
       <Tile
         context={context}
-        className={'col-span-6 min-h-[308px]'}
-        title={'Банковские пластиковые карты'}
+        className="col-span-6"
+        title="Банковские пластиковые карты"
         items={['Счета в разных валютах', 'Бесплатное обслуживание', 'Кэшбэк до 15% от покупок']}
         buttons={[
           {
@@ -71,16 +82,16 @@ export default {
             version: 'secondary',
           },
         ]}
-        image={image}
+        image={image2}
       />
     </div>
   ),
   premium: (
-    <div className={`grid grid-cols-12`}>
+    <div className="grid grid-cols-12">
       <Tile
         context={context}
-        className={'col-span-6 min-h-[308px]'}
-        title={'Премиальные продукты'}
+        className="col-span-6"
+        title="Премиальные продукты"
         description={
           'Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус'
         }
@@ -92,16 +103,16 @@ export default {
             version: 'secondary',
           },
         ]}
-        image={image}
+        image={image3}
       />
     </div>
   ),
   ecosystem: (
-    <div className={`grid grid-cols-12`}>
+    <div className="grid grid-cols-12">
       <Tile
         context={context}
-        className={'col-span-12 min-h-[308px]'}
-        title={'Экосистема «СВОЕ», созданная для людей'}
+        className="col-span-12 pr-28"
+        title="Экосистема «СВОЕ», созданная для людей"
         items={[
           'Качественные фермерские продукты напрямую от производителей',
           'Самая большая база сельских туров по России',
@@ -116,7 +127,7 @@ export default {
             version: 'secondary',
           },
         ]}
-        image={image}
+        image={image4}
       />
     </div>
   ),

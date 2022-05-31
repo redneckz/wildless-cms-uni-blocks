@@ -5,6 +5,8 @@ import { Text } from './Text';
 import { TextWithImage } from './TextWithImage';
 import { Tile } from './Tile';
 import { ProductBlock } from './ProductBlock';
+import { StepsBlock } from './StepsBlock';
+import { AdvantagesBlock } from './BenefitsBlock';
 
 export const Blocks = {
   Header,
@@ -14,4 +16,6 @@ export const Blocks = {
   Placeholder,
   Tile,
   ProductBlock,
+  StepsBlock,
+  AdvantagesBlock,
 };

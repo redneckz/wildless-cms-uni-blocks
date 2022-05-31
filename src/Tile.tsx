@@ -37,8 +37,12 @@ export const Tile = JSX<TileProps>(
         } ${tileStyleMap[version]}`}
       >
         <div className="flex flex-col w-full">
-          {title && <h1 className="font-medium text-title m-0 whitespace-pre-wrap">{title}</h1>}
-          <div className="flex flex-row justify-between h-full">
+          {title && (
+            <h3 className="font-medium text-title m-0 whitespace-pre-wrap max-w-[600px]">
+              {title}
+            </h3>
+          )}
+          <div className="flex justify-between h-full">
             <div className="flex flex-col">
               {description && (
                 <div className="font-normal text-base max-w-[600px] mt-4">{description}</div>
@@ -58,7 +62,11 @@ export const Tile = JSX<TileProps>(
                 </div>
               ) : null}
             </div>
-            {image && <Img image={image} />}
+            {image && (
+              <div className="mt-auto flex-none h-[220px] w-[220px]">
+                <Img image={image} />
+              </div>
+            )}
           </div>
         </div>
       </section>
