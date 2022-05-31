@@ -1,6 +1,6 @@
 import { context } from './setup-fixture';
 
-import { AdvantagesBlock } from './AdvantagesBlock';
+import { AdvantagesBlock } from './BenefitsBlock';
 
 export default (
   <AdvantagesBlock
