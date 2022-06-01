@@ -12,7 +12,7 @@ export interface TileContent {
   description?: string;
   image?: Picture;
   items?: string[];
-  buttons?: ButtonProps[];
+  button?: ButtonProps;
 }
 
 export interface TileProps extends TileContent {
@@ -27,7 +27,7 @@ const tileStyleMap: Record<BlockVersion, string> = {
 };
 
 export const Tile = JSX<TileProps>(
-  ({ className, context, title, description, buttons, image, items, version = 'primary' }) => {
+  ({ className, context, title, description, button, image, items, version = 'primary' }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
     return (
@@ -54,13 +54,11 @@ export const Tile = JSX<TileProps>(
                   ))}
                 </section>
               ) : null}
-              {buttons?.length ? (
-                <div className="flex mt-auto gap-4">
-                  {buttons.map((button, index) =>
-                    renderButton(useLink({ router, handlerDecorator }, button), index),
-                  )}
+              {button?.text && (
+                <div className="mt-auto">
+                  <Button className="mt-8" {...useLink({ router, handlerDecorator }, button)} />
                 </div>
-              ) : null}
+              )}
             </div>
             {image && (
               <div className="mt-auto flex-none h-[220px] w-[220px]">
@@ -73,9 +71,3 @@ export const Tile = JSX<TileProps>(
     );
   },
 );
-
-function renderButton(button: ButtonProps, i: number) {
-  return button?.text ? (
-    <Button key={String(i)} {...button} className="mt-8" version={button.version} />
-  ) : null;
-}
