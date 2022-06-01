@@ -56,7 +56,11 @@ export const Tile = JSX<TileProps>(
               ) : null}
               {button?.text && (
                 <div className="mt-auto">
-                  <Button className="mt-8" {...useLink({ router, handlerDecorator }, button)} />
+                  <Button
+                    className="mt-8"
+                    {...useLink({ router, handlerDecorator }, button)}
+                    version="secondary"
+                  />
                 </div>
               )}
             </div>
