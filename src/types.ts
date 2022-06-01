@@ -11,11 +11,10 @@ import type {
 } from 'sharp';
 import type { HeaderContent } from './Header/index';
 import type { PlaceholderContent } from './Placeholder';
-import type { RichTextContent } from './RichText';
-import type { TextContent } from './Text';
-import type { TextWithImageContent } from './TextWithImage';
 import type { TileContent } from './Tile';
 import type { ProductBlockInnerContent } from './ProductBlockInner';
+import type { StepsBlockContent } from './StepsBlock';
+import type { BenefitsBlockContent } from './BenefitsBlock';
 
 export type BlockVersion = 'primary' | 'secondary';
 
@@ -23,12 +22,11 @@ export type ColorPalette = 'pc' | 'bc' | 'eo';
 
 export type BlockContent =
   | HeaderContent
-  | TextContent
-  | TextWithImageContent
-  | RichTextContent
   | PlaceholderContent
   | ProductBlockInnerContent
-  | TileContent;
+  | TileContent
+  | StepsBlockContent
+  | BenefitsBlockContent;
 
 export interface BlockDef {
   type: string;

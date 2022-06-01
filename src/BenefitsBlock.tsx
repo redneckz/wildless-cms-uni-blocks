@@ -8,29 +8,30 @@ export interface Benefit {
   icon?: keyof typeof Icons;
 }
 
-export interface AdvantagesBlockProps {
-  className?: string;
-  context: ContentPageContext;
+export interface BenefitsBlockContent {
   title?: string;
   benefits?: Benefit[];
 }
 
-export const AdvantagesBlock = JSX<AdvantagesBlockProps>(
-  ({ className, context, title, benefits }) => {
-    return (
-      <section
-        className={`font-sans text-primary-text bg-white p-12 rounded-[40px] flex flex-col items-center ${
-          className || ''
-        }`}
-      >
-        <h2 className="font-medium text-title m-0 max-w-[47rem] text-center">{title}</h2>
-        {benefits?.length ? (
-          <div className="grid grid-cols-2 gap-5 mt-8">{benefits.map(renderStep)}</div>
-        ) : null}
-      </section>
-    );
-  },
-);
+export interface BenefitsBlockProps extends BenefitsBlockContent {
+  className?: string;
+  context: ContentPageContext;
+}
+
+export const BenefitsBlock = JSX<BenefitsBlockProps>(({ className, title, benefits }) => {
+  return (
+    <section
+      className={`font-sans text-primary-text bg-white p-12 rounded-[40px] flex flex-col items-center ${
+        className || ''
+      }`}
+    >
+      <h2 className="font-medium text-title m-0 max-w-[47rem] text-center">{title}</h2>
+      {benefits?.length ? (
+        <div className="grid grid-cols-2 gap-5 mt-8">{benefits.map(renderStep)}</div>
+      ) : null}
+    </section>
+  );
+});
 
 const renderStep = (benefit: Benefit, i: number) => {
   return (
