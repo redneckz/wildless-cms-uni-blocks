@@ -78,13 +78,11 @@
           "Кредиты наличными на любые цели",
           "Получите деньги без залога и поручителей"
         ],
-        "buttons": [
-          {
-            "text": "Подробнее",
-            "href": "/credit-cards",
-            "version": "secondary"
-          }
-        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "/credit-cards",
+          "version": "secondary"
+        },
         "image": {
           "src": "money-1.png",
           "format": "webp",
@@ -102,13 +100,11 @@
       "content": {
         "title": "Ипотека",
         "description": "Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %",
-        "buttons": [
-          {
-            "text": "Подробнее",
-            "href": "/credits",
-            "version": "secondary"
-          }
-        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "/credits",
+          "version": "secondary"
+        },
         "promo": true
       }
     },
@@ -118,13 +114,11 @@
       "content": {
         "title": "Банковские пластиковые карты",
         "items": ["Счета в разных валютах", "Бесплатное обслуживание", "Кэшбэк до 15% от покупок"],
-        "buttons": [
-          {
-            "text": "Подробнее",
-            "href": "/credits",
-            "version": "secondary"
-          }
-        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "/credits",
+          "version": "secondary"
+        },
         "image": {
           "src": "credit-card-1.png",
           "format": "webp",
@@ -141,13 +135,11 @@
       "content": {
         "title": "Премиальные продукты",
         "description": "Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус",
-        "buttons": [
-          {
-            "text": "Подробнее",
-            "href": "/credits",
-            "version": "secondary"
-          }
-        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "/credits",
+          "version": "secondary"
+        },
         "image": {
           "src": "column-1.png",
           "format": "webp",
@@ -169,13 +161,11 @@
           "Площадки для создания комфортной жизни за городом",
           "Подробная база вакансий для жителей сельской местности"
         ],
-        "buttons": [
-          {
-            "text": "Подробнее",
-            "href": "/credits",
-            "version": "secondary"
-          }
-        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "/credits",
+          "version": "secondary"
+        },
         "image": {
           "src": "globe-1.png",
           "format": "webp",
@@ -193,13 +183,11 @@
       "content": {
         "title": "Драгоценные металлы",
         "items": ["Счета в драгоценных металлах", "Слитки  и монеты из драгоценных металлов"],
-        "buttons": [
-          {
-            "text": "Подробнее",
-            "href": "/credits",
-            "version": "secondary"
-          }
-        ]
+        "button": {
+          "text": "Подробнее",
+          "href": "/credits",
+          "version": "secondary"
+        }
       }
     },
     {
@@ -209,13 +197,11 @@
       "content": {
         "title": "Банковские ячейки",
         "items": ["Полная конфиденциальность", "Разный размер ячеек", "Оформление доверенностей"],
-        "buttons": [
-          {
-            "text": "Подробнее",
-            "href": "/credits",
-            "version": "secondary"
-          }
-        ]
+        "button": {
+          "text": "Подробнее",
+          "href": "/credits",
+          "version": "secondary"
+        }
       }
     },
     {
@@ -229,13 +215,11 @@
           "Минимальная сумма вклада  от 3000 Р",
           "Минимальный срок вклада от 1 месяца"
         ],
-        "buttons": [
-          {
-            "text": "Подробнее",
-            "href": "/credits",
-            "version": "secondary"
-          }
-        ]
+        "button": {
+          "text": "Подробнее",
+          "href": "/credits",
+          "version": "secondary"
+        }
       }
     }
   ]
