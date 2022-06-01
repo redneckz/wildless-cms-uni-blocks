@@ -13,11 +13,11 @@ export interface TileContent {
   image?: Picture;
   items?: string[];
   button?: ButtonProps;
+  version?: BlockVersion;
 }
 
 export interface TileProps extends TileContent {
   className?: string;
-  version?: BlockVersion;
   context: ContentPageContext;
 }
 

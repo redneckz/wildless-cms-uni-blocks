@@ -1,9 +1,9 @@
 import { context } from './setup-fixture';
 
-import { AdvantagesBlock } from './BenefitsBlock';
+import { BenefitsBlock } from './BenefitsBlock';
 
 export default (
-  <AdvantagesBlock
+  <BenefitsBlock
     context={context}
     title="Преимущества кредита"
     benefits={[

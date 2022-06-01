@@ -8,14 +8,17 @@ export interface Step {
   icon?: keyof typeof Icons;
 }
 
-export interface StepsBlockProps {
-  className?: string;
-  context: ContentPageContext;
+export interface StepsBlockContent {
   title?: string;
   steps?: Step[];
 }
 
-export const StepsBlock = JSX<StepsBlockProps>(({ className, context, title, steps }) => {
+export interface StepsBlockProps extends StepsBlockContent {
+  className?: string;
+  context: ContentPageContext;
+}
+
+export const StepsBlock = JSX<StepsBlockProps>(({ className, title, steps }) => {
   return (
     <section
       className={`font-sans text-primary-text bg-white px-12 py-20 rounded-[40px] flex flex-col items-center ${
