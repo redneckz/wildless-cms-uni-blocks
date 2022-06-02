@@ -4,3 +4,4 @@ lib
 bundle
 coverage
 .idea
+.DS_Store
