@@ -25,6 +25,7 @@ export const TopItem = JSX<TopItemProps>(
         href={href}
         target={target}
         onClick={onClick}
+        rel="noopener noreferrer"
       >
         <span className={`font-sans font-normal text-sm ${textStyle}`}>{text || children}</span>
       </a>
