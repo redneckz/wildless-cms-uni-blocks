@@ -1,5 +1,6 @@
 import { setup } from '@redneckz/uni-jsx';
 import runtime from 'react/jsx-runtime';
+import { useState } from 'react';
 import type { ContentPageContext } from './ContentPageContext';
 
 const { jsx, jsxs } = runtime as any;
@@ -8,6 +9,7 @@ setup(jsx, jsxs);
 const TEST_ORIGIN = 'http://localhost:5001';
 
 export const context: ContentPageContext = {
+  useState,
   useRouter: () => ({
     href: `${TEST_ORIGIN}/credits`,
     pathname: '/credits',
