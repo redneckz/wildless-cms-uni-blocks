@@ -7,22 +7,23 @@ import { SocialMedia } from './SocialMedia';
 import { HorizontalNavigation } from './HorizontalNavigation';
 import { TextInformation } from './TextInformation';
 import type { LinkContent } from '../ui-kit/Link';
-import { UniBlocksComponentProps } from '../types';
+import { UniBlocksComponentProps, ContactInfo } from '../types';
 
 export interface FooterProps extends UniBlocksComponentProps {
   documents?: LinkContent[];
   relatedEnterprises?: LinkContent[];
+  contacts?: ContactInfo[];
 }
 
-export const Footer = JSX<FooterProps>(({ documents, relatedEnterprises, context }) => {
+export const Footer = JSX<FooterProps>(({ documents, relatedEnterprises, contacts, context }) => {
   return (
     <footer className="px-9 py-10 bg-white rounded-bl-3xl rounded-br-3xl">
-      <div className="flex items-stretch gap-[30px]">
-        <Logo />
+      <div className="flex items-stretch gap-8">
+        <Logo className="w-[179px]" />
         <SearchBar context={context} className="grow" />
       </div>
-      <div className="flex items-stretch">
-        <Contacts />
+      <div className="flex items-stretch gap-8">
+        <Contacts className="w-[179px]" items={contacts} context={context} hasButton />
         <Sitemap />
       </div>
       <SocialMedia />

@@ -3,6 +3,23 @@ import { Footer } from './Footer';
 
 export default (
   <Footer
+    contacts={[
+      {
+        text: '+7 (495) 787-7-787',
+        description: 'Для звонков из-за границы',
+        type: 'tel',
+      },
+      {
+        text: 'example@example.com',
+        description: 'Для писем',
+        type: 'email',
+      },
+      {
+        text: '7787',
+        description: 'Абонентам МТС, Мегафон, Билайн и Tele2',
+        type: 'tel',
+      },
+    ]}
     relatedEnterprises={[
       {
         text: 'РСХБ Страхование',
