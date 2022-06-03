@@ -3,6 +3,33 @@ import { Footer } from './Footer';
 
 export default (
   <Footer
+    relatedEnterprises={[
+      {
+        text: 'РСХБ Страхование',
+        href: 'https://rshb.ru/',
+        target: '_blank',
+      },
+      {
+        text: 'РСХБ Страхование жизни',
+        href: 'https://rshb.ru/',
+        target: '_blank',
+      },
+      {
+        text: 'РСХБ Управление активами',
+        href: 'https://rshb.ru/',
+        target: '_blank',
+      },
+      {
+        text: 'РСХБ Лизинг',
+        href: 'https://rshb.ru/',
+        target: '_blank',
+      },
+      {
+        text: 'РСХБ Факторинг',
+        href: 'https://rshb.ru/',
+        target: '_blank',
+      },
+    ]}
     documents={[
       {
         text: 'Информация о процентных ставках по договорам банковского вклада с физическими лицами',

@@ -7,14 +7,14 @@ import { SocialMedia } from './SocialMedia';
 import { HorizontalNavigation } from './HorizontalNavigation';
 import { TextInformation } from './TextInformation';
 import type { LinkContent } from '../ui-kit/Link';
-import type { ContentPageContext } from '../ContentPageContext';
+import { UniBlocksComponentProps } from '../types';
 
-export interface FooterProps {
-  documents: LinkContent[];
-  context: ContentPageContext;
+export interface FooterProps extends UniBlocksComponentProps {
+  documents?: LinkContent[];
+  relatedEnterprises?: LinkContent[];
 }
 
-export const Footer = JSX<FooterProps>(({ documents, context }) => {
+export const Footer = JSX<FooterProps>(({ documents, relatedEnterprises, context }) => {
   return (
     <footer className="px-9 py-10 bg-white rounded-bl-3xl rounded-br-3xl">
       <div className="flex items-stretch">
@@ -26,8 +26,8 @@ export const Footer = JSX<FooterProps>(({ documents, context }) => {
         <Sitemap />
       </div>
       <SocialMedia />
-      <HorizontalNavigation />
-      <TextInformation documents={documents} context={context} />
+      <HorizontalNavigation links={relatedEnterprises} context={context} />
+      <TextInformation links={documents} context={context} />
     </footer>
   );
 });
