@@ -1,4 +1,4 @@
-import type { TopMenuItem } from './HeaderContent';
+import type { TopMenuItem } from './types';
 
 const cmp = (a?: TopMenuItem) => (b?: TopMenuItem) => a?.href === b?.href;
 

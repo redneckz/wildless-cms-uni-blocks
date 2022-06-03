@@ -8,7 +8,7 @@ import type { HeaderContent } from './HeaderContent';
 import { HeaderSecondaryMenu } from './HeaderSecondaryMenu';
 import { isSubItemActive } from './isSubItemActive';
 import { isTopItemActive } from './isTopItemActive';
-import { mergeTopItems } from './mergeTopItems';
+import { mergeTopItems } from '../mergeTopItems';
 import { UniBlocksComponentProps } from '../types';
 
 export interface HeaderProps extends HeaderContent, UniBlocksComponentProps {}
