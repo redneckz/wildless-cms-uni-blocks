@@ -35,7 +35,7 @@ export const Footer = JSX<FooterProps>(
           />
           <Sitemap className="pt-[3px]" context={context} items={topItems} />
         </div>
-        <SocialMedia media={socialMedia} />
+        <SocialMedia media={socialMedia} context={context} />
         <HorizontalNavigation links={relatedEnterprises} context={context} />
         <TextInformation links={documents} context={context} />
       </footer>

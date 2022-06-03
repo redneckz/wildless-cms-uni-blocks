@@ -73,4 +73,4 @@ const renderText = (type: ContactInfo['type'], text: string) => {
   }
 };
 
-const formatTel = (s: string) => s.replace('+7', '8').replaceAll(/(\-|\s|\(|\)|\D+)/g, '');
+const formatTel = (s: string) => s.replaceAll(/(\-|\s|\(|\)|\D+)/g, '');

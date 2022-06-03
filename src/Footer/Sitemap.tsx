@@ -1,25 +1,26 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { TopMenuItem, UniBlocksComponentProps, LinkContent } from '../types';
 import { mergeTopItems } from '../mergeTopItems';
+import { useLink } from '../useLink';
+import { ContentPageContext } from '../ContentPageContext';
 export interface SitemapProps extends UniBlocksComponentProps {
   items?: TopMenuItem[];
 }
 
 export const Sitemap = JSX<SitemapProps>(({ className, items, context }) => {
-  const router = context.useRouter();
   const sitemap = context.useSitemap();
-  const { handlerDecorator } = context;
-
   const mergedItems = mergeTopItems(sitemap.topItems, items);
 
   return (
     <div className={`flex items-start justify-start gap-12 ${className || ''}`}>
-      {mergedItems?.map(renderColumn)}
+      {mergedItems?.map((_, i) => renderColumn(_, i, context))}
     </div>
   );
 });
 
-const renderColumn = (c: TopMenuItem, index: number) => {
+const renderColumn = (c: TopMenuItem, index: number, context: ContentPageContext) => {
+  const router = context.useRouter();
+  const { handlerDecorator } = context;
   const { text, href, items, target } = c;
 
   return (
@@ -31,18 +32,24 @@ const renderColumn = (c: TopMenuItem, index: number) => {
       >
         {text || `Раздел ${index}`}
       </a>
-      {items?.map(renderColumnItem)}
+      {items?.map((_, i) => (
+        <ColumnItem index={i} {...useLink({ router, handlerDecorator }, _)} />
+      ))}
     </div>
   );
 };
 
-const renderColumnItem = (_: LinkContent, index: number) => (
+interface ColumnItemProps extends LinkContent {
+  index?: number;
+}
+
+const ColumnItem = JSX<ColumnItemProps>(({ text, href, target, index }) => (
   <a
     key={index}
     className="block font-sans font-normal text-base text-secondary-text hover:text-primary-text no-underline"
-    href={_.href}
-    target={_.target || '_self'}
+    href={href}
+    target={target || '_self'}
   >
-    {_.text || `Раздел ${index}`}
+    {text || `Раздел ${index}`}
   </a>
-);
+));
