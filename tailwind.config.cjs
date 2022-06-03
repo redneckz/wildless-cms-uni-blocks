@@ -10,6 +10,7 @@ module.exports = {
       fontSize: {
         'title-xs': ['1.5rem', '1.875rem'], //24px 30px
         'title-xsm': ['0.75rem', '1.125rem'], // 12px 18px
+        'text-sm': ['0.75rem', '1.125rem'], // 12px 18px
         'title-sm': ['1.75rem', '2.5rem'], //28px 40px
         title: ['2rem', '2.5rem'], //32px 40px
         'title-lg': ['2.5rem', '3rem'], //40px 48px

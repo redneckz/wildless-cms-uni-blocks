@@ -15,10 +15,6 @@ export default (
         target: '_blank',
       },
       {
-        href: 'https://rshb.ru/',
-        target: '_blank',
-      },
-      {
         text: 'Раскрытие информации',
         href: 'https://rshb.ru/',
         target: '_blank',

@@ -16,7 +16,7 @@ export interface FooterProps {
 
 export const Footer = JSX<FooterProps>(({ documents, context }) => {
   return (
-    <footer>
+    <footer className="px-9 py-10 bg-white rounded-bl-3xl rounded-br-3xl">
       <div className="flex items-stretch">
         <Logo />
         <SearchBar />
