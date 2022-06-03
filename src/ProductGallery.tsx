@@ -88,7 +88,7 @@ function renderNavButton(
       </div>
       <div
         className={`absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${progressBarClassName}`}
-        style={{ 'animation-duration': `${duration}s` }}
+        style={{ animationDuration: `${duration}s` }}
       ></div>
     </button>
   );

@@ -53,11 +53,6 @@ module.exports = {
   },
   plugins: [],
   safelist: [
-    {
-      pattern: /col-.*/,
-    },
-    {
-      pattern: /grid-cols-.*/,
-    },
+    ...Array.from({ length: 10 }, (_, i) => `grid-cols-${i + 1}`), // grid-cols-{1..10}, for ProductGallery block
   ],
 };
