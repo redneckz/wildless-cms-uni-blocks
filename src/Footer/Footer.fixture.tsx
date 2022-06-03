@@ -3,6 +3,7 @@ import { Footer } from './Footer';
 
 export default (
   <Footer
+    socialMedia={[{ href: 'https://vk.com' }, { href: 'https://ok.ru' }, { href: 'https://t.me' }]}
     contacts={[
       {
         text: '+7 (495) 787-7-787',

@@ -13,22 +13,25 @@ export interface FooterProps extends UniBlocksComponentProps {
   documents?: LinkContent[];
   relatedEnterprises?: LinkContent[];
   contacts?: ContactInfo[];
+  socialMedia?: Omit<LinkContent, 'text'>[];
 }
 
-export const Footer = JSX<FooterProps>(({ documents, relatedEnterprises, contacts, context }) => {
-  return (
-    <footer className="px-9 py-10 bg-white rounded-bl-3xl rounded-br-3xl">
-      <div className="flex items-stretch gap-8">
-        <Logo className="w-[179px]" />
-        <SearchBar context={context} className="grow" />
-      </div>
-      <div className="flex items-stretch gap-8">
-        <Contacts className="w-[179px]" items={contacts} context={context} hasButton />
-        <Sitemap />
-      </div>
-      <SocialMedia />
-      <HorizontalNavigation links={relatedEnterprises} context={context} />
-      <TextInformation links={documents} context={context} />
-    </footer>
-  );
-});
+export const Footer = JSX<FooterProps>(
+  ({ documents, relatedEnterprises, contacts, socialMedia, context }) => {
+    return (
+      <footer className="px-9 py-10 bg-white rounded-bl-3xl rounded-br-3xl">
+        <div className="flex items-stretch gap-8">
+          <Logo className="w-[179px]" />
+          <SearchBar context={context} className="grow" />
+        </div>
+        <div className="flex items-stretch gap-8">
+          <Contacts className="w-[179px]" items={contacts} context={context} hasButton />
+          <Sitemap />
+        </div>
+        <SocialMedia media={socialMedia} />
+        <HorizontalNavigation links={relatedEnterprises} context={context} />
+        <TextInformation links={documents} context={context} />
+      </footer>
+    );
+  },
+);
