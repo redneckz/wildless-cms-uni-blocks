@@ -18,6 +18,7 @@ export type HandlerDecorator = <F extends Function>(handler: F, targetContent: a
 
 export interface ContentPageContext {
   useRouter: () => Router;
+  useState: <T>(initialState: T) => [T, (_: T) => void];
   useSitemap: () => HeaderContent;
   useLikeService: () => LikeService;
   handlerDecorator?: HandlerDecorator;

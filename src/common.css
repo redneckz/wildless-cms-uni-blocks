@@ -30,4 +30,8 @@
   .rotate-180 {
     transform: rotate(180deg);
   }
+
+  .-translate-x-full {
+    transform: translateX(-100%);
+  }
 }

@@ -40,12 +40,19 @@ module.exports = {
       minWidth: (theme) => ({
         ...theme('spacing'),
       }),
+      animation: {
+        slide: 'progress linear',
+      },
+      keyframes: {
+        progress: {
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0px)' },
+        },
+      },
     },
   },
   plugins: [],
   safelist: [
-    {
-      pattern: /col-.*/,
-    },
+    ...Array.from({ length: 10 }, (_, i) => `grid-cols-${i + 1}`), // grid-cols-{1..10}, for ProductGallery block
   ],
 };
