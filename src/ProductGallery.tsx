@@ -2,9 +2,14 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import { ProductBlockInner, ProductBlockInnerContent } from './ProductBlockInner';
 
-export interface ProductSlideContent extends ProductBlockInnerContent {
-  navBtnTitle: string;
-  navBtnDesc?: string;
+interface ProductGalleryNav {
+  title: string;
+  desc: string;
+}
+
+export interface ProductSlideContent {
+  nav: ProductGalleryNav;
+  productBlock: ProductBlockInnerContent;
 }
 
 export interface ProductGalleryСontent {
@@ -26,6 +31,8 @@ export const ProductGallery = JSX<ProductGalleryProps>(
     }
 
     if (slides?.length) {
+      const galleryNav = slides.map((s) => s.nav);
+      const galleryBlocks = slides.map((s) => s.productBlock);
       const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
 
       if (duration) {
@@ -39,17 +46,18 @@ export const ProductGallery = JSX<ProductGalleryProps>(
           className={`font-sans bg-white rounded-[40px] overflow-hidden w-100 ${className || ''}`}
         >
           <div
-            className={`flex transition duration-1000 ${getActiveSlideClassName(activeSlideIndex)}`}
+            className={`flex transition duration-1000`}
+            style={{ transform: `translateX(-${activeSlideIndex}00%)` }}
           >
-            {slides.map((_, i) => renderGallerySlide(_, i, context))}
+            {galleryBlocks.map((_, i) => renderProductBlock(_, i, context))}
           </div>
 
-          <div className="border-t border-solid border-main-divider">
-            <div className={`grid ${getNavGridColumnClassName(slides.length)}`}>
-              {slides.map((s, i) =>
-                renderNavButton(s, i, activeSlideIndex, setActiveSlideIndex, duration),
-              )}
-            </div>
+          <div
+            className={`border-t border-solid border-main-divider grid grid-cols-${galleryNav.length}`}
+          >
+            {galleryNav.map((_, i) =>
+              renderNavButton(_, i, activeSlideIndex, setActiveSlideIndex, duration),
+            )}
           </div>
         </section>
       );
@@ -57,24 +65,25 @@ export const ProductGallery = JSX<ProductGalleryProps>(
   },
 );
 
-function renderGallerySlide(slide: ProductSlideContent, i: number, context) {
+function renderProductBlock(block: ProductBlockInnerContent, i: number, context) {
   return (
     <section key={String(i)} className="grow-0 shrink-0 basis-full" role="list">
       <div className="p-11 pr-[7.5rem] ">
-        <ProductBlockInner context={context} {...slide} />
+        <ProductBlockInner context={context} {...block} />
       </div>
     </section>
   );
 }
 
 function renderNavButton(
-  slide: ProductSlideContent,
+  slide: ProductGalleryNav,
   index: number,
   activeSlideIndex,
   setActiveSlideIndex,
   duration,
 ) {
   const isActiveBtn = index === activeSlideIndex;
+  const progressBarClassName = isActiveBtn ? 'animate-slide' : '';
   const btnTitleClassName = isActiveBtn ? 'text-primary-text' : 'text-secondary-text';
   return (
     <button
@@ -85,68 +94,14 @@ function renderNavButton(
     >
       <div className="border-0 border-r border-solid border-main-divider px-6">
         <div className={`text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`}>
-          {slide.navBtnTitle}
+          {slide.title}
         </div>
-        <div className="text-xs text-secondary-text">{slide.navBtnDesc}</div>
+        <div className="text-xs text-secondary-text">{slide.desc}</div>
       </div>
       <div
-        className={`absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${getAnimateProgressClass(
-          isActiveBtn ? duration : 0,
-        )}`}
+        className={`absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${progressBarClassName}`}
+        style={{ 'animation-duration': `${duration}s` }}
       ></div>
     </button>
   );
-}
-
-function getNavGridColumnClassName(slidesLength: number = 1) {
-  switch (slidesLength) {
-    case 1:
-      return 'grid-cols-1';
-    case 2:
-      return 'grid-cols-2';
-    case 3:
-      return 'grid-cols-3';
-    case 4:
-      return 'grid-cols-4';
-  }
-  return 'grid-cols-1';
-}
-
-function getActiveSlideClassName(activeSlideIndex: number = 0) {
-  switch (activeSlideIndex) {
-    case 1:
-      return 'to-slide-2';
-    case 2:
-      return 'to-slide-3';
-    case 3:
-      return 'to-slide-4';
-  }
-  return 'to-slide-1';
-}
-
-function getAnimateProgressClass(duration: number = 0) {
-  switch (duration) {
-    case 1:
-      return 'animate-progress-1';
-    case 2:
-      return 'animate-progress-2';
-    case 3:
-      return 'animate-progress-3';
-    case 4:
-      return 'animate-progress-4';
-    case 5:
-      return 'animate-progress-5';
-    case 6:
-      return 'animate-progress-6';
-    case 7:
-      return 'animate-progress-7';
-    case 8:
-      return 'animate-progress-8';
-    case 9:
-      return 'animate-progress-9';
-    case 10:
-      return 'animate-progress-10';
-  }
-
-  return '';
 }

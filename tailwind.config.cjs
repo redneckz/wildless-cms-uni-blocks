@@ -40,12 +40,24 @@ module.exports = {
       minWidth: (theme) => ({
         ...theme('spacing'),
       }),
+      animation: {
+        slide: 'progress linear',
+      },
+      keyframes: {
+        progress: {
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0px)' },
+        },
+      },
     },
   },
   plugins: [],
   safelist: [
     {
       pattern: /col-.*/,
+    },
+    {
+      pattern: /grid-cols-.*/,
     },
   ],
 };

@@ -30,15 +30,17 @@ const creditCard: Picture = {
   },
 };
 
-export default {
-  default: (
-    <ProductGallery
-      context={context}
-      duration={2}
-      slides={[
-        {
-          navBtnTitle: 'Деньги на любые цели',
-          navBtnDesc: 'Ставка от 12,5% годовых на срок до 5 лет',
+export default (
+  <ProductGallery
+    context={context}
+    duration={5}
+    slides={[
+      {
+        nav: {
+          title: 'Деньги на любые цели',
+          desc: 'Ставка от 12,5% годовых на срок до 5 лет',
+        },
+        productBlock: {
           title: 'Ставка от 12,5% годовых на срок до 5 лет!»',
           description:
             'Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.',
@@ -57,9 +59,13 @@ export default {
           ],
           image: moneyImage,
         },
-        {
-          navBtnTitle: 'Для людей в возрасте',
-          navBtnDesc: 'Ставка от 12,5% годовых на срок до 3 лет',
+      },
+      {
+        nav: {
+          title: 'Для людей в возрасте',
+          desc: 'Ставка от 12,5% годовых на срок до 3 лет',
+        },
+        productBlock: {
           title: 'Ставка от 12,5% годовых на срок до 3 лет!»',
           description:
             'Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.',
@@ -78,9 +84,13 @@ export default {
           ],
           image: worker,
         },
-        {
-          navBtnTitle: 'Выгодно покупать',
-          navBtnDesc: 'Дополнительные бонусные баллы за покупки',
+      },
+      {
+        nav: {
+          title: 'Выгодно покупать',
+          desc: 'Дополнительные бонусные баллы за покупки',
+        },
+        productBlock: {
           title: 'Дополнительные бонусные баллы за покупки!»',
           description:
             'Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.',
@@ -99,9 +109,13 @@ export default {
           ],
           image: creditCard,
         },
-        {
-          navBtnTitle: 'Карты Unionpay',
-          navBtnDesc: 'Кэшбэк до 20% у партнеров',
+      },
+      {
+        nav: {
+          title: 'Карты Unionpay',
+          desc: 'Кэшбэк до 20% у партнеров',
+        },
+        productBlock: {
           title: 'Карты Unionpay»',
           description: 'Кэшбэк до 20% у партнеров',
           items: [
@@ -119,7 +133,7 @@ export default {
           ],
           image: creditCard,
         },
-      ]}
-    />
-  ),
-};
+      },
+    ]}
+  />
+);
