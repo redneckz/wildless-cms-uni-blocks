@@ -22,24 +22,12 @@ export interface ProductGalleryProps extends ProductGalleryСontent {
   context: ContentPageContext;
 }
 
-let productGalleryInterval;
-
 export const ProductGallery = JSX<ProductGalleryProps>(
   ({ className, context, duration = 0, slides = [] }) => {
-    if (productGalleryInterval) {
-      clearInterval(productGalleryInterval);
-    }
-
     if (slides?.length) {
       const galleryNav = slides.map((s) => s.nav);
       const galleryBlocks = slides.map((s) => s.productBlock);
       const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
-
-      if (duration) {
-        productGalleryInterval = setInterval(() => {
-          setActiveSlideIndex(activeSlideIndex < slides.length - 1 ? activeSlideIndex + 1 : 0);
-        }, duration * 1000);
-      }
 
       return (
         <section

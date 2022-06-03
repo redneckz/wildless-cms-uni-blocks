@@ -33,7 +33,6 @@ const creditCard: Picture = {
 export default (
   <ProductGallery
     context={context}
-    duration={5}
     slides={[
       {
         nav: {
