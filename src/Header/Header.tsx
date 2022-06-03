@@ -9,11 +9,9 @@ import { HeaderSecondaryMenu } from './HeaderSecondaryMenu';
 import { isSubItemActive } from './isSubItemActive';
 import { isTopItemActive } from './isTopItemActive';
 import { mergeTopItems } from './mergeTopItems';
+import { UniBlocksComponentProps } from '../types';
 
-export interface HeaderProps extends HeaderContent {
-  className?: string;
-  context: ContentPageContext;
-}
+export interface HeaderProps extends HeaderContent, UniBlocksComponentProps {}
 
 export const Header = JSX<HeaderProps>(({ className, location, context, topItems }) => {
   const router = context.useRouter();

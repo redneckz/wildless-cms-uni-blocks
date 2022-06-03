@@ -9,13 +9,14 @@ import type {
   TiffOptions,
   WebpOptions,
 } from 'sharp';
+import type { BenefitsBlockContent } from './BenefitsBlock';
+import type { ContentPageContext } from './ContentPageContext';
 import type { HeaderContent } from './Header/index';
 import type { PlaceholderContent } from './Placeholder';
-import type { TileContent } from './Tile';
 import type { ProductBlockInnerContent } from './ProductBlockInner';
-import type { StepsBlockContent } from './StepsBlock';
-import type { BenefitsBlockContent } from './BenefitsBlock';
 import type { ProductGalleryContent } from './ProductGallery';
+import type { StepsBlockContent } from './StepsBlock';
+import type { TileContent } from './Tile';
 
 export type BlockVersion = 'primary' | 'secondary';
 
@@ -76,4 +77,27 @@ export interface ImgSource {
 
 export interface Picture extends Img, ImgSource {
   sources?: ImgSource[];
+}
+
+export interface UniBlocksComponentProps {
+  className?: string;
+  context: ContentPageContext;
+}
+
+export interface ContactInfo {
+  text: string;
+  type: 'tel' | 'email';
+  description: string;
+}
+
+export interface LinkContent {
+  text?: string;
+  href?: string;
+  target?: '_blank' | '_self' | '_parent' | '_top' | string;
+}
+
+export type NavMenuItem = LinkContent;
+
+export interface TopMenuItem extends NavMenuItem {
+  items?: NavMenuItem[];
 }

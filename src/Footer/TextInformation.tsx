@@ -1,15 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { LinkContent } from '../types';
 import { useLink } from '../useLink';
-import type { ContentPageContext } from '../ContentPageContext';
+import { FooterLink } from './FooterLink';
 
-export interface TextInformationProps {
-  className?: string;
-  links?: LinkContent[];
-  context: ContentPageContext;
-}
-
-export const TextInformation = JSX<TextInformationProps>(({ className, links, context }) => {
+export const TextInformation = JSX<FooterLink>(({ className, links, context }) => {
   const router = context.useRouter();
   const { handlerDecorator } = context;
   return (
