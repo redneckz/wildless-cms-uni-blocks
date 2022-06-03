@@ -34313,17 +34313,23 @@ const ProductGallery = JSX(({ className, context, duration = 0, slides = [] }) =
         const galleryNav = slides.map((s) => s.nav);
         const galleryBlocks = slides.map((s) => s.productBlock);
         const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
-        return (jsxs("section", { className: `font-sans bg-white rounded-[40px] overflow-hidden w-100 ${className || ''}`, children: [jsx("div", { className: `flex transition duration-1000`, style: { transform: `translateX(-${activeSlideIndex}00%)` }, children: galleryBlocks.map((_, i) => renderProductBlock(_, i, context)) }), jsx("div", { className: `border-t border-solid border-main-divider grid grid-cols-${galleryNav.length}`, children: galleryNav.map((_, i) => renderNavButton(_, i, activeSlideIndex, setActiveSlideIndex, duration)) })] }));
+        return (jsxs("section", { className: `font-sans bg-white rounded-[40px] overflow-hidden w-100 ${className || ''}`, children: [jsx("div", { className: `flex transition duration-1000`, style: { transform: `translateX(-${activeSlideIndex}00%)` }, children: galleryBlocks.map((_, i) => renderProductBlock(_, i, context)) }), jsx("div", { className: `border-t border-solid border-main-divider grid grid-cols-${galleryNav.length}`, children: galleryNav.map((slide, i) => renderNavButton({
+                        slide,
+                        i,
+                        activeSlideIndex,
+                        onClick: () => setActiveSlideIndex(i),
+                        duration,
+                    })) })] }));
     }
 });
 function renderProductBlock(block, i, context) {
     return (jsx("section", { className: "grow-0 shrink-0 basis-full", role: "list", children: jsx("div", { className: "p-11 pr-[7.5rem] ", children: jsx(ProductBlockInner, { context: context, ...block }) }) }, String(i)));
 }
-function renderNavButton(slide, index, activeSlideIndex, setActiveSlideIndex, duration) {
-    const isActiveBtn = index === activeSlideIndex;
+function renderNavButton({ slide, i, activeSlideIndex, onClick, duration }) {
+    const isActiveBtn = i === activeSlideIndex;
     const progressBarClassName = isActiveBtn ? 'animate-slide' : '';
     const btnTitleClassName = isActiveBtn ? 'text-primary-text' : 'text-secondary-text';
-    return (jsxs("button", { type: "button", onClick: () => setActiveSlideIndex(index), className: `group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 py-4`, children: [jsxs("div", { className: "border-0 border-r border-solid border-main-divider px-6", children: [jsx("div", { className: `text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`, children: slide.title }), jsx("div", { className: "text-xs text-secondary-text", children: slide.desc })] }), jsx("div", { className: `absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${progressBarClassName}`, style: { animationDuration: `${duration}s` } })] }, String(index)));
+    return (jsxs("button", { type: "button", onClick: onClick, className: `group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 py-4`, children: [jsxs("div", { className: "border-0 border-r border-solid border-main-divider px-6", children: [jsx("div", { className: `text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`, children: slide.title }), jsx("div", { className: "text-xs text-secondary-text", children: slide.desc })] }), jsx("div", { className: `absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${progressBarClassName}`, style: { animationDuration: `${duration}s` } })] }, String(i)));
 }
 
 ;// CONCATENATED MODULE: ./src/ProductGallery.fixture.tsx
