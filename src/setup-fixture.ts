@@ -67,8 +67,10 @@ export const context: ContentPageContext = {
       console.log('dislike');
     },
   }),
-  handlerDecorator: (): any => (ev: Event) => {
-    ev.preventDefault();
-    console.log(ev.target, ev);
-  },
+  handlerDecorator:
+    (handler, targetContent): any =>
+    (ev) => {
+      ev.preventDefault();
+      console.log(ev.target, ev, targetContent);
+    },
 };

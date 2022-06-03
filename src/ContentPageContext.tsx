@@ -14,7 +14,7 @@ export interface LikeService {
   dislike: () => void;
 }
 
-export type HandlerDecorator = <F extends Function>(handler: F) => F;
+export type HandlerDecorator = <F extends Function>(handler: F, targetContent: any) => F;
 
 export interface ContentPageContext {
   useRouter: () => Router;

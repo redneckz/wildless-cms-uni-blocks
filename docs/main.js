@@ -33721,9 +33721,9 @@ const context = {
             console.log('dislike');
         },
     }),
-    handlerDecorator: () => (ev) => {
+    handlerDecorator: (handler, targetContent) => (ev) => {
         ev.preventDefault();
-        console.log(ev.target, ev);
+        console.log(ev.target, ev, targetContent);
     },
 };
 
@@ -33923,7 +33923,7 @@ function useLink({ router, handlerDecorator = defaultHandlerDecorator, }, link) 
                 ev.preventDefault();
                 router.push(href);
             }
-        }),
+        }, link),
     };
 }
 
