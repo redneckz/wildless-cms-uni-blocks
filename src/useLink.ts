@@ -22,6 +22,6 @@ export function useLink(
         ev.preventDefault();
         router.push(href);
       }
-    }),
+    }, link),
   };
 }
