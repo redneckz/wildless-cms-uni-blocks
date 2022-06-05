@@ -34137,7 +34137,36 @@ const StepsBlock_renderStep = (step, i) => {
     return (jsxs("div", { className: "flex flex-col items-center text-center px-12 relative after:content-[''] last:after:content-none after:bg-secondary-light after:absolute after:top-[50px] after:h-0.5 after:w-full after:right-[-50%]", children: [jsx("div", { className: "h-[100px] w-[100px] min-w-[100px] min-h-[100px] bg-secondary-light rounded-[40px] p-[26px] box-border z-10", children: (step.icon && Icons_namespaceObject[step.icon]?.({ width: 48, height: 48 })) || (jsx("span", { className: "text-title-lg", children: i + 1 })) }), jsxs("div", { className: "max-w-min", children: [jsx("h5", { className: "font-medium text-xl m-0 mt-4 whitespace-nowrap px-3", children: step.label }), step.description && (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: step.description }))] })] }, String(i)));
 };
 
+;// CONCATENATED MODULE: ./src/ProductGallery.tsx
+
+
+
+const ProductGallery = JSX(({ className, context, duration = 0, slides = [] }) => {
+    if (slides?.length) {
+        const galleryNav = slides.map((s) => s.nav);
+        const galleryBlocks = slides.map((s) => s.productBlock);
+        const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
+        return (jsxs("section", { className: `font-sans bg-white rounded-[40px] overflow-hidden w-100 ${className || ''}`, children: [jsx("div", { className: `flex transition duration-1000`, style: { transform: `translateX(-${activeSlideIndex}00%)` }, children: galleryBlocks.map((_, i) => renderProductBlock(_, i, context)) }), jsx("div", { className: `border-t border-solid border-main-divider grid grid-cols-${galleryNav.length}`, children: galleryNav.map((slide, i) => renderNavButton({
+                        slide,
+                        i,
+                        activeSlideIndex,
+                        onClick: () => setActiveSlideIndex(i),
+                        duration,
+                    })) })] }));
+    }
+});
+function renderProductBlock(block, i, context) {
+    return (jsx("section", { className: "grow-0 shrink-0 basis-full", role: "list", children: jsx("div", { className: "p-11 pr-[7.5rem] ", children: jsx(ProductBlockInner, { context: context, ...block }) }) }, String(i)));
+}
+function renderNavButton({ slide, i, activeSlideIndex, onClick, duration }) {
+    const isActiveBtn = i === activeSlideIndex;
+    const progressBarClassName = isActiveBtn ? 'animate-slide' : '';
+    const btnTitleClassName = isActiveBtn ? 'text-primary-text' : 'text-secondary-text';
+    return (jsxs("button", { type: "button", onClick: onClick, className: `group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 py-4`, children: [jsxs("div", { className: "border-0 border-r border-solid border-main-divider px-6", children: [jsx("div", { className: `text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`, children: slide.title }), jsx("div", { className: "text-xs text-secondary-text", children: slide.desc })] }), jsx("div", { className: `absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${progressBarClassName}`, style: { animationDuration: `${duration}s` } })] }, String(i)));
+}
+
 ;// CONCATENATED MODULE: ./src/Blocks.ts
+
 
 
 
@@ -34151,6 +34180,7 @@ const Blocks = {
     ProductBlock: ProductBlock,
     StepsBlock: StepsBlock,
     BenefitsBlock: BenefitsBlock,
+    ProductGallery: ProductGallery,
 };
 
 ;// CONCATENATED MODULE: ./src/ui-kit/LikeButton.tsx
@@ -34315,34 +34345,6 @@ const ProductBlock_fixture_image = {
             },
         ], image: ProductBlock_fixture_image })),
 });
-
-;// CONCATENATED MODULE: ./src/ProductGallery.tsx
-
-
-
-const ProductGallery = JSX(({ className, context, duration = 0, slides = [] }) => {
-    if (slides?.length) {
-        const galleryNav = slides.map((s) => s.nav);
-        const galleryBlocks = slides.map((s) => s.productBlock);
-        const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
-        return (jsxs("section", { className: `font-sans bg-white rounded-[40px] overflow-hidden w-100 ${className || ''}`, children: [jsx("div", { className: `flex transition duration-1000`, style: { transform: `translateX(-${activeSlideIndex}00%)` }, children: galleryBlocks.map((_, i) => renderProductBlock(_, i, context)) }), jsx("div", { className: `border-t border-solid border-main-divider grid grid-cols-${galleryNav.length}`, children: galleryNav.map((slide, i) => renderNavButton({
-                        slide,
-                        i,
-                        activeSlideIndex,
-                        onClick: () => setActiveSlideIndex(i),
-                        duration,
-                    })) })] }));
-    }
-});
-function renderProductBlock(block, i, context) {
-    return (jsx("section", { className: "grow-0 shrink-0 basis-full", role: "list", children: jsx("div", { className: "p-11 pr-[7.5rem] ", children: jsx(ProductBlockInner, { context: context, ...block }) }) }, String(i)));
-}
-function renderNavButton({ slide, i, activeSlideIndex, onClick, duration }) {
-    const isActiveBtn = i === activeSlideIndex;
-    const progressBarClassName = isActiveBtn ? 'animate-slide' : '';
-    const btnTitleClassName = isActiveBtn ? 'text-primary-text' : 'text-secondary-text';
-    return (jsxs("button", { type: "button", onClick: onClick, className: `group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 py-4`, children: [jsxs("div", { className: "border-0 border-r border-solid border-main-divider px-6", children: [jsx("div", { className: `text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`, children: slide.title }), jsx("div", { className: "text-xs text-secondary-text", children: slide.desc })] }), jsx("div", { className: `absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${progressBarClassName}`, style: { animationDuration: `${duration}s` } })] }, String(i)));
-}
 
 ;// CONCATENATED MODULE: ./src/ProductGallery.fixture.tsx
 

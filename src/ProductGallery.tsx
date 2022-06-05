@@ -14,7 +14,7 @@ export interface ProductSlideContent {
 
 export interface ProductGalleryContent {
   duration?: number;
-  slides: ProductSlideContent[];
+  slides?: ProductSlideContent[];
 }
 
 export interface ProductGalleryProps extends ProductGalleryContent {
