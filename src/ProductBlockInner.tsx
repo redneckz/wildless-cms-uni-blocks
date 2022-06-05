@@ -39,20 +39,24 @@ export const ProductBlockInner = JSX<ProductBlockInnerProps>(
         <div className="flex flex-col">
           {breadcrumbs?.length ? (
             <div className="text-xs mb-6">
-              {join(<span className="text-secondary mx-2">/</span>)(
+              {join(<span className="text-secondary-text mx-2">/</span>)(
                 breadcrumbs.map((breadcrumb, i) => (
                   <Breadcrumb
                     key={String(i)}
                     {...useLink(
                       { router, handlerDecorator },
-                      { className: 'text-secondary', ...breadcrumb },
+                      { className: 'text-secondary-text', ...breadcrumb },
                     )}
                   />
                 )),
               )}
             </div>
           ) : null}
-          {title && <h1 className="font-medium text-title m-0 whitespace-pre-wrap">{title}</h1>}
+          {title && (
+            <h1 className="font-medium text-title-lg m-0 whitespace-pre-wrap max-w-[600px]">
+              {title}
+            </h1>
+          )}
           {description && (
             <div className="font-normal text-base max-w-[600px] mt-4">{description}</div>
           )}
@@ -74,7 +78,7 @@ export const ProductBlockInner = JSX<ProductBlockInnerProps>(
             </div>
           ) : null}
         </div>
-        {image && <Img image={image} className="mt-auto" />}
+        {image?.src && <Img image={image} className="mt-auto" />}
       </div>
     );
   },
@@ -84,14 +88,14 @@ function renderBenefit(benefit: Benefit, i: number) {
   return (
     <div key={String(i)} className="flex gap-4 items-center">
       {benefit.icon && (
-        <div className="h-11 w-11 min-w-11 min-h-11 bg-main rounded-full p-[10px] box-border">
+        <div className="h-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border">
           {Icons[benefit.icon]()}
         </div>
       )}
       <div className="flex gap-1 flex-col h-full">
         <h4 className="font-medium text-xl m-0">{benefit.label}</h4>
         {benefit.description && (
-          <div className="font-normal text-sm text-secondary">{benefit.description}</div>
+          <div className="font-normal text-sm text-secondary-text">{benefit.description}</div>
         )}
       </div>
     </div>

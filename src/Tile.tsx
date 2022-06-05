@@ -26,6 +26,8 @@ const tileStyleMap: Record<BlockVersion, string> = {
   secondary: 'bg-primary-main text-white',
 };
 
+const TITLE_CLASSES = 'font-medium m-0 whitespace-pre-wrap max-w-[600px]';
+
 export const Tile = JSX<TileProps>(
   ({ className, context, title, description, button, image, items, version = 'primary' }) => {
     const router = context.useRouter();
@@ -37,18 +39,14 @@ export const Tile = JSX<TileProps>(
         } ${tileStyleMap[version]}`}
       >
         <div className="flex flex-col w-full">
-          {title && (
-            <h3 className="font-medium text-title m-0 whitespace-pre-wrap max-w-[600px]">
-              {title}
-            </h3>
-          )}
+          {title && renderTitle(title, className)}
           <div className="flex justify-between h-full">
             <div className="flex flex-col">
               {description && (
                 <div className="font-normal text-base max-w-[600px] mt-4">{description}</div>
               )}
               {items?.length ? (
-                <section className="space-y-2.5 mt-5" role="list">
+                <section className="space-y-2.5 mt-5 max-w-[600px]" role="list">
                   {items.map((_, i) => (
                     <BlockItem key={String(i)} text={_} version={version} />
                   ))}
@@ -64,7 +62,7 @@ export const Tile = JSX<TileProps>(
                 </div>
               )}
             </div>
-            {image && (
+            {image?.src && (
               <div className="mt-auto flex-none h-[220px] w-[220px]">
                 <Img image={image} />
               </div>
@@ -75,3 +73,15 @@ export const Tile = JSX<TileProps>(
     );
   },
 );
+
+const renderTitle = (title: string, className: string = '') => {
+  switch (true) {
+    case className.includes('col-span-4'):
+      return <h3 className={`${TITLE_CLASSES} text-title-xs`}>{title}</h3>;
+    case className.includes('col-span-6'):
+    case className.includes('col-span-8'):
+      return <h3 className={`${TITLE_CLASSES} text-title-sm`}>{title}</h3>;
+    default:
+      return <h2 className={`${TITLE_CLASSES} text-title`}>{title}</h2>;
+  }
+};

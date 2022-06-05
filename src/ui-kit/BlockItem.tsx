@@ -25,7 +25,7 @@ export const BlockItem = JSX<BlockItemProps>(
     return (
       <div className={`inline-block flex ${className || ''}`} role="listitem">
         <div
-          className={`inline-block w-[8px] h-[8px] rounded-full mt-2 ${listStyleMap[version]}`}
+          className={`inline-block w-[8px] h-[8px] min-w-[8px] min-h-[8px] rounded-full mt-2 ${listStyleMap[version]}`}
         ></div>
         <span className={`text-base font-normal font-sans mx-3 ${textStyleMap[version]}`}>
           {text || children}
