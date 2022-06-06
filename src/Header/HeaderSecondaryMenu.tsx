@@ -19,7 +19,7 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(({ location, cl
       <HeaderSecondaryMenuButton className="mr-5 text-primary-text hover:text-primary-main">
         {ProfileIcon()}
       </HeaderSecondaryMenuButton>
-      <HeaderSecondaryMenuButton className="mr-5 text-main hover:text-secondary-hover w-[32px]">
+      <HeaderSecondaryMenuButton className="mr-5 text-main hover:text-secondary-hover min-w-[32px] min-h-[32px]">
         {GridIcon()}
       </HeaderSecondaryMenuButton>
     </div>
