@@ -88,7 +88,7 @@ function renderBenefit(benefit: Benefit, i: number) {
   return (
     <div key={String(i)} className="flex gap-4 items-center">
       {benefit.icon && (
-        <div className="h-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border">
+        <div className="w-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border">
           {Icons[benefit.icon]()}
         </div>
       )}
