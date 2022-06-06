@@ -15,6 +15,7 @@ import type { TileContent } from './Tile';
 import type { ProductBlockInnerContent } from './ProductBlockInner';
 import type { StepsBlockContent } from './StepsBlock';
 import type { BenefitsBlockContent } from './BenefitsBlock';
+import type { ProductGalleryContent } from './ProductGallery';
 
 export type BlockVersion = 'primary' | 'secondary';
 
@@ -26,7 +27,8 @@ export type BlockContent =
   | ProductBlockInnerContent
   | TileContent
   | StepsBlockContent
-  | BenefitsBlockContent;
+  | BenefitsBlockContent
+  | ProductGalleryContent;
 
 export interface BlockDef {
   type: string;

@@ -12,12 +12,12 @@ export interface ProductSlideContent {
   productBlock: ProductBlockInnerContent;
 }
 
-export interface ProductGalleryСontent {
+export interface ProductGalleryContent {
   duration?: number;
-  slides: ProductSlideContent[];
+  slides?: ProductSlideContent[];
 }
 
-export interface ProductGalleryProps extends ProductGalleryСontent {
+export interface ProductGalleryProps extends ProductGalleryContent {
   className?: string;
   context: ContentPageContext;
 }
