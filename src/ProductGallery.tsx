@@ -24,38 +24,36 @@ export interface ProductGalleryProps extends ProductGalleryContent {
 
 export const ProductGallery = JSX<ProductGalleryProps>(
   ({ className, context, duration = 0, slides = [] }) => {
-    if (slides?.length) {
-      const galleryNav = slides.map((s) => s.nav);
-      const galleryBlocks = slides.map((s) => s.productBlock);
-      const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
+    const galleryNav = slides.map((s) => s.nav);
+    const galleryBlocks = slides.map((s) => s.productBlock);
+    const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
 
-      return (
-        <section
-          className={`font-sans bg-white rounded-[40px] overflow-hidden w-100 ${className || ''}`}
+    return (
+      <section
+        className={`font-sans bg-white rounded-[40px] overflow-hidden w-100 ${className || ''}`}
+      >
+        <div
+          className={`flex transition duration-1000`}
+          style={{ transform: `translateX(-${activeSlideIndex}00%)` }}
         >
-          <div
-            className={`flex transition duration-1000`}
-            style={{ transform: `translateX(-${activeSlideIndex}00%)` }}
-          >
-            {galleryBlocks.map((_, i) => renderProductBlock(_, i, context))}
-          </div>
+          {galleryBlocks.map((_, i) => renderProductBlock(_, i, context))}
+        </div>
 
-          <div
-            className={`border-t border-solid border-main-divider grid grid-cols-${galleryNav.length}`}
-          >
-            {galleryNav.map((slide, i) =>
-              renderNavButton({
-                slide,
-                i,
-                activeSlideIndex,
-                onClick: () => setActiveSlideIndex(i),
-                duration,
-              }),
-            )}
-          </div>
-        </section>
-      );
-    }
+        <div
+          className={`border-t border-solid border-main-divider grid grid-cols-${galleryNav.length}`}
+        >
+          {galleryNav.map((slide, i) =>
+            renderNavButton({
+              slide,
+              i,
+              activeSlideIndex,
+              onClick: () => setActiveSlideIndex(i),
+              duration,
+            }),
+          )}
+        </div>
+      </section>
+    );
   },
 );
 
