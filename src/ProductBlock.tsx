@@ -1,13 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
-import * as Icons from './Icons/index';
 import { ProductBlockInner, ProductBlockInnerContent } from './ProductBlockInner';
-
-export interface Benefit {
-  label: string;
-  description?: string;
-  icon?: keyof typeof Icons;
-}
 
 export interface ProductBlockProps extends ProductBlockInnerContent {
   className?: string;

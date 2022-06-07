@@ -24,11 +24,11 @@ export type ColorPalette = 'pc' | 'bc' | 'eo';
 export type BlockContent =
   | HeaderContent
   | PlaceholderContent
-  | ProductBlockInnerContent
+  //| ProductBlockInnerContent
   | TileContent
-  | StepsBlockContent
-  | BenefitsBlockContent
-  | ProductGalleryContent;
+  | StepsBlockContent;
+// | BenefitsBlockContent
+//| ProductGalleryContent;
 
 export interface BlockDef {
   type: string;

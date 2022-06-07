@@ -1,11 +1,17 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { ContentPageContext } from './ContentPageContext';
-import * as Icons from './Icons/index';
+import type { ContentPageContext, DynamicImport } from './ContentPageContext';
 
+const iconSources = {
+  ClockIcon: () => import('./Icons/ClockIcon').then((m) => m.ClockIcon),
+  SignDocsIcon: () => import('./Icons/SignDocsIcon').then((m) => m.SignDocsIcon),
+  ComfortableCompIcon: () =>
+    import('./Icons/ComfortableCompIcon').then((m) => m.ComfortableCompIcon),
+  ActualBalanceIcon: () => import('./Icons/ActualBalanceIcon').then((m) => m.ActualBalanceIcon),
+};
 export interface Benefit {
   label: string;
   description?: string;
-  icon?: keyof typeof Icons;
+  icon?: keyof typeof iconSources;
 }
 
 export interface BenefitsBlockContent {
@@ -18,7 +24,7 @@ export interface BenefitsBlockProps extends BenefitsBlockContent {
   context: ContentPageContext;
 }
 
-export const BenefitsBlock = JSX<BenefitsBlockProps>(({ className, title, benefits }) => {
+export const BenefitsBlock = JSX<BenefitsBlockProps>(({ className, context, title, benefits }) => {
   return (
     <section
       className={`font-sans text-primary-text bg-white p-12 rounded-[40px] flex flex-col items-center ${
@@ -27,20 +33,24 @@ export const BenefitsBlock = JSX<BenefitsBlockProps>(({ className, title, benefi
     >
       <h2 className="font-medium text-title m-0 max-w-[47rem] text-center">{title}</h2>
       {benefits?.length ? (
-        <div className="grid grid-cols-2 gap-5 mt-8">{benefits.map(renderStep)}</div>
+        <div className="grid grid-cols-2 gap-5 mt-8">
+          {benefits.map((benefit, i) => renderStep(benefit, i, context.useDynamicImport))}
+        </div>
       ) : null}
     </section>
   );
 });
 
-const renderStep = (benefit: Benefit, i: number) => {
+const renderStep = (benefit: Benefit, i: number, useDynamicImport: DynamicImport) => {
   return (
     <div
       key={String(i)}
       className="flex bg-secondary-light items-center p-10 rounded-[40px] gap-5 max-w-[580px]"
     >
       {benefit.icon && (
-        <div className="h-[70px] w-[70px] min-w-[70px] min-h-[70px]">{Icons[benefit.icon]?.()}</div>
+        <div className="h-[70px] w-[70px] min-w-[70px] min-h-[70px]">
+          {renderIcon(() => useDynamicImport(iconSources[benefit.icon!]))}
+        </div>
       )}
       <div>
         <h3 className="font-medium text-xl m-0">{benefit.label}</h3>
@@ -50,4 +60,13 @@ const renderStep = (benefit: Benefit, i: number) => {
       </div>
     </div>
   );
+};
+
+const renderIcon = (getImport) => {
+  const { loading, imported: icon } = getImport();
+  if (loading || !icon) {
+    return '...';
+  }
+
+  return icon();
 };

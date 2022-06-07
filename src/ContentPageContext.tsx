@@ -16,10 +16,16 @@ export interface LikeService {
 
 export type HandlerDecorator = <F extends Function>(handler: F, targetContent: any) => F;
 
+export type DynamicImport = <T>(getSource: () => Promise<T>) => {
+  loading: boolean;
+  imported: T;
+};
+
 export interface ContentPageContext {
   useRouter: () => Router;
   useState: <T>(initialState: T) => [T, (_: T) => void];
   useSitemap: () => HeaderContent;
   useLikeService: () => LikeService;
+  useDynamicImport: DynamicImport;
   handlerDecorator?: HandlerDecorator;
 }
