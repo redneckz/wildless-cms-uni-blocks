@@ -16,7 +16,7 @@ export interface LikeService {
 
 export type HandlerDecorator = <F extends Function>(handler: F, targetContent: any) => F;
 
-export type DynamicImport = <T>(getSource: () => Promise<T>) => {
+export type DynamicImport = <T>(getSource: () => T) => {
   loading: boolean;
   imported: T;
 };

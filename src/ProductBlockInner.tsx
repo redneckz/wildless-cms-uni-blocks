@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon } from './Icons/index';
 import { Img } from './Img';
-import { Picture } from './types';
+import type { Benefit, Picture } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
@@ -10,12 +10,6 @@ import { Breadcrumb, BreadcrumbProps } from './ui-kit/Breadcrumb';
 import { useLink } from './useLink';
 
 const Icons = { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon };
-
-export interface Benefit {
-  label: string;
-  description?: string;
-  icon?: keyof typeof Icons;
-}
 
 export interface ProductBlockInnerContent {
   title?: string;

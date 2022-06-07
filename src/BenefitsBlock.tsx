@@ -1,5 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext, DynamicImport } from './ContentPageContext';
+import { Benefit } from './types';
 
 const iconSources = {
   ClockIcon: () => import('./Icons/ClockIcon').then((m) => m.ClockIcon),
@@ -8,11 +9,6 @@ const iconSources = {
     import('./Icons/ComfortableCompIcon').then((m) => m.ComfortableCompIcon),
   ActualBalanceIcon: () => import('./Icons/ActualBalanceIcon').then((m) => m.ActualBalanceIcon),
 };
-export interface Benefit {
-  label: string;
-  description?: string;
-  icon?: keyof typeof iconSources;
-}
 
 export interface BenefitsBlockContent {
   title?: string;
@@ -47,9 +43,11 @@ const renderStep = (benefit: Benefit, i: number, useDynamicImport: DynamicImport
       key={String(i)}
       className="flex bg-secondary-light items-center p-10 rounded-[40px] gap-5 max-w-[580px]"
     >
-      {benefit.icon && (
+      {benefit.icon && Boolean(iconSources[benefit.icon]) && (
         <div className="h-[70px] w-[70px] min-w-[70px] min-h-[70px]">
-          {renderIcon(() => useDynamicImport(iconSources[benefit.icon!]))}
+          {renderIcon(() =>
+            useDynamicImport(iconSources[benefit.icon! as keyof typeof iconSources]),
+          )}
         </div>
       )}
       <div>

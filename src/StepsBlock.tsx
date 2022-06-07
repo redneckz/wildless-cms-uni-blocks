@@ -46,7 +46,7 @@ const renderStep = (step: Step, i: number, useDynamicImport: DynamicImport) => {
       className="flex flex-col items-center text-center px-12 relative after:content-[''] last:after:content-none after:bg-secondary-light after:absolute after:top-[50px] after:h-0.5 after:w-full after:right-[-50%]"
     >
       <div className="h-[100px] w-[100px] min-w-[100px] min-h-[100px] bg-secondary-light rounded-[40px] p-[26px] box-border z-10 items-center">
-        {step.icon ? (
+        {step.icon && Boolean(iconSources[step.icon]) ? (
           renderIcon(() => useDynamicImport(iconSources[step.icon!]))
         ) : (
           <span className="text-title-lg">{i + 1}</span>

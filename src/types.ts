@@ -24,11 +24,11 @@ export type ColorPalette = 'pc' | 'bc' | 'eo';
 export type BlockContent =
   | HeaderContent
   | PlaceholderContent
-  //| ProductBlockInnerContent
+  | ProductBlockInnerContent
   | TileContent
-  | StepsBlockContent;
-// | BenefitsBlockContent
-//| ProductGalleryContent;
+  | StepsBlockContent
+  | BenefitsBlockContent
+  | ProductGalleryContent;
 
 export interface BlockDef {
   type: string;
@@ -76,4 +76,10 @@ export interface ImgSource {
 
 export interface Picture extends Img, ImgSource {
   sources?: ImgSource[];
+}
+
+export interface Benefit {
+  label: string;
+  description?: string;
+  icon?: string;
 }
