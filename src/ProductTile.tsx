@@ -5,6 +5,7 @@ import { Picture } from './types';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
 import { useLink } from './useLink';
+import type { Benefit } from './BenefitsBlock';
 
 interface ProductAdvantage {
   key: string;
@@ -14,7 +15,7 @@ interface ProductAdvantage {
 export interface ProductTileContent {
   title?: string;
   description?: string;
-  advantages?: ProductAdvantage[];
+  benefits?: Benefit[];
   image?: Picture;
   button?: ButtonProps;
 }
@@ -25,7 +26,7 @@ export interface ProductTileProps extends ProductTileContent {
 }
 
 export const ProductTile = JSX<ProductTileProps>(
-  ({ className, context, title, description, button, image, advantages }) => {
+  ({ className, context, title, description, button, image, benefits }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
     return (
@@ -44,15 +45,11 @@ export const ProductTile = JSX<ProductTileProps>(
           <div className="flex mt-5">
             <div className="grow flex flex-col">
               <div className="flex">
-                {advantages?.length ? (
-                  <div className="flex flex-col justify-between mr-8">
-                    {advantages.map(renderAdvantageValue)}
-                  </div>
+                {benefits?.length ? (
+                  <div className="mr-8">{benefits.map(renderBenefitDescription)}</div>
                 ) : null}
-                {advantages?.length ? (
-                  <div className="flex flex-col justify-between py-1">
-                    {advantages.map(renderAdvantageKey)}
-                  </div>
+                {benefits?.length ? (
+                  <div className="pt-2">{benefits.map(renderBenefitLabel)}</div>
                 ) : null}
               </div>
               {button?.text && (
@@ -77,17 +74,17 @@ export const ProductTile = JSX<ProductTileProps>(
   },
 );
 
-function renderAdvantageKey(advantage: ProductAdvantage, i: number) {
+function renderBenefitLabel(benefit: Benefit, i: number) {
   return (
-    <div key={String(i)} className="text-sm text-secondary-text">
-      {advantage.key}
+    <div key={String(i)} className="text-sm text-secondary-text mb-4">
+      {benefit.label}
     </div>
   );
 }
-function renderAdvantageValue(advantage: ProductAdvantage, i: number) {
+function renderBenefitDescription(benefit: Benefit, i: number) {
   return (
-    <div key={String(i)} className="text-xl font-medium">
-      {advantage.value}
+    <div key={String(i)} className="text-xl font-medium mb-2.5">
+      {benefit.description}
     </div>
   );
 }

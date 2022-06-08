@@ -26,18 +26,18 @@ export default {
         className="col-span-6"
         title="Акция! “Кредит На все, что хочется!”"
         description="Потребительский кредит на любые цели, без залога и поручительства"
-        advantages={[
+        benefits={[
           {
-            key: 'Кредитный лимит',
-            value: 'до 5 млн Р',
+            label: 'Кредитный лимит',
+            description: 'до 5 млн Р',
           },
           {
-            key: 'Процентная ставка',
-            value: 'от 12,5%',
+            label: 'Процентная ставка',
+            description: 'от 12,5%',
           },
           {
-            key: 'Срок кредитования',
-            value: 'до 5 лет',
+            label: 'Срок кредитования',
+            description: 'до 5 лет',
           },
         ]}
         button={{
@@ -56,18 +56,18 @@ export default {
         className="col-span-6"
         title="Акция! “Пенсионный кредит”"
         description={'Потребительский кредит на любые цели, без залога и поручительства'}
-        advantages={[
+        benefits={[
           {
-            key: 'Кредитный лимит',
-            value: 'до 3 млн Р',
+            label: 'Кредитный лимит',
+            description: 'до 3 млн Р',
           },
           {
-            key: 'Процентная ставка',
-            value: 'от 12,5%',
+            label: 'Процентная ставка',
+            description: 'от 12,5%',
           },
           {
-            key: 'Срок кредитования',
-            value: 'до 3 лет',
+            label: 'Срок кредитования',
+            description: 'до 3 лет',
           },
         ]}
         button={{
@@ -87,18 +87,18 @@ export default {
         className="col-span-8"
         title="Кредит под залог недвижимости"
         description={'Без переоформления залогой недвижимости на банк'}
-        advantages={[
+        benefits={[
           {
-            key: 'Кредитный лимит',
-            value: 'до 10 млн Р',
+            label: 'Кредитный лимит',
+            description: 'до 10 млн Р',
           },
           {
-            key: 'Процентная ставка',
-            value: 'от 21,5%',
+            label: 'Процентная ставка',
+            description: 'от 21,5%',
           },
           {
-            key: 'Срок кредитования',
-            value: 'до 10 лет',
+            label: 'Срок кредитования',
+            description: 'до 10 лет',
           },
         ]}
         button={{
@@ -118,18 +118,18 @@ export default {
         className="col-span-4"
         title="Кредит пенсионный"
         description={'Для людей в возрасте до 75 лет'}
-        advantages={[
+        benefits={[
           {
-            key: 'Кредитный лимит',
-            value: 'до 3 млн Р',
+            label: 'Кредитный лимит',
+            description: 'до 3 млн Р',
           },
           {
-            key: 'Процентная ставка',
-            value: 'от 16,8%',
+            label: 'Процентная ставка',
+            description: 'от 16,8%',
           },
           {
-            key: 'Срок кредитования',
-            value: 'до 5 лет',
+            label: 'Срок кредитования',
+            description: 'до 5 лет',
           },
         ]}
         button={{
