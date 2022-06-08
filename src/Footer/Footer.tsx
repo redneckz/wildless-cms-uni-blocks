@@ -10,6 +10,9 @@ import type { LinkContent } from '../types';
 import { UniBlocksComponentProps, ContactInfo } from '../types';
 import { TopMenuItem } from '../types';
 
+const LEFT_COL_WIDTH_FULL_HD = 'w-[280px]';
+const LEFT_COL_WIDTH_SMALL_DESKTOP = 'xl:w-[220px]';
+
 interface FooterContent {
   documents?: LinkContent[];
   relatedEnterprises?: LinkContent[];
@@ -22,14 +25,14 @@ export interface FooterProps extends FooterContent, UniBlocksComponentProps {}
 export const Footer = JSX<FooterProps>(
   ({ documents, relatedEnterprises, contacts, socialMedia, topItems, context }) => {
     return (
-      <footer className="px-9 py-10 bg-white rounded-bl-3xl rounded-br-3xl">
-        <div className="flex items-stretch gap-8 py-8">
-          <Logo className="w-[179px]" />
+      <footer className="px-9 py-2 bg-white rounded-bl-3xl rounded-br-3xl">
+        <div className="flex items-stretch gap-32 py-8 xl:gap-8">
+          <Logo className={`${LEFT_COL_WIDTH_FULL_HD} ${LEFT_COL_WIDTH_SMALL_DESKTOP}`} />
           <SearchBar context={context} className="grow" />
         </div>
-        <div className="flex items-stretch gap-8">
+        <div className="flex items-stretch gap-32 xl:gap-8">
           <Contacts
-            className="min-w-[179px] overflow-hidden"
+            className={`${LEFT_COL_WIDTH_FULL_HD} shrink-0 overflow-hidden ${LEFT_COL_WIDTH_SMALL_DESKTOP}`}
             items={contacts}
             context={context}
             hasButton

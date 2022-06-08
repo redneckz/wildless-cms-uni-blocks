@@ -48,7 +48,7 @@ const renderText = (type: ContactInfo['type'], text: string) => {
     case 'tel':
       return (
         <a
-          className="font-sans font-normal text-xl text-primary-text no-underline"
+          className="font-sans font-medium text-xl text-primary-text no-underline"
           href={`tel:${formatTel(text)}`}
         >
           {text}
@@ -57,7 +57,7 @@ const renderText = (type: ContactInfo['type'], text: string) => {
     case 'email':
       return (
         <a
-          className="font-sans font-normal text-xl text-primary-text no-underline"
+          className="font-sans font-medium text-xl text-primary-text no-underline"
           href={`mailto:${text}`}
         >
           {text}

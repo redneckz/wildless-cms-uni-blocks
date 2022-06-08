@@ -12,7 +12,7 @@ export const Sitemap = JSX<SitemapProps>(({ className, items, context }) => {
   const mergedItems = mergeTopItems(sitemap.topItems, items);
 
   return (
-    <div className={`flex items-start justify-start gap-12 ${className || ''}`}>
+    <div className={`flex items-start justify-start gap-11 xl:gap-5 ${className || ''}`}>
       {mergedItems?.map((_, i) => renderColumn(_, i, context))}
     </div>
   );
