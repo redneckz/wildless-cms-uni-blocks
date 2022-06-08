@@ -10,13 +10,14 @@ import type { LinkContent } from '../types';
 import { UniBlocksComponentProps, ContactInfo } from '../types';
 import { TopMenuItem } from '../types';
 
-export interface FooterProps extends UniBlocksComponentProps {
+interface FooterContent {
   documents?: LinkContent[];
   relatedEnterprises?: LinkContent[];
   contacts?: ContactInfo[];
   socialMedia?: Omit<LinkContent, 'text'>[];
   topItems?: TopMenuItem[];
 }
+export interface FooterProps extends FooterContent, UniBlocksComponentProps {}
 
 export const Footer = JSX<FooterProps>(
   ({ documents, relatedEnterprises, contacts, socialMedia, topItems, context }) => {

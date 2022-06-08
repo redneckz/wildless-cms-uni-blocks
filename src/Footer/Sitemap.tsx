@@ -26,14 +26,14 @@ const renderColumn = (c: TopMenuItem, index: number, context: ContentPageContext
   return (
     <div key={String(index)} className="flex flex-col w-[235px] gap-[14px]">
       <a
-        className="block font-sans font-medium text-text-base text-primary-text no-underline"
+        className="block font-sans font-medium text-base text-primary-text no-underline"
         href={href}
         target={target || '_self'}
       >
         {text || `Раздел ${index}`}
       </a>
       {items?.map((_, i) => (
-        <ColumnItem index={i} {...useLink({ router, handlerDecorator }, _)} />
+        <ColumnItem key={String(i)} {...useLink({ router, handlerDecorator }, _)} />
       ))}
     </div>
   );
@@ -45,7 +45,6 @@ interface ColumnItemProps extends LinkContent {
 
 const ColumnItem = JSX<ColumnItemProps>(({ text, href, target, index }) => (
   <a
-    key={index}
     className="block font-sans font-normal text-base text-secondary-text hover:text-primary-text no-underline"
     href={href}
     target={target || '_self'}

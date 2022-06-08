@@ -2,7 +2,7 @@ import { HandlerDecorator, Router } from './ContentPageContext';
 import type { LinkContent } from './types';
 import { isURL, toRelativeHref } from './utils/url';
 
-const defaultHandlerDecorator: HandlerDecorator = (_) => _;
+const defaultHandlerDecorator: HandlerDecorator = (handler, targetContent) => handler;
 
 export function useLink(
   {

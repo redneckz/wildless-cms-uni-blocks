@@ -6,36 +6,31 @@ import { useLink } from '../useLink';
 export interface ContactsProps extends UniBlocksComponentProps {
   items?: ContactInfo[];
   hasButton?: boolean;
-  buttonText?: string;
-  buttonHref?: string;
-  buttonTargetBlank?: boolean;
 }
 
-export const Contacts = JSX<ContactsProps>(
-  ({ className, items, hasButton, buttonText, buttonHref, buttonTargetBlank, context }) => {
-    const router = context.useRouter();
-    const { handlerDecorator } = context;
+export const Contacts = JSX<ContactsProps>(({ className, items, hasButton, context }) => {
+  const router = context.useRouter();
+  const { handlerDecorator } = context;
 
-    return (
-      <div className={`flex flex-col ${className || ''}`}>
-        {items?.length ? items.map(renderContact) : null}
-        {hasButton ? (
-          <Button
-            className="my-4"
-            {...useLink(
-              { router, handlerDecorator },
-              {
-                text: buttonText || 'Обратная связь',
-                href: buttonHref || '/',
-                target: buttonTargetBlank ? '_blank' : '_self',
-              },
-            )}
-          />
-        ) : null}
-      </div>
-    );
-  },
-);
+  return (
+    <div className={`flex flex-col ${className || ''}`}>
+      {items?.length ? items.map(renderContact) : null}
+      {hasButton ? (
+        <Button
+          className="my-4"
+          {...useLink(
+            { router, handlerDecorator },
+            {
+              text: 'Обратная связь',
+              href: '/',
+              target: '_blank',
+            },
+          )}
+        />
+      ) : null}
+    </div>
+  );
+});
 
 const renderContact = (item: ContactInfo, index: number) => {
   const { type, text, description } = item;
@@ -43,7 +38,7 @@ const renderContact = (item: ContactInfo, index: number) => {
   return (
     <div className="mb-4" key={String(index)}>
       <div>{renderText(type, text)}</div>
-      <div className="font-sans text-text-sm text-secondary-text">{description}</div>
+      <div className="font-sans text-sm text-secondary-text">{description}</div>
     </div>
   );
 };
