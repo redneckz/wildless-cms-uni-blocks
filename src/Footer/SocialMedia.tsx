@@ -3,10 +3,10 @@ import { LinkContent, UniBlocksComponentProps } from '../types';
 import { TelegramIcon, VKIcon, OkIcon } from '../Icons';
 import { useLink } from '../useLink';
 
-const ORIGINS = [
-  { text: ['t.me', 'telegram.org'], icon: TelegramIcon },
-  { text: ['vk.com'], icon: VKIcon },
-  { text: ['ok.ru'], icon: OkIcon },
+const ICONS_MAP = [
+  { origins: ['t.me', 'telegram.org'], icon: TelegramIcon },
+  { origins: ['vk.com'], icon: VKIcon },
+  { origins: ['ok.ru'], icon: OkIcon },
 ];
 
 export interface SocialMediaProps extends UniBlocksComponentProps {
@@ -30,7 +30,8 @@ interface MediaButtonProps {
 }
 
 const MediaButton = JSX<MediaButtonProps>(({ href }) => {
-  const Icon = ORIGINS.map((_) => _.text.some((el) => href?.includes(el)) && _.icon).find(Boolean);
+  const { icon: Icon } =
+    ICONS_MAP.find(({ origins }) => origins.some((_) => href?.includes(_))) || {};
   return (
     <a
       className="flex items-center justify-center border-solid border-1 border-main-divider rounded-full no-underline outline-none w-8 h-8 gap-2"
