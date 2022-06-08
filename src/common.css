@@ -1,3 +1,5 @@
+@import './styles/fonts/ubuntu/ubuntu.css';
+
 /* Private clients | Green */
 [data-theme='pc'] {
   --color-primary-main: #42ab44;

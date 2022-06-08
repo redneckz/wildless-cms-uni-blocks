@@ -8,12 +8,10 @@ import type { HeaderContent } from './HeaderContent';
 import { HeaderSecondaryMenu } from './HeaderSecondaryMenu';
 import { isSubItemActive } from './isSubItemActive';
 import { isTopItemActive } from './isTopItemActive';
-import { mergeTopItems } from './mergeTopItems';
+import { mergeTopItems } from '../mergeTopItems';
+import { UniBlocksComponentProps } from '../types';
 
-export interface HeaderProps extends HeaderContent {
-  className?: string;
-  context: ContentPageContext;
-}
+export interface HeaderProps extends HeaderContent, UniBlocksComponentProps {}
 
 export const Header = JSX<HeaderProps>(({ className, location, context, topItems }) => {
   const router = context.useRouter();
@@ -43,14 +41,14 @@ export const Header = JSX<HeaderProps>(({ className, location, context, topItems
   ));
 
   return (
-    <div className={`pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`}>
+    <header className={`pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`}>
       <div className="flex items-center">
         <Logo className="mr-8" />
         {topMenu}
         <HeaderSecondaryMenu location={location} className="ml-auto" />
       </div>
       <div className="mt-5 h-[1px] bg-main-divider" />
-      <div className="mt-5">{subMenu}</div>
-    </div>
+      <nav className="mt-5">{subMenu}</nav>
+    </header>
   );
 });

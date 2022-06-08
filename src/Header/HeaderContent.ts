@@ -1,10 +1,4 @@
-import type { LinkContent } from '../ui-kit/Link';
-
-export type HeaderMenuItem = LinkContent;
-
-export interface TopMenuItem extends HeaderMenuItem {
-  items?: HeaderMenuItem[];
-}
+import type { TopMenuItem } from '../types';
 
 export interface HeaderContent {
   location?: string;

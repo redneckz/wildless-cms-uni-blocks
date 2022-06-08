@@ -1,8 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Blocks } from './Blocks';
 import { LikeControl } from './LikeControl';
-import type { ContentPageContext } from './ContentPageContext';
 import type { BlockDef, ContentPageDef } from './types';
+import { UniBlocksComponentProps } from './types';
 
 interface BlockDecoratorProps<VNode> {
   blockClassName: string;
@@ -12,10 +12,8 @@ interface BlockDecoratorProps<VNode> {
 
 export type BlockDecorator<VNode = any> = (props: BlockDecoratorProps<VNode>) => any;
 
-export interface ContentPageProps {
-  className?: string;
+export interface ContentPageProps extends UniBlocksComponentProps {
   data: ContentPageDef;
-  context: ContentPageContext;
   blockDecorator?: BlockDecorator;
 }
 

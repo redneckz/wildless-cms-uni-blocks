@@ -1,5 +1,5 @@
 import type { Router } from '../ContentPageContext';
-import type { LinkContent } from '../ui-kit/Link';
+import type { LinkContent } from '../types';
 import { isURL, withoutQuery } from '../utils/url';
 
 export function isTopItemActive({ href, pathname }: Router) {

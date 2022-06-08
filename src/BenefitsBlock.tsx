@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ContentPageContext, DynamicImport } from './ContentPageContext';
-import { Benefit } from './types';
+import * as Icons from './Icons/index';
+import { UniBlocksComponentProps } from './types';
 
 const iconSources = {
   ClockIcon: () => import('./Icons/ClockIcon').then((m) => m.ClockIcon),
@@ -15,10 +15,7 @@ export interface BenefitsBlockContent {
   benefits?: Benefit[];
 }
 
-export interface BenefitsBlockProps extends BenefitsBlockContent {
-  className?: string;
-  context: ContentPageContext;
-}
+export interface BenefitsBlockProps extends BenefitsBlockContent, UniBlocksComponentProps {}
 
 export const BenefitsBlock = JSX<BenefitsBlockProps>(({ className, context, title, benefits }) => {
   return (
