@@ -1,6 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { ContentPageContext } from './ContentPageContext';
 import * as Icons from './Icons/index';
+import { UniBlocksComponentProps } from './types';
 
 export interface Step {
   label: string;
@@ -13,10 +14,7 @@ export interface StepsBlockContent {
   steps?: Step[];
 }
 
-export interface StepsBlockProps extends StepsBlockContent {
-  className?: string;
-  context: ContentPageContext;
-}
+export interface StepsBlockProps extends StepsBlockContent, UniBlocksComponentProps {}
 
 export const StepsBlock = JSX<StepsBlockProps>(({ className, title, steps }) => {
   return (

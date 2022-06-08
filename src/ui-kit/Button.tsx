@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent } from './Link';
+import type { LinkContent } from '../types';
 
 type ButtonVersion = 'primary' | 'secondary';
 export interface ButtonProps extends LinkContent {

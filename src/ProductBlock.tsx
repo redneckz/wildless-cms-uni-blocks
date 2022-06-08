@@ -2,6 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import * as Icons from './Icons/index';
 import { ProductBlockInner, ProductBlockInnerContent } from './ProductBlockInner';
+import { UniBlocksComponentProps } from './types';
 
 export interface Benefit {
   label: string;
@@ -9,10 +10,7 @@ export interface Benefit {
   icon?: keyof typeof Icons;
 }
 
-export interface ProductBlockProps extends ProductBlockInnerContent {
-  className?: string;
-  context: ContentPageContext;
-}
+export interface ProductBlockProps extends ProductBlockInnerContent, UniBlocksComponentProps {}
 
 export const ProductBlock = JSX<ProductBlockProps>((props) => {
   const className = props.className;

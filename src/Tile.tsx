@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import { Img } from './Img';
-import { BlockVersion, Picture } from './types';
+import { BlockVersion, Picture, UniBlocksComponentProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
@@ -16,10 +16,7 @@ export interface TileContent {
   version?: BlockVersion;
 }
 
-export interface TileProps extends TileContent {
-  className?: string;
-  context: ContentPageContext;
-}
+export interface TileProps extends TileContent, UniBlocksComponentProps {}
 
 const tileStyleMap: Record<BlockVersion, string> = {
   primary: 'bg-white text-primary-text',

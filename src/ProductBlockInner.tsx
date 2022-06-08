@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import * as Icons from './Icons/index';
 import { Img } from './Img';
-import { Picture } from './types';
+import { Picture, UniBlocksComponentProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
@@ -25,17 +25,15 @@ export interface ProductBlockInnerContent {
   buttons?: ButtonProps[];
 }
 
-export interface ProductBlockInnerProps extends ProductBlockInnerContent {
-  context: ContentPageContext;
-}
+export interface ProductBlockInnerProps extends ProductBlockInnerContent, UniBlocksComponentProps {}
 
 export const ProductBlockInner = JSX<ProductBlockInnerProps>(
-  ({ context, title, description, breadcrumbs, benefits, buttons, image, items }) => {
+  ({ className, context, title, description, breadcrumbs, benefits, buttons, image, items }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
 
     return (
-      <div className="font-sans flex justify-between items-stretch">
+      <div className={`font-sans flex justify-between items-stretch ${className || ''}`}>
         <div className="flex flex-col">
           {breadcrumbs?.length ? (
             <div className="text-xs mb-6">

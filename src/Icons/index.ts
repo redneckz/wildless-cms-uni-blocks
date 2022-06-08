@@ -10,6 +10,9 @@ import { ActualBalanceIcon } from './ActualBalanceIcon';
 import { ClockIcon } from './ClockIcon';
 import { SignDocsIcon } from './SignDocsIcon';
 import { ComfortableCompIcon } from './ComfortableCompIcon';
+import { TelegramIcon } from './TelegramIcon';
+import { VKIcon } from './VKIcon';
+import { OkIcon } from './OkIcon';
 
 export {
   CalendarIcon,
@@ -24,4 +27,7 @@ export {
   ClockIcon,
   SignDocsIcon,
   ComfortableCompIcon,
+  TelegramIcon,
+  VKIcon,
+  OkIcon,
 };

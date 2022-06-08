@@ -2,8 +2,9 @@ import { JSX } from '@redneckz/uni-jsx';
 import { SVG } from './SVG';
 
 export interface LogoProps {
-  className?: string;
-  href?: string;
+  className: string;
+  href: string;
+  targetBlank: boolean;
 }
 
 const LOGO_PATHS = [
@@ -14,12 +15,12 @@ const LOGO_PATHS = [
   'M27.66 40.79c.27-.14.55-.28.8-.43v-5.98h-.8v6.4Z',
 ];
 
-export const Logo = JSX<LogoProps>(({ className, href, children }) => {
+export const Logo = JSX<Partial<LogoProps>>(({ className, href, children, targetBlank }) => {
   return (
     <a
       className={`inline-flex items-center font-sans no-underline ${className || ''}`}
       href={href || 'https://rshb.ru/'}
-      target="_blank"
+      target={targetBlank ? '_blank' : '_self'}
     >
       <SVG
         className="text-primary-main w-10"

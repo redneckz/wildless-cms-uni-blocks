@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { ContentPageContext } from './ContentPageContext';
 import * as Icons from './Icons/index';
+import { UniBlocksComponentProps } from './types';
 
 export interface Benefit {
   label: string;
@@ -13,10 +13,7 @@ export interface BenefitsBlockContent {
   benefits?: Benefit[];
 }
 
-export interface BenefitsBlockProps extends BenefitsBlockContent {
-  className?: string;
-  context: ContentPageContext;
-}
+export interface BenefitsBlockProps extends BenefitsBlockContent, UniBlocksComponentProps {}
 
 export const BenefitsBlock = JSX<BenefitsBlockProps>(({ className, title, benefits }) => {
   return (

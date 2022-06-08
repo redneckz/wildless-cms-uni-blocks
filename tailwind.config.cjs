@@ -3,13 +3,38 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx,json}'],
   theme: {
+    screens: {
+      sm: { min: '640px', max: '767px' },
+      // => @media (min-width: 640px and max-width: 767px) { ... }
+
+      md: { min: '768px', max: '1023px' },
+      // => @media (min-width: 768px and max-width: 1023px) { ... }
+
+      lg: { min: '1024px', max: '1279px' },
+      // => @media (min-width: 1024px and max-width: 1279px) { ... }
+
+      xl: { min: '1280px', max: '1535px' },
+      // => @media (min-width: 1280px and max-width: 1535px) { ... }
+
+      '2xl': { min: '1536px' },
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
+      // screens: {
+      //   smalldesktop: { min: '1025px', max: '1367px' },
+      //   desktop: { min: '1368px', max: '1441px' },
+      //   full_hd: { min: '1442px', max: '1921px' },
+      // },
       fontFamily: {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
-        'title-xs': ['1.5rem', '1.875rem'], //24px 30px
+        xs: ['0.75rem', '1.125rem'], // 12px 18px
+        sm: ['0.875rem', '1.375rem'], // 14px 22px
+        base: ['1rem', '1.25rem'], // 16px 20px
         'title-sm': ['1.75rem', '2.5rem'], //28px 40px
+        'title-xsm': ['0.75rem', '1.125rem'], // 12px 18px
+        'title-xs': ['1.5rem', '1.875rem'], //24px 30px
         title: ['2rem', '2.5rem'], //32px 40px
         'title-lg': ['2.5rem', '3rem'], //40px 48px
       },
