@@ -19,7 +19,7 @@ export interface StepsBlockProps extends StepsBlockContent, UniBlocksComponentPr
 export const StepsBlock = JSX<StepsBlockProps>(({ className, title, steps }) => {
   return (
     <section
-      className={`font-sans text-primary-text bg-white px-12 py-20 rounded-[40px] flex flex-col items-center ${
+      className={`font-sans text-primary-text bg-white px-12 py-12 flex flex-col items-center ${
         className || ''
       }`}
     >
@@ -37,7 +37,7 @@ const renderStep = (step: Step, i: number) => {
     >
       <div className="h-[100px] w-[100px] min-w-[100px] min-h-[100px] bg-secondary-light rounded-[40px] p-[26px] box-border z-10">
         {(step.icon && ICONS[step.icon]?.({ width: 48, height: 48 })) || (
-          <span className="text-title-lg">{i + 1}</span>
+          <span className="font-medium text-title-sm text-secondary-text">{i + 1}</span>
         )}
       </div>
       <div className="max-w-min">
