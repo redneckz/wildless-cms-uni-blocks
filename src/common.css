@@ -1,4 +1,4 @@
-@import './styles/fonts/ubuntu/ubuntu.css';
+@import '../fonts/ubuntu/ubuntu.css';
 
 /* Private clients | Green */
 [data-theme='pc'] {
