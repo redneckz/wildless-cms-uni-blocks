@@ -1,14 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { ClockIcon, SignDocsIcon, ComfortableCompIcon, ActualBalanceIcon } from './Icons/index';
-import type { UniBlocksComponentProps } from './types';
+import type { UniBlocksComponentProps, Benefit } from './types';
 
 const ICONS = { ClockIcon, SignDocsIcon, ComfortableCompIcon, ActualBalanceIcon };
-
-export interface Benefit {
-  label: string;
-  description?: string;
-  icon?: keyof typeof ICONS;
-}
 
 export interface BenefitsBlockContent {
   title?: string;
