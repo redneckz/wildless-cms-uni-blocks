@@ -5,16 +5,19 @@ import { Picture } from './types';
 
 const cardWithMoney: Picture = {
   src: 'card-with-diamond.png',
+  alt: 'Кредиты в РСХБ',
   format: 'webp',
 };
 
 const letterWithMoney: Picture = {
   src: 'letter-with-money.png',
+  alt: 'Пенсионный кредит в РСХБ',
   format: 'webp',
 };
 
 const building: Picture = {
   src: 'building.png',
+  alt: 'Кредит под залог недвижимости в РСХБ',
   format: 'webp',
 };
 

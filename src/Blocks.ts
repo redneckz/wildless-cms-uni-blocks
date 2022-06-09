@@ -8,6 +8,7 @@ import { ProductBlock } from './ProductBlock';
 import { ProductBlockInnerContent } from './ProductBlockInner';
 import { ProductGallery, ProductGalleryContent } from './ProductGallery';
 import { StepsBlock, StepsBlockContent } from './StepsBlock';
+import { ProductTile, ProductTileContent } from './ProductTile';
 import { Tile, TileContent } from './Tile';
 
 export const Blocks = {
@@ -15,6 +16,7 @@ export const Blocks = {
   Footer,
   Placeholder,
   Tile,
+  ProductTile,
   ProductBlock,
   StepsBlock,
   BenefitsBlock,
@@ -28,6 +30,7 @@ export type BlockContent =
   | FooterContent
   | PlaceholderContent
   | TileContent
+  | ProductTileContent
   | ProductBlockInnerContent
   | StepsBlockContent
   | BenefitsBlockContent

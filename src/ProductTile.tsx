@@ -1,16 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageContext } from './ContentPageContext';
 import { Img } from './Img';
-import { Picture } from './types';
+import { BlockVersion, Picture } from './types';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
 import { useLink } from './useLink';
 import type { Benefit } from './BenefitsBlock';
-
-interface ProductAdvantage {
-  key: string;
-  value: string;
-}
 
 export interface ProductTileContent {
   title?: string;
@@ -18,6 +13,7 @@ export interface ProductTileContent {
   benefits?: Benefit[];
   image?: Picture;
   button?: ButtonProps;
+  version?: BlockVersion;
 }
 
 export interface ProductTileProps extends ProductTileContent {
@@ -25,13 +21,20 @@ export interface ProductTileProps extends ProductTileContent {
   context: ContentPageContext;
 }
 
+const productTileStyleMap: Record<BlockVersion, string> = {
+  primary: 'bg-white text-primary-text',
+  secondary: 'bg-primary-main text-white',
+};
+
 export const ProductTile = JSX<ProductTileProps>(
-  ({ className, context, title, description, button, image, benefits }) => {
+  ({ className, context, title, description, button, image, benefits, version = 'primary' }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
     return (
       <section
-        className={`font-sans p-9 rounded-[40px] bg-white text-primary-text ${className || ''}`}
+        className={`font-sans p-9 rounded-[40px] ${className || ''} ${
+          productTileStyleMap[version]
+        }`}
       >
         <div className="flex flex-col w-full">
           {title && (
@@ -49,7 +52,9 @@ export const ProductTile = JSX<ProductTileProps>(
                   <div className="mr-8">{benefits.map(renderBenefitDescription)}</div>
                 ) : null}
                 {benefits?.length ? (
-                  <div className="pt-2">{benefits.map(renderBenefitLabel)}</div>
+                  <div className="pt-1">
+                    {benefits.map((_, i) => renderBenefitLabel(_, i, version))}
+                  </div>
                 ) : null}
               </div>
               {button?.text && (
@@ -74,9 +79,13 @@ export const ProductTile = JSX<ProductTileProps>(
   },
 );
 
-function renderBenefitLabel(benefit: Benefit, i: number) {
+function renderBenefitLabel(benefit: Benefit, i: number, version = 'primary') {
+  const labelStyleMap: Record<BlockVersion, string> = {
+    primary: 'text-secondary-text',
+    secondary: 'text-white',
+  };
   return (
-    <div key={String(i)} className="text-sm text-secondary-text mb-4">
+    <div key={String(i)} className={`text-sm mb-4 ${labelStyleMap[version]}`}>
       {benefit.label}
     </div>
   );
