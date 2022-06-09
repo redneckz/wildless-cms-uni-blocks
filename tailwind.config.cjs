@@ -20,11 +20,6 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
-      // screens: {
-      //   smalldesktop: { min: '1025px', max: '1367px' },
-      //   desktop: { min: '1368px', max: '1441px' },
-      //   full_hd: { min: '1442px', max: '1921px' },
-      // },
       fontFamily: {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
       },
