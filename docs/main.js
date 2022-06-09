@@ -33934,7 +33934,7 @@ const OkIcon = (props) => (jsx("svg", { width: "12", height: "20", fill: "none",
 
 const ICONS = { ClockIcon: ClockIcon, SignDocsIcon: SignDocsIcon, ComfortableCompIcon: ComfortableCompIcon, ActualBalanceIcon: ActualBalanceIcon };
 const BenefitsBlock = JSX(({ className, title, benefits }) => {
-    return (jsxs("section", { className: `font-sans text-primary-text bg-white p-12 rounded-[40px] flex flex-col items-center ${className || ''}`, children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), benefits?.length ? (jsx("div", { className: "grid grid-cols-2 gap-5 mt-8", children: benefits.map((benefit, i) => renderStep(benefit, i)) })) : null] }));
+    return (jsxs("section", { className: `font-sans text-primary-text bg-white p-12 rounded-[40px] flex flex-col items-center ${className || ''}`, children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), benefits?.length ? (jsx("div", { className: "grid grid-cols-2 gap-5 mt-8", children: benefits.map(renderStep) })) : null] }));
 });
 const renderStep = (benefit, i) => {
     return (jsxs("div", { className: "flex bg-secondary-light items-center p-10 rounded-[40px] gap-5 max-w-[580px]", children: [benefit.icon && (jsx("div", { className: "h-[70px] w-[70px] min-w-[70px] min-h-[70px]", children: ICONS[benefit.icon]?.() })), jsxs("div", { children: [jsx("h3", { className: "font-medium text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm mt-2", children: benefit.description }))] })] }, String(i)));
