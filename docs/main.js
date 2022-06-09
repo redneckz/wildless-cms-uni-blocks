@@ -33934,7 +33934,7 @@ const OkIcon = (props) => (jsx("svg", { width: "12", height: "20", fill: "none",
 
 const ICONS = { ClockIcon: ClockIcon, SignDocsIcon: SignDocsIcon, ComfortableCompIcon: ComfortableCompIcon, ActualBalanceIcon: ActualBalanceIcon };
 const BenefitsBlock = JSX(({ className, title, benefits }) => {
-    return (jsxs("section", { className: `font-sans text-primary-text bg-white p-12 rounded-[40px] flex flex-col items-center ${className || ''}`, children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), benefits?.length ? (jsx("div", { className: "grid grid-cols-2 gap-5 mt-8", children: benefits.map(renderStep) })) : null] }));
+    return (jsxs("section", { className: `font-sans text-primary-text bg-white p-12 rounded-[40px] flex flex-col items-center ${className || ''}`, children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), benefits?.length ? (jsx("div", { className: "grid grid-cols-2 gap-5 mt-8", children: benefits.map((benefit, i) => renderStep(benefit, i)) })) : null] }));
 });
 const renderStep = (benefit, i) => {
     return (jsxs("div", { className: "flex bg-secondary-light items-center p-10 rounded-[40px] gap-5 max-w-[580px]", children: [benefit.icon && (jsx("div", { className: "h-[70px] w-[70px] min-w-[70px] min-h-[70px]", children: ICONS[benefit.icon]?.() })), jsxs("div", { children: [jsx("h3", { className: "font-medium text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm mt-2", children: benefit.description }))] })] }, String(i)));
@@ -34343,7 +34343,7 @@ const ContentPage = JSX(({ className, data: { style: pageStyle, blocks, likeCont
                 const { version, content, blocks } = props.block;
                 return (jsx(BlockComponent, { className: props.blockClassName, version: version, context: context, ...content, children: blocks?.length ? blocks.map(renderBlock) : null }, `${type}-${i}`));
             },
-        });
+        }, `block-${i}`);
     }
 });
 function style2className(style) {
@@ -34354,10 +34354,10 @@ function style2className(style) {
 
 
 
-const blockDecorator = ({ blockClassName, block, render }) => (jsxs("div", { className: `relative flex items-stretch ${blockClassName}`, onClick: () => console.log('Edit', block), children: [render({ block, blockClassName: `${blockClassName} w-full` }), jsx("button", { className: "absolute w-8 h-8 top-4 right-4 border rounded-full", onClick: (e) => {
+const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { className: `relative flex items-stretch ${blockClassName}`, onClick: () => console.log('Edit', block), children: [render({ block, blockClassName: `${blockClassName} w-full` }), jsx("button", { className: "absolute w-8 h-8 top-4 right-4 border rounded-full", onClick: (e) => {
                 console.log('Delete', block);
                 e.stopPropagation();
-            }, children: "\u2573" })] }));
+            }, children: "\u2573" })] }, i));
 /* harmony default export */ const ContentPage_fixture = ({
     default: (jsx(ContentPage, { context: context, className: "bg-main", data: __webpack_require__(8358) })),
     editor: (jsx("div", { style: { background: "url('grid.svg')", height: '100%' }, children: jsx(ContentPage, { context: context, className: "bg-transparent", data: __webpack_require__(8358), blockDecorator: blockDecorator }) })),

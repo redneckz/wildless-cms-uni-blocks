@@ -10,7 +10,10 @@ interface BlockDecoratorProps<VNode> {
   render: (props: { blockClassName: string; block: BlockDef }) => VNode;
 }
 
-export type BlockDecorator<VNode = any> = (props: BlockDecoratorProps<VNode>) => any;
+export type BlockDecorator<VNode = any> = (
+  props: BlockDecoratorProps<VNode>,
+  index?: number | string,
+) => any;
 
 export interface ContentPageProps extends UniBlocksComponentProps {
   data: ContentPageDef;
@@ -51,24 +54,27 @@ export const ContentPage = JSX<ContentPageProps>(
       }
 
       const BlockComponent = Blocks[type as keyof typeof Blocks];
-      return blockDecorator({
-        blockClassName: style2className(block.style),
-        block,
-        render: (props) => {
-          const { version, content, blocks } = props.block;
-          return (
-            <BlockComponent
-              key={`${type}-${i}`}
-              className={props.blockClassName}
-              version={version}
-              context={context}
-              {...content}
-            >
-              {blocks?.length ? blocks.map(renderBlock) : null}
-            </BlockComponent>
-          );
+      return blockDecorator(
+        {
+          blockClassName: style2className(block.style),
+          block,
+          render: (props) => {
+            const { version, content, blocks } = props.block;
+            return (
+              <BlockComponent
+                key={`${type}-${i}`}
+                className={props.blockClassName}
+                version={version}
+                context={context}
+                {...content}
+              >
+                {blocks?.length ? blocks.map(renderBlock) : null}
+              </BlockComponent>
+            );
+          },
         },
-      });
+        `block-${i}`,
+      );
     }
   },
 );
