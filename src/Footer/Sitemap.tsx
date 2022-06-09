@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { TopMenuItem, UniBlocksComponentProps, LinkContent } from '../types';
+import type { TopMenuItem, UniBlocksComponentProps, LinkContent } from '../types';
 import { mergeTopItems } from '../mergeTopItems';
 import { useLink } from '../useLink';
 import { ContentPageContext } from '../ContentPageContext';

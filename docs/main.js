@@ -33659,27 +33659,6 @@ __webpack_require__.d(__webpack_exports__, {
   "rendererConfig": () => (/* binding */ rendererConfig)
 });
 
-// NAMESPACE OBJECT: ./src/Icons/index.ts
-var Icons_namespaceObject = {};
-__webpack_require__.r(Icons_namespaceObject);
-__webpack_require__.d(Icons_namespaceObject, {
-  "ActualBalanceIcon": () => (ActualBalanceIcon),
-  "CalendarIcon": () => (CalendarIcon),
-  "ClockIcon": () => (ClockIcon),
-  "ComfortableCompIcon": () => (ComfortableCompIcon),
-  "EmptyWalletIcon": () => (EmptyWalletIcon),
-  "GridIcon": () => (GridIcon),
-  "LoupeIcon": () => (LoupeIcon),
-  "NewDocIcon": () => (NewDocIcon),
-  "OkIcon": () => (OkIcon),
-  "PassSendIcon": () => (PassSendIcon),
-  "PercentageSquareIcon": () => (PercentageSquareIcon),
-  "ProfileIcon": () => (ProfileIcon),
-  "SignDocsIcon": () => (SignDocsIcon),
-  "TelegramIcon": () => (TelegramIcon),
-  "VKIcon": () => (VKIcon)
-});
-
 // EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
 var injectStylesIntoStyleTag = __webpack_require__(3379);
 var injectStylesIntoStyleTag_default = /*#__PURE__*/__webpack_require__.n(injectStylesIntoStyleTag);
@@ -33953,11 +33932,12 @@ const OkIcon = (props) => (jsx("svg", { width: "12", height: "20", fill: "none",
 
 
 
+const ICONS = { ClockIcon: ClockIcon, SignDocsIcon: SignDocsIcon, ComfortableCompIcon: ComfortableCompIcon, ActualBalanceIcon: ActualBalanceIcon };
 const BenefitsBlock = JSX(({ className, title, benefits }) => {
     return (jsxs("section", { className: `font-sans text-primary-text bg-white p-12 rounded-[40px] flex flex-col items-center ${className || ''}`, children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), benefits?.length ? (jsx("div", { className: "grid grid-cols-2 gap-5 mt-8", children: benefits.map(renderStep) })) : null] }));
 });
 const renderStep = (benefit, i) => {
-    return (jsxs("div", { className: "flex bg-secondary-light items-center p-10 rounded-[40px] gap-5 max-w-[580px]", children: [benefit.icon && (jsx("div", { className: "h-[70px] w-[70px] min-w-[70px] min-h-[70px]", children: Icons_namespaceObject[benefit.icon]?.() })), jsxs("div", { children: [jsx("h3", { className: "font-medium text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm mt-2", children: benefit.description }))] })] }, String(i)));
+    return (jsxs("div", { className: "flex bg-secondary-light items-center p-10 rounded-[40px] gap-5 max-w-[580px]", children: [benefit.icon && (jsx("div", { className: "h-[70px] w-[70px] min-w-[70px] min-h-[70px]", children: ICONS[benefit.icon]?.() })), jsxs("div", { children: [jsx("h3", { className: "font-medium text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm mt-2", children: benefit.description }))] })] }, String(i)));
 };
 
 ;// CONCATENATED MODULE: ./src/BenefitsBlock.fixture.tsx
@@ -34237,19 +34217,20 @@ const Breadcrumb = JSX(({ text, href, target, onClick, className, children }) =>
 
 
 
+const ProductBlockInner_ICONS = { EmptyWalletIcon: EmptyWalletIcon, PercentageSquareIcon: PercentageSquareIcon, CalendarIcon: CalendarIcon };
 const ProductBlockInner = JSX(({ className, context, title, description, breadcrumbs, benefits, buttons, image, items }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
     return (jsxs("div", { className: `font-sans flex justify-between items-stretch ${className || ''}`, children: [jsxs("div", { className: "flex flex-col", children: [breadcrumbs?.length ? (jsx("div", { className: "text-xs mb-6", children: join(jsx("span", { className: "text-secondary-text mx-2", children: "/" }))(breadcrumbs.map((breadcrumb, i) => (jsx(Breadcrumb, { ...useLink({ router, handlerDecorator }, { className: 'text-secondary-text', ...breadcrumb }) }, String(i))))) })) : null, title && (jsx("h1", { className: "font-medium text-title-lg m-0 whitespace-pre-wrap max-w-[600px]", children: title })), description && (jsx("div", { className: "font-normal text-base max-w-[600px] mt-4", children: description })), benefits?.length ? (jsx("div", { className: "flex gap-6 mt-7", children: benefits.map(renderBenefit) })) : null, items?.length ? (jsx("section", { className: "space-y-2.5 mt-5", role: "list", children: items.map((_, i) => (jsx(BlockItem, { text: _ }, String(i)))) })) : null, buttons?.length ? (jsx("div", { className: "flex mt-auto gap-4", children: buttons.map((button, index) => renderButton(useLink({ router, handlerDecorator }, button), index)) })) : null] }), image?.src && jsx(Img, { image: image, className: "mt-auto" })] }));
 });
 function renderBenefit(benefit, i) {
-    return (jsxs("div", { className: "flex gap-4 items-center", children: [benefit.icon && (jsx("div", { className: "w-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border", children: Icons_namespaceObject[benefit.icon]() })), jsxs("div", { className: "flex gap-1 flex-col h-full", children: [jsx("h4", { className: "font-medium text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary-text", children: benefit.description }))] })] }, String(i)));
+    return (jsxs("div", { className: "flex gap-4 items-center", children: [benefit.icon && (jsx("div", { className: "w-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border", children: ProductBlockInner_ICONS[benefit.icon]?.() })), jsxs("div", { className: "flex gap-1 flex-col h-full", children: [jsx("h4", { className: "font-medium text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary-text", children: benefit.description }))] })] }, String(i)));
 }
 function renderButton(button, i) {
     return button?.text ? (jsx(Button, { ...button, className: "mt-8", version: button.version }, String(i))) : null;
 }
 function join(sep) {
-    return (list) => list.reduce((acc, el) => (acc.length ? acc.concat(sep, el) : [el]), []);
+    return (list) => list.reduce((acc, el, i) => (acc.length ? acc.concat({ ...sep, key: i }, el) : [el]), []);
 }
 
 ;// CONCATENATED MODULE: ./src/ProductBlock.tsx
@@ -34265,11 +34246,12 @@ const ProductBlock = JSX((props) => {
 
 
 
+const StepsBlock_ICONS = { NewDocIcon: NewDocIcon, PassSendIcon: PassSendIcon, ActualBalanceIcon: ActualBalanceIcon };
 const StepsBlock = JSX(({ className, title, steps }) => {
     return (jsxs("section", { className: `font-sans text-primary-text bg-white px-12 py-20 rounded-[40px] flex flex-col items-center ${className || ''}`, children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), steps?.length ? jsx("div", { className: "flex mt-9", children: steps.map(StepsBlock_renderStep) }) : null] }));
 });
 const StepsBlock_renderStep = (step, i) => {
-    return (jsxs("div", { className: "flex flex-col items-center text-center px-12 relative after:content-[''] last:after:content-none after:bg-secondary-light after:absolute after:top-[50px] after:h-0.5 after:w-full after:right-[-50%]", children: [jsx("div", { className: "h-[100px] w-[100px] min-w-[100px] min-h-[100px] bg-secondary-light rounded-[40px] p-[26px] box-border z-10", children: (step.icon && Icons_namespaceObject[step.icon]?.({ width: 48, height: 48 })) || (jsx("span", { className: "text-title-lg", children: i + 1 })) }), jsxs("div", { className: "max-w-min", children: [jsx("h5", { className: "font-medium text-xl m-0 mt-4 whitespace-nowrap px-3", children: step.label }), step.description && (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: step.description }))] })] }, String(i)));
+    return (jsxs("div", { className: "flex flex-col items-center text-center px-12 relative after:content-[''] last:after:content-none after:bg-secondary-light after:absolute after:top-[50px] after:h-0.5 after:w-full after:right-[-50%]", children: [jsx("div", { className: "h-[100px] w-[100px] min-w-[100px] min-h-[100px] bg-secondary-light rounded-[40px] p-[26px] box-border z-10", children: (step.icon && StepsBlock_ICONS[step.icon]?.({ width: 48, height: 48 })) || (jsx("span", { className: "text-title-lg", children: i + 1 })) }), jsxs("div", { className: "max-w-min", children: [jsx("h5", { className: "font-medium text-xl m-0 mt-4 whitespace-nowrap px-3", children: step.label }), step.description && (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: step.description }))] })] }, String(i)));
 };
 
 ;// CONCATENATED MODULE: ./src/ProductGallery.tsx
@@ -34295,7 +34277,7 @@ function renderNavButton({ slide, i, activeSlideIndex, onClick, duration }) {
     const isActiveBtn = i === activeSlideIndex;
     const progressBarClassName = isActiveBtn ? 'animate-slide' : '';
     const btnTitleClassName = isActiveBtn ? 'text-primary-text' : 'text-secondary-text';
-    return (jsxs("button", { type: "button", onClick: onClick, className: `group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 py-4`, children: [jsxs("div", { className: "border-0 border-r border-solid border-main-divider px-6", children: [jsx("div", { className: `text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`, children: slide.title }), jsx("div", { className: "text-xs text-secondary-text", children: slide.desc })] }), jsx("div", { className: `absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${progressBarClassName}`, style: { animationDuration: `${duration}s` } })] }, String(i)));
+    return (jsxs("button", { type: "button", onClick: onClick, className: `group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 py-4`, children: [jsxs("div", { className: "border-0 border-r border-solid border-main-divider px-6", children: [jsx("div", { className: `text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`, children: slide?.title }), jsx("div", { className: "text-xs text-secondary-text", children: slide.desc })] }), jsx("div", { className: `absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${progressBarClassName}`, style: { animationDuration: `${duration}s` } })] }, String(i)));
 }
 
 ;// CONCATENATED MODULE: ./src/Blocks.ts
@@ -34361,7 +34343,7 @@ const ContentPage = JSX(({ className, data: { style: pageStyle, blocks, likeCont
                 const { version, content, blocks } = props.block;
                 return (jsx(BlockComponent, { className: props.blockClassName, version: version, context: context, ...content, children: blocks?.length ? blocks.map(renderBlock) : null }, `${type}-${i}`));
             },
-        });
+        }, `block-${i}`);
     }
 });
 function style2className(style) {
@@ -34372,10 +34354,10 @@ function style2className(style) {
 
 
 
-const blockDecorator = ({ blockClassName, block, render }) => (jsxs("div", { className: `relative flex items-stretch ${blockClassName}`, onClick: () => console.log('Edit', block), children: [render({ block, blockClassName: `${blockClassName} w-full` }), jsx("button", { className: "absolute w-8 h-8 top-4 right-4 border rounded-full", onClick: (e) => {
+const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { className: `relative flex items-stretch ${blockClassName}`, onClick: () => console.log('Edit', block), children: [render({ block, blockClassName: `${blockClassName} w-full` }), jsx("button", { className: "absolute w-8 h-8 top-4 right-4 border rounded-full", onClick: (e) => {
                 console.log('Delete', block);
                 e.stopPropagation();
-            }, children: "\u2573" })] }));
+            }, children: "\u2573" })] }, i));
 /* harmony default export */ const ContentPage_fixture = ({
     default: (jsx(ContentPage, { context: context, className: "bg-main", data: __webpack_require__(8358) })),
     editor: (jsx("div", { style: { background: "url('grid.svg')", height: '100%' }, children: jsx(ContentPage, { context: context, className: "bg-transparent", data: __webpack_require__(8358), blockDecorator: blockDecorator }) })),

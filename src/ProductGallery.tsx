@@ -1,6 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ContentPageContext } from './ContentPageContext';
-import { ProductBlockInner, ProductBlockInnerContent } from './ProductBlockInner';
+import type { ProductBlockInnerContent } from './ProductBlockInner';
+import { ProductBlockInner } from './ProductBlockInner';
+import type { UniBlocksComponentProps } from './types';
 
 interface ProductGalleryNav {
   title: string;
@@ -17,10 +18,7 @@ export interface ProductGalleryContent {
   slides?: ProductSlideContent[];
 }
 
-export interface ProductGalleryProps extends ProductGalleryContent {
-  className?: string;
-  context: ContentPageContext;
-}
+export interface ProductGalleryProps extends ProductGalleryContent, UniBlocksComponentProps {}
 
 export const ProductGallery = JSX<ProductGalleryProps>(
   ({ className, context, duration = 0, slides = [] }) => {
@@ -80,7 +78,7 @@ function renderNavButton({ slide, i, activeSlideIndex, onClick, duration }) {
     >
       <div className="border-0 border-r border-solid border-main-divider px-6">
         <div className={`text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`}>
-          {slide.title}
+          {slide?.title}
         </div>
         <div className="text-xs text-secondary-text">{slide.desc}</div>
       </div>

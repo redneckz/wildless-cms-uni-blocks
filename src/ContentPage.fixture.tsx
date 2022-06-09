@@ -2,8 +2,9 @@ import { context } from './setup-fixture';
 
 import { BlockDecorator, ContentPage } from './ContentPage';
 
-const blockDecorator: BlockDecorator = ({ blockClassName, block, render }) => (
+const blockDecorator: BlockDecorator = ({ blockClassName, block, render }, i) => (
   <div
+    key={i}
     className={`relative flex items-stretch ${blockClassName}`}
     onClick={() => console.log('Edit', block)}
   >

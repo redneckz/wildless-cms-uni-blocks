@@ -1,7 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ContentPageContext } from './ContentPageContext';
 import { Img } from './Img';
-import { BlockVersion, Picture, UniBlocksComponentProps } from './types';
+import type { BlockVersion, Picture, UniBlocksComponentProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';

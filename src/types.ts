@@ -101,3 +101,9 @@ export type NavMenuItem = LinkContent;
 export interface TopMenuItem extends NavMenuItem {
   items?: NavMenuItem[];
 }
+
+export interface Benefit {
+  label: string;
+  description?: string;
+  icon?: string;
+}
