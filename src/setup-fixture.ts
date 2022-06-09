@@ -1,6 +1,6 @@
 import { setup } from '@redneckz/uni-jsx';
 import runtime from 'react/jsx-runtime';
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import type { ContentPageContext } from './ContentPageContext';
 
 const { jsx, jsxs } = runtime as any;
@@ -69,25 +69,6 @@ export const context: ContentPageContext = {
       console.log('dislike');
     },
   }),
-  useDynamicImport: (getSource) => {
-    const importedRef = useRef();
-    const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-      setLoading(true);
-      (async () => {
-        try {
-          importedRef.current = await getSource();
-        } catch (e) {
-          console.error(e);
-        } finally {
-          setLoading(false);
-        }
-      })();
-    }, [getSource]);
-
-    return { loading, imported: importedRef.current };
-  },
   handlerDecorator:
     (handler, targetContent): any =>
     (ev) => {
