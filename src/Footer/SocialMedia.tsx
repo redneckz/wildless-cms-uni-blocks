@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { LinkContent, UniBlocksComponentProps } from '../types';
-import { TelegramIcon, VKIcon, OkIcon } from '../Icons';
+import { TelegramIcon, VKIcon, OkIcon } from '../Icons/index';
 import { useLink } from '../useLink';
 
 const ICONS_MAP = [
