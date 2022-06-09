@@ -16,7 +16,7 @@ export interface StepsBlockContent {
 
 export interface StepsBlockProps extends StepsBlockContent, UniBlocksComponentProps {}
 
-export const StepsBlock = JSX<StepsBlockProps>(({ className, context, title, steps }) => {
+export const StepsBlock = JSX<StepsBlockProps>(({ className, title, steps }) => {
   return (
     <section
       className={`font-sans text-primary-text bg-white px-12 py-20 rounded-[40px] flex flex-col items-center ${

@@ -34247,7 +34247,7 @@ const ProductBlock = JSX((props) => {
 
 
 const StepsBlock_ICONS = { NewDocIcon: NewDocIcon, PassSendIcon: PassSendIcon, ActualBalanceIcon: ActualBalanceIcon };
-const StepsBlock = JSX(({ className, context, title, steps }) => {
+const StepsBlock = JSX(({ className, title, steps }) => {
     return (jsxs("section", { className: `font-sans text-primary-text bg-white px-12 py-20 rounded-[40px] flex flex-col items-center ${className || ''}`, children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), steps?.length ? jsx("div", { className: "flex mt-9", children: steps.map(StepsBlock_renderStep) }) : null] }));
 });
 const StepsBlock_renderStep = (step, i) => {

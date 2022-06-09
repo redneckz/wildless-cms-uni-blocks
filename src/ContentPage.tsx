@@ -1,8 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Blocks } from './Blocks';
 import { LikeControl } from './LikeControl';
-import type { BlockDef, ContentPageDef } from './types';
-import { UniBlocksComponentProps } from './types';
+import type { BlockDef, ContentPageDef, UniBlocksComponentProps } from './types';
 
 interface BlockDecoratorProps<VNode> {
   blockClassName: string;

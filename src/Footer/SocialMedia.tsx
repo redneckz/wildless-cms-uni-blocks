@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { LinkContent, UniBlocksComponentProps } from '../types';
+import type { LinkContent, UniBlocksComponentProps } from '../types';
 import { TelegramIcon, VKIcon, OkIcon } from '../Icons';
 import { useLink } from '../useLink';
 

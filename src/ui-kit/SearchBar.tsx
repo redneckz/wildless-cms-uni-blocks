@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { UniBlocksComponentProps } from '../types';
+import type { UniBlocksComponentProps } from '../types';
 import { LoupeIcon } from '../Icons/index';
 
 export const SearchBar = JSX<UniBlocksComponentProps>(({ className, context }) => {

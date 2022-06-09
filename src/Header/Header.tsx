@@ -1,5 +1,4 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ContentPageContext } from '../ContentPageContext';
 import { HeaderItem } from '../ui-kit/HeaderItem';
 import { Logo } from '../ui-kit/Logo';
 import { TopItem } from '../ui-kit/TopItem';
@@ -9,7 +8,7 @@ import { HeaderSecondaryMenu } from './HeaderSecondaryMenu';
 import { isSubItemActive } from './isSubItemActive';
 import { isTopItemActive } from './isTopItemActive';
 import { mergeTopItems } from '../mergeTopItems';
-import { UniBlocksComponentProps } from '../types';
+import type { UniBlocksComponentProps } from '../types';
 
 export interface HeaderProps extends HeaderContent, UniBlocksComponentProps {}
 

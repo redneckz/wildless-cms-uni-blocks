@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { UniBlocksComponentProps, ContactInfo } from '../types';
+import type { UniBlocksComponentProps, ContactInfo } from '../types';
 import { Button } from '../ui-kit/Button';
 import { useLink } from '../useLink';
 
