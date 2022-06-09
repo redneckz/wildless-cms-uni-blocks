@@ -1,20 +1,19 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ContentPageContext } from './ContentPageContext';
 import { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon } from './Icons/index';
 import { Img } from './Img';
-import { Picture, UniBlocksComponentProps } from './types';
+import type { Picture, UniBlocksComponentProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
 import { Breadcrumb, BreadcrumbProps } from './ui-kit/Breadcrumb';
 import { useLink } from './useLink';
 
-const Icons = { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon };
+const ICONS = { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon };
 
 export interface Benefit {
   label: string;
   description?: string;
-  icon?: keyof typeof Icons;
+  icon?: keyof typeof ICONS;
 }
 
 export interface ProductBlockInnerContent {
@@ -89,7 +88,7 @@ function renderBenefit(benefit: Benefit, i: number) {
     <div key={String(i)} className="flex gap-4 items-center">
       {benefit.icon && (
         <div className="w-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border">
-          {Icons[benefit.icon as keyof typeof Icons]?.()}
+          {ICONS[benefit.icon as keyof typeof ICONS]?.()}
         </div>
       )}
       <div className="flex gap-1 flex-col h-full">
@@ -109,5 +108,9 @@ function renderButton(button: ButtonProps, i: number) {
 }
 
 function join<E>(sep: E): (list: E[]) => E[] {
-  return (list) => list.reduce((acc, el) => (acc.length ? acc.concat(sep, el) : [el]), [] as E[]);
+  return (list) =>
+    list.reduce(
+      (acc, el, i) => (acc.length ? acc.concat({ ...sep, key: i }, el) : [el]),
+      [] as E[],
+    );
 }

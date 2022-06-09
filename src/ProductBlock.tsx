@@ -1,13 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ContentPageContext } from './ContentPageContext';
 import { ProductBlockInner, ProductBlockInnerContent } from './ProductBlockInner';
-import { UniBlocksComponentProps } from './types';
-
-export interface Benefit {
-  label: string;
-  description?: string;
-  icon?: keyof typeof Icons;
-}
+import type { UniBlocksComponentProps } from './types';
 
 export interface ProductBlockProps extends ProductBlockInnerContent, UniBlocksComponentProps {}
 
