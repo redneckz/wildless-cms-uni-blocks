@@ -1,5 +1,4 @@
 import { context } from './setup-fixture';
-
 import { StepsBlock } from './StepsBlock';
 
 export default (
@@ -10,17 +9,14 @@ export default (
       {
         label: 'Заявка на кредит',
         description: 'Оставьте онлайн-заявку на потребительский кредит',
-        icon: 'NewDocIcon',
       },
       {
         label: 'В случае одобрения',
         description: 'Менеджер свяжется с вами и согласует встречу',
-        icon: 'PassSendIcon',
       },
       {
         label: 'Получение наличных',
         description: 'Получите наличные в отделении банка',
-        icon: 'ActualBalanceIcon',
       },
     ]}
   />

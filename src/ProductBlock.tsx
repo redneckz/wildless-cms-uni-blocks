@@ -8,7 +8,7 @@ export interface ProductBlockProps extends ProductBlockInnerContent, UniBlocksCo
 export const ProductBlock = JSX<ProductBlockProps>((props) => {
   const className = props.className;
   return (
-    <section className={`bg-white p-11 pr-[7.5rem] rounded-[40px] ${className || ''}`}>
+    <section className={`bg-white p-11 pr-[7.5rem] ${className || ''}`}>
       <ProductBlockInner {...props} />
     </section>
   );

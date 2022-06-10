@@ -21,7 +21,7 @@ const buttonDisabledStyleMap: Record<ButtonVersion, string> = {
   secondary: 'bg-secondary-light text-secondary-text',
 };
 
-const styleButton = 'inline-block rounded-3xl px-9 py-3.5 text-center font-sans';
+const styleButton = 'inline-block rounded-md px-9 py-3.5 text-center font-sans';
 
 export const Button = JSX<ButtonProps>(
   ({
