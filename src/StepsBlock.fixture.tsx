@@ -1,5 +1,4 @@
 import { context } from './setup-fixture';
-
 import { StepsBlock } from './StepsBlock';
 
 export default (
