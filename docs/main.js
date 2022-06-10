@@ -34000,12 +34000,12 @@ const Logo = JSX(({ className, href, children, targetBlank }) => {
 ;// CONCATENATED MODULE: ./src/ui-kit/TopItem.tsx
 
 
-const TopItem = JSX(({ className, text, href, target, active, flat, onClick, children }) => {
+const TopItem = JSX(({ className, text, href, target, active, flat, onClick, children, ariaLabel }) => {
     const linkStyle = active ? 'border-primary-main rounded-3xl' : 'border-transparent';
     const textStyle = active
         ? 'text-primary-main'
         : `${flat ? 'text-primary-text' : 'text-secondary-text'} hover:text-primary-main`;
-    return (jsx("a", { className: `inline-block border border-solid bg-transparent text-center no-underline ${flat ? '' : 'px-4 py-2'} ${linkStyle} ${className || ''}`, href: href, target: target, onClick: onClick, rel: "noopener noreferrer", children: jsx("span", { className: `font-sans font-normal text-sm ${textStyle}`, children: text || children }) }));
+    return (jsx("a", { className: `inline-block border border-solid bg-transparent text-center no-underline ${flat ? '' : 'px-4 py-2'} ${linkStyle} ${className || ''}`, href: href, target: target, onClick: onClick, rel: "noopener noreferrer", "aria-label": ariaLabel, tabindex: "0", children: jsx("span", { className: `font-sans font-normal text-sm ${textStyle}`, "aria-hidden": "true", children: text || children }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/utils/url.ts
@@ -34051,7 +34051,7 @@ function useLink({ router, handlerDecorator = defaultHandlerDecorator, }, link) 
 ;// CONCATENATED MODULE: ./src/Header/HeaderSecondaryMenuButton.tsx
 
 
-const HeaderSecondaryMenuButton = JSX(({ className, children }) => (jsx("button", { type: "button", className: `border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${className || ''}`, disabled: true, children: children })));
+const HeaderSecondaryMenuButton = JSX(({ className, children, ariaLabel }) => (jsx("button", { type: "button", className: `border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${className || ''}`, disabled: true, "aria-label": ariaLabel, children: children })));
 
 ;// CONCATENATED MODULE: ./src/Header/HeaderSecondaryMenu.tsx
 
@@ -34060,7 +34060,7 @@ const HeaderSecondaryMenuButton = JSX(({ className, children }) => (jsx("button"
 
 
 const HeaderSecondaryMenu = JSX(({ location, className }) => {
-    return (jsxs("div", { className: `flex items-center ${className || ''}`, children: [jsx(TopItem, { className: "mr-5", flat: true, href: "#", text: location }), jsx(TopItem, { className: "mr-7", flat: true, href: "#", text: "\u041E\u0444\u0438\u0441\u044B \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u044B" }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", children: LoupeIcon() }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", children: ProfileIcon() }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-main hover:text-secondary-hover min-w-[32px] min-h-[32px]", children: GridIcon() })] }));
+    return (jsxs("div", { className: `flex items-center ${className || ''}`, children: [jsx(TopItem, { className: "mr-5", flat: true, href: "#", text: location, ariaLabel: "\u041C\u0435\u0441\u0442\u043E\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx(TopItem, { className: "mr-7", flat: true, href: "#", text: "\u041E\u0444\u0438\u0441\u044B \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u044B", ariaLabel: "\u0421\u043F\u0438\u0441\u043E\u043A \u0432\u0441\u0435\u0445 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u0445 \u043E\u0444\u0438\u0441\u043E\u0432 \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u043E\u0432" }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", ariaLabel: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443", children: LoupeIcon({ 'aria-hidden': true }) }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", ariaLabel: "\u041F\u0440\u043E\u0444\u0438\u043B\u044C", children: ProfileIcon({ 'aria-hidden': true }) }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-main hover:text-secondary-hover min-w-[32px] min-h-[32px]", ariaLabel: "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438", children: GridIcon({ 'aria-hidden': true }) })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/Header/isSubItemActive.ts
@@ -34110,7 +34110,7 @@ const Header = JSX(({ className, location, context, topItems }) => {
     const activeTopItem = mergedItems.find(isTopItemActive(router));
     const subItems = activeTopItem?.items;
     const activeSubItem = subItems?.find(isSubItemActive(router));
-    const topMenu = mergedItems.map((_, i) => (jsx(TopItem, { active: _ === activeTopItem, ...useLink({ router, handlerDecorator }, _) }, String(i))));
+    const topMenu = mergedItems.map((_, i) => (jsx(TopItem, { active: _ === activeTopItem, ...useLink({ router, handlerDecorator }, _), ariaLabel: _.text }, String(i))));
     const subMenu = subItems?.map((_) => (jsx(HeaderItem, { className: "mr-8", active: _ === activeSubItem, ...useLink({ router, handlerDecorator }, _) }, _.href)));
     return (jsxs("header", { className: `pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`, children: [jsxs("div", { className: "flex items-center", children: [jsx(Logo, { className: "mr-8" }), topMenu, jsx(HeaderSecondaryMenu, { location: location, className: "ml-auto" })] }), jsx("div", { className: "mt-5 h-[1px] bg-main-divider" }), jsx("nav", { className: "mt-5", children: subMenu })] }));
 });
@@ -34301,7 +34301,7 @@ const Blocks = {
 ;// CONCATENATED MODULE: ./src/ui-kit/LikeButton.tsx
 
 
-const LikeButton = JSX(({ className, onClick }) => (jsx("button", { type: "button", className: `border-0 w-[36px] bg-inherit cursor-pointer ${className || ''}`, onClick: onClick, children: renderLikeIcon() })));
+const LikeButton = JSX(({ className, onClick, ariaLabel }) => (jsx("button", { type: "button", className: `border-0 w-[36px] bg-inherit cursor-pointer ${className || ''}`, onClick: onClick, "aria-label": ariaLabel, children: renderLikeIcon() })));
 const renderLikeIcon = () => {
     const params = {
         stroke: '#292D32',
@@ -34318,7 +34318,7 @@ const renderLikeIcon = () => {
 
 const LikeControl = JSX(({ className, context }) => {
     const likeService = context.useLikeService();
-    return (jsxs("div", { className: `border-main border-2 border-solid bg-white flex w-[125px] items-center justify-center gap-3 p-2 font-sans ${className || ''}`, children: [jsx(LikeButton, { onClick: likeService.like }), jsx(LikeButton, { onClick: likeService.dislike, className: "rotate-180" }), jsx("span", { className: "select-none", children: likeService.likeCount })] }));
+    return (jsxs("div", { className: `border-main border-2 border-solid bg-white flex w-[125px] items-center justify-center gap-3 p-2 font-sans ${className || ''}`, children: [jsx(LikeButton, { onClick: likeService.like, ariaLabel: "\u041F\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043E\u0442\u043C\u0435\u0442\u043A\u0443 \u00AB\u043B\u0430\u0439\u043A\u00BB" }), jsx(LikeButton, { onClick: likeService.dislike, className: "rotate-180", ariaLabel: "\u041F\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043E\u0442\u043C\u0435\u0442\u043A\u0443 \u00AB\u0434\u0438\u0437\u043B\u0430\u0439\u043A\u00BB" }), jsx("span", { className: "select-none", children: likeService.likeCount })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/ContentPage.tsx
@@ -35102,14 +35102,17 @@ const image4 = {
 
 ;// CONCATENATED MODULE: ./src/cosmos.decorator.tsx
 
-/* harmony default export */ const cosmos_decorator = (({ children }) => (jsx("div", { style: {
-        backgroundColor: 'rgba(51, 51, 51, 0.07)',
-        position: 'absolute',
-        left: 0,
-        right: 0,
-        bottom: 0,
-        top: 0,
-    }, "data-theme": "pc", children: children })));
+/* harmony default export */ const cosmos_decorator = (({ children }) => {
+    document.querySelector(':root')?.setAttribute('lang', 'ru'); // for lighthouse accessibility metrics
+    return (jsx("div", { style: {
+            backgroundColor: 'rgba(51, 51, 51, 0.07)',
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0,
+        }, "data-theme": "pc", children: children }));
+});
 
 ;// CONCATENATED MODULE: ./node_modules/react-cosmos/dist/plugins/webpack/client/userDeps.js
 // This file is automatically generated by Cosmos. Add it to .gitignore and
@@ -37004,7 +37007,7 @@ module.exports = __webpack_require__.p + "92c10e8d48ecdcd8ee10.woff2";
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"title":"Кредиты","slug":"credits","description":"Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.","keywords":["кредит","акция"],"robots":["index","follow"],"og":{"type":"article","url":"https://foo.com/bar/baz"},"date":"2022-04-08","style":["gap-5 p-20 pt-0"],"likeControl":true,"blocks":[{"type":"Header","style":["col-span-12"],"content":{"topItems":[{"href":"/","text":"Экосистема Своё","items":[{"href":"/credit-cards","text":"Кредитные карты"},{"href":"/","text":"Дебетовые карты"},{"href":"/credits","text":"Кредиты"},{"href":"/deposits","text":"Вклады"},{"href":"/investment","text":"Инвестиции"},{"href":"/mortgage","text":"Ипотека"},{"href":"/insurance","text":"Страхование"},{"href":"/transfers","text":"Переводы"}]},{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank"},{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank"}]}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Кредиты","items":["Кредитный лимит до 10 млн ₽","Кредиты наличными на любые цели","Получите деньги без залога и поручителей"],"button":{"text":"Подробнее","href":"/credit-cards","version":"secondary"},"image":{"src":"money-1.png","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","version":"secondary","style":["col-span-4"],"content":{"title":"Ипотека","description":"Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %","button":{"text":"Подробнее","href":"/credits","version":"secondary"},"promo":true}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Банковские пластиковые карты","items":["Счета в разных валютах","Бесплатное обслуживание","Кэшбэк до 15% от покупок"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"credit-card-1.png","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Премиальные продукты","description":"Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус","button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"column-1.png","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Экосистема «СВОЕ», созданная для людей","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом","Подробная база вакансий для жителей сельской местности"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"globe-1.png","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-4"],"version":"secondary","content":{"title":"Драгоценные металлы","items":["Счета в драгоценных металлах","Слитки  и монеты из драгоценных металлов"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}},{"type":"Tile","style":["col-span-4"],"version":"secondary","content":{"title":"Банковские ячейки","items":["Полная конфиденциальность","Разный размер ячеек","Оформление доверенностей"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}},{"type":"Tile","style":["col-span-4"],"version":"secondary","content":{"title":"Вклады и сбережения","items":["Доходность по вкладам  до 15% годовых","Минимальная сумма вклада  от 3000 Р","Минимальный срок вклада от 1 месяца"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}}]}');
+module.exports = JSON.parse('{"title":"Кредиты","slug":"credits","description":"Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.","keywords":["кредит","акция"],"robots":["index","follow"],"og":{"type":"article","url":"https://foo.com/bar/baz"},"date":"2022-04-08","style":["gap-5 p-20 pt-0"],"likeControl":true,"blocks":[{"type":"Header","style":["col-span-12"],"content":{"topItems":[{"href":"/","text":"Экосистема Своё","items":[{"href":"/credit-cards","text":"Кредитные карты"},{"href":"/","text":"Дебетовые карты"},{"href":"/credits","text":"Кредиты"},{"href":"/deposits","text":"Вклады"},{"href":"/investment","text":"Инвестиции"},{"href":"/mortgage","text":"Ипотека"},{"href":"/insurance","text":"Страхование"},{"href":"/transfers","text":"Переводы"}]},{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank"},{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank"}]}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Кредиты","items":["Кредитный лимит до 10 млн ₽","Кредиты наличными на любые цели","Получите деньги без залога и поручителей"],"button":{"text":"Подробнее","href":"/credit-cards","version":"secondary"},"image":{"src":"money-1.png","alt":"Money","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","version":"secondary","style":["col-span-4"],"content":{"title":"Ипотека","description":"Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %","button":{"text":"Подробнее","href":"/credits","version":"secondary"},"promo":true}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Банковские пластиковые карты","items":["Счета в разных валютах","Бесплатное обслуживание","Кэшбэк до 15% от покупок"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"credit-card-1.png","alt":"Credit card","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Премиальные продукты","description":"Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус","button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"column-1.png","alt":"Column","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Экосистема «СВОЕ», созданная для людей","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом","Подробная база вакансий для жителей сельской местности"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"globe-1.png","alt":"Globe","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-4"],"version":"secondary","content":{"title":"Драгоценные металлы","items":["Счета в драгоценных металлах","Слитки  и монеты из драгоценных металлов"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}},{"type":"Tile","style":["col-span-4"],"version":"secondary","content":{"title":"Банковские ячейки","items":["Полная конфиденциальность","Разный размер ячеек","Оформление доверенностей"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}},{"type":"Tile","style":["col-span-4"],"version":"secondary","content":{"title":"Вклады и сбережения","items":["Доходность по вкладам  до 15% годовых","Минимальная сумма вклада  от 3000 Р","Минимальный срок вклада от 1 месяца"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}}]}');
 
 /***/ })
 

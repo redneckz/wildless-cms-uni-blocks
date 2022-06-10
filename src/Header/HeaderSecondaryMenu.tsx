@@ -11,16 +11,31 @@ interface HeaderSecondaryMenuProps {
 export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(({ location, className }) => {
   return (
     <div className={`flex items-center ${className || ''}`}>
-      <TopItem className="mr-5" flat={true} href="#" text={location} />
-      <TopItem className="mr-7" flat={true} href="#" text="Офисы и банкоматы" />
-      <HeaderSecondaryMenuButton className="mr-5 text-primary-text hover:text-primary-main">
-        {LoupeIcon()}
+      <TopItem className="mr-5" flat={true} href="#" text={location} ariaLabel="Местоположение" />
+      <TopItem
+        className="mr-7"
+        flat={true}
+        href="#"
+        text="Офисы и банкоматы"
+        ariaLabel="Список всех доступных офисов и банкоматов"
+      />
+      <HeaderSecondaryMenuButton
+        className="mr-5 text-primary-text hover:text-primary-main"
+        ariaLabel="Поиск по сайту"
+      >
+        {LoupeIcon({ 'aria-hidden': true })}
       </HeaderSecondaryMenuButton>
-      <HeaderSecondaryMenuButton className="mr-5 text-primary-text hover:text-primary-main">
-        {ProfileIcon()}
+      <HeaderSecondaryMenuButton
+        className="mr-5 text-primary-text hover:text-primary-main"
+        ariaLabel="Профиль"
+      >
+        {ProfileIcon({ 'aria-hidden': true })}
       </HeaderSecondaryMenuButton>
-      <HeaderSecondaryMenuButton className="mr-5 text-main hover:text-secondary-hover min-w-[32px] min-h-[32px]">
-        {GridIcon()}
+      <HeaderSecondaryMenuButton
+        className="mr-5 text-main hover:text-secondary-hover min-w-[32px] min-h-[32px]"
+        ariaLabel="Дополнительные ссылки"
+      >
+        {GridIcon({ 'aria-hidden': true })}
       </HeaderSecondaryMenuButton>
     </div>
   );

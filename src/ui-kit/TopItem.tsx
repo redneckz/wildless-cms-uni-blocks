@@ -8,15 +8,17 @@ export interface TopItemContent extends LinkContent {
 export interface TopItemProps extends TopItemContent {
   className?: string;
   flat?: boolean;
+  ariaLabel?: string;
   onClick?: (ev: MouseEvent) => any;
 }
 
 export const TopItem = JSX<TopItemProps>(
-  ({ className, text, href, target, active, flat, onClick, children }) => {
+  ({ className, text, href, target, active, flat, onClick, children, ariaLabel }) => {
     const linkStyle = active ? 'border-primary-main rounded-3xl' : 'border-transparent';
     const textStyle = active
       ? 'text-primary-main'
       : `${flat ? 'text-primary-text' : 'text-secondary-text'} hover:text-primary-main`;
+
     return (
       <a
         className={`inline-block border border-solid bg-transparent text-center no-underline ${
@@ -26,8 +28,12 @@ export const TopItem = JSX<TopItemProps>(
         target={target}
         onClick={onClick}
         rel="noopener noreferrer"
+        aria-label={ariaLabel}
+        tabindex="0"
       >
-        <span className={`font-sans font-normal text-sm ${textStyle}`}>{text || children}</span>
+        <span className={`font-sans font-normal text-sm ${textStyle}`} aria-hidden="true">
+          {text || children}
+        </span>
       </a>
     );
   },

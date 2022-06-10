@@ -11,8 +11,12 @@ export const LikeControl = JSX<UniBlocksComponentProps>(({ className, context })
         className || ''
       }`}
     >
-      <LikeButton onClick={likeService.like} />
-      <LikeButton onClick={likeService.dislike} className="rotate-180" />
+      <LikeButton onClick={likeService.like} ariaLabel="Поставить отметку «лайк»" />
+      <LikeButton
+        onClick={likeService.dislike}
+        className="rotate-180"
+        ariaLabel="Поставить отметку «дизлайк»"
+      />
       <span className="select-none">{likeService.likeCount}</span>
     </div>
   );
