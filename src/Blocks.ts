@@ -6,7 +6,6 @@ import { ProductBlock } from './ProductBlock';
 import { StepsBlock } from './StepsBlock';
 import { BenefitsBlock } from './BenefitsBlock';
 import { ProductGallery } from './ProductGallery';
-import { Footer } from './Footer/Footer';
 
 export const Blocks = {
   Header,
@@ -17,5 +16,4 @@ export const Blocks = {
   StepsBlock,
   BenefitsBlock,
   ProductGallery,
-  Footer,
 };
