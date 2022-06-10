@@ -225,6 +225,244 @@
           "version": "secondary"
         }
       }
+    },
+    {
+      "type": "Footer",
+      "style": ["col-span-12"],
+      "content": {
+        "topItems": [
+          {
+            "href": "https://rshb.ru/",
+            "text": "Частным клиентам",
+            "target": "_blank",
+            "items": [
+              {
+                "href": "https://rshb.ru/",
+                "text": "Кредитные карты"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Дебетовые карты"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Кредиты"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Ипотека"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Вклады и сбережения"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Инвестиции"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Страхование"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Премиальным клиентам"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Биометрическая регистрация"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Перевод денег"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Обмен денег"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Акции"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Тарифы"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Архивная информация"
+              }
+            ]
+          },
+          {
+            "href": "https://rshb.ru/",
+            "text": "Бизнес клиентам",
+            "target": "_blank",
+            "items": [
+              {
+                "href": "https://rshb.ru/",
+                "text": "РКО"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Кредиты"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Депозиты"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Эквайринг"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Банковские карты"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "ВЭД"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Инвестиции"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Обмен валюты"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Страхование"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Партнёрские программы"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Онлайн-сервисы"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Акции"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Тарифы"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Архивная информация"
+              }
+            ]
+          },
+          {
+            "href": "https://rshb.ru/",
+            "text": "О банке",
+            "target": "_blank",
+            "items": [
+              {
+                "href": "https://rshb.ru/",
+                "text": "О банке"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Новости"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Офисы и отделения"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Карьера в банке"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Пресс-центр"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Кредитным организациям"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Закупки"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Непрофильные/Профильные нецелевые активы"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Инсайдерам"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Противодействие коррупции"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Меры безопасности"
+              },
+              {
+                "href": "https://rshb.ru/",
+                "text": "Залоговое имущество"
+              }
+            ]
+          }
+        ],
+        "contacts": [
+          {
+            "text": "+7 (495) 787-7-787",
+            "description": "Для звонков из-за границы",
+            "type": "tel"
+          },
+          {
+            "text": "example@example.com",
+            "description": "Для писем",
+            "type": "email"
+          },
+          {
+            "text": "7787",
+            "description": "Абонентам МТС, Мегафон, Билайн и Tele2",
+            "type": "tel"
+          }
+        ],
+        "documents": [
+          {
+            "text": "Информация о процентных ставках по договорам банковского вклада с физическими лицами",
+            "href": "https://rshb.ru/",
+            "target": "_blank"
+          },
+          {
+            "text": "Раскрытие информации профессиональным участником рынка ценных бумаг",
+            "href": "https://rshb.ru/",
+            "target": "_blank"
+          },
+          {
+            "text": "Раскрытие информации",
+            "href": "https://rshb.ru/",
+            "target": "_blank"
+          },
+          {
+            "text": "Удостоверяющий центр",
+            "href": "https://rshb.ru/",
+            "target": "_blank"
+          },
+          {
+            "text": "Финансовая культура",
+            "href": "https://rshb.ru/",
+            "target": "_blank"
+          }
+        ],
+        "socialMedia": [
+          { "href": "https://vk.com" },
+          { "href": "https://ok.ru" },
+          { "href": "https://t.me" }
+        ]
+      }
     }
   ]
 }
