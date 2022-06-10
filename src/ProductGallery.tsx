@@ -27,9 +27,7 @@ export const ProductGallery = JSX<ProductGalleryProps>(
     const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
 
     return (
-      <section
-        className={`font-sans bg-white rounded-[40px] overflow-hidden w-100 ${className || ''}`}
-      >
+      <section className={`font-sans bg-white overflow-hidden w-100 ${className || ''}`}>
         <div
           className={`flex transition duration-1000`}
           style={{ transform: `translateX(-${activeSlideIndex}00%)` }}
@@ -38,7 +36,7 @@ export const ProductGallery = JSX<ProductGalleryProps>(
         </div>
 
         <div
-          className={`border-t border-solid border-main-divider grid grid-cols-${galleryNav.length}`}
+          className={`border-0 border-t border-solid border-main-divider grid grid-cols-${galleryNav.length}`}
         >
           {galleryNav.map((slide, i) =>
             renderNavButton({

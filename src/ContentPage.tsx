@@ -31,7 +31,7 @@ export const ContentPage = JSX<ContentPageProps>(
   }) => {
     return (
       <section className="relative" data-theme={colorPalette}>
-        <div className={`grid grid-cols-12 ${style2className(pageStyle)} ${className}`}>
+        <div className={`grid grid-cols-12 gap-1 ${style2className(pageStyle)} ${className}`}>
           {blocks?.length ? blocks.map(renderBlock) : null}
         </div>
         {likeControl && (

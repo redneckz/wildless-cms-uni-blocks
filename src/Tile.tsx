@@ -30,9 +30,9 @@ export const Tile = JSX<TileProps>(
     const { handlerDecorator } = context;
     return (
       <section
-        className={`font-sans p-9 rounded-[40px] flex justify-between items-stretch relative ${
-          className || ''
-        } ${tileStyleMap[version]}`}
+        className={`font-sans p-9 flex justify-between items-stretch relative ${className || ''} ${
+          tileStyleMap[version]
+        }`}
       >
         <div className="flex flex-col w-full">
           {title && renderTitle(title, className)}
