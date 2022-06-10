@@ -29,11 +29,8 @@ export const TopItem = JSX<TopItemProps>(
         onClick={onClick}
         rel="noopener noreferrer"
         aria-label={ariaLabel}
-        tabindex="0"
       >
-        <span className={`font-sans font-normal text-sm ${textStyle}`} aria-hidden="true">
-          {text || children}
-        </span>
+        <span className={`font-sans font-normal text-sm ${textStyle}`}>{text || children}</span>
       </a>
     );
   },

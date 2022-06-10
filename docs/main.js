@@ -4663,7 +4663,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_21___ = _node_modules_css_loader_dist_runtime_
 var ___CSS_LOADER_URL_REPLACEMENT_22___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_22___);
 var ___CSS_LOADER_URL_REPLACEMENT_23___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_23___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face{font-family:Ubuntu;font-style:normal;font-weight:300;src:local(\"Ubuntu Light\"),local(\"Ubuntu-Light\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\")}@font-face{font-family:Ubuntu;font-style:italic;font-weight:300;src:local(\"Ubuntu Light Italic\"),local(\"Ubuntu-LightItalic\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") format(\"truetype\")}@font-face{font-family:Ubuntu;font-style:normal;font-weight:400;src:local(\"Ubuntu\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_8___ + ") format(\"truetype\")}@font-face{font-family:Ubuntu;font-style:italic;font-weight:400;src:local(\"Ubuntu Italic\"),local(\"Ubuntu-Italic\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_9___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_10___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_11___ + ") format(\"truetype\")}@font-face{font-family:Ubuntu;font-style:normal;font-weight:500;src:local(\"Ubuntu Medium\"),local(\"Ubuntu-Medium\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_12___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_13___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_14___ + ") format(\"truetype\")}@font-face{font-family:Ubuntu;font-style:italic;font-weight:500;src:local(\"Ubuntu Medium Italic\"),local(\"Ubuntu-MediumItalic\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_15___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_16___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_17___ + ") format(\"truetype\")}@font-face{font-family:Ubuntu;font-style:normal;font-weight:700;src:local(\"Ubuntu Bold\"),local(\"Ubuntu-Bold\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_18___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_19___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_20___ + ") format(\"truetype\")}@font-face{font-family:Ubuntu;font-style:italic;font-weight:700;src:local(\"Ubuntu Bold Italic\"),local(\"Ubuntu-BoldItalic\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_21___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_22___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_23___ + ") format(\"truetype\")}", "",{"version":3,"sources":["webpack://./fonts/ubuntu/ubuntu.css"],"names":[],"mappings":"AAAA,WACI,kBAAqB,CAGrB,iBAAkB,CADlB,eAAgB,CADhB,yNAGJ,CACA,WACI,kBAAqB,CAGrB,iBAAkB,CADlB,eAAgB,CADhB,sOAGJ,CACA,WACI,kBAAqB,CAGrB,iBAAkB,CADlB,eAAgB,CADhB,6LAGJ,CACA,WACI,kBAAqB,CAGrB,iBAAkB,CADlB,eAAgB,CADhB,6NAGJ,CACA,WACI,kBAAqB,CAGrB,iBAAkB,CADlB,eAAgB,CADhB,8NAGJ,CACA,WACI,kBAAqB,CAGrB,iBAAkB,CADlB,eAAgB,CADhB,2OAGJ,CACA,WACI,kBAAqB,CAGrB,iBAAkB,CADlB,eAAgB,CADhB,0NAGJ,CACA,WACI,kBAAqB,CAGrB,iBAAkB,CADlB,eAAgB,CADhB,uOAGJ","sourcesContent":["@font-face {\n    font-family: 'Ubuntu';\n    src: local('Ubuntu Light'), local('Ubuntu-Light'), url('ubuntulight.woff2') format('woff2'), url('ubuntulight.woff') format('woff'), url('ubuntulight.ttf') format('truetype');\n    font-weight: 300;\n    font-style: normal;\n}\n@font-face {\n    font-family: 'Ubuntu';\n    src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'), url('ubuntulightitalic.woff2') format('woff2'), url('ubuntulightitalic.woff') format('woff'), url('ubuntulightitalic.ttf') format('truetype');\n    font-weight: 300;\n    font-style: italic;\n}\n@font-face {\n    font-family: 'Ubuntu';\n    src: local('Ubuntu'), url('ubuntu.woff2') format('woff2'), url('ubuntu.woff') format('woff'), url('ubuntu.ttf') format('truetype');\n    font-weight: 400;\n    font-style: normal;\n}\n@font-face {\n    font-family: 'Ubuntu';\n    src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url('ubuntuitalic.woff2') format('woff2'), url('ubuntuitalic.woff') format('woff'), url('ubuntuitalic.ttf') format('truetype');\n    font-weight: 400;\n    font-style: italic;\n}\n@font-face {\n    font-family: 'Ubuntu';\n    src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url('ubuntumedium.woff2') format('woff2'), url('ubuntumedium.woff') format('woff'), url('ubuntumedium.ttf') format('truetype');\n    font-weight: 500;\n    font-style: normal;\n}\n@font-face {\n    font-family: 'Ubuntu';\n    src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'), url('ubuntumediumitalic.woff2') format('woff2'), url('ubuntumediumitalic.woff') format('woff'), url('ubuntumediumitalic.ttf') format('truetype');\n    font-weight: 500;\n    font-style: italic;\n}\n@font-face {\n    font-family: 'Ubuntu';\n    src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('ubuntubold.woff2') format('woff2'), url('ubuntubold.woff') format('woff'), url('ubuntubold.ttf') format('truetype');\n    font-weight: 700;\n    font-style: normal;\n}\n@font-face {\n    font-family: 'Ubuntu';\n    src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url('ubuntubolditalic.woff2') format('woff2'), url('ubuntubolditalic.woff') format('woff'), url('ubuntubolditalic.ttf') format('truetype');\n    font-weight: 700;\n    font-style: italic;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face{font-display:swap;font-family:Ubuntu;font-style:normal;font-weight:300;src:local(\"Ubuntu Light\"),local(\"Ubuntu-Light\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\")}@font-face{font-display:swap;font-family:Ubuntu;font-style:italic;font-weight:300;src:local(\"Ubuntu Light Italic\"),local(\"Ubuntu-LightItalic\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") format(\"truetype\")}@font-face{font-display:swap;font-family:Ubuntu;font-style:normal;font-weight:400;src:local(\"Ubuntu\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_8___ + ") format(\"truetype\")}@font-face{font-display:swap;font-family:Ubuntu;font-style:italic;font-weight:400;src:local(\"Ubuntu Italic\"),local(\"Ubuntu-Italic\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_9___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_10___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_11___ + ") format(\"truetype\")}@font-face{font-display:swap;font-family:Ubuntu;font-style:normal;font-weight:500;src:local(\"Ubuntu Medium\"),local(\"Ubuntu-Medium\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_12___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_13___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_14___ + ") format(\"truetype\")}@font-face{font-display:swap;font-family:Ubuntu;font-style:italic;font-weight:500;src:local(\"Ubuntu Medium Italic\"),local(\"Ubuntu-MediumItalic\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_15___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_16___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_17___ + ") format(\"truetype\")}@font-face{font-display:swap;font-family:Ubuntu;font-style:normal;font-weight:700;src:local(\"Ubuntu Bold\"),local(\"Ubuntu-Bold\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_18___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_19___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_20___ + ") format(\"truetype\")}@font-face{font-display:swap;font-family:Ubuntu;font-style:italic;font-weight:700;src:local(\"Ubuntu Bold Italic\"),local(\"Ubuntu-BoldItalic\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_21___ + ") format(\"woff2\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_22___ + ") format(\"woff\"),url(" + ___CSS_LOADER_URL_REPLACEMENT_23___ + ") format(\"truetype\")}", "",{"version":3,"sources":["webpack://./fonts/ubuntu/ubuntu.css"],"names":[],"mappings":"AAAA,WAME,iBAAkB,CALlB,kBAAqB,CAIrB,iBAAkB,CADlB,eAAgB,CAFhB,yNAKF,CACA,WAOE,iBAAkB,CANlB,kBAAqB,CAKrB,iBAAkB,CADlB,eAAgB,CAHhB,sOAMF,CACA,WAME,iBAAkB,CALlB,kBAAqB,CAIrB,iBAAkB,CADlB,eAAgB,CAFhB,6LAKF,CACA,WAME,iBAAkB,CALlB,kBAAqB,CAIrB,iBAAkB,CADlB,eAAgB,CAFhB,6NAKF,CACA,WAME,iBAAkB,CALlB,kBAAqB,CAIrB,iBAAkB,CADlB,eAAgB,CAFhB,8NAKF,CACA,WAOE,iBAAkB,CANlB,kBAAqB,CAKrB,iBAAkB,CADlB,eAAgB,CAHhB,2OAMF,CACA,WAME,iBAAkB,CALlB,kBAAqB,CAIrB,iBAAkB,CADlB,eAAgB,CAFhB,0NAKF,CACA,WAOE,iBAAkB,CANlB,kBAAqB,CAKrB,iBAAkB,CADlB,eAAgB,CAHhB,uOAMF","sourcesContent":["@font-face {\n  font-family: 'Ubuntu';\n  src: local('Ubuntu Light'), local('Ubuntu-Light'), url('ubuntulight.woff2') format('woff2'),\n    url('ubuntulight.woff') format('woff'), url('ubuntulight.ttf') format('truetype');\n  font-weight: 300;\n  font-style: normal;\n  font-display: swap;\n}\n@font-face {\n  font-family: 'Ubuntu';\n  src: local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'),\n    url('ubuntulightitalic.woff2') format('woff2'), url('ubuntulightitalic.woff') format('woff'),\n    url('ubuntulightitalic.ttf') format('truetype');\n  font-weight: 300;\n  font-style: italic;\n  font-display: swap;\n}\n@font-face {\n  font-family: 'Ubuntu';\n  src: local('Ubuntu'), url('ubuntu.woff2') format('woff2'), url('ubuntu.woff') format('woff'),\n    url('ubuntu.ttf') format('truetype');\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n}\n@font-face {\n  font-family: 'Ubuntu';\n  src: local('Ubuntu Italic'), local('Ubuntu-Italic'), url('ubuntuitalic.woff2') format('woff2'),\n    url('ubuntuitalic.woff') format('woff'), url('ubuntuitalic.ttf') format('truetype');\n  font-weight: 400;\n  font-style: italic;\n  font-display: swap;\n}\n@font-face {\n  font-family: 'Ubuntu';\n  src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url('ubuntumedium.woff2') format('woff2'),\n    url('ubuntumedium.woff') format('woff'), url('ubuntumedium.ttf') format('truetype');\n  font-weight: 500;\n  font-style: normal;\n  font-display: swap;\n}\n@font-face {\n  font-family: 'Ubuntu';\n  src: local('Ubuntu Medium Italic'), local('Ubuntu-MediumItalic'),\n    url('ubuntumediumitalic.woff2') format('woff2'), url('ubuntumediumitalic.woff') format('woff'),\n    url('ubuntumediumitalic.ttf') format('truetype');\n  font-weight: 500;\n  font-style: italic;\n  font-display: swap;\n}\n@font-face {\n  font-family: 'Ubuntu';\n  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url('ubuntubold.woff2') format('woff2'),\n    url('ubuntubold.woff') format('woff'), url('ubuntubold.ttf') format('truetype');\n  font-weight: 700;\n  font-style: normal;\n  font-display: swap;\n}\n@font-face {\n  font-family: 'Ubuntu';\n  src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'),\n    url('ubuntubolditalic.woff2') format('woff2'), url('ubuntubolditalic.woff') format('woff'),\n    url('ubuntubolditalic.ttf') format('truetype');\n  font-weight: 700;\n  font-style: italic;\n  font-display: swap;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -33645,7 +33645,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 8495:
+/***/ 4777:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -34005,7 +34005,7 @@ const TopItem = JSX(({ className, text, href, target, active, flat, onClick, chi
     const textStyle = active
         ? 'text-primary-main'
         : `${flat ? 'text-primary-text' : 'text-secondary-text'} hover:text-primary-main`;
-    return (jsx("a", { className: `inline-block border border-solid bg-transparent text-center no-underline ${flat ? '' : 'px-4 py-2'} ${linkStyle} ${className || ''}`, href: href, target: target, onClick: onClick, rel: "noopener noreferrer", "aria-label": ariaLabel, tabindex: "0", children: jsx("span", { className: `font-sans font-normal text-sm ${textStyle}`, "aria-hidden": "true", children: text || children }) }));
+    return (jsx("a", { className: `inline-block border border-solid bg-transparent text-center no-underline ${flat ? '' : 'px-4 py-2'} ${linkStyle} ${className || ''}`, href: href, target: target, onClick: onClick, rel: "noopener noreferrer", "aria-label": ariaLabel, children: jsx("span", { className: `font-sans font-normal text-sm ${textStyle}`, children: text || children }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/utils/url.ts
@@ -34037,6 +34037,7 @@ function useLink({ router, handlerDecorator = defaultHandlerDecorator, }, link) 
     return {
         ...link,
         href,
+        ariaLabel: link.text,
         onClick: handlerDecorator((ev) => {
             const isLocalHref = href && !isURL(href);
             const isLocalTarget = !link.target || link.target === '_self';
@@ -34118,6 +34119,146 @@ const Header = JSX(({ className, location, context, topItems }) => {
 ;// CONCATENATED MODULE: ./src/Header/index.ts
 
 
+;// CONCATENATED MODULE: ./src/ui-kit/SearchBar.tsx
+
+
+
+const SearchBar = JSX(({ className, context }) => {
+    const search = context.useSearch();
+    return (jsxs("form", { className: `relative ${className || ''}`, children: [jsxs("div", { className: "absolute rounded-l-full h-full flex items-center justify-center pl-4 max-w-[170px] gap-3.5", children: [jsx("div", { className: "w-[24px] h-[24px]", children: LoupeIcon() }), jsx("span", { className: "font-sans font-normal text-sm text-secondary-text", children: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443" })] }), jsx("input", { className: "pl-[170px] w-full font-sans font-normal text-sm border border-solid border-main-divider rounded-full h-full box-border outline-none", value: search.term, onChange: (e) => search.setTerm(e.target.value), type: "text", placeholder: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443", name: "s" }), jsx("button", { type: "submit", className: "absolute font-sans font-normal text-sm cursor-pointer bg-transparent hover:bg-primary-hover active:bg-primary-active text-primary-main hover:text-white border-none px-5 rounded-r-full h-full top-0 right-0 outline-none", onClick: (e) => {
+                    e.preventDefault();
+                    console.log('click');
+                }, children: "\u041D\u0430\u0439\u0442\u0438" })] }));
+});
+
+;// CONCATENATED MODULE: ./src/ui-kit/Button.tsx
+
+
+const buttonStyleMap = {
+    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
+    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
+};
+const buttonDisabledStyleMap = {
+    primary: 'bg-secondary-dark text-secondary-text',
+    secondary: 'bg-secondary-light text-secondary-text',
+};
+const styleButton = 'inline-block rounded-3xl px-9 py-3.5 text-center font-sans';
+const Button = JSX(({ className, text, href, target, onClick, children, disabled, version = 'primary', ariaLabel, }) => {
+    if (disabled) {
+        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabindex: "-1", className: `${styleButton} select-none ${buttonDisabledStyleMap[version]} ${className || ''}`, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
+    }
+    return (jsx("a", { className: `${styleButton} no-underline ${buttonStyleMap[version]} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
+});
+
+;// CONCATENATED MODULE: ./src/Footer/Contacts.tsx
+
+
+
+
+const Contacts = JSX(({ className, items, hasButton, context }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    return (jsxs("div", { className: `flex flex-col ${className || ''}`, children: [items?.length ? items.map(renderContact) : null, hasButton ? (jsx(Button, { className: "my-4", ...useLink({ router, handlerDecorator }, {
+                    text: 'Обратная связь',
+                    href: '/',
+                    target: '_blank',
+                }) })) : null] }));
+});
+const renderContact = (item, index) => {
+    const { type, text, description } = item;
+    return (jsxs("div", { className: "mb-4", children: [jsx("div", { children: renderText(type, text) }), jsx("div", { className: "font-sans text-sm text-secondary-text", children: description })] }, String(index)));
+};
+const renderText = (type, text) => {
+    switch (type) {
+        case 'tel':
+            return (jsx("a", { className: "font-sans font-medium text-xl text-primary-text no-underline", href: `tel:${formatTel(text)}`, children: text }));
+        case 'email':
+            return (jsx("a", { className: "font-sans font-medium text-xl text-primary-text no-underline", href: `mailto:${text}`, children: text }));
+        default:
+            return jsx("span", { children: text });
+    }
+};
+const formatTel = (s) => s.replaceAll(/(\-|\s|\(|\)|\D+)/g, '');
+
+;// CONCATENATED MODULE: ./src/Footer/Sitemap.tsx
+
+
+
+
+const Sitemap = JSX(({ className, items, context }) => {
+    const sitemap = context.useSitemap();
+    const mergedItems = mergeTopItems(sitemap.topItems, items);
+    return (jsx("div", { className: `flex items-start justify-start gap-11 xl:gap-5 ${className || ''}`, children: mergedItems?.map((_, i) => renderColumn(_, i, context)) }));
+});
+const renderColumn = (c, index, context) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    const { text, href, items, target } = c;
+    return (jsxs("div", { className: "flex flex-col w-[235px] gap-[14px]", children: [jsx("a", { className: "block font-sans font-medium text-base text-primary-text no-underline", href: href, target: target || '_self', children: text || `Раздел ${index}` }), items?.map((_, i) => (jsx(ColumnItem, { ...useLink({ router, handlerDecorator }, _) }, String(i))))] }, String(index)));
+};
+const ColumnItem = JSX(({ text, href, target, index }) => (jsx("a", { className: "block font-sans font-normal text-base text-secondary-text hover:text-primary-text no-underline", href: href, target: target || '_self', children: text || `Раздел ${index}` })));
+
+;// CONCATENATED MODULE: ./src/Footer/SocialMedia.tsx
+
+
+
+
+const ICONS_MAP = [
+    { origins: ['t.me', 'telegram.org'], icon: TelegramIcon },
+    { origins: ['vk.com'], icon: VKIcon },
+    { origins: ['ok.ru'], icon: OkIcon },
+];
+const SocialMedia = JSX(({ className, media, context }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    return (jsx("div", { className: `flex items-end justify-end gap-2 py-6 ${className || ''}`, children: media?.map((_, index) => (jsx(MediaButton, { ...useLink({ router, handlerDecorator }, _) }, String(index)))) }));
+});
+const MediaButton = JSX(({ href }) => {
+    const { icon: Icon } = ICONS_MAP.find(({ origins }) => origins.some((_) => href?.includes(_))) || {};
+    return (jsx("a", { className: "flex items-center justify-center border-solid border-1 border-main-divider rounded-full no-underline outline-none w-8 h-8 gap-2", href: href, target: "_blank", rel: "noopener noreferrer", children: Icon && jsx(Icon, { className: "block" }) }));
+});
+
+;// CONCATENATED MODULE: ./src/Footer/HorizontalNavigation.tsx
+
+
+
+const HorizontalNavigation = JSX(({ className, links, context }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    return (jsx("div", { className: `${className || ''}`, children: links?.length ? (jsx("div", { className: "flex justify-between items-center gap-5 py-5 border-solid border-x-0 border-y-1 border-y-main-divider", children: links.map((_, i) => (jsx(HorizontalNavigationLink, { index: i, ...useLink({ router, handlerDecorator }, _) }, String(i)))) })) : null }));
+});
+const HorizontalNavigationLink = JSX(({ className, index, text, href, target, onClick }) => (jsx("a", { className: `font-sans font-normal text-sm text-secondary-text hover:text-primary-text inline-block no-underline max-w-[292px] ${className || ''}`, href: href, target: target, onClick: onClick, children: text || `Документ ${index}` })));
+
+;// CONCATENATED MODULE: ./src/Footer/TextInformation.tsx
+
+
+
+const TextInformation = JSX(({ className, links, context }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    return (jsxs("div", { className: `${className || ''}`, children: [jsx("div", { className: "py-[5px]", children: jsx("span", { className: "font-sans font-normal text-xs text-secondary-text", children: `\u00a9\u00A02000-${new Date().getFullYear()}\u00A0АО \u00AB;Россельхозбанк\u00BB Генеральная лицензия Банка России \u2116\u00A03349 от\u00A012.08.2015\u00A0г.` }) }), links?.length ? (jsx("div", { className: "flex justify-start items-start gap-5 pt-[5px]", children: links.map((_, i) => (jsx(TextInformationLink, { index: i, ...useLink({ router, handlerDecorator }, _) }, String(i)))) })) : null] }));
+});
+const TextInformationLink = JSX(({ className, index, text, href, target, onClick }) => (jsx("a", { className: `font-sans font-normal text-xs text-secondary-text visited:text-secondary-text hover:text-primary-text inline-block no-underline max-w-[292px] ${className || ''}`, href: href, target: target, onClick: onClick, children: text || `Документ ${index}` })));
+
+;// CONCATENATED MODULE: ./src/Footer/Footer.tsx
+
+
+
+
+
+
+
+
+
+const LEFT_COL_WIDTH_FULL_HD = 'w-[280px]';
+const LEFT_COL_WIDTH_SMALL_DESKTOP = 'xl:w-[220px]';
+const Footer = JSX(({ documents, relatedEnterprises, contacts, socialMedia, topItems, context }) => {
+    return (jsxs("footer", { className: "px-9 py-2 bg-white rounded-bl-3xl rounded-br-3xl", children: [jsxs("div", { className: "flex items-stretch gap-32 py-8 xl:gap-8", children: [jsx(Logo, { className: `${LEFT_COL_WIDTH_FULL_HD} ${LEFT_COL_WIDTH_SMALL_DESKTOP}` }), jsx(SearchBar, { context: context, className: "grow" })] }), jsxs("div", { className: "flex items-stretch gap-32 xl:gap-8", children: [jsx(Contacts, { className: `${LEFT_COL_WIDTH_FULL_HD} shrink-0 overflow-hidden ${LEFT_COL_WIDTH_SMALL_DESKTOP}`, items: contacts, context: context, hasButton: true }), jsx(Sitemap, { className: "pt-[3px]", context: context, items: topItems })] }), jsx(SocialMedia, { media: socialMedia, context: context }), jsx(HorizontalNavigation, { links: relatedEnterprises, context: context }), jsx(TextInformation, { links: documents, context: context })] }));
+});
+
+;// CONCATENATED MODULE: ./src/Footer/index.ts
+
+
 ;// CONCATENATED MODULE: ./src/Placeholder.tsx
 
 
@@ -34148,25 +34289,6 @@ const textStyleMap = {
 };
 const BlockItem = JSX(({ className, text, children, version = 'primary' }) => {
     return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [jsx("div", { className: `inline-block w-[8px] h-[8px] min-w-[8px] min-h-[8px] rounded-full mt-2 ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mx-3 ${textStyleMap[version]}`, children: text || children })] }));
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/Button.tsx
-
-
-const buttonStyleMap = {
-    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
-    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
-};
-const buttonDisabledStyleMap = {
-    primary: 'bg-secondary-dark text-secondary-text',
-    secondary: 'bg-secondary-light text-secondary-text',
-};
-const styleButton = 'inline-block rounded-3xl px-9 py-3.5 text-center font-sans';
-const Button = JSX(({ className, text, href, target, onClick, children, disabled, version = 'primary' }) => {
-    if (disabled) {
-        return (jsx("div", { role: "button", "area-disabled": "true", className: `${styleButton} select-none ${buttonDisabledStyleMap[version]} ${className || ''}`, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
-    }
-    return (jsx("a", { className: `${styleButton} no-underline ${buttonStyleMap[version]} ${className || ''}`, href: href, target: target, onClick: onClick, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/Tile.tsx
@@ -34288,8 +34410,10 @@ function renderNavButton({ slide, i, activeSlideIndex, onClick, duration }) {
 
 
 
+
 const Blocks = {
     Header: Header,
+    Footer: Footer,
     Placeholder: Placeholder,
     Tile: Tile,
     ProductBlock: ProductBlock,
@@ -34361,124 +34485,6 @@ const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { 
 /* harmony default export */ const ContentPage_fixture = ({
     default: (jsx(ContentPage, { context: context, className: "bg-main", data: __webpack_require__(8358) })),
     editor: (jsx("div", { style: { background: "url('grid.svg')", height: '100%' }, children: jsx(ContentPage, { context: context, className: "bg-transparent", data: __webpack_require__(8358), blockDecorator: blockDecorator }) })),
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/SearchBar.tsx
-
-
-
-const SearchBar = JSX(({ className, context }) => {
-    const search = context.useSearch();
-    return (jsxs("form", { className: `relative ${className || ''}`, children: [jsxs("div", { className: "absolute rounded-l-full h-full flex items-center justify-center pl-4 max-w-[170px] gap-3.5", children: [jsx("div", { className: "w-[24px] h-[24px]", children: LoupeIcon() }), jsx("span", { className: "font-sans font-normal text-sm text-secondary-text", children: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443" })] }), jsx("input", { className: "pl-[170px] w-full font-sans font-normal text-sm border border-solid border-main-divider rounded-full h-full box-border outline-none", value: search.term, onChange: (e) => search.setTerm(e.target.value), type: "text", placeholder: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443", name: "s" }), jsx("button", { type: "submit", className: "absolute font-sans font-normal text-sm cursor-pointer bg-transparent hover:bg-primary-hover active:bg-primary-active text-primary-main hover:text-white border-none px-5 rounded-r-full h-full top-0 right-0 outline-none", onClick: (e) => {
-                    e.preventDefault();
-                    console.log('click');
-                }, children: "\u041D\u0430\u0439\u0442\u0438" })] }));
-});
-
-;// CONCATENATED MODULE: ./src/Footer/Contacts.tsx
-
-
-
-
-const Contacts = JSX(({ className, items, hasButton, context }) => {
-    const router = context.useRouter();
-    const { handlerDecorator } = context;
-    return (jsxs("div", { className: `flex flex-col ${className || ''}`, children: [items?.length ? items.map(renderContact) : null, hasButton ? (jsx(Button, { className: "my-4", ...useLink({ router, handlerDecorator }, {
-                    text: 'Обратная связь',
-                    href: '/',
-                    target: '_blank',
-                }) })) : null] }));
-});
-const renderContact = (item, index) => {
-    const { type, text, description } = item;
-    return (jsxs("div", { className: "mb-4", children: [jsx("div", { children: renderText(type, text) }), jsx("div", { className: "font-sans text-sm text-secondary-text", children: description })] }, String(index)));
-};
-const renderText = (type, text) => {
-    switch (type) {
-        case 'tel':
-            return (jsx("a", { className: "font-sans font-medium text-xl text-primary-text no-underline", href: `tel:${formatTel(text)}`, children: text }));
-        case 'email':
-            return (jsx("a", { className: "font-sans font-medium text-xl text-primary-text no-underline", href: `mailto:${text}`, children: text }));
-        default:
-            return jsx("span", { children: text });
-    }
-};
-const formatTel = (s) => s.replaceAll(/(\-|\s|\(|\)|\D+)/g, '');
-
-;// CONCATENATED MODULE: ./src/Footer/Sitemap.tsx
-
-
-
-
-const Sitemap = JSX(({ className, items, context }) => {
-    const sitemap = context.useSitemap();
-    const mergedItems = mergeTopItems(sitemap.topItems, items);
-    return (jsx("div", { className: `flex items-start justify-start gap-11 xl:gap-5 ${className || ''}`, children: mergedItems?.map((_, i) => renderColumn(_, i, context)) }));
-});
-const renderColumn = (c, index, context) => {
-    const router = context.useRouter();
-    const { handlerDecorator } = context;
-    const { text, href, items, target } = c;
-    return (jsxs("div", { className: "flex flex-col w-[235px] gap-[14px]", children: [jsx("a", { className: "block font-sans font-medium text-base text-primary-text no-underline", href: href, target: target || '_self', children: text || `Раздел ${index}` }), items?.map((_, i) => (jsx(ColumnItem, { ...useLink({ router, handlerDecorator }, _) }, String(i))))] }, String(index)));
-};
-const ColumnItem = JSX(({ text, href, target, index }) => (jsx("a", { className: "block font-sans font-normal text-base text-secondary-text hover:text-primary-text no-underline", href: href, target: target || '_self', children: text || `Раздел ${index}` })));
-
-;// CONCATENATED MODULE: ./src/Footer/SocialMedia.tsx
-
-
-
-
-const ICONS_MAP = [
-    { origins: ['t.me', 'telegram.org'], icon: TelegramIcon },
-    { origins: ['vk.com'], icon: VKIcon },
-    { origins: ['ok.ru'], icon: OkIcon },
-];
-const SocialMedia = JSX(({ className, media, context }) => {
-    const router = context.useRouter();
-    const { handlerDecorator } = context;
-    return (jsx("div", { className: `flex items-end justify-end gap-2 py-6 ${className || ''}`, children: media?.map((_, index) => (jsx(MediaButton, { ...useLink({ router, handlerDecorator }, _) }, String(index)))) }));
-});
-const MediaButton = JSX(({ href }) => {
-    const { icon: Icon } = ICONS_MAP.find(({ origins }) => origins.some((_) => href?.includes(_))) || {};
-    return (jsx("a", { className: "flex items-center justify-center border-solid border-1 border-main-divider rounded-full no-underline outline-none w-8 h-8 gap-2", href: href, target: "_blank", rel: "noopener noreferrer", children: Icon && jsx(Icon, { className: "block" }) }));
-});
-
-;// CONCATENATED MODULE: ./src/Footer/HorizontalNavigation.tsx
-
-
-
-const HorizontalNavigation = JSX(({ className, links, context }) => {
-    const router = context.useRouter();
-    const { handlerDecorator } = context;
-    return (jsx("div", { className: `${className || ''}`, children: links?.length ? (jsx("div", { className: "flex justify-between items-center gap-5 py-5 border-solid border-x-0 border-y-1 border-y-main-divider", children: links.map((_, i) => (jsx(HorizontalNavigationLink, { index: i, ...useLink({ router, handlerDecorator }, _) }, String(i)))) })) : null }));
-});
-const HorizontalNavigationLink = JSX(({ className, index, text, href, target, onClick }) => (jsx("a", { className: `font-sans font-normal text-sm text-secondary-text hover:text-primary-text inline-block no-underline max-w-[292px] ${className || ''}`, href: href, target: target, onClick: onClick, children: text || `Документ ${index}` })));
-
-;// CONCATENATED MODULE: ./src/Footer/TextInformation.tsx
-
-
-
-const TextInformation = JSX(({ className, links, context }) => {
-    const router = context.useRouter();
-    const { handlerDecorator } = context;
-    return (jsxs("div", { className: `${className || ''}`, children: [jsx("div", { className: "py-[5px]", children: jsx("span", { className: "font-sans font-normal text-xs text-secondary-text", children: `\u00a9\u00A02000-${new Date().getFullYear()}\u00A0АО \u00AB;Россельхозбанк\u00BB Генеральная лицензия Банка России \u2116\u00A03349 от\u00A012.08.2015\u00A0г.` }) }), links?.length ? (jsx("div", { className: "flex justify-start items-start gap-5 pt-[5px]", children: links.map((_, i) => (jsx(TextInformationLink, { index: i, ...useLink({ router, handlerDecorator }, _) }, String(i)))) })) : null] }));
-});
-const TextInformationLink = JSX(({ className, index, text, href, target, onClick }) => (jsx("a", { className: `font-sans font-normal text-xs text-secondary-text visited:text-secondary-text hover:text-primary-text inline-block no-underline max-w-[292px] ${className || ''}`, href: href, target: target, onClick: onClick, children: text || `Документ ${index}` })));
-
-;// CONCATENATED MODULE: ./src/Footer/Footer.tsx
-
-
-
-
-
-
-
-
-
-const LEFT_COL_WIDTH_FULL_HD = 'w-[280px]';
-const LEFT_COL_WIDTH_SMALL_DESKTOP = 'xl:w-[220px]';
-const Footer = JSX(({ documents, relatedEnterprises, contacts, socialMedia, topItems, context }) => {
-    return (jsxs("footer", { className: "px-9 py-2 bg-white rounded-bl-3xl rounded-br-3xl", children: [jsxs("div", { className: "flex items-stretch gap-32 py-8 xl:gap-8", children: [jsx(Logo, { className: `${LEFT_COL_WIDTH_FULL_HD} ${LEFT_COL_WIDTH_SMALL_DESKTOP}` }), jsx(SearchBar, { context: context, className: "grow" })] }), jsxs("div", { className: "flex items-stretch gap-32 xl:gap-8", children: [jsx(Contacts, { className: `${LEFT_COL_WIDTH_FULL_HD} shrink-0 overflow-hidden ${LEFT_COL_WIDTH_SMALL_DESKTOP}`, items: contacts, context: context, hasButton: true }), jsx(Sitemap, { className: "pt-[3px]", context: context, items: topItems })] }), jsx(SocialMedia, { media: socialMedia, context: context }), jsx(HorizontalNavigation, { links: relatedEnterprises, context: context }), jsx(TextInformation, { links: documents, context: context })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/Footer/Footer.fixture.tsx
@@ -37179,7 +37185,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(8495),
+  var _require = __webpack_require__(4777),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

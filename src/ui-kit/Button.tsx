@@ -6,6 +6,7 @@ export interface ButtonProps extends LinkContent {
   className?: string;
   onClick?: (ev: MouseEvent) => any;
   version?: ButtonVersion;
+  ariaLabel?: string;
   disabled?: Boolean;
 }
 
@@ -23,12 +24,24 @@ const buttonDisabledStyleMap: Record<ButtonVersion, string> = {
 const styleButton = 'inline-block rounded-3xl px-9 py-3.5 text-center font-sans';
 
 export const Button = JSX<ButtonProps>(
-  ({ className, text, href, target, onClick, children, disabled, version = 'primary' }) => {
+  ({
+    className,
+    text,
+    href,
+    target,
+    onClick,
+    children,
+    disabled,
+    version = 'primary',
+    ariaLabel,
+  }) => {
     if (disabled) {
       return (
         <div
           role="button"
-          area-disabled="true"
+          aria-disabled="true"
+          aria-label={ariaLabel}
+          tabindex="-1"
           className={`${styleButton} select-none ${buttonDisabledStyleMap[version]} ${
             className || ''
           }`}
@@ -44,6 +57,7 @@ export const Button = JSX<ButtonProps>(
         href={href}
         target={target}
         onClick={onClick}
+        aria-label={ariaLabel}
       >
         <span className="text-sm font-medium">{text || children}</span>
       </a>
