@@ -21,9 +21,9 @@ interface FooterContent {
 export interface FooterProps extends FooterContent, UniBlocksComponentProps {}
 
 export const Footer = JSX<FooterProps>(
-  ({ documents, relatedEnterprises, contacts, socialMedia, topItems, context }) => {
+  ({ className, documents, relatedEnterprises, contacts, socialMedia, topItems, context }) => {
     return (
-      <footer className="px-9 py-2 bg-white rounded-bl-3xl rounded-br-3xl">
+      <footer className={`${className} px-9 py-2 bg-white rounded-bl-3xl rounded-br-3xl`}>
         <div className="flex items-stretch gap-32 py-8 xl:gap-8">
           <Logo className={`${LEFT_COL_WIDTH_FULL_HD} ${LEFT_COL_WIDTH_SMALL_DESKTOP}`} />
           <SearchBar context={context} className="grow" />
