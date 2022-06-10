@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.44",
+  "version": "0.2.45",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -25,6 +25,16 @@
       "import": "./lib/Header/*.js",
       "require": "./dist/Header/*.js",
       "types": "./lib/Header/*.d.ts"
+    },
+    "./lib/Footer": {
+      "import": "./lib/Footer/index.js",
+      "require": "./dist/Footer/index.js",
+      "types": "./lib/Footer/index.d.ts"
+    },
+    "./lib/Footer/*.js": {
+      "import": "./lib/Footer/*.js",
+      "require": "./dist/Footer/*.js",
+      "types": "./lib/Footer/*.d.ts"
     },
     "./lib/common.css": "./lib/common.css",
     "./fonts/ubuntu/*": "./fonts/ubuntu/*",

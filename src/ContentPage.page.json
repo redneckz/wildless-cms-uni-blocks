@@ -85,6 +85,7 @@
         },
         "image": {
           "src": "money-1.png",
+          "alt": "Money",
           "format": "webp",
           "size": {
             "width": 220,
@@ -121,6 +122,7 @@
         },
         "image": {
           "src": "credit-card-1.png",
+          "alt": "Credit card",
           "format": "webp",
           "size": {
             "width": 220,
@@ -142,6 +144,7 @@
         },
         "image": {
           "src": "column-1.png",
+          "alt": "Column",
           "format": "webp",
           "size": {
             "width": 220,
@@ -168,6 +171,7 @@
         },
         "image": {
           "src": "globe-1.png",
+          "alt": "Globe",
           "format": "webp",
           "size": {
             "width": 220,

@@ -1,4 +1,5 @@
 import { Header } from './Header/index';
+import { Footer } from './Footer/index';
 import { Placeholder } from './Placeholder';
 import { Tile } from './Tile';
 import { ProductBlock } from './ProductBlock';
@@ -8,6 +9,7 @@ import { ProductGallery } from './ProductGallery';
 
 export const Blocks = {
   Header,
+  Footer,
   Placeholder,
   Tile,
   ProductBlock,

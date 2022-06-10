@@ -3,13 +3,15 @@ import { JSX } from '@redneckz/uni-jsx';
 export interface LikeButtonProps {
   className?: string;
   onClick?: (ev: MouseEvent) => any;
+  ariaLabel?: string;
 }
 
-export const LikeButton = JSX<LikeButtonProps>(({ className, onClick }) => (
+export const LikeButton = JSX<LikeButtonProps>(({ className, onClick, ariaLabel }) => (
   <button
     type="button"
     className={`border-0 w-[36px] bg-inherit cursor-pointer ${className || ''}`}
     onClick={onClick}
+    aria-label={ariaLabel}
   >
     {renderLikeIcon()}
   </button>

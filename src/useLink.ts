@@ -15,6 +15,7 @@ export function useLink(
   return {
     ...link,
     href,
+    ariaLabel: link.text,
     onClick: handlerDecorator((ev: MouseEvent) => {
       const isLocalHref = href && !isURL(href);
       const isLocalTarget = !link.target || link.target === '_self';

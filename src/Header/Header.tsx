@@ -27,6 +27,7 @@ export const Header = JSX<HeaderProps>(({ className, location, context, topItems
       key={String(i)}
       active={_ === activeTopItem}
       {...useLink({ router, handlerDecorator }, _)}
+      ariaLabel={_.text}
     />
   ));
 
