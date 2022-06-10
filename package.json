@@ -64,9 +64,11 @@
   },
   "scripts": {
     "build": "rimraf ./lib && tsc --build --verbose && npm run build:commonjs && npm run build:style",
-    "postbuild": "replace-in-file --configFile=replace-config.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
     "build:style": "postcss './src/**/*.css' --env production --dir ./lib",
+    "postbuild:style": "npm run size",
+    "postbuild": "replace-in-file --configFile=replace-config.cjs --verbose",
+    "size": "size-limit",
     "test": "jest --coverage",
     "cosmos": "cosmos",
     "cosmos:export": "cosmos-export",
@@ -86,38 +88,49 @@
   },
   "dependencies": {
     "@redneckz/uni-jsx": "^0.1.6",
-    "glob": "^8.0.1",
+    "glob": "^8.0.3",
     "remark-html": "^15.0.1",
     "remark-parse": "^10.0.1",
-    "sharp": "^0.30.4",
+    "sharp": "^0.30.6",
     "unified": "^10.1.2"
   },
   "devDependencies": {
-    "@types/jest": "^27.4.1",
-    "autoprefixer": "^10.4.4",
+    "@size-limit/file": "^7.0.8",
+    "@types/jest": "^28.1.1",
+    "autoprefixer": "^10.4.7",
     "css-loader": "^6.7.1",
-    "cssnano": "^5.1.7",
+    "cssnano": "^5.1.11",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
-    "jest": "^27.5.1",
-    "lint-staged": "^12.4.2",
-    "postcss": "^8.4.12",
+    "jest": "^28.1.1",
+    "lint-staged": "^13.0.1",
+    "postcss": "^8.4.14",
     "postcss-cli": "^9.1.0",
-    "postcss-loader": "^6.2.1",
+    "postcss-loader": "^7.0.0",
     "prettier": "2.6.2",
     "react-cosmos": "^5.7.2",
-    "replace-in-file": "^6.3.2",
+    "replace-in-file": "^6.3.5",
     "rimraf": "^3.0.2",
+    "size-limit": "^7.0.8",
     "style-loader": "^3.3.1",
-    "tailwindcss": "^3.0.24",
-    "ts-jest": "^27.1.4",
-    "ts-loader": "^9.2.8",
-    "typescript": "^4.6.3",
-    "webpack": "^5.72.0",
+    "tailwindcss": "^3.1.1",
+    "ts-jest": "^28.0.4",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.7.3",
+    "webpack": "^5.73.0",
     "webpack-cli": "^4.9.2"
   },
+  "size-limit": [
+    {
+      "limit": "7 kB",
+      "path": "lib/common.css"
+    }
+  ],
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,css}": "prettier --write",
-    "src/**/*.{js,jsx,ts,tsx,css,json}": ["cosmos-export", "git add ./docs"]
+    "src/**/*.{js,jsx,ts,tsx,css,json}": [
+      "cosmos-export",
+      "git add ./docs"
+    ]
   }
 }
