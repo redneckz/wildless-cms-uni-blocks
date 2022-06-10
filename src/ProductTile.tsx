@@ -5,7 +5,7 @@ import { BlockVersion, Picture } from './types';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
 import { useLink } from './useLink';
-import type { Benefit } from './BenefitsBlock';
+import type { Benefit } from './types';
 
 export interface ProductTileContent {
   title?: string;
