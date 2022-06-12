@@ -26,7 +26,7 @@ module.exports = {
       fontSize: {
         xs: ['0.75rem', '1.125rem'], // 12px 18px
         sm: ['0.875rem', '1.375rem'], // 14px 22px
-        base: ['1rem', '1.25rem'], // 16px 20px
+        base: ['1rem', '1.5rem'], // 16px 24px
         'title-sm': ['1.75rem', '2.5rem'], //28px 40px
         'title-xsm': ['0.75rem', '1.125rem'], // 12px 18px
         'title-xs': ['1.5rem', '1.875rem'], //24px 30px

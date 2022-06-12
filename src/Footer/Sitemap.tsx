@@ -1,14 +1,15 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { TopMenuItem, UniBlocksComponentProps, LinkContent } from '../types';
-import { mergeTopItems } from '../mergeTopItems';
-import { useLink } from '../useLink';
 import { ContentPageContext } from '../ContentPageContext';
+import { mergeTopItems } from '../mergeTopItems';
+import type { LinkContent, TopMenuItem, UniBlocksComponentProps } from '../types';
+import { useLink } from '../useLink';
+import { useSitemap } from '../useSitemap';
 export interface SitemapProps extends UniBlocksComponentProps {
   items?: TopMenuItem[];
 }
 
 export const Sitemap = JSX<SitemapProps>(({ className, items, context }) => {
-  const sitemap = context.useSitemap();
+  const sitemap = useSitemap(context.useAsyncData);
   const mergedItems = mergeTopItems(sitemap.topItems, items);
 
   return (

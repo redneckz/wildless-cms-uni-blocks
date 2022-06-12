@@ -1,6 +1,6 @@
 import { setup } from '@redneckz/uni-jsx';
 import runtime from 'react/jsx-runtime';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { ContentPageContext } from './ContentPageContext';
 
 const { jsx, jsxs } = runtime as any;
@@ -18,48 +18,15 @@ export const context: ContentPageContext = {
       console.log(url);
     },
   }),
-  useSitemap: () => ({
-    topItems: [
-      {
-        href: TEST_ORIGIN,
-        text: 'Экосистема Своё',
-        items: [
-          {
-            href: `${TEST_ORIGIN}/credit-cards`,
-            text: 'Кредитные карты',
-          },
-          {
-            href: `${TEST_ORIGIN}/debit-cards`,
-            text: 'Дебетовые карты',
-          },
-          {
-            href: `${TEST_ORIGIN}/credits`,
-            text: 'Кредиты',
-          },
-          {
-            href: `${TEST_ORIGIN}/deposits`,
-            text: 'Вклады',
-          },
-          {
-            href: `${TEST_ORIGIN}/investment`,
-            text: 'Инвестиции',
-          },
-          {
-            href: `${TEST_ORIGIN}/mortgage`,
-            text: 'Ипотека',
-          },
-          {
-            href: `${TEST_ORIGIN}/insurance`,
-            text: 'Страхование',
-          },
-          {
-            href: `https://rshb.ru/transfers`,
-            text: 'Переводы',
-          },
-        ],
-      },
-    ],
-  }),
+  useAsyncData: (key, fetcher) => {
+    const [data, setData] = useState();
+    useEffect(() => {
+      fetcher().then((_) => {
+        setData(_);
+      });
+    }, [key, fetcher]);
+    return { data };
+  },
   useLikeService: () => ({
     likeCount: 0,
     like: () => {

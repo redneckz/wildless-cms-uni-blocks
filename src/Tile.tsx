@@ -25,7 +25,17 @@ const tileStyleMap: Record<BlockVersion, string> = {
 const TITLE_CLASSES = 'font-medium m-0 whitespace-pre-wrap max-w-[600px]';
 
 export const Tile = JSX<TileProps>(
-  ({ className, context, title, description, button, image, items, version = 'primary' }) => {
+  ({
+    className,
+    context,
+    title,
+    description,
+    button,
+    image,
+    items,
+    version = 'primary',
+    children,
+  }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
     return (
@@ -41,13 +51,8 @@ export const Tile = JSX<TileProps>(
               {description && (
                 <div className="font-normal text-base max-w-[600px] mt-4">{description}</div>
               )}
-              {items?.length ? (
-                <section className="space-y-2.5 mt-5 max-w-[600px]" role="list">
-                  {items.map((_, i) => (
-                    <BlockItem key={String(i)} text={_} version={version} />
-                  ))}
-                </section>
-              ) : null}
+              {renderItems(items, version)}
+              {children}
               {button?.text && (
                 <div className="mt-auto">
                   <Button
@@ -70,7 +75,17 @@ export const Tile = JSX<TileProps>(
   },
 );
 
-const renderTitle = (title: string, className: string = '') => {
+function renderItems(items?: string[], version?: BlockVersion) {
+  return items?.length ? (
+    <section className="space-y-2.5 mt-5 max-w-[600px]" role="list">
+      {items.map((_, i) => (
+        <BlockItem key={String(i)} text={_} version={version} />
+      ))}
+    </section>
+  ) : null;
+}
+
+function renderTitle(title: string, className: string = '') {
   if (className.includes('col-span-4')) {
     return <h3 className={`${TITLE_CLASSES} text-title-xs`}>{title}</h3>;
   }
@@ -80,4 +95,4 @@ const renderTitle = (title: string, className: string = '') => {
   }
 
   return <h2 className={`${TITLE_CLASSES} text-title`}>{title}</h2>;
-};
+}

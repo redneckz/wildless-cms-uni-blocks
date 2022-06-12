@@ -1,20 +1,21 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { mergeTopItems } from '../mergeTopItems';
+import type { UniBlocksComponentProps } from '../types';
 import { HeaderItem } from '../ui-kit/HeaderItem';
 import { Logo } from '../ui-kit/Logo';
 import { TopItem } from '../ui-kit/TopItem';
 import { useLink } from '../useLink';
+import { useSitemap } from '../useSitemap';
 import type { HeaderContent } from './HeaderContent';
 import { HeaderSecondaryMenu } from './HeaderSecondaryMenu';
 import { isSubItemActive } from './isSubItemActive';
 import { isTopItemActive } from './isTopItemActive';
-import { mergeTopItems } from '../mergeTopItems';
-import type { UniBlocksComponentProps } from '../types';
 
 export interface HeaderProps extends HeaderContent, UniBlocksComponentProps {}
 
 export const Header = JSX<HeaderProps>(({ className, location, context, topItems }) => {
   const router = context.useRouter();
-  const sitemap = context.useSitemap();
+  const sitemap = useSitemap(context.useAsyncData);
   const { handlerDecorator } = context;
 
   const mergedItems = mergeTopItems(sitemap.topItems, topItems);

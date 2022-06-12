@@ -9,52 +9,14 @@
     "url": "https://foo.com/bar/baz"
   },
   "date": "2022-04-08",
-  "style": ["gap-5 p-20 pt-0"],
+  "style": ["p-20", "pt-0", "gap-5", "bg-secondary-light"],
   "likeControl": true,
   "blocks": [
     {
       "type": "Header",
-      "style": ["col-span-12"],
+      "style": ["col-span-12", "-mx-20", "mb-5", "shadow-[0_8px_32px_0px_#00000014]"],
       "content": {
         "topItems": [
-          {
-            "href": "/",
-            "text": "Экосистема Своё",
-            "items": [
-              {
-                "href": "/credit-cards",
-                "text": "Кредитные карты"
-              },
-              {
-                "href": "/",
-                "text": "Дебетовые карты"
-              },
-              {
-                "href": "/credits",
-                "text": "Кредиты"
-              },
-              {
-                "href": "/deposits",
-                "text": "Вклады"
-              },
-              {
-                "href": "/investment",
-                "text": "Инвестиции"
-              },
-              {
-                "href": "/mortgage",
-                "text": "Ипотека"
-              },
-              {
-                "href": "/insurance",
-                "text": "Страхование"
-              },
-              {
-                "href": "/transfers",
-                "text": "Переводы"
-              }
-            ]
-          },
           {
             "href": "https://rshb.ru/",
             "text": "Бизнес клиентам",
@@ -483,61 +445,6 @@
               {
                 "href": "https://rshb.ru/",
                 "text": "Архивная информация"
-              }
-            ]
-          },
-          {
-            "href": "https://rshb.ru/",
-            "text": "О банке",
-            "target": "_blank",
-            "items": [
-              {
-                "href": "https://rshb.ru/",
-                "text": "О банке"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Новости"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Офисы и отделения"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Карьера в банке"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Пресс-центр"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Кредитным организациям"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Закупки"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Непрофильные/Профильные нецелевые активы"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Инсайдерам"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Противодействие коррупции"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Меры безопасности"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Залоговое имущество"
               }
             ]
           }

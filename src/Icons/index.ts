@@ -1,33 +1,15 @@
-import { CalendarIcon } from './CalendarIcon';
-import { EmptyWalletIcon } from './EmptyWalletIcon';
-import { GridIcon } from './GridIcon';
-import { LoupeIcon } from './LoupeIcon';
-import { PercentageSquareIcon } from './PercentageSquareIcon';
-import { ProfileIcon } from './ProfileIcon';
-import { NewDocIcon } from './NewDocIcon';
-import { PassSendIcon } from './PassSendIcon';
-import { ActualBalanceIcon } from './ActualBalanceIcon';
-import { ClockIcon } from './ClockIcon';
-import { SignDocsIcon } from './SignDocsIcon';
-import { ComfortableCompIcon } from './ComfortableCompIcon';
-import { TelegramIcon } from './TelegramIcon';
-import { VKIcon } from './VKIcon';
-import { OkIcon } from './OkIcon';
-
-export {
-  CalendarIcon,
-  EmptyWalletIcon,
-  GridIcon,
-  LoupeIcon,
-  PercentageSquareIcon,
-  ProfileIcon,
-  NewDocIcon,
-  PassSendIcon,
-  ActualBalanceIcon,
-  ClockIcon,
-  SignDocsIcon,
-  ComfortableCompIcon,
-  TelegramIcon,
-  VKIcon,
-  OkIcon,
-};
+export { CalendarIcon } from './CalendarIcon';
+export { EmptyWalletIcon } from './EmptyWalletIcon';
+export { GridIcon } from './GridIcon';
+export { LoupeIcon } from './LoupeIcon';
+export { PercentageSquareIcon } from './PercentageSquareIcon';
+export { ProfileIcon } from './ProfileIcon';
+export { NewDocIcon } from './NewDocIcon';
+export { PassSendIcon } from './PassSendIcon';
+export { ActualBalanceIcon } from './ActualBalanceIcon';
+export { ClockIcon } from './ClockIcon';
+export { SignDocsIcon } from './SignDocsIcon';
+export { ComfortableCompIcon } from './ComfortableCompIcon';
+export { TelegramIcon } from './TelegramIcon';
+export { VKIcon } from './VKIcon';
+export { OkIcon } from './OkIcon';
