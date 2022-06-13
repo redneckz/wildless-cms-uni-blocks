@@ -5126,7 +5126,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@font-face{font-display:swap;font-fami
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_postcss_loader_dist_cjs_js_fonts_ubuntu_ubuntu_css__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:#42ab44;--color-primary-hover:#248341;--color-primary-active:#245f34;--color-secondary-hover:#c5e2c6;--color-secondary-active:#d8f2d9}[data-theme=bc]{--color-primary-main:#83b83e;--color-primary-hover:#5c921d;--color-primary-active:#3c5e10;--color-secondary-hover:#e8f4d9;--color-secondary-active:#d8e3ca}[data-theme=eo]{--color-primary-main:#ddb63d;--color-primary-hover:#bb9727;--color-primary-active:#7e630c;--color-secondary-hover:#f1ecdd;--color-secondary-active:#e5dec7}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.top-4{top:1rem}.right-4{right:1rem}.bottom-0{bottom:0}.right-0{right:0}.left-0{left:0}.-bottom-2{bottom:-.5rem}.top-0{top:0}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.-mx-20{margin-left:-5rem;margin-right:-5rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.mt-9{margin-top:2.25rem}.mt-2{margin-top:.5rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mt-4{margin-top:1rem}.mt-7{margin-top:1.75rem}.mt-5{margin-top:1.25rem}.mt-auto{margin-top:auto}.mt-8{margin-top:2rem}.mt-2\\.5{margin-top:.625rem}.mb-4{margin-bottom:1rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.ml-2\\.5{margin-left:.625rem}.ml-2{margin-left:.5rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.h-\\[70px\\]{height:70px}.h-8{height:2rem}.h-full{height:100%}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-\\[100px\\]{height:100px}.h-\\[220px\\]{height:220px}.h-\\[1px\\]{height:1px}.h-\\[8px\\]{height:8px}.h-\\[2px\\]{height:2px}.h-\\[24px\\]{height:24px}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[8px\\]{min-height:8px}.w-\\[70px\\]{width:70px}.w-full{width:100%}.w-8{width:2rem}.w-\\[125px\\]{width:125px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[220px\\]{width:220px}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-\\[24px\\]{width:24px}.w-\\[8px\\]{width:8px}.w-\\[36px\\]{width:36px}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[8px\\]{min-width:8px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[600px\\]{max-width:600px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[170px\\]{max-width:170px}.flex-none{flex:none}.shrink-0{flex-shrink:0}.grow-0{flex-grow:0}.grow{flex-grow:1}.basis-full{flex-basis:100%}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.resize{resize:both}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))}.grid-cols-8{grid-template-columns:repeat(8,minmax(0,1fr))}.grid-cols-9{grid-template-columns:repeat(9,minmax(0,1fr))}.grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))}.grid-cols-11{grid-template-columns:repeat(11,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-5{gap:1.25rem}.gap-1{gap:.25rem}.gap-3{gap:.75rem}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-3\\.5{gap:.875rem}.space-y-2\\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.625rem*var(--tw-space-y-reverse));margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.5rem*var(--tw-space-y-reverse));margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)))}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded-l-full{border-bottom-left-radius:9999px;border-top-left-radius:9999px}.rounded-r-full{border-bottom-right-radius:9999px;border-top-right-radius:9999px}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-0{border-width:0}.border-x-0{border-left-width:0;border-right-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-main{--tw-border-opacity:1;border-color:rgb(240 244 240/var(--tw-border-opacity))}.border-main-divider{--tw-border-opacity:1;border-color:rgb(235 237 240/var(--tw-border-opacity))}.border-primary-main{border-color:var(--color-primary-main)}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgb(235 237 240/var(--tw-border-opacity));border-top-color:rgb(235 237 240/var(--tw-border-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgb(240 244 240/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgb(245 247 249/var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main{background-color:var(--color-primary-main)}.bg-main-divider{--tw-bg-opacity:1;background-color:rgb(235 237 240/var(--tw-bg-opacity))}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgb(226 228 229/var(--tw-bg-opacity))}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-2{padding:.5rem}.p-11{padding:2.75rem}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.p-9{padding:2.25rem}.p-0{padding:0}.px-0{padding-left:0;padding-right:0}.py-4{padding-bottom:1rem;padding-top:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-8{padding-bottom:2rem;padding-top:2rem}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.py-6{padding-bottom:1.5rem;padding-top:1.5rem}.py-\\[5px\\]{padding-bottom:5px;padding-top:5px}.px-20{padding-left:5rem;padding-right:5rem}.py-3\\.5{padding-bottom:.875rem;padding-top:.875rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-4{padding-left:1rem;padding-right:1rem}.pb-2{padding-bottom:.5rem}.pt-0{padding-top:0}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pr-28{padding-right:7rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[5px\\]{padding-top:5px}.pt-5{padding-top:1.25rem}.pb-8{padding-bottom:2rem}.pl-4{padding-left:1rem}.pl-\\[170px\\]{padding-left:170px}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-title{font-size:2rem;line-height:2.5rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-base{font-size:1rem;line-height:1.5rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.text-primary-text{--tw-text-opacity:1;color:rgb(28 28 28/var(--tw-text-opacity))}.text-secondary-text{--tw-text-opacity:1;color:rgb(125 126 127/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-main{--tw-text-opacity:1;color:rgb(240 244 240/var(--tw-text-opacity))}.text-primary-main{color:var(--color-primary-main)}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.after\\:absolute:after{content:var(--tw-content);position:absolute}.after\\:top-\\[50px\\]:after{content:var(--tw-content);top:50px}.after\\:right-\\[-50\\%\\]:after{content:var(--tw-content);right:-50%}.after\\:h-0\\.5:after{content:var(--tw-content);height:.125rem}.after\\:h-0:after{content:var(--tw-content);height:0}.after\\:w-full:after{content:var(--tw-content);width:100%}.after\\:bg-secondary-light:after{--tw-bg-opacity:1;background-color:rgb(245 247 249/var(--tw-bg-opacity));content:var(--tw-content)}.after\\:content-\\[\\'\\'\\]:after{--tw-content:\"\";content:var(--tw-content)}.last\\:after\\:content-none:last-child:after{--tw-content:none;content:var(--tw-content)}.visited\\:text-secondary-text:visited{color:#7d7e7f}.hover\\:bg-primary-hover:hover{background-color:var(--color-primary-hover)}.hover\\:bg-secondary-hover:hover{background-color:var(--color-secondary-hover)}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgb(28 28 28/var(--tw-text-opacity))}.hover\\:text-primary-main:hover{color:var(--color-primary-main)}.hover\\:text-secondary-hover:hover{color:var(--color-secondary-hover)}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.active\\:bg-primary-active:active{background-color:var(--color-primary-active)}.active\\:bg-secondary-active:active{background-color:var(--color-secondary-active)}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgb(28 28 28/var(--tw-text-opacity))}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: #42ab44;\n  --color-primary-hover: #248341;\n  --color-primary-active: #245f34;\n  --color-secondary-hover: #c5e2c6;\n  --color-secondary-active: #d8f2d9;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: #83b83e;\n  --color-primary-hover: #5c921d;\n  --color-primary-active: #3c5e10;\n  --color-secondary-hover: #e8f4d9;\n  --color-secondary-active: #d8e3ca;\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: #ddb63d;\n  --color-primary-hover: #bb9727;\n  --color-primary-active: #7e630c;\n  --color-secondary-hover: #f1ecdd;\n  --color-secondary-active: #e5dec7;\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n}\n",null],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:#42ab44;--color-primary-hover:#248341;--color-primary-active:#245f34;--color-secondary-hover:#c5e2c6;--color-secondary-active:#d8f2d9}[data-theme=bc]{--color-primary-main:#83b83e;--color-primary-hover:#5c921d;--color-primary-active:#3c5e10;--color-secondary-hover:#e8f4d9;--color-secondary-active:#d8e3ca}[data-theme=eo]{--color-primary-main:#ddb63d;--color-primary-hover:#bb9727;--color-primary-active:#7e630c;--color-secondary-hover:#f1ecdd;--color-secondary-active:#e5dec7}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.top-4{top:1rem}.right-4{right:1rem}.bottom-0{bottom:0}.right-0{right:0}.left-0{left:0}.-bottom-2{bottom:-.5rem}.top-0{top:0}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.-mx-20{margin-left:-5rem;margin-right:-5rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.mt-9{margin-top:2.25rem}.mt-2{margin-top:.5rem}.mb-5{margin-bottom:1.25rem}.ml-4{margin-left:1rem}.mb-6{margin-bottom:1.5rem}.mt-4{margin-top:1rem}.mt-7{margin-top:1.75rem}.mt-5{margin-top:1.25rem}.mt-auto{margin-top:auto}.mt-8{margin-top:2rem}.mt-6{margin-top:1.5rem}.mt-2\\.5{margin-top:.625rem}.mb-4{margin-bottom:1rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.ml-2\\.5{margin-left:.625rem}.ml-2{margin-left:.5rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.h-\\[70px\\]{height:70px}.h-8{height:2rem}.h-full{height:100%}.h-\\[90px\\]{height:90px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-\\[100px\\]{height:100px}.h-\\[220px\\]{height:220px}.h-\\[1px\\]{height:1px}.h-\\[8px\\]{height:8px}.h-\\[2px\\]{height:2px}.h-\\[24px\\]{height:24px}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[8px\\]{min-height:8px}.w-\\[70px\\]{width:70px}.w-full{width:100%}.w-8{width:2rem}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[220px\\]{width:220px}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-\\[24px\\]{width:24px}.w-\\[8px\\]{width:8px}.w-\\[36px\\]{width:36px}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[8px\\]{min-width:8px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[600px\\]{max-width:600px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[170px\\]{max-width:170px}.shrink-0{flex-shrink:0}.grow-0{flex-grow:0}.grow{flex-grow:1}.basis-full{flex-basis:100%}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.resize{resize:both}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))}.grid-cols-8{grid-template-columns:repeat(8,minmax(0,1fr))}.grid-cols-9{grid-template-columns:repeat(9,minmax(0,1fr))}.grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))}.grid-cols-11{grid-template-columns:repeat(11,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-5{gap:1.25rem}.gap-1{gap:.25rem}.gap-3{gap:.75rem}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-3\\.5{gap:.875rem}.space-y-2\\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.625rem*var(--tw-space-y-reverse));margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.5rem*var(--tw-space-y-reverse));margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)))}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded-l-full{border-bottom-left-radius:9999px;border-top-left-radius:9999px}.rounded-r-full{border-bottom-right-radius:9999px;border-top-right-radius:9999px}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-0{border-width:0}.border-x-0{border-left-width:0;border-right-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-main{--tw-border-opacity:1;border-color:rgb(240 244 240/var(--tw-border-opacity))}.border-main-divider{--tw-border-opacity:1;border-color:rgb(235 237 240/var(--tw-border-opacity))}.border-primary-main{border-color:var(--color-primary-main)}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgb(235 237 240/var(--tw-border-opacity));border-top-color:rgb(235 237 240/var(--tw-border-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgb(240 244 240/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgb(245 247 249/var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main{background-color:var(--color-primary-main)}.bg-main-divider{--tw-bg-opacity:1;background-color:rgb(235 237 240/var(--tw-bg-opacity))}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgb(226 228 229/var(--tw-bg-opacity))}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-2{padding:.5rem}.p-11{padding:2.75rem}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.p-9{padding:2.25rem}.p-0{padding:0}.px-0{padding-left:0;padding-right:0}.py-4{padding-bottom:1rem;padding-top:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-8{padding-bottom:2rem;padding-top:2rem}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.py-6{padding-bottom:1.5rem;padding-top:1.5rem}.py-\\[5px\\]{padding-bottom:5px;padding-top:5px}.px-20{padding-left:5rem;padding-right:5rem}.py-3\\.5{padding-bottom:.875rem;padding-top:.875rem}.py-3{padding-bottom:.75rem;padding-top:.75rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-4{padding-left:1rem;padding-right:1rem}.pb-2{padding-bottom:.5rem}.pt-0{padding-top:0}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pr-28{padding-right:7rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[5px\\]{padding-top:5px}.pt-5{padding-top:1.25rem}.pb-8{padding-bottom:2rem}.pl-4{padding-left:1rem}.pl-\\[170px\\]{padding-left:170px}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-title{font-size:2rem;line-height:2.5rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-base{font-size:1rem;line-height:1.5rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.text-primary-text{--tw-text-opacity:1;color:rgb(28 28 28/var(--tw-text-opacity))}.text-secondary-text{--tw-text-opacity:1;color:rgb(125 126 127/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-main{--tw-text-opacity:1;color:rgb(240 244 240/var(--tw-text-opacity))}.text-primary-main{color:var(--color-primary-main)}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.after\\:absolute:after{content:var(--tw-content);position:absolute}.after\\:top-\\[50px\\]:after{content:var(--tw-content);top:50px}.after\\:right-\\[-50\\%\\]:after{content:var(--tw-content);right:-50%}.after\\:h-0\\.5:after{content:var(--tw-content);height:.125rem}.after\\:h-0:after{content:var(--tw-content);height:0}.after\\:w-full:after{content:var(--tw-content);width:100%}.after\\:bg-secondary-light:after{--tw-bg-opacity:1;background-color:rgb(245 247 249/var(--tw-bg-opacity));content:var(--tw-content)}.after\\:content-\\[\\'\\'\\]:after{--tw-content:\"\";content:var(--tw-content)}.last\\:after\\:content-none:last-child:after{--tw-content:none;content:var(--tw-content)}.visited\\:text-secondary-text:visited{color:#7d7e7f}.hover\\:bg-primary-hover:hover{background-color:var(--color-primary-hover)}.hover\\:bg-secondary-hover:hover{background-color:var(--color-secondary-hover)}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgb(28 28 28/var(--tw-text-opacity))}.hover\\:text-primary-main:hover{color:var(--color-primary-main)}.hover\\:text-secondary-hover:hover{color:var(--color-secondary-hover)}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.active\\:bg-primary-active:active{background-color:var(--color-primary-active)}.active\\:bg-secondary-active:active{background-color:var(--color-secondary-active)}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgb(28 28 28/var(--tw-text-opacity))}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: #42ab44;\n  --color-primary-hover: #248341;\n  --color-primary-active: #245f34;\n  --color-secondary-hover: #c5e2c6;\n  --color-secondary-active: #d8f2d9;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: #83b83e;\n  --color-primary-hover: #5c921d;\n  --color-primary-active: #3c5e10;\n  --color-secondary-hover: #e8f4d9;\n  --color-secondary-active: #d8e3ca;\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: #ddb63d;\n  --color-primary-hover: #bb9727;\n  --color-primary-active: #7e630c;\n  --color-secondary-hover: #f1ecdd;\n  --color-secondary-active: #e5dec7;\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n}\n",null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31007,7 +31007,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 4061:
+/***/ 121:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31295,53 +31295,48 @@ const renderStep = (benefit, i) => {
         },
     ] }));
 
-;// CONCATENATED MODULE: ./src/mergeTopItems.ts
-const cmp = (a) => (b) => a?.href === b?.href;
-const substitute = (items, substitution) => (items || []).map((_) => substitution?.find(cmp(_)) || _);
-const subtract = (minuend, subtrahend) => (minuend || []).filter((_) => !subtrahend?.find(cmp(_)));
-function mergeTopItems(left, right) {
-    return substitute(left, right).concat(subtract(right, left));
+;// CONCATENATED MODULE: ./src/Img.tsx
+
+
+const Img = JSX(({ className, image }) => (jsxs("picture", { className: `${className || ''}`, children: [image.sources?.length
+            ? image.sources.map(({ src, format }, index) => (jsx("source", { srcSet: src, type: formatToMimeType(format) }, `${index}_${src}`)))
+            : null, jsx("img", { src: image.src, alt: image.alt || image.title, title: image.title, ...image?.size })] })));
+function formatToMimeType(format) {
+    return format ? `image/${String(format)}` : undefined;
 }
 
-;// CONCATENATED MODULE: ./src/ui-kit/HeaderItem.tsx
+;// CONCATENATED MODULE: ./src/ui-kit/BlockItem.tsx
 
 
-const HeaderItem = JSX(({ className, text, href, target, active, onClick, children }) => {
-    const textStyle = active ? 'text-primary-main' : 'text-primary-text hover:text-primary-main';
-    return (jsxs("a", { className: `relative inline-block bg-transparent text-center no-underline ${className || ''}`, href: href, target: target, onClick: onClick, children: [jsx("span", { className: `font-sans font-normal text-base ${textStyle}`, children: text || children }), active ? (jsx("div", { className: "absolute left-0 -bottom-2 w-full h-[2px] bg-primary-main" })) : null] }));
+const listStyleMap = {
+    primary: 'bg-primary-main',
+    secondary: 'bg-white',
+};
+const textStyleMap = {
+    primary: 'text-primary-text',
+    secondary: 'text-white',
+};
+const BlockItem = JSX(({ className, text, children, version = 'primary' }) => {
+    return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [jsx("div", { className: `inline-block w-[8px] h-[8px] min-w-[8px] min-h-[8px] rounded-full mt-2 ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mx-3 ${textStyleMap[version]}`, children: text || children })] }));
 });
 
-;// CONCATENATED MODULE: ./src/ui-kit/SVG.tsx
+;// CONCATENATED MODULE: ./src/ui-kit/Button.tsx
 
 
-const SVG = JSX(({ className, viewBox, fill = 'none', paths, ...commonOptions }) => {
-    return (jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className: className, viewBox: viewBox, fill: fill, children: paths.map(({ d, fill, ...options }, i) => (jsx("path", { d: d, fill: fill || 'currentColor', ...commonOptions, ...options }, i))) }));
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/Logo.tsx
-
-
-
-const LOGO_PATHS = [
-    'm13.72 25.51 4.42-4.33v-2.95l-4.42 4.32v2.96Zm0-10.98 4.42-4.35V7.41l-4.42 4.31v2.8Zm0 3.63 4.42-4.33v-2.78l-4.42 4.32v2.8ZM12.46 7.44l-.6-.56V0h-.66v6.22l-.58-.57V0h-.67v5l-.59-.58V0H8.7v6.56l4.44 4.33V0h-.67v7.44Zm1.26 14.35 4.42-4.33v-2.78L13.72 19v2.8Zm-5.03-.61 4.44 4.33v-2.96l-4.44-4.32v2.95Zm8.79-16.76-.59.58V0h-.66v5.66l-.6.56V0h-.66v6.87l-.58.57V0h-.67v10.9l4.42-4.34V0h-.66v4.42Zm-8.79 5.76 4.44 4.35v-2.8L8.69 7.4v2.77Zm0 3.65 4.44 4.33v-2.8l-4.44-4.3v2.77Zm0 3.63 4.44 4.33V19l-4.44-4.31v2.78Zm26.37 2.29H24.3a2.25 2.25 0 0 0 .36-1.22 2.32 2.32 0 0 0-2.33-2.31 2.32 2.32 0 0 0-2.31 2.31c0 .5.16.96.43 1.34a.74.74 0 0 0-.33.61c0 .26.14.49.33.62a2.32 2.32 0 0 0-.43 1.34 2.31 2.31 0 0 0 2.31 2.31 2.32 2.32 0 0 0 2.33-2.31c0-.45-.13-.87-.36-1.22h8.01v.49h-.8v.68h.8v.7h-.8v1.3h.8v-.58h1.17v.58h.79v-1.3h-.79v-.7h.79v-.68h-.79v-.5h1.58a.56.56 0 0 0 .56-.56v-.34a.57.57 0 0 0-.56-.56Zm-11.53 2.7a1.2 1.2 0 0 1-2.4 0c0-.24.08-.47.2-.66l.34-.56a.97.97 0 0 1-.34-.75c0-.3.13-.56.33-.74l-.32-.56a1.13 1.13 0 0 1-.2-.66 1.2 1.2 0 0 1 2.4 0c0 .49-.56 1.65-.56 1.65v.62c-.01.01.55 1.17.55 1.66ZM4.67 18.34v2.89c0 2.75 1.2 4.53 1.9 5.21l4.58 4.5c1.28 1.25 1.5 1.66 1.79 2.37v-3.2c0-2.84-1.44-3.94-2.19-4.67-1.73-1.68-2.89-2.8-3.82-3.73a8.98 8.98 0 0 1-2.26-3.37Zm6.08 14.24c-1.73-1.7-2.89-2.8-3.82-3.73a10 10 0 0 1-2.25-2.98v2.49a7.87 7.87 0 0 0 1.89 5.24l4.58 4.47c1.28 1.25 1.5 1.85 1.79 2.55v-3.37c0-2.85-1.45-3.95-2.19-4.67Z',
-    'M19.88 5.34c-.32 0-.64 0-.96.02V6.7a18.5 18.5 0 1 1 .95 36.94A18.5 18.5 0 0 1 1.35 25.17c0-5.67 2.55-10.73 6.58-14.13V9.32A19.78 19.78 0 0 0 0 25.17C0 36.12 8.9 45 19.88 45a19.85 19.85 0 0 0 19.86-19.83c0-10.95-8.9-19.83-19.87-19.83Z',
-    'M33.93 35.53c.3-.41.6-.85.87-1.3v-2.66h-.87v3.96Zm2.54-4.92c.12-.4.24-.78.34-1.16h-2.88v.7h.43c.77-.02 1.63-.03 2.11.46Zm-19.19-1.27h-.78v7.91h.78v-7.9Z',
-    'M14.7 27.83h2.58c.67 0 1.14.14 1.4.4.27.25.4.72.4 1.38v7.4c0 .66-.12 1.12-.4 1.38-.4.41-1.16.41-1.78.41l-.4-.01v3.5l.78.14v-2.88c1.2 0 1.97-.4 2.34-1.22v4.29h.26l.5-.01V29.74c0-.68.13-1.16.4-1.43.25-.27.72-.4 1.37-.4.67 0 1.65-.1 2.16.4.26.27.38.76.38 1.43v3.8h-1.77v-4.06h-.77v12.99c.26-.03.5-.07.77-.12V34.3h1.77v7.64c.36-.1.72-.21 1.08-.34v-7c0-.8.19-1.4 1-1.67l-.9-4.87h1.8l.3 5.31h.22l.3-5.31h1.88l-1.01 4.87c.84.3 1.01.81 1.01 1.66v4.53a16.63 16.63 0 0 0 1.5-1.27v-9.83h5.25l.1-.72H24.93l.17.89c-.38-.72-1.12-1.08-2.2-1.08h-.77c-1.3 0-2.1.52-2.4 1.55-.27-1.08-1.1-1.62-2.46-1.62h-3.36v14.52c.26.09.52.18.78.25V27.84Zm16.29 5.58-.85-.8.85-4.37v5.17Z',
-    'M27.66 40.79c.27-.14.55-.28.8-.43v-5.98h-.8v6.4Z',
-];
-const Logo = JSX(({ className, href, children, targetBlank }) => {
-    return (jsxs("a", { className: `inline-flex items-center font-sans no-underline ${className || ''}`, href: href || 'https://rshb.ru/', target: targetBlank ? '_blank' : '_self', children: [jsx(SVG, { className: "text-primary-main w-10", viewBox: "0 0 40 45", paths: LOGO_PATHS.map((d) => ({ d })) }), jsx("span", { className: "text-black text-base font-medium ml-2.5", children: children || 'Россельхозбанк' })] }));
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/TopItem.tsx
-
-
-const TopItem = JSX(({ className, text, href, target, active, flat, onClick, children, ariaLabel }) => {
-    const linkStyle = active ? 'border-primary-main rounded-3xl' : 'border-transparent';
-    const textStyle = active
-        ? 'text-primary-main'
-        : `${flat ? 'text-primary-text' : 'text-secondary-text'} hover:text-primary-main`;
-    return (jsx("a", { className: `inline-block border border-solid bg-transparent text-center no-underline ${flat ? '' : 'px-4 py-2'} ${linkStyle} ${className || ''}`, href: href, target: target, onClick: onClick, rel: "noopener noreferrer", "aria-label": ariaLabel, children: jsx("span", { className: `font-sans font-normal text-sm ${textStyle}`, children: text || children }) }));
+const buttonStyleMap = {
+    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
+    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
+};
+const buttonDisabledStyleMap = {
+    primary: 'bg-secondary-dark text-secondary-text',
+    secondary: 'bg-secondary-light text-secondary-text',
+};
+const styleButton = 'inline-block rounded-md px-9 py-3.5 text-center font-sans';
+const Button = JSX(({ className, text, href, target, onClick, children, disabled, version = 'primary', ariaLabel, }) => {
+    if (disabled) {
+        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabindex: "-1", className: `${styleButton} select-none ${buttonDisabledStyleMap[version]} ${className || ''}`, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
+    }
+    return (jsx("a", { className: `${styleButton} no-underline ${buttonStyleMap[version]} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/utils/url.ts
@@ -31383,6 +31378,138 @@ function useLink({ router, handlerDecorator = defaultHandlerDecorator, }, link) 
             }
         }, link),
     };
+}
+
+;// CONCATENATED MODULE: ./src/Tile.tsx
+
+
+
+
+
+
+const tileStyleMap = {
+    primary: 'bg-white text-primary-text',
+    secondary: 'bg-primary-main text-white',
+};
+const TITLE_CLASSES = 'font-medium m-0 whitespace-pre-wrap max-w-[600px]';
+const Tile = JSX(({ className, context, title, description, children, button, image, items, version = 'primary', }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    return (jsxs("section", { className: `flex flex-col font-sans p-9 ${className || ''} ${tileStyleMap[version]}`, children: [title && renderTitle(title, className), jsxs("div", { className: "grow flex justify-between mt-6", children: [jsxs("div", { className: "flex flex-col justify-between items-start", children: [description || children ? (jsx("div", { className: "font-normal text-base max-w-[600px]", children: description || children })) : (renderItems(items, version)), button?.text && (jsx(Button, { className: "mt-6", ...useLink({ router, handlerDecorator }, button), version: "secondary" }))] }), image?.src && jsx(Img, { className: "mt-auto h-[220px] w-[220px]", image: image })] })] }));
+});
+function renderTitle(title, className = '') {
+    const colSpanPrefix = 'col-span-';
+    const colSpanStr = className.split(/\s+/).find((_) => _.startsWith(colSpanPrefix));
+    const colSpan = colSpanStr ? parseInt(colSpanStr.substring(colSpanPrefix.length), 10) : 12;
+    if (colSpan <= 4) {
+        return jsx("h3", { className: `${TITLE_CLASSES} text-title-xs`, children: title });
+    }
+    else if (colSpan <= 8) {
+        return jsx("h3", { className: `${TITLE_CLASSES} text-title-sm`, children: title });
+    }
+    else {
+        return jsx("h2", { className: `${TITLE_CLASSES} text-title`, children: title });
+    }
+}
+function renderItems(items, version) {
+    return items?.length ? (jsx("section", { className: "max-w-[600px]", role: "list", children: items.map((_, i) => (jsx(BlockItem, { className: i ? 'mt-2.5' : '', text: _, version: version }, String(i)))) })) : null;
+}
+
+;// CONCATENATED MODULE: ./src/ExchangeRateTile.tsx
+
+
+
+const CBR_EXCHANGE_RATE_URL = 'https://www.cbr-xml-daily.ru/daily_json.js';
+const ExchangeRateTile_button = {
+    text: 'Все показатели',
+    href: 'https://cbr.ru/currency_base/daily/',
+};
+const ExchangeRateTile = JSX(({ className, context, title }) => {
+    const { data } = context.useAsyncData(CBR_EXCHANGE_RATE_URL, fetchExchangeRate);
+    return (jsx(Tile, { className: className, context: context, title: title || 'Курсы обмена валют', button: ExchangeRateTile_button, children: jsxs("table", { children: [jsx("thead", { children: jsxs("tr", { children: [renderTH('Валюта'), renderTH('Курс', 'pl-11')] }) }), jsx("tbody", { children: ['USD', 'EUR'].map((key) => {
+                        const value = (data?.Valute || {})[key]?.Value;
+                        return (jsxs("tr", { children: [renderTR(key, 'pt-4'), renderTR(formatCurrency(value), 'pl-11 pt-4')] }, key));
+                    }) })] }) }));
+});
+const renderTH = (title, className = '') => (jsx("th", { className: `text-left font-normal text-sm text-secondary-text ${className}`, children: title }));
+const renderTR = (text, className = '') => (jsx("td", { className: `text-left font-normal text-base text-primary-text ${className}`, children: text }));
+async function fetchExchangeRate() {
+    const response = await fetch(CBR_EXCHANGE_RATE_URL);
+    return await response.json();
+}
+const currencyNumberFormat = new Intl.NumberFormat('ru', { style: 'currency', currency: 'RUB' });
+const formatCurrency = (value) => (value ? currencyNumberFormat.format(value) : '');
+
+;// CONCATENATED MODULE: ./src/ui-kit/SVG.tsx
+
+
+const SVG = JSX(({ className, viewBox, fill = 'none', paths, ...commonOptions }) => {
+    return (jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className: className, viewBox: viewBox, fill: fill, children: paths.map(({ d, fill, ...options }, i) => (jsx("path", { d: d, fill: fill || 'currentColor', ...commonOptions, ...options }, i))) }));
+});
+
+;// CONCATENATED MODULE: ./src/ui-kit/Logo.tsx
+
+
+
+const LOGO_PATHS = [
+    'm13.72 25.51 4.42-4.33v-2.95l-4.42 4.32v2.96Zm0-10.98 4.42-4.35V7.41l-4.42 4.31v2.8Zm0 3.63 4.42-4.33v-2.78l-4.42 4.32v2.8ZM12.46 7.44l-.6-.56V0h-.66v6.22l-.58-.57V0h-.67v5l-.59-.58V0H8.7v6.56l4.44 4.33V0h-.67v7.44Zm1.26 14.35 4.42-4.33v-2.78L13.72 19v2.8Zm-5.03-.61 4.44 4.33v-2.96l-4.44-4.32v2.95Zm8.79-16.76-.59.58V0h-.66v5.66l-.6.56V0h-.66v6.87l-.58.57V0h-.67v10.9l4.42-4.34V0h-.66v4.42Zm-8.79 5.76 4.44 4.35v-2.8L8.69 7.4v2.77Zm0 3.65 4.44 4.33v-2.8l-4.44-4.3v2.77Zm0 3.63 4.44 4.33V19l-4.44-4.31v2.78Zm26.37 2.29H24.3a2.25 2.25 0 0 0 .36-1.22 2.32 2.32 0 0 0-2.33-2.31 2.32 2.32 0 0 0-2.31 2.31c0 .5.16.96.43 1.34a.74.74 0 0 0-.33.61c0 .26.14.49.33.62a2.32 2.32 0 0 0-.43 1.34 2.31 2.31 0 0 0 2.31 2.31 2.32 2.32 0 0 0 2.33-2.31c0-.45-.13-.87-.36-1.22h8.01v.49h-.8v.68h.8v.7h-.8v1.3h.8v-.58h1.17v.58h.79v-1.3h-.79v-.7h.79v-.68h-.79v-.5h1.58a.56.56 0 0 0 .56-.56v-.34a.57.57 0 0 0-.56-.56Zm-11.53 2.7a1.2 1.2 0 0 1-2.4 0c0-.24.08-.47.2-.66l.34-.56a.97.97 0 0 1-.34-.75c0-.3.13-.56.33-.74l-.32-.56a1.13 1.13 0 0 1-.2-.66 1.2 1.2 0 0 1 2.4 0c0 .49-.56 1.65-.56 1.65v.62c-.01.01.55 1.17.55 1.66ZM4.67 18.34v2.89c0 2.75 1.2 4.53 1.9 5.21l4.58 4.5c1.28 1.25 1.5 1.66 1.79 2.37v-3.2c0-2.84-1.44-3.94-2.19-4.67-1.73-1.68-2.89-2.8-3.82-3.73a8.98 8.98 0 0 1-2.26-3.37Zm6.08 14.24c-1.73-1.7-2.89-2.8-3.82-3.73a10 10 0 0 1-2.25-2.98v2.49a7.87 7.87 0 0 0 1.89 5.24l4.58 4.47c1.28 1.25 1.5 1.85 1.79 2.55v-3.37c0-2.85-1.45-3.95-2.19-4.67Z',
+    'M19.88 5.34c-.32 0-.64 0-.96.02V6.7a18.5 18.5 0 1 1 .95 36.94A18.5 18.5 0 0 1 1.35 25.17c0-5.67 2.55-10.73 6.58-14.13V9.32A19.78 19.78 0 0 0 0 25.17C0 36.12 8.9 45 19.88 45a19.85 19.85 0 0 0 19.86-19.83c0-10.95-8.9-19.83-19.87-19.83Z',
+    'M33.93 35.53c.3-.41.6-.85.87-1.3v-2.66h-.87v3.96Zm2.54-4.92c.12-.4.24-.78.34-1.16h-2.88v.7h.43c.77-.02 1.63-.03 2.11.46Zm-19.19-1.27h-.78v7.91h.78v-7.9Z',
+    'M14.7 27.83h2.58c.67 0 1.14.14 1.4.4.27.25.4.72.4 1.38v7.4c0 .66-.12 1.12-.4 1.38-.4.41-1.16.41-1.78.41l-.4-.01v3.5l.78.14v-2.88c1.2 0 1.97-.4 2.34-1.22v4.29h.26l.5-.01V29.74c0-.68.13-1.16.4-1.43.25-.27.72-.4 1.37-.4.67 0 1.65-.1 2.16.4.26.27.38.76.38 1.43v3.8h-1.77v-4.06h-.77v12.99c.26-.03.5-.07.77-.12V34.3h1.77v7.64c.36-.1.72-.21 1.08-.34v-7c0-.8.19-1.4 1-1.67l-.9-4.87h1.8l.3 5.31h.22l.3-5.31h1.88l-1.01 4.87c.84.3 1.01.81 1.01 1.66v4.53a16.63 16.63 0 0 0 1.5-1.27v-9.83h5.25l.1-.72H24.93l.17.89c-.38-.72-1.12-1.08-2.2-1.08h-.77c-1.3 0-2.1.52-2.4 1.55-.27-1.08-1.1-1.62-2.46-1.62h-3.36v14.52c.26.09.52.18.78.25V27.84Zm16.29 5.58-.85-.8.85-4.37v5.17Z',
+    'M27.66 40.79c.27-.14.55-.28.8-.43v-5.98h-.8v6.4Z',
+];
+const Logo = JSX(({ className, href, children, targetBlank }) => {
+    return (jsxs("a", { className: `inline-flex items-center font-sans no-underline ${className || ''}`, href: href || 'https://rshb.ru/', target: targetBlank ? '_blank' : '_self', children: [jsx(SVG, { className: "text-primary-main w-10", viewBox: "0 0 40 45", paths: LOGO_PATHS.map((d) => ({ d })) }), jsx("span", { className: "text-black text-base font-medium ml-2.5", children: children || 'Россельхозбанк' })] }));
+});
+
+;// CONCATENATED MODULE: ./src/ui-kit/SearchBar.tsx
+
+
+
+const SearchBar = JSX(({ className, context }) => {
+    const search = context.useSearch();
+    return (jsxs("form", { className: `relative ${className || ''}`, children: [jsxs("div", { className: "absolute rounded-l-full h-full flex items-center justify-center pl-4 max-w-[170px] gap-3.5", children: [jsx("div", { className: "w-[24px] h-[24px]", children: LoupeIcon() }), jsx("span", { className: "font-sans font-normal text-sm text-secondary-text", children: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443" })] }), jsx("input", { className: "pl-[170px] w-full font-sans font-normal text-sm border border-solid border-main-divider rounded-full h-full box-border outline-none", value: search.term, onChange: (e) => search.setTerm(e.target.value), type: "text", placeholder: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443", name: "s" }), jsx("button", { type: "submit", className: "absolute font-sans font-normal text-sm cursor-pointer bg-transparent hover:bg-primary-hover active:bg-primary-active text-primary-main hover:text-white border-none px-5 rounded-r-full h-full top-0 right-0 outline-none", onClick: (e) => {
+                    e.preventDefault();
+                    console.log('click');
+                }, children: "\u041D\u0430\u0439\u0442\u0438" })] }));
+});
+
+;// CONCATENATED MODULE: ./src/Footer/Contacts.tsx
+
+
+
+
+const Contacts = JSX(({ className, items, hasButton, context }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    return (jsxs("div", { className: `flex flex-col ${className || ''}`, children: [items?.length ? items.map(renderContact) : null, hasButton ? (jsx(Button, { className: "my-4", ...useLink({ router, handlerDecorator }, {
+                    text: 'Обратная связь',
+                    href: '/',
+                    target: '_blank',
+                }) })) : null] }));
+});
+const renderContact = (item, index) => {
+    const { type, text, description } = item;
+    return (jsxs("div", { className: "mb-4", children: [jsx("div", { children: renderText(type, text) }), jsx("div", { className: "font-sans text-sm text-secondary-text", children: description })] }, String(index)));
+};
+const renderText = (type, text) => {
+    switch (type) {
+        case 'tel':
+            return (jsx("a", { className: "font-sans font-medium text-xl text-primary-text no-underline", href: `tel:${formatTel(text)}`, children: text }));
+        case 'email':
+            return (jsx("a", { className: "font-sans font-medium text-xl text-primary-text no-underline", href: `mailto:${text}`, children: text }));
+        default:
+            return jsx("span", { children: text });
+    }
+};
+const formatTel = (s) => s.replaceAll(/(\-|\s|\(|\)|\D+)/g, '');
+
+;// CONCATENATED MODULE: ./src/mergeTopItems.ts
+const cmp = (a) => (b) => a?.href === b?.href;
+const substitute = (items, substitution) => (items || []).map((_) => substitution?.find(cmp(_)) || _);
+const subtract = (minuend, subtrahend) => (minuend || []).filter((_) => !subtrahend?.find(cmp(_)));
+function mergeTopItems(left, right) {
+    return substitute(left, right).concat(subtract(right, left));
 }
 
 ;// CONCATENATED MODULE: ./src/ProjectSettings.ts
@@ -31427,130 +31554,6 @@ async function fetchSitemap() {
 function sitemapURL() {
     return `/wcms-resources/${projectSettings.SITEMAP || 'sitemap'}.json`;
 }
-
-;// CONCATENATED MODULE: ./src/Header/HeaderSecondaryMenuButton.tsx
-
-
-const HeaderSecondaryMenuButton = JSX(({ className, children, ariaLabel }) => (jsx("button", { type: "button", className: `border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${className || ''}`, disabled: true, "aria-label": ariaLabel, children: children })));
-
-;// CONCATENATED MODULE: ./src/Header/HeaderSecondaryMenu.tsx
-
-
-
-
-
-const HeaderSecondaryMenu = JSX(({ location, className }) => {
-    return (jsxs("div", { className: `flex items-center ${className || ''}`, children: [jsx(TopItem, { className: "mr-5", flat: true, href: "#", text: location, ariaLabel: "\u041C\u0435\u0441\u0442\u043E\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx(TopItem, { className: "mr-7", flat: true, href: "#", text: "\u041E\u0444\u0438\u0441\u044B \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u044B", ariaLabel: "\u0421\u043F\u0438\u0441\u043E\u043A \u0432\u0441\u0435\u0445 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u0445 \u043E\u0444\u0438\u0441\u043E\u0432 \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u043E\u0432" }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", ariaLabel: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443", children: LoupeIcon({ 'aria-hidden': true }) }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", ariaLabel: "\u041F\u0440\u043E\u0444\u0438\u043B\u044C", children: ProfileIcon({ 'aria-hidden': true }) }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-main hover:text-secondary-hover min-w-[32px] min-h-[32px]", ariaLabel: "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438", children: GridIcon({ 'aria-hidden': true }) })] }));
-});
-
-;// CONCATENATED MODULE: ./src/Header/isSubItemActive.ts
-
-function isSubItemActive({ href, pathname }) {
-    return (item) => {
-        return withoutQuery(item.href) === (isURL(item.href) ? withoutQuery(href) : pathname);
-    };
-}
-
-;// CONCATENATED MODULE: ./src/Header/isTopItemActive.ts
-
-function isTopItemActive({ href, pathname }) {
-    return (item) => {
-        const itemHref = withoutQuery(item.href);
-        if (isURL(itemHref)) {
-            return Boolean(href && href.startsWith(itemHref));
-        }
-        return Boolean(itemHref && pathname.startsWith(itemHref));
-    };
-}
-
-;// CONCATENATED MODULE: ./src/Header/Header.tsx
-
-
-
-
-
-
-
-
-
-
-
-const Header = JSX(({ className, location, context, topItems }) => {
-    const router = context.useRouter();
-    const sitemap = useSitemap(context.useAsyncData);
-    const { handlerDecorator } = context;
-    const mergedItems = mergeTopItems(sitemap.topItems, topItems);
-    const activeTopItem = mergedItems.find(isTopItemActive(router));
-    const subItems = activeTopItem?.items;
-    const activeSubItem = subItems?.find(isSubItemActive(router));
-    const topMenu = mergedItems.map((_, i) => (jsx(TopItem, { active: _ === activeTopItem, ...useLink({ router, handlerDecorator }, _), ariaLabel: _.text }, String(i))));
-    const subMenu = subItems?.map((_) => (jsx(HeaderItem, { className: "mr-8", active: _ === activeSubItem, ...useLink({ router, handlerDecorator }, _) }, _.href)));
-    return (jsxs("header", { className: `pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`, children: [jsxs("div", { className: "flex items-center", children: [jsx(Logo, { className: "mr-8" }), topMenu, jsx(HeaderSecondaryMenu, { location: location, className: "ml-auto" })] }), jsx("div", { className: "mt-5 h-[1px] bg-main-divider" }), jsx("nav", { className: "mt-5", children: subMenu })] }));
-});
-
-;// CONCATENATED MODULE: ./src/Header/index.ts
-
-
-;// CONCATENATED MODULE: ./src/ui-kit/SearchBar.tsx
-
-
-
-const SearchBar = JSX(({ className, context }) => {
-    const search = context.useSearch();
-    return (jsxs("form", { className: `relative ${className || ''}`, children: [jsxs("div", { className: "absolute rounded-l-full h-full flex items-center justify-center pl-4 max-w-[170px] gap-3.5", children: [jsx("div", { className: "w-[24px] h-[24px]", children: LoupeIcon() }), jsx("span", { className: "font-sans font-normal text-sm text-secondary-text", children: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443" })] }), jsx("input", { className: "pl-[170px] w-full font-sans font-normal text-sm border border-solid border-main-divider rounded-full h-full box-border outline-none", value: search.term, onChange: (e) => search.setTerm(e.target.value), type: "text", placeholder: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443", name: "s" }), jsx("button", { type: "submit", className: "absolute font-sans font-normal text-sm cursor-pointer bg-transparent hover:bg-primary-hover active:bg-primary-active text-primary-main hover:text-white border-none px-5 rounded-r-full h-full top-0 right-0 outline-none", onClick: (e) => {
-                    e.preventDefault();
-                    console.log('click');
-                }, children: "\u041D\u0430\u0439\u0442\u0438" })] }));
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/Button.tsx
-
-
-const buttonStyleMap = {
-    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
-    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
-};
-const buttonDisabledStyleMap = {
-    primary: 'bg-secondary-dark text-secondary-text',
-    secondary: 'bg-secondary-light text-secondary-text',
-};
-const styleButton = 'inline-block rounded-md px-9 py-3.5 text-center font-sans';
-const Button = JSX(({ className, text, href, target, onClick, children, disabled, version = 'primary', ariaLabel, }) => {
-    if (disabled) {
-        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabindex: "-1", className: `${styleButton} select-none ${buttonDisabledStyleMap[version]} ${className || ''}`, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
-    }
-    return (jsx("a", { className: `${styleButton} no-underline ${buttonStyleMap[version]} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, children: jsx("span", { className: "text-sm font-medium", children: text || children }) }));
-});
-
-;// CONCATENATED MODULE: ./src/Footer/Contacts.tsx
-
-
-
-
-const Contacts = JSX(({ className, items, hasButton, context }) => {
-    const router = context.useRouter();
-    const { handlerDecorator } = context;
-    return (jsxs("div", { className: `flex flex-col ${className || ''}`, children: [items?.length ? items.map(renderContact) : null, hasButton ? (jsx(Button, { className: "my-4", ...useLink({ router, handlerDecorator }, {
-                    text: 'Обратная связь',
-                    href: '/',
-                    target: '_blank',
-                }) })) : null] }));
-});
-const renderContact = (item, index) => {
-    const { type, text, description } = item;
-    return (jsxs("div", { className: "mb-4", children: [jsx("div", { children: renderText(type, text) }), jsx("div", { className: "font-sans text-sm text-secondary-text", children: description })] }, String(index)));
-};
-const renderText = (type, text) => {
-    switch (type) {
-        case 'tel':
-            return (jsx("a", { className: "font-sans font-medium text-xl text-primary-text no-underline", href: `tel:${formatTel(text)}`, children: text }));
-        case 'email':
-            return (jsx("a", { className: "font-sans font-medium text-xl text-primary-text no-underline", href: `mailto:${text}`, children: text }));
-        default:
-            return jsx("span", { children: text });
-    }
-};
-const formatTel = (s) => s.replaceAll(/(\-|\s|\(|\)|\D+)/g, '');
 
 ;// CONCATENATED MODULE: ./src/Footer/Sitemap.tsx
 
@@ -31632,60 +31635,95 @@ const Footer = JSX(({ className, documents, relatedEnterprises, contacts, social
 ;// CONCATENATED MODULE: ./src/Footer/index.ts
 
 
-;// CONCATENATED MODULE: ./src/Img.tsx
+;// CONCATENATED MODULE: ./src/ui-kit/HeaderItem.tsx
 
 
-const Img = JSX(({ className, image }) => (jsxs("picture", { className: `${className || ''}`, children: [image.sources?.length
-            ? image.sources.map(({ src, format }, index) => (jsx("source", { srcSet: src, type: formatToMimeType(format) }, `${index}_${src}`)))
-            : null, jsx("img", { src: image.src, alt: image.alt || image.title, title: image.title, ...image?.size })] })));
-function formatToMimeType(format) {
-    return format ? `image/${String(format)}` : undefined;
-}
-
-;// CONCATENATED MODULE: ./src/ui-kit/BlockItem.tsx
-
-
-const listStyleMap = {
-    primary: 'bg-primary-main',
-    secondary: 'bg-white',
-};
-const textStyleMap = {
-    primary: 'text-primary-text',
-    secondary: 'text-white',
-};
-const BlockItem = JSX(({ className, text, children, version = 'primary' }) => {
-    return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [jsx("div", { className: `inline-block w-[8px] h-[8px] min-w-[8px] min-h-[8px] rounded-full mt-2 ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mx-3 ${textStyleMap[version]}`, children: text || children })] }));
+const HeaderItem = JSX(({ className, text, href, target, active, onClick, children }) => {
+    const textStyle = active ? 'text-primary-main' : 'text-primary-text hover:text-primary-main';
+    return (jsxs("a", { className: `relative inline-block bg-transparent text-center no-underline ${className || ''}`, href: href, target: target, onClick: onClick, children: [jsx("span", { className: `font-sans font-normal text-base ${textStyle}`, children: text || children }), active ? (jsx("div", { className: "absolute left-0 -bottom-2 w-full h-[2px] bg-primary-main" })) : null] }));
 });
 
-;// CONCATENATED MODULE: ./src/Tile.tsx
+;// CONCATENATED MODULE: ./src/ui-kit/TopItem.tsx
+
+
+const TopItem = JSX(({ className, text, href, target, active, flat, onClick, children, ariaLabel }) => {
+    const linkStyle = active ? 'border-primary-main rounded-3xl' : 'border-transparent';
+    const textStyle = active
+        ? 'text-primary-main'
+        : `${flat ? 'text-primary-text' : 'text-secondary-text'} hover:text-primary-main`;
+    return (jsx("a", { className: `inline-block border border-solid bg-transparent text-center no-underline ${flat ? '' : 'px-4 py-2'} ${linkStyle} ${className || ''}`, href: href, target: target, onClick: onClick, rel: "noopener noreferrer", "aria-label": ariaLabel, children: jsx("span", { className: `font-sans font-normal text-sm ${textStyle}`, children: text || children }) }));
+});
+
+;// CONCATENATED MODULE: ./src/Header/HeaderSecondaryMenuButton.tsx
+
+
+const HeaderSecondaryMenuButton = JSX(({ className, children, ariaLabel }) => (jsx("button", { type: "button", className: `border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${className || ''}`, disabled: true, "aria-label": ariaLabel, children: children })));
+
+;// CONCATENATED MODULE: ./src/Header/HeaderSecondaryMenu.tsx
+
+
+
+
+
+const HeaderSecondaryMenu = JSX(({ location, className }) => {
+    return (jsxs("div", { className: `flex items-center ${className || ''}`, children: [jsx(TopItem, { className: "mr-5", flat: true, href: "#", text: location, ariaLabel: "\u041C\u0435\u0441\u0442\u043E\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx(TopItem, { className: "mr-7", flat: true, href: "#", text: "\u041E\u0444\u0438\u0441\u044B \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u044B", ariaLabel: "\u0421\u043F\u0438\u0441\u043E\u043A \u0432\u0441\u0435\u0445 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u0445 \u043E\u0444\u0438\u0441\u043E\u0432 \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u043E\u0432" }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", ariaLabel: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443", children: LoupeIcon({ 'aria-hidden': true }) }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", ariaLabel: "\u041F\u0440\u043E\u0444\u0438\u043B\u044C", children: ProfileIcon({ 'aria-hidden': true }) }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-main hover:text-secondary-hover min-w-[32px] min-h-[32px]", ariaLabel: "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438", children: GridIcon({ 'aria-hidden': true }) })] }));
+});
+
+;// CONCATENATED MODULE: ./src/Header/isSubItemActive.ts
+
+function isSubItemActive({ href, pathname }) {
+    return (item) => {
+        return withoutQuery(item.href) === (isURL(item.href) ? withoutQuery(href) : pathname);
+    };
+}
+
+;// CONCATENATED MODULE: ./src/Header/isTopItemActive.ts
+
+function isTopItemActive({ href, pathname }) {
+    return (item) => {
+        const itemHref = withoutQuery(item.href);
+        if (isURL(itemHref)) {
+            return Boolean(href && href.startsWith(itemHref));
+        }
+        return Boolean(itemHref && pathname.startsWith(itemHref));
+    };
+}
+
+;// CONCATENATED MODULE: ./src/Header/Header.tsx
 
 
 
 
 
 
-const tileStyleMap = {
-    primary: 'bg-white text-primary-text',
-    secondary: 'bg-primary-main text-white',
-};
-const TITLE_CLASSES = 'font-medium m-0 whitespace-pre-wrap max-w-[600px]';
-const Tile = JSX(({ className, context, title, description, children, button, image, items, version = 'primary', }) => {
+
+
+
+
+
+const Header = JSX(({ className, location, context, topItems }) => {
     const router = context.useRouter();
+    const sitemap = useSitemap(context.useAsyncData);
     const { handlerDecorator } = context;
-    return (jsx("section", { className: `font-sans p-9 flex justify-between items-stretch relative ${className || ''} ${tileStyleMap[version]}`, children: jsxs("div", { className: "flex flex-col w-full", children: [title && renderTitle(title, className), jsxs("div", { className: "flex justify-between h-full", children: [jsxs("div", { className: "flex flex-col", children: [(description || children) && (jsx("div", { className: "font-normal text-base max-w-[600px] mt-4", children: description || children })), renderItems(items, version), button?.text && (jsx("div", { className: "mt-auto", children: jsx(Button, { className: "mt-8", ...useLink({ router, handlerDecorator }, button), version: "secondary" }) }))] }), image?.src && (jsx("div", { className: "mt-auto flex-none h-[220px] w-[220px]", children: jsx(Img, { image: image }) }))] })] }) }));
+    const mergedItems = mergeTopItems(sitemap.topItems, topItems);
+    const activeTopItem = mergedItems.find(isTopItemActive(router));
+    const subItems = activeTopItem?.items;
+    const activeSubItem = subItems?.find(isSubItemActive(router));
+    const topMenu = mergedItems.map((_, i) => (jsx(TopItem, { active: _ === activeTopItem, ...useLink({ router, handlerDecorator }, _), ariaLabel: _.text }, String(i))));
+    const subMenu = subItems?.map((_) => (jsx(HeaderItem, { className: "mr-8", active: _ === activeSubItem, ...useLink({ router, handlerDecorator }, _) }, _.href)));
+    return (jsxs("header", { className: `pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`, children: [jsxs("div", { className: "flex items-center", children: [jsx(Logo, { className: "mr-8" }), topMenu, jsx(HeaderSecondaryMenu, { location: location, className: "ml-auto" })] }), jsx("div", { className: "mt-5 h-[1px] bg-main-divider" }), jsx("nav", { className: "mt-5", children: subMenu })] }));
 });
-function renderItems(items, version) {
-    return items?.length ? (jsx("section", { className: "mt-5 max-w-[600px]", role: "list", children: items.map((_, i) => (jsx(BlockItem, { className: "mt-2.5", text: _, version: version }, String(i)))) })) : null;
-}
-function renderTitle(title, className = '') {
-    if (className.includes('col-span-4')) {
-        return jsx("h3", { className: `${TITLE_CLASSES} text-title-xs`, children: title });
-    }
-    if (className.includes('col-span-6') || className.includes('col-span-8')) {
-        return jsx("h3", { className: `${TITLE_CLASSES} text-title-sm`, children: title });
-    }
-    return jsx("h2", { className: `${TITLE_CLASSES} text-title`, children: title });
-}
+
+;// CONCATENATED MODULE: ./src/Header/index.ts
+
+
+;// CONCATENATED MODULE: ./src/MobileAppTile.tsx
+
+
+
+const MobileAppTile = JSX(({ className, context, title = 'Мобильное приложение', qr }) => {
+    return (jsx(Tile, { className: className, context: context, title: title, children: jsxs("div", { className: "flex items-center", children: [qr && (jsx("img", { src: qr, alt: title, title: title, className: "w-[90px] h-[90px] bg-secondary-light" })), jsx("span", { className: "font-normal text-sm text-secondary-text ml-4", children: "\u041D\u0430\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u0430\u043C\u0435\u0440\u0443 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430 \u043D\u0430 QR-\u043A\u043E\u0434 \u0438 \u0441\u043A\u0430\u0447\u0430\u0439\u0442\u0435 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435" })] }) }));
+});
 
 ;// CONCATENATED MODULE: ./src/Placeholder.tsx
 
@@ -31747,18 +31785,6 @@ const ProductBlock = JSX((props) => {
     return (jsx("section", { className: `bg-white p-11 pr-[7.5rem] ${className || ''}`, children: jsx(ProductBlockInner, { ...props }) }));
 });
 
-;// CONCATENATED MODULE: ./src/StepsBlock.tsx
-
-
-
-const StepsBlock_ICONS = { NewDocIcon: NewDocIcon, PassSendIcon: PassSendIcon, ActualBalanceIcon: ActualBalanceIcon };
-const StepsBlock = JSX(({ className, title, steps }) => {
-    return (jsxs("section", { className: `font-sans text-primary-text bg-white px-12 py-12 flex flex-col items-center ${className || ''}`, children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), steps?.length ? jsx("div", { className: "flex mt-9", children: steps.map(StepsBlock_renderStep) }) : null] }));
-});
-const StepsBlock_renderStep = (step, i) => {
-    return (jsxs("div", { className: "flex flex-col items-center text-center px-12 relative after:content-[''] last:after:content-none after:bg-secondary-light after:absolute after:top-[50px] after:h-0.5 after:w-full after:right-[-50%]", children: [jsx("div", { className: "h-[100px] w-[100px] min-w-[100px] min-h-[100px] bg-secondary-light rounded-full p-[26px] box-border z-10", children: (step.icon && StepsBlock_ICONS[step.icon]?.({ width: 48, height: 48 })) || (jsx("span", { className: "font-medium text-title-sm text-secondary-text", children: i + 1 })) }), jsxs("div", { className: "max-w-min", children: [jsx("h5", { className: "font-medium text-xl m-0 mt-4 whitespace-nowrap px-3", children: step.label }), step.description && (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: step.description }))] })] }, String(i)));
-};
-
 ;// CONCATENATED MODULE: ./src/ProductGallery.tsx
 
 
@@ -31785,32 +31811,20 @@ function renderNavButton({ slide, i, activeSlideIndex, onClick, duration }) {
     return (jsxs("button", { type: "button", onClick: onClick, className: `group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 py-4`, children: [jsxs("div", { className: "border-0 border-r border-solid border-main-divider px-6", children: [jsx("div", { className: `text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`, children: slide?.title }), jsx("div", { className: "text-xs text-secondary-text", children: slide.desc })] }), jsx("div", { className: `absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${progressBarClassName}`, style: { animationDuration: `${duration}s` } })] }, String(i)));
 }
 
-;// CONCATENATED MODULE: ./src/ExchangeRateTile.tsx
+;// CONCATENATED MODULE: ./src/StepsBlock.tsx
 
 
 
-const CBR_EXCHANGE_RATE_URL = 'https://www.cbr-xml-daily.ru/daily_json.js';
-const ExchangeRateTile_button = {
-    text: 'Все показатели',
-    href: 'https://cbr.ru/currency_base/daily/',
-};
-const ExchangeRateTile = JSX(({ className, context }) => {
-    const { data } = context.useAsyncData(CBR_EXCHANGE_RATE_URL, fetchExchangeRate);
-    return (jsx(Tile, { className: className, context: context, title: "\u041A\u0443\u0440\u0441\u044B \u043E\u0431\u043C\u0435\u043D\u0430 \u0432\u0430\u043B\u044E\u0442", button: ExchangeRateTile_button, children: jsxs("table", { children: [jsx("thead", { children: jsxs("tr", { children: [renderTH('Валюта'), renderTH('Курс', 'pl-11')] }) }), jsx("tbody", { children: ['USD', 'EUR'].map((key) => {
-                        const value = (data?.Valute || {})[key]?.Value;
-                        return (jsxs("tr", { children: [renderTR(key, 'pt-4'), renderTR(formatCurrency(value), 'pl-11 pt-4')] }, key));
-                    }) })] }) }));
+const StepsBlock_ICONS = { NewDocIcon: NewDocIcon, PassSendIcon: PassSendIcon, ActualBalanceIcon: ActualBalanceIcon };
+const StepsBlock = JSX(({ className, title, steps }) => {
+    return (jsxs("section", { className: `font-sans text-primary-text bg-white px-12 py-12 flex flex-col items-center ${className || ''}`, children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), steps?.length ? jsx("div", { className: "flex mt-9", children: steps.map(StepsBlock_renderStep) }) : null] }));
 });
-const renderTH = (title, className = '') => (jsx("th", { className: `text-left font-normal text-sm text-secondary-text ${className}`, children: title }));
-const renderTR = (text, className = '') => (jsx("td", { className: `text-left font-normal text-base text-primary-text ${className}`, children: text }));
-async function fetchExchangeRate() {
-    const response = await fetch(CBR_EXCHANGE_RATE_URL);
-    return await response.json();
-}
-const currencyNumberFormat = new Intl.NumberFormat('ru', { style: 'currency', currency: 'RUB' });
-const formatCurrency = (value) => (value ? currencyNumberFormat.format(value) : '');
+const StepsBlock_renderStep = (step, i) => {
+    return (jsxs("div", { className: "flex flex-col items-center text-center px-12 relative after:content-[''] last:after:content-none after:bg-secondary-light after:absolute after:top-[50px] after:h-0.5 after:w-full after:right-[-50%]", children: [jsx("div", { className: "h-[100px] w-[100px] min-w-[100px] min-h-[100px] bg-secondary-light rounded-full p-[26px] box-border z-10", children: (step.icon && StepsBlock_ICONS[step.icon]?.({ width: 48, height: 48 })) || (jsx("span", { className: "font-medium text-title-sm text-secondary-text", children: i + 1 })) }), jsxs("div", { className: "max-w-min", children: [jsx("h5", { className: "font-medium text-xl m-0 mt-4 whitespace-nowrap px-3", children: step.label }), step.description && (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: step.description }))] })] }, String(i)));
+};
 
 ;// CONCATENATED MODULE: ./src/Blocks.ts
+
 
 
 
@@ -31830,6 +31844,7 @@ const Blocks = {
     BenefitsBlock: BenefitsBlock,
     ProductGallery: ProductGallery,
     ExchangeRateTile: ExchangeRateTile,
+    MobileAppTile: MobileAppTile,
 };
 
 ;// CONCATENATED MODULE: ./src/ui-kit/LikeButton.tsx
@@ -32184,6 +32199,14 @@ const DEFAULT_ORIGIN = 'https://rshb.ru/';
 
 
 /* harmony default export */ const LikeControl_fixture = (jsx(LikeControl, { context: context }));
+
+;// CONCATENATED MODULE: ./src/MobileAppTile.fixture.tsx
+
+
+
+/* harmony default export */ const MobileAppTile_fixture = ({
+    default: (jsx("div", { className: "grid grid-cols-12", children: jsx(MobileAppTile, { context: context, className: "col-span-4", qr: "data:image/jpeg;base64,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" }) })),
+});
 
 ;// CONCATENATED MODULE: ./src/Placeholder.fixture.tsx
 
@@ -32569,6 +32592,7 @@ const image4 = {
 
 
 
+
 const rendererConfig = {
   "containerQuerySelector": null
 };
@@ -32580,6 +32604,7 @@ const fixtures = {
   'src/Footer/Footer.fixture.tsx': { module: { default: Footer_fixture } },
   'src/Header/Header.fixture.tsx': { module: { default: Header_fixture } },
   'src/LikeControl.fixture.tsx': { module: { default: LikeControl_fixture } },
+  'src/MobileAppTile.fixture.tsx': { module: { default: MobileAppTile_fixture } },
   'src/Placeholder.fixture.tsx': { module: { default: Placeholder_fixture } },
   'src/ProductBlock.fixture.tsx': { module: { default: ProductBlock_fixture } },
   'src/ProductGallery.fixture.tsx': { module: { default: ProductGallery_fixture } },
@@ -38415,7 +38440,7 @@ module.exports = __webpack_require__.p + "92c10e8d48ecdcd8ee10.woff2";
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"title":"Кредиты","slug":"credits","description":"Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.","keywords":["кредит","акция"],"robots":["index","follow"],"og":{"type":"article","url":"https://foo.com/bar/baz"},"date":"2022-04-08","style":["p-20","pt-0","gap-5","bg-secondary-light"],"likeControl":true,"blocks":[{"type":"Header","style":["col-span-12","-mx-20","mb-5","shadow-[0_8px_32px_0px_#00000014]"],"content":{"topItems":[{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank"},{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank"}]}},{"type":"ProductGallery","style":["col-span-12"],"content":{"slides":[{"nav":{"title":"Деньги на любые цели","desc":"Ставка от 12,5% годовых на срок до 5 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 5 лет!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","size":{"width":220,"height":220}}}},{"nav":{"title":"Для людей в возрасте","desc":"Ставка от 12,5% годовых на срок до 3 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 3 лет!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"worker.png","title":"Рабочий","format":"webp","size":{"width":220,"height":220}}}},{"nav":{"title":"Выгодно покупать","desc":"Дополнительные бонусные баллы за покупки"},"productBlock":{"title":"Дополнительные бонусные баллы за покупки!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":220,"height":220}}}},{"nav":{"title":"Карты Unionpay","desc":"Кэшбэк до 20% у партнеров"},"productBlock":{"title":"Карты Unionpay»","description":"Кэшбэк до 20% у партнеров","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":220,"height":220}}}}]}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Кредиты","items":["Кредитный лимит до 10 млн ₽","Кредиты наличными на любые цели","Получите деньги без залога и поручителей"],"button":{"text":"Подробнее","href":"/credit-cards","version":"secondary"},"image":{"src":"money-1.png","title":"деньги","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","version":"secondary","style":["col-span-4"],"content":{"title":"Ипотека","description":"Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %","button":{"text":"Подробнее","href":"/credits","version":"secondary"},"promo":true}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Банковские пластиковые карты","items":["Счета в разных валютах","Бесплатное обслуживание","Кэшбэк до 15% от покупок"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Премиальные продукты","description":"Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус","button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"column-1.png","alt":"Column","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Экосистема «СВОЕ», созданная для людей","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом","Подробная база вакансий для жителей сельской местности"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"globe-1.png","title":"Глобус","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Драгоценные металлы","items":["Счета в драгоценных металлах","Слитки  и монеты из драгоценных металлов"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Банковские ячейки","items":["Полная конфиденциальность","Разный размер ячеек","Оформление доверенностей"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Вклады и сбережения","items":["Доходность по вкладам  до 15% годовых","Минимальная сумма вклада  от 3000 Р","Минимальный срок вклада от 1 месяца"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Акции и спецпредложения","version":"secondary","description":"Пенсионный кредит по специальной процентной ставке","button":{"text":"Все акции","href":"/credits","version":"secondary"}}},{"type":"ExchangeRateTile","style":["col-span-4"]},{"type":"Unknown","style":["col-span-12"],"content":{"title":"Неизвестный блок"}},{"type":"Footer","style":["col-span-12"],"content":{"topItems":[{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"Кредитные карты"},{"href":"https://rshb.ru/","text":"Дебетовые карты"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Ипотека"},{"href":"https://rshb.ru/","text":"Вклады и сбережения"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Премиальным клиентам"},{"href":"https://rshb.ru/","text":"Биометрическая регистрация"},{"href":"https://rshb.ru/","text":"Перевод денег"},{"href":"https://rshb.ru/","text":"Обмен денег"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]},{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"РКО"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Депозиты"},{"href":"https://rshb.ru/","text":"Эквайринг"},{"href":"https://rshb.ru/","text":"Банковские карты"},{"href":"https://rshb.ru/","text":"ВЭД"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Обмен валюты"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Партнёрские программы"},{"href":"https://rshb.ru/","text":"Онлайн-сервисы"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]}],"contacts":[{"text":"+7 (495) 787-7-787","description":"Для звонков из-за границы","type":"tel"},{"text":"example@example.com","description":"Для писем","type":"email"},{"text":"7787","description":"Абонентам МТС, Мегафон, Билайн и Tele2","type":"tel"}],"documents":[{"text":"Информация о процентных ставках по договорам банковского вклада с физическими лицами","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации профессиональным участником рынка ценных бумаг","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации","href":"https://rshb.ru/","target":"_blank"},{"text":"Удостоверяющий центр","href":"https://rshb.ru/","target":"_blank"},{"text":"Финансовая культура","href":"https://rshb.ru/","target":"_blank"}],"socialMedia":[{"href":"https://vk.com"},{"href":"https://ok.ru"},{"href":"https://t.me"}]}}]}');
+module.exports = JSON.parse('{"title":"Кредиты","slug":"credits","description":"Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.","keywords":["кредит","акция"],"robots":["index","follow"],"og":{"type":"article","url":"https://foo.com/bar/baz"},"date":"2022-04-08","style":["p-20","pt-0","gap-5","bg-secondary-light"],"likeControl":true,"blocks":[{"type":"Header","style":["col-span-12","-mx-20","mb-5","shadow-[0_8px_32px_0px_#00000014]"],"content":{"topItems":[{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank"},{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank"}]}},{"type":"ProductGallery","style":["col-span-12"],"content":{"slides":[{"nav":{"title":"Деньги на любые цели","desc":"Ставка от 12,5% годовых на срок до 5 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 5 лет!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","size":{"width":220,"height":220}}}},{"nav":{"title":"Для людей в возрасте","desc":"Ставка от 12,5% годовых на срок до 3 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 3 лет!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"worker.png","title":"Рабочий","format":"webp","size":{"width":220,"height":220}}}},{"nav":{"title":"Выгодно покупать","desc":"Дополнительные бонусные баллы за покупки"},"productBlock":{"title":"Дополнительные бонусные баллы за покупки!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":220,"height":220}}}},{"nav":{"title":"Карты Unionpay","desc":"Кэшбэк до 20% у партнеров"},"productBlock":{"title":"Карты Unionpay»","description":"Кэшбэк до 20% у партнеров","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":220,"height":220}}}}]}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Кредиты","items":["Кредитный лимит до 10 млн ₽","Кредиты наличными на любые цели","Получите деньги без залога и поручителей"],"button":{"text":"Подробнее","href":"/credit-cards","version":"secondary"},"image":{"src":"money-1.png","title":"деньги","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","version":"secondary","style":["col-span-4"],"content":{"title":"Ипотека","description":"Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %","button":{"text":"Подробнее","href":"/credits","version":"secondary"},"promo":true}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Банковские пластиковые карты","items":["Счета в разных валютах","Бесплатное обслуживание","Кэшбэк до 15% от покупок"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Премиальные продукты","description":"Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус","button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"column-1.png","alt":"Column","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Экосистема «СВОЕ», созданная для людей","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом","Подробная база вакансий для жителей сельской местности"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"},"image":{"src":"globe-1.png","title":"Глобус","format":"webp","size":{"width":220,"height":220}}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Драгоценные металлы","items":["Счета в драгоценных металлах","Слитки  и монеты из драгоценных металлов"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Банковские ячейки","items":["Полная конфиденциальность","Разный размер ячеек","Оформление доверенностей"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Вклады и сбережения","items":["Доходность по вкладам  до 15% годовых","Минимальная сумма вклада  от 3000 Р","Минимальный срок вклада от 1 месяца"],"button":{"text":"Подробнее","href":"/credits","version":"secondary"}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Акции и спецпредложения","version":"secondary","description":"Пенсионный кредит по специальной процентной ставке","button":{"text":"Все акции","href":"/credits","version":"secondary"}}},{"type":"ExchangeRateTile","style":["col-span-4"]},{"type":"MobileAppTile","style":["col-span-4"],"content":{"qr":"data:image/jpeg;base64,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"}},{"type":"Unknown","style":["col-span-12"],"content":{"title":"Неизвестный блок"}},{"type":"Footer","style":["col-span-12"],"content":{"topItems":[{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"Кредитные карты"},{"href":"https://rshb.ru/","text":"Дебетовые карты"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Ипотека"},{"href":"https://rshb.ru/","text":"Вклады и сбережения"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Премиальным клиентам"},{"href":"https://rshb.ru/","text":"Биометрическая регистрация"},{"href":"https://rshb.ru/","text":"Перевод денег"},{"href":"https://rshb.ru/","text":"Обмен денег"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]},{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"РКО"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Депозиты"},{"href":"https://rshb.ru/","text":"Эквайринг"},{"href":"https://rshb.ru/","text":"Банковские карты"},{"href":"https://rshb.ru/","text":"ВЭД"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Обмен валюты"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Партнёрские программы"},{"href":"https://rshb.ru/","text":"Онлайн-сервисы"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]}],"contacts":[{"text":"+7 (495) 787-7-787","description":"Для звонков из-за границы","type":"tel"},{"text":"example@example.com","description":"Для писем","type":"email"},{"text":"7787","description":"Абонентам МТС, Мегафон, Билайн и Tele2","type":"tel"}],"documents":[{"text":"Информация о процентных ставках по договорам банковского вклада с физическими лицами","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации профессиональным участником рынка ценных бумаг","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации","href":"https://rshb.ru/","target":"_blank"},{"text":"Удостоверяющий центр","href":"https://rshb.ru/","target":"_blank"},{"text":"Финансовая культура","href":"https://rshb.ru/","target":"_blank"}],"socialMedia":[{"href":"https://vk.com"},{"href":"https://ok.ru"},{"href":"https://t.me"}]}}]}');
 
 /***/ })
 
@@ -38592,7 +38617,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(4061),
+  var _require = __webpack_require__(121),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

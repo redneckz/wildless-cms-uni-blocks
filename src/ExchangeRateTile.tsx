@@ -16,10 +16,15 @@ const button: ButtonProps = {
   href: 'https://cbr.ru/currency_base/daily/',
 };
 
-export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context }) => {
+export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context, title }) => {
   const { data } = context.useAsyncData(CBR_EXCHANGE_RATE_URL, fetchExchangeRate);
   return (
-    <Tile className={className} context={context} title="Курсы обмена валют" button={button}>
+    <Tile
+      className={className}
+      context={context}
+      title={title || 'Курсы обмена валют'}
+      button={button}
+    >
       <table>
         <thead>
           <tr>
