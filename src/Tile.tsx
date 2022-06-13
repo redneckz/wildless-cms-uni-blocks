@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Img } from './Img';
-import type { BlockVersion, Picture, UniBlocksComponentProps } from './types';
+import type { BlockVersion, Picture, UniBlockProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
@@ -15,7 +15,7 @@ export interface TileContent {
   version?: BlockVersion;
 }
 
-export interface TileProps extends TileContent, UniBlocksComponentProps {}
+export interface TileProps extends TileContent, UniBlockProps {}
 
 const tileStyleMap: Record<BlockVersion, string> = {
   primary: 'bg-white text-primary-text',
@@ -30,11 +30,11 @@ export const Tile = JSX<TileProps>(
     context,
     title,
     description,
+    children,
     button,
     image,
     items,
     version = 'primary',
-    children,
   }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
@@ -48,11 +48,12 @@ export const Tile = JSX<TileProps>(
           {title && renderTitle(title, className)}
           <div className="flex justify-between h-full">
             <div className="flex flex-col">
-              {description && (
-                <div className="font-normal text-base max-w-[600px] mt-4">{description}</div>
+              {(description || children) && (
+                <div className="font-normal text-base max-w-[600px] mt-4">
+                  {description || children}
+                </div>
               )}
               {renderItems(items, version)}
-              {children}
               {button?.text && (
                 <div className="mt-auto">
                   <Button
@@ -77,9 +78,9 @@ export const Tile = JSX<TileProps>(
 
 function renderItems(items?: string[], version?: BlockVersion) {
   return items?.length ? (
-    <section className="space-y-2.5 mt-5 max-w-[600px]" role="list">
+    <section className="mt-5 max-w-[600px]" role="list">
       {items.map((_, i) => (
-        <BlockItem key={String(i)} text={_} version={version} />
+        <BlockItem key={String(i)} className="mt-2.5" text={_} version={version} />
       ))}
     </section>
   ) : null;

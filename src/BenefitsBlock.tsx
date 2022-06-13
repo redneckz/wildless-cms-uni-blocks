@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { ClockIcon, SignDocsIcon, ComfortableCompIcon, ActualBalanceIcon } from './Icons/index';
-import type { UniBlocksComponentProps, Benefit } from './types';
+import type { UniBlockProps, Benefit } from './types';
 
 const ICONS = { ClockIcon, SignDocsIcon, ComfortableCompIcon, ActualBalanceIcon };
 
@@ -9,7 +9,7 @@ export interface BenefitsBlockContent {
   benefits?: Benefit[];
 }
 
-export interface BenefitsBlockProps extends BenefitsBlockContent, UniBlocksComponentProps {}
+export interface BenefitsBlockProps extends BenefitsBlockContent, UniBlockProps {}
 
 export const BenefitsBlock = JSX<BenefitsBlockProps>(({ className, title, benefits }) => {
   return (

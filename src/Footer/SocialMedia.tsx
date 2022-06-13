@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent, UniBlocksComponentProps } from '../types';
+import type { LinkContent, UniBlockProps } from '../types';
 import { TelegramIcon, VKIcon, OkIcon } from '../Icons/index';
 import { useLink } from '../useLink';
 
@@ -9,7 +9,7 @@ const ICONS_MAP = [
   { origins: ['ok.ru'], icon: OkIcon },
 ];
 
-export interface SocialMediaProps extends UniBlocksComponentProps {
+export interface SocialMediaProps extends UniBlockProps {
   media?: Omit<LinkContent, 'text'>[];
 }
 

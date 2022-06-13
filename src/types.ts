@@ -79,7 +79,7 @@ export interface Picture extends Img, ImgSource {
   sources?: ImgSource[];
 }
 
-export interface UniBlocksComponentProps {
+export interface UniBlockProps {
   className?: string;
   context: ContentPageContext;
 }

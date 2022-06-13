@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ProductBlockInnerContent } from './ProductBlockInner';
 import { ProductBlockInner } from './ProductBlockInner';
-import type { UniBlocksComponentProps } from './types';
+import type { UniBlockProps } from './types';
 
 interface ProductGalleryNav {
   title: string;
@@ -18,7 +18,7 @@ export interface ProductGalleryContent {
   slides?: ProductSlideContent[];
 }
 
-export interface ProductGalleryProps extends ProductGalleryContent, UniBlocksComponentProps {}
+export interface ProductGalleryProps extends ProductGalleryContent, UniBlockProps {}
 
 export const ProductGallery = JSX<ProductGalleryProps>(
   ({ className, context, duration = 0, slides = [] }) => {

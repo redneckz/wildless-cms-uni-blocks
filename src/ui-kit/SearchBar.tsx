@@ -1,8 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { UniBlocksComponentProps } from '../types';
+import type { UniBlockProps } from '../types';
 import { LoupeIcon } from '../Icons/index';
 
-export const SearchBar = JSX<UniBlocksComponentProps>(({ className, context }) => {
+export const SearchBar = JSX<UniBlockProps>(({ className, context }) => {
   const search = context.useSearch();
   return (
     <form className={`relative ${className || ''}`}>

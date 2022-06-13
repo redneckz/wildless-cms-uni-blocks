@@ -1,9 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { ProductBlockInner } from './ProductBlockInner';
 import type { ProductBlockInnerContent } from './ProductBlockInner';
-import type { UniBlocksComponentProps } from './types';
+import type { UniBlockProps } from './types';
 
-export interface ProductBlockProps extends ProductBlockInnerContent, UniBlocksComponentProps {}
+export interface ProductBlockProps extends ProductBlockInnerContent, UniBlockProps {}
 
 export const ProductBlock = JSX<ProductBlockProps>((props) => {
   const className = props.className;

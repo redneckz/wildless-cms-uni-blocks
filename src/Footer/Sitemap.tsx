@@ -1,10 +1,10 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { ContentPageContext } from '../ContentPageContext';
 import { mergeTopItems } from '../mergeTopItems';
-import type { LinkContent, TopMenuItem, UniBlocksComponentProps } from '../types';
+import type { LinkContent, TopMenuItem, UniBlockProps } from '../types';
 import { useLink } from '../useLink';
 import { useSitemap } from '../useSitemap';
-export interface SitemapProps extends UniBlocksComponentProps {
+export interface SitemapProps extends UniBlockProps {
   items?: TopMenuItem[];
 }
 

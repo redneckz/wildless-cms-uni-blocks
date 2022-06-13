@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon } from './Icons/index';
 import { Img } from './Img';
-import type { Picture, UniBlocksComponentProps, Benefit } from './types';
+import type { Picture, UniBlockProps, Benefit } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
@@ -20,7 +20,7 @@ export interface ProductBlockInnerContent {
   buttons?: ButtonProps[];
 }
 
-export interface ProductBlockInnerProps extends ProductBlockInnerContent, UniBlocksComponentProps {}
+export interface ProductBlockInnerProps extends ProductBlockInnerContent, UniBlockProps {}
 
 export const ProductBlockInner = JSX<ProductBlockInnerProps>(
   ({ className, context, title, description, breadcrumbs, benefits, buttons, image, items }) => {

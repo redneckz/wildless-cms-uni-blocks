@@ -60,7 +60,8 @@
   "files": [
     "lib",
     "dist",
-    "fonts"
+    "fonts",
+    "src"
   ],
   "author": {
     "name": "redneckz",

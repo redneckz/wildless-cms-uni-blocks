@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { mergeTopItems } from '../mergeTopItems';
-import type { UniBlocksComponentProps } from '../types';
+import type { UniBlockProps } from '../types';
 import { HeaderItem } from '../ui-kit/HeaderItem';
 import { Logo } from '../ui-kit/Logo';
 import { TopItem } from '../ui-kit/TopItem';
@@ -11,7 +11,7 @@ import { HeaderSecondaryMenu } from './HeaderSecondaryMenu';
 import { isSubItemActive } from './isSubItemActive';
 import { isTopItemActive } from './isTopItemActive';
 
-export interface HeaderProps extends HeaderContent, UniBlocksComponentProps {}
+export interface HeaderProps extends HeaderContent, UniBlockProps {}
 
 export const Header = JSX<HeaderProps>(({ className, location, context, topItems }) => {
   const router = context.useRouter();

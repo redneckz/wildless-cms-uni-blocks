@@ -318,6 +318,13 @@
       }
     },
     {
+      "type": "Unknown",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Неизвестный блок"
+      }
+    },
+    {
       "type": "Footer",
       "style": ["col-span-12"],
       "content": {

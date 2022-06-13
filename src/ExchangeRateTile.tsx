@@ -1,13 +1,13 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Tile } from './Tile';
-import type { UniBlocksComponentProps } from './types';
+import type { UniBlockProps } from './types';
 import { ButtonProps } from './ui-kit/Button';
 
 export interface ExchangeRateTileContent {
   title?: string;
 }
 
-export interface ExchangeRateTileProps extends ExchangeRateTileContent, UniBlocksComponentProps {}
+export interface ExchangeRateTileProps extends ExchangeRateTileContent, UniBlockProps {}
 
 const CBR_EXCHANGE_RATE_URL = 'https://www.cbr-xml-daily.ru/daily_json.js';
 
@@ -20,12 +20,11 @@ export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context
   const { data } = context.useAsyncData(CBR_EXCHANGE_RATE_URL, fetchExchangeRate);
   return (
     <Tile className={className} context={context} title="Курсы обмена валют" button={button}>
-      <table className="max-w-[600px] mt-4">
+      <table>
         <thead>
           <tr>
-            {renderTHeadItem('Валюта')}
-            {renderTHeadItem('Купить', 'pl-11')}
-            {renderTHeadItem('Продать', 'pl-11')}
+            {renderTH('Валюта')}
+            {renderTH('Курс', 'pl-11')}
           </tr>
         </thead>
         <tbody>
@@ -33,9 +32,8 @@ export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context
             const value = (data?.Valute || {})[key]?.Value;
             return (
               <tr key={key}>
-                {renderTBodyItem(key, 'pt-4')}
-                {renderTBodyItem(formatCurrency(value), 'pl-11 pt-4')}
-                {renderTBodyItem(value ? formatCurrency(value - 1) : '', 'pl-11 pt-4')}
+                {renderTR(key, 'pt-4')}
+                {renderTR(formatCurrency(value), 'pl-11 pt-4')}
               </tr>
             );
           })}
@@ -45,11 +43,11 @@ export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context
   );
 });
 
-const renderTHeadItem = (title: string, className: string = '') => (
+const renderTH = (title: string, className: string = '') => (
   <th className={`text-left font-normal text-sm text-secondary-text ${className}`}>{title}</th>
 );
 
-const renderTBodyItem = (text: string, className: string = '') => (
+const renderTR = (text: string, className: string = '') => (
   <td className={`text-left font-normal text-base text-primary-text ${className}`}>{text}</td>
 );
 

@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { NewDocIcon, PassSendIcon, ActualBalanceIcon } from './Icons/index';
-import type { UniBlocksComponentProps } from './types';
+import type { UniBlockProps } from './types';
 
 const ICONS = { NewDocIcon, PassSendIcon, ActualBalanceIcon };
 export interface Step {
@@ -14,7 +14,7 @@ export interface StepsBlockContent {
   steps?: Step[];
 }
 
-export interface StepsBlockProps extends StepsBlockContent, UniBlocksComponentProps {}
+export interface StepsBlockProps extends StepsBlockContent, UniBlockProps {}
 
 export const StepsBlock = JSX<StepsBlockProps>(({ className, title, steps }) => {
   return (

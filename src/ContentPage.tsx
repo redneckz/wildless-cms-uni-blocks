@@ -1,7 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Blocks } from './Blocks';
+import { Blocks } from './Blocks'; // TODO Lazy load
 import { LikeControl } from './LikeControl';
-import type { BlockDef, ContentPageDef, UniBlocksComponentProps } from './types';
+import { Placeholder } from './Placeholder';
+import type { BlockDef, ContentPageDef, UniBlockProps } from './types';
 
 interface BlockDecoratorProps<VNode> {
   blockClassName: string;
@@ -14,7 +15,7 @@ export type BlockDecorator<VNode = any> = (
   index?: number | string,
 ) => any;
 
-export interface ContentPageProps extends UniBlocksComponentProps {
+export interface ContentPageProps extends UniBlockProps {
   data: ContentPageDef;
   blockDecorator?: BlockDecorator;
 }
@@ -49,10 +50,9 @@ export const ContentPage = JSX<ContentPageProps>(
       const { type } = block;
       if (!(type in Blocks)) {
         console.warn(`No block with "${type}" is registered`);
-        return null;
       }
 
-      const BlockComponent = Blocks[type as keyof typeof Blocks];
+      const BlockComponent = Blocks[type as keyof typeof Blocks] || Placeholder;
       return blockDecorator(
         {
           blockClassName: style2className(block.style),
