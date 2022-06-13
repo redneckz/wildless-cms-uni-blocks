@@ -58,6 +58,7 @@
               ],
               "image": {
                 "src": "money-1.png",
+                "title": "деньги",
                 "format": "webp",
                 "size": {
                   "width": 220,
@@ -89,6 +90,7 @@
               ],
               "image": {
                 "src": "worker.png",
+                "title": "Рабочий",
                 "format": "webp",
                 "size": {
                   "width": 220,
@@ -120,6 +122,7 @@
               ],
               "image": {
                 "src": "credit-card-1.png",
+                "title": "Кредитка",
                 "format": "webp",
                 "size": {
                   "width": 220,
@@ -151,6 +154,7 @@
               ],
               "image": {
                 "src": "credit-card-1.png",
+                "title": "Кредитка",
                 "format": "webp",
                 "size": {
                   "width": 220,
@@ -179,7 +183,7 @@
         },
         "image": {
           "src": "money-1.png",
-          "alt": "Money",
+          "title": "деньги",
           "format": "webp",
           "size": {
             "width": 220,
@@ -216,7 +220,7 @@
         },
         "image": {
           "src": "credit-card-1.png",
-          "alt": "Credit card",
+          "title": "Кредитка",
           "format": "webp",
           "size": {
             "width": 220,
@@ -265,7 +269,7 @@
         },
         "image": {
           "src": "globe-1.png",
-          "alt": "Globe",
+          "title": "Глобус",
           "format": "webp",
           "size": {
             "width": 220,
@@ -316,6 +320,24 @@
           "version": "secondary"
         }
       }
+    },
+    {
+      "type": "Tile",
+      "style": ["col-span-8"],
+      "content": {
+        "title": "Акции и спецпредложения",
+        "version": "secondary",
+        "description": "Пенсионный кредит по специальной процентной ставке",
+        "button": {
+          "text": "Все акции",
+          "href": "/credits",
+          "version": "secondary"
+        }
+      }
+    },
+    {
+      "type": "ExchangeRateTile",
+      "style": ["col-span-4"]
     },
     {
       "type": "Unknown",

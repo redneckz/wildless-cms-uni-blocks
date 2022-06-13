@@ -31,6 +31,7 @@ export const ProductGallery = JSX<ProductGalleryProps>(
         <div
           className={`flex transition duration-1000`}
           style={{ transform: `translateX(-${activeSlideIndex}00%)` }}
+          role="list"
         >
           {galleryBlocks.map((_, i) => renderProductBlock(_, i, context))}
         </div>
@@ -55,7 +56,7 @@ export const ProductGallery = JSX<ProductGalleryProps>(
 
 function renderProductBlock(block: ProductBlockInnerContent, i: number, context) {
   return (
-    <section key={String(i)} className="grow-0 shrink-0 basis-full" role="list">
+    <section key={String(i)} className="grow-0 shrink-0 basis-full" role="listitem">
       <div className="p-11 pr-[7.5rem] ">
         <ProductBlockInner context={context} {...block} />
       </div>
