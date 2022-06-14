@@ -13,7 +13,7 @@ export const Img = JSX<TextWithImageProps>(({ className, image }) => (
           <source key={`${index}_${src}`} srcSet={src} type={formatToMimeType(format)} />
         ))
       : null}
-    <img src={image.src} alt={image.alt} title={image.title} {...image?.size} />
+    <img src={image.src} alt={image.alt || image.title} title={image.title} {...image?.size} />
   </picture>
 ));
 

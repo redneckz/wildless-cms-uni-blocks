@@ -6,7 +6,7 @@ import { Sitemap } from './Sitemap';
 import { SocialMedia } from './SocialMedia';
 import { HorizontalNavigation } from './HorizontalNavigation';
 import { TextInformation } from './TextInformation';
-import type { LinkContent, UniBlocksComponentProps, ContactInfo, TopMenuItem } from '../types';
+import type { LinkContent, UniBlockProps, ContactInfo, TopMenuItem } from '../types';
 
 const LEFT_COL_WIDTH_FULL_HD = 'w-[280px]';
 const LEFT_COL_WIDTH_SMALL_DESKTOP = 'xl:w-[220px]';
@@ -18,7 +18,7 @@ interface FooterContent {
   socialMedia?: Omit<LinkContent, 'text'>[];
   topItems?: TopMenuItem[];
 }
-export interface FooterProps extends FooterContent, UniBlocksComponentProps {}
+export interface FooterProps extends FooterContent, UniBlockProps {}
 
 export const Footer = JSX<FooterProps>(
   ({ className, documents, relatedEnterprises, contacts, socialMedia, topItems, context }) => {

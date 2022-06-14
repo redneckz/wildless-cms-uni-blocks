@@ -1,5 +1,3 @@
-import type { HeaderContent } from './Header';
-
 export interface Router {
   pathname: string;
   query: Record<string, string | string[] | undefined>;
@@ -21,10 +19,15 @@ export interface Search {
   setTerm: (t: string) => void;
 }
 
+export type AsyncDataHook = <Data, Error = any>(
+  key: string,
+  fetcher: () => Promise<Data>,
+) => { data?: Data; error?: Error };
+
 export interface ContentPageContext {
   useRouter: () => Router;
-  useState: <T>(initialState: T) => [T, (_: T) => void];
-  useSitemap: () => HeaderContent;
+  useState: <State>(initialState: State) => [State, (_: State) => void];
+  useAsyncData: AsyncDataHook;
   useLikeService: () => LikeService;
   useSearch: () => Search;
   handlerDecorator?: HandlerDecorator;

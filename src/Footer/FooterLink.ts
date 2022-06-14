@@ -1,6 +1,6 @@
 import type { LinkContent } from '../types';
-import type { UniBlocksComponentProps } from '../types';
+import type { UniBlockProps } from '../types';
 
-export interface FooterLink extends UniBlocksComponentProps {
+export interface FooterLink extends UniBlockProps {
   links?: LinkContent[];
 }

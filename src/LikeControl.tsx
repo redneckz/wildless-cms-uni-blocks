@@ -1,8 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { LikeButton } from './ui-kit/LikeButton';
-import type { UniBlocksComponentProps } from './types';
+import type { UniBlockProps } from './types';
 
-export const LikeControl = JSX<UniBlocksComponentProps>(({ className, context }) => {
+export const LikeControl = JSX<UniBlockProps>(({ className, context }) => {
   const likeService = context.useLikeService();
 
   return (
