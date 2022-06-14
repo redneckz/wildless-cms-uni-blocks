@@ -19,6 +19,8 @@ export const MobileAppTile = JSX<MobileAppTileProps>(
               src={qr}
               alt={title}
               title={title}
+              width="90"
+              height="90"
               className="w-[90px] h-[90px] bg-secondary-light"
             />
           )}

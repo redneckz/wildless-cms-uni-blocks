@@ -11,6 +11,8 @@ export interface ExchangeRateTileProps extends ExchangeRateTileContent, UniBlock
 
 const CBR_EXCHANGE_RATE_URL = 'https://www.cbr-xml-daily.ru/daily_json.js';
 
+const CURRENCIES_LIST = ['USD', 'EUR'];
+
 const button: ButtonProps = {
   text: 'Все показатели',
   href: 'https://cbr.ru/currency_base/daily/',
@@ -33,12 +35,12 @@ export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context
           </tr>
         </thead>
         <tbody>
-          {['USD', 'EUR'].map((key) => {
+          {CURRENCIES_LIST.map((key) => {
             const value = (data?.Valute || {})[key]?.Value;
             return (
               <tr key={key}>
-                {renderTR(key, 'pt-4')}
-                {renderTR(formatCurrency(value), 'pl-11 pt-4')}
+                {renderTD(key, 'pt-4')}
+                {renderTD(formatCurrency(value), 'pl-11 pt-4')}
               </tr>
             );
           })}
@@ -52,7 +54,7 @@ const renderTH = (title: string, className: string = '') => (
   <th className={`text-left font-normal text-sm text-secondary-text ${className}`}>{title}</th>
 );
 
-const renderTR = (text: string, className: string = '') => (
+const renderTD = (text: string, className: string = '') => (
   <td className={`text-left font-normal text-base text-primary-text ${className}`}>{text}</td>
 );
 

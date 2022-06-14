@@ -31420,19 +31420,20 @@ function renderItems(items, version) {
 
 
 const CBR_EXCHANGE_RATE_URL = 'https://www.cbr-xml-daily.ru/daily_json.js';
+const CURRENCIES_LIST = ['USD', 'EUR'];
 const ExchangeRateTile_button = {
     text: 'Все показатели',
     href: 'https://cbr.ru/currency_base/daily/',
 };
 const ExchangeRateTile = JSX(({ className, context, title }) => {
     const { data } = context.useAsyncData(CBR_EXCHANGE_RATE_URL, fetchExchangeRate);
-    return (jsx(Tile, { className: className, context: context, title: title || 'Курсы обмена валют', button: ExchangeRateTile_button, children: jsxs("table", { children: [jsx("thead", { children: jsxs("tr", { children: [renderTH('Валюта'), renderTH('Курс', 'pl-11')] }) }), jsx("tbody", { children: ['USD', 'EUR'].map((key) => {
+    return (jsx(Tile, { className: className, context: context, title: title || 'Курсы обмена валют', button: ExchangeRateTile_button, children: jsxs("table", { children: [jsx("thead", { children: jsxs("tr", { children: [renderTH('Валюта'), renderTH('Курс', 'pl-11')] }) }), jsx("tbody", { children: CURRENCIES_LIST.map((key) => {
                         const value = (data?.Valute || {})[key]?.Value;
-                        return (jsxs("tr", { children: [renderTR(key, 'pt-4'), renderTR(formatCurrency(value), 'pl-11 pt-4')] }, key));
+                        return (jsxs("tr", { children: [renderTD(key, 'pt-4'), renderTD(formatCurrency(value), 'pl-11 pt-4')] }, key));
                     }) })] }) }));
 });
 const renderTH = (title, className = '') => (jsx("th", { className: `text-left font-normal text-sm text-secondary-text ${className}`, children: title }));
-const renderTR = (text, className = '') => (jsx("td", { className: `text-left font-normal text-base text-primary-text ${className}`, children: text }));
+const renderTD = (text, className = '') => (jsx("td", { className: `text-left font-normal text-base text-primary-text ${className}`, children: text }));
 async function fetchExchangeRate() {
     const response = await fetch(CBR_EXCHANGE_RATE_URL);
     return await response.json();
@@ -31722,7 +31723,7 @@ const Header = JSX(({ className, location, context, topItems }) => {
 
 
 const MobileAppTile = JSX(({ className, context, title = 'Мобильное приложение', qr }) => {
-    return (jsx(Tile, { className: className, context: context, title: title, children: jsxs("div", { className: "flex items-center", children: [qr && (jsx("img", { src: qr, alt: title, title: title, className: "w-[90px] h-[90px] bg-secondary-light" })), jsx("span", { className: "font-normal text-sm text-secondary-text ml-4", children: "\u041D\u0430\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u0430\u043C\u0435\u0440\u0443 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430 \u043D\u0430 QR-\u043A\u043E\u0434 \u0438 \u0441\u043A\u0430\u0447\u0430\u0439\u0442\u0435 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435" })] }) }));
+    return (jsx(Tile, { className: className, context: context, title: title, children: jsxs("div", { className: "flex items-center", children: [qr && (jsx("img", { src: qr, alt: title, title: title, width: "90", height: "90", className: "w-[90px] h-[90px] bg-secondary-light" })), jsx("span", { className: "font-normal text-sm text-secondary-text ml-4", children: "\u041D\u0430\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u0430\u043C\u0435\u0440\u0443 \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0430 \u043D\u0430 QR-\u043A\u043E\u0434 \u0438 \u0441\u043A\u0430\u0447\u0430\u0439\u0442\u0435 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435" })] }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/Placeholder.tsx
