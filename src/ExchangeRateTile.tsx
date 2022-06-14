@@ -1,4 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { DollarIcon, EuroIcon } from './Icons/index';
 import { Tile } from './Tile';
 import type { UniBlockProps } from './types';
 import { ButtonProps } from './ui-kit/Button';
@@ -11,7 +12,11 @@ export interface ExchangeRateTileProps extends ExchangeRateTileContent, UniBlock
 
 const CBR_EXCHANGE_RATE_URL = 'https://www.cbr-xml-daily.ru/daily_json.js';
 
-const CURRENCIES_LIST = ['USD', 'EUR'];
+const CURRENCY_CODES = ['USD', 'EUR'];
+const CURRENCY_ICONS_MAP = {
+  USD: DollarIcon,
+  EUR: EuroIcon,
+};
 
 const button: ButtonProps = {
   text: 'Все показатели',
@@ -30,17 +35,22 @@ export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context
       <table>
         <thead>
           <tr>
-            {renderTH('Валюта')}
-            {renderTH('Курс', 'pl-11')}
+            <CurrencyTH>Валюта</CurrencyTH>
+            <CurrencyTH className="pl-11">Курс</CurrencyTH>
           </tr>
         </thead>
         <tbody>
-          {CURRENCIES_LIST.map((key) => {
-            const value = (data?.Valute || {})[key]?.Value;
+          {CURRENCY_CODES.map((code) => {
+            const value = (data?.Valute || {})[code]?.Value;
             return (
-              <tr key={key}>
-                {renderTD(key, 'pt-4')}
-                {renderTD(formatCurrency(value), 'pl-11 pt-4')}
+              <tr key={code}>
+                <CurrencyTD className="pt-4">
+                  <div className="flex items-center">
+                    {CURRENCY_ICONS_MAP[code] ? CURRENCY_ICONS_MAP[code]() : null}
+                    <span className="ml-2">{code}</span>
+                  </div>
+                </CurrencyTD>
+                <CurrencyTD className="pt-4 pl-11">{formatCurrency(value)}</CurrencyTD>
               </tr>
             );
           })}
@@ -50,13 +60,13 @@ export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context
   );
 });
 
-const renderTH = (title: string, className: string = '') => (
-  <th className={`text-left font-normal text-sm text-secondary-text ${className}`}>{title}</th>
-);
+const CurrencyTH = JSX<{ className?: string }>(({ className = '', children }) => (
+  <th className={`text-left font-normal text-sm text-secondary-text ${className}`}>{children}</th>
+));
 
-const renderTD = (text: string, className: string = '') => (
-  <td className={`text-left font-normal text-base text-primary-text ${className}`}>{text}</td>
-);
+const CurrencyTD = JSX<{ className?: string }>(({ className = '', children }) => (
+  <td className={`text-left font-normal text-base text-primary-text ${className}`}>{children}</td>
+));
 
 async function fetchExchangeRate(): Promise<{
   Valute?: Record<string, { CharCode: string; Name?: string; Value: number; Previous?: number }>;
