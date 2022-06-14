@@ -1,13 +1,14 @@
-import { BenefitsBlock } from './BenefitsBlock';
-import { ExchangeRateTile } from './ExchangeRateTile';
-import { Footer } from './Footer/index';
-import { Header } from './Header/index';
-import { MobileAppTile } from './MobileAppTile';
-import { Placeholder } from './Placeholder';
+import { BenefitsBlock, BenefitsBlockContent } from './BenefitsBlock';
+import { ExchangeRateTile, ExchangeRateTileContent } from './ExchangeRateTile';
+import { Footer, FooterContent } from './Footer/index';
+import { Header, HeaderContent } from './Header/index';
+import { MobileAppTile, MobileAppTileContent } from './MobileAppTile';
+import { Placeholder, PlaceholderContent } from './Placeholder';
 import { ProductBlock } from './ProductBlock';
-import { ProductGallery } from './ProductGallery';
-import { StepsBlock } from './StepsBlock';
-import { Tile } from './Tile';
+import { ProductBlockInnerContent } from './ProductBlockInner';
+import { ProductGallery, ProductGalleryContent } from './ProductGallery';
+import { StepsBlock, StepsBlockContent } from './StepsBlock';
+import { Tile, TileContent } from './Tile';
 
 export const Blocks = {
   Header,
@@ -21,3 +22,15 @@ export const Blocks = {
   ExchangeRateTile,
   MobileAppTile,
 };
+
+export type BlockContent =
+  | HeaderContent
+  | FooterContent
+  | PlaceholderContent
+  | TileContent
+  | ProductBlockInnerContent
+  | StepsBlockContent
+  | BenefitsBlockContent
+  | ProductGalleryContent
+  | ExchangeRateTileContent
+  | MobileAppTileContent;

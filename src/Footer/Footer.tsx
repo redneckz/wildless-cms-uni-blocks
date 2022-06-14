@@ -11,13 +11,14 @@ import type { LinkContent, UniBlockProps, ContactInfo, TopMenuItem } from '../ty
 const LEFT_COL_WIDTH_FULL_HD = 'w-[280px]';
 const LEFT_COL_WIDTH_SMALL_DESKTOP = 'xl:w-[220px]';
 
-interface FooterContent {
+export interface FooterContent {
   documents?: LinkContent[];
   relatedEnterprises?: LinkContent[];
   contacts?: ContactInfo[];
   socialMedia?: Omit<LinkContent, 'text'>[];
   topItems?: TopMenuItem[];
 }
+
 export interface FooterProps extends FooterContent, UniBlockProps {}
 
 export const Footer = JSX<FooterProps>(

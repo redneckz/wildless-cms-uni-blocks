@@ -9,27 +9,12 @@ import type {
   TiffOptions,
   WebpOptions,
 } from 'sharp';
-import type { BenefitsBlockContent } from './BenefitsBlock';
+import type { BlockContent } from './Blocks';
 import type { ContentPageContext } from './ContentPageContext';
-import type { HeaderContent } from './Header/index';
-import type { PlaceholderContent } from './Placeholder';
-import type { ProductBlockInnerContent } from './ProductBlockInner';
-import type { ProductGalleryContent } from './ProductGallery';
-import type { StepsBlockContent } from './StepsBlock';
-import type { TileContent } from './Tile';
-
-export type BlockVersion = 'primary' | 'secondary';
 
 export type ColorPalette = 'pc' | 'bc' | 'eo';
 
-export type BlockContent =
-  | HeaderContent
-  | PlaceholderContent
-  | ProductBlockInnerContent
-  | TileContent
-  | StepsBlockContent
-  | BenefitsBlockContent
-  | ProductGalleryContent;
+export type BlockVersion = 'primary' | 'secondary';
 
 export interface BlockDef {
   type: string;
