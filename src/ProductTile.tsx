@@ -31,11 +31,7 @@ export const ProductTile = JSX<ProductTileProps>(
     const router = context.useRouter();
     const { handlerDecorator } = context;
     return (
-      <section
-        className={`font-sans p-9 rounded-[40px] ${className || ''} ${
-          productTileStyleMap[version]
-        }`}
-      >
+      <section className={`font-sans p-9 ${className || ''} ${productTileStyleMap[version]}`}>
         <div className="flex flex-col w-full">
           {title && (
             <h3 className="font-medium text-title-sm m-0 whitespace-pre-wrap max-w-[600px]">

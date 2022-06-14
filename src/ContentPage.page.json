@@ -60,6 +60,7 @@
                 "src": "money-1.png",
                 "title": "деньги",
                 "format": "webp",
+                "alt": "Кредит наличными",
                 "size": {
                   "width": 220,
                   "height": 220
