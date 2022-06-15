@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { ContentPageContext } from '../ContentPageContext';
+import { Router, HandlerDecorator } from '../ContentPageContext';
 import { mergeTopItems } from '../mergeTopItems';
 import type { LinkContent, TopMenuItem, UniBlockProps } from '../types';
 import { useLink } from '../useLink';
@@ -11,17 +11,19 @@ export interface SitemapProps extends UniBlockProps {
 export const Sitemap = JSX<SitemapProps>(({ className, items, context }) => {
   const sitemap = useSitemap(context.useAsyncData);
   const mergedItems = mergeTopItems(sitemap.topItems, items);
+  const linkParams = {
+    router: context.useRouter(),
+    handlerDecorator: context.handlerDecorator,
+  };
 
   return (
     <div className={`flex items-start justify-start gap-11 xl:gap-5 ${className || ''}`}>
-      {mergedItems?.map((_, i) => renderColumn(_, i, context))}
+      {mergedItems?.map((_, i) => renderColumn(_, i, linkParams))}
     </div>
   );
 });
 
-const renderColumn = (c: TopMenuItem, index: number, context: ContentPageContext) => {
-  const router = context.useRouter();
-  const { handlerDecorator } = context;
+const renderColumn = (c: TopMenuItem, index: number, { router, handlerDecorator }) => {
   const { text, href, items, target } = c;
 
   return (
