@@ -2,6 +2,9 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx,json}'],
+  corePlugins: {
+    filter: false,
+  },
   theme: {
     screens: {
       sm: { min: '640px', max: '767px' },
@@ -73,7 +76,5 @@ module.exports = {
     },
   },
   plugins: [],
-  safelist: [
-    ...Array.from({ length: 12 }, (_, i) => `grid-cols-${i + 1}`), // grid-cols-{1..12}, for ProductGallery block
-  ],
+  safelist: [],
 };
