@@ -8,11 +8,6 @@ export interface SitemapProps extends UniBlockProps {
   items?: TopMenuItem[];
 }
 
-interface LinkParams {
-  router: Router;
-  handlerDecorator?: HandlerDecorator;
-}
-
 export const Sitemap = JSX<SitemapProps>(({ className, items, context }) => {
   const sitemap = useSitemap(context.useAsyncData);
   const mergedItems = mergeTopItems(sitemap.topItems, items);
@@ -28,7 +23,7 @@ export const Sitemap = JSX<SitemapProps>(({ className, items, context }) => {
   );
 });
 
-const renderColumn = (c: TopMenuItem, index: number, linkParams: LinkParams) => {
+const renderColumn = (c: TopMenuItem, index: number, { router, handlerDecorator }) => {
   const { text, href, items, target } = c;
 
   return (
@@ -41,7 +36,7 @@ const renderColumn = (c: TopMenuItem, index: number, linkParams: LinkParams) => 
         {text || `Раздел ${index}`}
       </a>
       {items?.map((_, i) => (
-        <ColumnItem key={String(i)} {...useLink(linkParams, _)} />
+        <ColumnItem key={String(i)} {...useLink({ router, handlerDecorator }, _)} />
       ))}
     </div>
   );
