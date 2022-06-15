@@ -60,6 +60,7 @@
                 "src": "money-1.png",
                 "title": "деньги",
                 "format": "webp",
+                "alt": "Кредит наличными",
                 "size": {
                   "width": 220,
                   "height": 220
@@ -351,6 +352,145 @@
       "style": ["col-span-12"],
       "content": {
         "title": "Неизвестный блок"
+      }
+    },
+    {
+      "type": "ProductTile",
+      "style": ["col-span-6"],
+      "content": {
+        "title": "Акция! “Кредит На все, что хочется!”",
+        "description": "Потребительский кредит на любые цели, без залога и поручительства",
+        "benefits": [
+          {
+            "label": "Кредитный лимит",
+            "description": "до 5 млн Р"
+          },
+          {
+            "label": "Процентная ставка",
+            "description": "от 12,5%"
+          },
+          {
+            "label": "Срок кредитования",
+            "description": "до 5 лет"
+          }
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "/credit-cards",
+          "version": "secondary"
+        },
+        "image": {
+          "src": "card-with-diamond.png",
+          "alt": "Кредиты в РСХБ",
+          "format": "webp",
+          "size": {
+            "width": 220,
+            "height": 220
+          }
+        }
+      }
+    },
+    {
+      "type": "ProductTile",
+      "style": ["col-span-6"],
+      "content": {
+        "title": "Акция! “Пенсионный кредит”",
+        "description": "Потребительский кредит на любые цели, без залога и поручительства",
+        "benefits": [
+          {
+            "label": "Кредитный лимит",
+            "description": "до 3 млн Р"
+          },
+          {
+            "label": "Процентная ставка",
+            "description": "от 12,5%"
+          },
+          {
+            "label": "Срок кредитования",
+            "description": "до 3 лет"
+          }
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "/credit-cards",
+          "target": "_blank",
+          "version": "secondary"
+        },
+        "image": {
+          "src": "letter-with-money.png",
+          "alt": "Пенсионный кредит в РСХБ",
+          "format": "webp",
+          "size": {
+            "width": 220,
+            "height": 220
+          }
+        }
+      }
+    },
+    {
+      "type": "ProductTile",
+      "style": ["col-span-8"],
+      "content": {
+        "title": "Кредит под залог недвижимости",
+        "description": "Без переоформления залогой недвижимости на банк",
+        "benefits": [
+          {
+            "label": "Кредитный лимит",
+            "description": "до 10 млн Р"
+          },
+          {
+            "label": "Процентная ставка",
+            "description": "от 21,5%"
+          },
+          {
+            "label": "Срок кредитования",
+            "description": "до 10 лет"
+          }
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "/credit-cards",
+          "target": "_blank",
+          "version": "secondary"
+        },
+        "image": {
+          "src": "building.png",
+          "alt": "Кредит под залог недвижимости в РСХБ",
+          "format": "webp",
+          "size": {
+            "width": 220,
+            "height": 220
+          }
+        }
+      }
+    },
+    {
+      "type": "ProductTile",
+      "style": ["col-span-4"],
+      "version": "secondary",
+      "content": {
+        "title": "Кредит пенсионный",
+        "description": "Для людей в возрасте до 75 лет",
+        "benefits": [
+          {
+            "label": "Кредитный лимит",
+            "description": "до 3 млн Р"
+          },
+          {
+            "label": "Процентная ставка",
+            "description": "от 16,8%"
+          },
+          {
+            "label": "Срок кредитования",
+            "description": "до 150 лет"
+          }
+        ],
+        "button": {
+          "text": "Подробнее",
+          "href": "/credit-cards",
+          "target": "_blank",
+          "version": "secondary"
+        }
       }
     },
     {
