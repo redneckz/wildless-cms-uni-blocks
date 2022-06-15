@@ -17,3 +17,4 @@ export { Blocks } from './Blocks';
 export { LikeAPI } from './api/LikeAPI';
 
 export * as url from './utils/url';
+export { joinList } from './utils/joinList';

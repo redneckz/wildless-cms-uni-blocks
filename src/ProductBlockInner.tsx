@@ -7,6 +7,7 @@ import type { ButtonProps } from './ui-kit/Button';
 import { Button } from './ui-kit/Button';
 import { Breadcrumb, BreadcrumbProps } from './ui-kit/Breadcrumb';
 import { useLink } from './useLink';
+import { joinList } from './utils/joinList';
 
 const ICONS = { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon };
 
@@ -32,7 +33,7 @@ export const ProductBlockInner = JSX<ProductBlockInnerProps>(
         <div className="flex flex-col">
           {breadcrumbs?.length ? (
             <div className="text-xs mb-6">
-              {join(<span className="text-secondary-text mx-2">/</span>)(
+              {joinList(<span className="text-secondary-text mx-2">/</span>)(
                 breadcrumbs.map((breadcrumb, i) => (
                   <Breadcrumb
                     key={String(i)}
@@ -57,9 +58,9 @@ export const ProductBlockInner = JSX<ProductBlockInnerProps>(
             <div className="flex gap-6 mt-7">{benefits.map(renderBenefit)}</div>
           ) : null}
           {items?.length ? (
-            <section className="space-y-2.5 mt-5" role="list">
+            <section className="mt-5" role="list">
               {items.map((_, i) => (
-                <BlockItem key={String(i)} text={_} />
+                <BlockItem className="mb-2" key={String(i)} text={_} />
               ))}
             </section>
           ) : null}

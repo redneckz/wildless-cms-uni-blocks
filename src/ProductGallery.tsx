@@ -29,16 +29,14 @@ export const ProductGallery = JSX<ProductGalleryProps>(
     return (
       <section className={`font-sans bg-white overflow-hidden w-100 ${className || ''}`}>
         <div
-          className={`flex transition duration-1000`}
+          className={`flex duration-1000`}
           style={{ transform: `translateX(-${activeSlideIndex}00%)` }}
           role="list"
         >
           {galleryBlocks.map((_, i) => renderProductBlock(_, i, context))}
         </div>
 
-        <div
-          className={`border-0 border-t border-solid border-main-divider grid grid-cols-${galleryNav.length}`}
-        >
+        <div className={`border-t border-solid border-main-divider flex`}>
           {galleryNav.map((slide, i) =>
             renderNavButton({
               slide,
@@ -73,7 +71,7 @@ function renderNavButton({ slide, i, activeSlideIndex, onClick, duration }) {
       type="button"
       key={String(i)}
       onClick={onClick}
-      className={`group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 py-4`}
+      className={`group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 py-4 grow basis-0`}
     >
       <div className="border-0 border-r border-solid border-main-divider px-6">
         <div className={`text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`}>
