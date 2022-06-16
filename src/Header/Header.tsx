@@ -42,7 +42,7 @@ export const Header = JSX<HeaderProps>(({ className, location, context, topItems
   ));
 
   return (
-    <header className={`pt-5 pb-8 px-20 bg-white rounded-bl-3xl rounded-br-3xl ${className || ''}`}>
+    <header className={`pt-5 pb-8 px-20 bg-white ${className || ''}`}>
       <div className="flex items-center">
         <Logo className="mr-8" />
         {topMenu}

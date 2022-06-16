@@ -32,7 +32,7 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(({ location, cl
         {ProfileIcon({ 'aria-hidden': true })}
       </HeaderSecondaryMenuButton>
       <HeaderSecondaryMenuButton
-        className="mr-5 text-main hover:text-secondary-hover min-w-[32px] min-h-[32px]"
+        className="mr-5 text-secondary-light hover:text-secondary-active min-w-[32px] min-h-[32px]"
         ariaLabel="Дополнительные ссылки"
       >
         {GridIcon({ 'aria-hidden': true })}
