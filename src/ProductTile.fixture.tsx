@@ -43,11 +43,13 @@ export default {
             description: 'до 5 лет',
           },
         ]}
-        button={{
-          text: 'Подробнее',
-          href: '/credit-cards',
-          version: 'secondary',
-        }}
+        buttons={[
+          {
+            text: 'Подробнее',
+            href: '/credit-cards',
+            version: 'secondary',
+          },
+        ]}
         image={cardWithMoney}
       />
     </div>
@@ -73,12 +75,14 @@ export default {
             description: 'до 3 лет',
           },
         ]}
-        button={{
-          href: 'https://rshb.ru',
-          text: 'Подробнее',
-          target: '_blank',
-          version: 'secondary',
-        }}
+        buttons={[
+          {
+            href: 'https://rshb.ru',
+            text: 'Подробнее',
+            target: '_blank',
+            version: 'secondary',
+          },
+        ]}
         image={letterWithMoney}
       />
     </div>
@@ -104,12 +108,14 @@ export default {
             description: 'до 10 лет',
           },
         ]}
-        button={{
-          href: 'https://rshb.ru',
-          text: 'Подробнее',
-          target: '_blank',
-          version: 'secondary',
-        }}
+        buttons={[
+          {
+            href: 'https://rshb.ru',
+            text: 'Подробнее',
+            target: '_blank',
+            version: 'secondary',
+          },
+        ]}
         image={building}
       />
     </div>
@@ -135,12 +141,14 @@ export default {
             description: 'до 5 лет',
           },
         ]}
-        button={{
-          href: 'https://rshb.ru',
-          text: 'Подробнее',
-          target: '_blank',
-          version: 'secondary',
-        }}
+        buttons={[
+          {
+            href: 'https://rshb.ru',
+            text: 'Подробнее',
+            target: '_blank',
+            version: 'secondary',
+          },
+        ]}
       />
     </div>
   ),

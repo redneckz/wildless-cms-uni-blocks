@@ -62,8 +62,8 @@
                 "format": "webp",
                 "alt": "Кредит наличными",
                 "size": {
-                  "width": 220,
-                  "height": 220
+                  "width": 280,
+                  "height": 280
                 }
               }
             }
@@ -94,8 +94,8 @@
                 "title": "Рабочий",
                 "format": "webp",
                 "size": {
-                  "width": 220,
-                  "height": 220
+                  "width": 280,
+                  "height": 280
                 }
               }
             }
@@ -126,8 +126,8 @@
                 "title": "Кредитка",
                 "format": "webp",
                 "size": {
-                  "width": 220,
-                  "height": 220
+                  "width": 280,
+                  "height": 280
                 }
               }
             }
@@ -158,8 +158,8 @@
                 "title": "Кредитка",
                 "format": "webp",
                 "size": {
-                  "width": 220,
-                  "height": 220
+                  "width": 280,
+                  "height": 280
                 }
               }
             }
@@ -177,11 +177,13 @@
           "Кредиты наличными на любые цели",
           "Получите деньги без залога и поручителей"
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credit-cards",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "money-1.png",
           "title": "деньги",
@@ -200,11 +202,13 @@
       "content": {
         "title": "Ипотека",
         "description": "Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %",
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ],
         "promo": true
       }
     },
@@ -214,11 +218,13 @@
       "content": {
         "title": "Банковские пластиковые карты",
         "items": ["Счета в разных валютах", "Бесплатное обслуживание", "Кэшбэк до 15% от покупок"],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "credit-card-1.png",
           "title": "Кредитка",
@@ -236,11 +242,13 @@
       "content": {
         "title": "Премиальные продукты",
         "description": "Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус",
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "column-1.png",
           "alt": "Column",
@@ -263,11 +271,13 @@
           "Площадки для создания комфортной жизни за городом",
           "Подробная база вакансий для жителей сельской местности"
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "globe-1.png",
           "title": "Глобус",
@@ -285,11 +295,13 @@
       "content": {
         "title": "Драгоценные металлы",
         "items": ["Счета в драгоценных металлах", "Слитки  и монеты из драгоценных металлов"],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        }
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ]
       }
     },
     {
@@ -298,11 +310,13 @@
       "content": {
         "title": "Банковские ячейки",
         "items": ["Полная конфиденциальность", "Разный размер ячеек", "Оформление доверенностей"],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        }
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ]
       }
     },
     {
@@ -315,11 +329,13 @@
           "Минимальная сумма вклада  от 3000 Р",
           "Минимальный срок вклада от 1 месяца"
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        }
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ]
       }
     },
     {
@@ -329,11 +345,13 @@
         "title": "Акции и спецпредложения",
         "version": "secondary",
         "description": "Пенсионный кредит по специальной процентной ставке",
-        "button": {
-          "text": "Все акции",
-          "href": "/credits",
-          "version": "secondary"
-        }
+        "buttons": [
+          {
+            "text": "Все акции",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ]
       }
     },
     {
@@ -377,11 +395,13 @@
             "description": "до 5 лет"
           }
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credit-cards",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "card-with-diamond.png",
           "alt": "Кредиты в РСХБ",
@@ -413,12 +433,14 @@
             "description": "до 3 лет"
           }
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credit-cards",
-          "target": "_blank",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "target": "_blank",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "letter-with-money.png",
           "alt": "Пенсионный кредит в РСХБ",
@@ -450,12 +472,14 @@
             "description": "до 10 лет"
           }
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credit-cards",
-          "target": "_blank",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "target": "_blank",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "building.png",
           "alt": "Кредит под залог недвижимости в РСХБ",
@@ -488,12 +512,14 @@
             "description": "до 150 лет"
           }
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credit-cards",
-          "target": "_blank",
-          "version": "secondary"
-        }
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "target": "_blank",
+            "version": "secondary"
+          }
+        ]
       }
     },
     {

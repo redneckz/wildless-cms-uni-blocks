@@ -9,7 +9,8 @@ import { ProductBlockInnerContent } from './ProductBlockInner';
 import { ProductGallery, ProductGalleryContent } from './ProductGallery';
 import { StepsBlock, StepsBlockContent } from './StepsBlock';
 import { ProductTile, ProductTileContent } from './ProductTile';
-import { Tile, TileContent } from './Tile';
+import { BaseTileContent } from './BaseTile';
+import { Tile } from './Tile';
 
 export const Blocks = {
   Header,
@@ -29,7 +30,7 @@ export type BlockContent =
   | HeaderContent
   | FooterContent
   | PlaceholderContent
-  | TileContent
+  | BaseTileContent
   | ProductTileContent
   | ProductBlockInnerContent
   | StepsBlockContent

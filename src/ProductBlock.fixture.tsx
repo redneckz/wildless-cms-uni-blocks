@@ -7,8 +7,8 @@ const image: Picture = {
   src: 'money-1.png',
   format: 'webp',
   size: {
-    width: 300,
-    height: 300,
+    width: 280,
+    height: 280,
   },
 };
 

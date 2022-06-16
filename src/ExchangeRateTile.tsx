@@ -30,7 +30,7 @@ export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context
       className={className}
       context={context}
       title={title || 'Курсы обмена валют'}
-      button={button}
+      buttons={[button]}
     >
       <table>
         <thead>
