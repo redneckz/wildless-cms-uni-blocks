@@ -11,10 +11,7 @@ const tileStyleMap: Record<BlockVersion, string> = {
 };
 
 export const Tile = JSX<TileProps>((props) => {
-  const children = props.children;
-  const className = props.className;
-  const version = props.version || 'primary';
-
+  const { children, className, version = 'primary' } = props;
   return (
     <section className={`font-sans p-9 ${className || ''} ${tileStyleMap[version]}`}>
       <BaseTile {...props}>{children}</BaseTile>

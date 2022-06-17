@@ -11,13 +11,11 @@ export interface ProductBlockProps extends ProductBlockInnerContent, UniBlockPro
 }
 
 export const ProductBlock = JSX<ProductBlockProps>((props) => {
-  const context = props.context;
-  const className = props.className;
-  const breadcrumbs = props.breadcrumbs;
+  const { context, className, breadcrumbs } = props;
   const router = context.useRouter();
   const { handlerDecorator } = context;
   return (
-    <section className={`font-sans bg-white px-12 py-10 pr-[7.5rem] ${className || ''}`}>
+    <section className={`font-sans bg-white pl-12 pr-[7.5rem] py-10 ${className || ''}`}>
       {breadcrumbs?.length ? (
         <div className="text-xs mb-6">
           {joinList(<span className="text-secondary-text mx-2">/</span>)(

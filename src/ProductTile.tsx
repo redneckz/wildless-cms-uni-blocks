@@ -10,30 +10,21 @@ export interface ProductTileContent extends BaseTileContent {
 
 export interface ProductTileProps extends ProductTileContent, UniBlockProps {}
 
-export const ProductTile = JSX<ProductTileProps>(
-  ({ className, context, title, description, buttons, image, benefits, version = 'primary' }) => {
-    return (
-      <Tile
-        className={className}
-        context={context}
-        title={title}
-        description={description}
-        buttons={buttons}
-        image={image}
-        version={version}
-      >
-        <div className="flex mt-5 mb-10">
-          {benefits?.length ? (
-            <div className="mr-8">{benefits.map(renderBenefitDescription)}</div>
-          ) : null}
-          {benefits?.length ? (
-            <div className="pt-1">{benefits.map((_, i) => renderBenefitLabel(_, i, version))}</div>
-          ) : null}
-        </div>
-      </Tile>
-    );
-  },
-);
+export const ProductTile = JSX<ProductTileProps>((props) => {
+  const { benefits, version } = props;
+  return (
+    <Tile {...props}>
+      <div className="flex mt-5 mb-10">
+        {benefits?.length ? (
+          <div className="mr-8">{benefits.map(renderBenefitDescription)}</div>
+        ) : null}
+        {benefits?.length ? (
+          <div className="pt-1">{benefits.map((_, i) => renderBenefitLabel(_, i, version))}</div>
+        ) : null}
+      </div>
+    </Tile>
+  );
+});
 
 function renderBenefitLabel(benefit: Benefit, i: number, version = 'primary') {
   const labelStyleMap: Record<BlockVersion, string> = {
