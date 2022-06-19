@@ -1,7 +1,9 @@
 node_modules/
-dist
-lib
-bundle
-coverage
+dist/
+lib/
+module/
+bundle/
+coverage/
+temp/
 .idea
 .DS_Store
