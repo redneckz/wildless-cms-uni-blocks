@@ -74,11 +74,14 @@
     "url": "https://github.com/redneckz/wildless-cms-uni-blocks/issues"
   },
   "scripts": {
-    "build": "rimraf ./lib && tsc --build --verbose && npm run build:commonjs && npm run build:style",
+    "build": "npm run build:lib && npm run build:module && npm run build:commonjs && npm run build:style",
+    "build:lib": "rimraf ./lib && tsc --build --verbose",
+    "postbuild:lib": "replace-in-file --configFile=replace-config.lib.cjs --verbose",
+    "build:module": "rimraf ./module && tsc --outDir module",
+    "postbuild:module": "replace-in-file --configFile=replace-config.module.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
     "build:style": "postcss './src/**/*.css' --env production --dir ./lib",
     "postbuild:style": "npm run size",
-    "postbuild": "replace-in-file --configFile=replace-config.cjs --verbose",
     "size": "size-limit",
     "test": "jest --coverage",
     "cosmos": "cosmos",
