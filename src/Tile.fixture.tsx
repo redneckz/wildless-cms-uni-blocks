@@ -35,11 +35,13 @@ export default {
           'Кредиты наличными на любые цели',
           'Получите деньги без залога и поручителей',
         ]}
-        button={{
-          text: 'Подробнее',
-          href: '/credit-cards',
-          version: 'secondary',
-        }}
+        buttons={[
+          {
+            text: 'Подробнее',
+            href: '/credit-cards',
+            version: 'secondary',
+          },
+        ]}
         image={image}
       />
     </div>
@@ -54,12 +56,14 @@ export default {
         description={
           'Широкий выбор ипотечных программ с государственной поддержкой. Специальные предложения от 12,2 %'
         }
-        button={{
-          href: 'https://rshb.ru',
-          text: 'Подробнее',
-          target: '_blank',
-          version: 'secondary',
-        }}
+        buttons={[
+          {
+            href: 'https://rshb.ru',
+            text: 'Подробнее',
+            target: '_blank',
+            version: 'secondary',
+          },
+        ]}
       />
     </div>
   ),
@@ -70,12 +74,14 @@ export default {
         className="col-span-6"
         title="Банковские пластиковые карты"
         items={['Счета в разных валютах', 'Бесплатное обслуживание', 'Кэшбэк до 15% от покупок']}
-        button={{
-          href: 'https://rshb.ru',
-          text: 'Подробнее',
-          target: '_blank',
-          version: 'secondary',
-        }}
+        buttons={[
+          {
+            href: 'https://rshb.ru',
+            text: 'Подробнее',
+            target: '_blank',
+            version: 'secondary',
+          },
+        ]}
         image={image2}
       />
     </div>
@@ -89,12 +95,14 @@ export default {
         description={
           'Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус'
         }
-        button={{
-          href: 'https://rshb.ru',
-          text: 'Подробнее',
-          target: '_blank',
-          version: 'secondary',
-        }}
+        buttons={[
+          {
+            href: 'https://rshb.ru',
+            text: 'Подробнее',
+            target: '_blank',
+            version: 'secondary',
+          },
+        ]}
         image={image3}
       />
     </div>
@@ -111,12 +119,14 @@ export default {
           'Площадки для создания комфортной жизни за городом',
           'Подробная база вакансий для жителей сельской местности',
         ]}
-        button={{
-          href: 'https://rshb.ru',
-          text: 'Подробнее',
-          target: '_blank',
-          version: 'secondary',
-        }}
+        buttons={[
+          {
+            href: 'https://rshb.ru',
+            text: 'Подробнее',
+            target: '_blank',
+            version: 'secondary',
+          },
+        ]}
         image={image4}
       />
     </div>

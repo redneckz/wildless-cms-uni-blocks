@@ -18,10 +18,12 @@ const CURRENCY_ICONS_MAP = {
   EUR: EuroIcon,
 };
 
-const button: ButtonProps = {
-  text: 'Все показатели',
-  href: 'https://cbr.ru/currency_base/daily/',
-};
+const buttons: ButtonProps[] = [
+  {
+    text: 'Все показатели',
+    href: 'https://cbr.ru/currency_base/daily/',
+  },
+];
 
 export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context, title }) => {
   const { data } = context.useAsyncData(CBR_EXCHANGE_RATE_URL, fetchExchangeRate);
@@ -30,7 +32,7 @@ export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context
       className={className}
       context={context}
       title={title || 'Курсы обмена валют'}
-      button={button}
+      buttons={buttons}
     >
       <table>
         <thead>
