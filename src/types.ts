@@ -94,15 +94,15 @@ export interface Benefit {
 }
 
 export interface DaDataResult {
-  suggestions: DaDataSuggestion<DaDataAddress>[];
+  suggestions?: DaDataSuggestion<DaDataAddress>[];
 }
 
 export interface DaDataSuggestion<T> {
-  value: string;
-  unrestricted_value: string;
-  data: T;
+  value?: string;
+  unrestricted_value?: string;
+  data?: T;
 }
 
 export interface DaDataAddress {
-  city: string | null;
+  city?: string | null;
 }

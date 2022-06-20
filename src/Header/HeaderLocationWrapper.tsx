@@ -1,5 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps, DaDataResult } from '../types';
+import { projectSettings } from '../ProjectSettings';
+import { getCurrentPosition } from '../utils/getCurrentPosition';
 
 interface HeaderLocationContent {
   defaultLocation?: string;
@@ -7,41 +9,37 @@ interface HeaderLocationContent {
 
 export interface HeaderLocationProps extends HeaderLocationContent, UniBlockProps {}
 
-const URL_GET_ADDRESS = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address';
-const TOKEN = '3d9a50a398fe6e919ec0b355ca4d23779f078df4';
+const DADATA_GEO_API_URL = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address';
 
 export const HeaderLocationWrapper = JSX<HeaderLocationProps>(
-  ({ children, context, defaultLocation, ...rest }) => {
-    const { data } = context.useAsyncData(URL_GET_ADDRESS, getFetcherAddress);
+  ({ children, context, defaultLocation = '', ...rest }) => {
+    const [city, getCity] = context.useGeolocation(defaultLocation, getFetcherAddress);
 
-    const city = data?.suggestions?.[0].data.city;
-
-    return children({ location: city || defaultLocation, ...rest });
+    return children({ location: city, onClick: getCity, ...rest });
   },
 );
 
-const getFetcherAddress = async (): Promise<DaDataResult> => {
+const getFetcherAddress = async () => {
   if (!('geolocation' in navigator)) {
-    return new Promise((resolve) => resolve({} as DaDataResult));
+    return null;
   }
 
-  return new Promise((resolve, reject) => {
-    navigator.geolocation.getCurrentPosition(async ({ coords }) => {
-      const response = await fetch(URL_GET_ADDRESS, {
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-          Authorization: 'Token ' + TOKEN,
-        },
-        body: JSON.stringify({
-          lat: coords.latitude,
-          lon: coords.longitude,
-          count: 1,
-        }),
-      });
-      resolve(response.json());
-    }, reject);
+  const coords = await getCurrentPosition();
+  const response = await fetch(DADATA_GEO_API_URL, {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+      Authorization: `Token ${projectSettings.DADATA_TOKEN}`,
+    },
+    body: JSON.stringify({
+      lat: coords.latitude,
+      lon: coords.longitude,
+      count: 1,
+    }),
   });
+
+  const data = (await response.json()) as DaDataResult;
+  return data?.suggestions?.[0]?.data?.city;
 };

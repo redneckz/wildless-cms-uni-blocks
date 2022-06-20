@@ -24,10 +24,16 @@ export type AsyncDataHook = <Data, Error = any>(
   fetcher: () => Promise<Data>,
 ) => { data?: Data; error?: Error };
 
+export type GeolocationHook = <Data>(
+  defaultLocation: string,
+  fetcher: () => Promise<Data>,
+) => [Data, () => void];
+
 export interface ContentPageContext {
   useRouter: () => Router;
   useState: <State>(initialState: State) => [State, (_: State) => void];
   useAsyncData: AsyncDataHook;
+  useGeolocation: GeolocationHook;
   useLikeService: () => LikeService;
   useSearch: () => Search;
   handlerDecorator?: HandlerDecorator;

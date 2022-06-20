@@ -31007,7 +31007,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 8120:
+/***/ 7726:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31110,6 +31110,38 @@ const JSX = Component => {
 
 
 
+;// CONCATENATED MODULE: ./src/ProjectSettings.ts
+const projectSettings = new (class {
+    _ = {
+        PROD_BRANCH: 'master',
+        FORCED_DRAFT_FLOW: false,
+    };
+    setup(_) {
+        this._ = _;
+    }
+    get TEST_BRANCH() {
+        return this._.TEST_BRANCH;
+    }
+    get RC_BRANCH() {
+        return this._.RC_BRANCH;
+    }
+    get PROD_BRANCH() {
+        return this._.PROD_BRANCH;
+    }
+    get FORCED_DRAFT_FLOW() {
+        return this._.FORCED_DRAFT_FLOW;
+    }
+    get ENABLE_ASSIST() {
+        return this._.ENABLE_ASSIST;
+    }
+    get SITEMAP() {
+        return this._.SITEMAP;
+    }
+    get DADATA_TOKEN() {
+        return this._.DADATA_TOKEN;
+    }
+})();
+
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(5893);
 // EXTERNAL MODULE: ./node_modules/react/index.js
@@ -31118,8 +31150,14 @@ var react = __webpack_require__(7294);
 
 
 
+
 const { jsx: setup_fixture_jsx, jsxs: setup_fixture_jsxs } = jsx_runtime;
 setup(setup_fixture_jsx, setup_fixture_jsxs);
+projectSettings.setup({
+    PROD_BRANCH: 'master',
+    FORCED_DRAFT_FLOW: false,
+    DADATA_TOKEN: '3d9a50a398fe6e919ec0b355ca4d23779f078df4',
+});
 const TEST_ORIGIN = 'http://localhost:5001';
 const context = {
     useState: react.useState,
@@ -31139,6 +31177,15 @@ const context = {
             });
         }, [key, fetcher]);
         return { data };
+    },
+    useGeolocation: (defaultLocation, fetcher) => {
+        const [city, setCity] = (0,react.useState)(defaultLocation);
+        const getCity = () => {
+            fetcher().then((_) => {
+                setCity(_);
+            });
+        };
+        return [city, getCity];
     },
     useLikeService: () => ({
         likeCount: 0,
@@ -31528,35 +31575,6 @@ function mergeTopItems(left, right) {
     return substitute(left, right).concat(subtract(right, left));
 }
 
-;// CONCATENATED MODULE: ./src/ProjectSettings.ts
-const projectSettings = new (class {
-    _ = {
-        PROD_BRANCH: 'master',
-        FORCED_DRAFT_FLOW: false,
-    };
-    setup(_) {
-        this._ = _;
-    }
-    get TEST_BRANCH() {
-        return this._.TEST_BRANCH;
-    }
-    get RC_BRANCH() {
-        return this._.RC_BRANCH;
-    }
-    get PROD_BRANCH() {
-        return this._.PROD_BRANCH;
-    }
-    get FORCED_DRAFT_FLOW() {
-        return this._.FORCED_DRAFT_FLOW;
-    }
-    get ENABLE_ASSIST() {
-        return this._.ENABLE_ASSIST;
-    }
-    get SITEMAP() {
-        return this._.SITEMAP;
-    }
-})();
-
 ;// CONCATENATED MODULE: ./src/useSitemap.ts
 
 function useSitemap(useAsyncData) {
@@ -31677,38 +31695,39 @@ const TopItem = JSX(({ className, text, href, target, active, flat, onClick, chi
 
 const HeaderSecondaryMenuButton = JSX(({ className, children, ariaLabel }) => (jsx("button", { type: "button", className: `border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${className || ''}`, disabled: true, "aria-label": ariaLabel, children: children })));
 
+;// CONCATENATED MODULE: ./src/utils/getCurrentPosition.ts
+const getCurrentPosition = async () => new Promise((resolve) => navigator.geolocation.getCurrentPosition(({ coords }) => resolve(coords)));
+
 ;// CONCATENATED MODULE: ./src/Header/HeaderLocationWrapper.tsx
 
-const URL_GET_ADDRESS = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address';
-const TOKEN = '3d9a50a398fe6e919ec0b355ca4d23779f078df4';
-const HeaderLocationWrapper = JSX(({ children, context, defaultLocation, ...rest }) => {
-    const { data } = context.useAsyncData(URL_GET_ADDRESS, getFetcherAddress);
-    const city = data?.suggestions?.[0].data.city;
-    return children({ location: city || defaultLocation, ...rest });
+
+
+const DADATA_GEO_API_URL = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address';
+const HeaderLocationWrapper = JSX(({ children, context, defaultLocation = '', ...rest }) => {
+    const [city, getCity] = context.useGeolocation(defaultLocation, getFetcherAddress);
+    return children({ location: city, onClick: getCity, ...rest });
 });
 const getFetcherAddress = async () => {
     if (!('geolocation' in navigator)) {
-        return new Promise((resolve) => resolve({}));
+        return null;
     }
-    return new Promise((resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(async ({ coords }) => {
-            const response = await fetch(URL_GET_ADDRESS, {
-                method: 'POST',
-                mode: 'cors',
-                headers: {
-                    'Content-Type': 'application/json',
-                    Accept: 'application/json',
-                    Authorization: 'Token ' + TOKEN,
-                },
-                body: JSON.stringify({
-                    lat: coords.latitude,
-                    lon: coords.longitude,
-                    count: 1,
-                }),
-            });
-            resolve(response.json());
-        }, reject);
+    const coords = await getCurrentPosition();
+    const response = await fetch(DADATA_GEO_API_URL, {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+            Authorization: `Token ${projectSettings.DADATA_TOKEN}`,
+        },
+        body: JSON.stringify({
+            lat: coords.latitude,
+            lon: coords.longitude,
+            count: 1,
+        }),
     });
+    const data = (await response.json());
+    return data?.suggestions?.[0]?.data?.city;
 };
 
 ;// CONCATENATED MODULE: ./src/Header/HeaderSecondaryMenu.tsx
@@ -38810,7 +38829,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(8120),
+  var _require = __webpack_require__(7726),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

@@ -5,6 +5,7 @@ export interface ProjectSettings {
   FORCED_DRAFT_FLOW: boolean;
   ENABLE_ASSIST?: boolean;
   SITEMAP?: string;
+  DADATA_TOKEN?: string;
 }
 
 export const projectSettings = new (class implements ProjectSettings {
@@ -34,5 +35,8 @@ export const projectSettings = new (class implements ProjectSettings {
   }
   get SITEMAP() {
     return this._.SITEMAP;
+  }
+  get DADATA_TOKEN() {
+    return this._.DADATA_TOKEN;
   }
 })();
