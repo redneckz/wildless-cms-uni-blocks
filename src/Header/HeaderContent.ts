@@ -1,6 +1,6 @@
 import type { TopMenuItem } from '../types';
 
 export interface HeaderContent {
-  location?: string;
+  defaultLocation?: string;
   topItems?: TopMenuItem[];
 }

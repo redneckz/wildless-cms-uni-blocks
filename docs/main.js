@@ -31007,7 +31007,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 8501:
+/***/ 8120:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31677,14 +31677,49 @@ const TopItem = JSX(({ className, text, href, target, active, flat, onClick, chi
 
 const HeaderSecondaryMenuButton = JSX(({ className, children, ariaLabel }) => (jsx("button", { type: "button", className: `border-0 p-0 w-[24px] flex items-center bg-inherit cursor-pointer ${className || ''}`, disabled: true, "aria-label": ariaLabel, children: children })));
 
+;// CONCATENATED MODULE: ./src/Header/HeaderLocationWrapper.tsx
+
+const URL_GET_ADDRESS = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address';
+const TOKEN = '3d9a50a398fe6e919ec0b355ca4d23779f078df4';
+const HeaderLocationWrapper = JSX(({ children, context, defaultLocation, ...rest }) => {
+    const { data } = context.useAsyncData(URL_GET_ADDRESS, getFetcherAddress);
+    const city = data?.suggestions?.[0].data.city;
+    return children({ location: city || defaultLocation, ...rest });
+});
+const getFetcherAddress = async () => {
+    if (!('geolocation' in navigator)) {
+        return new Promise((resolve) => resolve({}));
+    }
+    return new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(async ({ coords }) => {
+            const response = await fetch(URL_GET_ADDRESS, {
+                method: 'POST',
+                mode: 'cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                    Accept: 'application/json',
+                    Authorization: 'Token ' + TOKEN,
+                },
+                body: JSON.stringify({
+                    lat: coords.latitude,
+                    lon: coords.longitude,
+                    count: 1,
+                }),
+            });
+            resolve(response.json());
+        }, reject);
+    });
+};
+
 ;// CONCATENATED MODULE: ./src/Header/HeaderSecondaryMenu.tsx
 
 
 
 
 
-const HeaderSecondaryMenu = JSX(({ location, className }) => {
-    return (jsxs("div", { className: `flex items-center ${className || ''}`, children: [jsx(TopItem, { className: "mr-5", flat: true, href: "#", text: location, ariaLabel: "\u041C\u0435\u0441\u0442\u043E\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx(TopItem, { className: "mr-7", flat: true, href: "#", text: "\u041E\u0444\u0438\u0441\u044B \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u044B", ariaLabel: "\u0421\u043F\u0438\u0441\u043E\u043A \u0432\u0441\u0435\u0445 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u0445 \u043E\u0444\u0438\u0441\u043E\u0432 \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u043E\u0432" }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", ariaLabel: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443", children: LoupeIcon({ 'aria-hidden': true }) }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", ariaLabel: "\u041F\u0440\u043E\u0444\u0438\u043B\u044C", children: ProfileIcon({ 'aria-hidden': true }) }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-secondary-light hover:text-secondary-active min-w-[32px] min-h-[32px]", ariaLabel: "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438", children: GridIcon({ 'aria-hidden': true }) })] }));
+
+const HeaderSecondaryMenu = JSX(({ context, className, defaultLocation }) => {
+    return (jsxs("div", { className: `flex items-center ${className || ''}`, children: [jsx(HeaderLocationWrapper, { context: context, className: "mr-5", defaultLocation: defaultLocation, children: ({ location, ...rest }) => (jsx(TopItem, { ...rest, flat: true, href: "#", text: location, ariaLabel: "\u041C\u0435\u0441\u0442\u043E\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435" })) }), jsx(TopItem, { className: "mr-7", flat: true, href: "#", text: "\u041E\u0444\u0438\u0441\u044B \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u044B", ariaLabel: "\u0421\u043F\u0438\u0441\u043E\u043A \u0432\u0441\u0435\u0445 \u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u0445 \u043E\u0444\u0438\u0441\u043E\u0432 \u0438 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u043E\u0432" }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", ariaLabel: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443", children: LoupeIcon({ 'aria-hidden': true }) }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-primary-text hover:text-primary-main", ariaLabel: "\u041F\u0440\u043E\u0444\u0438\u043B\u044C", children: ProfileIcon({ 'aria-hidden': true }) }), jsx(HeaderSecondaryMenuButton, { className: "mr-5 text-secondary-light hover:text-secondary-active min-w-[32px] min-h-[32px]", ariaLabel: "\u0414\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435 \u0441\u0441\u044B\u043B\u043A\u0438", children: GridIcon({ 'aria-hidden': true }) })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/Header/isSubItemActive.ts
@@ -31719,7 +31754,7 @@ function isTopItemActive({ href, pathname }) {
 
 
 
-const Header = JSX(({ className, location, context, topItems }) => {
+const Header = JSX(({ className, defaultLocation, context, topItems }) => {
     const router = context.useRouter();
     const sitemap = useSitemap(context.useAsyncData);
     const { handlerDecorator } = context;
@@ -31729,7 +31764,7 @@ const Header = JSX(({ className, location, context, topItems }) => {
     const activeSubItem = subItems?.find(isSubItemActive(router));
     const topMenu = mergedItems.map((_, i) => (jsx(TopItem, { active: _ === activeTopItem, ...useLink({ router, handlerDecorator }, _), ariaLabel: _.text }, String(i))));
     const subMenu = subItems?.map((_) => (jsx(HeaderItem, { className: "mr-8", active: _ === activeSubItem, ...useLink({ router, handlerDecorator }, _) }, _.href)));
-    return (jsxs("header", { className: `pt-5 pb-8 px-20 bg-white ${className || ''}`, children: [jsxs("div", { className: "flex items-center", children: [jsx(Logo, { className: "mr-8" }), topMenu, jsx(HeaderSecondaryMenu, { location: location, className: "ml-auto" })] }), jsx("div", { className: "mt-5 h-[1px] bg-main-divider" }), jsx("nav", { className: "mt-5", children: subMenu })] }));
+    return (jsxs("header", { className: `pt-5 pb-8 px-20 bg-white ${className || ''}`, children: [jsxs("div", { className: "flex items-center", children: [jsx(Logo, { className: "mr-8" }), topMenu, jsx(HeaderSecondaryMenu, { context: context, className: "ml-auto", defaultLocation: defaultLocation })] }), jsx("div", { className: "mt-5 h-[1px] bg-main-divider" }), jsx("nav", { className: "mt-5", children: subMenu })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/Header/index.ts
@@ -32237,7 +32272,7 @@ const DEFAULT_ORIGIN = 'https://rshb.ru/';
 
 
 
-/* harmony default export */ const Header_fixture = (jsx(Header, { context: context, location: "\u041C\u043E\u0441\u043A\u0432\u0430", topItems: [
+/* harmony default export */ const Header_fixture = (jsx(Header, { context: context, defaultLocation: "\u041C\u043E\u0441\u043A\u0432\u0430", topItems: [
         {
             href: 'https://rshb.ru/',
             text: 'Бизнес клиентам',
@@ -38775,7 +38810,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(8501),
+  var _require = __webpack_require__(8120),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;
