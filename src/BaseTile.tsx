@@ -37,11 +37,13 @@ export const BaseTile = JSX<BaseTileProps>(
         {title && renderTitle(title, className)}
         <div className="flex grow justify-between mt-4">
           <div className="flex flex-col justify-between items-start">
-            {description ? (
-              <div className="font-normal text-base max-w-[600px] mb-6">{description}</div>
-            ) : null}
-            {children}
-            {items?.length ? renderItems(items, version) : null}
+            <div>
+              {description ? (
+                <div className="font-normal text-base max-w-[600px] mb-6">{description}</div>
+              ) : null}
+              {children}
+              {items?.length ? renderItems(items, version) : null}
+            </div>
             {buttons?.length ? (
               <div className="flex mt-6 gap-4">
                 {buttons.map((button, index) =>

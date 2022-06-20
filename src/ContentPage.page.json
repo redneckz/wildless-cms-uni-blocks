@@ -42,7 +42,6 @@
             },
             "productBlock": {
               "title": "Ставка от 12,5% годовых на срок до 5 лет!»",
-              "description": "Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.",
               "items": [
                 "Потребительский кредит по специальной процентной ставке",
                 "Получите деньги без залога и поручительства",
@@ -376,6 +375,67 @@
       }
     },
     {
+      "type": "ProductBlock",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Потребительский кредит наличными",
+        "description": "Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.",
+        "breadcrumbs": [
+          {
+            "text": "Главная",
+            "href": "/"
+          },
+          {
+            "text": "Кредитные карты",
+            "href": "/credit"
+          },
+          {
+            "text": "Кредитная карта Своя Union Pay"
+          }
+        ],
+        "benefits": [
+          {
+            "label": "До 5 млн ₽",
+            "description": "Кредитный лимит",
+            "icon": "EmptyWalletIcon"
+          },
+          {
+            "label": "От 16,9%",
+            "description": "Ставка по кредиту",
+            "icon": "PercentageSquareIcon"
+          },
+          {
+            "label": "До 5 лет",
+            "description": "Срок кредитования",
+            "icon": "CalendarIcon"
+          }
+        ],
+        "buttons": [
+          {
+            "href": "https://rshb.ru",
+            "text": "Оформить карту",
+            "target": "_blank",
+            "version": "primary"
+          },
+          {
+            "href": "https://rshb.ru",
+            "text": "Подробнее",
+            "target": "_blank",
+            "version": "secondary"
+          }
+        ],
+        "image": {
+          "src": "money-1.png",
+          "alt": "Кредиты в РСХБ",
+          "format": "webp",
+          "size": {
+            "width": 280,
+            "height": 280
+          }
+        }
+      }
+    },
+    {
       "type": "ProductTile",
       "style": ["col-span-6"],
       "content": {
@@ -518,6 +578,56 @@
             "href": "/credit-cards",
             "target": "_blank",
             "version": "secondary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Tile",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Рефинансирование кредитов",
+        "items": [
+          "Без справок и документов из других банков",
+          "Погашение ранее взятых кредитов в любых банках",
+          "Рефинансировать можно  кредит физического лица, кредитную карту, микрозайм или ипотеку"
+        ],
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "target": "_blank",
+            "version": "secondary"
+          }
+        ],
+        "image": {
+          "src": "money-2.png",
+          "title": "Деньги",
+          "format": "webp",
+          "size": {
+            "width": 200,
+            "height": 200
+          }
+        }
+      }
+    },
+    {
+      "type": "StepsBlock",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Рассчитайте условия на онлайн-калькуляторе и оставьте заявку на потребительский кредит",
+        "steps": [
+          {
+            "label": "Заявка на кредит",
+            "description": "Оставьте онлайн-заявку на потребительский кредит"
+          },
+          {
+            "label": "В случае одобрения",
+            "description": "Менеджер свяжется с вами и согласует встречу"
+          },
+          {
+            "label": "Получение наличных",
+            "description": "Получите наличные в отделении банка"
           }
         ]
       }
