@@ -42,7 +42,6 @@
             },
             "productBlock": {
               "title": "Ставка от 12,5% годовых на срок до 5 лет!»",
-              "description": "Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.",
               "items": [
                 "Потребительский кредит по специальной процентной ставке",
                 "Получите деньги без залога и поручительства",
@@ -62,8 +61,8 @@
                 "format": "webp",
                 "alt": "Кредит наличными",
                 "size": {
-                  "width": 220,
-                  "height": 220
+                  "width": 280,
+                  "height": 280
                 }
               }
             }
@@ -94,8 +93,8 @@
                 "title": "Рабочий",
                 "format": "webp",
                 "size": {
-                  "width": 220,
-                  "height": 220
+                  "width": 280,
+                  "height": 280
                 }
               }
             }
@@ -126,8 +125,8 @@
                 "title": "Кредитка",
                 "format": "webp",
                 "size": {
-                  "width": 220,
-                  "height": 220
+                  "width": 280,
+                  "height": 280
                 }
               }
             }
@@ -158,8 +157,8 @@
                 "title": "Кредитка",
                 "format": "webp",
                 "size": {
-                  "width": 220,
-                  "height": 220
+                  "width": 280,
+                  "height": 280
                 }
               }
             }
@@ -177,11 +176,13 @@
           "Кредиты наличными на любые цели",
           "Получите деньги без залога и поручителей"
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credit-cards",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "money-1.png",
           "title": "деньги",
@@ -200,11 +201,13 @@
       "content": {
         "title": "Ипотека",
         "description": "Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %",
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ],
         "promo": true
       }
     },
@@ -214,11 +217,13 @@
       "content": {
         "title": "Банковские пластиковые карты",
         "items": ["Счета в разных валютах", "Бесплатное обслуживание", "Кэшбэк до 15% от покупок"],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "credit-card-1.png",
           "title": "Кредитка",
@@ -236,11 +241,13 @@
       "content": {
         "title": "Премиальные продукты",
         "description": "Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус",
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "column-1.png",
           "alt": "Column",
@@ -263,11 +270,13 @@
           "Площадки для создания комфортной жизни за городом",
           "Подробная база вакансий для жителей сельской местности"
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "globe-1.png",
           "title": "Глобус",
@@ -285,11 +294,13 @@
       "content": {
         "title": "Драгоценные металлы",
         "items": ["Счета в драгоценных металлах", "Слитки  и монеты из драгоценных металлов"],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        }
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ]
       }
     },
     {
@@ -298,11 +309,13 @@
       "content": {
         "title": "Банковские ячейки",
         "items": ["Полная конфиденциальность", "Разный размер ячеек", "Оформление доверенностей"],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        }
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ]
       }
     },
     {
@@ -315,11 +328,13 @@
           "Минимальная сумма вклада  от 3000 Р",
           "Минимальный срок вклада от 1 месяца"
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credits",
-          "version": "secondary"
-        }
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ]
       }
     },
     {
@@ -329,11 +344,13 @@
         "title": "Акции и спецпредложения",
         "version": "secondary",
         "description": "Пенсионный кредит по специальной процентной ставке",
-        "button": {
-          "text": "Все акции",
-          "href": "/credits",
-          "version": "secondary"
-        }
+        "buttons": [
+          {
+            "text": "Все акции",
+            "href": "/credits",
+            "version": "secondary"
+          }
+        ]
       }
     },
     {
@@ -358,6 +375,67 @@
       }
     },
     {
+      "type": "ProductBlock",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Потребительский кредит наличными",
+        "description": "Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.",
+        "breadcrumbs": [
+          {
+            "text": "Главная",
+            "href": "/"
+          },
+          {
+            "text": "Кредитные карты",
+            "href": "/credit"
+          },
+          {
+            "text": "Кредитная карта Своя Union Pay"
+          }
+        ],
+        "benefits": [
+          {
+            "label": "До 5 млн ₽",
+            "description": "Кредитный лимит",
+            "icon": "EmptyWalletIcon"
+          },
+          {
+            "label": "От 16,9%",
+            "description": "Ставка по кредиту",
+            "icon": "PercentageSquareIcon"
+          },
+          {
+            "label": "До 5 лет",
+            "description": "Срок кредитования",
+            "icon": "CalendarIcon"
+          }
+        ],
+        "buttons": [
+          {
+            "href": "https://rshb.ru",
+            "text": "Оформить карту",
+            "target": "_blank",
+            "version": "primary"
+          },
+          {
+            "href": "https://rshb.ru",
+            "text": "Подробнее",
+            "target": "_blank",
+            "version": "secondary"
+          }
+        ],
+        "image": {
+          "src": "money-1.png",
+          "alt": "Кредиты в РСХБ",
+          "format": "webp",
+          "size": {
+            "width": 280,
+            "height": 280
+          }
+        }
+      }
+    },
+    {
       "type": "ProductTile",
       "style": ["col-span-6"],
       "content": {
@@ -377,11 +455,13 @@
             "description": "до 5 лет"
           }
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credit-cards",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "card-with-diamond.png",
           "alt": "Кредиты в РСХБ",
@@ -413,12 +493,14 @@
             "description": "до 3 лет"
           }
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credit-cards",
-          "target": "_blank",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "target": "_blank",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "letter-with-money.png",
           "alt": "Пенсионный кредит в РСХБ",
@@ -450,12 +532,14 @@
             "description": "до 10 лет"
           }
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credit-cards",
-          "target": "_blank",
-          "version": "secondary"
-        },
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "target": "_blank",
+            "version": "secondary"
+          }
+        ],
         "image": {
           "src": "building.png",
           "alt": "Кредит под залог недвижимости в РСХБ",
@@ -488,12 +572,64 @@
             "description": "до 150 лет"
           }
         ],
-        "button": {
-          "text": "Подробнее",
-          "href": "/credit-cards",
-          "target": "_blank",
-          "version": "secondary"
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "target": "_blank",
+            "version": "secondary"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Tile",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Рефинансирование кредитов",
+        "items": [
+          "Без справок и документов из других банков",
+          "Погашение ранее взятых кредитов в любых банках",
+          "Рефинансировать можно  кредит физического лица, кредитную карту, микрозайм или ипотеку"
+        ],
+        "buttons": [
+          {
+            "text": "Подробнее",
+            "href": "/credit-cards",
+            "target": "_blank",
+            "version": "secondary"
+          }
+        ],
+        "image": {
+          "src": "money-2.png",
+          "title": "Деньги",
+          "format": "webp",
+          "size": {
+            "width": 200,
+            "height": 200
+          }
         }
+      }
+    },
+    {
+      "type": "StepsBlock",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Рассчитайте условия на онлайн-калькуляторе и оставьте заявку на потребительский кредит",
+        "steps": [
+          {
+            "label": "Заявка на кредит",
+            "description": "Оставьте онлайн-заявку на потребительский кредит"
+          },
+          {
+            "label": "В случае одобрения",
+            "description": "Менеджер свяжется с вами и согласует встречу"
+          },
+          {
+            "label": "Получение наличных",
+            "description": "Получите наличные в отделении банка"
+          }
+        ]
       }
     },
     {

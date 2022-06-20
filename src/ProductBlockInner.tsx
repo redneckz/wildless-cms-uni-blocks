@@ -1,78 +1,35 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon } from './Icons/index';
+import type { UniBlockProps, Benefit } from './types';
+import { BaseTile } from './BaseTile';
+import type { BaseTileContent } from './BaseTile';
 import { Img } from './Img';
-import type { Picture, UniBlockProps, Benefit } from './types';
-import { BlockItem } from './ui-kit/BlockItem';
-import type { ButtonProps } from './ui-kit/Button';
-import { Button } from './ui-kit/Button';
-import { Breadcrumb, BreadcrumbProps } from './ui-kit/Breadcrumb';
-import { useLink } from './useLink';
-import { joinList } from './utils/joinList';
 
 const ICONS = { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon };
 
-export interface ProductBlockInnerContent {
-  title?: string;
-  description?: string;
-  breadcrumbs?: BreadcrumbProps[];
-  image?: Picture;
+export interface ProductBlockInnerContent extends BaseTileContent {
   benefits?: Benefit[];
-  items?: string[];
-  buttons?: ButtonProps[];
 }
 
 export interface ProductBlockInnerProps extends ProductBlockInnerContent, UniBlockProps {}
 
 export const ProductBlockInner = JSX<ProductBlockInnerProps>(
-  ({ className, context, title, description, breadcrumbs, benefits, buttons, image, items }) => {
-    const router = context.useRouter();
-    const { handlerDecorator } = context;
-
+  ({ className, context, title, description, benefits, buttons, image, items }) => {
     return (
-      <div className={`font-sans flex justify-between items-stretch ${className || ''}`}>
-        <div className="flex flex-col">
-          {breadcrumbs?.length ? (
-            <div className="text-xs mb-6">
-              {joinList(<span className="text-secondary-text mx-2">/</span>)(
-                breadcrumbs.map((breadcrumb, i) => (
-                  <Breadcrumb
-                    key={String(i)}
-                    {...useLink(
-                      { router, handlerDecorator },
-                      { className: 'text-secondary-text', ...breadcrumb },
-                    )}
-                  />
-                )),
-              )}
-            </div>
-          ) : null}
+      <div className={`flex justify-between items-stretch ${className || ''}`}>
+        <div className={'flex flex-col'}>
           {title && (
             <h1 className="font-medium text-title-lg m-0 whitespace-pre-wrap max-w-[600px]">
               {title}
             </h1>
           )}
-          {description && (
-            <div className="font-normal text-base max-w-[600px] mt-4">{description}</div>
-          )}
-          {benefits?.length ? (
-            <div className="flex gap-6 mt-7">{benefits.map(renderBenefit)}</div>
-          ) : null}
-          {items?.length ? (
-            <section className="mt-5" role="list">
-              {items.map((_, i) => (
-                <BlockItem className="mb-2" key={String(i)} text={_} />
-              ))}
-            </section>
-          ) : null}
-          {buttons?.length ? (
-            <div className="flex mt-auto gap-4">
-              {buttons.map((button, index) =>
-                renderButton(useLink({ router, handlerDecorator }, button), index),
-              )}
-            </div>
-          ) : null}
+          <BaseTile context={context} description={description} items={items} buttons={buttons}>
+            {benefits?.length ? (
+              <div className="flex gap-6 mt-6 mb-12">{benefits.map(renderBenefit)}</div>
+            ) : null}
+          </BaseTile>
         </div>
-        {image?.src && <Img image={image} className="mt-auto" />}
+        {image?.src && <Img className="mt-auto" image={image} />}
       </div>
     );
   },
@@ -94,18 +51,4 @@ function renderBenefit(benefit: Benefit, i: number) {
       </div>
     </div>
   );
-}
-
-function renderButton(button: ButtonProps, i: number) {
-  return button?.text ? (
-    <Button key={String(i)} {...button} className="mt-8" version={button.version} />
-  ) : null;
-}
-
-function join<E>(sep: E): (list: E[]) => E[] {
-  return (list) =>
-    list.reduce(
-      (acc, el, i) => (acc.length ? acc.concat({ ...sep, key: i }, el) : [el]),
-      [] as E[],
-    );
 }
