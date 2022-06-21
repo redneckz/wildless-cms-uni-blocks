@@ -9,9 +9,8 @@ const { jsx, jsxs } = runtime as any;
 setup(jsx, jsxs);
 
 const TEST_ORIGIN = 'http://localhost:5001';
-const DADATA_GEO_API_URL = 'https://10.80.4.9/geolocate';
 
-const DaData = DaDataAPI(DADATA_GEO_API_URL);
+const DaData = DaDataAPI('https://10.80.4.9');
 
 export const context: ContentPageContext = {
   useState,

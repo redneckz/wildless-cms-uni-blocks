@@ -31119,14 +31119,14 @@ const getCurrentPosition = async () => new Promise((resolve) => navigator.geoloc
 
 ;// CONCATENATED MODULE: ./src/api/DaDataAPI.ts
 
-function DaDataAPI(API_URL) {
+function DaDataAPI(baseURL = '') {
     async function getFetcherAddress() {
         if (!('geolocation' in navigator)) {
             return null;
         }
         try {
             const coords = await getCurrentPosition();
-            const response = await fetch(API_URL, {
+            const response = await fetch(`${baseURL}/geolocate`, {
                 method: 'POST',
                 mode: 'cors',
                 body: JSON.stringify({
@@ -31156,8 +31156,7 @@ function DaDataAPI(API_URL) {
 const { jsx: setup_fixture_jsx, jsxs: setup_fixture_jsxs } = jsx_runtime;
 setup(setup_fixture_jsx, setup_fixture_jsxs);
 const TEST_ORIGIN = 'http://localhost:5001';
-const DADATA_GEO_API_URL = 'https://10.80.4.9/geolocate';
-const DaData = DaDataAPI(DADATA_GEO_API_URL);
+const DaData = DaDataAPI('https://10.80.4.9');
 const context = {
     useState: react.useState,
     useRouter: () => ({

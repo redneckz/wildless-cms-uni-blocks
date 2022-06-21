@@ -2,7 +2,7 @@ import { getCurrentPosition } from '../utils/getCurrentPosition';
 
 import type { DaDataResult } from '../types';
 
-export function DaDataAPI(API_URL: string) {
+export function DaDataAPI(baseURL = '') {
   async function getFetcherAddress() {
     if (!('geolocation' in navigator)) {
       return null;
@@ -10,7 +10,7 @@ export function DaDataAPI(API_URL: string) {
 
     try {
       const coords = await getCurrentPosition();
-      const response = await fetch(API_URL, {
+      const response = await fetch(`${baseURL}/geolocate`, {
         method: 'POST',
         mode: 'cors',
         body: JSON.stringify({
