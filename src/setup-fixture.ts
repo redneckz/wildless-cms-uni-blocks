@@ -3,6 +3,7 @@ import { projectSettings } from './ProjectSettings';
 
 import runtime from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
+import { DaDataAPI } from './api/DaDataAPI';
 import type { ContentPageContext } from './ContentPageContext';
 
 const { jsx, jsxs } = runtime as any;
@@ -15,6 +16,9 @@ projectSettings.setup({
 });
 
 const TEST_ORIGIN = 'http://localhost:5001';
+const DADATA_GEO_API_URL = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address';
+
+const DaData = DaDataAPI(DADATA_GEO_API_URL, projectSettings.DADATA_TOKEN!);
 
 export const context: ContentPageContext = {
   useState,
@@ -35,11 +39,11 @@ export const context: ContentPageContext = {
     }, [key, fetcher]);
     return { data };
   },
-  useGeolocation: (defaultLocation, fetcher) => {
+  useGeolocation: (defaultLocation) => {
     const [city, setCity] = useState(defaultLocation);
 
     const getCity = () => {
-      fetcher().then((_) => {
+      DaData.getFetcherAddress().then((_) => {
         setCity(_);
       });
     };

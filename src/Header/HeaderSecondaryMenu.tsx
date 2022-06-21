@@ -2,7 +2,6 @@ import { JSX } from '@redneckz/uni-jsx';
 import { GridIcon, LoupeIcon, ProfileIcon } from '../Icons/index';
 import { TopItem } from '../ui-kit/TopItem';
 import { HeaderSecondaryMenuButton } from './HeaderSecondaryMenuButton';
-import { HeaderLocationWrapper } from './HeaderLocationWrapper';
 import type { UniBlockProps } from '../types';
 
 interface HeaderSecondaryMenuContent {
@@ -13,14 +12,19 @@ interface HeaderSecondaryMenuContent {
 export interface HeaderSecondaryMenuProps extends HeaderSecondaryMenuContent, UniBlockProps {}
 
 export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
-  ({ context, className, defaultLocation }) => {
+  ({ context, className, defaultLocation = '' }) => {
+    const [city, getCity] = context.useGeolocation(defaultLocation);
+
     return (
       <div className={`flex items-center ${className || ''}`}>
-        <HeaderLocationWrapper context={context} className="mr-5" defaultLocation={defaultLocation}>
-          {({ location, ...rest }) => (
-            <TopItem {...rest} flat={true} href="#" text={location} ariaLabel="Местоположение" />
-          )}
-        </HeaderLocationWrapper>
+        <TopItem
+          className="mr-5"
+          flat={true}
+          href="#"
+          text={city}
+          ariaLabel="Местоположение"
+          onClick={getCity}
+        />
         <TopItem
           className="mr-7"
           flat={true}
