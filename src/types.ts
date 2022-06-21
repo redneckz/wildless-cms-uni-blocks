@@ -92,3 +92,17 @@ export interface Benefit {
   description?: string;
   icon?: string;
 }
+
+export interface DaDataResult {
+  suggestions?: DaDataSuggestion<DaDataAddress>[];
+}
+
+export interface DaDataSuggestion<T> {
+  value?: string;
+  unrestricted_value?: string;
+  data?: T;
+}
+
+export interface DaDataAddress {
+  city?: string | null;
+}

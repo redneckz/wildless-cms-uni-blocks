@@ -4,7 +4,7 @@ import { Header } from './Header';
 export default (
   <Header
     context={context}
-    location="Москва"
+    defaultLocation="Москва"
     topItems={[
       {
         href: 'https://rshb.ru/',

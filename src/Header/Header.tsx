@@ -13,7 +13,7 @@ import { isTopItemActive } from './isTopItemActive';
 
 export interface HeaderProps extends HeaderContent, UniBlockProps {}
 
-export const Header = JSX<HeaderProps>(({ className, location, context, topItems }) => {
+export const Header = JSX<HeaderProps>(({ className, defaultLocation, context, topItems }) => {
   const router = context.useRouter();
   const sitemap = useSitemap(context.useAsyncData);
   const { handlerDecorator } = context;
@@ -46,7 +46,11 @@ export const Header = JSX<HeaderProps>(({ className, location, context, topItems
       <div className="flex items-center">
         <Logo className="mr-8" />
         {topMenu}
-        <HeaderSecondaryMenu location={location} className="ml-auto" />
+        <HeaderSecondaryMenu
+          context={context}
+          className="ml-auto"
+          defaultLocation={defaultLocation}
+        />
       </div>
       <div className="mt-5 h-[1px] bg-main-divider" />
       <nav className="mt-5">{subMenu}</nav>

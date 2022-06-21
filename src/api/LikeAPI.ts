@@ -10,7 +10,7 @@ export interface LikeData {
 const AUTH_PREFIX = 'guest';
 const STORAGE_KEY = 'likesToken';
 
-export function LikeAPI(projectId: string, baseURL: string) {
+export function LikeAPI(projectId: string, baseURL = '') {
   async function getLikeCount(...nodeIds: string[]): Promise<LikeData[]> {
     if (!nodeIds.length) {
       return [];
@@ -19,14 +19,17 @@ export function LikeAPI(projectId: string, baseURL: string) {
     const { token: Authorization } = await auth();
 
     try {
-      const response = await fetch(`/assist/v1/public/projects/${projectId}/nodes/likes`, {
-        method: 'POST',
-        mode: 'cors',
-        headers: { 'Content-Type': 'application/json', Authorization },
-        body: JSON.stringify({
-          node_ids: nodeIds,
-        }),
-      });
+      const response = await fetch(
+        `${baseURL}/assist/v1/public/projects/${projectId}/nodes/likes`,
+        {
+          method: 'POST',
+          mode: 'cors',
+          headers: { 'Content-Type': 'application/json', Authorization },
+          body: JSON.stringify({
+            node_ids: nodeIds,
+          }),
+        },
+      );
 
       const { likes } = await response.json();
 

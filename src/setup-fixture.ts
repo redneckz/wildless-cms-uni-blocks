@@ -1,12 +1,16 @@
 import { setup } from '@redneckz/uni-jsx';
+
 import runtime from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
+import { DaDataAPI } from './api/DaDataAPI';
 import type { ContentPageContext } from './ContentPageContext';
 
 const { jsx, jsxs } = runtime as any;
 setup(jsx, jsxs);
 
 const TEST_ORIGIN = 'http://localhost:5001';
+
+const DaData = DaDataAPI('https://10.80.4.9');
 
 export const context: ContentPageContext = {
   useState,
@@ -26,6 +30,17 @@ export const context: ContentPageContext = {
       });
     }, [key, fetcher]);
     return { data };
+  },
+  useGeolocation: (defaultLocation) => {
+    const [city, setCity] = useState(defaultLocation);
+
+    const getCity = () => {
+      DaData.getFetcherAddress().then((_) => {
+        setCity(_ || defaultLocation);
+      });
+    };
+
+    return [city, getCity];
   },
   useLikeService: () => ({
     likeCount: 0,
