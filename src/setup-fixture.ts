@@ -1,5 +1,4 @@
 import { setup } from '@redneckz/uni-jsx';
-import { projectSettings } from './ProjectSettings';
 
 import runtime from 'react/jsx-runtime';
 import { useState, useEffect } from 'react';
@@ -9,16 +8,10 @@ import type { ContentPageContext } from './ContentPageContext';
 const { jsx, jsxs } = runtime as any;
 setup(jsx, jsxs);
 
-projectSettings.setup({
-  PROD_BRANCH: 'master',
-  FORCED_DRAFT_FLOW: false,
-  DADATA_TOKEN: '3d9a50a398fe6e919ec0b355ca4d23779f078df4',
-});
-
 const TEST_ORIGIN = 'http://localhost:5001';
-const DADATA_GEO_API_URL = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address';
+const DADATA_GEO_API_URL = 'https://10.80.4.9/geolocate';
 
-const DaData = DaDataAPI(DADATA_GEO_API_URL, projectSettings.DADATA_TOKEN!);
+const DaData = DaDataAPI(DADATA_GEO_API_URL);
 
 export const context: ContentPageContext = {
   useState,
@@ -44,7 +37,7 @@ export const context: ContentPageContext = {
 
     const getCity = () => {
       DaData.getFetcherAddress().then((_) => {
-        setCity(_);
+        setCity(_ || defaultLocation);
       });
     };
 

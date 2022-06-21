@@ -31110,38 +31110,6 @@ const JSX = Component => {
 
 
 
-;// CONCATENATED MODULE: ./src/ProjectSettings.ts
-const projectSettings = new (class {
-    _ = {
-        PROD_BRANCH: 'master',
-        FORCED_DRAFT_FLOW: false,
-    };
-    setup(_) {
-        this._ = _;
-    }
-    get TEST_BRANCH() {
-        return this._.TEST_BRANCH;
-    }
-    get RC_BRANCH() {
-        return this._.RC_BRANCH;
-    }
-    get PROD_BRANCH() {
-        return this._.PROD_BRANCH;
-    }
-    get FORCED_DRAFT_FLOW() {
-        return this._.FORCED_DRAFT_FLOW;
-    }
-    get ENABLE_ASSIST() {
-        return this._.ENABLE_ASSIST;
-    }
-    get SITEMAP() {
-        return this._.SITEMAP;
-    }
-    get DADATA_TOKEN() {
-        return this._.DADATA_TOKEN;
-    }
-})();
-
 // EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(5893);
 // EXTERNAL MODULE: ./node_modules/react/index.js
@@ -31151,28 +31119,29 @@ const getCurrentPosition = async () => new Promise((resolve) => navigator.geoloc
 
 ;// CONCATENATED MODULE: ./src/api/DaDataAPI.ts
 
-function DaDataAPI(API_URL, TOKEN) {
+function DaDataAPI(API_URL) {
     async function getFetcherAddress() {
         if (!('geolocation' in navigator)) {
             return null;
         }
-        const coords = await getCurrentPosition();
-        const response = await fetch(API_URL, {
-            method: 'POST',
-            mode: 'cors',
-            headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json',
-                Authorization: `Token ${TOKEN}`,
-            },
-            body: JSON.stringify({
-                lat: coords.latitude,
-                lon: coords.longitude,
-                count: 1,
-            }),
-        });
-        const data = (await response.json());
-        return data?.suggestions?.[0]?.data?.city;
+        try {
+            const coords = await getCurrentPosition();
+            const response = await fetch(API_URL, {
+                method: 'POST',
+                mode: 'cors',
+                body: JSON.stringify({
+                    lat: coords.latitude,
+                    lon: coords.longitude,
+                    count: 1,
+                }),
+            });
+            const data = (await response.json());
+            return data?.suggestions?.[0]?.data?.city;
+        }
+        catch (e) {
+            console.error(e);
+            return null;
+        }
     }
     return {
         getFetcherAddress,
@@ -31184,17 +31153,11 @@ function DaDataAPI(API_URL, TOKEN) {
 
 
 
-
 const { jsx: setup_fixture_jsx, jsxs: setup_fixture_jsxs } = jsx_runtime;
 setup(setup_fixture_jsx, setup_fixture_jsxs);
-projectSettings.setup({
-    PROD_BRANCH: 'master',
-    FORCED_DRAFT_FLOW: false,
-    DADATA_TOKEN: '3d9a50a398fe6e919ec0b355ca4d23779f078df4',
-});
 const TEST_ORIGIN = 'http://localhost:5001';
-const DADATA_GEO_API_URL = 'https://suggestions.dadata.ru/suggestions/api/4_1/rs/geolocate/address';
-const DaData = DaDataAPI(DADATA_GEO_API_URL, projectSettings.DADATA_TOKEN);
+const DADATA_GEO_API_URL = 'https://10.80.4.9/geolocate';
+const DaData = DaDataAPI(DADATA_GEO_API_URL);
 const context = {
     useState: react.useState,
     useRouter: () => ({
@@ -31218,7 +31181,7 @@ const context = {
         const [city, setCity] = (0,react.useState)(defaultLocation);
         const getCity = () => {
             DaData.getFetcherAddress().then((_) => {
-                setCity(_);
+                setCity(_ || defaultLocation);
             });
         };
         return [city, getCity];
@@ -31624,6 +31587,35 @@ const subtract = (minuend, subtrahend) => (minuend || []).filter((_) => !subtrah
 function mergeTopItems(left, right) {
     return substitute(left, right).concat(subtract(right, left));
 }
+
+;// CONCATENATED MODULE: ./src/ProjectSettings.ts
+const projectSettings = new (class {
+    _ = {
+        PROD_BRANCH: 'master',
+        FORCED_DRAFT_FLOW: false,
+    };
+    setup(_) {
+        this._ = _;
+    }
+    get TEST_BRANCH() {
+        return this._.TEST_BRANCH;
+    }
+    get RC_BRANCH() {
+        return this._.RC_BRANCH;
+    }
+    get PROD_BRANCH() {
+        return this._.PROD_BRANCH;
+    }
+    get FORCED_DRAFT_FLOW() {
+        return this._.FORCED_DRAFT_FLOW;
+    }
+    get ENABLE_ASSIST() {
+        return this._.ENABLE_ASSIST;
+    }
+    get SITEMAP() {
+        return this._.SITEMAP;
+    }
+})();
 
 ;// CONCATENATED MODULE: ./src/useSitemap.ts
 
