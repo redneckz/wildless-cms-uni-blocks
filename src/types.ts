@@ -22,6 +22,9 @@ export interface BlockDef {
   version?: BlockVersion;
   content?: BlockContent;
   blocks?: BlockDef[];
+  mobile?: Pick<BlockDef, 'content' | 'style'> & {
+    hidden?: boolean;
+  };
 }
 
 export interface ContentPageMeta {

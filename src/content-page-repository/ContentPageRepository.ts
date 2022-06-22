@@ -1,6 +1,7 @@
 import glob from 'glob';
 import util from 'util';
 import type { ContentPageDef } from '../types';
+import { toMobilePage } from './toMobilePage';
 import type { TransformationOptions } from './TransformationOptions';
 import { transformContentPage } from './transformContentPage';
 
@@ -20,6 +21,11 @@ export function ContentPageRepository({
     return pages.find((content) => content.slug === slug);
   }
 
+  async function getMobilePageBySlug(slug: string): Promise<ContentPageDef | undefined> {
+    const page = await getContentPageBySlug(slug);
+    return page && toMobilePage(page);
+  }
+
   const cache: Record<string, ContentPageDef> = {};
   async function readPage(filePath: string): Promise<ContentPageDef> {
     if (!(filePath in cache)) {
@@ -34,5 +40,6 @@ export function ContentPageRepository({
   return {
     getAllContentPages,
     getContentPageBySlug,
+    getMobilePageBySlug,
   };
 }

@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.54",
+  "version": "0.2.55",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -74,12 +74,11 @@
     "url": "https://github.com/redneckz/wildless-cms-uni-blocks/issues"
   },
   "scripts": {
-    "build": "npm run build:lib && npm run build:module && npm run build:commonjs && npm run build:style",
+    "build": "npm run build:lib && npm run build:commonjs && npm run build:style",
     "build:lib": "rimraf ./lib && tsc --build --verbose",
     "postbuild:lib": "replace-in-file --configFile=replace-config.lib.cjs --verbose",
-    "build:module": "rimraf ./module && tsc --outDir module",
-    "postbuild:module": "replace-in-file --configFile=replace-config.module.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
+    "bundle": "rimraf ./bundle && rollup -c",
     "build:style": "postcss './src/**/*.css' --env production --dir ./lib",
     "postbuild:style": "npm run size",
     "size": "size-limit",
@@ -109,6 +108,8 @@
     "unified": "^10.1.2"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
     "@size-limit/file": "^7.0.8",
     "@types/jest": "^28.1.1",
     "autoprefixer": "^10.4.7",
@@ -125,6 +126,8 @@
     "react-cosmos": "^5.7.2",
     "replace-in-file": "^6.3.5",
     "rimraf": "^3.0.2",
+    "rollup": "^2.75.6",
+    "rollup-plugin-terser": "^7.0.2",
     "size-limit": "^7.0.8",
     "style-loader": "^3.3.1",
     "tailwindcss": "^3.1.1",
