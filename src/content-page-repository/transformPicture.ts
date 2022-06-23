@@ -32,8 +32,7 @@ async function transformImg(
   transformationOptions: TransformationOptions & ImgSource,
 ): Promise<string> {
   const { contentDir, publicDir, format, options, size } = transformationOptions;
-
-  const imgPath = `${path.dirname(pagePath)}/${src}`;
+  const imgPath = `${path.dirname(pagePath)}/${sanitizeSrc(src)}`;
   let chain = sharp(imgPath);
   if (size) chain = chain.resize(size);
   if (format) chain = chain.toFormat(format, options);
@@ -59,3 +58,6 @@ function transformSrc(src: string, { format, size }: TransformationOptions & Img
     String(format) || path.extname(src)
   }`;
 }
+
+const sanitizeSrc = (src: string) =>
+  `${path.basename(src, path.extname(src))}.${path.extname(src).toLowerCase()}`;
