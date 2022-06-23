@@ -12,9 +12,27 @@ const tileStyleMap: Record<BlockVersion, string> = {
 
 export const Tile = JSX<TileProps>((props) => {
   const { children, className, version = 'primary' } = props;
+
   return (
-    <section className={`font-sans p-9 ${className || ''} ${tileStyleMap[version]}`}>
+    <TileSection
+      className={`font-sans p-9 min-h-[320px] box-border ${className || ''} ${
+        tileStyleMap[version]
+      }`}
+    >
       <BaseTile {...props}>{children}</BaseTile>
-    </section>
+    </TileSection>
   );
+});
+
+const TileSection = JSX<{ className?: string }>(({ className = '', children }) => {
+  const colSpanPrefix = 'col-span-';
+  const colSpanStr = className.split(/\s+/).find((_) => _.startsWith(colSpanPrefix));
+  const colSpan = colSpanStr ? parseInt(colSpanStr.substring(colSpanPrefix.length), 10) : 12;
+  if (colSpan <= 6) {
+    return <section className={`pr-9 ${className || ''}`}>{children}</section>;
+  } else if (colSpan <= 8) {
+    return <section className={`pr-[4.75rem] ${className || ''}`}>{children}</section>;
+  } else {
+    return <section className={`pr-[9.4rem] ${className || ''}`}>{children}</section>;
+  }
 });

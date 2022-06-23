@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Tile } from './Tile';
+import { Tile, TileProps } from './Tile';
 import type { UniBlockProps } from './types';
 
 export interface QRCode {
@@ -7,7 +7,7 @@ export interface QRCode {
   href?: string;
 }
 
-export interface MobileAppTileContent {
+export interface MobileAppTileContent extends TileProps {
   title?: string;
   qr?: QRCode;
 }
@@ -15,9 +15,9 @@ export interface MobileAppTileContent {
 export interface MobileAppTileProps extends MobileAppTileContent, UniBlockProps {}
 
 export const MobileAppTile = JSX<MobileAppTileProps>(
-  ({ className, context, title = 'Мобильное приложение', qr }) => {
+  ({ className, context, title = 'Мобильное приложение', qr, buttons = [] }) => {
     return (
-      <Tile className={className} context={context} title={title}>
+      <Tile className={className} context={context} title={title} buttons={buttons}>
         <div className="flex items-center">
           {qr?.src && qr?.href && (
             <a href={qr.href} target="_blank">

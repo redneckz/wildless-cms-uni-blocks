@@ -16,16 +16,16 @@ export interface ProductBlockInnerProps extends ProductBlockInnerContent, UniBlo
 export const ProductBlockInner = JSX<ProductBlockInnerProps>(
   ({ className, context, title, description, benefits, buttons, image, items }) => {
     return (
-      <div className={`flex justify-between items-stretch ${className || ''}`}>
+      <div className={`flex grow justify-between items-stretch ${className || ''}`}>
         <div className={'flex flex-col'}>
           {title && (
-            <h1 className="font-medium text-title-lg m-0 whitespace-pre-wrap max-w-[600px]">
+            <h1 className="font-medium text-title-lg m-0 mb-4 whitespace-pre-wrap max-w-[600px]">
               {title}
             </h1>
           )}
           <BaseTile context={context} description={description} items={items} buttons={buttons}>
             {benefits?.length ? (
-              <div className="flex gap-6 mt-6 mb-12">{benefits.map(renderBenefit)}</div>
+              <div className="flex gap-6 mt-6 mb-3.5">{benefits.map(renderBenefit)}</div>
             ) : null}
           </BaseTile>
         </div>
