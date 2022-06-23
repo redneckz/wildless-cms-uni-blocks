@@ -1,5 +1,5 @@
-import { JSX } from '@redneckz/uni-jsx';
-import { Blocks } from './Blocks'; // TODO Lazy load
+import { JSX, PropsWithChildren } from '@redneckz/uni-jsx';
+import type { BlockContent } from './Blocks';
 import { LikeControl } from './LikeControl';
 import { Placeholder } from './Placeholder';
 import type { BlockDef, ContentPageDef, UniBlockProps } from './types';
@@ -16,6 +16,10 @@ export type BlockDecorator<VNode = any> = (
 ) => any;
 
 export interface ContentPageProps extends UniBlockProps {
+  blocksRegistry: Record<
+    string,
+    (props: PropsWithChildren<UniBlockProps & BlockContent, any>, context?: any) => any
+  >;
   data: ContentPageDef;
   blockDecorator?: BlockDecorator;
 }
@@ -26,8 +30,9 @@ const defaultBlockDecorator: BlockDecorator = ({ blockClassName, block, render }
 export const ContentPage = JSX<ContentPageProps>(
   ({
     className,
-    data: { style: pageStyle, blocks, likeControl, colorPalette = 'pc' },
     context,
+    blocksRegistry,
+    data: { style: pageStyle, blocks, likeControl, colorPalette = 'pc' },
     blockDecorator = defaultBlockDecorator,
   }) => {
     return (
@@ -48,11 +53,11 @@ export const ContentPage = JSX<ContentPageProps>(
 
     function renderBlock(block: BlockDef, i: number) {
       const { type } = block;
-      if (!(type in Blocks)) {
+      if (!(type in blocksRegistry)) {
         console.warn(`No block with "${type}" is registered`);
       }
 
-      const BlockComponent = Blocks[type as keyof typeof Blocks] || Placeholder;
+      const BlockComponent = blocksRegistry[type] || Placeholder;
       return blockDecorator(
         {
           blockClassName: style2className(block.style),

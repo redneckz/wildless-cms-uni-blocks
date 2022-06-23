@@ -1,6 +1,12 @@
 import { context } from './setup-fixture';
 
+import { Blocks } from './Blocks';
+import { toMobilePage } from './content-page-repository/toMobilePage';
 import { BlockDecorator, ContentPage } from './ContentPage';
+import { MobileBlocks } from './MobileBlocks';
+import type { ContentPageDef } from './types';
+
+const data = require('./ContentPage.page.json');
 
 const blockDecorator: BlockDecorator = ({ blockClassName, block, render }, i) => (
   <div
@@ -23,14 +29,28 @@ const blockDecorator: BlockDecorator = ({ blockClassName, block, render }, i) =>
 
 export default {
   default: (
-    <ContentPage context={context} className="bg-main" data={require('./ContentPage.page.json')} />
+    <ContentPage
+      className="bg-main"
+      context={context}
+      blocksRegistry={Blocks}
+      data={data as ContentPageDef}
+    />
+  ),
+  mobile: (
+    <ContentPage
+      className="bg-secondary-text"
+      context={context}
+      blocksRegistry={MobileBlocks}
+      data={toMobilePage(data as ContentPageDef)}
+    />
   ),
   editor: (
     <div style={{ background: "url('grid.svg')", height: '100%' }}>
       <ContentPage
-        context={context}
         className="bg-transparent"
-        data={require('./ContentPage.page.json')}
+        context={context}
+        blocksRegistry={Blocks}
+        data={data as ContentPageDef}
         blockDecorator={blockDecorator}
       />
     </div>
