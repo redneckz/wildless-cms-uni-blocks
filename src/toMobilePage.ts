@@ -1,4 +1,4 @@
-import type { BlockDef, ContentPageDef } from '../types';
+import type { BlockDef, ContentPageDef } from './types';
 
 export function toMobilePage(contentPage: ContentPageDef): ContentPageDef {
   const blocks = contentPage.blocks?.filter(({ mobile }) => !mobile?.hidden).map(toMobileBlock);

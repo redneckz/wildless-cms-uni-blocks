@@ -1,7 +1,7 @@
 import glob from 'glob';
 import util from 'util';
+import { toMobilePage } from '../toMobilePage';
 import type { ContentPageDef } from '../types';
-import { toMobilePage } from './toMobilePage';
 import type { TransformationOptions } from './TransformationOptions';
 import { transformContentPage } from './transformContentPage';
 
