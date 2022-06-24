@@ -2,6 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { BlockVersion, Picture, UniBlockProps } from './types';
 import { BaseTile } from './BaseTile';
 import type { BaseTileContent } from './BaseTile';
+import { getColSpan } from './utils/getColSpan';
 
 export interface TileProps extends BaseTileContent, UniBlockProps {}
 
@@ -14,25 +15,23 @@ export const Tile = JSX<TileProps>((props) => {
   const { children, className, version = 'primary' } = props;
 
   return (
-    <TileSection
+    <section
       className={`font-sans p-9 min-h-[320px] box-border ${className || ''} ${
         tileStyleMap[version]
-      }`}
+      } ${getContainerPaddingRight(className)} `}
     >
       <BaseTile {...props}>{children}</BaseTile>
-    </TileSection>
+    </section>
   );
 });
 
-const TileSection = JSX<{ className?: string }>(({ className = '', children }) => {
-  const colSpanPrefix = 'col-span-';
-  const colSpanStr = className.split(/\s+/).find((_) => _.startsWith(colSpanPrefix));
-  const colSpan = colSpanStr ? parseInt(colSpanStr.substring(colSpanPrefix.length), 10) : 12;
+function getContainerPaddingRight(className: string = '') {
+  const colSpan = getColSpan(className);
   if (colSpan <= 6) {
-    return <section className={`pr-9 ${className || ''}`}>{children}</section>;
+    return 'pr-9';
   } else if (colSpan <= 8) {
-    return <section className={`pr-[4.75rem] ${className || ''}`}>{children}</section>;
+    return 'pr-[4.75rem]';
   } else {
-    return <section className={`pr-[9.4rem] ${className || ''}`}>{children}</section>;
+    return 'pr-[9.4rem]';
   }
-});
+}

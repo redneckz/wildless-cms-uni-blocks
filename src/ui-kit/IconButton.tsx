@@ -5,12 +5,12 @@ import { Button } from './Button';
 
 const ICONS = { AppleIcon, PlayMarket };
 
-export interface ButtonIconProps extends ButtonProps {
+export interface IconButtonProps extends ButtonProps {
   icon?: string;
   aboveText?: string;
 }
 
-export const ButtonIcon = JSX<ButtonIconProps>((props) => {
+export const IconButton = JSX<IconButtonProps>((props) => {
   return (
     <Button {...props}>
       {props.icon ? (

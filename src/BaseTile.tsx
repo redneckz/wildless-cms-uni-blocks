@@ -2,9 +2,10 @@ import { JSX } from '@redneckz/uni-jsx';
 import { Img } from './Img';
 import type { BlockVersion, Picture, UniBlockProps, TitleSize } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
-import type { ButtonIconProps } from './ui-kit/ButtonIcon';
-import { ButtonIcon } from './ui-kit/ButtonIcon';
+import type { IconButtonProps } from './ui-kit/IconButton';
+import { IconButton } from './ui-kit/IconButton';
 import { useLink } from './useLink';
+import { getColSpan } from './utils/getColSpan';
 
 export interface BaseTileContent {
   title?: string;
@@ -12,7 +13,7 @@ export interface BaseTileContent {
   description?: string;
   image?: Picture;
   items?: string[];
-  buttons?: ButtonIconProps[];
+  buttons?: IconButtonProps[];
   version?: BlockVersion;
 }
 
@@ -64,22 +65,20 @@ export const BaseTile = JSX<BaseTileProps>(
 function renderTitle(title: string, titleSize: TitleSize) {
   switch (titleSize) {
     case 'XL':
-      return <TitleXL>{title}</TitleXL>;
+      return <h1 className={`${TITLE_CLASSES} text-title-lg`}>{title}</h1>;
     case 'L':
-      return <TitleL>{title}</TitleL>;
+      return <h2 className={`${TITLE_CLASSES} text-title`}>{title}</h2>;
     case 'M':
-      return <TitleM>{title}</TitleM>;
+      return <h2 className={`${TITLE_CLASSES} text-title-sm`}>{title}</h2>;
     case 'S':
-      return <TitleS>{title}</TitleS>;
+      return <h2 className={`${TITLE_CLASSES} text-title-xs`}>{title}</h2>;
     default:
-      return <TitleL>{title}</TitleL>;
+      return <h2 className={`${TITLE_CLASSES} text-title`}>{title}</h2>;
   }
 }
 
 function getTitleSizeByClassName(className: string = '') {
-  const colSpanPrefix = 'col-span-';
-  const colSpanStr = className.split(/\s+/).find((_) => _.startsWith(colSpanPrefix));
-  const colSpan = colSpanStr ? parseInt(colSpanStr.substring(colSpanPrefix.length), 10) : 12;
+  const colSpan = getColSpan(className);
   if (colSpan <= 4) {
     return 'S';
   } else if (colSpan <= 8) {
@@ -88,19 +87,6 @@ function getTitleSizeByClassName(className: string = '') {
     return 'L';
   }
 }
-
-const TitleXL = JSX<{ className?: string }>(({ children }) => (
-  <h1 className={`${TITLE_CLASSES} text-title-lg`}>{children}</h1>
-));
-const TitleL = JSX<{ className?: string }>(({ children }) => (
-  <h2 className={`${TITLE_CLASSES} text-title`}>{children}</h2>
-));
-const TitleM = JSX<{ className?: string }>(({ children }) => (
-  <h2 className={`${TITLE_CLASSES} text-title-sm`}>{children}</h2>
-));
-const TitleS = JSX<{ className?: string }>(({ children }) => (
-  <h2 className={`${TITLE_CLASSES} text-title-xs`}>{children}</h2>
-));
 
 function renderItems(items: string[] = [], version?: BlockVersion) {
   return (
@@ -112,6 +98,6 @@ function renderItems(items: string[] = [], version?: BlockVersion) {
   );
 }
 
-function renderButton(button: ButtonIconProps, i: number) {
-  return button?.text ? <ButtonIcon key={String(i)} {...button} /> : null;
+function renderButton(button: IconButtonProps, i: number) {
+  return button?.text ? <IconButton key={String(i)} {...button} /> : null;
 }

@@ -19,16 +19,6 @@ export const PromoTile = JSX<PromoTileProps>(
     buttons = [],
     version,
   }) => {
-    let foramtedDate;
-    if (date) {
-      const dateObj = new Date(date);
-      const dateFormat: Intl.DateTimeFormatOptions = {
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-      };
-      foramtedDate = dateObj.toLocaleString('ru-RU', dateFormat).replace('г.', '');
-    }
     return (
       <Tile
         className={className}
@@ -38,10 +28,20 @@ export const PromoTile = JSX<PromoTileProps>(
         version={version}
       >
         <div>
-          {foramtedDate && <div className="text-sm mb-2">{foramtedDate}</div>}
+          {date && <div className="text-sm mb-2">{formatDate(date)}</div>}
           <div className="text-base">{description}</div>
         </div>
       </Tile>
     );
   },
 );
+
+function formatDate(date: string) {
+  const dateObj = new Date(date);
+  const dateFormat: Intl.DateTimeFormatOptions = {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  };
+  return dateObj.toLocaleString('ru-RU', dateFormat).replace('г.', '');
+}
