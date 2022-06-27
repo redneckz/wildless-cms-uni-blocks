@@ -15,7 +15,9 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
   const router = context.useRouter();
   const { handlerDecorator } = context;
   return (
-    <section className={`font-sans bg-white pl-12 pr-[7.5rem] py-10 ${className || ''}`}>
+    <section
+      className={`font-sans bg-white pt-10 pl-[50px] pb-[50px] pr-[7.5rem] ${className || ''}`}
+    >
       {breadcrumbs?.length ? (
         <div className="text-xs mb-6">
           {joinList(<span className="text-secondary-text mx-2">/</span>)(

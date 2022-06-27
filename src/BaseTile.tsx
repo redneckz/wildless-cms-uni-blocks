@@ -1,17 +1,19 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Img } from './Img';
-import type { BlockVersion, Picture, UniBlockProps } from './types';
+import type { BlockVersion, Picture, UniBlockProps, TitleSize } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
-import type { ButtonProps } from './ui-kit/Button';
-import { Button } from './ui-kit/Button';
+import type { IconButtonProps } from './ui-kit/IconButton';
+import { IconButton } from './ui-kit/IconButton';
 import { useLink } from './useLink';
+import { getColSpan } from './utils/getColSpan';
 
 export interface BaseTileContent {
   title?: string;
+  titleSize?: TitleSize;
   description?: string;
   image?: Picture;
   items?: string[];
-  buttons?: ButtonProps[];
+  buttons?: IconButtonProps[];
   version?: BlockVersion;
 }
 
@@ -23,6 +25,7 @@ export const BaseTile = JSX<BaseTileProps>(
     className,
     context,
     title,
+    titleSize,
     description,
     children,
     buttons,
@@ -34,41 +37,54 @@ export const BaseTile = JSX<BaseTileProps>(
     const { handlerDecorator } = context;
     return (
       <div className={`font-sans flex flex-col grow h-full`}>
-        {title && renderTitle(title, className)}
-        <div className="flex grow justify-between mt-4">
+        {title && renderTitle(title, titleSize || getTitleSizeByClassName(className))}
+        <div className="flex grow justify-between">
           <div className="flex flex-col justify-between items-start">
             <div>
               {description ? (
-                <div className="font-normal text-base max-w-[600px] mb-6">{description}</div>
+                <div className="font-normal text-base max-w-[600px] mb-5">{description}</div>
               ) : null}
               {children}
               {items?.length ? renderItems(items, version) : null}
             </div>
             {buttons?.length ? (
-              <div className="flex mt-6 gap-4">
+              <div className="flex mt-9 gap-3">
                 {buttons.map((button, index) =>
                   renderButton(useLink({ router, handlerDecorator }, button), index),
                 )}
               </div>
             ) : null}
           </div>
-          {image?.src && <Img className="mt-auto" image={image} />}
+          {image?.src && <Img className="mt-auto ml-7" image={image} />}
         </div>
       </div>
     );
   },
 );
 
-function renderTitle(title: string, className: string = '') {
-  const colSpanPrefix = 'col-span-';
-  const colSpanStr = className.split(/\s+/).find((_) => _.startsWith(colSpanPrefix));
-  const colSpan = colSpanStr ? parseInt(colSpanStr.substring(colSpanPrefix.length), 10) : 12;
+function renderTitle(title: string, titleSize: TitleSize) {
+  switch (titleSize) {
+    case 'XL':
+      return <h1 className={`${TITLE_CLASSES} text-title-lg`}>{title}</h1>;
+    case 'L':
+      return <h2 className={`${TITLE_CLASSES} text-title`}>{title}</h2>;
+    case 'M':
+      return <h2 className={`${TITLE_CLASSES} text-title-sm`}>{title}</h2>;
+    case 'S':
+      return <h2 className={`${TITLE_CLASSES} text-title-xs`}>{title}</h2>;
+    default:
+      return <h2 className={`${TITLE_CLASSES} text-title`}>{title}</h2>;
+  }
+}
+
+function getTitleSizeByClassName(className: string = '') {
+  const colSpan = getColSpan(className);
   if (colSpan <= 4) {
-    return <h3 className={`${TITLE_CLASSES} text-title-xs`}>{title}</h3>;
+    return 'S';
   } else if (colSpan <= 8) {
-    return <h3 className={`${TITLE_CLASSES} text-title-sm`}>{title}</h3>;
+    return 'M';
   } else {
-    return <h2 className={`${TITLE_CLASSES} text-title`}>{title}</h2>;
+    return 'L';
   }
 }
 
@@ -82,6 +98,6 @@ function renderItems(items: string[] = [], version?: BlockVersion) {
   );
 }
 
-function renderButton(button: ButtonProps, i: number) {
-  return button?.text ? <Button key={String(i)} {...button} version={button.version} /> : null;
+function renderButton(button: IconButtonProps, i: number) {
+  return button?.text ? <IconButton key={String(i)} {...button} /> : null;
 }
