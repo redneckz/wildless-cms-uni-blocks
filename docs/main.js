@@ -31007,7 +31007,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 4364:
+/***/ 4956:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31114,8 +31114,8 @@ const JSX = Component => {
 var jsx_runtime = __webpack_require__(5893);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
-;// CONCATENATED MODULE: ./src/utils/getCurrentPosition.ts
-const getCurrentPosition = async () => new Promise((resolve) => navigator.geolocation.getCurrentPosition(({ coords }) => resolve(coords)));
+;// CONCATENATED MODULE: ./src/utils/getGeolocation.ts
+const getGeolocation = async () => new Promise((resolve) => navigator.geolocation.getCurrentPosition(({ coords }) => resolve(coords)));
 
 ;// CONCATENATED MODULE: ./src/api/DaDataAPI.ts
 
@@ -31125,7 +31125,7 @@ function DaDataAPI(baseURL = '') {
             return null;
         }
         try {
-            const coords = await getCurrentPosition();
+            const coords = await getGeolocation();
             const response = await fetch(`${baseURL}/geolocate`, {
                 method: 'POST',
                 mode: 'cors',
@@ -38896,7 +38896,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(4364),
+  var _require = __webpack_require__(4956),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;
