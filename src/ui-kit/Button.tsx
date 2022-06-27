@@ -1,7 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent } from '../types';
+import type { ButtonVersion, LinkContent } from '../types';
 
-type ButtonVersion = 'primary' | 'secondary';
 export interface ButtonProps extends LinkContent {
   className?: string;
   onClick?: (ev: MouseEvent) => any;
@@ -21,7 +20,7 @@ const buttonDisabledStyleMap: Record<ButtonVersion, string> = {
   secondary: 'bg-secondary-light text-secondary-text',
 };
 
-const styleButton = 'inline-block rounded-md px-9 py-3.5 text-center font-sans';
+const styleButton = 'inline-block rounded-md px-8 py-2 text-center font-sans';
 
 export const Button = JSX<ButtonProps>(
   ({
@@ -46,7 +45,11 @@ export const Button = JSX<ButtonProps>(
             className || ''
           }`}
         >
-          <span className="text-sm font-medium">{text || children}</span>
+          {children ? (
+            <div>{children}</div>
+          ) : (
+            <div className="text-sm font-medium py-1.5">{text}</div>
+          )}
         </div>
       );
     }
@@ -59,7 +62,11 @@ export const Button = JSX<ButtonProps>(
         onClick={onClick}
         aria-label={ariaLabel}
       >
-        <span className="text-sm font-medium">{text || children}</span>
+        {children ? (
+          <div>{children}</div>
+        ) : (
+          <div className="text-sm font-medium py-1.5">{text}</div>
+        )}
       </a>
     );
   },

@@ -74,7 +74,6 @@
             },
             "productBlock": {
               "title": "Ставка от 12,5% годовых на срок до 3 лет!»",
-              "description": "Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.",
               "items": [
                 "Потребительский кредит по специальной процентной ставке",
                 "Получите деньги без залога и поручительства",
@@ -107,11 +106,6 @@
             "productBlock": {
               "title": "Дополнительные бонусные баллы за покупки!»",
               "description": "Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.",
-              "items": [
-                "Потребительский кредит по специальной процентной ставке",
-                "Получите деньги без залога и поручительства",
-                "Кредитный лимит до 5 млн рублей"
-              ],
               "buttons": [
                 {
                   "href": "https://rshb.ru",
@@ -188,8 +182,8 @@
           "title": "деньги",
           "format": "webp",
           "size": {
-            "width": 220,
-            "height": 220
+            "width": 180,
+            "height": 180
           }
         }
       },
@@ -203,6 +197,7 @@
       "style": ["col-span-4"],
       "content": {
         "title": "Ипотека",
+        "titleSize": "M",
         "description": "Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %",
         "buttons": [
           {
@@ -235,8 +230,8 @@
           "title": "Кредитка",
           "format": "webp",
           "size": {
-            "width": 220,
-            "height": 220
+            "width": 180,
+            "height": 180
           }
         }
       },
@@ -262,8 +257,8 @@
           "alt": "Column",
           "format": "webp",
           "size": {
-            "width": 220,
-            "height": 220
+            "width": 180,
+            "height": 180
           }
         }
       },
@@ -294,8 +289,8 @@
           "title": "Глобус",
           "format": "webp",
           "size": {
-            "width": 220,
-            "height": 220
+            "width": 200,
+            "height": 200
           }
         }
       }
@@ -359,11 +354,12 @@
       }
     },
     {
-      "type": "Tile",
+      "type": "PromoTile",
       "style": ["col-span-4"],
       "content": {
         "title": "Акции и спецпредложения",
         "version": "secondary",
+        "date": "2022-04-16",
         "description": "Пенсионный кредит по специальной процентной ставке",
         "buttons": [
           {
@@ -395,7 +391,23 @@
       },
       "mobile": {
         "style": ["col-span-12"]
-      }
+      },
+      "buttons": [
+        {
+          "aboveText": "Загрузите в",
+          "text": "App Store",
+          "icon": "AppleIcon",
+          "href": "/credits",
+          "version": "secondary"
+        },
+        {
+          "aboveText": "Доступно в",
+          "text": "Google Play",
+          "icon": "PlayMarket",
+          "href": "/credits",
+          "version": "secondary"
+        }
+      ]
     },
     {
       "type": "Unknown",
@@ -497,8 +509,8 @@
           "alt": "Кредиты в РСХБ",
           "format": "webp",
           "size": {
-            "width": 220,
-            "height": 220
+            "width": 180,
+            "height": 180
           }
         }
       },
@@ -539,8 +551,8 @@
           "alt": "Пенсионный кредит в РСХБ",
           "format": "webp",
           "size": {
-            "width": 220,
-            "height": 220
+            "width": 180,
+            "height": 180
           }
         }
       },
@@ -581,8 +593,8 @@
           "alt": "Кредит под залог недвижимости в РСХБ",
           "format": "webp",
           "size": {
-            "width": 220,
-            "height": 220
+            "width": 180,
+            "height": 180
           }
         }
       },
@@ -596,6 +608,7 @@
       "version": "secondary",
       "content": {
         "title": "Кредит пенсионный",
+        "titleSize": "M",
         "description": "Для людей в возрасте до 75 лет",
         "benefits": [
           {

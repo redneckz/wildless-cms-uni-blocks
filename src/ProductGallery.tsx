@@ -54,9 +54,13 @@ export const ProductGallery = JSX<ProductGalleryProps>(
 
 function renderProductBlock(block: ProductBlockInnerContent, i: number, context) {
   return (
-    <section key={String(i)} className="grow-0 shrink-0 basis-full" role="listitem">
-      <div className="p-11 pr-[7.5rem] ">
-        <ProductBlockInner context={context} {...block} />
+    <section key={String(i)} className="flex grow-0 shrink-0 basis-full" role="listitem">
+      <div className="p-10 flex grow">
+        <ProductBlockInner
+          className="pl-2.5 pt-2.5 pb-1.5 pr-[6.25rem]"
+          context={context}
+          {...block}
+        />
       </div>
     </section>
   );

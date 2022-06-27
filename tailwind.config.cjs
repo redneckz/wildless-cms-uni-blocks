@@ -27,6 +27,7 @@ module.exports = {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
+        xxs: ['0.625rem', '0.625rem'], // 10px 10px
         xs: ['0.75rem', '1.125rem'], // 12px 18px
         sm: ['0.875rem', '1.375rem'], // 14px 22px
         base: ['1rem', '1.5rem'], // 16px 24px

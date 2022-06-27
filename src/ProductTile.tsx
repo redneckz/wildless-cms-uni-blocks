@@ -14,7 +14,7 @@ export const ProductTile = JSX<ProductTileProps>((props) => {
   const { benefits, version } = props;
   return (
     <Tile {...props}>
-      <div className="flex mt-5 mb-10">
+      <div className="flex mt-5 mb-1">
         {benefits?.length ? (
           <div className="mr-8">{benefits.map(renderBenefitDescription)}</div>
         ) : null}
@@ -32,14 +32,14 @@ function renderBenefitLabel(benefit: Benefit, i: number, version = 'primary') {
     secondary: 'text-white',
   };
   return (
-    <div key={String(i)} className={`text-sm mb-4 ${labelStyleMap[version]}`}>
+    <div key={String(i)} className={`text-sm ${i ? 'mt-4' : ''} ${labelStyleMap[version]}`}>
       {benefit.label}
     </div>
   );
 }
 function renderBenefitDescription(benefit: Benefit, i: number) {
   return (
-    <div key={String(i)} className="text-xl font-medium mb-2.5">
+    <div key={String(i)} className={`text-xl font-medium ${i ? 'mt-2.5' : ''}`}>
       {benefit.description}
     </div>
   );

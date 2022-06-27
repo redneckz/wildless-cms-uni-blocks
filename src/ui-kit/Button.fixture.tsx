@@ -1,6 +1,7 @@
 import '../setup-fixture';
 
 import { Button } from './Button';
+import { IconButton } from './IconButton';
 
 export default {
   all: (
@@ -57,6 +58,27 @@ export default {
             text="Secondary"
             version="secondary"
             disabled
+          />
+        </div>
+      </div>
+      <div>
+        <p>With Icon</p>
+        <div className="flex gap-6" data-theme="pc">
+          <IconButton
+            href="https://www.rshb.ru/"
+            target="_blank"
+            aboveText="Доступно в"
+            text="Google Play"
+            version="secondary"
+            icon="PlayMarket"
+          />
+          <IconButton
+            href="https://www.rshb.ru/"
+            target="_blank"
+            aboveText="Загрузите в"
+            text="App Store"
+            version="secondary"
+            icon="AppleIcon"
           />
         </div>
       </div>
