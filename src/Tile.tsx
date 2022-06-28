@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { BlockVersion, Picture, UniBlockProps } from './types';
+import type { BlockVersion, UniBlockProps } from './types';
 import { BaseTile } from './BaseTile';
 import type { BaseTileContent } from './BaseTile';
 import { getColSpan } from './utils/getColSpan';

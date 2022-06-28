@@ -40,7 +40,7 @@ export const Button = JSX<ButtonProps>(
           role="button"
           aria-disabled="true"
           aria-label={ariaLabel}
-          tabindex="-1"
+          tabIndex="-1"
           className={`${styleButton} select-none ${buttonDisabledStyleMap[version]} ${
             className || ''
           }`}

@@ -2,6 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon } from './Icons/index';
 import type { UniBlockProps, Benefit } from './types';
 import { BaseTile } from './BaseTile';
+import { Title } from './ui-kit/Title';
 import type { BaseTileContent } from './BaseTile';
 import { Img } from './Img';
 
@@ -19,9 +20,9 @@ export const ProductBlockInner = JSX<ProductBlockInnerProps>(
       <div className={`flex grow justify-between items-stretch ${className || ''}`}>
         <div className={'flex flex-col'}>
           {title && (
-            <h1 className="font-medium text-title-lg m-0 mb-4 whitespace-pre-wrap max-w-[600px]">
+            <Title size="XL" className="font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]">
               {title}
-            </h1>
+            </Title>
           )}
           <BaseTile context={context} description={description} items={items} buttons={buttons}>
             {benefits?.length ? (
