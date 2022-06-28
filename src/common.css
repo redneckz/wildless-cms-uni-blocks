@@ -2,27 +2,27 @@
 
 /* Private clients | Green */
 [data-theme='pc'] {
-  --color-primary-main: #42ab44;
-  --color-primary-hover: #248341;
-  --color-primary-active: #245f34;
-  --color-secondary-hover: #c5e2c6;
-  --color-secondary-active: #d8f2d9;
+  --color-primary-main: 66, 171, 68;
+  --color-primary-hover: 36, 131, 65;
+  --color-primary-active: 36, 95, 52;
+  --color-secondary-hover: 216, 242, 217;
+  --color-secondary-active: 197, 226, 198;
 }
 /* Business clients | Light-Green */
 [data-theme='bc'] {
-  --color-primary-main: #83b83e;
-  --color-primary-hover: #5c921d;
-  --color-primary-active: #3c5e10;
-  --color-secondary-hover: #e8f4d9;
-  --color-secondary-active: #d8e3ca;
+  --color-primary-main: 131, 184, 62;
+  --color-primary-hover: 92, 146, 29;
+  --color-primary-active: 60, 94, 16;
+  --color-secondary-hover: 232, 244, 217;
+  --color-secondary-active: 216, 227, 202;
 }
 /* Ecosystem own | Yellow */
 [data-theme='eo'] {
-  --color-primary-main: #ddb63d;
-  --color-primary-hover: #bb9727;
-  --color-primary-active: #7e630c;
-  --color-secondary-hover: #f1ecdd;
-  --color-secondary-active: #e5dec7;
+  --color-primary-main: 221, 182, 61;
+  --color-primary-hover: 187, 151, 39;
+  --color-primary-active: 126, 99, 12;
+  --color-secondary-hover: 241, 236, 221;
+  --color-secondary-active: 229, 222, 199;
 }
 
 @tailwind components;

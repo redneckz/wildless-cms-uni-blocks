@@ -39,24 +39,24 @@ module.exports = {
       },
       colors: {
         main: {
-          DEFAULT: '#F0F4F0',
-          divider: '#EBEDF0',
+          DEFAULT: 'rgba(240, 244, 240, <alpha-value>)',
+          divider: 'rgba(235, 237, 240, <alpha-value>)',
         },
         primary: {
-          main: 'var(--color-primary-main)',
-          hover: 'var(--color-primary-hover)',
-          active: 'var(--color-primary-active)',
+          main: 'rgba(var(--color-primary-main), <alpha-value>)',
+          hover: 'rgba(var(--color-primary-hover), <alpha-value>)',
+          active: 'rgba(var(--color-primary-active), <alpha-value>)',
           // Text
-          text: '#1C1C1C',
+          text: 'rgba(28, 28, 28, <alpha-value>)',
         },
         secondary: {
-          hover: 'var(--color-secondary-hover)',
-          active: 'var(--color-secondary-active)',
+          hover: 'rgba(var(--color-secondary-hover), <alpha-value>)',
+          active: 'rgba(var(--color-secondary-active), <alpha-value>)',
           // Gray
-          light: '#F5F7F9',
-          dark: '#E2E4E5',
+          light: 'rgba(245, 247, 249, <alpha-value>)',
+          dark: 'rgba(226, 228, 229, <alpha-value>)',
           // Text
-          text: '#7D7E7F',
+          text: 'rgba(125, 126, 127, <alpha-value>)',
         },
       },
       minHeight: (theme) => ({

@@ -8,6 +8,7 @@ import { ProductBlock } from './ProductBlock';
 import { ProductGallery } from './ProductGallery';
 import { ProductTile } from './ProductTile';
 import { StepsBlock } from './StepsBlock';
+import { TextBlock } from './TextBlock';
 import { Tile } from './Tile';
 
 export const MobileBlocks = {
@@ -18,6 +19,7 @@ export const MobileBlocks = {
   ProductTile,
   ProductBlock,
   StepsBlock,
+  TextBlock,
   BenefitsBlock,
   ProductGallery,
   ExchangeRateTile,
