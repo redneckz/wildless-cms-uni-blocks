@@ -12,6 +12,7 @@ import { ProductTile, ProductTileContent } from './ProductTile';
 import { BaseTileContent } from './BaseTile';
 import { PromoTile, PromoTileContent } from './PromoTile';
 import { Tile } from './Tile';
+import { TextBlock, TextBlockContent } from './TextBlock';
 
 export const Blocks = {
   Header,
@@ -19,6 +20,7 @@ export const Blocks = {
   Placeholder,
   Tile,
   PromoTile,
+  TextBlock,
   ProductTile,
   ProductBlock,
   StepsBlock,
@@ -33,6 +35,7 @@ export type BlockContent =
   | FooterContent
   | PlaceholderContent
   | BaseTileContent
+  | TextBlockContent
   | ProductTileContent
   | PromoTileContent
   | ProductBlockInnerContent
