@@ -15,7 +15,10 @@ export interface TextBlockContent {
 
 export interface TextBlockProps extends TextBlockContent, UniBlockProps {}
 
-const textBlockStyleMaps: Record<TextBlockVersion, any> = {
+const textBlockStyleMaps: Record<
+  TextBlockVersion,
+  { background: string; icon: string; title: string; description: string }
+> = {
   primary: {
     background: 'bg-white',
     icon: 'bg-primary-main text-white',
@@ -41,14 +44,14 @@ export const TextBlock = JSX<TextBlockProps>(
     const textBlockStyleMap = textBlockStyleMaps[blockVersion];
     return (
       <section
-        className={`font-sans px-9 py-4 flex ${textBlockStyleMap['background']} ${className || ''}`}
+        className={`font-sans px-9 py-4 flex ${textBlockStyleMap.background} ${className || ''}`}
       >
-        {iconVersion && iconVersion === 'small' ? renderIcon(textBlockStyleMap['icon']) : null}
+        {iconVersion && iconVersion === 'small' ? renderIcon(textBlockStyleMap.icon) : null}
         {iconVersion && iconVersion === 'big' ? renderImage(image) : null}
         <div className="py-0.5">
-          {title && <div className={`font-medium mb-1 ${textBlockStyleMap['title']}`}>{title}</div>}
+          {title && <div className={`font-medium mb-1 ${textBlockStyleMap.title}`}>{title}</div>}
           {description && (
-            <div className={`text-sm ${textBlockStyleMap['description']}`}>{description}</div>
+            <div className={`text-sm ${textBlockStyleMap.description}`}>{description}</div>
           )}
         </div>
       </section>
