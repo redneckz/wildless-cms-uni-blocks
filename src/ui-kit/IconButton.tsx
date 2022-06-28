@@ -1,9 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { AppleIcon, PlayMarket } from '../Icons/index';
+import { AppleIcon, PlayMarketIcon } from '../Icons/index';
 import type { ButtonProps } from './Button';
 import { Button } from './Button';
 
-const ICONS = { AppleIcon, PlayMarket };
+const ICONS = { AppleIcon, PlayMarketIcon };
 
 export interface IconButtonProps extends ButtonProps {
   icon?: string;

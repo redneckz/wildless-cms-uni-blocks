@@ -403,7 +403,7 @@
         {
           "aboveText": "Доступно в",
           "text": "Google Play",
-          "icon": "PlayMarket",
+          "icon": "PlayMarketIcon",
           "href": "/credits",
           "version": "secondary"
         }
