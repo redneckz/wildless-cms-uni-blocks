@@ -17,7 +17,7 @@ export const SocialMedia = JSX<SocialMediaProps>(({ className, media, context })
   const router = context.useRouter();
   const { handlerDecorator } = context;
   return (
-    <div className={`flex items-end justify-end gap-2 py-6 ${className || ''}`}>
+    <div className={`flex items-end justify-end gap-2 pt-[30px] pb-7 ${className || ''}`}>
       {media?.map((_, index) => (
         <MediaButton key={String(index)} {...useLink({ router, handlerDecorator }, _)} />
       ))}
@@ -34,7 +34,7 @@ const MediaButton = JSX<MediaButtonProps>(({ href }) => {
     ICONS_MAP.find(({ origins }) => origins.some((_) => href?.includes(_))) || {};
   return (
     <a
-      className="flex items-center justify-center border-solid border-1 border-main-divider rounded-full no-underline outline-none w-8 h-8"
+      className="flex items-center justify-center border-solid border border-main-divider rounded-full no-underline outline-none w-9 h-9"
       href={href}
       target="_blank"
       rel="noopener noreferrer"

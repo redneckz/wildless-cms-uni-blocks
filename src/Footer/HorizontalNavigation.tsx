@@ -10,7 +10,7 @@ export const HorizontalNavigation = JSX<FooterLink>(({ className, links, context
   return (
     <div className={`${className || ''}`}>
       {links?.length ? (
-        <div className="flex justify-between items-center gap-5 py-5 border-solid border-x-0 border-y-1 border-y-main-divider">
+        <div className="flex justify-between items-center gap-5 py-5 border-solid border-x-0 border-y border-y-main-divider">
           {links.map((_, i) => (
             <HorizontalNavigationLink
               key={String(i)}
