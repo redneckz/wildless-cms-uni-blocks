@@ -1,6 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { NewDocIcon, PassSendIcon, ActualBalanceIcon } from './Icons/index';
 import type { UniBlockProps } from './types';
+import { Title } from './ui-kit/Title';
 import { joinList } from './utils/joinList';
 
 const ICONS = { NewDocIcon, PassSendIcon, ActualBalanceIcon };
@@ -24,7 +25,7 @@ export const StepsBlock = JSX<StepsBlockProps>(({ className, title, steps }) => 
         className || ''
       }`}
     >
-      <h2 className="font-medium text-title m-0 max-w-[47rem] text-center">{title}</h2>
+      <Title className="font-medium m-0 max-w-[47rem] text-center">{title}</Title>
       {steps?.length ? (
         <div>
           <div className="flex mt-9 items-center px-[88px]">

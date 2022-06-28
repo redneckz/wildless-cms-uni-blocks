@@ -1,9 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Img } from './Img';
-import type { BlockVersion, Picture, UniBlockProps, TitleSize } from './types';
+import type { BlockVersion, Picture, UniBlockProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { IconButtonProps } from './ui-kit/IconButton';
 import { IconButton } from './ui-kit/IconButton';
+import { Title } from './ui-kit/Title';
+import type { TitleSize } from './ui-kit/Title';
 import { useLink } from './useLink';
 import { getColSpan } from './utils/getColSpan';
 
@@ -37,7 +39,11 @@ export const BaseTile = JSX<BaseTileProps>(
     const { handlerDecorator } = context;
     return (
       <div className={`font-sans flex flex-col grow h-full`}>
-        {title && renderTitle(title, titleSize || getTitleSizeByClassName(className))}
+        {title && (
+          <Title size={titleSize || getTitleSizeByClassName(className)} className={TITLE_CLASSES}>
+            {title}
+          </Title>
+        )}
         <div className="flex grow justify-between">
           <div className="flex flex-col justify-between items-start">
             <div>
@@ -61,21 +67,6 @@ export const BaseTile = JSX<BaseTileProps>(
     );
   },
 );
-
-function renderTitle(title: string, titleSize: TitleSize) {
-  switch (titleSize) {
-    case 'XL':
-      return <h1 className={`${TITLE_CLASSES} text-title-lg`}>{title}</h1>;
-    case 'L':
-      return <h2 className={`${TITLE_CLASSES} text-title`}>{title}</h2>;
-    case 'M':
-      return <h2 className={`${TITLE_CLASSES} text-title-sm`}>{title}</h2>;
-    case 'S':
-      return <h2 className={`${TITLE_CLASSES} text-title-xs`}>{title}</h2>;
-    default:
-      return <h2 className={`${TITLE_CLASSES} text-title`}>{title}</h2>;
-  }
-}
 
 function getTitleSizeByClassName(className: string = '') {
   const colSpan = getColSpan(className);

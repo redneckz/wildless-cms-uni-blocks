@@ -32,11 +32,15 @@ export const context: ContentPageContext = {
     return { data };
   },
   useGeolocation: (defaultLocation) => {
-    const [city, setCity] = useState(defaultLocation);
+    const [city, setCity] = useState(
+      globalThis.localStorage.getItem('location') || defaultLocation,
+    );
 
     const getCity = () => {
       DaData.getFetcherAddress().then((_) => {
-        setCity(_ || defaultLocation);
+        const location = _ || defaultLocation;
+        globalThis.localStorage.setItem('location', location);
+        setCity(location);
       });
     };
 
