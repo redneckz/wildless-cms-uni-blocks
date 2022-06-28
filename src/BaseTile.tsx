@@ -1,10 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Img } from './Img';
-import type { BlockVersion, Picture, UniBlockProps, TitleSize } from './types';
+import type { BlockVersion, Picture, UniBlockProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { IconButtonProps } from './ui-kit/IconButton';
 import { IconButton } from './ui-kit/IconButton';
 import { Title } from './ui-kit/Title';
+import type { TitleSize } from './ui-kit/Title';
 import { useLink } from './useLink';
 import { getColSpan } from './utils/getColSpan';
 
