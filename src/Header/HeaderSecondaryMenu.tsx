@@ -1,8 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { GridIcon, LoupeIcon, ProfileIcon } from '../Icons/index';
+import type { UniBlockProps } from '../types';
+import { Icon } from '../ui-kit/Icon';
 import { TopItem } from '../ui-kit/TopItem';
 import { HeaderSecondaryMenuButton } from './HeaderSecondaryMenuButton';
-import type { UniBlockProps } from '../types';
 
 interface HeaderSecondaryMenuContent {
   defaultLocation?: string;
@@ -36,19 +36,19 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
           className="mr-5 text-primary-text hover:text-primary-main"
           ariaLabel="Поиск по сайту"
         >
-          {LoupeIcon({ 'aria-hidden': true })}
+          <Icon name="LoupeIcon" aria-hidden="true" />
         </HeaderSecondaryMenuButton>
         <HeaderSecondaryMenuButton
           className="mr-5 text-primary-text hover:text-primary-main"
           ariaLabel="Профиль"
         >
-          {ProfileIcon({ 'aria-hidden': true })}
+          <Icon name="ProfileIcon" aria-hidden="true" />
         </HeaderSecondaryMenuButton>
         <HeaderSecondaryMenuButton
           className="mr-5 text-secondary-light hover:text-secondary-active min-w-[32px] min-h-[32px]"
           ariaLabel="Дополнительные ссылки"
         >
-          {GridIcon({ 'aria-hidden': true })}
+          <Icon name="GridIcon" aria-hidden="true" />
         </HeaderSecondaryMenuButton>
       </div>
     );

@@ -1,12 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon } from './Icons/index';
-import type { UniBlockProps, Benefit } from './types';
-import { BaseTile } from './BaseTile';
-import { Title } from './ui-kit/Title';
 import type { BaseTileContent } from './BaseTile';
+import { BaseTile } from './BaseTile';
+import type { Benefit } from './BenefitsBlock';
 import { Img } from './Img';
-
-const ICONS = { EmptyWalletIcon, PercentageSquareIcon, CalendarIcon };
+import type { UniBlockProps } from './types';
+import { Icon } from './ui-kit/Icon';
+import { Title } from './ui-kit/Title';
 
 export interface ProductBlockInnerContent extends BaseTileContent {
   benefits?: Benefit[];
@@ -40,9 +39,12 @@ function renderBenefit(benefit: Benefit, i: number) {
   return (
     <div key={String(i)} className="flex gap-4 items-center">
       {benefit.icon && (
-        <div className="w-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border">
-          {ICONS[benefit.icon as keyof typeof ICONS]?.()}
-        </div>
+        <Icon
+          className="w-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border"
+          name={benefit.icon}
+          width="24"
+          height="24"
+        />
       )}
       <div className="flex gap-1 flex-col h-full">
         <h4 className="font-medium text-xl m-0">{benefit.label}</h4>

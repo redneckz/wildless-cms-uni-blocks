@@ -5,6 +5,7 @@ export interface ProjectSettings {
   FORCED_DRAFT_FLOW: boolean;
   ENABLE_ASSIST?: boolean;
   SITEMAP?: string;
+  CDN?: string; // Should ends with "/"
 }
 
 export const projectSettings = new (class implements ProjectSettings {
@@ -34,5 +35,8 @@ export const projectSettings = new (class implements ProjectSettings {
   }
   get SITEMAP() {
     return this._.SITEMAP;
+  }
+  get CDN() {
+    return this._.CDN;
   }
 })();
