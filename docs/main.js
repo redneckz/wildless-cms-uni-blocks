@@ -32583,8 +32583,8 @@ const defaultProps = {
             hasButton: true,
         },
         {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
+            title: '«Моя выгода»',
+            description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
             items: defaultItems,
             hasImage: true,
@@ -32594,8 +32594,8 @@ const defaultProps = {
             hasButton: true,
         },
         {
-            title: '«Моя выгода»',
-            description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
+            title: 'Фермерские продукты',
+            description: 'Высокий процент даже при небольшой сумме денежных средств',
             image: Gallery_fixture_image,
             items: defaultItems,
             hasImage: true,
