@@ -3,6 +3,7 @@ import { Img } from './Img';
 import { Picture, UniBlockProps } from './types';
 import { Button } from './ui-kit/Button';
 import { ArrowButton } from './ui-kit/ArrowButton';
+import { Title } from './ui-kit/Title';
 
 export interface GalleryCard {
   title: string;
@@ -52,7 +53,7 @@ export const Gallery = JSX<GalleryProps>(({ title, description, context, cards =
   return (
     <section className="relative font-sans text-primary-text bg-white p-12 overflow-hidden w-100">
       <div className="flex flex-col items-center">
-        <h2 className="font-medium text-title m-0 max-w-[47rem] text-center">{title}</h2>
+        <Title className="font-medium m-0 text-centers">{title}</Title>
         {description ? (
           <div className="font-normal text-base max-w-[600px] mt-3">{description}</div>
         ) : null}
@@ -121,7 +122,7 @@ function renderItems(items: string[] = []) {
     <section className="max-w-[308px] mt-2" role="list">
       {items.map((item, i) => (
         <div className={`inline-block flex ${i ? 'mt-1' : ''}`} role="listitem" key={i}>
-          <div className="inline-block w-[8px] h-[8px] min-w-[8px] min-h-[8px] rounded-full mt-2 bg-primary-main"></div>
+          <div className="inline-block w-2 h-2 min-w-2 min-h-2 rounded-full mt-2 bg-primary-main"></div>
           <span className="text-sm text-secondary-text ml-3">{item}</span>
         </div>
       ))}
