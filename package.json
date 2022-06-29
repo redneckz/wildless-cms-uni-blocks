@@ -150,8 +150,8 @@
   ],
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,css}": "prettier --write",
-    "src/**/*.{js,jsx,ts,tsx,css,json}": [
-      "cosmos-export",
+    "*.{js,jsx,ts,tsx,css,json}": [
+      "npm run cosmos:export",
       "git add ./docs"
     ]
   }
