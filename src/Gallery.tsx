@@ -22,16 +22,18 @@ export interface GalleryProps extends GalleryContent, UniBlockProps {}
 
 const cardWidth = 384;
 
-export const Gallery = JSX<GalleryProps>(({ title, description, context, cards }) => {
+export const Gallery = JSX<GalleryProps>(({ title, description, context, cards = [] }) => {
   const [activeCardIndex, setActiveCardIndex] = context.useState(0);
-  const [showNextButton, setShowNextButton] = context.useState(cards?.length && cards?.length > 3);
+  const [showNextButton, setShowNextButton] = context.useState(cards?.length > 3);
   const [showPrevButton, setShowPrevButton] = context.useState(false);
 
   function handleNextClick() {
     const newCardIndex = activeCardIndex + 1;
 
+    // We don't want to use native DOM things
+    // That's why we need this calculation and state changes
     if (newCardIndex > 0) setShowPrevButton(true);
-    if (cards?.length && cards?.length - newCardIndex <= 3) setShowNextButton(false);
+    if (cards?.length - newCardIndex <= 3) setShowNextButton(false);
 
     setActiveCardIndex(newCardIndex);
   }
@@ -39,8 +41,10 @@ export const Gallery = JSX<GalleryProps>(({ title, description, context, cards }
   function handlePrevClick() {
     const newCardIndex = activeCardIndex - 1;
 
+    // We don't want to use native DOM things
+    // That's why we need this calculation and state changes
     if (newCardIndex === 0) setShowPrevButton(false);
-    if (cards?.length && cards?.length + newCardIndex > 3) setShowNextButton(true);
+    if (cards?.length + newCardIndex > 3) setShowNextButton(true);
 
     setActiveCardIndex(newCardIndex);
   }
@@ -55,7 +59,9 @@ export const Gallery = JSX<GalleryProps>(({ title, description, context, cards }
       </div>
       <div className="mb-8"></div>
       <div
-        className={`flex {${cards?.length && cards?.length <= 3 && 'justify-center'} duration-1000`}
+        // Need to place all cards at the center if count of cards less than 4
+        className={`flex {${cards?.length < 4 && 'justify-center'} duration-1000`}
+        // All cards has same width
         style={{ transform: `translateX(-${activeCardIndex * cardWidth}px)` }}
         role="list"
       >

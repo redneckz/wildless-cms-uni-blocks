@@ -32067,27 +32067,35 @@ const ArrowButton = JSX(({ className, onClick, version = 'left', ariaLabel }) =>
 
 
 const cardWidth = 384;
-const Gallery = JSX(({ title, description, context, cards }) => {
+const Gallery = JSX(({ title, description, context, cards = [] }) => {
     const [activeCardIndex, setActiveCardIndex] = context.useState(0);
-    const [showNextButton, setShowNextButton] = context.useState(cards?.length && cards?.length > 3);
+    const [showNextButton, setShowNextButton] = context.useState(cards?.length > 3);
     const [showPrevButton, setShowPrevButton] = context.useState(false);
     function handleNextClick() {
         const newCardIndex = activeCardIndex + 1;
+        // We don't want to use native DOM things
+        // That's why we need this calculation and state changes
         if (newCardIndex > 0)
             setShowPrevButton(true);
-        if (cards?.length && cards?.length - newCardIndex <= 3)
+        if (cards?.length - newCardIndex <= 3)
             setShowNextButton(false);
         setActiveCardIndex(newCardIndex);
     }
     function handlePrevClick() {
         const newCardIndex = activeCardIndex - 1;
+        // We don't want to use native DOM things
+        // That's why we need this calculation and state changes
         if (newCardIndex === 0)
             setShowPrevButton(false);
-        if (cards?.length && cards?.length + newCardIndex > 3)
+        if (cards?.length + newCardIndex > 3)
             setShowNextButton(true);
         setActiveCardIndex(newCardIndex);
     }
-    return (jsxs("section", { className: "relative font-sans text-primary-text bg-white p-12 overflow-hidden w-100", children: [jsxs("div", { className: "flex flex-col items-center", children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { className: "mb-8" }), jsx("div", { className: `flex {${cards?.length && cards?.length <= 3 && 'justify-center'} duration-1000`, style: { transform: `translateX(-${activeCardIndex * cardWidth}px)` }, role: "list", children: cards?.map((card, i) => renderCard(card, i)) }), showPrevButton && (jsx(ArrowButton, { version: "left", className: "absolute top-1/2 left-8", onClick: handlePrevClick })), showNextButton && (jsx(ArrowButton, { version: "right", className: "absolute top-1/2 right-1 z-20", onClick: handleNextClick })), jsx("div", { className: "absolute absolute top-0 right-0 bottom-0 w-[84px]", style: {
+    return (jsxs("section", { className: "relative font-sans text-primary-text bg-white p-12 overflow-hidden w-100", children: [jsxs("div", { className: "flex flex-col items-center", children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { className: "mb-8" }), jsx("div", { 
+                // Need to place all cards at the center if count of cards less than 4
+                className: `flex {${cards?.length < 4 && 'justify-center'} duration-1000`, 
+                // All cards has same width
+                style: { transform: `translateX(-${activeCardIndex * cardWidth}px)` }, role: "list", children: cards?.map((card, i) => renderCard(card, i)) }), showPrevButton && (jsx(ArrowButton, { version: "left", className: "absolute top-1/2 left-8", onClick: handlePrevClick })), showNextButton && (jsx(ArrowButton, { version: "right", className: "absolute top-1/2 right-1 z-20", onClick: handleNextClick })), jsx("div", { className: "absolute absolute top-0 right-0 bottom-0 w-[84px]", style: {
                     background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
                 } })] }));
 });
