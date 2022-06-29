@@ -31007,7 +31007,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 9308:
+/***/ 5722:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31305,16 +31305,11 @@ const AppleIcon = (props) => (jsxs("svg", { width: "24", height: "24", fill: "no
 
 const PlayMarket = (props) => (jsx("svg", { width: "24", height: "24", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: jsx("path", { d: "M1 22.427V2.576C1 1.883 1.447 1.284 2.094 1L14.85 12.498 2.089 24a1.89 1.89 0 0 1-.795-.646A1.625 1.625 0 0 1 1 22.427Zm17.899-6.282-13.95 7.259 11.002-9.915 2.948 2.656Zm4.335-5.035c.237.162.428.37.561.61.133.239.203.502.205.77.002.267-.064.53-.193.771s-.317.452-.551.617l-2.964 1.542-3.241-2.922 3.24-2.92 2.944 1.532ZM4.959 1.598l13.938 7.253-2.945 2.654L4.958 1.598Z", fill: "#42AB44" }) }));
 
-;// CONCATENATED MODULE: ./src/Icons/ArrowRightIcon.tsx
-
-const ArrowRightIcon = (props) => (jsxs("svg", { width: "16", height: "16", viewBox: "0 0 16 16", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: [jsx("path", { d: "M9 12L13 8L9 4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" }), jsx("path", { d: "M2 9C1.44772 9 1 8.55228 1 8C1 7.44772 1.44772 7 2 7L2 9ZM8 7C8.55228 7 9 7.44772 9 8C9 8.55229 8.55228 9 8 9L8 7ZM2 7L8 7L8 9L2 9L2 7Z", fill: "currentColor" })] }));
-
 ;// CONCATENATED MODULE: ./src/Icons/ArrowLeftIcon.tsx
 
 const ArrowLeftIcon = (props) => (jsxs("svg", { width: "16", height: "16", viewBox: "0 0 16 16", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: [jsx("path", { d: "M7 12L3 8L7 4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" }), jsx("path", { d: "M14 9C14.5523 9 15 8.55228 15 8C15 7.44772 14.5523 7 14 7L14 9ZM8 7C7.44772 7 7 7.44772 7 8C7 8.55229 7.44772 9 8 9L8 7ZM14 7L8 7L8 9L14 9L14 7Z", fill: "currentColor" })] }));
 
 ;// CONCATENATED MODULE: ./src/Icons/index.ts
-
 
 
 
@@ -32052,12 +32047,8 @@ function renderImage(image) {
 
 
 
-const buttonIconMap = {
-    left: ArrowLeftIcon,
-    right: ArrowRightIcon,
-};
-const ArrowButton = JSX(({ className, onClick, version = 'left', ariaLabel }) => {
-    return (jsx("a", { className: `${className} no-underline w-12 h-12 rounded-3xl bg-white flex text-black hover:text-primary-main`, style: { boxShadow: '0px 4px 25px rgba(0, 0, 0, 0.07)' }, href: "#", onClick: onClick, "aria-label": ariaLabel, children: buttonIconMap[version]({ className: 'm-auto text-inherit' }) }));
+const ArrowButton = JSX(({ className, onClick, ariaLabel }) => {
+    return (jsx("a", { className: `${className} no-underline w-12 h-12 rounded-3xl bg-white flex text-black hover:text-primary-main`, style: { boxShadow: '0px 4px 25px rgba(0, 0, 0, 0.07)' }, href: "#", onClick: onClick, "aria-label": ariaLabel, children: ArrowLeftIcon({ className: 'm-auto text-inherit' }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/Gallery.tsx
@@ -32096,7 +32087,7 @@ const Gallery = JSX(({ title, description, context, cards = [] }) => {
                 // Need to place all cards at the center if count of cards less than 4
                 className: `flex {${cards?.length < 4 && 'justify-center'} duration-1000`, 
                 // All cards has same width
-                style: { transform: `translateX(-${activeCardIndex * cardWidth}px)` }, role: "list", children: cards?.map((card, i) => renderCard(card, i)) }), showPrevButton && (jsx(ArrowButton, { version: "left", className: "absolute top-1/2 left-8", onClick: handlePrevClick })), showNextButton && (jsx(ArrowButton, { version: "right", className: "absolute top-1/2 right-1 z-20", onClick: handleNextClick })), jsx("div", { className: "absolute absolute top-0 right-0 bottom-0 w-[84px]", style: {
+                style: { transform: `translateX(-${activeCardIndex * cardWidth}px)` }, role: "list", children: cards?.map((card, i) => renderCard(card, i)) }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8", onClick: handlePrevClick })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-20 rotate-180", onClick: handleNextClick })), jsx("div", { className: "absolute absolute top-0 right-0 bottom-0 w-[84px]", style: {
                     background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
                 } })] }));
 });
@@ -39307,7 +39298,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(9308),
+  var _require = __webpack_require__(5722),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

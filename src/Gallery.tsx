@@ -69,12 +69,11 @@ export const Gallery = JSX<GalleryProps>(({ title, description, context, cards =
         {cards?.map((card, i) => renderCard(card, i))}
       </div>
       {showPrevButton && (
-        <ArrowButton version="left" className="absolute top-1/2 left-8" onClick={handlePrevClick} />
+        <ArrowButton className="absolute top-1/2 left-8" onClick={handlePrevClick} />
       )}
       {showNextButton && (
         <ArrowButton
-          version="right"
-          className="absolute top-1/2 right-1 z-20"
+          className="absolute top-1/2 right-1 z-20 rotate-180"
           onClick={handleNextClick}
         />
       )}

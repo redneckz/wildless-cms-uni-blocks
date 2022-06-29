@@ -17,5 +17,4 @@ export { TelegramIcon } from './TelegramIcon';
 export { VKIcon } from './VKIcon';
 export { AppleIcon } from './AppleIcon';
 export { PlayMarket } from './PlayMarket';
-export { ArrowRightIcon } from './ArrowRightIcon';
 export { ArrowLeftIcon } from './ArrowLeftIcon';
