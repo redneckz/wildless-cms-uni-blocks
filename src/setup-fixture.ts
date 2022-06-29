@@ -1,7 +1,7 @@
 import { setup } from '@redneckz/uni-jsx';
 
 import runtime from 'react/jsx-runtime';
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { DaDataAPI } from './api/DaDataAPI';
 import type { ContentPageContext } from './ContentPageContext';
 

@@ -8,5 +8,6 @@
       "fileMatch": ["cosmos.config.json"],
       "url": "http://json.schemastore.org/cosmos-config"
     }
-  ]
+  ],
+  "svg.preview.background": "white"
 }

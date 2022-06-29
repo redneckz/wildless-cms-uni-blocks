@@ -4,6 +4,7 @@ lib/
 module/
 bundle/
 coverage/
+cosmos-static/icons/
 temp/
 .idea
 .DS_Store

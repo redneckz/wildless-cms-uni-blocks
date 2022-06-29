@@ -1,8 +1,12 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { ClockIcon, SignDocsIcon, ComfortableCompIcon, ActualBalanceIcon } from './Icons/index';
-import type { UniBlockProps, Benefit } from './types';
+import type { UniBlockProps } from './types';
+import { Icon, IconName } from './ui-kit/Icon';
 
-const ICONS = { ClockIcon, SignDocsIcon, ComfortableCompIcon, ActualBalanceIcon };
+export interface Benefit {
+  label: string;
+  description?: string;
+  icon?: IconName;
+}
 
 export interface BenefitsBlockContent {
   title?: string;
@@ -30,9 +34,12 @@ const renderStep = (benefit: Benefit, i: number) => {
   return (
     <div key={String(i)} className="flex items-center p-10 gap-5 max-w-[580px]">
       {benefit.icon && (
-        <div className="h-[70px] w-[70px] min-w-[70px] min-h-[70px]">
-          {ICONS[benefit.icon as keyof typeof ICONS]?.()}
-        </div>
+        <Icon
+          className="h-[70px] w-[70px] min-w-[70px] min-h-[70px]"
+          name={benefit.icon}
+          width="70"
+          height="70"
+        />
       )}
       <div>
         <h3 className="font-medium text-xl m-0">{benefit.label}</h3>
