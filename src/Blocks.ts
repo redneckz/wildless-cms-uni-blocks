@@ -13,6 +13,7 @@ import { BaseTileContent } from './BaseTile';
 import { PromoTile, PromoTileContent } from './PromoTile';
 import { Tile } from './Tile';
 import { TextBlock, TextBlockContent } from './TextBlock';
+import { Gallery, GalleryContent } from './Gallery';
 
 export const Blocks = {
   Header,
@@ -28,6 +29,7 @@ export const Blocks = {
   ProductGallery,
   ExchangeRateTile,
   MobileAppTile,
+  Gallery,
 };
 
 export type BlockContent =
@@ -43,4 +45,5 @@ export type BlockContent =
   | BenefitsBlockContent
   | ProductGalleryContent
   | ExchangeRateTileContent
-  | MobileAppTileContent;
+  | MobileAppTileContent
+  | GalleryContent;

@@ -1,0 +1,124 @@
+import { JSX } from '@redneckz/uni-jsx';
+import { Img } from './Img';
+import { Picture, UniBlockProps } from './types';
+import { Button } from './ui-kit/Button';
+import { ArrowButton } from './ui-kit/ArrowButton';
+
+export interface GalleryCard {
+  title: string;
+  description?: string;
+  image: Picture;
+  href?: string;
+  items?: string[];
+}
+
+export interface GalleryContent {
+  title?: string;
+  description?: string;
+  cards?: GalleryCard[];
+}
+
+export interface GalleryProps extends GalleryContent, UniBlockProps {}
+
+const cardWidth = 384;
+
+export const Gallery = JSX<GalleryProps>(({ title, description, context, cards }) => {
+  const [activeCardIndex, setActiveCardIndex] = context.useState(0);
+  const [showNextButton, setShowNextButton] = context.useState(cards?.length && cards?.length > 3);
+  const [showPrevButton, setShowPrevButton] = context.useState(false);
+
+  function handleNextClick() {
+    const newCardIndex = activeCardIndex + 1;
+
+    if (newCardIndex > 0) setShowPrevButton(true);
+    if (cards?.length && cards?.length - newCardIndex <= 3) setShowNextButton(false);
+
+    setActiveCardIndex(newCardIndex);
+  }
+
+  function handlePrevClick() {
+    const newCardIndex = activeCardIndex - 1;
+
+    if (newCardIndex === 0) setShowPrevButton(false);
+    if (cards?.length && cards?.length + newCardIndex > 3) setShowNextButton(true);
+
+    setActiveCardIndex(newCardIndex);
+  }
+
+  return (
+    <section className="relative font-sans text-primary-text bg-white p-12 overflow-hidden w-100">
+      <div className="flex flex-col items-center">
+        <h2 className="font-medium text-title m-0 max-w-[47rem] text-center">{title}</h2>
+        {description ? (
+          <div className="font-normal text-base max-w-[600px] mt-3">{description}</div>
+        ) : null}
+      </div>
+      <div className="mb-8"></div>
+      <div
+        className={`flex {${cards?.length && cards?.length <= 3 && 'justify-center'} duration-1000`}
+        style={{ transform: `translateX(-${activeCardIndex * cardWidth}px)` }}
+        role="list"
+      >
+        {cards?.map((card, i) => renderCard(card, i))}
+      </div>
+      {showPrevButton && (
+        <ArrowButton version="left" className="absolute top-1/2 left-8" onClick={handlePrevClick} />
+      )}
+      {showNextButton && (
+        <ArrowButton
+          version="right"
+          className="absolute top-1/2 right-1 z-20"
+          onClick={handleNextClick}
+        />
+      )}
+      <div
+        className="absolute absolute top-0 right-0 bottom-0 w-[84px]"
+        style={{
+          background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
+        }}
+      ></div>
+    </section>
+  );
+});
+
+function renderCard(card: GalleryCard, key: number) {
+  return (
+    <div
+      className="border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch min-w-[308px] w-[308px] w-full"
+      key={key}
+    >
+      <div>
+        {card.image?.src && <Img className="flex justify-center mb-6" image={card.image} />}
+        {card.title && (
+          <h4
+            className={`font-medium text-xl m-0 ${
+              !card.description && !card.items?.length && 'text-center'
+            }`}
+          >
+            {card.title}
+          </h4>
+        )}
+        {card.description ? (
+          <div className="font-normal text-sm text-secondary-text mt-2">{card.description}</div>
+        ) : null}
+        {card.items?.length ? renderItems(card.items) : null}
+      </div>
+      {card.href ? (
+        <Button className="mt-6" text="Подробнее" version="secondary" href={card.href} />
+      ) : null}
+    </div>
+  );
+}
+
+function renderItems(items: string[] = []) {
+  return (
+    <section className="max-w-[308px] mt-2" role="list">
+      {items.map((item, i) => (
+        <div className={`inline-block flex ${i ? 'mt-1' : ''}`} role="listitem" key={i}>
+          <div className="inline-block w-[8px] h-[8px] min-w-[8px] min-h-[8px] rounded-full mt-2 bg-primary-main"></div>
+          <span className="text-sm text-secondary-text ml-3">{item}</span>
+        </div>
+      ))}
+    </section>
+  );
+}
