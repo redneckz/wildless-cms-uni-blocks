@@ -92,6 +92,7 @@ function renderCard(card: GalleryCard, key: number) {
   return (
     <div
       className="border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch min-w-[308px] w-[308px] w-full"
+      role="listitem"
       key={key}
     >
       <div>
