@@ -61,8 +61,12 @@ export const context: ContentPageContext = {
       ev.preventDefault();
       console.log(ev.target, ev, targetContent);
     },
-  useSearch: () => ({
-    term: 'кредит',
-    setTerm: (text: string) => console.log(text),
-  }),
+  useSearch: () => {
+    const [term, setTerm] = useState('');
+
+    return {
+      term,
+      setTerm: (text: string) => setTerm(text),
+    };
+  },
 };

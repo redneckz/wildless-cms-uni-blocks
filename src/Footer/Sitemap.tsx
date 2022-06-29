@@ -48,7 +48,7 @@ interface ColumnItemProps extends LinkContent {
 
 const ColumnItem = JSX<ColumnItemProps>(({ text, href, target, index }) => (
   <a
-    className="block font-sans font-normal text-base text-secondary-text hover:text-primary-text no-underline"
+    className="block font-sans font-normal text-base text-secondary-text hover:text-primary-main no-underline"
     href={href}
     target={target || '_self'}
   >
