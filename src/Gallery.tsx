@@ -4,6 +4,7 @@ import { Picture, UniBlockProps } from './types';
 import { Button } from './ui-kit/Button';
 import { ArrowButton } from './ui-kit/ArrowButton';
 import { Title } from './ui-kit/Title';
+import { BlockItem } from './ui-kit/BlockItem';
 
 export interface GalleryCard {
   title: string;
@@ -120,10 +121,9 @@ function renderItems(items: string[] = []) {
   return (
     <section className="max-w-[308px] mt-2" role="list">
       {items.map((item, i) => (
-        <div className={`inline-block flex ${i ? 'mt-1' : ''}`} role="listitem" key={i}>
-          <div className="inline-block w-2 h-2 min-w-2 min-h-2 rounded-full mt-2 bg-primary-main"></div>
-          <span className="text-sm text-secondary-text ml-3">{item}</span>
-        </div>
+        <BlockItem key={String(i)}>
+          <span className="text-sm text-secondary-text">{item}</span>
+        </BlockItem>
       ))}
     </section>
   );
