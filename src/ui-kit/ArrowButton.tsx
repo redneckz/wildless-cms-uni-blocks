@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { ArrowLeftIcon } from '../Icons/ArrowLeftIcon';
+import { Icon } from './Icon';
 
 export interface ArrowButtonProps {
   onClick?: () => void;
@@ -16,7 +16,7 @@ export const ArrowButton = JSX<ArrowButtonProps>(({ className, onClick, ariaLabe
       onClick={onClick}
       aria-label={ariaLabel}
     >
-      {ArrowLeftIcon({ className: 'm-auto text-inherit' })}
+      <Icon name="ArrowLeftIcon" className="m-auto text-inherit" />
     </a>
   );
 });

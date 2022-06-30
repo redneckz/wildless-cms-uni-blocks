@@ -31007,7 +31007,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 3682:
+/***/ 7473:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31926,16 +31926,12 @@ function renderImage(image) {
     return image?.src ? jsx(Img, { className: "pt-0.5 pr-3", image: image }) : null;
 }
 
-;// CONCATENATED MODULE: ./src/Icons/ArrowLeftIcon.tsx
-
-const ArrowLeftIcon = (props) => (jsxs("svg", { width: "16", height: "16", viewBox: "0 0 16 16", fill: "none", xmlns: "http://www.w3.org/2000/svg", ...props, children: [jsx("path", { d: "M7 12L3 8L7 4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" }), jsx("path", { d: "M14 9C14.5523 9 15 8.55228 15 8C15 7.44772 14.5523 7 14 7L14 9ZM8 7C7.44772 7 7 7.44772 7 8C7 8.55229 7.44772 9 8 9L8 7ZM14 7L8 7L8 9L14 9L14 7Z", fill: "currentColor" })] }));
-
 ;// CONCATENATED MODULE: ./src/ui-kit/ArrowButton.tsx
 
 
 
 const ArrowButton = JSX(({ className, onClick, ariaLabel }) => {
-    return (jsx("a", { className: `${className} no-underline w-12 h-12 rounded-3xl bg-white flex text-black hover:text-primary-main`, style: { boxShadow: '0px 4px 25px rgba(0, 0, 0, 0.07)' }, href: "#", onClick: onClick, "aria-label": ariaLabel, children: ArrowLeftIcon({ className: 'm-auto text-inherit' }) }));
+    return (jsx("a", { className: `${className} no-underline w-12 h-12 rounded-3xl bg-white flex text-black hover:text-primary-main`, style: { boxShadow: '0px 4px 25px rgba(0, 0, 0, 0.07)' }, href: "#", onClick: onClick, "aria-label": ariaLabel, children: jsx(Icon, { name: "ArrowLeftIcon", className: "m-auto text-inherit" }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/Gallery.tsx
@@ -39201,7 +39197,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(3682),
+  var _require = __webpack_require__(7473),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;
