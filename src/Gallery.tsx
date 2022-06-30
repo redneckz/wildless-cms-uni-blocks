@@ -56,7 +56,7 @@ export const Gallery = JSX<GalleryProps>(
         </div>
         <div
           // Need to place all cards at the center if count of cards less than 4
-          className={`flex {${
+          className={`flex ${
             cards?.length <= GALLERY_LENGTH_FOR_SCROLL ? 'justify-center' : ''
           } duration-1000`}
           // All cards has same width
