@@ -1,15 +1,15 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { Img } from './Img';
 import { Picture, UniBlockProps } from './types';
-import { Button } from './ui-kit/Button';
 import { ArrowButton } from './ui-kit/ArrowButton';
-import { Title } from './ui-kit/Title';
 import { BlockItem } from './ui-kit/BlockItem';
+import { Button } from './ui-kit/Button';
+import { Title } from './ui-kit/Title';
 
 export interface GalleryCard {
-  title: string;
+  title?: string;
   description?: string;
-  image: Picture;
+  image?: Picture;
   href?: string;
   items?: string[];
 }
@@ -23,70 +23,67 @@ export interface GalleryContent {
 export interface GalleryProps extends GalleryContent, UniBlockProps {}
 
 const cardWidth = 384;
+const GALLERY_LENGTH_FOR_SCROLL = 3;
 
-export const Gallery = JSX<GalleryProps>(({ title, description, context, cards = [] }) => {
-  const [activeCardIndex, setActiveCardIndex] = context.useState(0);
-  const [showNextButton, setShowNextButton] = context.useState(cards?.length > 3);
-  const [showPrevButton, setShowPrevButton] = context.useState(false);
+export const Gallery = JSX<GalleryProps>(
+  ({ title, description, context, cards = [], className }) => {
+    const [activeCardIndex, setActiveCardIndex] = context.useState(0);
 
-  function handleNextClick() {
-    const newCardIndex = activeCardIndex + 1;
+    function handleNextClick() {
+      setActiveCardIndex(activeCardIndex + 1);
+    }
 
-    // We don't want to use native DOM things
-    // That's why we need this calculation and state changes
-    if (newCardIndex > 0) setShowPrevButton(true);
-    if (cards?.length - newCardIndex <= 3) setShowNextButton(false);
+    function handlePrevClick() {
+      setActiveCardIndex(activeCardIndex - 1);
+    }
 
-    setActiveCardIndex(newCardIndex);
-  }
+    const IS_GALLERY_SCROLL_AVAILABLE = cards?.length > GALLERY_LENGTH_FOR_SCROLL;
 
-  function handlePrevClick() {
-    const newCardIndex = activeCardIndex - 1;
+    const showNextButton =
+      IS_GALLERY_SCROLL_AVAILABLE && cards?.length - activeCardIndex > GALLERY_LENGTH_FOR_SCROLL;
 
-    // We don't want to use native DOM things
-    // That's why we need this calculation and state changes
-    if (newCardIndex === 0) setShowPrevButton(false);
-    if (cards?.length + newCardIndex > 3) setShowNextButton(true);
+    const showPrevButton = IS_GALLERY_SCROLL_AVAILABLE && activeCardIndex > 0;
 
-    setActiveCardIndex(newCardIndex);
-  }
-
-  return (
-    <section className="relative font-sans text-primary-text bg-white p-12 overflow-hidden w-100">
-      <div className="flex flex-col items-center">
-        <Title className="font-medium m-0 text-centers">{title}</Title>
-        {description ? (
-          <div className="font-normal text-base max-w-[600px] mt-3">{description}</div>
-        ) : null}
-      </div>
-      <div className="mb-8"></div>
-      <div
-        // Need to place all cards at the center if count of cards less than 4
-        className={`flex {${cards?.length < 4 && 'justify-center'} duration-1000`}
-        // All cards has same width
-        style={{ transform: `translateX(-${activeCardIndex * cardWidth}px)` }}
-        role="list"
+    return (
+      <section
+        className={`relative font-sans text-primary-text bg-white p-12 overflow-hidden ${className}`}
       >
-        {cards?.map((card, i) => renderCard(card, i))}
-      </div>
-      {showPrevButton && (
-        <ArrowButton className="absolute top-1/2 left-8" onClick={handlePrevClick} />
-      )}
-      {showNextButton && (
-        <ArrowButton
-          className="absolute top-1/2 right-1 z-20 rotate-180"
-          onClick={handleNextClick}
-        />
-      )}
-      <div
-        className="absolute absolute top-0 right-0 bottom-0 w-[84px]"
-        style={{
-          background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
-        }}
-      ></div>
-    </section>
-  );
-});
+        <div className="flex flex-col items-center mb-8">
+          <Title className="font-medium m-0 text-centers">{title}</Title>
+          {description ? (
+            <div className="font-normal text-base max-w-[600px] mt-3">{description}</div>
+          ) : null}
+        </div>
+        <div
+          // Need to place all cards at the center if count of cards less than 4
+          className={`flex {${
+            cards?.length <= GALLERY_LENGTH_FOR_SCROLL ? 'justify-center' : ''
+          } duration-1000`}
+          // All cards has same width
+          style={{ transform: `translateX(-${activeCardIndex * cardWidth}px)` }}
+          role="list"
+        >
+          {cards?.map(renderCard)}
+        </div>
+        {showPrevButton && (
+          <ArrowButton className="absolute top-1/2 left-8" onClick={handlePrevClick} />
+        )}
+        {showNextButton && (
+          <ArrowButton
+            className="absolute top-1/2 right-1 z-20 rotate-180"
+            onClick={handleNextClick}
+          />
+        )}
+        <div
+          className="absoluted top-0 right-0 bottom-0 w-[84px]"
+          style={{
+            background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
+          }}
+        ></div>
+      </section>
+    );
+  },
+);
 
 function renderCard(card: GalleryCard, key: number) {
   return (
@@ -96,16 +93,20 @@ function renderCard(card: GalleryCard, key: number) {
       key={key}
     >
       <div>
-        {card.image?.src && <Img className="flex justify-center mb-6" image={card.image} />}
-        {card.title && (
+        {card.image?.src ? (
+          <div className="flex justify-center">
+            <Img className="mb-6" image={card.image} />
+          </div>
+        ) : null}
+        {card.title ? (
           <h4
             className={`font-medium text-xl m-0 ${
-              !card.description && !card.items?.length && 'text-center'
+              !card.description && !card.items?.length ? 'text-center' : ''
             }`}
           >
             {card.title}
           </h4>
-        )}
+        ) : null}
         {card.description ? (
           <div className="font-normal text-sm text-secondary-text mt-2">{card.description}</div>
         ) : null}
