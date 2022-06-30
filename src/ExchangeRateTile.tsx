@@ -1,8 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { DollarIcon, EuroIcon } from './Icons/index';
 import { Tile } from './Tile';
 import type { UniBlockProps } from './types';
 import type { ButtonProps } from './ui-kit/Button';
+import { Icon } from './ui-kit/Icon';
 
 export interface ExchangeRateTileContent {
   title?: string;
@@ -14,8 +14,8 @@ const CBR_EXCHANGE_RATE_URL = 'https://www.cbr-xml-daily.ru/daily_json.js';
 
 const CURRENCY_CODES = ['USD', 'EUR'];
 const CURRENCY_ICONS_MAP = {
-  USD: DollarIcon,
-  EUR: EuroIcon,
+  USD: 'DollarIcon',
+  EUR: 'EuroIcon',
 };
 
 const buttons: ButtonProps[] = [
@@ -48,7 +48,7 @@ export const ExchangeRateTile = JSX<ExchangeRateTileProps>(({ className, context
               <tr key={code}>
                 <CurrencyTD className="pt-4">
                   <div className="flex items-center">
-                    {CURRENCY_ICONS_MAP[code] ? CURRENCY_ICONS_MAP[code]() : null}
+                    <Icon name={CURRENCY_ICONS_MAP[code]} width="24" height="24" />
                     <span className="ml-2">{code}</span>
                   </div>
                 </CurrencyTD>

@@ -70,7 +70,7 @@ export default {
             aboveText="Доступно в"
             text="Google Play"
             version="secondary"
-            icon="PlayMarket"
+            icon="PlayMarketIcon"
           />
           <IconButton
             href="https://www.rshb.ru/"

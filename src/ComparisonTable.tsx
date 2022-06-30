@@ -28,6 +28,7 @@ export interface ComparisonTableContent {
 export interface ComparisonTableProps extends ComparisonTableContent, UniBlockProps {}
 
 const GRADIENT = 'bg-gradient-to-r from-main-gradient-start to-main-gradient-end';
+const MIN_COLUMNS_LENGTH = 3;
 
 export const ComparisonTable = JSX<ComparisonTableProps>(
   ({ className, context, title, rowHeaders, columns }) => {
@@ -39,7 +40,9 @@ export const ComparisonTable = JSX<ComparisonTableProps>(
     ]);
 
     return (
-      <section className="bg-white font-sans flex flex-col items-center py-[50px]">
+      <section
+        className={`bg-white font-sans flex flex-col items-center py-[50px] ${className || ''}`}
+      >
         <Title className="font-medium m-0 max-w-[47rem] text-center mb-9">{title}</Title>
         {rowHeaders?.length ? (
           <table cellSpacing="0" cellPadding="0" className="border-spacing-x-4 h-1">

@@ -1,14 +1,13 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { NewDocIcon, PassSendIcon, ActualBalanceIcon } from './Icons/index';
 import type { UniBlockProps } from './types';
+import { Icon, IconName } from './ui-kit/Icon';
 import { Title } from './ui-kit/Title';
 import { joinList } from './utils/joinList';
 
-const ICONS = { NewDocIcon, PassSendIcon, ActualBalanceIcon };
 export interface Step {
   label: string;
   description?: string;
-  icon?: keyof typeof ICONS;
+  icon?: IconName;
 }
 
 export interface StepsBlockContent {
@@ -44,7 +43,7 @@ const renderStepIcon = (step: Step, i: number) => {
   return (
     <div key={String(i)} className="flex flex-col items-center text-center relative">
       <div className="h-[100px] w-[100px] min-w-[100px] min-h-[100px] bg-secondary-light rounded-full p-[26px] box-border z-10">
-        {(step.icon && ICONS[step.icon]?.({ width: 48, height: 48 })) || (
+        {(step.icon && <Icon name={step.icon} width="48" height="48" />) || (
           <span className="font-medium text-title-sm text-secondary-text">{i + 1}</span>
         )}
       </div>
