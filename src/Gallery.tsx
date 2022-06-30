@@ -75,7 +75,7 @@ export const Gallery = JSX<GalleryProps>(
           />
         )}
         <div
-          className="absoluted top-0 right-0 bottom-0 w-[84px]"
+          className="absolute top-0 right-0 bottom-0 w-[84px]"
           style={{
             background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
           }}
