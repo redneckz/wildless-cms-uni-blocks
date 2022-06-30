@@ -20,7 +20,7 @@ const buttonDisabledStyleMap: Record<ButtonVersion, string> = {
   secondary: 'bg-secondary-light text-secondary-text',
 };
 
-const styleButton = 'inline-block rounded-md px-8 py-2 text-center font-sans';
+const styleButton = 'inline-block rounded-md px-8 text-center font-sans';
 
 export const Button = JSX<ButtonProps>(
   ({
@@ -45,11 +45,7 @@ export const Button = JSX<ButtonProps>(
             className || ''
           }`}
         >
-          {children ? (
-            <div>{children}</div>
-          ) : (
-            <div className="text-sm font-medium py-1.5">{text}</div>
-          )}
+          {children ?? <div className="text-sm font-medium py-[13px]">{text}</div>}
         </div>
       );
     }
@@ -62,11 +58,7 @@ export const Button = JSX<ButtonProps>(
         onClick={onClick}
         aria-label={ariaLabel}
       >
-        {children ? (
-          <div>{children}</div>
-        ) : (
-          <div className="text-sm font-medium py-1.5">{text}</div>
-        )}
+        {children ?? <div className="text-sm font-medium py-[13px]">{text}</div>}
       </a>
     );
   },

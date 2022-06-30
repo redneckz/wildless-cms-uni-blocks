@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import { DollarIcon, EuroIcon } from './Icons/index';
 import { Tile } from './Tile';
 import type { UniBlockProps } from './types';
-import { ButtonProps } from './ui-kit/Button';
+import type { ButtonProps } from './ui-kit/Button';
 
 export interface ExchangeRateTileContent {
   title?: string;

@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx,json}'],
@@ -32,7 +33,6 @@ module.exports = {
         sm: ['0.875rem', '1.375rem'], // 14px 22px
         base: ['1rem', '1.5rem'], // 16px 24px
         'title-sm': ['1.75rem', '2.5rem'], //28px 40px
-        'title-xsm': ['0.75rem', '1.125rem'], // 12px 18px
         'title-xs': ['1.5rem', '1.875rem'], //24px 30px
         title: ['2rem', '2.5rem'], //32px 40px
         'title-lg': ['2.5rem', '3rem'], //40px 48px
@@ -41,6 +41,11 @@ module.exports = {
         main: {
           DEFAULT: 'rgba(240, 244, 240, <alpha-value>)',
           divider: 'rgba(235, 237, 240, <alpha-value>)',
+          gradient: {
+            start: 'rgba(var(--color-gradient-from), <alpha-value>)',
+            end: 'rgba(var(--color-gradient-to), <alpha-value>)',
+          },
+          stroke: 'rgba(201, 202, 204, <alpha-value>)',
         },
         primary: {
           main: 'rgba(var(--color-primary-main), <alpha-value>)',
@@ -76,6 +81,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant('not-last', '&:not(:last-child)');
+    }),
+  ],
   safelist: [],
 };
