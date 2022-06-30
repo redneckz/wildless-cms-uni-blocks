@@ -4,23 +4,34 @@ import { projectSettings } from '../ProjectSettings';
 export type IconName =
   | 'ActualBalanceIcon'
   | 'AppleIcon'
+  | 'CalendarCircleIcon'
   | 'CalendarIcon'
+  | 'CardIcon'
+  | 'CardPosIcon'
+  | 'CardTickIcon'
   | 'ClockIcon'
   | 'ComfortableCompIcon'
   | 'DollarIcon'
+  | 'EmptyWalletChangeIcon'
   | 'EmptyWalletIcon'
   | 'EuroIcon'
   | 'GridIcon'
   | 'LoupeIcon'
+  | 'MoneyIcon'
+  | 'MonitorMobileIcon'
   | 'NewDocIcon'
   | 'OkIcon'
   | 'PassSendIcon'
   | 'PercentageSquareIcon'
   | 'PlayMarketIcon'
+  | 'Profile2UserIcon'
   | 'ProfileIcon'
+  | 'ShieldTickIcon'
   | 'SignDocsIcon'
   | 'TelegramIcon'
-  | 'VKIcon';
+  | 'UserIcon'
+  | 'VKIcon'
+  | 'WalletIcon';
 
 export interface IconProps {
   className?: string;
