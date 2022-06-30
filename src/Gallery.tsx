@@ -22,7 +22,7 @@ export interface GalleryContent {
 
 export interface GalleryProps extends GalleryContent, UniBlockProps {}
 
-const cardWidth = 384;
+const CARD_WIDTH = 384;
 const GALLERY_LENGTH_FOR_SCROLL = 3;
 
 export const Gallery = JSX<GalleryProps>(
@@ -37,12 +37,12 @@ export const Gallery = JSX<GalleryProps>(
       setActiveCardIndex(activeCardIndex - 1);
     }
 
-    const IS_GALLERY_SCROLL_AVAILABLE = cards?.length > GALLERY_LENGTH_FOR_SCROLL;
+    const isGalleryScrollAvailable = cards?.length > GALLERY_LENGTH_FOR_SCROLL;
 
     const showNextButton =
-      IS_GALLERY_SCROLL_AVAILABLE && cards?.length - activeCardIndex > GALLERY_LENGTH_FOR_SCROLL;
+      isGalleryScrollAvailable && cards?.length - activeCardIndex > GALLERY_LENGTH_FOR_SCROLL;
 
-    const showPrevButton = IS_GALLERY_SCROLL_AVAILABLE && activeCardIndex > 0;
+    const showPrevButton = isGalleryScrollAvailable && activeCardIndex > 0;
 
     return (
       <section
@@ -60,7 +60,7 @@ export const Gallery = JSX<GalleryProps>(
             cards?.length <= GALLERY_LENGTH_FOR_SCROLL ? 'justify-center' : ''
           } duration-1000`}
           // All cards has same width
-          style={{ transform: `translateX(-${activeCardIndex * cardWidth}px)` }}
+          style={{ transform: `translateX(-${activeCardIndex * CARD_WIDTH}px)` }}
           role="list"
         >
           {cards?.map(renderCard)}

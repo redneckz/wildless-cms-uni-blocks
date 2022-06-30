@@ -31941,7 +31941,7 @@ const ArrowButton = JSX(({ className, onClick, ariaLabel }) => {
 
 
 
-const cardWidth = 384;
+const CARD_WIDTH = 384;
 const GALLERY_LENGTH_FOR_SCROLL = 3;
 const Gallery = JSX(({ title, description, context, cards = [], className }) => {
     const [activeCardIndex, setActiveCardIndex] = context.useState(0);
@@ -31951,14 +31951,14 @@ const Gallery = JSX(({ title, description, context, cards = [], className }) => 
     function handlePrevClick() {
         setActiveCardIndex(activeCardIndex - 1);
     }
-    const IS_GALLERY_SCROLL_AVAILABLE = cards?.length > GALLERY_LENGTH_FOR_SCROLL;
-    const showNextButton = IS_GALLERY_SCROLL_AVAILABLE && cards?.length - activeCardIndex > GALLERY_LENGTH_FOR_SCROLL;
-    const showPrevButton = IS_GALLERY_SCROLL_AVAILABLE && activeCardIndex > 0;
+    const isGalleryScrollAvailable = cards?.length > GALLERY_LENGTH_FOR_SCROLL;
+    const showNextButton = isGalleryScrollAvailable && cards?.length - activeCardIndex > GALLERY_LENGTH_FOR_SCROLL;
+    const showPrevButton = isGalleryScrollAvailable && activeCardIndex > 0;
     return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-12 overflow-hidden ${className}`, children: [jsxs("div", { className: "flex flex-col items-center mb-8", children: [jsx(Title, { className: "font-medium m-0 text-centers", children: title }), description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { 
                 // Need to place all cards at the center if count of cards less than 4
                 className: `flex {${cards?.length <= GALLERY_LENGTH_FOR_SCROLL ? 'justify-center' : ''} duration-1000`, 
                 // All cards has same width
-                style: { transform: `translateX(-${activeCardIndex * cardWidth}px)` }, role: "list", children: cards?.map(renderCard) }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8", onClick: handlePrevClick })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-20 rotate-180", onClick: handleNextClick })), jsx("div", { className: "absoluted top-0 right-0 bottom-0 w-[84px]", style: {
+                style: { transform: `translateX(-${activeCardIndex * CARD_WIDTH}px)` }, role: "list", children: cards?.map(renderCard) }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8", onClick: handlePrevClick })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-20 rotate-180", onClick: handleNextClick })), jsx("div", { className: "absoluted top-0 right-0 bottom-0 w-[84px]", style: {
                     background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
                 } })] }));
 });
