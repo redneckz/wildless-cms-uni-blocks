@@ -56,7 +56,7 @@ export const Gallery = JSX<GalleryProps>(
         </div>
         <div
           // Need to place all cards at the center if count of cards less than 4
-          className={`flex {${
+          className={`flex ${
             cards?.length <= GALLERY_LENGTH_FOR_SCROLL ? 'justify-center' : ''
           } duration-1000`}
           // All cards has same width
@@ -75,7 +75,7 @@ export const Gallery = JSX<GalleryProps>(
           />
         )}
         <div
-          className="absoluted top-0 right-0 bottom-0 w-[84px]"
+          className="absolute top-0 right-0 bottom-0 w-[84px]"
           style={{
             background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
           }}
