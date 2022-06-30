@@ -1,12 +1,12 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { LinkContent, UniBlockProps } from '../types';
-import { TelegramIcon, VKIcon, OkIcon } from '../Icons/index';
+import { Icon, IconName } from '../ui-kit/Icon';
 import { useLink } from '../useLink';
 
-const ICONS_MAP = [
-  { origins: ['t.me', 'telegram.org'], icon: TelegramIcon, label: 'Телеграм' },
-  { origins: ['vk.com'], icon: VKIcon, label: 'ВКонтакте' },
-  { origins: ['ok.ru'], icon: OkIcon, label: 'Одноклассники' },
+const ICONS_MAP: Array<{ origins: string[]; icon: IconName; label: string }> = [
+  { origins: ['t.me', 'telegram.org'], icon: 'TelegramIcon', label: 'Телеграм' },
+  { origins: ['vk.com'], icon: 'VKIcon', label: 'ВКонтакте' },
+  { origins: ['ok.ru'], icon: 'OkIcon', label: 'Одноклассники' },
 ];
 
 export interface SocialMediaProps extends UniBlockProps {
@@ -30,7 +30,7 @@ interface MediaButtonProps {
 }
 
 const MediaButton = JSX<MediaButtonProps>(({ href }) => {
-  const { icon: Icon, label } =
+  const { icon, label } =
     ICONS_MAP.find(({ origins }) => origins.some((_) => href?.includes(_))) || {};
   return (
     <a
@@ -40,7 +40,7 @@ const MediaButton = JSX<MediaButtonProps>(({ href }) => {
       rel="noopener noreferrer"
       aria-label={label}
     >
-      {Icon && <Icon className="block" />}
+      {icon && <Icon className="block" name={icon} /> /* TODO width & height */}
     </a>
   );
 });

@@ -1,13 +1,15 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../types';
-import { LoupeIcon } from '../Icons/index';
+import { Icon } from './Icon';
 
 export const SearchBar = JSX<UniBlockProps>(({ className, context }) => {
   const { term, setTerm } = context.useSearch();
   return (
     <form className={`relative ${className || ''}`}>
       <div className="absolute rounded h-full flex items-center justify-center pl-4 max-w-[170px] gap-3.5 pointer-events-none">
-        <div className="w-[24px] h-[24px]">{LoupeIcon()}</div>
+        <div className="w-[24px] h-[24px]">
+          <Icon name="LoupeIcon" width="24" height="24" />
+        </div>
         {!term && (
           <span className="font-sans font-normal text-base text-secondary-text">
             Поиск по сайту

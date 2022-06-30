@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { ArrowLeftIcon } from '../Icons';
+import { ArrowLeftIcon } from '../Icons/ArrowLeftIcon';
 
 export interface ArrowButtonProps {
   onClick?: () => void;
