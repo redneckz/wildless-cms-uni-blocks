@@ -12,7 +12,6 @@ export const ArrowButton = JSX<ArrowButtonProps>(({ className, onClick, ariaLabe
     <button
       className={`${className} border-none no-underline w-12 h-12 rounded-3xl bg-white flex text-black hover:text-primary-main`}
       style={{ boxShadow: '0px 4px 25px rgba(0, 0, 0, 0.07)' }}
-      href="#"
       onClick={onClick}
       aria-label={ariaLabel}
     >
