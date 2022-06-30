@@ -1,6 +1,6 @@
 import { context } from './setup-fixture';
 
-import { Gallery } from './Gallery';
+import { Gallery, GalleryProps } from './Gallery';
 import { Picture } from './types';
 
 const image: Picture = {
@@ -18,7 +18,7 @@ const defaultItems = [
   'Площадки для создания комфортной жизни за городом',
 ];
 
-const defaultProps = {
+const defaultProps: GalleryProps = {
   title: 'Вы можете оплатить бонусными баллами',
   description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
   context,
@@ -63,7 +63,7 @@ const defaultProps = {
   ],
 };
 
-const textAndButtonProps = {
+const textAndButtonProps: GalleryProps = {
   title: 'Вы можете оплатить бонусными баллами',
   description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
   context,
@@ -103,7 +103,7 @@ const textAndButtonProps = {
   ],
 };
 
-const listAndButtonProps = {
+const listAndButtonProps: GalleryProps = {
   title: 'Вы можете оплатить бонусными баллами',
   description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
   context,
@@ -141,7 +141,7 @@ const listAndButtonProps = {
   ],
 };
 
-const textAndNoButtonProps = {
+const textAndNoButtonProps: GalleryProps = {
   title: 'Вы можете оплатить бонусными баллами',
   description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
   context,
@@ -176,7 +176,7 @@ const textAndNoButtonProps = {
   ],
 };
 
-const onlyTitleProps = {
+const onlyTitleProps: GalleryProps = {
   title: 'Вы можете оплатить бонусными баллами',
   description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
   context,
