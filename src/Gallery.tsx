@@ -56,7 +56,7 @@ export const Gallery = JSX<GalleryProps>(
         </div>
         <div
           // Need to place all cards at the center if count of cards less than 4
-          className={`flex {${
+          className={`flex ${
             cards?.length <= GALLERY_LENGTH_FOR_SCROLL ? 'justify-center' : ''
           } duration-1000`}
           // All cards has same width
@@ -66,16 +66,21 @@ export const Gallery = JSX<GalleryProps>(
           {cards?.map(renderCard)}
         </div>
         {showPrevButton && (
-          <ArrowButton className="absolute top-1/2 left-8" onClick={handlePrevClick} />
+          <ArrowButton
+            className="absolute top-1/2 left-8"
+            onClick={handlePrevClick}
+            ariaLabel="Пролистать влево"
+          />
         )}
         {showNextButton && (
           <ArrowButton
             className="absolute top-1/2 right-1 z-20 rotate-180"
             onClick={handleNextClick}
+            ariaLabel="Пролистать вправо"
           />
         )}
         <div
-          className="absoluted top-0 right-0 bottom-0 w-[84px]"
+          className="absolute top-0 right-0 bottom-0 w-[84px]"
           style={{
             background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
           }}
@@ -88,7 +93,7 @@ export const Gallery = JSX<GalleryProps>(
 function renderCard(card: GalleryCard, key: number) {
   return (
     <div
-      className="border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch min-w-[308px] w-[308px] w-full"
+      className="box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch min-w-[364px] w-[364px] w-full"
       role="listitem"
       key={key}
     >
