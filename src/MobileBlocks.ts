@@ -1,6 +1,7 @@
 import { BenefitsBlock } from './BenefitsBlock';
 import { ExchangeRateTile } from './ExchangeRateTile';
 import { Footer } from './Footer/Footer.mobile';
+import { Gallery } from './Gallery.mobile';
 import { Header } from './Header/index';
 import { MobileAppTile } from './MobileAppTile';
 import { Placeholder } from './Placeholder';
@@ -24,4 +25,5 @@ export const MobileBlocks = {
   ProductGallery,
   ExchangeRateTile,
   MobileAppTile,
+  Gallery,
 };
