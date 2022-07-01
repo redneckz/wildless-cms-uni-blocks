@@ -1,4 +1,4 @@
-import { context } from './setup-fixture';
+import { context, mobileContext } from './setup-fixture';
 
 import { Blocks } from './Blocks';
 import { BlockDecorator, ContentPage } from './ContentPage';
@@ -39,7 +39,7 @@ export default {
   mobile: (
     <ContentPage
       className="bg-secondary-text"
-      context={context}
+      context={mobileContext}
       blocksRegistry={MobileBlocks}
       data={toMobilePage(data as ContentPageDef)}
     />
