@@ -66,12 +66,17 @@ export const Gallery = JSX<GalleryProps>(
           {cards?.map(renderCard)}
         </div>
         {showPrevButton && (
-          <ArrowButton className="absolute top-1/2 left-8" onClick={handlePrevClick} />
+          <ArrowButton
+            className="absolute top-1/2 left-8"
+            onClick={handlePrevClick}
+            ariaLabel="Пролистать влево"
+          />
         )}
         {showNextButton && (
           <ArrowButton
             className="absolute top-1/2 right-1 z-20 rotate-180"
             onClick={handleNextClick}
+            ariaLabel="Пролистать вправо"
           />
         )}
         <div
