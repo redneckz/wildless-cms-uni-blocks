@@ -14,7 +14,7 @@ const GOLDEN_RATIO = 1.618;
 
 export const Placeholder = JSX<PlaceholderProps>(({ className, context, title }) => {
   return (
-    <Tile className={className} context={context} title={title}>
+    <Tile className={className} context={context} title={title} description="Блок в разработке...">
       <figure className="m-0 min-w-[600px]">{renderShimmer()}</figure>
     </Tile>
   );

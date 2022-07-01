@@ -1,13 +1,8 @@
 import type { Router } from '../ContentPageContext';
 import type { LinkContent } from '../types';
-import { isURL, withoutQuery } from '../utils/url';
+import { isHrefActive } from '../utils/url';
 
-export function isTopItemActive({ href, pathname }: Router) {
-  return (item: LinkContent): boolean => {
-    const itemHref = withoutQuery(item.href);
-    if (isURL(itemHref)) {
-      return Boolean(href && href.startsWith(itemHref));
-    }
-    return Boolean(itemHref && pathname.startsWith(itemHref));
-  };
+export function isTopItemActive(router: Router) {
+  return (topItem: LinkContent): boolean =>
+    isHrefActive(topItem.href, router, (topItemHref, baseHref) => baseHref.startsWith(topItemHref));
 }
