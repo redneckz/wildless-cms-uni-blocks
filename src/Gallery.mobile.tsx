@@ -16,7 +16,7 @@ export const Gallery = JSX<GalleryProps>(({ title, description, cards = [], clas
           <div className="font-normal text-base max-w-[600px] mt-3">{description}</div>
         ) : null}
       </div>
-      <div className="horizontal-list" role="list">
+      <div className="horizontal-list no-scrollbar" role="list">
         {cards?.map(renderCard)}
       </div>
     </section>
