@@ -66,12 +66,17 @@ export const Gallery = JSX<GalleryProps>(
           {cards?.map(renderCard)}
         </div>
         {showPrevButton && (
-          <ArrowButton className="absolute top-1/2 left-8" onClick={handlePrevClick} />
+          <ArrowButton
+            className="absolute top-1/2 left-8"
+            onClick={handlePrevClick}
+            ariaLabel="Пролистать влево"
+          />
         )}
         {showNextButton && (
           <ArrowButton
             className="absolute top-1/2 right-1 z-20 rotate-180"
             onClick={handleNextClick}
+            ariaLabel="Пролистать вправо"
           />
         )}
         <div
@@ -88,7 +93,7 @@ export const Gallery = JSX<GalleryProps>(
 function renderCard(card: GalleryCard, key: number) {
   return (
     <div
-      className="border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch min-w-[308px] w-[308px] w-full"
+      className="box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch min-w-[364px] w-[364px] w-full"
       role="listitem"
       key={key}
     >
