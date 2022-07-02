@@ -24,6 +24,10 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      backgroundImage: {
+        'opacity-to-white':
+          'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%);',
+      },
       fontFamily: {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
       },

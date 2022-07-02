@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { BaseTileContent } from './BaseTile';
 import { BaseTile } from './BaseTile';
 import type { Benefit } from './BenefitsBlock';
-import { Img } from './Img';
+import { Img } from './ui-kit/Img';
 import type { UniBlockProps } from './types';
 import { Icon } from './ui-kit/Icon';
 import { Title } from './ui-kit/Title';
@@ -19,7 +19,10 @@ export const ProductBlockInner = JSX<ProductBlockInnerProps>(
       <div className={`flex grow justify-between items-stretch ${className || ''}`}>
         <div className={'flex flex-col'}>
           {title && (
-            <Title size="XL" className="font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]">
+            <Title
+              size="XL"
+              className="font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px] text-primary-text"
+            >
               {title}
             </Title>
           )}
@@ -47,7 +50,7 @@ function renderBenefit(benefit: Benefit, i: number) {
         />
       )}
       <div className="flex gap-1 flex-col h-full">
-        <h4 className="font-medium text-xl m-0">{benefit.label}</h4>
+        <h4 className="font-medium text-primary-text text-xl m-0">{benefit.label}</h4>
         {benefit.description && (
           <div className="font-normal text-sm text-secondary-text">{benefit.description}</div>
         )}

@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Img } from './Img';
+import { Img } from './ui-kit/Img';
 import type { BlockVersion, Picture, UniBlockProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
 import type { IconButtonProps } from './ui-kit/IconButton';
