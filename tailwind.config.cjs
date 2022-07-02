@@ -1,5 +1,4 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
-const plugin = require('tailwindcss/plugin');
 
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx,json}'],
@@ -85,10 +84,6 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    plugin(function ({ addVariant }) {
-      addVariant('not-last', '&:not(:last-child)');
-    }),
-  ],
+  plugins: [],
   safelist: [],
 };

@@ -70,3 +70,15 @@ export const context: ContentPageContext = {
     };
   },
 };
+
+export const mobileContext: ContentPageContext = {
+  ...context,
+  useRouter: () => ({
+    href: `${TEST_ORIGIN}/mobile/credits`,
+    pathname: '/mobile/credits',
+    query: {},
+    push: (url: string) => {
+      console.log(url);
+    },
+  }),
+};
