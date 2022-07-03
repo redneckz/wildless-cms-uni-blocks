@@ -14,12 +14,16 @@ export interface ProductBlockInnerContent extends BaseTileContent {
 export interface ProductBlockInnerProps extends ProductBlockInnerContent, UniBlockProps {}
 
 export const ProductBlockInner = JSX<ProductBlockInnerProps>(
-  ({ className, context, title, description, benefits, buttons, image, items }) => {
+  ({ className, context, title, titleSize, description, benefits, buttons, image, items }) => {
     return (
       <div className={`flex grow justify-between items-stretch ${className || ''}`}>
         <div className={'flex flex-col'}>
           {title && (
-            <Title size="XL" className="font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]">
+            /* TODO Why <Title> is duplicated here?  */
+            <Title
+              size={titleSize || 'XL'}
+              className="font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]"
+            >
               {title}
             </Title>
           )}

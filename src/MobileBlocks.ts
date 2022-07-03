@@ -1,13 +1,11 @@
-import { BenefitsBlock } from './BenefitsBlock';
 import { ExchangeRateTile } from './ExchangeRateTile';
 import { Footer } from './Footer/Footer.mobile';
+import { Gallery } from './Gallery.mobile';
 import { Header } from './Header/index';
 import { MobileAppTile } from './MobileAppTile';
 import { Placeholder } from './Placeholder';
-import { ProductBlock } from './ProductBlock';
-import { ProductGallery } from './ProductGallery';
+import { ProductBlock } from './ProductBlock.mobile';
 import { ProductTile } from './ProductTile';
-import { StepsBlock } from './StepsBlock';
 import { TextBlock } from './TextBlock';
 import { Tile } from './Tile';
 
@@ -18,10 +16,11 @@ export const MobileBlocks = {
   Tile,
   ProductTile,
   ProductBlock,
-  StepsBlock,
   TextBlock,
-  BenefitsBlock,
-  ProductGallery,
   ExchangeRateTile,
   MobileAppTile,
+  Gallery,
+  // TODO StepsBlock,
+  // TODO BenefitsBlock,
+  // TODO ProductGallery
 };

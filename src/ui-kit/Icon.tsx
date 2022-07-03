@@ -31,7 +31,8 @@ export type IconName =
   | 'TelegramIcon'
   | 'UserIcon'
   | 'VKIcon'
-  | 'WalletIcon';
+  | 'WalletIcon'
+  | 'ArrowLeftIcon';
 
 export interface IconProps {
   className?: string;

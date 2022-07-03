@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.62",
+  "version": "0.2.68",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
