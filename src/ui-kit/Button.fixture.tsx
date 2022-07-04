@@ -81,6 +81,25 @@ export default {
           />
         </div>
       </div>
+      <div>
+        <p>Rounded with only Icon</p>
+        <div className="flex gap-6" data-theme="pc">
+          <Button
+            rounded
+            href="https://www.rshb.ru/"
+            target="_blank"
+            version="secondary"
+            icon="PlayMarketIcon"
+          />
+          <Button
+            rounded
+            href="https://www.rshb.ru/"
+            target="_blank"
+            version="secondary"
+            icon="AppleIcon"
+          />
+        </div>
+      </div>
     </div>
   ),
   'primary (Private clients)': (
