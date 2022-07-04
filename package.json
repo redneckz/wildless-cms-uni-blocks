@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.68",
+  "version": "0.2.69",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -60,6 +60,7 @@
   "files": [
     "lib",
     "dist",
+    "bundle",
     "fonts",
     "src"
   ],
@@ -75,13 +76,13 @@
   },
   "scripts": {
     "start": "npm run cosmos",
-    "build": "npm run build:lib && npm run build:commonjs && npm run build:style && npm run build:icons",
+    "build": "npm run build:lib && npm run build:commonjs && npm run bundle && npm run build:style && npm run build:icons",
+    "postbuild": "npm run size",
     "build:lib": "rimraf ./lib && tsc --build --verbose",
     "postbuild:lib": "replace-in-file --configFile=replace-config.lib.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
     "bundle": "rimraf ./bundle && rollup -c",
     "build:style": "postcss './src/**/*.css' --env production --dir ./lib",
-    "postbuild:style": "npm run size",
     "build:icons": "svgo -f ./src/icons -o ./cosmos-static/icons",
     "size": "size-limit",
     "test": "jest --coverage",
@@ -146,6 +147,10 @@
     {
       "limit": "7 kB",
       "path": "lib/common.css"
+    },
+    {
+      "limit": "30 kB",
+      "path": "bundle/bundle.umd.min.js"
     }
   ],
   "lint-staged": {
