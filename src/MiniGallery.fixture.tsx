@@ -4,7 +4,7 @@ import { MiniGallery, MiniGalleryProps } from './MiniGallery';
 import { Picture } from './types';
 
 const image: Picture = {
-  src: 'money-1.png',
+  src: 'domovoj-kupon.png',
   format: 'webp',
   size: {
     width: 120,

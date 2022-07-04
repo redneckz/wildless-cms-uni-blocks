@@ -32686,7 +32686,7 @@ const MiniGallery = JSX((props) => (jsx(GalleryInner, { ...props, version: "mini
 
 
 const MiniGallery_fixture_image = {
-    src: 'money-1.png',
+    src: 'domovoj-kupon.png',
     format: 'webp',
     size: {
         width: 120,
