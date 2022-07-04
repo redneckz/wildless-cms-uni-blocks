@@ -16,6 +16,7 @@ export type ColorPalette = 'pc' | 'bc' | 'eo';
 
 export type BlockVersion = 'primary' | 'secondary';
 export type ButtonVersion = 'primary' | 'secondary';
+export type GalleryVersion = 'normal' | 'mini';
 export interface BlockDef {
   type: string;
   style?: string[];

@@ -1,19 +1,20 @@
+import { BaseTileContent } from './BaseTile';
 import { BenefitsBlock, BenefitsBlockContent } from './BenefitsBlock';
 import { ExchangeRateTile, ExchangeRateTileContent } from './ExchangeRateTile';
 import { Footer, FooterContent } from './Footer/index';
+import { Gallery } from './Gallery';
+import { GalleryContent } from './GalleryInner';
 import { Header, HeaderContent } from './Header/index';
 import { MobileAppTile, MobileAppTileContent } from './MobileAppTile';
 import { Placeholder, PlaceholderContent } from './Placeholder';
 import { ProductBlock } from './ProductBlock';
 import { ProductBlockInnerContent } from './ProductBlockInner';
 import { ProductGallery, ProductGalleryContent } from './ProductGallery';
-import { StepsBlock, StepsBlockContent } from './StepsBlock';
 import { ProductTile, ProductTileContent } from './ProductTile';
-import { BaseTileContent } from './BaseTile';
 import { PromoTile, PromoTileContent } from './PromoTile';
-import { Tile } from './Tile';
+import { StepsBlock, StepsBlockContent } from './StepsBlock';
 import { TextBlock, TextBlockContent } from './TextBlock';
-import { Gallery, GalleryContent } from './Gallery';
+import { Tile } from './Tile';
 
 export const Blocks = {
   Header,
