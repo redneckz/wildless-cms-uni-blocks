@@ -26,6 +26,8 @@ jobs:
           path: |
             dist/
             lib/
+            bundle/
+            fonts/
 
   publish:
     if: github.ref == 'refs/heads/main'
