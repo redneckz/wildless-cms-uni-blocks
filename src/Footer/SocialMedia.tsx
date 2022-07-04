@@ -2,6 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { LinkContent, UniBlockProps } from '../types';
 import { Icon, IconName } from '../ui-kit/Icon';
 import { useLink } from '../useLink';
+import { Button } from '../ui-kit/Button';
 
 const ICONS_MAP: Array<{ origins: string[]; icon: IconName; label: string }> = [
   { origins: ['t.me', 'telegram.org'], icon: 'TelegramIcon', label: 'Телеграм' },
@@ -32,15 +33,18 @@ interface MediaButtonProps {
 const MediaButton = JSX<MediaButtonProps>(({ href }) => {
   const { icon, label } =
     ICONS_MAP.find(({ origins }) => origins.some((_) => href?.includes(_))) || {};
+
+  if (!icon) return null;
+
   return (
-    <a
-      className="flex items-center justify-center border-solid border border-main-divider rounded-full no-underline outline-none w-9 h-9"
+    <Button
+      rounded
       href={href}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-    >
-      {icon && <Icon className="block" name={icon} /> /* TODO width & height */}
-    </a>
+      className="border-solid border border-main-divider w-9 h-9 flex items-center justify-center hover:text-primary-main"
+      appendLeft={<Icon name={icon} />}
+    />
   );
 });

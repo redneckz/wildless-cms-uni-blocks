@@ -17,6 +17,7 @@ export const Contacts = JSX<ContactsProps>(({ className, items, hasButton, conte
       {items?.length ? items.map(renderContact) : null}
       {hasButton ? (
         <Button
+          version="primary"
           className="my-4"
           {...useLink(
             { router, handlerDecorator },

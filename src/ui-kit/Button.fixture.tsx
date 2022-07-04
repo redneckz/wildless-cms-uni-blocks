@@ -1,6 +1,7 @@
 import '../setup-fixture';
 
 import { Button } from './Button';
+import { Icon } from './Icon';
 
 export default {
   all: (
@@ -67,17 +68,26 @@ export default {
             href="https://www.rshb.ru/"
             target="_blank"
             aboveText="Доступно в"
+            appendLeft={
+              /** Div need for perfect pixel */
+              <div>
+                <Icon name="PlayMarketIcon" width="24" height="24" />
+              </div>
+            }
             text="Google Play"
             version="secondary"
-            icon="PlayMarketIcon"
           />
           <Button
             href="https://www.rshb.ru/"
             target="_blank"
             aboveText="Загрузите в"
+            appendLeft={
+              <div>
+                <Icon name="AppleIcon" width="24" height="24" />
+              </div>
+            }
             text="App Store"
             version="secondary"
-            icon="AppleIcon"
           />
         </div>
       </div>
@@ -89,14 +99,14 @@ export default {
             href="https://www.rshb.ru/"
             target="_blank"
             version="secondary"
-            icon="PlayMarketIcon"
+            appendLeft={<Icon name="PlayMarketIcon" width="20" height="21" />}
           />
           <Button
             rounded
             href="https://www.rshb.ru/"
             target="_blank"
             version="secondary"
-            icon="AppleIcon"
+            appendLeft={<Icon name="AppleIcon" width="18" height="20" />}
           />
         </div>
       </div>
