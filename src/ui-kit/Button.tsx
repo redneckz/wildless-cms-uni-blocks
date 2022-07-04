@@ -57,8 +57,6 @@ export const Button = JSX<ButtonProps>(
       />
     );
 
-    console.log(disabled);
-
     if (disabled) {
       return (
         <div
@@ -84,6 +82,7 @@ export const Button = JSX<ButtonProps>(
         target={target}
         onClick={onClick}
         aria-label={ariaLabel}
+        role={!href ? 'button' : 'link'}
       >
         {buttonInner}
       </a>
