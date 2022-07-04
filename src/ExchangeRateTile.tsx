@@ -22,6 +22,7 @@ const buttons: ButtonProps[] = [
   {
     text: 'Все показатели',
     href: 'https://cbr.ru/currency_base/daily/',
+    version: 'secondary',
   },
 ];
 

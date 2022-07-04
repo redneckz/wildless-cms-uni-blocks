@@ -17,12 +17,21 @@ export interface SVGProps extends SVGPathOptions {
   className?: string;
   viewBox?: string;
   paths: SVGPath[];
+  width?: string;
+  height?: string;
 }
 
 export const SVG = JSX<SVGProps>(
-  ({ className, viewBox, fill = 'none', paths, ...commonOptions }) => {
+  ({ className, viewBox, fill = 'none', width, height, paths, ...commonOptions }) => {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox={viewBox} fill={fill}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        viewBox={viewBox}
+        fill={fill}
+        width={width}
+        height={height}
+      >
         {paths.map(({ d, fill, ...options }, i) => (
           <path key={i} d={d} fill={fill || 'currentColor'} {...commonOptions} {...options} />
         ))}

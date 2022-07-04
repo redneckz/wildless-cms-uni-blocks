@@ -15,7 +15,7 @@ import type { ContentPageContext } from './ContentPageContext';
 export type ColorPalette = 'pc' | 'bc' | 'eo';
 
 export type BlockVersion = 'primary' | 'secondary';
-export type ButtonVersion = 'primary' | 'secondary' | 'white' | 'outline-main';
+export type ButtonVersion = 'primary' | 'secondary';
 export interface BlockDef {
   type: string;
   style?: string[];

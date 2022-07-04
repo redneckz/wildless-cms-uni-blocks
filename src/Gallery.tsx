@@ -67,14 +67,14 @@ export const Gallery = JSX<GalleryProps>(
         </div>
         {showPrevButton && (
           <ArrowButton
-            className="absolute top-1/2 left-8"
+            className="absolute top-1/2 left-8 rotate-180"
             onClick={handlePrevClick}
             ariaLabel="Пролистать влево"
           />
         )}
         {showNextButton && (
           <ArrowButton
-            className="absolute top-1/2 right-1 z-20 rotate-180"
+            className="absolute top-1/2 right-1 z-10"
             onClick={handleNextClick}
             ariaLabel="Пролистать вправо"
           />

@@ -1,7 +1,16 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ButtonVersion, LinkContent } from '../types';
+import { Icon, IconName, IconProps } from './Icon';
 
-export interface ButtonProps extends LinkContent {
+export interface ButtonInnerProps {
+  text?: string;
+  aboveText?: string;
+  icon?: IconName;
+  iconProps?: Omit<IconProps, 'name'>;
+  rounded?: boolean;
+}
+
+export interface ButtonProps extends LinkContent, ButtonInnerProps {
   className?: string;
   onClick?: (ev: MouseEvent) => any;
   version?: ButtonVersion;
@@ -13,36 +22,43 @@ const buttonStyleMap: Record<ButtonVersion, string> = {
   primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
   secondary:
     'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
-  white: 'text-primary-main bg-white hover:bg-secondary-hover active:bg-secondary-active',
-  'outline-main':
-    'border-main-stroke border-solid border text-primary-text bg-white hover:border-primary-main hover:text-primary-main ',
 };
 
 const buttonDisabledStyleMap: Record<ButtonVersion, string> = {
   primary: 'bg-secondary-dark text-secondary-text',
   secondary: 'bg-secondary-light text-secondary-text',
-  get white() {
-    return this.secondary;
-  },
-  get 'outline-main'() {
-    return this.secondary;
-  },
 };
 
-const styleButton = 'inline-block rounded-md text-center font-sans select-none';
+const styleButton = 'inline-block text-center font-sans select-none';
 
 export const Button = JSX<ButtonProps>(
   ({
     className,
     text,
+    aboveText,
+    icon,
+    iconProps,
     href,
     target,
     onClick,
     children,
     disabled,
-    version = 'primary',
+    rounded,
+    version = 'none',
     ariaLabel,
   }) => {
+    const buttonInner = children ?? (
+      <ButtonInner
+        text={text}
+        aboveText={aboveText}
+        icon={icon}
+        iconProps={iconProps}
+        rounded={rounded}
+      />
+    );
+
+    console.log(disabled);
+
     if (disabled) {
       return (
         <div
@@ -50,25 +66,53 @@ export const Button = JSX<ButtonProps>(
           aria-disabled="true"
           aria-label={ariaLabel}
           tabIndex="-1"
-          className={`${styleButton} ${buttonDisabledStyleMap[version]} ${className || ''}`}
+          className={`${styleButton} ${buttonDisabledStyleMap[version] || ''} ${
+            rounded ? 'rounded-full' : 'rounded-md'
+          } ${className || ''}`}
         >
-          {children ?? <div className="text-sm px-8 font-medium py-[13px]">{text}</div>}
+          {buttonInner}
         </div>
       );
     }
 
     return (
       <a
-        className={`${styleButton} cursor-pointer no-underline ${buttonStyleMap[version]} ${
-          className || ''
-        }`}
+        className={`${styleButton} cursor-pointer no-underline ${buttonStyleMap[version] || ''} ${
+          rounded ? 'rounded-full' : 'rounded-md'
+        } ${className || ''}`}
         href={href}
         target={target}
         onClick={onClick}
         aria-label={ariaLabel}
       >
-        {children ?? <div className="text-sm px-8 font-medium py-[13px]">{text}</div>}
+        {buttonInner}
       </a>
+    );
+  },
+);
+
+export const ButtonInner = JSX<ButtonInnerProps>(
+  ({ text, aboveText, icon, iconProps, rounded }) => {
+    const onlyIcon = !text && !aboveText && Boolean(icon);
+
+    const buttonInnerClasses = `flex items-center ${
+      onlyIcon
+        ? 'h-12 w-12 min-h-12 min-w-12 justify-center'
+        : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`
+    }  ${rounded ? 'rounded-full' : ''}`;
+
+    return (
+      <div className={buttonInnerClasses}>
+        {icon && (
+          <div>
+            <Icon name={icon} width="24" height="24" {...iconProps} />
+          </div>
+        )}
+        <div>
+          <div className="text-xxs text-left">{aboveText}</div>
+          <div className="text-sm font-medium text-left">{text}</div>
+        </div>
+      </div>
     );
   },
 );

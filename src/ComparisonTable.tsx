@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps, Picture, LinkContent } from './types';
 import { ArrowButton } from './ui-kit/ArrowButton';
-import { Button } from './ui-kit/Button';
+import { Button, ButtonProps } from './ui-kit/Button';
 import { Title } from './ui-kit/Title';
 import { Icon, IconName } from './ui-kit/Icon';
 import { Img } from './ui-kit/Img';
@@ -10,6 +10,9 @@ import { useLink } from './useLink';
 export interface CellData {
   label?: string;
   description?: string;
+  icons?: IconName[];
+  image?: Picture;
+  buttons?: ButtonProps[];
 }
 
 export interface ColumnHeader {
@@ -23,9 +26,14 @@ export interface Column {
   data?: CellData[][];
 }
 
+export interface rowHeader {
+  title?: string;
+  icon?: IconName;
+}
+
 export interface ComparisonTableContent {
   title?: string;
-  rowHeaders?: string[];
+  rowHeaders?: rowHeader[];
   columns?: Column[];
   visibleRowLength?: number;
   coloredFirstColumn?: boolean;
@@ -34,7 +42,7 @@ export interface ComparisonTableContent {
 export interface ComparisonTableProps extends ComparisonTableContent, UniBlockProps {}
 
 type Row = {
-  title: string;
+  header: rowHeader;
   data: CellData[][];
 };
 type RowData = Row[] | undefined;
@@ -64,8 +72,8 @@ export const ComparisonTable = JSX<ComparisonTableProps>(
     const colHeaders = columns?.map(({ header }) => header || {});
     const colData = columns?.map(({ data }) => data) || [];
     const rowData: RowData = rowHeaders
-      ?.map((title, i) => ({
-        title,
+      ?.map((header, i) => ({
+        header,
         data: colData.map((col) => col?.[i] || [{}]),
       }))
       .slice(0, isShowAllRow ? rowHeaders.length : visibleRowLength);
@@ -111,15 +119,15 @@ export const ComparisonTable = JSX<ComparisonTableProps>(
               <div>
                 <div className="absolute top-7 right-7 z-10">
                   <ArrowButton
-                    onClick={prevClick}
-                    disabled={!showPrevButton}
-                    ariaLabel="Пролистать влево"
-                  />
-                  <ArrowButton
-                    className="mt-4 rotate-180"
                     onClick={nextClick}
                     disabled={!showNextButton}
                     ariaLabel="Пролистать вправо"
+                  />
+                  <ArrowButton
+                    className="mt-4 rotate-180"
+                    onClick={prevClick}
+                    disabled={!showPrevButton}
+                    ariaLabel="Пролистать влево"
                   />
                 </div>
               </div>
@@ -135,7 +143,10 @@ export const ComparisonTable = JSX<ComparisonTableProps>(
           <div className="pr-[50px]">
             <div className="flex w-full">
               <div className={FIRST_CELL_CLASSES} />
-              <Button onClick={showToggle} version="outline-main" className="mt-5 flex-1">
+              <Button
+                onClick={showToggle}
+                className="mt-5 flex-1 border-main-stroke border-solid border text-primary-text bg-white hover:border-primary-main hover:text-primary-main"
+              >
                 <div className="text-xs py-[11px]">
                   {!isShowAllRow ? 'Показать все параметры' : 'Скрыть'}
                 </div>
@@ -188,7 +199,11 @@ const renderHeaderCell = ({ icon, image, title, link }: ColumnHeader, i: number)
     )}
     {link?.text && (
       <div className="mt-auto w-full">
-        <Button href={link.href} target={link.target} version="white" className="mt-4 w-full">
+        <Button
+          href={link.href}
+          target={link.target}
+          className="mt-4 w-full text-primary-main bg-white hover:bg-secondary-hover active:bg-secondary-active"
+        >
           <div className="text-xs py-[11px]">{link.text}</div>
         </Button>
       </div>
@@ -197,7 +212,7 @@ const renderHeaderCell = ({ icon, image, title, link }: ColumnHeader, i: number)
 );
 
 const renderRow = (
-  [{ title, data }, i, { length }]: [Row, number, Row[]],
+  [{ header, data }, i, { length }]: [Row, number, Row[]],
   activeCardIndex: number,
   coloredFirstColumn: boolean,
 ) => {
@@ -210,7 +225,7 @@ const renderRow = (
           !isLastRow ? 'border-solid' : ''
         }`}
       >
-        {title}
+        {header?.title}
       </div>
       <TableCarouselContainer activeCardIndex={activeCardIndex}>
         {data.map((cell, idx) => renderCell(cell, idx, isLastRow, i === 0, coloredFirstColumn))}
