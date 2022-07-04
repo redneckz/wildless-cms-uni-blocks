@@ -1,3 +1,5 @@
+export { setup } from '@redneckz/uni-jsx';
+
 export type { ProjectSettings } from './ProjectSettings';
 export { projectSettings } from './ProjectSettings';
 
