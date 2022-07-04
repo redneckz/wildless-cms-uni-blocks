@@ -31342,7 +31342,7 @@ const Button = JSX(({ className, text, aboveText, icon, iconProps, href, target,
 });
 const ButtonInner = JSX(({ text, aboveText, icon, iconProps, rounded }) => {
     const onlyIcon = !text && !aboveText && Boolean(icon);
-    const buttonInnerClasses = `flex items-center ${onlyIcon
+    const buttonInnerClasses = `flex items-center justify-center ${onlyIcon
         ? 'h-12 w-12 min-h-12 min-w-12 justify-center'
         : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`}  ${rounded ? 'rounded-full' : ''}`;
     return (jsxs("div", { className: buttonInnerClasses, children: [icon && (jsx("div", { children: jsx(Icon, { name: icon, width: "24", height: "24", ...iconProps }) })), jsxs("div", { children: [jsx("div", { className: "text-xxs text-left", children: aboveText }), jsx("div", { className: "text-sm font-medium text-left", children: text })] })] }));

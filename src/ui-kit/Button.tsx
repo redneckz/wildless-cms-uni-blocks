@@ -94,7 +94,7 @@ export const ButtonInner = JSX<ButtonInnerProps>(
   ({ text, aboveText, icon, iconProps, rounded }) => {
     const onlyIcon = !text && !aboveText && Boolean(icon);
 
-    const buttonInnerClasses = `flex items-center ${
+    const buttonInnerClasses = `flex items-center justify-center ${
       onlyIcon
         ? 'h-12 w-12 min-h-12 min-w-12 justify-center'
         : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`
