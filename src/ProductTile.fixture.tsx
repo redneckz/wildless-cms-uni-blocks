@@ -1,7 +1,7 @@
 import { context } from './setup-fixture';
 
 import { ProductTile } from './ProductTile';
-import { Picture } from './types';
+import { Picture } from './model/Picture';
 
 const cardWithMoney: Picture = {
   src: 'card-with-diamond.png',

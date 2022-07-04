@@ -1,6 +1,7 @@
 import fs from 'fs';
 import util from 'util';
-import type { ContentPageDef, Picture } from '../types';
+import type { Picture } from '../model/Picture';
+import type { ContentPageDef } from '../types';
 import { mapJSON } from './mapJSON';
 import type { TransformationOptions } from './TransformationOptions';
 import { transformMarkdown } from './transformMarkdown';

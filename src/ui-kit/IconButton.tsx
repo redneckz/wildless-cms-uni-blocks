@@ -1,12 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ButtonProps } from './Button';
 import { Button } from './Button';
-import { Icon, IconName } from './Icon';
-
-export interface IconButtonProps extends ButtonProps {
-  icon?: IconName;
-  aboveText?: string;
-}
+import { Icon } from './Icon';
+import type { IconButtonProps } from './IconButtonProps';
 
 export const IconButton = JSX<IconButtonProps>((props) => {
   return (
