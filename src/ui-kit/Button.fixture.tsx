@@ -1,7 +1,6 @@
 import '../setup-fixture';
 
 import { Button } from './Button';
-import { IconButton } from './IconButton';
 
 export default {
   all: (
@@ -64,7 +63,7 @@ export default {
       <div>
         <p>With Icon</p>
         <div className="flex gap-6" data-theme="pc">
-          <IconButton
+          <Button
             href="https://www.rshb.ru/"
             target="_blank"
             aboveText="Доступно в"
@@ -72,11 +71,30 @@ export default {
             version="secondary"
             icon="PlayMarketIcon"
           />
-          <IconButton
+          <Button
             href="https://www.rshb.ru/"
             target="_blank"
             aboveText="Загрузите в"
             text="App Store"
+            version="secondary"
+            icon="AppleIcon"
+          />
+        </div>
+      </div>
+      <div>
+        <p>Rounded with only Icon</p>
+        <div className="flex gap-6" data-theme="pc">
+          <Button
+            rounded
+            href="https://www.rshb.ru/"
+            target="_blank"
+            version="secondary"
+            icon="PlayMarketIcon"
+          />
+          <Button
+            rounded
+            href="https://www.rshb.ru/"
+            target="_blank"
             version="secondary"
             icon="AppleIcon"
           />

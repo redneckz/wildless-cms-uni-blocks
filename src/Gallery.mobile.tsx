@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { GalleryCard, GalleryProps } from './Gallery';
-import { Img } from './Img';
+import { Img } from './ui-kit/Img';
 import { BlockItem } from './ui-kit/BlockItem';
 import { Button } from './ui-kit/Button';
 import { Title } from './ui-kit/Title';

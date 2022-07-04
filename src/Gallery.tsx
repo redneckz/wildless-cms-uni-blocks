@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Img } from './Img';
-import { Picture, UniBlockProps } from './types';
+import { Img } from './ui-kit/Img';
+import type { Picture, UniBlockProps } from './types';
 import { ArrowButton } from './ui-kit/ArrowButton';
 import { BlockItem } from './ui-kit/BlockItem';
 import { Button } from './ui-kit/Button';
@@ -67,35 +67,30 @@ export const Gallery = JSX<GalleryProps>(
         </div>
         {showPrevButton && (
           <ArrowButton
-            className="absolute top-1/2 left-8"
+            className="absolute top-1/2 left-8 rotate-180"
             onClick={handlePrevClick}
             ariaLabel="Пролистать влево"
           />
         )}
         {showNextButton && (
           <ArrowButton
-            className="absolute top-1/2 right-1 z-20 rotate-180"
+            className="absolute top-1/2 right-1 z-10"
             onClick={handleNextClick}
             ariaLabel="Пролистать вправо"
           />
         )}
-        <div
-          className="absolute top-0 right-0 bottom-0 w-[84px]"
-          style={{
-            background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
-          }}
-        ></div>
+        <div className="absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" />
       </section>
     );
   },
 );
 
-function renderCard(card: GalleryCard, key: number) {
+function renderCard(card: GalleryCard, i: number) {
   return (
     <div
       className="box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch min-w-[364px] w-[364px] w-full"
       role="listitem"
-      key={key}
+      key={String(i)}
     >
       <div>
         {card.image?.src ? (

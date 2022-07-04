@@ -1,9 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Img } from './Img';
+import { Img } from './ui-kit/Img';
 import type { BlockVersion, Picture, UniBlockProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
-import type { IconButtonProps } from './ui-kit/IconButton';
-import { IconButton } from './ui-kit/IconButton';
+import { Button, ButtonProps } from './ui-kit/Button';
 import { Title } from './ui-kit/Title';
 import type { TitleSize } from './ui-kit/Title';
 import { useLink } from './useLink';
@@ -15,7 +14,7 @@ export interface BaseTileContent {
   description?: string;
   image?: Picture;
   items?: string[];
-  buttons?: IconButtonProps[];
+  buttons?: ButtonProps[];
   version?: BlockVersion;
 }
 
@@ -89,6 +88,6 @@ function renderItems(items: string[] = [], version?: BlockVersion) {
   );
 }
 
-function renderButton(button: IconButtonProps, i: number) {
-  return button?.text ? <IconButton key={String(i)} {...button} /> : null;
+function renderButton(button: ButtonProps, i: number) {
+  return button?.text ? <Button key={String(i)} {...button} /> : null;
 }
