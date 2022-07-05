@@ -1,24 +1,17 @@
 import { JSX } from '@redneckz/uni-jsx';
+import type { BaseTileContent } from './BaseTileContent';
 import { Img } from './ui-kit/Img';
-import type { BlockVersion, Picture, UniBlockProps } from './types';
+import type { BlockVersion } from './model/BlockVersion';
+import type { UniBlockProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
-import { Button, ButtonProps } from './ui-kit/Button';
 import { Title } from './ui-kit/Title';
-import type { TitleSize } from './ui-kit/Title';
 import { useLink } from './useLink';
 import { getColSpan } from './utils/getColSpan';
-
-export interface BaseTileContent {
-  title?: string;
-  titleSize?: TitleSize;
-  description?: string;
-  image?: Picture;
-  items?: string[];
-  buttons?: ButtonProps[];
-  version?: BlockVersion;
-}
+import { Button } from './ui-kit/Button';
+import type { ButtonProps } from './ui-kit/ButtonProps';
 
 export interface BaseTileProps extends BaseTileContent, UniBlockProps {}
+
 const TITLE_CLASSES = 'font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]';
 
 export const BaseTile = JSX<BaseTileProps>(

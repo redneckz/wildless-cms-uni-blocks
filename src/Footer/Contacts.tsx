@@ -1,7 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { UniBlockProps, ContactInfo } from '../types';
+import type { UniBlockProps } from '../types';
 import { Button } from '../ui-kit/Button';
 import { useLink } from '../useLink';
+import type { ContactInfo } from './FooterContent';
 
 export interface ContactsProps extends UniBlockProps {
   items?: ContactInfo[];

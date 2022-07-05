@@ -1,6 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Button, ButtonProps } from './Button';
+import { Button } from './Button';
 import { SVG } from './SVG';
+import type { ButtonProps } from './ButtonProps';
 
 const ARROW_PATHS = [
   {

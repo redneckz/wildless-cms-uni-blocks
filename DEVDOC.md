@@ -38,6 +38,7 @@
 
 #### Вёрстка блока
 
+- Вынести декларацию типа контента блока `<block_name>Content` в отдельный файл `<block_name>Content.ts` в соответствии с требованиями в тикете
 - PixelPerfect по дизайнам
   [Расширение для Chromium-браузеров](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=ru)
   [Как извлечь слой из Figma](https://www.captain-design.com/blog/how-to-export-images-in-figma/)
@@ -48,6 +49,7 @@
 Если всё в порядке:
 
 - Добавить новый блок [сюда](./src/Blocks.ts)
+- Добавить тип контента блока [сюда](./src/BlockContent.ts)
 - Добавить новый блок в соответствии с его схемой [сюда](./src/ContentPage.page.json)
 - Проверить, что интерфейс Content (то, что будет заполнять оператор) отделён от интерфейса прочих props
 - Внести интерфейс Сontent в юнион тип [тут](./src/Blocks.ts)

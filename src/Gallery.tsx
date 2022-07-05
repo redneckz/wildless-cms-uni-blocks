@@ -1,24 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
+import type { GalleryCard, GalleryContent } from './GalleryContent';
 import { Img } from './ui-kit/Img';
-import type { Picture, UniBlockProps } from './types';
+import { UniBlockProps } from './types';
 import { ArrowButton } from './ui-kit/ArrowButton';
 import { BlockItem } from './ui-kit/BlockItem';
 import { Button } from './ui-kit/Button';
 import { Title } from './ui-kit/Title';
-
-export interface GalleryCard {
-  title?: string;
-  description?: string;
-  image?: Picture;
-  href?: string;
-  items?: string[];
-}
-
-export interface GalleryContent {
-  title?: string;
-  description?: string;
-  cards?: GalleryCard[];
-}
 
 export interface GalleryProps extends GalleryContent, UniBlockProps {}
 

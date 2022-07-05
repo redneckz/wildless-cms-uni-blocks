@@ -1,22 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ButtonVersion, LinkContent } from '../types';
-import { Icon, IconName, IconProps } from './Icon';
-
-export interface ButtonInnerProps {
-  text?: string;
-  aboveText?: string;
-  icon?: IconName;
-  iconProps?: Omit<IconProps, 'name'>;
-  rounded?: boolean;
-}
-
-export interface ButtonProps extends LinkContent, ButtonInnerProps {
-  className?: string;
-  onClick?: (ev: MouseEvent) => any;
-  version?: ButtonVersion;
-  ariaLabel?: string;
-  disabled?: Boolean;
-}
+import type { ButtonVersion } from '../model/ButtonVersion';
+import type { ButtonProps, ButtonInnerProps } from './ButtonProps';
+import { Icon } from './Icon';
 
 const buttonStyleMap: Record<ButtonVersion, string> = {
   primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',

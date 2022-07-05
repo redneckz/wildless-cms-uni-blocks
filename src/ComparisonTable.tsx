@@ -1,11 +1,15 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { UniBlockProps, Picture, LinkContent } from './types';
+import type { UniBlockProps } from './types';
 import { ArrowButton } from './ui-kit/ArrowButton';
-import { Button, ButtonProps } from './ui-kit/Button';
+import { Button } from './ui-kit/Button';
 import { Title } from './ui-kit/Title';
-import { Icon, IconName } from './ui-kit/Icon';
+import { Icon } from './ui-kit/Icon';
 import { Img } from './ui-kit/Img';
 import { useLink } from './useLink';
+import { Picture } from './model/Picture';
+import type { LinkContent } from './model/LinkContent';
+import type { ButtonProps } from './ui-kit/ButtonProps';
+import type { IconName } from './ui-kit/IconProps';
 
 export interface CellData {
   label?: string;

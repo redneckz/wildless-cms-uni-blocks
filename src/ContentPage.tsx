@@ -1,5 +1,5 @@
 import { JSX, PropsWithChildren } from '@redneckz/uni-jsx';
-import type { BlockContent } from './Blocks';
+import type { BlockContent } from './BlockContent';
 import { LikeControl } from './LikeControl';
 import { Placeholder } from './Placeholder';
 import type { BlockDef, ContentPageDef, UniBlockProps } from './types';

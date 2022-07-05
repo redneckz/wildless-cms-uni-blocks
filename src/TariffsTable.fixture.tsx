@@ -1,7 +1,7 @@
 import { context } from './setup-fixture';
 import { TariffsTable } from './TariffsTable';
 import type { Column, rowHeader } from './ComparisonTable';
-import type { Picture } from './types';
+import type { Picture } from './model/Picture';
 
 const image1: Picture = {
   src: 'card-1.png',

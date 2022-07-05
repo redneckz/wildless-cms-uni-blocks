@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../types';
-import type { FooterContent } from './Footer';
+import type { FooterContent } from './FooterContent';
 import { TextInformation } from './TextInformation';
 
 export interface FooterProps extends FooterContent, UniBlockProps {}

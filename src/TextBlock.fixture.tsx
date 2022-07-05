@@ -1,6 +1,6 @@
 import { context } from './setup-fixture';
 import { TextBlock } from './TextBlock';
-import type { Picture } from './types';
+import { Picture } from './model/Picture';
 
 const image: Picture = {
   src: 'bank-card.png',

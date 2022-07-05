@@ -1,10 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
+import type { PlaceholderContent } from './PlaceholderContent';
 import { Tile } from './Tile';
 import type { UniBlockProps } from './types';
-
-export interface PlaceholderContent {
-  title?: string;
-}
 
 export interface PlaceholderProps extends PlaceholderContent, UniBlockProps {
   className?: string;

@@ -1,14 +1,12 @@
 import { JSX } from '@redneckz/uni-jsx';
+import type { ProductBlockContent } from './ProductBlockContent';
 import { ProductBlockInner } from './ProductBlockInner';
-import type { ProductBlockInnerContent } from './ProductBlockInner';
 import type { UniBlockProps } from './types';
-import { Breadcrumb, BreadcrumbProps } from './ui-kit/Breadcrumb';
+import { Breadcrumb } from './ui-kit/Breadcrumb';
 import { useLink } from './useLink';
 import { joinList } from './utils/joinList';
 
-export interface ProductBlockProps extends ProductBlockInnerContent, UniBlockProps {
-  breadcrumbs?: BreadcrumbProps[];
-}
+export interface ProductBlockProps extends ProductBlockContent, UniBlockProps {}
 
 export const ProductBlock = JSX<ProductBlockProps>((props) => {
   const { context, className, breadcrumbs } = props;
