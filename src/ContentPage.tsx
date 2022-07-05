@@ -2,7 +2,7 @@ import { JSX, PropsWithChildren } from '@redneckz/uni-jsx';
 import type { BlockContent } from './BlockContent';
 import { LikeControl } from './LikeControl';
 import { Placeholder } from './Placeholder';
-import type { BlockDef, ContentPageDef, UniBlockProps } from './types';
+import type { BlockDef, ContentPageDef, Section, UniBlockProps } from './types';
 
 interface BlockDecoratorProps<VNode> {
   blockClassName: string;
@@ -35,8 +35,7 @@ export const ContentPage = JSX<ContentPageProps>(
     data: { style: pageStyle, sections, likeControl, colorPalette = 'pc' },
     blockDecorator = defaultBlockDecorator,
   }) => {
-    const headerSection = sections?.find(({ type }) => type === 'header');
-    const mainSection = sections?.find(({ type }) => type === 'main');
+    const { headerSection, mainSection } = getSections(sections);
 
     return (
       <section
@@ -44,18 +43,18 @@ export const ContentPage = JSX<ContentPageProps>(
         data-theme={colorPalette}
       >
         {headerSection?.blocks?.length ? (
-          <div className={`grid grid-cols-12 gap-1 ${headerSection?.className || ''}`}>
-            {headerSection.blocks?.length ? headerSection.blocks.map(renderBlock) : null}
+          <div className={`grid grid-cols-12 gap-1 ${style2className(headerSection?.style)}`}>
+            {headerSection.blocks.map(renderBlock)}
           </div>
         ) : null}
 
         {mainSection?.blocks?.length ? (
           <div
-            className={`container items-center grid grid-cols-12 gap-1 ${
-              mainSection?.className || ''
-            }`}
+            className={`container items-center grid grid-cols-12 gap-1 ${style2className(
+              mainSection?.style,
+            )}`}
           >
-            {mainSection.blocks?.length ? mainSection.blocks.map(renderBlock) : null}
+            {mainSection.blocks.map(renderBlock)}
           </div>
         ) : null}
 
@@ -101,6 +100,38 @@ export const ContentPage = JSX<ContentPageProps>(
     }
   },
 );
+
+function getSections(sections?: (Section | BlockDef)[]): {
+  headerSection?: Section;
+  mainSection?: Section;
+} {
+  if (sections?.every((section) => 'content' in section)) {
+    const headerBlocks = (sections as BlockDef[]).filter(({ type }) => type === 'Header');
+    const mainBlocks = (sections as BlockDef[]).filter(({ type }) => type !== 'Header');
+
+    return {
+      headerSection: !headerBlocks.length
+        ? undefined
+        : {
+            type: 'header',
+            style: [],
+            blocks: headerBlocks,
+          },
+      mainSection: !mainBlocks.length
+        ? undefined
+        : {
+            type: 'main',
+            style: [],
+            blocks: mainBlocks,
+          },
+    };
+  }
+
+  return {
+    headerSection: (sections as Section[]).find(({ type }) => type === 'header'),
+    mainSection: (sections as Section[]).find(({ type }) => type === 'main'),
+  };
+}
 
 function style2className(style: string[] | undefined | null): string {
   return style ? style.join(' ') : '';

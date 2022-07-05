@@ -19,8 +19,8 @@ export interface BlockDef {
 
 export interface Section {
   type: SectionType;
+  style?: string[];
   blocks?: BlockDef[];
-  className?: string;
 }
 
 export interface ContentPageMeta {
@@ -34,7 +34,7 @@ export interface ContentPageMeta {
 
 export interface ContentPageDef extends ContentPageMeta {
   style?: string[];
-  sections?: Section[];
+  sections?: (Section | BlockDef)[];
   likeControl?: boolean;
   colorPalette?: ColorPalette;
 }
