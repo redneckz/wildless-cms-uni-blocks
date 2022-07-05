@@ -11,11 +11,12 @@ export interface ButtonInnerProps {
 
 export interface ButtonProps extends LinkContent, ButtonInnerProps {
   className?: string;
-  onClick?: (ev: MouseEvent) => any;
   version?: ButtonVersion;
   disabled?: boolean;
   rel?: string;
   ariaLabel?: string;
+  /** @hidden */
+  onClick?: (ev: MouseEvent) => any;
 }
 
 export interface ButtonWithIconProps extends ButtonProps {
