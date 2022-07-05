@@ -9,14 +9,13 @@ export interface ButtonInnerProps {
   rounded?: boolean;
 }
 
-export interface ButtonProps
-  extends LinkContent,
-    ButtonInnerProps,
-    Partial<Pick<HTMLAnchorElement, 'rel' | 'ariaLabel'>> {
+export interface ButtonProps extends LinkContent, ButtonInnerProps {
   className?: string;
   onClick?: (ev: MouseEvent) => any;
   version?: ButtonVersion;
   disabled?: boolean;
+  rel?: string;
+  ariaLabel?: string;
 }
 
 export interface ButtonWithIconProps extends ButtonProps {
