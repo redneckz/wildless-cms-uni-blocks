@@ -1,24 +1,27 @@
-export type IconName =
-  | 'ActualBalanceIcon'
-  | 'AppleIcon'
-  | 'CalendarIcon'
-  | 'ClockIcon'
-  | 'ComfortableCompIcon'
-  | 'DollarIcon'
-  | 'EmptyWalletIcon'
-  | 'EuroIcon'
-  | 'GridIcon'
-  | 'LoupeIcon'
-  | 'NewDocIcon'
-  | 'OkIcon'
-  | 'PassSendIcon'
-  | 'PercentageSquareIcon'
-  | 'PlayMarketIcon'
-  | 'ProfileIcon'
-  | 'SignDocsIcon'
-  | 'TelegramIcon'
-  | 'VKIcon'
-  | 'ArrowLeftIcon';
+export enum IconMap {
+  'ActualBalanceIcon',
+  'AppleIcon',
+  'CalendarIcon',
+  'ClockIcon',
+  'ComfortableCompIcon',
+  'DollarIcon',
+  'EmptyWalletIcon',
+  'EuroIcon',
+  'GridIcon',
+  'LoupeIcon',
+  'NewDocIcon',
+  'OkIcon',
+  'PassSendIcon',
+  'PercentageSquareIcon',
+  'PlayMarketIcon',
+  'ProfileIcon',
+  'SignDocsIcon',
+  'TelegramIcon',
+  'VKIcon',
+  'GlassIcon',
+}
+
+export type IconName = keyof typeof IconMap;
 
 export interface IconProps {
   className?: string;

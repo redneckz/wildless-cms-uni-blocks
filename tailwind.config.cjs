@@ -23,6 +23,10 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
+      backgroundImage: {
+        'opacity-to-white':
+          'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%);',
+      },
       fontFamily: {
         sans: ['Ubuntu', ...defaultTheme.fontFamily.sans],
       },
@@ -33,7 +37,6 @@ module.exports = {
         lg: ['2.188rem', '3rem'],
         base: ['1rem', '1.5rem'], // 16px 24px
         'title-sm': ['1.75rem', '2.5rem'], //28px 40px
-        'title-xsm': ['0.75rem', '1.125rem'], // 12px 18px
         'title-xs': ['1.5rem', '1.875rem'], //24px 30px
         title: ['2rem', '2.5rem'], //32px 40px
         'title-lg': ['2.5rem', '3rem'], //40px 48px
@@ -42,6 +45,11 @@ module.exports = {
         main: {
           DEFAULT: 'rgba(240, 244, 240, <alpha-value>)',
           divider: 'rgba(235, 237, 240, <alpha-value>)',
+          gradient: {
+            start: 'rgba(var(--color-gradient-from), <alpha-value>)',
+            end: 'rgba(var(--color-gradient-to), <alpha-value>)',
+          },
+          stroke: 'rgba(201, 202, 204, <alpha-value>)',
         },
         primary: {
           main: 'rgba(var(--color-primary-main), <alpha-value>)',

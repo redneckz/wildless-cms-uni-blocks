@@ -1,6 +1,6 @@
 import type { BlockVersion } from './model/BlockVersion';
 import type { Picture } from './model/Picture';
-import type { IconButtonProps } from './ui-kit/IconButtonProps';
+import type { ButtonWithIconProps } from './ui-kit/ButtonProps';
 import type { TitleSize } from './ui-kit/TitleProps';
 
 export interface BaseTileContent {
@@ -9,6 +9,6 @@ export interface BaseTileContent {
   description?: string;
   image?: Picture;
   items?: string[];
-  buttons?: Omit<IconButtonProps, 'className' | 'onClick' | 'ariaLabel'>[];
+  buttons?: ButtonWithIconProps[];
   version?: BlockVersion;
 }

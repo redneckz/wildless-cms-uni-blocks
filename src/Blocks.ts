@@ -13,6 +13,7 @@ import { PromoTile } from './PromoTile';
 import { StepsBlock } from './StepsBlock';
 import { TextBlock } from './TextBlock';
 import { Tile } from './Tile';
+import { ComparisonTable } from './ComparisonTable';
 
 export const Blocks = {
   Header,
@@ -30,4 +31,5 @@ export const Blocks = {
   MobileAppTile,
   Gallery,
   MiniGallery,
+  ComparisonTable,
 };

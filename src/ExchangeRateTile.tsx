@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { ExchangeRateTileContent } from './ExchangeRateTileContent';
 import { Tile } from './Tile';
 import type { UniBlockProps } from './types';
-import { ButtonProps } from './ui-kit/ButtonProps';
+import type { ButtonProps } from './ui-kit/ButtonProps';
 import { Icon } from './ui-kit/Icon';
 
 export interface ExchangeRateTileProps extends ExchangeRateTileContent, UniBlockProps {}
@@ -19,6 +19,7 @@ const buttons: ButtonProps[] = [
   {
     text: 'Все показатели',
     href: 'https://cbr.ru/currency_base/daily/',
+    version: 'secondary',
   },
 ];
 

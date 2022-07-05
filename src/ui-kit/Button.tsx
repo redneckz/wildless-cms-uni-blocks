@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ButtonVersion } from '../model/ButtonVersion';
-import type { ButtonProps } from './ButtonProps';
+import type { ButtonInnerProps, ButtonProps } from './ButtonProps';
 
 const buttonStyleMap: Record<ButtonVersion, string> = {
   primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
@@ -13,20 +13,28 @@ const buttonDisabledStyleMap: Record<ButtonVersion, string> = {
   secondary: 'bg-secondary-light text-secondary-text',
 };
 
-const styleButton = 'inline-block rounded-md px-8 py-2 text-center font-sans';
+const styleButton = 'inline-block text-center font-sans select-none';
 
 export const Button = JSX<ButtonProps>(
   ({
     className,
     text,
+    aboveText,
+    appendLeft,
     href,
     target,
     onClick,
     children,
     disabled,
-    version = 'primary',
+    rounded,
+    version = 'none',
     ariaLabel,
+    ...rest
   }) => {
+    const buttonInner = children ?? (
+      <ButtonInner text={text} aboveText={aboveText} appendLeft={appendLeft} rounded={rounded} />
+    );
+
     if (disabled) {
       return (
         <div
@@ -34,33 +42,49 @@ export const Button = JSX<ButtonProps>(
           aria-disabled="true"
           aria-label={ariaLabel}
           tabIndex="-1"
-          className={`${styleButton} select-none ${buttonDisabledStyleMap[version]} ${
-            className || ''
-          }`}
+          className={`${styleButton} ${buttonDisabledStyleMap[version] || ''} ${
+            rounded ? 'rounded-full' : 'rounded-md'
+          } ${className || ''}`}
         >
-          {children ? (
-            <div>{children}</div>
-          ) : (
-            <div className="text-sm font-medium py-1.5">{text}</div>
-          )}
+          {buttonInner}
         </div>
       );
     }
 
     return (
       <a
-        className={`${styleButton} no-underline ${buttonStyleMap[version]} ${className || ''}`}
+        className={`${styleButton} cursor-pointer no-underline ${buttonStyleMap[version] || ''} ${
+          rounded ? 'rounded-full' : 'rounded-md'
+        } ${className || ''}`}
         href={href}
         target={target}
         onClick={onClick}
         aria-label={ariaLabel}
+        role={!href ? 'button' : 'link'}
+        {...rest}
       >
-        {children ? (
-          <div>{children}</div>
-        ) : (
-          <div className="text-sm font-medium py-1.5">{text}</div>
-        )}
+        {buttonInner}
       </a>
     );
   },
 );
+
+export const ButtonInner = JSX<ButtonInnerProps>(({ text, aboveText, appendLeft, rounded }) => {
+  const withoutText = !text && !aboveText && Boolean(appendLeft);
+
+  const buttonInnerClasses = `flex items-center justify-center ${
+    withoutText ? 'h-12 w-12 min-h-12 min-w-12' : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`
+  } ${rounded ? 'rounded-full' : ''}`;
+
+  return (
+    <div className={buttonInnerClasses}>
+      {appendLeft ? appendLeft : null}
+      {!withoutText ? (
+        <div>
+          <div className="text-xxs text-left">{aboveText}</div>
+          <div className="text-sm font-medium text-left">{text}</div>
+        </div>
+      ) : null}
+    </div>
+  );
+});
