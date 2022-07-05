@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { FooterLink } from './FooterLink';
+import { LinkContent } from '../model/LinkContent';
 import { useLink } from '../useLink';
-import { LinkContent } from '../types';
+import type { FooterLink } from './FooterLink';
 
 export const HorizontalNavigation = JSX<FooterLink>(({ className, links, context }) => {
   const router = context.useRouter();

@@ -1,6 +1,7 @@
-import type { LinkContent, Picture } from '../types';
-import type { ButtonProps } from '../ui-kit/Button';
-import type { IconName } from '../ui-kit/Icon';
+import type { LinkContent } from '../model/LinkContent';
+import type { Picture } from '../model/Picture';
+import type { ButtonProps } from '../ui-kit/ButtonProps';
+import type { IconName } from '../ui-kit/IconProps';
 
 export type Row = {
   header: RowHeader;

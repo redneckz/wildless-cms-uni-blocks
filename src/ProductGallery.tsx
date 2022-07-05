@@ -1,22 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ProductBlockInnerContent } from './ProductBlockInner';
 import { ProductBlockInner } from './ProductBlockInner';
+import type { ProductBlockInnerContent } from './ProductBlockInnerContent';
+import type { ProductGalleryContent } from './ProductGalleryContent';
 import type { UniBlockProps } from './types';
-
-interface ProductGalleryNav {
-  title: string;
-  desc: string;
-}
-
-export interface ProductSlideContent {
-  nav: ProductGalleryNav;
-  productBlock: ProductBlockInnerContent;
-}
-
-export interface ProductGalleryContent {
-  duration?: number;
-  slides?: ProductSlideContent[];
-}
 
 export interface ProductGalleryProps extends ProductGalleryContent, UniBlockProps {}
 

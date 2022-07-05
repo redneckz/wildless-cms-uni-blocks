@@ -1,23 +1,16 @@
 import { JSX } from '@redneckz/uni-jsx';
+import type { UniBlockProps } from '../types';
 import { Logo } from '../ui-kit/Logo';
 import { SearchBar } from '../ui-kit/SearchBar';
 import { Contacts } from './Contacts';
+import type { FooterContent } from './FooterContent';
+import { HorizontalNavigation } from './HorizontalNavigation';
 import { Sitemap } from './Sitemap';
 import { SocialMedia } from './SocialMedia';
-import { HorizontalNavigation } from './HorizontalNavigation';
 import { TextInformation } from './TextInformation';
-import type { LinkContent, UniBlockProps, ContactInfo, TopMenuItem } from '../types';
 
 const LEFT_COL_WIDTH_FULL_HD = 'w-[280px]';
 const LEFT_COL_WIDTH_SMALL_DESKTOP = 'xl:w-[220px]';
-
-export interface FooterContent {
-  documents?: LinkContent[];
-  relatedEnterprises?: LinkContent[];
-  contacts?: ContactInfo[];
-  socialMedia?: Omit<LinkContent, 'text'>[];
-  topItems?: TopMenuItem[];
-}
 
 export interface FooterProps extends FooterContent, UniBlockProps {}
 

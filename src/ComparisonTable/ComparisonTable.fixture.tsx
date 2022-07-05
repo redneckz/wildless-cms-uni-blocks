@@ -1,6 +1,6 @@
+import type { Picture } from '../model/Picture';
 import { context } from '../setup-fixture';
 import { ComparisonTable } from './ComparisonTable';
-import type { Picture } from '../types';
 import type { Column } from './ComparisonTableContent';
 
 const image1: Picture = {

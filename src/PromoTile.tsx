@@ -1,11 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { BaseTileContent } from './BaseTile';
+import type { PromoTileContent } from './PromoTileContent';
 import { Tile } from './Tile';
 import type { UniBlockProps } from './types';
-
-export interface PromoTileContent extends BaseTileContent {
-  date?: string;
-}
 
 export interface PromoTileProps extends PromoTileContent, UniBlockProps {}
 

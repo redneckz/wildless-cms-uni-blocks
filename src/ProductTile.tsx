@@ -1,13 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { BaseTileContent } from './BaseTile';
-import type { Benefit } from './BenefitsBlock';
+import type { Benefit } from './BenefitsBlockContent';
+import type { BlockVersion } from './model/BlockVersion';
+import type { ProductTileContent } from './ProductTileContent';
 import { Tile } from './Tile';
 import type { UniBlockProps } from './types';
-import { BlockVersion } from './types';
-
-export interface ProductTileContent extends BaseTileContent {
-  benefits?: Benefit[];
-}
 
 export interface ProductTileProps extends ProductTileContent, UniBlockProps {}
 

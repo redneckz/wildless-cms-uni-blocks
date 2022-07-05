@@ -1,10 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { BlockVersion, UniBlockProps } from './types';
 import { BaseTile } from './BaseTile';
-import type { BaseTileContent } from './BaseTile';
+import type { BlockVersion } from './model/BlockVersion';
+import type { TileContent } from './TileContent';
+import type { UniBlockProps } from './types';
 import { getColSpan } from './utils/getColSpan';
 
-export interface TileProps extends BaseTileContent, UniBlockProps {}
+export interface TileProps extends TileContent, UniBlockProps {}
 
 const tileStyleMap: Record<BlockVersion, string> = {
   primary: 'bg-white text-primary-text',

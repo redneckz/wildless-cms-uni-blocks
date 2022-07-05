@@ -1,22 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ButtonVersion, LinkContent } from '../types';
-
-export interface ButtonInnerProps {
-  text?: string;
-  aboveText?: string;
-  appendLeft?: any;
-  rounded?: boolean;
-}
-
-export interface ButtonProps
-  extends LinkContent,
-    ButtonInnerProps,
-    Partial<Pick<HTMLAnchorElement, 'rel' | 'ariaLabel'>> {
-  className?: string;
-  onClick?: (ev: MouseEvent) => any;
-  version?: ButtonVersion;
-  disabled?: boolean;
-}
+import type { ButtonVersion } from '../model/ButtonVersion';
+import type { ButtonInnerProps, ButtonProps } from './ButtonProps';
 
 const buttonStyleMap: Record<ButtonVersion, string> = {
   primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',

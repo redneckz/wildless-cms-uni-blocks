@@ -1,7 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent, Picture } from '../types';
+import type { LinkContent } from '../model/LinkContent';
+import type { Picture } from '../model/Picture';
 import { Button } from '../ui-kit/Button';
-import { Icon, IconName } from '../ui-kit/Icon';
+import { Icon } from '../ui-kit/Icon';
+import type { IconName } from '../ui-kit/IconProps';
 import { Img } from '../ui-kit/Img';
 import { Title } from '../ui-kit/Title';
 import { BORDER_CLASSES, GRADIENT } from './constants';

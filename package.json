@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.68",
+  "version": "0.2.73",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -53,6 +53,8 @@
       "require": "./dist/utils/*.js",
       "types": "./lib/utils/*.d.ts"
     },
+    "./bundle/*.js": "./bundle/*.js",
+    "./bundle/*.json": "./bundle/*.json",
     "./*.json": "./*.json",
     "./*.js": "./*.js",
     "./*.cjs": "./*.cjs"
@@ -60,6 +62,7 @@
   "files": [
     "lib",
     "dist",
+    "bundle",
     "fonts",
     "src"
   ],
@@ -75,13 +78,14 @@
   },
   "scripts": {
     "start": "npm run cosmos",
-    "build": "npm run build:lib && npm run build:commonjs && npm run build:style && npm run build:icons",
+    "build": "npm run build:lib && npm run build:commonjs && npm run bundle && npm run build:style && npm run build:icons",
+    "postbuild": "npm run size",
     "build:lib": "rimraf ./lib && tsc --build --verbose",
     "postbuild:lib": "replace-in-file --configFile=replace-config.lib.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
-    "bundle": "rimraf ./bundle && rollup -c",
+    "bundle": "rimraf ./bundle && rollup -c && npm run build:schema",
+    "build:schema": "ts-json-schema-generator --path './src/**/*Content.ts' --no-type-check --type '*' -o ./bundle/blocks.schema.json",
     "build:style": "postcss './src/**/*.css' --env production --dir ./lib",
-    "postbuild:style": "npm run size",
     "build:icons": "svgo -f ./src/icons -o ./cosmos-static/icons",
     "size": "size-limit",
     "test": "jest --coverage",
@@ -137,6 +141,7 @@
     "svgo": "^2.8.0",
     "tailwindcss": "^3.1.1",
     "ts-jest": "^28.0.4",
+    "ts-json-schema-generator": "^1.0.0",
     "ts-loader": "^9.3.0",
     "typescript": "^4.7.3",
     "webpack": "^5.73.0",
@@ -146,6 +151,10 @@
     {
       "limit": "7 kB",
       "path": "lib/common.css"
+    },
+    {
+      "limit": "30 kB",
+      "path": "bundle/bundle.umd.min.js"
     }
   ],
   "lint-staged": {

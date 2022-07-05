@@ -1,6 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent, UniBlockProps } from '../types';
-import { Icon, IconName } from '../ui-kit/Icon';
+import type { LinkContent } from '../model/LinkContent';
+import type { UniBlockProps } from '../types';
+import { Icon } from '../ui-kit/Icon';
+import type { IconName } from '../ui-kit/IconProps';
 import { useLink } from '../useLink';
 import { Button } from '../ui-kit/Button';
 
