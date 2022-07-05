@@ -1,11 +1,12 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { BaseTileContent } from './BaseTileContent';
-import { Img } from './Img';
 import type { BlockVersion } from './model/BlockVersion';
 import type { UniBlockProps } from './types';
 import { BlockItem } from './ui-kit/BlockItem';
-import { IconButton } from './ui-kit/IconButton';
-import type { IconButtonProps } from './ui-kit/IconButtonProps';
+import { Button } from './ui-kit/Button';
+import type { ButtonWithIconProps } from './ui-kit/ButtonProps';
+import { Icon } from './ui-kit/Icon';
+import { Img } from './ui-kit/Img';
 import { Title } from './ui-kit/Title';
 import { useLink } from './useLink';
 import { getColSpan } from './utils/getColSpan';
@@ -81,6 +82,17 @@ function renderItems(items: string[] = [], version?: BlockVersion) {
   );
 }
 
-function renderButton(button: IconButtonProps, i: number) {
-  return button?.text ? <IconButton key={String(i)} {...button} /> : null;
+function renderButton({ icon, ...button }: ButtonWithIconProps, i: number) {
+  if (!button?.text) return;
+
+  if (icon)
+    return (
+      <Button
+        key={String(i)}
+        appendLeft={<Icon name={icon} width="24" height="24" />}
+        {...button}
+      />
+    );
+
+  return <Button key={String(i)} {...button} />;
 }

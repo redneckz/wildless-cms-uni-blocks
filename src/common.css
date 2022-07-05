@@ -7,6 +7,8 @@
   --color-primary-active: 36, 95, 52;
   --color-secondary-hover: 216, 242, 217;
   --color-secondary-active: 197, 226, 198;
+  --color-gradient-from: 141, 189, 76;
+  --color-gradient-to: 69, 172, 69;
 }
 /* Business clients | Light-Green */
 [data-theme='bc'] {
@@ -15,6 +17,8 @@
   --color-primary-active: 60, 94, 16;
   --color-secondary-hover: 232, 244, 217;
   --color-secondary-active: 216, 227, 202;
+  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */
+  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */
 }
 /* Ecosystem own | Yellow */
 [data-theme='eo'] {
@@ -23,6 +27,8 @@
   --color-primary-active: 126, 99, 12;
   --color-secondary-hover: 241, 236, 221;
   --color-secondary-active: 229, 222, 199;
+  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */
+  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */
 }
 
 @tailwind components;

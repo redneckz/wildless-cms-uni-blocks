@@ -1,10 +1,10 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { BaseTile } from './BaseTile';
 import type { Benefit } from './BenefitsBlockContent';
-import { Img } from './Img';
 import type { ProductBlockInnerContent } from './ProductBlockInnerContent';
 import type { UniBlockProps } from './types';
 import { Icon } from './ui-kit/Icon';
+import { Img } from './ui-kit/Img';
 import { Title } from './ui-kit/Title';
 
 export interface ProductBlockInnerProps extends ProductBlockInnerContent, UniBlockProps {}
@@ -18,7 +18,7 @@ export const ProductBlockInner = JSX<ProductBlockInnerProps>(
             /* TODO Why <Title> is duplicated here?  */
             <Title
               size={titleSize || 'XL'}
-              className="font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]"
+              className="font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px] text-primary-text"
             >
               {title}
             </Title>
@@ -47,7 +47,7 @@ function renderBenefit(benefit: Benefit, i: number) {
         />
       )}
       <div className="flex gap-1 flex-col h-full">
-        <h4 className="font-medium text-xl m-0">{benefit.label}</h4>
+        <h4 className="font-medium text-primary-text text-xl m-0">{benefit.label}</h4>
         {benefit.description && (
           <div className="font-normal text-sm text-secondary-text">{benefit.description}</div>
         )}

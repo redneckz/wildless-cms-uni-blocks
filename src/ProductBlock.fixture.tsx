@@ -1,7 +1,7 @@
 import { context } from './setup-fixture';
 
 import { ProductBlock } from './ProductBlock';
-import { Picture } from './model/Picture';
+import type { Picture } from './model/Picture';
 
 const image: Picture = {
   src: 'money-1.png',

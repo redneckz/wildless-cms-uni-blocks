@@ -5134,7 +5134,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@font-face{font-display:swap;font-fami
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_postcss_loader_dist_cjs_js_fonts_ubuntu_ubuntu_css__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.top-4{top:1rem}.right-4{right:1rem}.bottom-0{bottom:0}.right-0{right:0}.top-1\\/2{top:50%}.left-8{left:2rem}.right-1{right:.25rem}.top-0{top:0}.left-0{left:0}.-bottom-2{bottom:-.5rem}.top-1{top:.25rem}.z-20{z-index:20}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.m-auto{margin:auto}.-mx-20{margin-left:-5rem;margin-right:-5rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mt-3{margin-top:.75rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.ml-4{margin-left:1rem}.mb-3\\.5{margin-bottom:.875rem}.mb-3{margin-bottom:.75rem}.mt-5{margin-top:1.25rem}.mb-1{margin-bottom:.25rem}.mr-8{margin-right:2rem}.mt-4{margin-top:1rem}.mb-2{margin-bottom:.5rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.mr-2{margin-right:.5rem}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[70px\\]{height:70px}.h-8{height:2rem}.h-\\[90px\\]{height:90px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-9{height:2.25rem}.h-\\[1px\\]{height:1px}.h-12{height:3rem}.h-\\[8px\\]{height:8px}.h-\\[2px\\]{height:2px}.h-\\[24px\\]{height:24px}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[8px\\]{min-height:8px}.w-\\[70px\\]{width:70px}.w-full{width:100%}.w-8{width:2rem}.w-\\[364px\\]{width:364px}.w-\\[260px\\]{width:260px}.w-\\[84px\\]{width:84px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-4{width:1rem}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-9{width:2.25rem}.w-\\[24px\\]{width:24px}.w-12{width:3rem}.w-\\[8px\\]{width:8px}.w-\\[36px\\]{width:36px}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[260px\\]{min-width:260px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[8px\\]{min-width:8px}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[308px\\]{max-width:308px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[170px\\]{max-width:170px}.shrink-0{flex-shrink:0}.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-1{gap:.25rem}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-3\\.5{gap:.875rem}.gap-x-24{-moz-column-gap:6rem;column-gap:6rem}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded{border-radius:.25rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-0{border-width:0}.border-x-0{border-left-width:0;border-right-width:0}.border-y{border-bottom-width:1px}.border-t,.border-y{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.p-9{padding:2.25rem}.p-0{padding:0}.px-0{padding-left:0;padding-right:0}.py-4{padding-bottom:1rem;padding-top:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.px-3{padding-left:.75rem;padding-right:.75rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.px-20{padding-left:5rem;padding-right:5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1\\.5{padding-bottom:.375rem;padding-top:.375rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-4{padding-left:1rem;padding-right:1rem}.pb-2{padding-bottom:.5rem}.pt-0{padding-top:0}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pt-10{padding-top:2.5rem}.pl-\\[50px\\]{padding-left:50px}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pt-1{padding-top:.25rem}.pt-1\\.5{padding-top:.375rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pl-4{padding-left:1rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-title{font-size:2rem;line-height:2.5rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.text-secondary-light{--tw-text-opacity:1;color:rgba(245,247,249,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-secondary-active:hover{--tw-text-opacity:1;color:rgba(var(--color-secondary-active),var(--tw-text-opacity))}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n}\n",null],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.top-4{top:1rem}.right-4{right:1rem}.bottom-0{bottom:0}.right-0{right:0}.top-1\\/2{top:50%}.left-8{left:2rem}.right-1{right:.25rem}.top-0{top:0}.left-0{left:0}.top-7{top:1.75rem}.right-7{right:1.75rem}.-bottom-2{bottom:-.5rem}.top-1{top:.25rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.-mx-20{margin-left:-5rem;margin-right:-5rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mt-3{margin-top:.75rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.ml-4{margin-left:1rem}.mb-3\\.5{margin-bottom:.875rem}.mb-3{margin-bottom:.75rem}.mt-5{margin-top:1.25rem}.mb-1{margin-bottom:.25rem}.mr-8{margin-right:2rem}.mt-4{margin-top:1rem}.mb-2{margin-bottom:.5rem}.mb-9{margin-bottom:2.25rem}.mr-6{margin-right:1.5rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[70px\\]{height:70px}.h-8{height:2rem}.h-\\[90px\\]{height:90px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-\\[63px\\]{height:63px}.h-9{height:2.25rem}.h-\\[1px\\]{height:1px}.h-12{height:3rem}.h-\\[8px\\]{height:8px}.h-\\[2px\\]{height:2px}.h-\\[24px\\]{height:24px}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[32px\\]{min-height:32px}.min-h-12{min-height:3rem}.min-h-\\[8px\\]{min-height:8px}.w-\\[70px\\]{width:70px}.w-full{width:100%}.w-8{width:2rem}.w-\\[364px\\]{width:364px}.w-\\[260px\\]{width:260px}.w-\\[84px\\]{width:84px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-4{width:1rem}.w-\\[1280px\\]{width:1280px}.w-80{width:20rem}.w-\\[63px\\]{width:63px}.w-\\[200px\\]{width:200px}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-9{width:2.25rem}.w-\\[24px\\]{width:24px}.w-12{width:3rem}.w-\\[8px\\]{width:8px}.w-\\[36px\\]{width:36px}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[260px\\]{min-width:260px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[8px\\]{min-width:8px}.min-w-12{min-width:3rem}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[308px\\]{max-width:308px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[170px\\]{max-width:170px}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-1{gap:.25rem}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-8{gap:2rem}.gap-3\\.5{gap:.875rem}.gap-x-24{-moz-column-gap:6rem;column-gap:6rem}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded{border-radius:.25rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-0{border-width:0}.border-y-0{border-bottom-width:0;border-top-width:0}.border-x-0{border-left-width:0;border-right-width:0}.border-y{border-bottom-width:1px}.border-t,.border-y{border-top-width:1px}.border-r{border-right-width:1px}.border-b-0{border-bottom-width:0}.border-t-0{border-top-width:0}.border-solid{border-style:solid}.border-none{border-style:none}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.p-9{padding:2.25rem}.p-0{padding:0}.px-0{padding-left:0;padding-right:0}.py-4{padding-bottom:1rem;padding-top:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.px-3{padding-left:.75rem;padding-right:.75rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.px-20{padding-left:5rem;padding-right:5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-4{padding-left:1rem;padding-right:1rem}.pb-2{padding-bottom:.5rem}.pt-0{padding-top:0}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pt-10{padding-top:2.5rem}.pl-\\[50px\\]{padding-left:50px}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pt-1{padding-top:.25rem}.pt-1\\.5{padding-top:.375rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-12{padding-bottom:3rem}.pt-6{padding-top:1.5rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pl-4{padding-left:1rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-title{font-size:2rem;line-height:2.5rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.text-secondary-light{--tw-text-opacity:1;color:rgba(245,247,249,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}.first\\:pt-7:first-child{padding-top:1.75rem}.last\\:pb-7:last-child{padding-bottom:1.75rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.hover\\:text-secondary-active:hover{--tw-text-opacity:1;color:rgba(var(--color-secondary-active),var(--tw-text-opacity))}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n}\n",null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31050,7 +31050,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 5413:
+/***/ 5324:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31339,31 +31339,6 @@ const renderStep = (benefit, i) => {
         },
     ] }));
 
-;// CONCATENATED MODULE: ./src/Img.tsx
-
-
-const Img = JSX(({ className, image }) => (jsxs("picture", { className: `${className || ''}`, children: [image.sources?.length
-            ? image.sources.map(({ src, format }, index) => (jsx("source", { srcSet: src, type: formatToMimeType(format) }, `${index}_${src}`)))
-            : null, jsx("img", { src: image.src, alt: image.alt || image.title, title: image.title, ...image?.size })] })));
-function formatToMimeType(format) {
-    return format ? `image/${String(format)}` : undefined;
-}
-
-;// CONCATENATED MODULE: ./src/ui-kit/BlockItem.tsx
-
-
-const listStyleMap = {
-    primary: 'bg-primary-main',
-    secondary: 'bg-white',
-};
-const textStyleMap = {
-    primary: 'text-primary-text',
-    secondary: 'text-white',
-};
-const BlockItem = JSX(({ className, text, children, version = 'primary' }) => {
-    return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [jsx("div", { className: `inline-block w-[8px] h-[8px] min-w-[8px] min-h-[8px] rounded-full mt-2 ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mx-3 ${textStyleMap[version]}`, children: text || children })] }));
-});
-
 ;// CONCATENATED MODULE: ./src/ui-kit/Button.tsx
 
 
@@ -31375,22 +31350,47 @@ const buttonDisabledStyleMap = {
     primary: 'bg-secondary-dark text-secondary-text',
     secondary: 'bg-secondary-light text-secondary-text',
 };
-const styleButton = 'inline-block rounded-md px-8 py-2 text-center font-sans';
-const Button = JSX(({ className, text, href, target, onClick, children, disabled, version = 'primary', ariaLabel, }) => {
+const styleButton = 'inline-block text-center font-sans select-none';
+const Button = JSX(({ className, text, aboveText, appendLeft, href, target, onClick, children, disabled, rounded, version = 'none', ariaLabel, ...rest }) => {
+    const buttonInner = children ?? (jsx(ButtonInner, { text: text, aboveText: aboveText, appendLeft: appendLeft, rounded: rounded }));
     if (disabled) {
-        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabIndex: "-1", className: `${styleButton} select-none ${buttonDisabledStyleMap[version]} ${className || ''}`, children: children ? (jsx("div", { children: children })) : (jsx("div", { className: "text-sm font-medium py-1.5", children: text })) }));
+        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabIndex: "-1", className: `${styleButton} ${buttonDisabledStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, children: buttonInner }));
     }
-    return (jsx("a", { className: `${styleButton} no-underline ${buttonStyleMap[version]} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, children: children ? (jsx("div", { children: children })) : (jsx("div", { className: "text-sm font-medium py-1.5", children: text })) }));
+    return (jsx("a", { className: `${styleButton} cursor-pointer no-underline ${buttonStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, role: !href ? 'button' : 'link', ...rest, children: buttonInner }));
+});
+const ButtonInner = JSX(({ text, aboveText, appendLeft, rounded }) => {
+    const withoutText = !text && !aboveText && Boolean(appendLeft);
+    const buttonInnerClasses = `flex items-center justify-center ${withoutText ? 'h-12 w-12 min-h-12 min-w-12' : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`} ${rounded ? 'rounded-full' : ''}`;
+    return (jsxs("div", { className: buttonInnerClasses, children: [appendLeft ? appendLeft : null, !withoutText ? (jsxs("div", { children: [jsx("div", { className: "text-xxs text-left", children: aboveText }), jsx("div", { className: "text-sm font-medium text-left", children: text })] })) : null] }));
 });
 
-;// CONCATENATED MODULE: ./src/ui-kit/IconButton.tsx
+;// CONCATENATED MODULE: ./src/ui-kit/SVG.tsx
 
 
-
-
-const IconButton = JSX((props) => {
-    return (jsx(Button, { ...props, children: props.icon ? (jsxs("div", { className: "flex items-center", children: [jsx("div", { className: "mr-2", children: jsx(Icon, { name: props.icon, width: "24", height: "24" }) }), jsxs("div", { children: [jsx("div", { className: "text-xxs text-left", children: props.aboveText }), jsx("div", { className: "text-sm font-medium text-left", children: props.text })] })] })) : null }));
+const SVG = JSX(({ className, viewBox, fill = 'none', width, height, paths, ...commonOptions }) => {
+    return (jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className: className, viewBox: viewBox, fill: fill, width: width, height: height, children: paths.map(({ d, fill, ...options }, i) => (jsx("path", { d: d, fill: fill || 'currentColor', ...commonOptions, ...options }, i))) }));
 });
+
+;// CONCATENATED MODULE: ./src/ui-kit/ArrowButton.tsx
+
+
+
+
+const ARROW_PATHS = [
+    {
+        d: 'm9 12 4-4-4-4',
+        stroke: 'currentColor',
+        strokeWidth: '2',
+        strokeLinecap: 'round',
+        fill: 'none',
+    },
+    {
+        d: 'M2 9a1 1 0 0 1 0-2v2Zm6-2a1 1 0 0 1 0 2V7ZM2 7h6v2H2V7Z',
+    },
+];
+const ArrowButton = JSX(({ className, disabled, ...rest }) => (jsx(Button, { rounded: true, className: `shadow-[0_4px_25px_rgba(0,0,0,0.07)] w-12 h-12 min-h-12 max-h-12 flex items-center justify-center ${disabled
+        ? 'bg-secondary-light text-secondary-text'
+        : 'bg-white text-primary-text hover:text-primary-main'} ${className || ''}`, disabled: disabled, ...rest, children: jsx(SVG, { paths: ARROW_PATHS, viewBox: "0 0 16 16", fill: "none", width: "16", height: "16" }) })));
 
 ;// CONCATENATED MODULE: ./src/ui-kit/TitleProps.ts
 var SizeTableClass;
@@ -31410,6 +31410,25 @@ const Title = JSX(({ size = 'L', className, children, ...rest }) => {
     return (jsx(Tag, { className: getClasses(SizeTableClass[size], className), ...rest, children: children }));
 });
 const getClasses = (...classes) => classes.filter(Boolean).join(' ');
+
+;// CONCATENATED MODULE: ./src/ComparisonTable/TableRowContainer.tsx
+
+
+const TableRowContainer = JSX(({ children }) => (jsx("div", { className: "self-start flex flex-col", role: "row", children: jsx("div", { className: "flex", children: children }) })));
+
+;// CONCATENATED MODULE: ./src/ComparisonTable/constants.ts
+const GRADIENT = 'bg-gradient-to-r from-main-gradient-start to-main-gradient-end';
+const BORDER_CLASSES = 'border-main-stroke border-solid border';
+const DIVIDER_CLASSES = 'border-main-divider border border-t-0 border-x-0';
+const FIRST_CELL_CLASSES = 'w-[200px] mr-6';
+const COLS_LENGTH_FOR_SCROLL = 2;
+const COLUMN_WIDTH = 4 * 80 + 4 * 4; // w-80 + gap-4 = 336px
+
+;// CONCATENATED MODULE: ./src/ComparisonTable/TableCarouselContainer.tsx
+
+
+
+const TableCarouselContainer = JSX(({ children, activeCardIndex }) => (jsx("div", { className: "flex flex-1 overflow-hidden", children: jsx("div", { className: "flex gap-4 duration-1000", style: { transform: `translateX(-${activeCardIndex * COLUMN_WIDTH}px)` }, children: children }) })));
 
 ;// CONCATENATED MODULE: ./src/utils/url.ts
 const MOBILE_URL_PATH = '/mobile';
@@ -31465,6 +31484,291 @@ function useLink({ router, handlerDecorator = defaultHandlerDecorator, }, link) 
     };
 }
 
+;// CONCATENATED MODULE: ./src/ui-kit/Img.tsx
+
+
+const Img = JSX(({ className, image }) => (jsxs("picture", { className: `${className || ''}`, children: [image.sources?.length
+            ? image.sources.map(({ src, format }, index) => (jsx("source", { srcSet: src, type: formatToMimeType(format) }, `${index}_${src}`)))
+            : null, jsx("img", { src: image.src, alt: image.alt || image.title, title: image.title, ...image?.size })] })));
+function formatToMimeType(format) {
+    return format ? `image/${String(format)}` : undefined;
+}
+
+;// CONCATENATED MODULE: ./src/ComparisonTable/HeaderCell.tsx
+
+
+
+
+
+
+
+const HeaderCell = JSX(({ icon, image, title, link }) => (jsxs("div", { className: `w-80 box-border flex flex-col items-center rounded-t-md border-b-0 px-7 pt-7 pb-12 ${BORDER_CLASSES} ${GRADIENT}`, role: "columnheader", scope: "col", children: [icon && !image?.src && (jsx(Icon, { className: "h-[63px] w-[63px] min-w-[63px] min-h-[63px] mb-4", name: icon, width: "63", height: "63" })), image?.src && jsx(Img, { className: "mb-4", image: image }), title && (jsx(Title, { size: "S", className: "font-medium m-0 text-center text-white", children: title })), link?.text && (jsx("div", { className: "mt-auto w-full", children: jsx(Button, { href: link.href, target: link.target, className: "mt-4 w-full text-primary-main bg-white hover:bg-secondary-hover active:bg-secondary-active", children: jsx("div", { className: "text-xs py-[11px]", children: link.text }) }) }))] })));
+
+;// CONCATENATED MODULE: ./src/ComparisonTable/TableCell.tsx
+
+
+
+const TableCell = JSX(({ cell, isFirstRow, isLastRow, isFillGradient }) => {
+    const cellWrapperClasses = `w-80 box-border flex flex-col ${BORDER_CLASSES} ${!isLastRow ? 'border-y-0' : 'border-t-0 rounded-b-md'} ${isFillGradient ? GRADIENT : ''}`;
+    const cellClasses = `mx-7 h-full ${DIVIDER_CLASSES} ${isFillGradient && isFirstRow ? 'border-t' : ''} ${!isLastRow ? 'border-solid' : ''}`;
+    return (jsx("div", { className: cellWrapperClasses, role: "cell", children: jsx("div", { className: cellClasses, children: cell.map((item, i) => renderCellInner(item, i, isFillGradient)) }) }));
+});
+const renderCellInner = ({ label, description }, i, isFillGradient) => (jsxs("div", { className: "first:pt-7 pt-6 last:pb-7", children: [label && (jsx("h5", { className: `text-xl font-medium m-0 ${isFillGradient ? 'text-white' : ''}`, children: label })), description && (jsx("div", { className: `text-sm opacity-80 ${isFillGradient ? 'text-white' : 'text-secondary-text'}`, children: description }))] }, String(i)));
+
+;// CONCATENATED MODULE: ./src/ComparisonTable/TableRow.tsx
+
+
+
+
+
+
+const TableRow = JSX(({ row: { header, data }, activeCardIndex, isColoredFirstColumn, isFirstRow, isLastRow }) => (jsxs(TableRowContainer, { children: [header?.title ? (jsx("div", { className: `text-sm py-7 ${DIVIDER_CLASSES} ${FIRST_CELL_CLASSES} ${!isLastRow ? 'border-solid' : ''}`, children: header.title })) : null, data?.length ? (jsx(TableCarouselContainer, { activeCardIndex: activeCardIndex, children: data.map((cell, i) => (jsx(TableCell, { cell: cell, isFirstRow: isFirstRow, isLastRow: isLastRow, isFillGradient: isColoredFirstColumn && i === 0 }, String(i)))) })) : null] })));
+
+;// CONCATENATED MODULE: ./src/ComparisonTable/ComparisonTable.tsx
+
+
+
+
+
+
+
+
+
+
+const ComparisonTable = JSX(({ className, context, title, rowHeaders, columns, visibleRowLength = 0, isColoredFirstColumn = false, }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    const [activeCardIndex, setActiveCardIndex] = context.useState(0);
+    const [isShowAllRow, setIsShowAllRow] = context.useState(!visibleRowLength);
+    const colHeaders = columns?.map(({ header }) => header || {});
+    const colData = columns?.map(({ data }) => data) || [];
+    const rowData = rowHeaders
+        ?.map((header, i) => ({
+        header,
+        data: colData.map((col) => col?.[i] || [{}]),
+    }))
+        .slice(0, isShowAllRow ? rowHeaders.length : visibleRowLength);
+    const nextClick = () => setActiveCardIndex(activeCardIndex + 1);
+    const prevClick = () => setActiveCardIndex(activeCardIndex - 1);
+    const showToggle = () => setIsShowAllRow(!isShowAllRow);
+    const isScrollAvailable = colData?.length && colData.length > COLS_LENGTH_FOR_SCROLL;
+    const showNextButton = isScrollAvailable && colData?.length - activeCardIndex > COLS_LENGTH_FOR_SCROLL;
+    const showPrevButton = isScrollAvailable && activeCardIndex > 0;
+    return (jsxs("section", { className: `bg-white font-sans py-[50px] pl-[50px] overflow-hidden text-primary-text relative ${className || ''}`, children: [jsx(Title, { className: "font-medium m-0 max-w-[47rem] text-center mb-9 mx-auto", children: title }), jsxs("div", { role: "table", children: [colHeaders?.length ? (jsxs(TableRowContainer, { children: [jsx("div", { className: FIRST_CELL_CLASSES, role: "columnheader", scope: "col" }), jsx(TableCarouselContainer, { activeCardIndex: activeCardIndex, children: colHeaders.map((header, i) => (jsx(HeaderCell, { ...header, link: header.link && useLink({ router, handlerDecorator }, header.link) }, String(i)))) })] })) : null, rowData?.length ? (jsxs("div", { className: "relative", children: [rowData.map((row, i, { length }) => (jsx(TableRow, { row: row, isFirstRow: i === 0, isLastRow: i + 1 === length, activeCardIndex: activeCardIndex, isColoredFirstColumn: isColoredFirstColumn }, String(i)))), isScrollAvailable ? (jsx("div", { children: jsxs("div", { className: "absolute top-7 right-7 z-10", children: [jsx(ArrowButton, { onClick: nextClick, disabled: !showNextButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" }), jsx(ArrowButton, { className: "mt-4 rotate-180", onClick: prevClick, disabled: !showPrevButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })] }) })) : null] })) : null] }), isScrollAvailable ? (jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })) : null, visibleRowLength ? (jsx("div", { className: "pr-[50px]", children: jsxs("div", { className: "flex w-full", children: [jsx("div", { className: FIRST_CELL_CLASSES }), jsx("button", { onClick: showToggle, className: "mt-5 flex-1 border-main-stroke border-solid border text-primary-text bg-white hover:border-primary-main hover:text-primary-main", children: jsx("div", { className: "font-sans font-medium text-xs py-[11px]", children: !isShowAllRow ? 'Показать все параметры' : 'Скрыть' }) })] }) })) : null] }));
+});
+
+;// CONCATENATED MODULE: ./src/ComparisonTable/ComparisonTable.fixture.tsx
+
+
+
+const image1 = {
+    src: 'card-1.png',
+    format: 'webp',
+    size: {
+        width: 100,
+        height: 63,
+    },
+};
+const image2 = {
+    src: 'card-2.png',
+    format: 'webp',
+    size: {
+        width: 100,
+        height: 63,
+    },
+};
+const image3 = {
+    src: 'card-3.png',
+    format: 'webp',
+    size: {
+        width: 100,
+        height: 63,
+    },
+};
+const rowHeaders = [
+    { title: 'Начисление процентов на остаток по счету' },
+    { title: 'Снятие наличных' },
+    { title: 'Оформление онлайн' },
+    { title: 'Кэшбэк баллами' },
+    { title: 'Стоимость обслуживания' },
+    { title: 'Стоимость SMS-сервиса' },
+    { title: 'Дополнительная информация' },
+];
+const rowHeaders2 = [
+    { title: 'Срок вклада (дней)' },
+    { title: 'Ставка по вкладу' },
+    { title: 'Минимальная сумма' },
+    { title: 'Максимальная сумма' },
+];
+const columns = [
+    {
+        header: {
+            title: 'Россельхоз-Росснефть',
+            image: image1,
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'Нет' }],
+            [
+                {
+                    label: 'Бесплатно',
+                    description: 'В банкоматах и кассах Россельхозбанка и банков-партнеров',
+                },
+                {
+                    label: 'Бесплатно',
+                    description: 'В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб',
+                },
+            ],
+            [{ label: 'Нет' }],
+            [{ label: 'До 7%' }],
+            [
+                {
+                    label: 'Бесплатно',
+                    description: 'При обороте по карте от 10000 ₽ в месяц',
+                },
+            ],
+            [{ label: '69 рублей в месяц' }],
+            [{ description: 'Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть' }],
+        ],
+    },
+    {
+        header: {
+            title: 'Panasonic',
+            image: image2,
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'Нет' }],
+            [
+                {
+                    label: 'Бесплатно',
+                    description: 'В банкоматах и кассах Россельхозбанка и банков-партнеров',
+                },
+                {
+                    label: '1%',
+                    description: 'В сторонних банкоматах, минимум 150 руб',
+                },
+            ],
+            [{ label: 'Нет' }],
+            [{ label: 'До 20%' }],
+            [
+                {
+                    label: 'Бесплатно',
+                    description: 'При обороте по карте от 10000 ₽ в месяц',
+                },
+            ],
+            [{ label: '69 рублей в месяц' }],
+            [
+                {
+                    description: 'Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic',
+                },
+            ],
+        ],
+    },
+    {
+        header: {
+            title: 'Профсоюзная',
+            image: image3,
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'Нет' }],
+            [{ label: 'Бесплатно' }],
+            [{ label: 'Есть' }],
+            [{ label: 'До 20%' }],
+            [
+                {
+                    label: 'Бесплатно',
+                    description: 'При обороте по карте от 10000 ₽ в месяц',
+                },
+            ],
+            [{ label: '69 рублей в месяц' }],
+            [{ description: 'Для членов профсоюзных организаций' }],
+        ],
+    },
+];
+const columns2 = [
+    {
+        header: {
+            title: '«Пополняемый»',
+            icon: 'GlassIcon',
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'от 91 до 1095' }],
+            [{ label: 'до 8,2% ₽' }, { label: 'до 0,01% USD' }],
+            [{ label: 'От 3000 ₽' }, { label: 'От 50 USD' }],
+            [{ label: 'до 10 млн ₽' }, { label: 'до 300 тыс. USD' }],
+        ],
+    },
+    {
+        header: {
+            title: '«Комфортный»',
+            icon: 'ComfortableCompIcon',
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'от 91 до 1095' }],
+            [{ label: 'до 7,2% ₽' }, { label: 'до 0,01% USD' }],
+            [{ label: 'От 10 000 ₽' }, { label: 'От 150 USD' }],
+            [{ label: 'до 10 млн ₽' }, { label: 'до 300 тыс. USD' }],
+        ],
+    },
+    {
+        header: {
+            title: '«Доходный пенсионный»',
+            icon: 'ClockIcon',
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'от 91 до 1460' }],
+            [{ label: 'до 9,5% ₽' }],
+            [{ label: 'От 500 ₽' }],
+            [{ label: 'Без ограничений' }],
+        ],
+    },
+];
+/* harmony default export */ const ComparisonTable_fixture = ({
+    'with images': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) }) })),
+    'with images and hidden rows': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", visibleRowLength: 3, context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) }) })),
+    'with images and colored first column': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", visibleRowLength: 3, isColoredFirstColumn: true, context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) }) })),
+    'with icons': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: Array(2).fill(columns2).flat() }) }) })),
+    'with icons and two cols': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: columns2.slice(0, 2) }) }) })),
+});
+
+;// CONCATENATED MODULE: ./src/ui-kit/BlockItem.tsx
+
+
+const listStyleMap = {
+    primary: 'bg-primary-main',
+    secondary: 'bg-white',
+};
+const textStyleMap = {
+    primary: 'text-primary-text',
+    secondary: 'text-white',
+};
+const BlockItem = JSX(({ className, text, children, version = 'primary' }) => {
+    return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [jsx("div", { className: `inline-block w-[8px] h-[8px] min-w-[8px] min-h-[8px] rounded-full mt-2 ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mx-3 ${textStyleMap[version]}`, children: text || children })] }));
+});
+
 ;// CONCATENATED MODULE: ./src/utils/getColSpan.ts
 const getColSpan = (className) => {
     const colSpanPrefix = 'col-span-';
@@ -31473,6 +31777,7 @@ const getColSpan = (className) => {
 };
 
 ;// CONCATENATED MODULE: ./src/BaseTile.tsx
+
 
 
 
@@ -31502,8 +31807,12 @@ function getTitleSizeByClassName(className = '') {
 function renderItems(items = [], version) {
     return (jsx("section", { className: "max-w-[600px]", role: "list", children: items.map((_, i) => (jsx(BlockItem, { className: i ? 'mt-2.5' : '', text: _, version: version }, String(i)))) }));
 }
-function renderButton(button, i) {
-    return button?.text ? jsx(IconButton, { ...button }, String(i)) : null;
+function renderButton({ icon, ...button }, i) {
+    if (!button?.text)
+        return;
+    if (icon)
+        return (jsx(Button, { appendLeft: jsx(Icon, { name: icon, width: "24", height: "24" }), ...button }, String(i)));
+    return jsx(Button, { ...button }, String(i));
 }
 
 ;// CONCATENATED MODULE: ./src/Tile.tsx
@@ -31547,6 +31856,7 @@ const buttons = [
     {
         text: 'Все показатели',
         href: 'https://cbr.ru/currency_base/daily/',
+        version: 'secondary',
     },
 ];
 const ExchangeRateTile = JSX(({ className, context, title }) => {
@@ -31564,13 +31874,6 @@ async function fetchExchangeRate() {
 }
 const currencyNumberFormat = new Intl.NumberFormat('ru', { style: 'currency', currency: 'RUB' });
 const formatCurrency = (value) => (value ? currencyNumberFormat.format(value) : '');
-
-;// CONCATENATED MODULE: ./src/ui-kit/SVG.tsx
-
-
-const SVG = JSX(({ className, viewBox, fill = 'none', paths, ...commonOptions }) => {
-    return (jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className: className, viewBox: viewBox, fill: fill, children: paths.map(({ d, fill, ...options }, i) => (jsx("path", { d: d, fill: fill || 'currentColor', ...commonOptions, ...options }, i))) }));
-});
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Logo.tsx
 
@@ -31607,7 +31910,7 @@ const SearchBar = JSX(({ className, context }) => {
 const Contacts = JSX(({ className, items, hasButton, context }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
-    return (jsxs("div", { className: `flex flex-col ${className || ''}`, children: [items?.length ? items.map(renderContact) : null, hasButton ? (jsx(Button, { className: "my-4", ...useLink({ router, handlerDecorator }, {
+    return (jsxs("div", { className: `flex flex-col ${className || ''}`, children: [items?.length ? items.map(renderContact) : null, hasButton ? (jsx(Button, { version: "primary", className: "my-4", ...useLink({ router, handlerDecorator }, {
                     text: 'Обратная связь',
                     href: '/',
                     target: '_blank',
@@ -31688,6 +31991,7 @@ const ColumnItem = JSX(({ text, href, target, index }) => (jsx("a", { className:
 
 
 
+
 const ICONS_MAP = [
     { origins: ['t.me', 'telegram.org'], icon: 'TelegramIcon', label: 'Телеграм' },
     { origins: ['vk.com'], icon: 'VKIcon', label: 'ВКонтакте' },
@@ -31700,7 +32004,9 @@ const SocialMedia = JSX(({ className, media, context }) => {
 });
 const MediaButton = JSX(({ href }) => {
     const { icon, label } = ICONS_MAP.find(({ origins }) => origins.some((_) => href?.includes(_))) || {};
-    return (jsx("a", { className: "flex items-center justify-center border-solid border border-main-divider rounded-full no-underline outline-none w-9 h-9", href: href, target: "_blank", rel: "noopener noreferrer", "aria-label": label, children: icon && jsx(Icon, { className: "block", name: icon }) /* TODO width & height */ }));
+    if (!icon)
+        return null;
+    return (jsx(Button, { rounded: true, href: href, target: "_blank", rel: "noopener noreferrer", "aria-label": label, className: "border-solid border border-main-divider w-9 h-9 flex items-center justify-center hover:text-primary-main", appendLeft: jsx(Icon, { name: icon }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/Footer/TextInformation.tsx
@@ -31728,13 +32034,6 @@ const LEFT_COL_WIDTH_FULL_HD = 'w-[280px]';
 const LEFT_COL_WIDTH_SMALL_DESKTOP = 'xl:w-[220px]';
 const Footer = JSX(({ className, documents, relatedEnterprises, contacts, socialMedia, topItems, context }) => {
     return (jsxs("footer", { className: `${className} px-9 py-10 bg-white`, children: [jsxs("div", { className: "flex items-stretch gap-32 pb-8 xl:gap-8", children: [jsx(Logo, { className: `${LEFT_COL_WIDTH_FULL_HD} ${LEFT_COL_WIDTH_SMALL_DESKTOP}` }), jsx(SearchBar, { context: context, className: "grow" })] }), jsxs("div", { className: "flex items-stretch gap-32 xl:gap-8", children: [jsx(Contacts, { className: `${LEFT_COL_WIDTH_FULL_HD} shrink-0 overflow-hidden ${LEFT_COL_WIDTH_SMALL_DESKTOP}`, items: contacts, context: context, hasButton: true }), jsx(Sitemap, { className: "pt-[3px]", context: context, items: topItems })] }), jsx(SocialMedia, { media: socialMedia, context: context }), jsx(HorizontalNavigation, { links: relatedEnterprises, context: context }), jsx(TextInformation, { links: documents, context: context })] }));
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/ArrowButton.tsx
-
-
-const ArrowButton = JSX(({ className, onClick, ariaLabel }) => {
-    return (jsx("button", { className: `${className} border-none no-underline w-12 h-12 rounded-3xl bg-white flex text-black hover:text-primary-main`, style: { boxShadow: '0px 4px 25px rgba(0, 0, 0, 0.07)' }, onClick: onClick, "aria-label": ariaLabel, children: jsxs("svg", { className: "m-auto", width: "16", height: "16", viewBox: "0 0 16 16", fill: "none", xmlns: "http://www.w3.org/2000/svg", children: [jsx("path", { d: "M7 12L3 8L7 4", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round" }), jsx("path", { d: "M14 9C14.5523 9 15 8.55228 15 8C15 7.44772 14.5523 7 14 7L14 9ZM8 7C7.44772 7 7 7.44772 7 8C7 8.55229 7.44772 9 8 9L8 7ZM14 7L8 7L8 9L14 9L14 7Z", fill: "currentColor" })] }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/GalleryInner.tsx
@@ -31773,9 +32072,7 @@ const GalleryInner = JSX(({ title, description, context, cards = [], className, 
                 // Need to place all cards at the center if count of cards less than 4
                 className: `flex ${cards?.length <= galleryLengthForScrollMap[version] ? 'justify-center' : ''} duration-1000`, 
                 // All cards has same width
-                style: { transform: `translateX(-${activeCardIndex * cardWidthMap[version]}px)` }, role: "list", children: cards?.map((card, i) => renderCard(card, i, version)) }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8", onClick: handlePrevClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-20 rotate-180", onClick: handleNextClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" })), jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px]", style: {
-                    background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
-                } })] }));
+                style: { transform: `translateX(-${activeCardIndex * cardWidthMap[version]}px)` }, role: "list", children: cards?.map((card, i) => renderCard(card, i, version)) }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8 rotate-180", onClick: handlePrevClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-10", onClick: handleNextClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" })), jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })] }));
 });
 function renderCard(card, i, version) {
     return (jsxs("div", { className: `box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch ${cardStyleMap[version]} w-full`, role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? (jsx("section", { className: "max-w-[308px] mt-2", role: "list", children: card.items.map(renderItem) })) : null] }), card.href ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.href })) : null] }, String(i)));
@@ -31900,10 +32197,10 @@ const goldenSequence = (first, size) => [first].concat(size > 0 ? goldenSequence
 const ProductBlockInner = JSX(({ className, context, title, titleSize, description, benefits, buttons, image, items }) => {
     return (jsxs("div", { className: `flex grow justify-between items-stretch ${className || ''}`, children: [jsxs("div", { className: 'flex flex-col', children: [title && (
                     /* TODO Why <Title> is duplicated here?  */
-                    jsx(Title, { size: titleSize || 'XL', className: "font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]", children: title })), jsx(BaseTile, { context: context, description: description, items: items, buttons: buttons, children: benefits?.length ? (jsx("div", { className: "flex gap-6 mt-6 mb-3.5", children: benefits.map(renderBenefit) })) : null })] }), image?.src && jsx(Img, { className: "mt-auto", image: image })] }));
+                    jsx(Title, { size: titleSize || 'XL', className: "font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px] text-primary-text", children: title })), jsx(BaseTile, { context: context, description: description, items: items, buttons: buttons, children: benefits?.length ? (jsx("div", { className: "flex gap-6 mt-6 mb-3.5", children: benefits.map(renderBenefit) })) : null })] }), image?.src && jsx(Img, { className: "mt-auto", image: image })] }));
 });
 function renderBenefit(benefit, i) {
-    return (jsxs("div", { className: "flex gap-4 items-center", children: [benefit.icon && (jsx(Icon, { className: "w-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border", name: benefit.icon, width: "24", height: "24" })), jsxs("div", { className: "flex gap-1 flex-col h-full", children: [jsx("h4", { className: "font-medium text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary-text", children: benefit.description }))] })] }, String(i)));
+    return (jsxs("div", { className: "flex gap-4 items-center", children: [benefit.icon && (jsx(Icon, { className: "w-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border", name: benefit.icon, width: "24", height: "24" })), jsxs("div", { className: "flex gap-1 flex-col h-full", children: [jsx("h4", { className: "font-medium text-primary-text text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary-text", children: benefit.description }))] })] }, String(i)));
 }
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Breadcrumb.tsx
@@ -32023,7 +32320,7 @@ const textBlockStyleMaps = {
     primary: {
         background: 'bg-white',
         icon: 'bg-primary-main text-white',
-        title: 'text-base',
+        title: 'text-primary-text',
         description: 'text-secondary-text',
     },
     secondary: {
@@ -32035,13 +32332,13 @@ const textBlockStyleMaps = {
     'secondary-light': {
         background: 'bg-primary-main/10',
         icon: 'bg-primary-main text-white',
-        title: 'text-base',
+        title: 'text-primary-text',
         description: 'text-secondary-text',
     },
 };
 const TextBlock = JSX(({ title, description, blockVersion = 'primary', iconVersion, image, className }) => {
     const textBlockStyleMap = textBlockStyleMaps[blockVersion];
-    return (jsxs("section", { className: `font-sans px-9 py-4 flex ${textBlockStyleMap.background} ${className || ''}`, children: [iconVersion && iconVersion === 'small' ? renderIcon(textBlockStyleMap.icon) : null, iconVersion && iconVersion === 'big' ? renderImage(image) : null, jsxs("div", { className: "py-0.5", children: [title && jsx("div", { className: `font-medium mb-1 ${textBlockStyleMap.title}`, children: title }), description && (jsx("div", { className: `text-sm ${textBlockStyleMap.description}`, children: description }))] })] }));
+    return (jsxs("section", { className: `font-sans px-9 py-4 flex ${textBlockStyleMap.background} ${className || ''}`, children: [iconVersion && iconVersion === 'small' ? renderIcon(textBlockStyleMap.icon) : null, iconVersion && iconVersion === 'big' ? renderImage(image) : null, jsxs("div", { className: "py-0.5", children: [title && (jsx("div", { className: `font-medium text-base mb-1 ${textBlockStyleMap.title}`, children: title })), description && (jsx("div", { className: `text-sm ${textBlockStyleMap.description}`, children: description }))] })] }));
 });
 function renderIcon(className) {
     return (jsx("div", { className: `pt-1.5 pr-4`, children: jsx("div", { className: `rounded-full h-4 w-4 text-center text-xs ${className}`, children: "i" }) }));
@@ -32050,7 +32347,11 @@ function renderImage(image) {
     return image?.src ? jsx(Img, { className: "pt-0.5 pr-3", image: image }) : null;
 }
 
+;// CONCATENATED MODULE: ./src/ComparisonTable/index.ts
+
+
 ;// CONCATENATED MODULE: ./src/Blocks.ts
+
 
 
 
@@ -32082,6 +32383,7 @@ const Blocks = {
     MobileAppTile: MobileAppTile,
     Gallery: Gallery,
     MiniGallery: MiniGallery,
+    ComparisonTable: ComparisonTable,
 };
 
 ;// CONCATENATED MODULE: ./src/ui-kit/LikeButton.tsx
@@ -33202,11 +33504,11 @@ const Tile_fixture_image = {
     src: 'money-1.png',
     format: 'webp',
 };
-const image2 = {
+const Tile_fixture_image2 = {
     src: 'credit-card-1.png',
     format: 'webp',
 };
-const image3 = {
+const Tile_fixture_image3 = {
     src: 'column-1.png',
     format: 'webp',
 };
@@ -33241,7 +33543,7 @@ const image4 = {
                     target: '_blank',
                     version: 'secondary',
                 },
-            ], image: image2 }) })),
+            ], image: Tile_fixture_image2 }) })),
     premium: (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-6", title: "\u041F\u0440\u0435\u043C\u0438\u0430\u043B\u044C\u043D\u044B\u0435 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B", description: 'Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус', buttons: [
                 {
                     href: 'https://rshb.ru',
@@ -33249,7 +33551,7 @@ const image4 = {
                     target: '_blank',
                     version: 'secondary',
                 },
-            ], image: image3 }) })),
+            ], image: Tile_fixture_image3 }) })),
     ecosystem: (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-12 pr-28", title: "\u042D\u043A\u043E\u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u00AB\u0421\u0412\u041E\u0415\u00BB, \u0441\u043E\u0437\u0434\u0430\u043D\u043D\u0430\u044F \u0434\u043B\u044F \u043B\u044E\u0434\u0435\u0439", items: [
                 'Качественные фермерские продукты напрямую от производителей',
                 'Самая большая база сельских туров по России',
@@ -33277,7 +33579,9 @@ const image4 = {
 
 
 /* harmony default export */ const Button_fixture = ({
-    all: (jsxs("div", { className: "font-sans overflow-hidden", children: [jsxs("div", { children: [jsx("p", { children: "Private clients" }), jsxs("div", { className: "flex gap-6", "data-theme": "pc", children: [jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Primary", version: "primary" }), jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Secondary", version: "secondary" })] })] }), jsxs("div", { children: [jsx("p", { children: "Business clients" }), jsxs("div", { className: "flex gap-6", "data-theme": "bc", children: [jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Primary", version: "primary" }), jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Secondary", version: "secondary" })] })] }), jsxs("div", { children: [jsx("p", { children: "Ecosystem own" }), jsxs("div", { className: "flex gap-6", "data-theme": "eo", children: [jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Primary", version: "primary" }), jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Secondary", version: "secondary" })] })] }), jsxs("div", { children: [jsx("p", { children: "Disabled" }), jsxs("div", { className: "flex gap-6", children: [jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Primary", version: "primary", disabled: true }), jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Secondary", version: "secondary", disabled: true })] })] }), jsxs("div", { children: [jsx("p", { children: "With Icon" }), jsxs("div", { className: "flex gap-6", "data-theme": "pc", children: [jsx(IconButton, { href: "https://www.rshb.ru/", target: "_blank", aboveText: "\u0414\u043E\u0441\u0442\u0443\u043F\u043D\u043E \u0432", text: "Google Play", version: "secondary", icon: "PlayMarketIcon" }), jsx(IconButton, { href: "https://www.rshb.ru/", target: "_blank", aboveText: "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u0435 \u0432", text: "App Store", version: "secondary", icon: "AppleIcon" })] })] })] })),
+    all: (jsxs("div", { className: "font-sans overflow-hidden", children: [jsxs("div", { children: [jsx("p", { children: "Private clients" }), jsxs("div", { className: "flex gap-6", "data-theme": "pc", children: [jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Primary", version: "primary" }), jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Secondary", version: "secondary" })] })] }), jsxs("div", { children: [jsx("p", { children: "Business clients" }), jsxs("div", { className: "flex gap-6", "data-theme": "bc", children: [jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Primary", version: "primary" }), jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Secondary", version: "secondary" })] })] }), jsxs("div", { children: [jsx("p", { children: "Ecosystem own" }), jsxs("div", { className: "flex gap-6", "data-theme": "eo", children: [jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Primary", version: "primary" }), jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Secondary", version: "secondary" })] })] }), jsxs("div", { children: [jsx("p", { children: "Disabled" }), jsxs("div", { className: "flex gap-6", children: [jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Primary", version: "primary", disabled: true }), jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "Secondary", version: "secondary", disabled: true })] })] }), jsxs("div", { children: [jsx("p", { children: "With Icon" }), jsxs("div", { className: "flex gap-6", "data-theme": "pc", children: [jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", aboveText: "\u0414\u043E\u0441\u0442\u0443\u043F\u043D\u043E \u0432", appendLeft: 
+                                /** Div need for perfect pixel */
+                                jsx("div", { children: jsx(Icon, { name: "PlayMarketIcon", width: "24", height: "24" }) }), text: "Google Play", version: "secondary" }), jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", aboveText: "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u0435 \u0432", appendLeft: jsx("div", { children: jsx(Icon, { name: "AppleIcon", width: "24", height: "24" }) }), text: "App Store", version: "secondary" })] })] }), jsxs("div", { children: [jsx("p", { children: "Rounded with only Icon" }), jsxs("div", { className: "flex gap-6", "data-theme": "pc", children: [jsx(Button, { rounded: true, href: "https://www.rshb.ru/", target: "_blank", version: "secondary", appendLeft: jsx(Icon, { name: "PlayMarketIcon", width: "20", height: "21" }) }), jsx(Button, { rounded: true, href: "https://www.rshb.ru/", target: "_blank", version: "secondary", appendLeft: jsx(Icon, { name: "AppleIcon", width: "18", height: "20" }) })] })] })] })),
     'primary (Private clients)': (jsx("div", { "data-theme": "pc", children: jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "primary" }) })),
     'secondary (Private clients)': (jsx("div", { "data-theme": "pc", children: jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "secondary" }) })),
     'primary (Business clients)': (jsx("div", { "data-theme": "bc", children: jsx(Button, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0421\u0430\u0439\u0442 \u0420\u0421\u0425\u0411", version: "primary" }) })),
@@ -33295,6 +33599,42 @@ const image4 = {
 /* harmony default export */ const HeaderItem_fixture = ({
     default: jsx(HeaderItem, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A" }),
     active: jsx(HeaderItem, { href: "https://www.rshb.ru/", target: "_blank", text: "\u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A", active: true }),
+});
+
+;// CONCATENATED MODULE: ./src/ui-kit/IconProps.ts
+var IconMap;
+(function (IconMap) {
+    IconMap[IconMap["ActualBalanceIcon"] = 0] = "ActualBalanceIcon";
+    IconMap[IconMap["AppleIcon"] = 1] = "AppleIcon";
+    IconMap[IconMap["CalendarIcon"] = 2] = "CalendarIcon";
+    IconMap[IconMap["ClockIcon"] = 3] = "ClockIcon";
+    IconMap[IconMap["ComfortableCompIcon"] = 4] = "ComfortableCompIcon";
+    IconMap[IconMap["DollarIcon"] = 5] = "DollarIcon";
+    IconMap[IconMap["EmptyWalletIcon"] = 6] = "EmptyWalletIcon";
+    IconMap[IconMap["EuroIcon"] = 7] = "EuroIcon";
+    IconMap[IconMap["GridIcon"] = 8] = "GridIcon";
+    IconMap[IconMap["LoupeIcon"] = 9] = "LoupeIcon";
+    IconMap[IconMap["NewDocIcon"] = 10] = "NewDocIcon";
+    IconMap[IconMap["OkIcon"] = 11] = "OkIcon";
+    IconMap[IconMap["PassSendIcon"] = 12] = "PassSendIcon";
+    IconMap[IconMap["PercentageSquareIcon"] = 13] = "PercentageSquareIcon";
+    IconMap[IconMap["PlayMarketIcon"] = 14] = "PlayMarketIcon";
+    IconMap[IconMap["ProfileIcon"] = 15] = "ProfileIcon";
+    IconMap[IconMap["SignDocsIcon"] = 16] = "SignDocsIcon";
+    IconMap[IconMap["TelegramIcon"] = 17] = "TelegramIcon";
+    IconMap[IconMap["VKIcon"] = 18] = "VKIcon";
+    IconMap[IconMap["GlassIcon"] = 19] = "GlassIcon";
+})(IconMap || (IconMap = {}));
+
+;// CONCATENATED MODULE: ./src/ui-kit/Icon.fixture.tsx
+
+
+
+
+/* harmony default export */ const Icon_fixture = ({
+    all: (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-6 gap-8", children: Object.keys(IconMap)
+                .filter((v) => isNaN(Number(v)))
+                .map((icon, i) => (jsxs("div", { className: "flex flex-col items-center gap-3", children: [jsx("div", { children: icon }), jsx(Icon, { name: icon, width: "64" })] }, String(i)))) }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/LikeButton.fixture.tsx
@@ -33368,12 +33708,15 @@ const image4 = {
 
 
 
+
+
 const rendererConfig = {
   "containerQuerySelector": null
 };
 
 const fixtures = {
   'src/BenefitsBlock.fixture.tsx': { module: { default: BenefitsBlock_fixture } },
+  'src/ComparisonTable/ComparisonTable.fixture.tsx': { module: { default: ComparisonTable_fixture } },
   'src/ContentPage.fixture.tsx': { module: { default: ContentPage_fixture } },
   'src/ExchangeRateTile.fixture.tsx': { module: { default: ExchangeRateTile_fixture } },
   'src/Footer/Footer.fixture.tsx': { module: { default: Footer_fixture } },
@@ -33393,6 +33736,7 @@ const fixtures = {
   'src/ui-kit/BlockItem.fixture.tsx': { module: { default: BlockItem_fixture } },
   'src/ui-kit/Button.fixture.tsx': { module: { default: Button_fixture } },
   'src/ui-kit/HeaderItem.fixture.tsx': { module: { default: HeaderItem_fixture } },
+  'src/ui-kit/Icon.fixture.tsx': { module: { default: Icon_fixture } },
   'src/ui-kit/LikeButton.fixture.tsx': { module: { default: LikeButton_fixture } },
   'src/ui-kit/Logo.fixture.tsx': { module: { default: Logo_fixture } },
   'src/ui-kit/TopItem.fixture.tsx': { module: { default: TopItem_fixture } }
@@ -39220,7 +39564,7 @@ module.exports = __webpack_require__.p + "92c10e8d48ecdcd8ee10.woff2";
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"title":"Кредиты","slug":"credits","description":"Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.","keywords":["кредит","акция"],"robots":["index","follow"],"og":{"type":"article","url":"https://foo.com/bar/baz"},"date":"2022-04-08","style":["p-20","pt-0","gap-5","bg-secondary-light"],"likeControl":true,"blocks":[{"type":"Header","style":["col-span-12","-mx-20","mb-5","shadow-[0_8px_32px_0px_#00000014]"],"content":{"defaultLocation":"Москва","topItems":[{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank"},{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank"}]}},{"type":"ProductGallery","style":["col-span-12"],"content":{"slides":[{"nav":{"title":"Деньги на любые цели","desc":"Ставка от 12,5% годовых на срок до 5 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 5 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","alt":"Кредит наличными","size":{"width":280,"height":280}}}},{"nav":{"title":"Для людей в возрасте","desc":"Ставка от 12,5% годовых на срок до 3 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 3 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"worker.png","title":"Рабочий","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Выгодно покупать","desc":"Дополнительные бонусные баллы за покупки"},"productBlock":{"title":"Дополнительные бонусные баллы за покупки!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Карты Unionpay","desc":"Кэшбэк до 20% у партнеров"},"productBlock":{"title":"Карты Unionpay»","description":"Кэшбэк до 20% у партнеров","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}}]}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Кредиты","items":["Кредитный лимит до 10 млн ₽","Кредиты наличными на любые цели","Получите деньги без залога и поручителей"],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","version":"secondary","style":["col-span-4"],"content":{"title":"Ипотека","titleSize":"M","description":"Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"promo":true},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Банковские пластиковые карты","items":["Счета в разных валютах","Бесплатное обслуживание","Кэшбэк до 15% от покупок"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Премиальные продукты","description":"Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"column-1.png","alt":"Column","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Экосистема «СВОЕ», созданная для людей","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом","Подробная база вакансий для жителей сельской местности"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"globe-1.png","title":"Глобус","format":"webp","size":{"width":200,"height":200}}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Драгоценные металлы","items":["Счета в драгоценных металлах","Слитки  и монеты из драгоценных металлов"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Банковские ячейки","items":["Полная конфиденциальность","Разный размер ячеек","Оформление доверенностей"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Вклады и сбережения","items":["Доходность по вкладам  до 15% годовых","Минимальная сумма вклада  от 3000 Р","Минимальный срок вклада от 1 месяца"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"PromoTile","style":["col-span-4"],"content":{"title":"Акции и спецпредложения","version":"secondary","date":"2022-04-16","description":"Пенсионный кредит по специальной процентной ставке","buttons":[{"text":"Все акции","href":"/credits","version":"secondary"}]},"mobile":{"hidden":true}},{"type":"ExchangeRateTile","style":["col-span-4"],"mobile":{"style":["col-span-12"]}},{"type":"MobileAppTile","style":["col-span-4"],"content":{"qr":{"href":"https://rshbnaturaldbo.onelink.me/qhkF/f182074f?af_qr=true","src":"data:image/png;base64,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"},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"#","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarketIcon","href":"#","version":"secondary"}]},"mobile":{"style":["col-span-12"]},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"/credits","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarket","href":"/credits","version":"secondary"}]},{"type":"Unknown","style":["col-span-12"],"content":{"title":"Какой то новый блок"}},{"type":"ProductBlock","style":["col-span-12"],"content":{"title":"Потребительский кредит наличными","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","breadcrumbs":[{"text":"Главная","href":"/"},{"text":"Кредитные карты","href":"/credit"},{"text":"Кредитная карта Своя Union Pay"}],"benefits":[{"label":"До 5 млн ₽","description":"Кредитный лимит","icon":"EmptyWalletIcon"},{"label":"От 16,9%","description":"Ставка по кредиту","icon":"PercentageSquareIcon"},{"label":"До 5 лет","description":"Срок кредитования","icon":"CalendarIcon"}],"buttons":[{"href":"https://rshb.ru","text":"Оформить карту","target":"_blank","version":"primary"},{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"secondary"}],"image":{"src":"money-1.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":280,"height":280}}}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Кредит На все, что хочется!”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 5 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 5 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"card-with-diamond.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Пенсионный кредит”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 3 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"letter-with-money.png","alt":"Пенсионный кредит в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-8"],"content":{"title":"Кредит под залог недвижимости","description":"Без переоформления залогой недвижимости на банк","benefits":[{"label":"Кредитный лимит","description":"до 10 млн Р"},{"label":"Процентная ставка","description":"от 21,5%"},{"label":"Срок кредитования","description":"до 10 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"building.png","alt":"Кредит под залог недвижимости в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-4"],"version":"secondary","content":{"title":"Кредит пенсионный","titleSize":"M","description":"Для людей в возрасте до 75 лет","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 16,8%"},{"label":"Срок кредитования","description":"до 150 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Рефинансирование кредитов","items":["Без справок и документов из других банков","Погашение ранее взятых кредитов в любых банках","Рефинансировать можно  кредит физического лица, кредитную карту, микрозайм или ипотеку"],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":200,"height":200}}}},{"type":"StepsBlock","style":["col-span-12"],"content":{"title":"Рассчитайте условия на онлайн-калькуляторе и оставьте заявку на потребительский кредит","steps":[{"label":"Заявка на кредит","description":"Оставьте онлайн-заявку на потребительский кредит"},{"label":"В случае одобрения","description":"Менеджер свяжется с вами и согласует встречу"},{"label":"Получение наличных","description":"Получите наличные в отделении банка"}]}},{"type":"TextBlock","style":["col-span-12"],"content":{"title":"Все карты Россельхозбанка работают","description":"Если не планируете поездку за границу, продолжайте пользоваться картой Своя. Для поездок за границу можно заказать карту \'Кредитная карта Своя Union Pay\' на сайте и в приложении Россельхозбанка","blockVersion":"primary","iconVersion":"small"}},{"type":"Gallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"money-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"globe-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]}]}},{"type":"MiniGallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"}]}},{"type":"Footer","style":["col-span-12"],"content":{"topItems":[{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"Кредитные карты"},{"href":"https://rshb.ru/","text":"Дебетовые карты"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Ипотека"},{"href":"https://rshb.ru/","text":"Вклады и сбережения"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Премиальным клиентам"},{"href":"https://rshb.ru/","text":"Биометрическая регистрация"},{"href":"https://rshb.ru/","text":"Перевод денег"},{"href":"https://rshb.ru/","text":"Обмен денег"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]},{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"РКО"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Депозиты"},{"href":"https://rshb.ru/","text":"Эквайринг"},{"href":"https://rshb.ru/","text":"Банковские карты"},{"href":"https://rshb.ru/","text":"ВЭД"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Обмен валюты"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Партнёрские программы"},{"href":"https://rshb.ru/","text":"Онлайн-сервисы"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]}],"contacts":[{"text":"+7 (495) 787-7-787","description":"Для звонков из-за границы","type":"tel"},{"text":"example@example.com","description":"Для писем","type":"email"},{"text":"7787","description":"Абонентам МТС, Мегафон, Билайн и Tele2","type":"tel"}],"documents":[{"text":"Информация о процентных ставках по договорам банковского вклада с физическими лицами","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации профессиональным участником рынка ценных бумаг","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации","href":"https://rshb.ru/","target":"_blank"},{"text":"Удостоверяющий центр","href":"https://rshb.ru/","target":"_blank"},{"text":"Финансовая культура","href":"https://rshb.ru/","target":"_blank"}],"socialMedia":[{"href":"https://vk.com"},{"href":"https://ok.ru"},{"href":"https://t.me"}]}}]}');
+module.exports = JSON.parse('{"title":"Кредиты","slug":"credits","description":"Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.","keywords":["кредит","акция"],"robots":["index","follow"],"og":{"type":"article","url":"https://foo.com/bar/baz"},"date":"2022-04-08","style":["p-20","pt-0","gap-5","bg-secondary-light"],"likeControl":true,"blocks":[{"type":"Header","style":["col-span-12","-mx-20","mb-5","shadow-[0_8px_32px_0px_#00000014]"],"content":{"defaultLocation":"Москва","topItems":[{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank"},{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank"}]}},{"type":"ProductGallery","style":["col-span-12"],"content":{"slides":[{"nav":{"title":"Деньги на любые цели","desc":"Ставка от 12,5% годовых на срок до 5 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 5 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","alt":"Кредит наличными","size":{"width":280,"height":280}}}},{"nav":{"title":"Для людей в возрасте","desc":"Ставка от 12,5% годовых на срок до 3 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 3 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"worker.png","title":"Рабочий","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Выгодно покупать","desc":"Дополнительные бонусные баллы за покупки"},"productBlock":{"title":"Дополнительные бонусные баллы за покупки!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Карты Unionpay","desc":"Кэшбэк до 20% у партнеров"},"productBlock":{"title":"Карты Unionpay»","description":"Кэшбэк до 20% у партнеров","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}}]}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Кредиты","items":["Кредитный лимит до 10 млн ₽","Кредиты наличными на любые цели","Получите деньги без залога и поручителей"],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","version":"secondary","style":["col-span-4"],"content":{"title":"Ипотека","titleSize":"M","description":"Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"promo":true},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Банковские пластиковые карты","items":["Счета в разных валютах","Бесплатное обслуживание","Кэшбэк до 15% от покупок"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Премиальные продукты","description":"Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"column-1.png","alt":"Column","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Экосистема «СВОЕ», созданная для людей","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом","Подробная база вакансий для жителей сельской местности"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"globe-1.png","title":"Глобус","format":"webp","size":{"width":200,"height":200}}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Драгоценные металлы","items":["Счета в драгоценных металлах","Слитки  и монеты из драгоценных металлов"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Банковские ячейки","items":["Полная конфиденциальность","Разный размер ячеек","Оформление доверенностей"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Вклады и сбережения","items":["Доходность по вкладам  до 15% годовых","Минимальная сумма вклада  от 3000 Р","Минимальный срок вклада от 1 месяца"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"PromoTile","style":["col-span-4"],"content":{"title":"Акции и спецпредложения","version":"secondary","date":"2022-04-16","description":"Пенсионный кредит по специальной процентной ставке","buttons":[{"text":"Все акции","href":"/credits","version":"secondary"}]},"mobile":{"hidden":true}},{"type":"ExchangeRateTile","style":["col-span-4"],"mobile":{"style":["col-span-12"]}},{"type":"MobileAppTile","style":["col-span-4"],"content":{"qr":{"href":"https://rshbnaturaldbo.onelink.me/qhkF/f182074f?af_qr=true","src":"data:image/png;base64,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"},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"#","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarketIcon","href":"#","version":"secondary"}]},"mobile":{"style":["col-span-12"]},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"/credits","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarket","href":"/credits","version":"secondary"}]},{"type":"Unknown","style":["col-span-12"],"content":{"title":"Какой то новый блок"}},{"type":"ProductBlock","style":["col-span-12"],"content":{"title":"Потребительский кредит наличными","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","breadcrumbs":[{"text":"Главная","href":"/"},{"text":"Кредитные карты","href":"/credit"},{"text":"Кредитная карта Своя Union Pay"}],"benefits":[{"label":"До 5 млн ₽","description":"Кредитный лимит","icon":"EmptyWalletIcon"},{"label":"От 16,9%","description":"Ставка по кредиту","icon":"PercentageSquareIcon"},{"label":"До 5 лет","description":"Срок кредитования","icon":"CalendarIcon"}],"buttons":[{"href":"https://rshb.ru","text":"Оформить карту","target":"_blank","version":"primary"},{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"secondary"}],"image":{"src":"money-1.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":280,"height":280}}}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Кредит На все, что хочется!”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 5 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 5 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"card-with-diamond.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Пенсионный кредит”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 3 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"letter-with-money.png","alt":"Пенсионный кредит в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-8"],"content":{"title":"Кредит под залог недвижимости","description":"Без переоформления залогой недвижимости на банк","benefits":[{"label":"Кредитный лимит","description":"до 10 млн Р"},{"label":"Процентная ставка","description":"от 21,5%"},{"label":"Срок кредитования","description":"до 10 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"building.png","alt":"Кредит под залог недвижимости в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-4"],"version":"secondary","content":{"title":"Кредит пенсионный","titleSize":"M","description":"Для людей в возрасте до 75 лет","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 16,8%"},{"label":"Срок кредитования","description":"до 150 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Рефинансирование кредитов","items":["Без справок и документов из других банков","Погашение ранее взятых кредитов в любых банках","Рефинансировать можно  кредит физического лица, кредитную карту, микрозайм или ипотеку"],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":200,"height":200}}}},{"type":"StepsBlock","style":["col-span-12"],"content":{"title":"Рассчитайте условия на онлайн-калькуляторе и оставьте заявку на потребительский кредит","steps":[{"label":"Заявка на кредит","description":"Оставьте онлайн-заявку на потребительский кредит"},{"label":"В случае одобрения","description":"Менеджер свяжется с вами и согласует встречу"},{"label":"Получение наличных","description":"Получите наличные в отделении банка"}]}},{"type":"TextBlock","style":["col-span-12"],"content":{"title":"Все карты Россельхозбанка работают","description":"Если не планируете поездку за границу, продолжайте пользоваться картой Своя. Для поездок за границу можно заказать карту \'Кредитная карта Своя Union Pay\' на сайте и в приложении Россельхозбанка","blockVersion":"primary","iconVersion":"small"}},{"type":"Gallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"money-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"globe-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]}]}},{"type":"MiniGallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"}]}},{"type":"ComparisonTable","style":["col-span-12"],"content":{"title":"Другие вклады и сбережения","rowHeaders":[{"title":"Начисление процентов на остаток по счету"},{"title":"Снятие наличных"},{"title":"Оформление онлайн"},{"title":"Кэшбэк баллами"},{"title":"Стоимость обслуживания"},{"title":"Стоимость SMS-сервиса"},{"title":"Дополнительная информация"}],"columns":[{"header":{"title":"Россельхоз-Росснефть","image":{"alt":"card-1","src":"card-1.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"Бесплатно","description":"В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 7%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть"}]]},{"header":{"title":"Panasonic","image":{"alt":"card-2","src":"card-2.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"1%","description":"В сторонних банкоматах, минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic"}]]},{"header":{"title":"Профсоюзная","image":{"alt":"card-3","src":"card-3.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно"}],[{"label":"Есть"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Для членов профсоюзных организаций"}]]},{"header":{"title":"Россельхоз-Росснефть","image":{"alt":"card-1","src":"card-1.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"Бесплатно","description":"В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 7%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть"}]]},{"header":{"title":"Panasonic","image":{"alt":"card-2","src":"card-2.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"1%","description":"В сторонних банкоматах, минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic"}]]},{"header":{"title":"Профсоюзная","image":{"alt":"card-3","src":"card-3.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно"}],[{"label":"Есть"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Для членов профсоюзных организаций"}]]}]}},{"type":"Footer","style":["col-span-12"],"content":{"topItems":[{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"Кредитные карты"},{"href":"https://rshb.ru/","text":"Дебетовые карты"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Ипотека"},{"href":"https://rshb.ru/","text":"Вклады и сбережения"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Премиальным клиентам"},{"href":"https://rshb.ru/","text":"Биометрическая регистрация"},{"href":"https://rshb.ru/","text":"Перевод денег"},{"href":"https://rshb.ru/","text":"Обмен денег"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]},{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"РКО"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Депозиты"},{"href":"https://rshb.ru/","text":"Эквайринг"},{"href":"https://rshb.ru/","text":"Банковские карты"},{"href":"https://rshb.ru/","text":"ВЭД"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Обмен валюты"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Партнёрские программы"},{"href":"https://rshb.ru/","text":"Онлайн-сервисы"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]}],"contacts":[{"text":"+7 (495) 787-7-787","description":"Для звонков из-за границы","type":"tel"},{"text":"example@example.com","description":"Для писем","type":"email"},{"text":"7787","description":"Абонентам МТС, Мегафон, Билайн и Tele2","type":"tel"}],"documents":[{"text":"Информация о процентных ставках по договорам банковского вклада с физическими лицами","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации профессиональным участником рынка ценных бумаг","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации","href":"https://rshb.ru/","target":"_blank"},{"text":"Удостоверяющий центр","href":"https://rshb.ru/","target":"_blank"},{"text":"Финансовая культура","href":"https://rshb.ru/","target":"_blank"}],"socialMedia":[{"href":"https://vk.com"},{"href":"https://ok.ru"},{"href":"https://t.me"}]}}]}');
 
 /***/ })
 
@@ -39397,7 +39741,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(5413),
+  var _require = __webpack_require__(5324),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

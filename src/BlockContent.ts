@@ -12,6 +12,7 @@ import type { PromoTileContent } from './PromoTileContent';
 import type { StepsBlockContent } from './StepsBlockContent';
 import type { TextBlockContent } from './TextBlockContent';
 import type { TileContent } from './TileContent';
+import type { ComparisonTableContent } from './ComparisonTable';
 
 export type BlockContent =
   | HeaderContent
@@ -27,4 +28,5 @@ export type BlockContent =
   | ProductGalleryContent
   | ExchangeRateTileContent
   | MobileAppTileContent
-  | GalleryContent;
+  | GalleryContent
+  | ComparisonTableContent;

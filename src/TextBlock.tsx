@@ -1,8 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Img } from './Img';
 import type { Picture } from './model/Picture';
 import type { TextBlockContent, TextBlockVersion } from './TextBlockContent';
 import type { UniBlockProps } from './types';
+import { Img } from './ui-kit/Img';
 
 export interface TextBlockProps extends TextBlockContent, UniBlockProps {}
 
@@ -13,7 +13,7 @@ const textBlockStyleMaps: Record<
   primary: {
     background: 'bg-white',
     icon: 'bg-primary-main text-white',
-    title: 'text-base',
+    title: 'text-primary-text',
     description: 'text-secondary-text',
   },
   secondary: {
@@ -25,7 +25,7 @@ const textBlockStyleMaps: Record<
   'secondary-light': {
     background: 'bg-primary-main/10',
     icon: 'bg-primary-main text-white',
-    title: 'text-base',
+    title: 'text-primary-text',
     description: 'text-secondary-text',
   },
 };
@@ -40,7 +40,9 @@ export const TextBlock = JSX<TextBlockProps>(
         {iconVersion && iconVersion === 'small' ? renderIcon(textBlockStyleMap.icon) : null}
         {iconVersion && iconVersion === 'big' ? renderImage(image) : null}
         <div className="py-0.5">
-          {title && <div className={`font-medium mb-1 ${textBlockStyleMap.title}`}>{title}</div>}
+          {title && (
+            <div className={`font-medium text-base mb-1 ${textBlockStyleMap.title}`}>{title}</div>
+          )}
           {description && (
             <div className={`text-sm ${textBlockStyleMap.description}`}>{description}</div>
           )}

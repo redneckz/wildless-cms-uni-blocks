@@ -1,11 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { GalleryCard, GalleryContent } from './GalleryContent';
-import { Img } from './Img';
 import type { GalleryVersion } from './model/GalleryVersion';
 import type { UniBlockProps } from './types';
 import { ArrowButton } from './ui-kit/ArrowButton';
 import { BlockItem } from './ui-kit/BlockItem';
 import { Button } from './ui-kit/Button';
+import { Img } from './ui-kit/Img';
 import { Title } from './ui-kit/Title';
 
 export interface GalleryInnerProps extends GalleryContent, UniBlockProps {
@@ -70,24 +70,19 @@ export const GalleryInner = JSX<GalleryInnerProps>(
         </div>
         {showPrevButton && (
           <ArrowButton
-            className="absolute top-1/2 left-8"
+            className="absolute top-1/2 left-8 rotate-180"
             onClick={handlePrevClick}
             ariaLabel="Пролистать влево"
           />
         )}
         {showNextButton && (
           <ArrowButton
-            className="absolute top-1/2 right-1 z-20 rotate-180"
+            className="absolute top-1/2 right-1 z-10"
             onClick={handleNextClick}
             ariaLabel="Пролистать вправо"
           />
         )}
-        <div
-          className="absolute top-0 right-0 bottom-0 w-[84px]"
-          style={{
-            background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
-          }}
-        ></div>
+        <div className="absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white"></div>
       </section>
     );
   },
