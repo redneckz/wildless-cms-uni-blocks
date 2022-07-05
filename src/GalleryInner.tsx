@@ -52,7 +52,7 @@ export const GalleryInner = JSX<GalleryInnerProps>(
         className={`relative font-sans text-primary-text bg-white p-12 overflow-hidden ${className}`}
       >
         <div className="flex flex-col items-center mb-8">
-          <Title className="font-medium m-0 text-centers">{title}</Title>
+          {title ? <Title className="font-medium m-0 text-center">{title}</Title> : null}
           {description ? (
             <div className="font-normal text-base max-w-[600px] mt-3">{description}</div>
           ) : null}
@@ -93,12 +93,12 @@ export const GalleryInner = JSX<GalleryInnerProps>(
   },
 );
 
-function renderCard(card: GalleryCard, key: number, version: GalleryVersion) {
+function renderCard(card: GalleryCard, i: number, version: GalleryVersion) {
   return (
     <div
       className={`box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch ${cardStyleMap[version]} w-full`}
       role="listitem"
-      key={key}
+      key={String(i)}
     >
       <div>
         {card.image?.src ? (
@@ -118,7 +118,11 @@ function renderCard(card: GalleryCard, key: number, version: GalleryVersion) {
         {card.description ? (
           <div className="font-normal text-sm text-secondary-text mt-2">{card.description}</div>
         ) : null}
-        {card.items?.length ? renderItems(card.items) : null}
+        {card.items?.length ? (
+          <section className="max-w-[308px] mt-2" role="list">
+            {card.items.map(renderItem)}
+          </section>
+        ) : null}
       </div>
       {card.href ? (
         <Button className="mt-6" text="Подробнее" version="secondary" href={card.href} />
@@ -127,14 +131,10 @@ function renderCard(card: GalleryCard, key: number, version: GalleryVersion) {
   );
 }
 
-function renderItems(items: string[] = []) {
+function renderItem(item: string, i: number) {
   return (
-    <section className="max-w-[308px] mt-2" role="list">
-      {items.map((item, i) => (
-        <BlockItem key={String(i)}>
-          <span className="text-sm text-secondary-text">{item}</span>
-        </BlockItem>
-      ))}
-    </section>
+    <BlockItem key={String(i)}>
+      <span className="text-sm text-secondary-text">{item}</span>
+    </BlockItem>
   );
 }

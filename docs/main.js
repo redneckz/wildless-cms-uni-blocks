@@ -31769,7 +31769,7 @@ const GalleryInner = JSX(({ title, description, context, cards = [], className, 
     const showNextButton = isGalleryScrollAvailable &&
         cards?.length - activeCardIndex > galleryLengthForScrollMap[version];
     const showPrevButton = isGalleryScrollAvailable && activeCardIndex > 0;
-    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-12 overflow-hidden ${className}`, children: [jsxs("div", { className: "flex flex-col items-center mb-8", children: [jsx(Title, { className: "font-medium m-0 text-centers", children: title }), description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { 
+    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-12 overflow-hidden ${className}`, children: [jsxs("div", { className: "flex flex-col items-center mb-8", children: [title ? jsx(Title, { className: "font-medium m-0 text-center", children: title }) : null, description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { 
                 // Need to place all cards at the center if count of cards less than 4
                 className: `flex ${cards?.length <= galleryLengthForScrollMap[version] ? 'justify-center' : ''} duration-1000`, 
                 // All cards has same width
@@ -31777,11 +31777,11 @@ const GalleryInner = JSX(({ title, description, context, cards = [], className, 
                     background: 'linear-gradient(270deg, #FFFFFF 34.89%, rgba(255, 255, 255, 0) 92.52%)',
                 } })] }));
 });
-function renderCard(card, key, version) {
-    return (jsxs("div", { className: `box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch ${cardStyleMap[version]} w-full`, role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? GalleryInner_renderItems(card.items) : null] }), card.href ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.href })) : null] }, key));
+function renderCard(card, i, version) {
+    return (jsxs("div", { className: `box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch ${cardStyleMap[version]} w-full`, role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? (jsx("section", { className: "max-w-[308px] mt-2", role: "list", children: card.items.map(renderItem) })) : null] }), card.href ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.href })) : null] }, String(i)));
 }
-function GalleryInner_renderItems(items = []) {
-    return (jsx("section", { className: "max-w-[308px] mt-2", role: "list", children: items.map((item, i) => (jsx(BlockItem, { children: jsx("span", { className: "text-sm text-secondary-text", children: item }) }, String(i)))) }));
+function renderItem(item, i) {
+    return (jsx(BlockItem, { children: jsx("span", { className: "text-sm text-secondary-text", children: item }) }, String(i)));
 }
 
 ;// CONCATENATED MODULE: ./src/Gallery.tsx
