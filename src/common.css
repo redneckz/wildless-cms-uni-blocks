@@ -86,8 +86,8 @@
 
   /* TODO: Check should use this */
   input[type='range'].slider::-moz-range-thumb {
-    height: 18px;
-    width: 18px;
+    height: 12px;
+    width: 12px;
     border-radius: 50%;
     background: #fff;
     cursor: pointer;
