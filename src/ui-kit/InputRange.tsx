@@ -2,17 +2,10 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { InputRangeProps } from './InputRangeProps';
 
 export const InputRange = JSX<InputRangeProps>(
-  ({
-    className,
-    title,
-    items = [],
-    min = 1,
-    max = 100,
-    step = 1,
-    value = min,
-    onChange = () => null,
-  }) => {
+  ({ className, title, items = [], min = 1, max = 100, step = 1, value = min, onChange }) => {
     const handleChange = (value: number) => {
+      if (!onChange) return;
+
       if (value > max) {
         onChange(max);
         return;

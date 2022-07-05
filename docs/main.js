@@ -32243,8 +32243,10 @@ const Checkbox = JSX(({ text, checked, onChange, className }) => (jsx("div", { c
 ;// CONCATENATED MODULE: ./src/ui-kit/InputRange.tsx
 
 
-const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step = 1, value = min, onChange = () => null, }) => {
+const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step = 1, value = min, onChange }) => {
     const handleChange = (value) => {
+        if (!onChange)
+            return;
         if (value > max) {
             onChange(max);
             return;
