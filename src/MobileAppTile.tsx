@@ -1,17 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
+import type { MobileAppTileContent } from './MobileAppTileContent';
 import { Tile } from './Tile';
-import type { BaseTileContent } from './BaseTile';
 import type { UniBlockProps } from './types';
-
-export interface QRCode {
-  src?: string;
-  href?: string;
-}
-
-export interface MobileAppTileContent extends BaseTileContent {
-  title?: string;
-  qr?: QRCode;
-}
 
 export interface MobileAppTileProps extends MobileAppTileContent, UniBlockProps {}
 

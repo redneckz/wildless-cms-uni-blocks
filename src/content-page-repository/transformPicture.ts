@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 import util from 'util';
-import type { ImgSource, Picture } from '../types';
+import type { ImgSource, Picture } from '../model/Picture';
 import type { TransformationOptions } from './TransformationOptions';
 
 const mkdir = util.promisify(fs.mkdir);

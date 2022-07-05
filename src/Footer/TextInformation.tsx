@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent } from '../types';
+import type { LinkContent } from '../model/LinkContent';
 import { useLink } from '../useLink';
 import { FooterLink } from './FooterLink';
 
