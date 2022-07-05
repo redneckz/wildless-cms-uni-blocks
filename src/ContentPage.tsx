@@ -32,14 +32,33 @@ export const ContentPage = JSX<ContentPageProps>(
     className,
     context,
     blocksRegistry,
-    data: { style: pageStyle, blocks, likeControl, colorPalette = 'pc' },
+    data: { style: pageStyle, sections, likeControl, colorPalette = 'pc' },
     blockDecorator = defaultBlockDecorator,
   }) => {
+    const headerSection = sections?.find(({ type }) => type === 'header');
+    const mainSection = sections?.find(({ type }) => type === 'main');
+
     return (
-      <section className="relative" data-theme={colorPalette}>
-        <div className={`grid grid-cols-12 gap-1 ${style2className(pageStyle)} ${className || ''}`}>
-          {blocks?.length ? blocks.map(renderBlock) : null}
-        </div>
+      <section
+        className={`relative ${style2className(pageStyle)} ${className || ''}`}
+        data-theme={colorPalette}
+      >
+        {headerSection?.blocks?.length ? (
+          <div className={`grid grid-cols-12 gap-1 ${headerSection?.className || ''}`}>
+            {headerSection.blocks?.length ? headerSection.blocks.map(renderBlock) : null}
+          </div>
+        ) : null}
+
+        {mainSection?.blocks?.length ? (
+          <div
+            className={`container items-center grid grid-cols-12 gap-1 ${
+              mainSection?.className || ''
+            }`}
+          >
+            {mainSection.blocks?.length ? mainSection.blocks.map(renderBlock) : null}
+          </div>
+        ) : null}
+
         {likeControl && (
           <div className="flex items-end absolute bottom-0 right-0 h-full pointer-events-none">
             <LikeControl

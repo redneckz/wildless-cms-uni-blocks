@@ -22,6 +22,9 @@ module.exports = {
       '2xl': { min: '1536px' },
       // => @media (min-width: 1536px) { ... }
     },
+    container: {
+      center: true,
+    },
     extend: {
       backgroundImage: {
         'opacity-to-white':

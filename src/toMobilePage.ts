@@ -1,10 +1,14 @@
 import type { BlockDef, ContentPageDef } from './types';
 
 export function toMobilePage(contentPage: ContentPageDef): ContentPageDef {
-  const blocks = contentPage.blocks?.filter(({ mobile }) => !mobile?.hidden).map(toMobileBlock);
+  const sections = contentPage.sections?.map((section) => ({
+    ...section,
+    blocks: section.blocks?.filter(({ mobile }) => !mobile?.hidden).map(toMobileBlock),
+  }));
+
   return {
     ...contentPage,
-    blocks,
+    sections,
   };
 }
 

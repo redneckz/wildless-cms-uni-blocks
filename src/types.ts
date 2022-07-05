@@ -4,6 +4,8 @@ import type { BlockVersion } from './model/BlockVersion';
 
 export type ColorPalette = 'pc' | 'bc' | 'eo';
 
+export type SectionType = 'header' | 'main';
+
 export interface BlockDef {
   type: string;
   style?: string[];
@@ -13,6 +15,12 @@ export interface BlockDef {
   mobile?: Pick<BlockDef, 'content' | 'style'> & {
     hidden?: boolean;
   };
+}
+
+export interface Section {
+  type: SectionType;
+  blocks?: BlockDef[];
+  className?: string;
 }
 
 export interface ContentPageMeta {
@@ -26,7 +34,7 @@ export interface ContentPageMeta {
 
 export interface ContentPageDef extends ContentPageMeta {
   style?: string[];
-  blocks?: BlockDef[];
+  sections?: Section[];
   likeControl?: boolean;
   colorPalette?: ColorPalette;
 }
