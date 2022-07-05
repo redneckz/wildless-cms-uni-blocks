@@ -42,13 +42,13 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
             />
             <Checkbox
               text="Получаю пенсию на карту Россельхозбанка"
-              isChecked={isAnnuityChecked}
-              setIsChecked={setIsAnnuityChecked}
+              checked={isAnnuityChecked}
+              onChange={setIsAnnuityChecked}
             />
             <Checkbox
               text="Комплексная страховая защита"
-              isChecked={isInsuranceChecked}
-              setIsChecked={setIsInsuranceChecked}
+              checked={isInsuranceChecked}
+              onChange={setIsInsuranceChecked}
             />
           </div>
           <div className="p-9 bg-primary-main rounded-md text-white">

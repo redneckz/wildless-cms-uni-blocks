@@ -1,19 +1,19 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { CheckboxProps } from './CheckboxProps';
 
-export const Checkbox = JSX<CheckboxProps>(({ text, isChecked, setIsChecked, className }) => (
+export const Checkbox = JSX<CheckboxProps>(({ text, checked, onChange, className }) => (
   <div className={className}>
     <label className="flex items-center cursor-pointer relative">
       <input
         className={`appearance-none w-5 h-5 border-solid border rounded ${
-          isChecked ? 'bg-primary-main border-primary-main' : 'border-black'
+          checked ? 'bg-primary-main border-primary-main' : 'border-black'
         }`}
         type="checkbox"
         onChange={() => {
-          setIsChecked(!isChecked);
+          onChange(!checked);
         }}
       />
-      {isChecked ? (
+      {checked ? (
         <svg
           className="absolute left-2"
           width="11"
