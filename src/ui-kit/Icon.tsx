@@ -1,40 +1,45 @@
-import { JSX } from "@redneckz/uni-jsx";
-import { projectSettings } from "../ProjectSettings";
+import { JSX } from '@redneckz/uni-jsx';
+import { projectSettings } from '../ProjectSettings';
 
 export enum IconMap {
-  "ActualBalanceIcon",
-  "AppleIcon",
-  "CalendarCircleIcon",
-  "CalendarIcon",
-  "CardIcon",
-  "CardPosIcon",
-  "CardTickIcon",
-  "ClockIcon",
-  "ComfortableCompIcon",
-  "DollarIcon",
-  "EmptyWalletChangeIcon",
-  "EmptyWalletIcon",
-  "EuroIcon",
-  "GridIcon",
-  "LoupeIcon",
-  "MoneyIcon",
-  "MonitorMobileIcon",
-  "NewDocIcon",
-  "OkIcon",
-  "PassSendIcon",
-  "PercentageSquareIcon",
-  "PlayMarketIcon",
-  "Profile2UserIcon",
-  "ProfileIcon",
-  "ShieldTickIcon",
-  "SignDocsIcon",
-  "TelegramIcon",
-  "UserIcon",
-  "VKIcon",
-  "WalletIcon",
-  "ArrowLeftIcon",
-  "GlassIcon",
-  "ArrowRight",
+  'ActualBalanceIcon',
+  'AppleIcon',
+  'CalendarCircleIcon',
+  'CalendarIcon',
+  'CardIcon',
+  'CardPosIcon',
+  'CardTickIcon',
+  'ClockIcon',
+  'ComfortableCompIcon',
+  'DollarIcon',
+  'EmptyWalletChangeIcon',
+  'EmptyWalletIcon',
+  'EuroIcon',
+  'GridIcon',
+  'LoupeIcon',
+  'MoneyIcon',
+  'MonitorMobileIcon',
+  'NewDocIcon',
+  'OkIcon',
+  'PassSendIcon',
+  'PercentageSquareIcon',
+  'PlayMarketIcon',
+  'Profile2UserIcon',
+  'ProfileIcon',
+  'ShieldTickIcon',
+  'SignDocsIcon',
+  'TelegramIcon',
+  'UserIcon',
+  'VKIcon',
+  'WalletIcon',
+  'ArrowLeftIcon',
+  'GlassIcon',
+  'ArrowRight',
+  'JCBIcon',
+  'MasterCardIcon',
+  'MirIcon',
+  'UnionPayIcon',
+  'VisaIcon',
 }
 
 export type IconName = keyof typeof IconMap;
@@ -46,17 +51,17 @@ export interface IconProps {
   title?: string;
   width?: string;
   height?: string;
-  "aria-hidden"?: "true";
+  'aria-hidden'?: 'true';
 }
 
 export const Icon = JSX<IconProps>(
   ({ className, name, alt = `Icon ${name}`, title = alt, ...imgProps }) => (
     <img
       className={className}
-      src={`${projectSettings.CDN || ""}icons/${name}.svg`}
+      src={`${projectSettings.CDN || ''}icons/${name}.svg`}
       alt={alt}
       title={title}
       {...imgProps}
     />
-  )
+  ),
 );

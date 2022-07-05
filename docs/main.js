@@ -5126,7 +5126,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@font-face{font-display:swap;font-fami
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_postcss_loader_dist_cjs_js_fonts_ubuntu_ubuntu_css__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.top-7{top:1.75rem}.right-7{right:1.75rem}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.top-4{top:1rem}.right-4{right:1rem}.top-1\\/2{top:50%}.left-8{left:2rem}.right-1{right:.25rem}.left-0{left:0}.-bottom-2{bottom:-.5rem}.top-1{top:.25rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.mr-6{margin-right:1.5rem}.mb-9{margin-bottom:2.25rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mt-3{margin-top:.75rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.ml-4{margin-left:1rem}.mb-3\\.5{margin-bottom:.875rem}.mb-3{margin-bottom:.75rem}.mb-1{margin-bottom:.25rem}.mr-8{margin-right:2rem}.mb-2{margin-bottom:.5rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[70px\\]{height:70px}.h-\\[63px\\]{height:63px}.h-8{height:2rem}.h-\\[90px\\]{height:90px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-9{height:2.25rem}.h-\\[1px\\]{height:1px}.h-12{height:3rem}.h-\\[8px\\]{height:8px}.h-\\[2px\\]{height:2px}.h-\\[24px\\]{height:24px}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[32px\\]{min-height:32px}.min-h-12{min-height:3rem}.min-h-\\[8px\\]{min-height:8px}.w-\\[70px\\]{width:70px}.w-\\[1280px\\]{width:1280px}.w-\\[200px\\]{width:200px}.w-80{width:20rem}.w-\\[84px\\]{width:84px}.w-full{width:100%}.w-\\[63px\\]{width:63px}.w-8{width:2rem}.w-\\[364px\\]{width:364px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-4{width:1rem}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-9{width:2.25rem}.w-\\[24px\\]{width:24px}.w-12{width:3rem}.w-\\[8px\\]{width:8px}.w-\\[36px\\]{width:36px}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[8px\\]{min-width:8px}.min-w-12{min-width:3rem}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[308px\\]{max-width:308px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[170px\\]{max-width:170px}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.resize{resize:both}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.gap-6{gap:1.5rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-8{gap:2rem}.gap-3\\.5{gap:.875rem}.gap-x-24{-moz-column-gap:6rem;column-gap:6rem}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded{border-radius:.25rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-0{border-width:0}.border-x-0{border-left-width:0;border-right-width:0}.border-y-0{border-bottom-width:0;border-top-width:0}.border-y{border-bottom-width:1px;border-top-width:1px}.border-t-0{border-top-width:0}.border-b-0{border-bottom-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.p-9{padding:2.25rem}.p-0{padding:0}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.px-0{padding-left:0;padding-right:0}.py-4{padding-bottom:1rem;padding-top:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.px-3{padding-left:.75rem;padding-right:.75rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.px-20{padding-left:5rem;padding-right:5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-4{padding-left:1rem;padding-right:1rem}.pb-2{padding-bottom:.5rem}.pl-\\[50px\\]{padding-left:50px}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-12{padding-bottom:3rem}.pt-6{padding-top:1.5rem}.pt-0{padding-top:0}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pt-10{padding-top:2.5rem}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pt-1{padding-top:.25rem}.pt-1\\.5{padding-top:.375rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pl-4{padding-left:1rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-title{font-size:2rem;line-height:2.5rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-secondary-light{--tw-text-opacity:1;color:rgba(245,247,249,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-ms-scroll-chaining:none;-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;-ms-scroll-snap-type:x mandatory;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}.first\\:pt-7:first-child{padding-top:1.75rem}.last\\:pb-7:last-child{padding-bottom:1.75rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.hover\\:text-secondary-active:hover{--tw-text-opacity:1;color:rgba(var(--color-secondary-active),var(--tw-text-opacity))}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n}\n",null],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.top-7{top:1.75rem}.right-7{right:1.75rem}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.top-4{top:1rem}.right-4{right:1rem}.top-1\\/2{top:50%}.left-8{left:2rem}.right-1{right:.25rem}.left-0{left:0}.-bottom-2{bottom:-.5rem}.top-1{top:.25rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.mr-6{margin-right:1.5rem}.mb-9{margin-bottom:2.25rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mt-3{margin-top:.75rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.ml-4{margin-left:1rem}.mb-3\\.5{margin-bottom:.875rem}.mb-3{margin-bottom:.75rem}.mb-1{margin-bottom:.25rem}.mr-8{margin-right:2rem}.mb-2{margin-bottom:.5rem}.ml-3{margin-left:.75rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[70px\\]{height:70px}.h-\\[63px\\]{height:63px}.h-8{height:2rem}.h-\\[90px\\]{height:90px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-9{height:2.25rem}.h-\\[1px\\]{height:1px}.h-12{height:3rem}.h-\\[8px\\]{height:8px}.h-\\[2px\\]{height:2px}.h-\\[24px\\]{height:24px}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[32px\\]{min-height:32px}.min-h-12{min-height:3rem}.min-h-\\[8px\\]{min-height:8px}.w-\\[70px\\]{width:70px}.w-\\[1280px\\]{width:1280px}.w-\\[200px\\]{width:200px}.w-80{width:20rem}.w-\\[84px\\]{width:84px}.w-full{width:100%}.w-\\[63px\\]{width:63px}.w-8{width:2rem}.w-\\[364px\\]{width:364px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-\\[354px\\]{width:354px}.w-4{width:1rem}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-9{width:2.25rem}.w-\\[24px\\]{width:24px}.w-12{width:3rem}.w-\\[8px\\]{width:8px}.w-\\[36px\\]{width:36px}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[8px\\]{min-width:8px}.min-w-12{min-width:3rem}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[308px\\]{max-width:308px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[170px\\]{max-width:170px}.flex-1{flex:1 1 0%}.flex-shrink-0,.shrink-0{flex-shrink:0}.flex-grow,.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.resize{resize:both}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.gap-6{gap:1.5rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-8{gap:2rem}.gap-3\\.5{gap:.875rem}.gap-x-24{-moz-column-gap:6rem;column-gap:6rem}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded{border-radius:.25rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-0{border-width:0}.border-x-0{border-left-width:0;border-right-width:0}.border-y-0{border-bottom-width:0;border-top-width:0}.border-y{border-bottom-width:1px;border-top-width:1px}.border-t-0{border-top-width:0}.border-b-0{border-bottom-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.p-9{padding:2.25rem}.p-0{padding:0}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.px-0{padding-left:0;padding-right:0}.py-4{padding-bottom:1rem;padding-top:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.px-3{padding-left:.75rem;padding-right:.75rem}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.px-20{padding-left:5rem;padding-right:5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-4{padding-left:1rem;padding-right:1rem}.pb-2{padding-bottom:.5rem}.pl-\\[50px\\]{padding-left:50px}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-12{padding-bottom:3rem}.pt-6{padding-top:1.5rem}.pt-0{padding-top:0}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pt-10{padding-top:2.5rem}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pt-1{padding-top:.25rem}.pr-\\[14px\\]{padding-right:14px}.pt-1\\.5{padding-top:.375rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pl-4{padding-left:1rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-title{font-size:2rem;line-height:2.5rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-medium{font-weight:500}.font-normal{font-weight:400}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-secondary-light{--tw-text-opacity:1;color:rgba(245,247,249,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-ms-scroll-chaining:none;-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;-ms-scroll-snap-type:x mandatory;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}.first\\:pt-7:first-child{padding-top:1.75rem}.first\\:pt-5:first-child{padding-top:1.25rem}.last\\:pb-7:last-child{padding-bottom:1.75rem}.last\\:pb-5:last-child{padding-bottom:1.25rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.hover\\:text-secondary-active:hover{--tw-text-opacity:1;color:rgba(var(--color-secondary-active),var(--tw-text-opacity))}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n}\n",null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31007,7 +31007,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 3295:
+/***/ 3758:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31260,25 +31260,42 @@ var IconMap;
 (function (IconMap) {
     IconMap[IconMap["ActualBalanceIcon"] = 0] = "ActualBalanceIcon";
     IconMap[IconMap["AppleIcon"] = 1] = "AppleIcon";
-    IconMap[IconMap["CalendarIcon"] = 2] = "CalendarIcon";
-    IconMap[IconMap["ClockIcon"] = 3] = "ClockIcon";
-    IconMap[IconMap["ComfortableCompIcon"] = 4] = "ComfortableCompIcon";
-    IconMap[IconMap["DollarIcon"] = 5] = "DollarIcon";
-    IconMap[IconMap["EmptyWalletIcon"] = 6] = "EmptyWalletIcon";
-    IconMap[IconMap["EuroIcon"] = 7] = "EuroIcon";
-    IconMap[IconMap["GridIcon"] = 8] = "GridIcon";
-    IconMap[IconMap["LoupeIcon"] = 9] = "LoupeIcon";
-    IconMap[IconMap["NewDocIcon"] = 10] = "NewDocIcon";
-    IconMap[IconMap["OkIcon"] = 11] = "OkIcon";
-    IconMap[IconMap["PassSendIcon"] = 12] = "PassSendIcon";
-    IconMap[IconMap["PercentageSquareIcon"] = 13] = "PercentageSquareIcon";
-    IconMap[IconMap["PlayMarketIcon"] = 14] = "PlayMarketIcon";
-    IconMap[IconMap["ProfileIcon"] = 15] = "ProfileIcon";
-    IconMap[IconMap["SignDocsIcon"] = 16] = "SignDocsIcon";
-    IconMap[IconMap["TelegramIcon"] = 17] = "TelegramIcon";
-    IconMap[IconMap["VKIcon"] = 18] = "VKIcon";
-    IconMap[IconMap["GlassIcon"] = 19] = "GlassIcon";
-    IconMap[IconMap["ArrowRight"] = 20] = "ArrowRight";
+    IconMap[IconMap["CalendarCircleIcon"] = 2] = "CalendarCircleIcon";
+    IconMap[IconMap["CalendarIcon"] = 3] = "CalendarIcon";
+    IconMap[IconMap["CardIcon"] = 4] = "CardIcon";
+    IconMap[IconMap["CardPosIcon"] = 5] = "CardPosIcon";
+    IconMap[IconMap["CardTickIcon"] = 6] = "CardTickIcon";
+    IconMap[IconMap["ClockIcon"] = 7] = "ClockIcon";
+    IconMap[IconMap["ComfortableCompIcon"] = 8] = "ComfortableCompIcon";
+    IconMap[IconMap["DollarIcon"] = 9] = "DollarIcon";
+    IconMap[IconMap["EmptyWalletChangeIcon"] = 10] = "EmptyWalletChangeIcon";
+    IconMap[IconMap["EmptyWalletIcon"] = 11] = "EmptyWalletIcon";
+    IconMap[IconMap["EuroIcon"] = 12] = "EuroIcon";
+    IconMap[IconMap["GridIcon"] = 13] = "GridIcon";
+    IconMap[IconMap["LoupeIcon"] = 14] = "LoupeIcon";
+    IconMap[IconMap["MoneyIcon"] = 15] = "MoneyIcon";
+    IconMap[IconMap["MonitorMobileIcon"] = 16] = "MonitorMobileIcon";
+    IconMap[IconMap["NewDocIcon"] = 17] = "NewDocIcon";
+    IconMap[IconMap["OkIcon"] = 18] = "OkIcon";
+    IconMap[IconMap["PassSendIcon"] = 19] = "PassSendIcon";
+    IconMap[IconMap["PercentageSquareIcon"] = 20] = "PercentageSquareIcon";
+    IconMap[IconMap["PlayMarketIcon"] = 21] = "PlayMarketIcon";
+    IconMap[IconMap["Profile2UserIcon"] = 22] = "Profile2UserIcon";
+    IconMap[IconMap["ProfileIcon"] = 23] = "ProfileIcon";
+    IconMap[IconMap["ShieldTickIcon"] = 24] = "ShieldTickIcon";
+    IconMap[IconMap["SignDocsIcon"] = 25] = "SignDocsIcon";
+    IconMap[IconMap["TelegramIcon"] = 26] = "TelegramIcon";
+    IconMap[IconMap["UserIcon"] = 27] = "UserIcon";
+    IconMap[IconMap["VKIcon"] = 28] = "VKIcon";
+    IconMap[IconMap["WalletIcon"] = 29] = "WalletIcon";
+    IconMap[IconMap["ArrowLeftIcon"] = 30] = "ArrowLeftIcon";
+    IconMap[IconMap["GlassIcon"] = 31] = "GlassIcon";
+    IconMap[IconMap["ArrowRight"] = 32] = "ArrowRight";
+    IconMap[IconMap["JCBIcon"] = 33] = "JCBIcon";
+    IconMap[IconMap["MasterCardIcon"] = 34] = "MasterCardIcon";
+    IconMap[IconMap["MirIcon"] = 35] = "MirIcon";
+    IconMap[IconMap["UnionPayIcon"] = 36] = "UnionPayIcon";
+    IconMap[IconMap["VisaIcon"] = 37] = "VisaIcon";
 })(IconMap || (IconMap = {}));
 const Icon = JSX(({ className, name, alt = `Icon ${name}`, title = alt, ...imgProps }) => (jsx("img", { className: className, src: `${projectSettings.CDN || ''}icons/${name}.svg`, alt: alt, title: title, ...imgProps })));
 
@@ -33318,6 +33335,286 @@ const building = {
         },
     ] }));
 
+;// CONCATENATED MODULE: ./src/TariffsTable.tsx
+
+
+
+
+
+
+
+const TariffsTable_GRADIENT = 'bg-gradient-to-r from-main-gradient-start to-main-gradient-end';
+const TariffsTable_BORDER_CLASSES = '';
+const TariffsTable_DIVIDER_CLASSES = 'border-main-divider border border-t-0 border-x-0';
+const TariffsTable_FIRST_CELL_CLASSES = 'w-[354px] flex-shrink-0';
+const TariffsTable_COLS_LENGTH_FOR_SCROLL = 2;
+const TariffsTable_COLUMN_WIDTH = 4 * 80; // w-80 = 320px
+const TariffsTable = JSX(({ className, context, title, rowHeaders, columns, visibleRowLength = 0, coloredFirstColumn = false, }) => {
+    const [activeCardIndex, setActiveCardIndex] = context.useState(0);
+    const [isShowAllRow, setIsShowAllRow] = context.useState(!visibleRowLength);
+    const colData = columns?.map(({ data }) => data) || [];
+    const rowData = rowHeaders
+        ?.map((header, i) => ({
+        header,
+        data: colData.map((col) => col?.[i] || [{}]),
+    }))
+        .slice(0, isShowAllRow ? rowHeaders.length : visibleRowLength);
+    const nextClick = () => setActiveCardIndex(activeCardIndex + 1);
+    const prevClick = () => setActiveCardIndex(activeCardIndex - 1);
+    const showToggle = () => setIsShowAllRow(!isShowAllRow);
+    const isScrollAvailable = colData?.length && colData.length > TariffsTable_COLS_LENGTH_FOR_SCROLL;
+    const showNextButton = isScrollAvailable && colData?.length - activeCardIndex > TariffsTable_COLS_LENGTH_FOR_SCROLL;
+    const showPrevButton = isScrollAvailable && activeCardIndex > 0;
+    return (jsxs("section", { className: `bg-white font-sans py-[50px] pl-[50px] overflow-hidden text-primary-text relative ${className || ''}`, children: [jsx(Title, { className: "font-medium m-0 max-w-[47rem] text-center mb-9 mx-auto", children: title }), rowData?.length ? (jsxs("div", { className: "relative", children: [rowData.map((...mapProps) => TariffsTable_renderRow(mapProps, activeCardIndex, coloredFirstColumn)), isScrollAvailable ? (jsx("div", { children: jsxs("div", { className: "absolute top-7 right-7 z-10", children: [jsx(ArrowButton, { onClick: nextClick, disabled: !showNextButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" }), jsx(ArrowButton, { className: "mt-4 rotate-180", onClick: prevClick, disabled: !showPrevButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })] }) })) : null] })) : null, isScrollAvailable ? (jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })) : null, visibleRowLength ? (jsx("div", { className: "pr-[50px]", children: jsxs("div", { className: "flex w-full", children: [jsx("div", { className: TariffsTable_FIRST_CELL_CLASSES }), jsx(Button, { onClick: showToggle, className: "mt-5 flex-1 border-main-stroke border-solid border text-primary-text bg-white hover:border-primary-main hover:text-primary-main", children: jsx("div", { className: "text-xs py-[11px]", children: !isShowAllRow ? 'Показать все параметры' : 'Скрыть' }) })] }) })) : null] }));
+});
+const TariffsTable_TableRow = JSX(({ children }) => (jsx("div", { className: "self-start flex flex-col", children: jsx("div", { className: "flex", children: children }) })));
+const TariffsTable_TableCarouselContainer = JSX(({ children, activeCardIndex }) => (jsx("div", { className: "flex flex-grow overflow-hidden ", children: jsx("div", { className: "flex flex-grow duration-1000", style: { transform: `translateX(-${activeCardIndex * TariffsTable_COLUMN_WIDTH}px)` }, children: children }) })));
+const TariffsTable_renderRow = ([{ header, data }, i, { length }], activeCardIndex, coloredFirstColumn) => {
+    const isLastRow = i + 1 === length;
+    return (jsxs(TariffsTable_TableRow, { children: [jsx("div", { className: `text-sm py-5 ${TariffsTable_FIRST_CELL_CLASSES} ${TariffsTable_DIVIDER_CLASSES} ${!isLastRow ? 'border-solid' : ''}`, children: jsxs("div", { className: "flex items-center text-primary-text", children: [header?.icon && (jsx(Icon, { className: "pr-[14px]", name: header.icon, width: "24px", height: "24px" })), header?.title] }) }), jsx(TariffsTable_TableCarouselContainer, { activeCardIndex: activeCardIndex, children: data.map((cell, idx) => TariffsTable_renderCell(cell, idx, isLastRow, i === 0, coloredFirstColumn)) })] }, String(i)));
+};
+const TariffsTable_renderCell = (cell, i, isLastRow, isFirstRow, coloredFirstColumn) => {
+    const fillGradient = coloredFirstColumn && i === 0;
+    const cellWrapperClasses = `w-80 flex-grow box-border flex flex-col ${TariffsTable_BORDER_CLASSES} ${!isLastRow ? 'border-y-0' : 'border-t-0 rounded-b-md'} ${fillGradient ? TariffsTable_GRADIENT : ''}`;
+    const cellClasses = `h-full ${TariffsTable_DIVIDER_CLASSES} ${fillGradient && isFirstRow ? 'border-t' : ''} ${!isLastRow ? 'border-solid' : ''}`;
+    return (jsx("div", { className: cellWrapperClasses, children: jsx("div", { className: cellClasses, children: cell.map((item, i) => TariffsTable_renderCellInner(item, i, fillGradient)) }) }, String(i)));
+};
+const TariffsTable_renderCellInner = ({ label, description, icons, image, buttons }, i, fillGradient) => (jsxs("div", { className: "first:pt-5 last:pb-5", children: [i > 0 && (jsx("div", { className: "border-main-divider border border-solid border-t-0 border-x-0 my-4" })), label && (jsx("h5", { className: `text-xl font-medium m-0 ${fillGradient ? 'text-white' : ''}`, children: label })), description && (jsx("div", { className: `text-sm opacity-80 ${fillGradient ? 'text-white' : 'text-secondary-text'}`, children: description })), icons && (jsx("div", { children: icons.map((icon, idx) => (jsx(Icon, { name: icon, width: "56px", height: "56px" }, String(idx)))) })), image && jsx(Img, { image: image }), buttons &&
+            buttons.map((button, idx) => (jsx(Button, { className: `${idx > 0 ? 'ml-3' : ''}`, ...button }, String(idx))))] }, String(i)));
+
+;// CONCATENATED MODULE: ./src/TariffsTable.fixture.tsx
+
+
+
+const TariffsTable_fixture_image1 = {
+    src: 'card-1.png',
+    format: 'webp',
+    size: {
+        width: 100,
+        height: 63,
+    },
+};
+const TariffsTable_fixture_image2 = {
+    src: 'card-2.png',
+    format: 'webp',
+    size: {
+        width: 100,
+        height: 63,
+    },
+};
+const TariffsTable_fixture_image3 = {
+    src: 'card-3.png',
+    format: 'webp',
+    size: {
+        width: 100,
+        height: 63,
+    },
+};
+const TariffsTable_fixture_rowHeaders = [
+    { title: 'Начисление процентов на остаток по счету', icon: 'OkIcon' },
+    { title: 'Снятие наличных', icon: 'GlassIcon' },
+    { title: 'Оформление онлайн', icon: 'ShieldTickIcon' },
+    { title: 'Кэшбэк баллами' },
+    { title: 'Стоимость обслуживания' },
+    { title: 'Стоимость SMS-сервиса' },
+    { title: 'Дополнительная информация' },
+];
+const TariffsTable_fixture_rowHeaders2 = [
+    { title: 'Срок вклада (дней)' },
+    { title: 'Ставка по вкладу' },
+    { title: 'Минимальная сумма' },
+    { title: 'Максимальная сумма' },
+];
+const TariffsTable_fixture_columns = [
+    {
+        header: {
+            title: 'Россельхоз-Росснефть',
+            image: TariffsTable_fixture_image1,
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'Нет' }],
+            [
+                {
+                    label: 'Бесплатно',
+                    description: 'В банкоматах и кассах Россельхозбанка и банков-партнеров',
+                },
+                {
+                    label: 'Бесплатно',
+                    description: 'В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб',
+                },
+            ],
+            [{ label: 'Нет' }],
+            [
+                { label: 'До 7%' },
+                { icons: ['VisaIcon', 'MirIcon', 'UnionPayIcon', 'JCBIcon', 'MasterCardIcon'] },
+            ],
+            [
+                {
+                    label: 'Бесплатно',
+                    description: 'При обороте по карте от 10000 ₽ в месяц',
+                },
+            ],
+            [
+                {
+                    image: {
+                        src: 'money-1.png',
+                        format: 'webp',
+                        size: {
+                            width: 140,
+                            height: 140,
+                        },
+                    },
+                },
+            ],
+            [
+                {
+                    buttons: [
+                        {
+                            icon: 'AppleIcon',
+                            iconProps: {
+                                width: '24px',
+                                height: '24px',
+                            },
+                            rounded: true,
+                            version: 'secondary',
+                        },
+                        {
+                            icon: 'PlayMarketIcon',
+                            iconProps: {
+                                width: '24px',
+                                height: '24px',
+                            },
+                            rounded: true,
+                            version: 'secondary',
+                        },
+                    ],
+                },
+            ],
+        ],
+    },
+    {
+        header: {
+            title: 'Panasonic',
+            image: TariffsTable_fixture_image2,
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'Нет' }],
+            [
+                {
+                    label: 'Бесплатно',
+                    description: 'В банкоматах и кассах Россельхозбанка и банков-партнеров',
+                },
+                {
+                    label: '1%',
+                    description: 'В сторонних банкоматах, минимум 150 руб',
+                },
+            ],
+            [{ label: 'Нет' }],
+            [{ label: 'До 20%' }],
+            [
+                {
+                    label: 'Бесплатно',
+                    description: 'При обороте по карте от 10000 ₽ в месяц',
+                },
+            ],
+            [{ label: '69 рублей в месяц' }],
+            [
+                {
+                    description: 'Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic',
+                },
+            ],
+        ],
+    },
+    {
+        header: {
+            title: 'Профсоюзная',
+            image: TariffsTable_fixture_image3,
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'Нет' }],
+            [{ label: 'Бесплатно' }],
+            [{ label: 'Есть' }],
+            [{ label: 'До 20%' }],
+            [
+                {
+                    label: 'Бесплатно',
+                    description: 'При обороте по карте от 10000 ₽ в месяц',
+                },
+            ],
+            [{ label: '69 рублей в месяц' }],
+            [{ description: 'Для членов профсоюзных организаций' }],
+        ],
+    },
+];
+const TariffsTable_fixture_columns2 = [
+    {
+        header: {
+            title: '«Пополняемый»',
+            icon: 'ShieldTickIcon',
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'от 91 до 1095' }],
+            [{ label: 'до 8,2% ₽' }, { label: 'до 0,01% USD' }],
+            [{ label: 'От 3000 ₽' }, { label: 'От 50 USD' }],
+            [{ label: 'до 10 млн ₽' }, { label: 'до 300 тыс. USD' }],
+        ],
+    },
+    {
+        header: {
+            title: '«Комфортный»',
+            icon: 'ComfortableCompIcon',
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'от 91 до 1095' }],
+            [{ label: 'до 7,2% ₽' }, { label: 'до 0,01% USD' }],
+            [{ label: 'От 10 000 ₽' }, { label: 'От 150 USD' }],
+            [{ label: 'до 10 млн ₽' }, { label: 'до 300 тыс. USD' }],
+        ],
+    },
+    {
+        header: {
+            title: '«Доходный пенсионный»',
+            icon: 'ClockIcon',
+            link: {
+                text: 'Подробнее',
+                href: '/credits',
+            },
+        },
+        data: [
+            [{ label: 'от 91 до 1460' }],
+            [{ label: 'до 9,5% ₽' }],
+            [{ label: 'От 500 ₽' }],
+            [{ label: 'Без ограничений' }],
+        ],
+    },
+];
+/* harmony default export */ const TariffsTable_fixture = ({
+    default: (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: Array(2).fill(TariffsTable_fixture_columns).flat() }) })),
+    '1 column': (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 1) }) })),
+    '2 columns': (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 2) }) })),
+    '3 columns': (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 3) }) })),
+});
+
 ;// CONCATENATED MODULE: ./src/TextBlock.fixture.tsx
 
 
@@ -33516,6 +33813,7 @@ const image4 = {
 
 
 
+
 const rendererConfig = {
   "containerQuerySelector": null
 };
@@ -33536,6 +33834,7 @@ const fixtures = {
   'src/ProductTile.fixture.tsx': { module: { default: ProductTile_fixture } },
   'src/PromoTile.fixture.tsx': { module: { default: PromoTile_fixture } },
   'src/StepsBlock.fixture.tsx': { module: { default: StepsBlock_fixture } },
+  'src/TariffsTable.fixture.tsx': { module: { default: TariffsTable_fixture } },
   'src/TextBlock.fixture.tsx': { module: { default: TextBlock_fixture } },
   'src/Tile.fixture.tsx': { module: { default: Tile_fixture } },
   'src/ui-kit/BlockItem.fixture.tsx': { module: { default: BlockItem_fixture } },
@@ -39546,7 +39845,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(3295),
+  var _require = __webpack_require__(3758),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;
