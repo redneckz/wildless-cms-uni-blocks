@@ -32282,9 +32282,7 @@ const CreditCalculator = JSX(({ context, className }) => {
 
 
 
-/* harmony default export */ const CreditCalculator_fixture = ({
-    default: jsx(CreditCalculator, { context: context }),
-});
+/* harmony default export */ const CreditCalculator_fixture = (jsx(CreditCalculator, { context: context }));
 
 ;// CONCATENATED MODULE: ./src/ExchangeRateTile.fixture.tsx
 
