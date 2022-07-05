@@ -21,7 +21,10 @@ export type IconName =
   | 'SignDocsIcon'
   | 'TelegramIcon'
   | 'VKIcon'
-  | 'ArrowLeftIcon';
+  | 'ArrowLeftIcon'
+  | 'DocIcon'
+  | 'PlusIcon'
+  | 'MinusIcon';
 
 export interface IconProps {
   className?: string;
