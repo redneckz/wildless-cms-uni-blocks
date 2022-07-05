@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { InputRangeProps } from './InputRangeProps';
+import type { InputRangeProps } from './InputRangeProps';
 
 export const InputRange = JSX<InputRangeProps>(
   ({

@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { CheckboxProps } from './CheckboxProps';
+import type { CheckboxProps } from './CheckboxProps';
 
 export const Checkbox = JSX<CheckboxProps>(({ text, checked, onChange, className }) => (
   <div className={className}>
