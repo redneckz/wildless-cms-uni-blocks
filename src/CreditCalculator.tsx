@@ -17,11 +17,11 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
   return (
     <section className={`font-sans text-primary-text bg-white p-4 ${className}`}>
       <div
-        className={`w-[848px] box-border p-12 flex flex-col justify-between ${borderStyle}`}
+        className={`box-border p-12 flex flex-col justify-between ${borderStyle}`}
         onSubmit={(e) => e.preventDefault()}
       >
-        <div className="flex">
-          <div className="min-w-[471px] mr-11">
+        <div className="flex justify-between">
+          <div className="grow mr-11">
             <InputRange
               title="Желаемая сумма кредита, ₽"
               items={['От 50 000 рублей', 'До 3 000 000 рублей']}
@@ -55,15 +55,14 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
           <div className="p-9 bg-primary-main rounded-md text-white">
             <div className="text-base mb-5">Наше предложение</div>
             <div className="text-sm opacity-60">Ежемесячный платёж</div>
-            <div className="text-[35px] mb-3">26 827 ₽</div>
+            <div className="text-lg mb-3">26 827 ₽</div>
             <div className="text-sm opacity-60">Ставка</div>
-            <div className="text-[35px]">16,9 %</div>
+            <div className="text-lg">16,9 %</div>
           </div>
         </div>
         <div className="flex items-center">
-          {/* TODO: This button - <a />, need to replace with <button /> */}
           <Button className="mr-3" text="Отправить заявку" href="#" />
-          <div className="max-w-[307px] text-xxs leading-4 text-secondary-text">
+          <div className="w-80 text-xxs leading-4 text-secondary-text">
             Отправляя заявку, вы соглашаетесь на обработку персональных данных соответственно
             требованиям ФЗ «О персональных данных»
           </div>

@@ -30,6 +30,7 @@ module.exports = {
         xxs: ['0.625rem', '0.625rem'], // 10px 10px
         xs: ['0.75rem', '1.125rem'], // 12px 18px
         sm: ['0.875rem', '1.375rem'], // 14px 22px
+        lg: ['2.188rem', '3rem'],
         base: ['1rem', '1.5rem'], // 16px 24px
         'title-sm': ['1.75rem', '2.5rem'], //28px 40px
         'title-xsm': ['0.75rem', '1.125rem'], // 12px 18px

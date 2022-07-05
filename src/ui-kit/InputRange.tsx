@@ -28,18 +28,18 @@ export const InputRange = JSX<InputRangeProps>(
       <div className={className}>
         <div className="relative">
           {title ? (
-            <span className="absolute text-xs text-secondary-text top-[6px] pl-[18px]">
+            <span className="absolute text-xs text-secondary-text top-1 mt-0.5 pl-4 ml-0.5">
               {title}
             </span>
           ) : null}
           <input
-            className={`font-sans text-sm w-full h-12 border-2 border-solid border-main-divider rounded-md outline-none p-0 pl-4 m-0 box-border text-primary-text ${
+            className={`m-0 font-sans text-sm w-full h-12 border-2 border-solid border-main-divider rounded-md outline-none p-0 pl-4 m-0 box-border text-primary-text ${
               title ? 'pt-4' : ''
             }`}
             value={String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
             onChange={(e) => handleChange(Number(e.target.value as string))}
           />
-          <div className="absolute inset-x-0 top-[34px] px-4">
+          <div className="absolute inset-x-0 mt-0.5 top-8 px-4">
             <input
               className="box-border w-full m-0 cursor-pointer slider"
               type="range"
