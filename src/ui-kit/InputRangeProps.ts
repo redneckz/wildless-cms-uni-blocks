@@ -1,4 +1,5 @@
 export interface InputRangeProps {
+  className?: string;
   items?: string[];
   min?: number;
   max?: number;

@@ -2,7 +2,16 @@ import { JSX } from '@redneckz/uni-jsx';
 import { InputRangeProps } from './InputRangeProps';
 
 export const InputRange = JSX<InputRangeProps>(
-  ({ title, items = [], min = 1, max = 100, step = 1, value = min, onChange = () => null }) => {
+  ({
+    className,
+    title,
+    items = [],
+    min = 1,
+    max = 100,
+    step = 1,
+    value = min,
+    onChange = () => null,
+  }) => {
     const handleChange = (value: number) => {
       if (value > max) {
         onChange(max);
@@ -23,7 +32,7 @@ export const InputRange = JSX<InputRangeProps>(
     };
 
     return (
-      <div className="max-w-[471px]">
+      <div className={`max-w-[471px] ${className}`}>
         <div className="relative">
           {title ? (
             <span className="absolute text-xs text-secondary-text top-[6px] pl-[18px]">
