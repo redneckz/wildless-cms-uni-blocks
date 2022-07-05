@@ -16,10 +16,7 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
 
   return (
     <section className={`font-sans text-primary-text bg-white p-4 ${className}`}>
-      <div
-        className={`box-border p-12 flex flex-col justify-between ${borderStyle}`}
-        onSubmit={(e) => e.preventDefault()}
-      >
+      <div className={`box-border p-12 flex flex-col justify-between ${borderStyle}`}>
         <div className="flex justify-between">
           <div className="grow mr-11">
             <InputRange
