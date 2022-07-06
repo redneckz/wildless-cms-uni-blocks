@@ -3,25 +3,15 @@ import type { InputRangeProps } from './InputRangeProps';
 
 export const InputRange = JSX<InputRangeProps>(
   ({ className, title, items = [], min = 1, max = 100, step = 1, value = min, onChange }) => {
-    const handleChange = (value: number) => {
+    const handleChange = (value: string) => {
       if (!onChange) return;
 
-      if (value > max) {
-        onChange(max);
-        return;
-      }
-      if (value < min) {
-        onChange(min);
-        return;
-      }
-
-      onChange(value);
+      const sanitizedValue = Number(value.replace(/\D/g, ''));
+      onChange(clamp(sanitizedValue, min, max));
     };
 
-    const getBackgroundSize = () => {
-      return {
-        backgroundSize: `${(value * 100) / max}% 100%`,
-      };
+    const inputStyle = {
+      backgroundSize: `${(value * 100) / max}% 100%`,
     };
 
     return (
@@ -37,7 +27,7 @@ export const InputRange = JSX<InputRangeProps>(
               title ? 'pt-4' : ''
             }`}
             value={String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
-            onChange={(e) => handleChange(Number(e.target.value as string))}
+            onChange={(e) => handleChange(e.target.value)}
           />
           <div className="absolute inset-x-0 mt-0.5 top-8 px-4">
             <input
@@ -47,8 +37,8 @@ export const InputRange = JSX<InputRangeProps>(
               max={max}
               step={step}
               value={value}
-              onChange={(e) => handleChange(Number(e.target.value as number))}
-              style={getBackgroundSize()}
+              onChange={(e) => handleChange(e.target.value)}
+              style={inputStyle}
             />
           </div>
         </div>
@@ -63,3 +53,5 @@ export const InputRange = JSX<InputRangeProps>(
     );
   },
 );
+
+const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(value, max));
