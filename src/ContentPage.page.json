@@ -14,7 +14,7 @@
   "sections": [
     {
       "type": "header",
-      "className": "",
+      "style": [],
       "blocks": [
         {
           "type": "Header",
@@ -39,7 +39,7 @@
     },
     {
       "type": "main",
-      "className": "",
+      "style": [],
       "blocks": [
         {
           "type": "ProductGallery",
