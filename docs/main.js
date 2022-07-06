@@ -31278,16 +31278,16 @@ const getFileExtension = (href) => href.split('.').pop();
 
 
 const Accordion = JSX(({ title, items, context }) => {
-    return (jsxs("section", { className: "p-[50px] font-sans bg-white text-primary-text", children: [title ? jsx("h3", { className: "text-title-sm font-medium m-0 mb-2.5", children: title }) : null, items.length > 0 ? (jsx("ul", { className: "list-none m-0 p-0", children: items.map((item, index) => (jsx(AccordionItem, { ...item, context: context }, 'AccordionItem' + index))) })) : null] }));
+    return (jsxs("section", { className: "p-[50px] font-sans bg-white text-primary-text", children: [title ? jsx("h3", { className: "text-title-sm font-medium m-0 mb-2.5", children: title }) : null, items.length > 0 ? (jsx("ul", { className: "list-none m-0 p-0", children: items.map((item, i) => (jsx(AccordionItem, { ...item, context: context }, 'AccordionItem' + i))) })) : null] }));
 });
 const AccordionItem = JSX(({ label, components, context }) => {
-    const [isActive, toggleActive] = context.useState(0);
+    const [isActive, toggleActive] = context.useState(false);
     const hasContent = components && components.length > 0;
     const icon = isActive ? 'MinusIcon' : 'PlusIcon';
     const handleToggle = (e) => {
         if (!hasContent)
             return;
-        toggleActive(Number(!isActive));
+        toggleActive(!isActive);
         const contentBlock = e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;
         contentBlock.style.maxHeight = contentBlock.style.maxHeight
             ? null
@@ -31297,14 +31297,14 @@ const AccordionItem = JSX(({ label, components, context }) => {
         ${hasContent ? 'group cursor-pointer' : ''}`, onClick: handleToggle, children: [jsx("h5", { className: `m-0 text-xl pr-2.5 font-medium ${hasContent ? 'group-hover:text-primary-main' : ''}`, children: label }), hasContent ? jsx(Icon, { name: icon, width: "24", height: "24" }) : null] }), hasContent ? (jsx("div", { className: `${isActive ? 'pb-5' : ''} text-sm transition-all duration-300 max-h-0 overflow-hidden group-last:last:pb-0 `, children: components.map(renderComponent) })) : null] }));
 });
 // TODO: draft, for dynamic rendering of components
-const renderComponent = (component, key) => {
+const renderComponent = (component, i) => {
     if (!COMPONENTS.hasOwnProperty(component.name))
         return;
     const callCurrentComponent = COMPONENTS[component.name];
-    return (jsx("div", { className: "mb-5 last:mb-0", children: callCurrentComponent(component.data) }, 'component' + key));
+    return (jsx("div", { className: "mb-5 last:mb-0", children: callCurrentComponent(component.data) }, 'component' + i));
 };
 const DocsComponent = (data) => {
-    return (jsx("ul", { className: "list-none p-0", children: data.map((item, index) => (jsx("li", { className: "mb-4 last:mb-0", children: jsx(Doc, { ...item }) }, 'doc' + index))) }));
+    return (jsx("ul", { className: "list-none p-0", children: data.map((item, i) => (jsx("li", { className: "mb-4 last:mb-0", children: jsx(Doc, { ...item }) }, 'doc' + i))) }));
 };
 const TextComponent = (data) => {
     return jsx("p", { className: "m-0", children: data });

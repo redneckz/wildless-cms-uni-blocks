@@ -27,8 +27,8 @@ export const Accordion = JSX<AccordionProps>(({ title, items, context }) => {
       {title ? <h3 className="text-title-sm font-medium m-0 mb-2.5">{title}</h3> : null}
       {items.length > 0 ? (
         <ul className="list-none m-0 p-0">
-          {items.map((item, index) => (
-            <AccordionItem key={'AccordionItem' + index} {...item} context={context} />
+          {items.map((item, i) => (
+            <AccordionItem key={'AccordionItem' + i} {...item} context={context} />
           ))}
         </ul>
       ) : null}
@@ -37,12 +37,12 @@ export const Accordion = JSX<AccordionProps>(({ title, items, context }) => {
 });
 
 export const AccordionItem = JSX<AccordionItemProps>(({ label, components, context }) => {
-  const [isActive, toggleActive] = context.useState(0);
+  const [isActive, toggleActive] = context.useState(false);
   const hasContent = components && components.length > 0;
   const icon = isActive ? 'MinusIcon' : 'PlusIcon';
   const handleToggle = (e) => {
     if (!hasContent) return;
-    toggleActive(Number(!isActive));
+    toggleActive(!isActive);
     const contentBlock =
       e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;
     contentBlock.style.maxHeight = contentBlock.style.maxHeight
@@ -81,11 +81,11 @@ export const AccordionItem = JSX<AccordionItemProps>(({ label, components, conte
 
 // TODO: draft, for dynamic rendering of components
 
-const renderComponent = (component: componentProps, key: number) => {
+const renderComponent = (component: componentProps, i: number) => {
   if (!COMPONENTS.hasOwnProperty(component.name)) return;
   const callCurrentComponent = COMPONENTS[component.name];
   return (
-    <div className="mb-5 last:mb-0" key={'component' + key}>
+    <div className="mb-5 last:mb-0" key={'component' + i}>
       {callCurrentComponent(component.data)}
     </div>
   );
@@ -94,8 +94,8 @@ const renderComponent = (component: componentProps, key: number) => {
 const DocsComponent = (data: DocProps[]) => {
   return (
     <ul className="list-none p-0">
-      {data.map((item, index) => (
-        <li key={'doc' + index} className="mb-4 last:mb-0">
+      {data.map((item, i) => (
+        <li key={'doc' + i} className="mb-4 last:mb-0">
           <Doc {...item} />
         </li>
       ))}
