@@ -11,7 +11,7 @@ const CHECK_PATHS = [
   },
 ];
 
-export const Checkbox = JSX<CheckboxProps>(({ text, onChange, className }) => (
+export const Checkbox = JSX<CheckboxProps>(({ text, checked, onChange, className }) => (
   <div className={className}>
     <label className="flex items-center cursor-pointer relative">
       <input
@@ -20,6 +20,7 @@ export const Checkbox = JSX<CheckboxProps>(({ text, onChange, className }) => (
         onChange={(e) => {
           onChange(e.target.checked);
         }}
+        checked={checked}
       />
       <SVG
         paths={CHECK_PATHS}
