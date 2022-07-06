@@ -2,11 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import { LinkContent } from '../model/LinkContent';
 import { Icon } from './Icon';
 
-export interface DocProps extends LinkContent {
-  href: string;
-}
-
-export const Doc = JSX<DocProps>(({ href, text, target }) => {
+export const Doc = JSX<LinkContent>(({ href, text, target }) => {
   return (
     <a
       href={href}
@@ -14,9 +10,9 @@ export const Doc = JSX<DocProps>(({ href, text, target }) => {
       className="text-sm font-sans inline-flex align-middle items-center text-primary-text no-underline group hover:text-primary-main"
     >
       <Icon name="DocIcon" width="24" height="24" className="mr-2.5" />
-      {text || formatHref(href)}
+      {text || (href && formatHref(href))}
       <span className="text-secondary-text group-hover:text-primary-main">
-        , {getFileExtension(href)}
+        , {href && getFileExtension(href)}
       </span>
     </a>
   );

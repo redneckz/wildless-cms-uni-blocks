@@ -1283,6 +1283,99 @@
       }
     },
     {
+      "type": "Accordion",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Accordion title",
+        "accordionItems": [
+          {
+            "label": "Accordion label 1",
+            "components": [
+              {
+                "name": "Text",
+                "data": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit labore eum iste ea atque accusantium architecto voluptate voluptates, corporis aperiam! Illo ducimus deserunt totam harum neque obcaecati tempore voluptatibus"
+              },
+              {
+                "name": "Docs",
+                "data": [
+                  {
+                    "href": "path-to-file.pdf",
+                    "text": "doc text"
+                  },
+                  {
+                    "href": "path-to-file.pdf",
+                    "text": "doc text",
+                    "target": "_blank"
+                  },
+                  {
+                    "href": "path-to-file.pdf",
+                    "text": "doc text",
+                    "target": "_blank"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Accordion label 2",
+            "components": [
+              {
+                "name": "Text",
+                "data": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit labore eum iste ea atque accusantium architecto voluptate voluptates, corporis aperiam! Illo ducimus deserunt totam harum neque obcaecati tempore voluptatibus"
+              },
+              {
+                "name": "Docs",
+                "data": [
+                  {
+                    "href": "path-to-file.pdf",
+                    "text": "doc text"
+                  },
+                  {
+                    "href": "path-to-file.pdf",
+                    "text": "doc text",
+                    "target": "_blank"
+                  },
+                  {
+                    "href": "path-to-file.pdf",
+                    "text": "doc text",
+                    "target": "_blank"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Accordion label 3",
+            "components": [
+              {
+                "name": "Text",
+                "data": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit labore eum iste ea atque accusantium architecto voluptate voluptates, corporis aperiam! Illo ducimus deserunt totam harum neque obcaecati tempore voluptatibus"
+              },
+              {
+                "name": "Docs",
+                "data": [
+                  {
+                    "href": "path-to-file.pdf",
+                    "text": "doc text"
+                  },
+                  {
+                    "href": "path-to-file.pdf",
+                    "text": "doc text",
+                    "target": "_blank"
+                  },
+                  {
+                    "href": "path-to-file.pdf",
+                    "text": "doc text",
+                    "target": "_blank"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "type": "Footer",
       "style": ["col-span-12"],
       "content": {
