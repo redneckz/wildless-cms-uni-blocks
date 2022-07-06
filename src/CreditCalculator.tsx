@@ -3,16 +3,33 @@ import { UniBlockProps } from './types';
 import { Button } from './ui-kit/Button';
 import { Checkbox } from './ui-kit/Checkbox';
 import { InputRange } from './ui-kit/InputRange';
+import { clamp } from './utils/clamp';
 
 export interface CreditCalculatorProps extends UniBlockProps {}
 
 const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
+
+const MIN_MONEY = 50000;
+const MAX_MONEY = 3000000;
+const STEP_MONEY = 1000;
+
+const BUTTON_NUMBERS = [2, 3, 4, 5, 6, 7];
+
+const MIN_MONTHS = 1;
+const MAX_MONTHS = 84;
+const STEP_MONTHS = 1;
+
+const MONTHS_IN_YEAR = 12;
 
 export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className }) => {
   const [moneyValue, setMoneyValue] = context.useState(350000);
   const [monthsValue, setMonthsValue] = context.useState(12);
   const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(true);
   const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(true);
+
+  const handleButtonClick = (value: number) => {
+    setMonthsValue(clamp(value * MONTHS_IN_YEAR, MIN_MONTHS, MAX_MONTHS));
+  };
 
   return (
     <section className={`font-sans text-primary-text bg-white p-4 ${className}`}>
@@ -22,21 +39,24 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
             <InputRange
               title="Желаемая сумма кредита, ₽"
               items={['От 50 000 рублей', 'До 3 000 000 рублей']}
-              min={50000}
-              max={3000000}
-              step={50000}
+              min={MIN_MONEY}
+              max={MAX_MONEY}
+              step={STEP_MONEY}
               value={moneyValue}
               onChange={setMoneyValue}
             />
             <InputRange
               title="Срок кредита, месяцев"
               items={['Или выберите из предложенных вариантов ниже']}
-              min={1}
-              max={84}
-              step={1}
+              min={MIN_MONTHS}
+              max={MAX_MONTHS}
+              step={STEP_MONTHS}
               value={monthsValue}
               onChange={setMonthsValue}
             />
+            <div className="flex mb-7">
+              {BUTTON_NUMBERS.map((number, i) => renderButton(number, i, handleButtonClick))}
+            </div>
             <Checkbox
               text="Получаю пенсию на карту Россельхозбанка"
               checked={isAnnuityChecked}
@@ -68,3 +88,16 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
     </section>
   );
 });
+
+const renderButton = (number: number, i: number, handleClick: (number: number) => void) => (
+  <div
+    key={String(i)}
+    className="bg-secondary-light rounded-3xl h-10 w-[75px] box-border mr-2 flex items-center justify-center cursor-pointer"
+    role="button"
+    onClick={() => handleClick(number)}
+  >
+    <span className="font-medium text-sm">
+      {number} {number > 4 ? 'лет' : 'года'}
+    </span>
+  </div>
+);

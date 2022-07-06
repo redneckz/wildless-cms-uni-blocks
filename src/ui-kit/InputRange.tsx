@@ -7,11 +7,18 @@ export const InputRange = JSX<InputRangeProps>(
       if (!onChange) return;
 
       const sanitizedValue = Number(value.replace(/\D/g, ''));
-      onChange(clamp(sanitizedValue, min, max));
+      onChange(sanitizedValue);
     };
 
     const inputStyle = {
-      backgroundSize: `${(value * 100) / max}% 100%`,
+      backgroundSize: `${(value * 100) / max - 1}% 100%`,
+    };
+
+    const handleBlur = () => {
+      if (!onChange) return;
+
+      if (value < min) onChange(min);
+      if (value > max) onChange(max);
     };
 
     return (
@@ -28,6 +35,7 @@ export const InputRange = JSX<InputRangeProps>(
             }`}
             value={String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
             onChange={(e) => handleChange(e.target.value)}
+            onBlur={handleBlur}
           />
           <div className="absolute inset-x-0 mt-0.5 top-8 px-4">
             <input
@@ -53,5 +61,3 @@ export const InputRange = JSX<InputRangeProps>(
     );
   },
 );
-
-const clamp = (value: number, min: number, max: number) => Math.max(min, Math.min(value, max));
