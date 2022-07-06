@@ -2,7 +2,7 @@ import { JSX, PropsWithChildren } from '@redneckz/uni-jsx';
 import type { BlockContent } from './BlockContent';
 import { LikeControl } from './LikeControl';
 import { Placeholder } from './Placeholder';
-import type { BlockDef, ContentPageDef, Section, UniBlockProps } from './types';
+import type { BlockDef, ContentPageDef, Section, SectionType, UniBlockProps } from './types';
 
 interface BlockDecoratorProps<VNode> {
   blockClassName: string;
@@ -109,21 +109,15 @@ function getSections(sections?: (Section | BlockDef)[]): {
     const headerBlocks = (sections as BlockDef[]).filter(({ type }) => type === 'Header');
     const mainBlocks = (sections as BlockDef[]).filter(({ type }) => type !== 'Header');
 
+    const sectionContainer = (blocks: BlockDef[], type: SectionType): Section => ({
+      type,
+      style: [],
+      blocks,
+    });
+
     return {
-      headerSection: !headerBlocks.length
-        ? undefined
-        : {
-            type: 'header',
-            style: [],
-            blocks: headerBlocks,
-          },
-      mainSection: !mainBlocks.length
-        ? undefined
-        : {
-            type: 'main',
-            style: [],
-            blocks: mainBlocks,
-          },
+      headerSection: headerBlocks.length ? sectionContainer(mainBlocks, 'header') : undefined,
+      mainSection: mainBlocks.length ? sectionContainer(mainBlocks, 'main') : undefined,
     };
   }
 
