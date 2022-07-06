@@ -13,7 +13,7 @@ const MIN_MONEY = 50000;
 const MAX_MONEY = 3000000;
 const STEP_MONEY = 1000;
 
-const BUTTON_NUMBERS = [2, 3, 4, 5, 6, 7];
+const CREDIT_TERM_YEARS = [2, 3, 4, 5, 6, 7];
 
 const MIN_MONTHS = 1;
 const MAX_MONTHS = 84;
@@ -55,7 +55,7 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
               onChange={setMonthsValue}
             />
             <div className="flex mb-7">
-              {BUTTON_NUMBERS.map((number, i) => renderButton(number, i, handleButtonClick))}
+              {CREDIT_TERM_YEARS.map((number, i) => renderButton(number, i, handleButtonClick))}
             </div>
             <Checkbox
               text="Получаю пенсию на карту Россельхозбанка"
