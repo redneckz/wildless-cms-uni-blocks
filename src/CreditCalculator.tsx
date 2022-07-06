@@ -24,8 +24,8 @@ const MONTHS_IN_YEAR = 12;
 export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className }) => {
   const [moneyValue, setMoneyValue] = context.useState(350000);
   const [monthsValue, setMonthsValue] = context.useState(12);
-  const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(true);
-  const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(true);
+  const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(false);
+  const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(false);
 
   const handleButtonClick = (value: number) => {
     setMonthsValue(clamp(value * MONTHS_IN_YEAR, MIN_MONTHS, MAX_MONTHS));
@@ -59,13 +59,11 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
             </div>
             <Checkbox
               text="Получаю пенсию на карту Россельхозбанка"
-              checked={isAnnuityChecked}
               onChange={setIsAnnuityChecked}
             />
             <Checkbox
               className="mb-4"
               text="Комплексная страховая защита"
-              checked={isInsuranceChecked}
               onChange={setIsInsuranceChecked}
             />
           </div>

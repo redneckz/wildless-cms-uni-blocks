@@ -11,28 +11,24 @@ const CHECK_PATHS = [
   },
 ];
 
-export const Checkbox = JSX<CheckboxProps>(({ text, checked, onChange, className }) => (
+export const Checkbox = JSX<CheckboxProps>(({ text, onChange, className }) => (
   <div className={className}>
     <label className="flex items-center cursor-pointer relative">
       <input
-        className={`appearance-none w-5 h-5 border-solid border rounded ${
-          checked ? 'bg-primary-main border-primary-main' : 'border-black'
-        }`}
+        className={`peer appearance-none w-5 h-5 border-solid border rounded border-black checked:bg-primary-main checked:border-primary-main`}
         type="checkbox"
-        onChange={() => {
-          onChange(!checked);
+        onChange={(e) => {
+          onChange(e.target.checked);
         }}
       />
-      {checked ? (
-        <SVG
-          paths={CHECK_PATHS}
-          className="absolute left-2 ml-px"
-          width="11"
-          height="9"
-          fill="white"
-          viewBox="0 0 11 9"
-        />
-      ) : null}
+      <SVG
+        paths={CHECK_PATHS}
+        className="hidden absolute left-2 ml-px peer-checked:block"
+        width="11"
+        height="9"
+        fill="white"
+        viewBox="0 0 11 9"
+      />
       {text ? <span className="font-sans ml-2 text-sm cursor-pointer">{text}</span> : null}
     </label>
   </div>
