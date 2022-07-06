@@ -11,9 +11,8 @@
   "date": "2022-04-08",
   "style": ["p-20", "pt-0", "gap-5", "bg-secondary-light"],
   "likeControl": true,
-  "sections": [
-    {
-      "type": "header",
+  "slots": {
+    "header": {
       "style": [],
       "blocks": [
         {
@@ -37,8 +36,7 @@
         }
       ]
     },
-    {
-      "type": "main",
+    "body": {
       "style": [],
       "blocks": [
         {
@@ -1485,5 +1483,5 @@
         }
       ]
     }
-  ]
+  }
 }

@@ -2,7 +2,7 @@ import { JSX, PropsWithChildren } from '@redneckz/uni-jsx';
 import type { BlockContent } from './BlockContent';
 import { LikeControl } from './LikeControl';
 import { Placeholder } from './Placeholder';
-import type { BlockDef, ContentPageDef, Section, SectionType, UniBlockProps } from './types';
+import type { BlockDef, ContentPageDef, UniBlockProps } from './types';
 
 interface BlockDecoratorProps<VNode> {
   blockClassName: string;
@@ -32,31 +32,33 @@ export const ContentPage = JSX<ContentPageProps>(
     className,
     context,
     blocksRegistry,
-    data: { style: pageStyle, sections, likeControl, colorPalette = 'pc' },
+    data: { style: pageStyle, blocks, slots = {}, likeControl, colorPalette = 'pc' },
     blockDecorator = defaultBlockDecorator,
   }) => {
-    const { headerSection, mainSection } = getSections(sections);
+    const { header, body } = slots;
 
     return (
       <section
         className={`relative ${style2className(pageStyle)} ${className || ''}`}
         data-theme={colorPalette}
       >
-        {headerSection?.blocks?.length ? (
-          <div className={`grid grid-cols-12 gap-1 ${style2className(headerSection?.style)}`}>
-            {headerSection.blocks.map(renderBlock)}
+        {header?.blocks?.length ? (
+          <div className={`grid grid-cols-12 gap-1 ${style2className(header?.style)}`}>
+            {header.blocks.map(renderBlock)}
           </div>
         ) : null}
 
-        {mainSection?.blocks?.length ? (
+        {body?.blocks?.length ? (
           <div
             className={`container items-center grid grid-cols-12 gap-1 ${style2className(
-              mainSection?.style,
+              body?.style,
             )}`}
           >
-            {mainSection.blocks.map(renderBlock)}
+            {body.blocks.map(renderBlock)}
           </div>
         ) : null}
+
+        {blocks?.length ? blocks.map(renderBlock) : null}
 
         {likeControl && (
           <div className="flex items-end absolute bottom-0 right-0 h-full pointer-events-none">
@@ -100,32 +102,6 @@ export const ContentPage = JSX<ContentPageProps>(
     }
   },
 );
-
-function getSections(sections?: (Section | BlockDef)[]): {
-  headerSection?: Section;
-  mainSection?: Section;
-} {
-  if (sections?.every((section) => 'content' in section)) {
-    const headerBlocks = (sections as BlockDef[]).filter(({ type }) => type === 'Header');
-    const mainBlocks = (sections as BlockDef[]).filter(({ type }) => type !== 'Header');
-
-    const sectionContainer = (blocks: BlockDef[], type: SectionType): Section => ({
-      type,
-      style: [],
-      blocks,
-    });
-
-    return {
-      headerSection: headerBlocks.length ? sectionContainer(headerBlocks, 'header') : undefined,
-      mainSection: mainBlocks.length ? sectionContainer(mainBlocks, 'main') : undefined,
-    };
-  }
-
-  return {
-    headerSection: (sections as Section[]).find(({ type }) => type === 'header'),
-    mainSection: (sections as Section[]).find(({ type }) => type === 'main'),
-  };
-}
 
 function style2className(style: string[] | undefined | null): string {
   return style ? style.join(' ') : '';
