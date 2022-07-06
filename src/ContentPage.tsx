@@ -116,7 +116,7 @@ function getSections(sections?: (Section | BlockDef)[]): {
     });
 
     return {
-      headerSection: headerBlocks.length ? sectionContainer(mainBlocks, 'header') : undefined,
+      headerSection: headerBlocks.length ? sectionContainer(headerBlocks, 'header') : undefined,
       mainSection: mainBlocks.length ? sectionContainer(mainBlocks, 'main') : undefined,
     };
   }

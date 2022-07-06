@@ -32438,21 +32438,14 @@ function getSections(sections) {
     if (sections?.every((section) => 'content' in section)) {
         const headerBlocks = sections.filter(({ type }) => type === 'Header');
         const mainBlocks = sections.filter(({ type }) => type !== 'Header');
+        const sectionContainer = (blocks, type) => ({
+            type,
+            style: [],
+            blocks,
+        });
         return {
-            headerSection: !headerBlocks.length
-                ? undefined
-                : {
-                    type: 'header',
-                    style: [],
-                    blocks: headerBlocks,
-                },
-            mainSection: !mainBlocks.length
-                ? undefined
-                : {
-                    type: 'main',
-                    style: [],
-                    blocks: mainBlocks,
-                },
+            headerSection: headerBlocks.length ? sectionContainer(headerBlocks, 'header') : undefined,
+            mainSection: mainBlocks.length ? sectionContainer(mainBlocks, 'main') : undefined,
         };
     }
     return {
