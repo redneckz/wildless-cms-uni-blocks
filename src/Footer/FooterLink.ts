@@ -1,4 +1,4 @@
-import type { LinkContent } from '../types';
+import type { LinkContent } from '../model/LinkContent';
 import type { UniBlockProps } from '../types';
 
 export interface FooterLink extends UniBlockProps {

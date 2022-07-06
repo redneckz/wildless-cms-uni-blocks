@@ -1,5 +1,5 @@
 import type { AsyncDataHook } from './ContentPageContext';
-import type { HeaderContent } from './Header/index';
+import type { HeaderContent } from './Header/HeaderContent';
 import { projectSettings } from './ProjectSettings';
 
 export function useSitemap(useAsyncData: AsyncDataHook): HeaderContent {

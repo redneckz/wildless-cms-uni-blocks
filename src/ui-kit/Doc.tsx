@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent } from '../types';
+import { LinkContent } from '../model/LinkContent';
 import { Icon } from './Icon';
 
 export interface DocProps extends LinkContent {

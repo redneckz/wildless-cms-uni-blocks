@@ -2,7 +2,7 @@ import { context } from './setup-fixture';
 
 import { Gallery, GalleryProps } from './Gallery';
 import { Gallery as MobileGallery } from './Gallery.mobile';
-import { Picture } from './types';
+import type { Picture } from './model/Picture';
 
 const image: Picture = {
   src: 'money-1.png',

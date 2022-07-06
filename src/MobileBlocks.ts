@@ -1,7 +1,7 @@
 import { ExchangeRateTile } from './ExchangeRateTile';
 import { Footer } from './Footer/Footer.mobile';
 import { Gallery } from './Gallery.mobile';
-import { Header } from './Header/index';
+import { Header } from './Header/Header';
 import { MobileAppTile } from './MobileAppTile';
 import { Placeholder } from './Placeholder';
 import { ProductBlock } from './ProductBlock.mobile';

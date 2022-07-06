@@ -1,8 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { GalleryCard, GalleryProps } from './Gallery';
-import { Img } from './Img';
+import type { GalleryProps } from './Gallery';
+import type { GalleryCard } from './GalleryContent';
 import { BlockItem } from './ui-kit/BlockItem';
 import { Button } from './ui-kit/Button';
+import { Img } from './ui-kit/Img';
 import { Title } from './ui-kit/Title';
 
 export const Gallery = JSX<GalleryProps>(({ title, description, cards = [], className }) => {

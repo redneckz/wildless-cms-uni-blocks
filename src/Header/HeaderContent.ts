@@ -1,6 +1,5 @@
-import type { TopMenuItem } from '../types';
+import { SitemapContent } from '../model/SitemapContent';
 
-export interface HeaderContent {
+export interface HeaderContent extends SitemapContent {
   defaultLocation?: string;
-  topItems?: TopMenuItem[];
 }

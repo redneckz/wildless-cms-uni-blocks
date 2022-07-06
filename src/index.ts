@@ -6,17 +6,10 @@ export { projectSettings } from './ProjectSettings';
 export { LikeAPI } from './api/LikeAPI';
 export { DaDataAPI } from './api/DaDataAPI';
 
-export type { HeaderContent as SitemapContent } from './Header';
+export type { SitemapContent } from './model/SitemapContent';
 
-export type {
-  BlockDef,
-  UniBlockProps,
-  ContentPageMeta,
-  ContentPageDef,
-  Img,
-  ImgSource,
-  Picture,
-} from './types';
+export type { Img, ImgSource, Picture } from './model/Picture';
+export type { BlockDef, UniBlockProps, ContentPageMeta, ContentPageDef } from './types';
 export type {
   ContentPageContext,
   Router,
@@ -33,7 +26,7 @@ export { ContentPage } from './ContentPage';
 export { toMobilePage } from './toMobilePage';
 
 export { Blocks } from './Blocks';
-export type { BlockContent } from './Blocks';
+export type { BlockContent } from './BlockContent';
 export { MobileBlocks } from './MobileBlocks';
 
 export * as url from './utils/url';
