@@ -1,15 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-
-type BlockItemVersion = 'primary' | 'secondary';
-export interface BlockItemContent {
-  text?: string;
-}
-
-export interface BlockItemProps extends BlockItemContent {
-  className?: string;
-  version?: BlockItemVersion;
-  isDotted?: boolean;
-}
+import { BlockItemProps, BlockItemVersion } from './BlockItemProps';
 
 const listStyleMap: Record<BlockItemVersion, string> = {
   primary: 'bg-primary-main',
