@@ -1,15 +1,54 @@
 import type { LinkContent } from '../../model/LinkContent';
 import type { SitemapContent } from '../../model/SitemapContent';
+import type { BlockDefProps } from '../../types';
 
+/**
+ * @title Тип контакта
+ * @enumNames [
+ *    "Телефон",
+ *    "Почта"
+ *  ]
+ */
+export type ContactType = 'tel' | 'email';
+
+/**
+ * @title Контакт
+ */
 export interface ContactInfo {
-  text: string;
-  type: 'tel' | 'email';
-  description: string;
+  /** @title Текст */
+  text?: string;
+  type?: ContactType;
+  /** @title Описание */
+  description?: string;
 }
 
+/**
+ * @required ["href"]
+ */
+export interface SocialMedia extends Omit<LinkContent, 'text'> {}
+
+/**
+ * @required ["topItems"]
+ */
 export interface FooterContent extends SitemapContent {
+  /** @title Обязательные документы */
   documents?: LinkContent[];
+  /** @title Другие предприятия */
   relatedEnterprises?: LinkContent[];
+  /** @title Контакты */
   contacts?: ContactInfo[];
-  socialMedia?: Omit<LinkContent, 'text'>[];
+  /** @title Социальные сети */
+  socialMedia?: SocialMedia[];
+}
+
+/**
+ * @title Подвал
+ */
+export interface FooterDef extends BlockDefProps {
+  content?: FooterContent;
+  /**
+   * @title Тип
+   * @default Footer
+   */
+  type: string;
 }

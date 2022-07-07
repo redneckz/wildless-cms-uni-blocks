@@ -1,4 +1,6 @@
+import type { BlockDefProps } from '../types';
 import type { BenefitsBlockContent } from './BenefitsBlock/BenefitsBlockContent';
+import type { ComparisonTableContent } from './ComparisonTable/ComparisonTableContent';
 import type { ExchangeRateTileContent } from './ExchangeRateTile/ExchangeRateTileContent';
 import type { FooterContent } from './Footer/FooterContent';
 import type { GalleryContent } from './Gallery/GalleryContent';
@@ -12,8 +14,10 @@ import type { PromoTileContent } from './PromoTile/PromoTileContent';
 import type { StepsBlockContent } from './StepsBlock/StepsBlockContent';
 import type { TextBlockContent } from './TextBlock/TextBlockContent';
 import type { TileContent } from './Tile/TileContent';
-import type { ComparisonTableContent } from './ComparisonTable/ComparisonTableContent';
 
+/**
+ * @hidden
+ */
 export type BlockContent =
   | HeaderContent
   | FooterContent

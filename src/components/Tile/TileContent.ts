@@ -1,3 +1,16 @@
-import type { BaseTileContent } from '../BaseTile/BaseTileContent';
+import type { BlockDefProps } from '../../types';
+import type { BaseTileCommonProps } from '../BaseTile/BaseTileProps';
 
-export type TileContent = BaseTileContent;
+export type TileContent = BaseTileCommonProps;
+
+/**
+ * @title Плитка
+ */
+export interface TileDef extends BlockDefProps {
+  content?: TileContent;
+  /**
+   * @title Тип
+   * @default Tile
+   */
+  type: string;
+}
