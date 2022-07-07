@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { Row } from '../ComparisonTable/ComparisonTableContent';
+import type { Row } from '../ComparisonTable/ComparisonTableContent';
 import { DIVIDER_CLASSES, FIRST_CELL_CLASSES } from './constants';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import { TableCarouselContainer } from './TableCarouselContainer';
@@ -10,12 +10,11 @@ export interface TableRowProps {
   className?: string;
   row: Row;
   activeCardIndex: number;
-  isFirstRow: boolean;
   isLastRow: boolean;
 }
 
 export const TableRow = JSX<TableRowProps>(
-  ({ row: { header, data }, activeCardIndex, isFirstRow, isLastRow }) => {
+  ({ row: { header, data }, activeCardIndex, isLastRow }) => {
     return (
       <TableRowContainer>
         <div
@@ -33,12 +32,7 @@ export const TableRow = JSX<TableRowProps>(
         {data?.length ? (
           <TableCarouselContainer activeCardIndex={activeCardIndex}>
             {data.map((cell, i) => (
-              <TableCell
-                key={String(i)}
-                cell={cell}
-                isFirstRow={isFirstRow}
-                isLastRow={isLastRow}
-              />
+              <TableCell key={String(i)} cell={cell} isLastRow={isLastRow} />
             ))}
           </TableCarouselContainer>
         ) : null}

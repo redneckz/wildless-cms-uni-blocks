@@ -1,5 +1,4 @@
-import { Column, RowHeader } from '../ComparisonTable/ComparisonTableContent';
-import { UniBlockProps } from '../../types';
+import type { Column, RowHeader } from '../ComparisonTable/ComparisonTableContent';
 
 export interface TariffsTableContent {
   title?: string;
@@ -7,5 +6,3 @@ export interface TariffsTableContent {
   columns?: Column[];
   visibleRowLength?: number;
 }
-
-export interface TariffsTableProps extends TariffsTableContent, UniBlockProps {}

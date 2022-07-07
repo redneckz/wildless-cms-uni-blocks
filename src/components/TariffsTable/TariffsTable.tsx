@@ -2,10 +2,13 @@ import { JSX } from '@redneckz/uni-jsx';
 import { ArrowButton } from '../../ui-kit/Button/ArrowButton';
 import { Title } from '../../ui-kit/Title/Title';
 import { Button } from '../../ui-kit/Button/Button';
-import type { RowData } from '../ComparisonTable/ComparisonTableContent';
-import { TariffsTableProps } from './TariffsTableContent';
 import { COLS_LENGTH_FOR_SCROLL, FIRST_CELL_CLASSES } from './constants';
 import { TableRow } from './TableRow';
+import type { RowData } from '../ComparisonTable/ComparisonTableContent';
+import type { UniBlockProps } from '../../types';
+import type { TariffsTableContent } from './TariffsTableContent';
+
+export interface TariffsTableProps extends TariffsTableContent, UniBlockProps {}
 
 export const TariffsTable = JSX<TariffsTableProps>(
   ({ className, context, title, rowHeaders, columns, visibleRowLength = 0 }) => {
@@ -42,7 +45,6 @@ export const TariffsTable = JSX<TariffsTableProps>(
               <TableRow
                 key={String(i)}
                 row={row}
-                isFirstRow={i === 0}
                 isLastRow={i + 1 === length}
                 activeCardIndex={activeCardIndex}
               />

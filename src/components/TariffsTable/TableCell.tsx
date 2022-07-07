@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { CellData } from '../ComparisonTable/ComparisonTableContent';
+import type { CellData } from '../ComparisonTable/ComparisonTableContent';
 import { DIVIDER_CLASSES } from './constants';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import { BlockItem } from '../../ui-kit/BlockItem/BlockItem';
@@ -9,10 +9,9 @@ import { Button } from '../../ui-kit/Button/Button';
 export interface TableCellProps {
   cell: CellData[];
   isLastRow: boolean;
-  isFirstRow: boolean;
 }
 
-export const TableCell = JSX<TableCellProps>(({ cell, isFirstRow, isLastRow }) => {
+export const TableCell = JSX<TableCellProps>(({ cell, isLastRow }) => {
   const cellWrapperClasses = `first:pl-0 pl-10 w-80 flex-grow flex flex-col border-solid border-main-divider border border-t-0 border-x-0 ${
     isLastRow ? 'border-t-0 rounded-b-md' : ''
   }`;
