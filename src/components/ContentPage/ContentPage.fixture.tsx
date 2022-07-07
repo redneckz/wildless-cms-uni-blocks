@@ -1,10 +1,10 @@
-import { context, mobileContext } from './setup-fixture';
+import { context, mobileContext } from '../../setup-fixture';
 
-import { Blocks } from './Blocks';
+import { Blocks } from '../Blocks';
 import { BlockDecorator, ContentPage } from './ContentPage';
-import { MobileBlocks } from './MobileBlocks';
+import { MobileBlocks } from '../MobileBlocks';
 import { toMobilePage } from './toMobilePage';
-import type { ContentPageDef } from './types';
+import type { ContentPageDef } from '../../types';
 
 const data = require('./ContentPage.page.json');
 

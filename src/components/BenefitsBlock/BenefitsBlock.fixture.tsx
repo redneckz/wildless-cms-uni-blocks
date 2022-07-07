@@ -1,4 +1,4 @@
-import { context } from './setup-fixture';
+import { context } from '../../setup-fixture';
 
 import { BenefitsBlock } from './BenefitsBlock';
 

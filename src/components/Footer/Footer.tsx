@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { UniBlockProps } from '../types';
-import { Logo } from '../ui-kit/Logo';
-import { SearchBar } from '../ui-kit/SearchBar';
+import type { UniBlockProps } from '../../types';
+import { Logo } from '../../ui-kit/Logo/Logo';
+import { SearchBar } from '../../ui-kit/SearchBar';
 import { Contacts } from './Contacts';
 import type { FooterContent } from './FooterContent';
 import { HorizontalNavigation } from './HorizontalNavigation';

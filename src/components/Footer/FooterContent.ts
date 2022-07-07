@@ -1,5 +1,5 @@
-import type { LinkContent } from '../model/LinkContent';
-import type { SitemapContent } from '../model/SitemapContent';
+import type { LinkContent } from '../../model/LinkContent';
+import type { SitemapContent } from '../../model/SitemapContent';
 
 export interface ContactInfo {
   text: string;

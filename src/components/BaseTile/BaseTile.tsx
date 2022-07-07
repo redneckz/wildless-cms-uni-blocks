@@ -1,14 +1,15 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { BaseTileContent } from './BaseTileContent';
-import { Img } from './ui-kit/Img';
-import type { BlockVersion } from './model/BlockVersion';
-import type { UniBlockProps } from './types';
-import { BlockItem } from './ui-kit/BlockItem';
-import { Title } from './ui-kit/Title';
-import { useLink } from './useLink';
-import { getColSpan } from './utils/getColSpan';
-import { Button } from './ui-kit/Button';
-import type { ButtonProps } from './ui-kit/ButtonProps';
+import type { BlockVersion } from '../../model/BlockVersion';
+import type { UniBlockProps } from '../../types';
+import { BlockItem } from '../../ui-kit/BlockItem/BlockItem';
+import { Button } from '../../ui-kit/Button/Button';
+import type { ButtonWithIconProps } from '../../ui-kit/Button/ButtonProps';
+import { Icon } from '../../ui-kit/Icon/Icon';
+import { Img } from '../../ui-kit/Img';
+import { Title } from '../../ui-kit/Title/Title';
+import { useLink } from '../../hooks/useLink';
+import { getColSpan } from '../../utils/getColSpan';
 
 export interface BaseTileProps extends BaseTileContent, UniBlockProps {}
 
@@ -81,6 +82,17 @@ function renderItems(items: string[] = [], version?: BlockVersion) {
   );
 }
 
-function renderButton(button: ButtonProps, i: number) {
-  return button?.text ? <Button key={String(i)} {...button} /> : null;
+function renderButton({ icon, ...button }: ButtonWithIconProps, i: number) {
+  if (!button?.text) return;
+
+  if (icon)
+    return (
+      <Button
+        key={String(i)}
+        appendLeft={<Icon name={icon} width="24" height="24" />}
+        {...button}
+      />
+    );
+
+  return <Button key={String(i)} {...button} />;
 }

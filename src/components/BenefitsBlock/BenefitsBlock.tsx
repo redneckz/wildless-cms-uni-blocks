@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { Benefit, BenefitsBlockContent } from './BenefitsBlockContent';
-import type { UniBlockProps } from './types';
-import { Icon } from './ui-kit/Icon';
+import type { UniBlockProps } from '../../types';
+import { Icon } from '../../ui-kit/Icon/Icon';
 
 export interface BenefitsBlockProps extends BenefitsBlockContent, UniBlockProps {}
 

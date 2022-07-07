@@ -1,7 +1,7 @@
-import { context } from './setup-fixture';
+import type { Picture } from '../../model/Picture';
+import { context } from '../../setup-fixture';
 import { ComparisonTable } from './ComparisonTable';
-import type { Column } from './ComparisonTable';
-import type { Picture } from './model/Picture';
+import type { Column } from './ComparisonTableContent';
 
 const image1: Picture = {
   src: 'card-1.png',
@@ -228,7 +228,7 @@ export default {
           className="col-span-12"
           title="Другие дебетовые карты Россельхозбанка"
           visibleRowLength={3}
-          coloredFirstColumn={true}
+          isColoredFirstColumn={true}
           context={context}
           rowHeaders={rowHeaders}
           columns={Array(2).fill(columns).flat()}

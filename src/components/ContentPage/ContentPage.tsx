@@ -1,8 +1,8 @@
 import { JSX, PropsWithChildren } from '@redneckz/uni-jsx';
-import type { BlockContent } from './BlockContent';
-import { LikeControl } from './LikeControl';
-import { Placeholder } from './Placeholder';
-import type { BlockDef, ContentPageDef, UniBlockProps } from './types';
+import type { BlockContent } from '../BlockContent';
+import { LikeControl } from '../LikeControl/LikeControl';
+import { Placeholder } from '../Placeholder/Placeholder';
+import type { BlockDef, ContentPageDef, UniBlockProps } from '../../types';
 
 interface BlockDecoratorProps<VNode> {
   blockClassName: string;

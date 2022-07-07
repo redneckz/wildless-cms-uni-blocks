@@ -1,4 +1,4 @@
-import type { IconName } from './ui-kit/IconProps';
+import type { IconName } from '../../ui-kit/Icon/IconProps';
 
 export interface Benefit {
   label: string;

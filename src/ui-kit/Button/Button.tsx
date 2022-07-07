@@ -1,7 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ButtonVersion } from '../model/ButtonVersion';
-import type { ButtonProps, ButtonInnerProps } from './ButtonProps';
-import { Icon } from './Icon';
+import type { ButtonVersion } from '../../model/ButtonVersion';
+import type { ButtonInnerProps, ButtonProps } from './ButtonProps';
 
 const buttonStyleMap: Record<ButtonVersion, string> = {
   primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
@@ -21,8 +20,7 @@ export const Button = JSX<ButtonProps>(
     className,
     text,
     aboveText,
-    icon,
-    iconProps,
+    appendLeft,
     href,
     target,
     onClick,
@@ -31,15 +29,10 @@ export const Button = JSX<ButtonProps>(
     rounded,
     version = 'none',
     ariaLabel,
+    ...rest
   }) => {
     const buttonInner = children ?? (
-      <ButtonInner
-        text={text}
-        aboveText={aboveText}
-        icon={icon}
-        iconProps={iconProps}
-        rounded={rounded}
-      />
+      <ButtonInner text={text} aboveText={aboveText} appendLeft={appendLeft} rounded={rounded} />
     );
 
     if (disabled) {
@@ -68,6 +61,7 @@ export const Button = JSX<ButtonProps>(
         onClick={onClick}
         aria-label={ariaLabel}
         role={!href ? 'button' : 'link'}
+        {...rest}
       >
         {buttonInner}
       </a>
@@ -75,28 +69,22 @@ export const Button = JSX<ButtonProps>(
   },
 );
 
-export const ButtonInner = JSX<ButtonInnerProps>(
-  ({ text, aboveText, icon, iconProps, rounded }) => {
-    const onlyIcon = !text && !aboveText && Boolean(icon);
+export const ButtonInner = JSX<ButtonInnerProps>(({ text, aboveText, appendLeft, rounded }) => {
+  const withoutText = !text && !aboveText && Boolean(appendLeft);
 
-    const buttonInnerClasses = `flex items-center justify-center ${
-      onlyIcon
-        ? 'h-12 w-12 min-h-12 min-w-12 justify-center'
-        : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`
-    }  ${rounded ? 'rounded-full' : ''}`;
+  const buttonInnerClasses = `flex items-center justify-center ${
+    withoutText ? 'h-12 w-12 min-h-12 min-w-12' : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`
+  } ${rounded ? 'rounded-full' : ''}`;
 
-    return (
-      <div className={buttonInnerClasses}>
-        {icon && (
-          <div>
-            <Icon name={icon} width="24" height="24" {...iconProps} />
-          </div>
-        )}
+  return (
+    <div className={buttonInnerClasses}>
+      {appendLeft ? appendLeft : null}
+      {!withoutText ? (
         <div>
           <div className="text-xxs text-left">{aboveText}</div>
           <div className="text-sm font-medium text-left">{text}</div>
         </div>
-      </div>
-    );
-  },
-);
+      ) : null}
+    </div>
+  );
+});

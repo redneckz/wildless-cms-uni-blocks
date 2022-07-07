@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { UniBlockProps } from '../types';
-import { Button } from '../ui-kit/Button';
-import { useLink } from '../useLink';
+import type { UniBlockProps } from '../../types';
+import { Button } from '../../ui-kit/Button/Button';
+import { useLink } from '../../hooks/useLink';
 import type { ContactInfo } from './FooterContent';
 
 export interface ContactsProps extends UniBlockProps {
@@ -18,6 +18,7 @@ export const Contacts = JSX<ContactsProps>(({ className, items, hasButton, conte
       {items?.length ? items.map(renderContact) : null}
       {hasButton ? (
         <Button
+          version="primary"
           className="my-4"
           {...useLink(
             { router, handlerDecorator },

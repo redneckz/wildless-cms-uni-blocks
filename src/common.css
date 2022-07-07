@@ -31,6 +31,36 @@
   --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */
 }
 
+[data-theme='eo2'] {
+  --color-primary-main: 255, 204, 0;
+  --color-primary-hover: 187, 151, 39;
+  --color-primary-active: 126, 99, 12;
+  --color-secondary-hover: 241, 236, 221;
+  --color-secondary-active: 229, 222, 199;
+  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */
+  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */
+}
+
+[data-theme='eo3'] {
+  --color-primary-main: 225, 186, 30;
+  --color-primary-hover: 187, 151, 39;
+  --color-primary-active: 126, 99, 12;
+  --color-secondary-hover: 241, 236, 221;
+  --color-secondary-active: 229, 222, 199;
+  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */
+  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */
+}
+
+[data-theme='eo4'] {
+  --color-primary-main: 233, 191, 23;
+  --color-primary-hover: 187, 151, 39;
+  --color-primary-active: 126, 99, 12;
+  --color-secondary-hover: 241, 236, 221;
+  --color-secondary-active: 229, 222, 199;
+  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */
+  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */
+}
+
 @tailwind components;
 @tailwind utilities;
 
