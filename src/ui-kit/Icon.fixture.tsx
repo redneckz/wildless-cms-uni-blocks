@@ -1,6 +1,6 @@
 import '../setup-fixture';
-import { Icon } from './Icon';
-import { IconMap, IconName } from './IconProps';
+import { Icon } from './Icon/Icon';
+import { IconMap, IconName } from './Icon/IconProps';
 
 export default {
   all: (

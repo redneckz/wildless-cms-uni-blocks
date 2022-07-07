@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../types';
-import { Icon } from './Icon';
+import { Icon } from './Icon/Icon';
 
 export const SearchBar = JSX<UniBlockProps>(({ className, context }) => {
   const { term, setTerm } = context.useSearch();

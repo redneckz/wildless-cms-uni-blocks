@@ -33492,19 +33492,19 @@ const building = {
 
 
 
-const TariffsTable_GRADIENT = "bg-gradient-to-r from-main-gradient-start to-main-gradient-end";
-const TariffsTable_DIVIDER_CLASSES = "border-main-divider border border-t-0 border-x-0";
-const TariffsTable_FIRST_CELL_CLASSES = "w-[354px] flex-shrink-0";
+const TariffsTable_GRADIENT = 'bg-gradient-to-r from-main-gradient-start to-main-gradient-end';
+const TariffsTable_DIVIDER_CLASSES = 'border-main-divider border border-t-0 border-x-0';
+const TariffsTable_FIRST_CELL_CLASSES = 'w-[354px] flex-shrink-0';
 const TariffsTable_COLS_LENGTH_FOR_SCROLL = 2;
 const TariffsTable_COLUMN_WIDTH = 4 * 80 + 40; // w-80 + pl-10 = 360px
-const TariffsTable = JSX(({ className, context, title, rowHeaders, columns, visibleRowLength = 0, coloredFirstColumn = false }) => {
+const TariffsTable = JSX(({ className, context, title, rowHeaders, columns, visibleRowLength = 0, coloredFirstColumn = false, }) => {
     const [activeCardIndex, setActiveCardIndex] = context.useState(0);
     const [isShowAllRow, setIsShowAllRow] = context.useState(!visibleRowLength);
     const colData = columns?.map(({ data }) => data) || [];
     const rowData = rowHeaders
         ?.map((header, i) => ({
         header,
-        data: colData.map((col) => col?.[i] || [{}])
+        data: colData.map((col) => col?.[i] || [{}]),
     }))
         .slice(0, isShowAllRow ? rowHeaders.length : visibleRowLength);
     const nextClick = () => setActiveCardIndex(activeCardIndex + 1);
@@ -33513,22 +33513,22 @@ const TariffsTable = JSX(({ className, context, title, rowHeaders, columns, visi
     const isScrollAvailable = colData?.length && colData.length > TariffsTable_COLS_LENGTH_FOR_SCROLL;
     const showNextButton = isScrollAvailable && colData?.length - activeCardIndex > TariffsTable_COLS_LENGTH_FOR_SCROLL;
     const showPrevButton = isScrollAvailable && activeCardIndex > 0;
-    return (jsxs("section", { className: `bg-white font-sans py-[50px] pl-[50px] overflow-hidden text-primary-text relative ${className || ""}`, children: [jsx(Title, { className: "font-medium m-0 max-w-[47rem] text-center mb-9 mx-auto", children: title }), rowData?.length ? (jsxs("div", { className: "relative", children: [rowData.map((...mapProps) => renderRow(mapProps, activeCardIndex, coloredFirstColumn)), isScrollAvailable ? (jsx("div", { children: jsxs("div", { className: "absolute top-7 right-7 z-10", children: [jsx(ArrowButton, { onClick: nextClick, disabled: !showNextButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" }), jsx(ArrowButton, { className: "mt-4 rotate-180", onClick: prevClick, disabled: !showPrevButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })] }) })) : null] })) : null, isScrollAvailable ? (jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })) : null, visibleRowLength ? (jsx("div", { className: "pr-[50px]", children: jsxs("div", { className: "flex w-full", children: [jsx("div", { className: TariffsTable_FIRST_CELL_CLASSES }), jsx(Button, { onClick: showToggle, className: "mt-5 flex-1 border-main-stroke border-solid border text-primary-text bg-white hover:border-primary-main hover:text-primary-main", children: jsx("div", { className: "text-xs py-[11px]", children: !isShowAllRow ? "Показать все параметры" : "Скрыть" }) })] }) })) : null] }));
+    return (jsxs("section", { className: `bg-white font-sans py-[50px] pl-[50px] overflow-hidden text-primary-text relative ${className || ''}`, children: [jsx(Title, { className: "font-medium m-0 max-w-[47rem] text-center mb-9 mx-auto", children: title }), rowData?.length ? (jsxs("div", { className: "relative", children: [rowData.map((...mapProps) => renderRow(mapProps, activeCardIndex, coloredFirstColumn)), isScrollAvailable ? (jsx("div", { children: jsxs("div", { className: "absolute top-7 right-7 z-10", children: [jsx(ArrowButton, { onClick: nextClick, disabled: !showNextButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" }), jsx(ArrowButton, { className: "mt-4 rotate-180", onClick: prevClick, disabled: !showPrevButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })] }) })) : null] })) : null, isScrollAvailable ? (jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })) : null, visibleRowLength ? (jsx("div", { className: "pr-[50px]", children: jsxs("div", { className: "flex w-full", children: [jsx("div", { className: TariffsTable_FIRST_CELL_CLASSES }), jsx(Button, { onClick: showToggle, className: "mt-5 flex-1 border-main-stroke border-solid border text-primary-text bg-white hover:border-primary-main hover:text-primary-main", children: jsx("div", { className: "text-xs py-[11px]", children: !isShowAllRow ? 'Показать все параметры' : 'Скрыть' }) })] }) })) : null] }));
 });
 const TariffsTable_TableRow = JSX(({ children }) => (jsx("div", { className: "self-start flex flex-col", children: jsx("div", { className: "flex", children: children }) })));
 const TariffsTable_TableCarouselContainer = JSX(({ children, activeCardIndex }) => (jsx("div", { className: "flex flex-grow overflow-hidden ", children: jsx("div", { className: "flex flex-grow duration-1000", style: { transform: `translateX(-${activeCardIndex * TariffsTable_COLUMN_WIDTH}px)` }, children: children }) })));
 const renderRow = ([{ header, data }, i, { length }], activeCardIndex, coloredFirstColumn) => {
     const isLastRow = i + 1 === length;
-    return (jsxs(TariffsTable_TableRow, { children: [jsx("div", { className: `text-sm py-5 ${TariffsTable_FIRST_CELL_CLASSES} ${TariffsTable_DIVIDER_CLASSES} ${!isLastRow ? "border-solid" : ""}`, children: jsxs("div", { className: "flex items-center text-primary-text", children: [header?.icon && (jsx(Icon, { className: "pr-[14px]", name: header.icon, width: "24px", height: "24px" })), header?.title] }) }), jsx(TariffsTable_TableCarouselContainer, { activeCardIndex: activeCardIndex, children: data.map((cell, idx) => renderCell(cell, idx, isLastRow, i === 0, coloredFirstColumn)) })] }, String(i)));
+    return (jsxs(TariffsTable_TableRow, { children: [jsx("div", { className: `text-sm py-5 ${TariffsTable_FIRST_CELL_CLASSES} ${TariffsTable_DIVIDER_CLASSES} ${!isLastRow ? 'border-solid' : ''}`, children: jsxs("div", { className: "flex items-center text-primary-text", children: [header?.icon && (jsx(Icon, { className: "pr-[14px]", name: header.icon, width: "24px", height: "24px" })), header?.title] }) }), jsx(TariffsTable_TableCarouselContainer, { activeCardIndex: activeCardIndex, children: data.map((cell, idx) => renderCell(cell, idx, isLastRow, i === 0, coloredFirstColumn)) })] }, String(i)));
 };
 const renderCell = (cell, i, isLastRow, isFirstRow, coloredFirstColumn) => {
     const fillGradient = coloredFirstColumn && i === 0;
-    const cellWrapperClasses = `first:pl-0 pl-10 w-80 flex-grow flex flex-col border-solid border-main-divider border border-t-0 border-x-0 ${isLastRow ? "border-t-0 rounded-b-md" : ""} ${fillGradient ? TariffsTable_GRADIENT : ""}`;
-    const cellClasses = `h-full ${TariffsTable_DIVIDER_CLASSES} ${fillGradient && isFirstRow ? "border-t" : ""}`;
+    const cellWrapperClasses = `first:pl-0 pl-10 w-80 flex-grow flex flex-col border-solid border-main-divider border border-t-0 border-x-0 ${isLastRow ? 'border-t-0 rounded-b-md' : ''} ${fillGradient ? TariffsTable_GRADIENT : ''}`;
+    const cellClasses = `h-full ${TariffsTable_DIVIDER_CLASSES} ${fillGradient && isFirstRow ? 'border-t' : ''}`;
     return (jsx("div", { className: cellWrapperClasses, children: jsx("div", { className: cellClasses, children: cell.map((item, i) => TariffsTable_renderCellInner(item, i, fillGradient)) }) }, String(i)));
 };
-const TariffsTable_renderCellInner = ({ label, description, items, icons, image, buttons }, i, fillGradient) => (jsxs("div", { className: "first:pt-5 last:pb-5", children: [i > 0 && (jsx("div", { className: "border-main-divider border border-solid border-t-0 border-x-0 my-4" })), label && (jsx("h5", { className: `text-xl font-medium m-0 ${fillGradient ? "text-white" : ""}`, children: label })), description && (jsx("div", { className: `text-sm opacity-80 ${fillGradient ? "text-white" : "text-secondary-text"}`, children: description })), icons && (jsx("div", { children: icons.map((icon, idx) => (jsx(Icon, { name: icon, width: "56px", height: "56px" }, String(idx)))) })), items && (jsx("div", { className: "flex flex-col justify-between items-start", children: jsx("div", { children: items?.map(({ text, version }, idx) => (jsx(BlockItem, { text: text, version: version }))) }) })), image && jsx(Img, { image: image }), buttons &&
-            buttons.map((button, idx) => (jsx(Button, { className: `${idx > 0 ? "ml-3" : ""}`, ...button }, String(idx))))] }, String(i)));
+const TariffsTable_renderCellInner = ({ label, description, items, icons, image, buttons }, i, fillGradient) => (jsxs("div", { className: "first:pt-5 last:pb-5", children: [i > 0 && (jsx("div", { className: "border-main-divider border border-solid border-t-0 border-x-0 my-4" })), label && (jsx("h5", { className: `text-xl font-medium m-0 ${fillGradient ? 'text-white' : ''}`, children: label })), description && (jsx("div", { className: `text-sm ${fillGradient ? 'text-white' : 'text-secondary-text'}`, children: description })), icons && (jsx("div", { children: icons.map((icon, idx) => (jsx(Icon, { name: icon, width: "56px", height: "56px" }, String(idx)))) })), items && (jsx("div", { className: "flex flex-col justify-between items-start", children: jsx("div", { children: items?.map(({ text, version }, idx) => (jsx(BlockItem, { text: text, version: version }))) }) })), image && jsx(Img, { image: image }), buttons &&
+            buttons.map((button, idx) => (jsx(Button, { className: `${idx > 0 ? 'ml-3' : ''}`, ...button }, String(idx))))] }, String(i)));
 
 ;// CONCATENATED MODULE: ./src/components/TariffsTable/TariffsTable.fixture.tsx
 
@@ -33563,8 +33563,8 @@ const image4 = {
     format: 'webp',
     size: {
         width: 288,
-        height: 56
-    }
+        height: 56,
+    },
 };
 const TariffsTable_fixture_rowHeaders = [
     { title: 'Начисление процентов на остаток по счету', icon: 'OkIcon' },
@@ -33604,22 +33604,19 @@ const TariffsTable_fixture_columns = [
                 },
             ],
             [{ label: 'Нет' }],
+            [{ label: 'Платёжные системы картинкой' }, { image: image4 }],
             [
-                { label: 'Платёжные системы картинкой' },
-                { image: image4 },
-            ],
-            [
-                { label: "Платёжные системы иконками" },
+                { label: 'Платёжные системы иконками' },
                 { icons: ['VisaIcon', 'MirIcon', 'UnionPayIcon', 'JCBIcon', 'MasterCardIcon'] },
             ],
             [
                 {
                     label: 'Бесплатно',
                     items: [
-                        { text: "item 1", version: "secondary" },
-                        { text: "primary", version: "secondary" },
-                        { text: "secondary", version: "secondary" },
-                    ]
+                        { text: 'item 1', version: 'secondary' },
+                        { text: 'primary', version: 'primary' },
+                        { text: 'secondary', version: 'secondary' },
+                    ],
                 },
             ],
             [
@@ -33861,10 +33858,10 @@ const Tile_fixture_image4 = {
 
 
 /* harmony default export */ const BlockItem_fixture = ({
-    primary: (jsx(BlockItem, { text: "\u0421\u043E\u0432\u0435\u0440\u0448\u0430\u0439\u0442\u0435 \u043B\u044E\u0431\u044B\u0435 \u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u043A\u0443\u043F\u043A\u0438" })),
-    'primary without dot': (jsx(BlockItem, { text: "\u0421\u043E\u0432\u0435\u0440\u0448\u0430\u0439\u0442\u0435 \u043B\u044E\u0431\u044B\u0435 \u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u043A\u0443\u043F\u043A\u0438", isDotted: false })),
-    secondary: (jsx(BlockItem, { text: "\u0421\u043E\u0432\u0435\u0440\u0448\u0430\u0439\u0442\u0435 \u043B\u044E\u0431\u044B\u0435 \u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u043A\u0443\u043F\u043A\u0438", version: "secondary" })),
-    'secondary without dot': (jsx(BlockItem, { text: "\u0421\u043E\u0432\u0435\u0440\u0448\u0430\u0439\u0442\u0435 \u043B\u044E\u0431\u044B\u0435 \u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u043A\u0443\u043F\u043A\u0438", isDotted: false, version: "secondary" }))
+    primary: jsx(BlockItem, { text: "\u0421\u043E\u0432\u0435\u0440\u0448\u0430\u0439\u0442\u0435 \u043B\u044E\u0431\u044B\u0435 \u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u043A\u0443\u043F\u043A\u0438" }),
+    'primary without dot': jsx(BlockItem, { text: "\u0421\u043E\u0432\u0435\u0440\u0448\u0430\u0439\u0442\u0435 \u043B\u044E\u0431\u044B\u0435 \u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u043A\u0443\u043F\u043A\u0438", isDotted: false }),
+    secondary: jsx(BlockItem, { text: "\u0421\u043E\u0432\u0435\u0440\u0448\u0430\u0439\u0442\u0435 \u043B\u044E\u0431\u044B\u0435 \u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u043A\u0443\u043F\u043A\u0438", version: "secondary" }),
+    'secondary without dot': (jsx(BlockItem, { text: "\u0421\u043E\u0432\u0435\u0440\u0448\u0430\u0439\u0442\u0435 \u043B\u044E\u0431\u044B\u0435 \u043B\u0438\u0447\u043D\u044B\u0435 \u043F\u043E\u043A\u0443\u043F\u043A\u0438", isDotted: false, version: "secondary" })),
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Button/Button.fixture.tsx

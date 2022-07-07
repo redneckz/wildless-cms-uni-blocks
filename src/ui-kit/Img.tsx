@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { Picture, ImgSource } from '../model/Picture';
+import type { ImgSource, Picture } from '../model/Picture';
 
 export interface TextWithImageProps {
   className?: string;
