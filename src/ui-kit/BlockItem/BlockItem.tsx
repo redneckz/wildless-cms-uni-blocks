@@ -8,26 +8,32 @@ export interface BlockItemContent {
 export interface BlockItemProps extends BlockItemContent {
   className?: string;
   version?: BlockItemVersion;
+  isDotted?: boolean;
 }
 
 const listStyleMap: Record<BlockItemVersion, string> = {
   primary: 'bg-primary-main',
-  secondary: 'bg-white',
+  secondary: 'bg-secondary-text',
 };
 
 const textStyleMap: Record<BlockItemVersion, string> = {
   primary: 'text-primary-text',
-  secondary: 'text-white',
+  secondary: 'text-secondary-text',
+};
+
+const dotStyleMap: Record<BlockItemVersion, string> = {
+  primary: 'w-[8px] h-[8px] min-w-[8px] min-h-[8px] mt-2 rounded-full',
+  secondary: 'w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
 };
 
 export const BlockItem = JSX<BlockItemProps>(
-  ({ className, text, children, version = 'primary' }) => {
+  ({ className, isDotted = true, text, children, version = 'primary' }) => {
     return (
       <div className={`inline-block flex ${className || ''}`} role="listitem">
-        <div
-          className={`inline-block w-[8px] h-[8px] min-w-[8px] min-h-[8px] rounded-full mt-2 ${listStyleMap[version]}`}
-        ></div>
-        <span className={`text-base font-normal font-sans mx-3 ${textStyleMap[version]}`}>
+        {isDotted && (
+          <div className={`inline-block mr-3 ${dotStyleMap[version]} ${listStyleMap[version]}`} />
+        )}
+        <span className={`text-base font-normal font-sans mr-3 ${textStyleMap[version]}`}>
           {text || children}
         </span>
       </div>

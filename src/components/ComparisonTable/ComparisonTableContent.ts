@@ -1,6 +1,7 @@
 import type { LinkContent } from '../../model/LinkContent';
 import type { Picture } from '../../model/Picture';
-import type { ButtonProps } from '../../ui-kit/Button/ButtonProps';
+import type { BlockItemProps } from '../../ui-kit/BlockItem/BlockItem';
+import type { ButtonWithIconProps } from '../../ui-kit/Button/ButtonProps';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
 
 export type Row = {
@@ -13,9 +14,10 @@ export type RowData = Row[] | undefined;
 export interface CellData {
   label?: string;
   description?: string;
+  items?: BlockItemProps[];
   icons?: IconName[];
   image?: Picture;
-  buttons?: ButtonProps[];
+  buttons?: ButtonWithIconProps[];
 }
 
 export interface ColumnHeader {
