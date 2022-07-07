@@ -18,16 +18,16 @@ export type {
   LikeService,
   HandlerDecorator,
   Search,
-} from './ContentPageContext';
+} from './components/ContentPage/ContentPageContext';
 
-export { ContentPageHead } from './ContentPageHead';
-export type { BlockDecorator } from './ContentPage';
-export { ContentPage } from './ContentPage';
-export { toMobilePage } from './toMobilePage';
+export { ContentPageHead } from './components/ContentPage/ContentPageHead';
+export type { BlockDecorator } from './components/ContentPage/ContentPage';
+export { ContentPage } from './components/ContentPage/ContentPage';
+export { toMobilePage } from './components/ContentPage/toMobilePage';
 
-export { Blocks } from './Blocks';
-export type { BlockContent } from './BlockContent';
-export { MobileBlocks } from './MobileBlocks';
+export { Blocks } from './components/Blocks';
+export type { BlockContent } from './components/BlockContent';
+export { MobileBlocks } from './components/MobileBlocks';
 
 export * as url from './utils/url';
 export { joinList } from './utils/joinList';

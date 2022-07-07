@@ -3,7 +3,7 @@ import { setup } from '@redneckz/uni-jsx';
 import runtime from 'react/jsx-runtime';
 import { useEffect, useState } from 'react';
 import { DaDataAPI } from './api/DaDataAPI';
-import type { ContentPageContext } from './ContentPageContext';
+import type { ContentPageContext } from './components/ContentPage/ContentPageContext';
 
 const { jsx, jsxs } = runtime as any;
 setup(jsx, jsxs);

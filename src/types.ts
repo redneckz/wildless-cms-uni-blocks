@@ -1,5 +1,5 @@
-import type { BlockContent } from './BlockContent';
-import type { ContentPageContext } from './ContentPageContext';
+import type { BlockContent } from './components/BlockContent';
+import type { ContentPageContext } from './components/ContentPage/ContentPageContext';
 import type { BlockVersion } from './model/BlockVersion';
 
 export type ColorPalette = 'pc' | 'bc' | 'eo';
