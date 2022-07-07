@@ -6,7 +6,7 @@
       },
       "staticDistDir": "./docs",
       "url": [
-        "http://localhost/_renderer.html?_fixtureId=%7B%22path%22%3A%22src%2FContentPage.fixture.tsx%22%2C%22name%22%3A%22default%22%7D"
+        "http://localhost/_renderer.html?_fixtureId=%7B%22path%22%3A%22src%2Fcomponents%2FContentPage%2FContentPage.fixture.tsx%22%2C%22name%22%3A%22default%22%7D"
       ]
     },
     "assert": {
