@@ -1,8 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { UniBlockProps } from '../../types';
 import { Button } from '../../ui-kit/Button/Button';
-import { Checkbox } from '../../ui-kit/Checkbox';
-import { InputRange } from '../../ui-kit/InputRange';
+import { Checkbox } from '../../ui-kit/Checkbox/Checkbox';
+import { InputRange } from '../../ui-kit/InputRange/InputRange';
 import { clamp } from '../../utils/clamp';
 
 export interface CreditCalculatorProps extends UniBlockProps {}

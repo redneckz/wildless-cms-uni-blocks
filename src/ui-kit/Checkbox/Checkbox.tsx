@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { CheckboxProps } from './CheckboxProps';
-import { SVG } from './SVG';
+import { SVG } from '../SVG';
 
 const CHECK_PATHS = [
   {
