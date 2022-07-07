@@ -33685,6 +33685,9 @@ const image4 = {
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Icon/IconProps.ts
+/**
+ * Icons sorted by name
+ */
 var IconMap;
 (function (IconMap) {
     IconMap[IconMap["ActualBalanceIcon"] = 0] = "ActualBalanceIcon";
@@ -33695,18 +33698,18 @@ var IconMap;
     IconMap[IconMap["DollarIcon"] = 5] = "DollarIcon";
     IconMap[IconMap["EmptyWalletIcon"] = 6] = "EmptyWalletIcon";
     IconMap[IconMap["EuroIcon"] = 7] = "EuroIcon";
-    IconMap[IconMap["GridIcon"] = 8] = "GridIcon";
-    IconMap[IconMap["LoupeIcon"] = 9] = "LoupeIcon";
-    IconMap[IconMap["NewDocIcon"] = 10] = "NewDocIcon";
-    IconMap[IconMap["OkIcon"] = 11] = "OkIcon";
-    IconMap[IconMap["PassSendIcon"] = 12] = "PassSendIcon";
-    IconMap[IconMap["PercentageSquareIcon"] = 13] = "PercentageSquareIcon";
-    IconMap[IconMap["PlayMarketIcon"] = 14] = "PlayMarketIcon";
-    IconMap[IconMap["ProfileIcon"] = 15] = "ProfileIcon";
-    IconMap[IconMap["SignDocsIcon"] = 16] = "SignDocsIcon";
-    IconMap[IconMap["TelegramIcon"] = 17] = "TelegramIcon";
-    IconMap[IconMap["VKIcon"] = 18] = "VKIcon";
-    IconMap[IconMap["GlassIcon"] = 19] = "GlassIcon";
+    IconMap[IconMap["GlassIcon"] = 8] = "GlassIcon";
+    IconMap[IconMap["GridIcon"] = 9] = "GridIcon";
+    IconMap[IconMap["LoupeIcon"] = 10] = "LoupeIcon";
+    IconMap[IconMap["NewDocIcon"] = 11] = "NewDocIcon";
+    IconMap[IconMap["OkIcon"] = 12] = "OkIcon";
+    IconMap[IconMap["PassSendIcon"] = 13] = "PassSendIcon";
+    IconMap[IconMap["PercentageSquareIcon"] = 14] = "PercentageSquareIcon";
+    IconMap[IconMap["PlayMarketIcon"] = 15] = "PlayMarketIcon";
+    IconMap[IconMap["ProfileIcon"] = 16] = "ProfileIcon";
+    IconMap[IconMap["SignDocsIcon"] = 17] = "SignDocsIcon";
+    IconMap[IconMap["TelegramIcon"] = 18] = "TelegramIcon";
+    IconMap[IconMap["VKIcon"] = 19] = "VKIcon";
 })(IconMap || (IconMap = {}));
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Icon/Icon.fixture.tsx

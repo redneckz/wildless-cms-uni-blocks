@@ -18,5 +18,5 @@ export interface LinkContent {
   text?: string;
   /** @title URL (href) */
   href?: string;
-  target?: Target | string;
+  target?: Target;
 }

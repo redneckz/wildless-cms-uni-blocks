@@ -1,3 +1,6 @@
+/**
+ * Icons sorted by name
+ */
 export enum IconMap {
   'ActualBalanceIcon',
   'AppleIcon',
@@ -7,6 +10,7 @@ export enum IconMap {
   'DollarIcon',
   'EmptyWalletIcon',
   'EuroIcon',
+  'GlassIcon',
   'GridIcon',
   'LoupeIcon',
   'NewDocIcon',
@@ -18,7 +22,6 @@ export enum IconMap {
   'SignDocsIcon',
   'TelegramIcon',
   'VKIcon',
-  'GlassIcon',
 }
 
 /**
@@ -32,6 +35,7 @@ export enum IconMap {
  *    "Доллар",
  *    "Кошелек",
  *    "Евро",
+ *    "Зеркало"
  *    "Сетка",
  *    "Лупа",
  *    "Новый документ",
@@ -43,7 +47,6 @@ export enum IconMap {
  *    "Подписанные документы",
  *    "Лого «Telegram»",
  *    "Лого «VK»",
- *    "Зеркало"
  *  ]
  */
 export type IconName = keyof typeof IconMap;
