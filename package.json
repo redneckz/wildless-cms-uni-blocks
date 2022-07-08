@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.77",
+  "version": "0.2.78",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.js",
@@ -84,7 +84,7 @@
     "postbuild:lib": "replace-in-file --configFile=replace-config.lib.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
     "bundle": "rimraf ./bundle && rollup -c && npm run build:schema",
-    "build:schema": "ts-json-schema-generator --path './src/**/*Content.ts' --additional-properties --validation-keywords enumNames  --validation-keywords required --no-type-check --type '*' -o ./bundle/blocks.schema.json",
+    "build:schema": "ts-json-schema-generator --path './src/**/*Content.ts' --additional-properties --validation-keywords enumNames --validation-keywords required --no-type-check --type '*' -o ./bundle/blocks.schema.json",
     "build:style": "postcss './src/**/*.css' --env production --dir ./lib",
     "build:icons": "svgo -f ./src/icons -o ./cosmos-static/icons",
     "size": "size-limit",
