@@ -4,12 +4,13 @@ import type { IconProps } from './IconProps';
 
 export const Icon = JSX<IconProps>(
   ({ className, name, alt = `Icon ${name}`, title = alt, ...imgProps }) => (
-    <img
-      className={className}
-      src={`${projectSettings.CDN || ''}icons/${name}.svg`}
-      alt={alt}
-      title={title}
-      {...imgProps}
-    />
+    <svg className={className} {...imgProps} aria-hidden="true">
+      {title ? <title>{title}</title> : null}
+      {alt ? <desc>{alt}</desc> : null}
+      <use
+        href={`${projectSettings.CDN || ''}icons/${name}.svg#icon`}
+        xlinkHref={`${projectSettings.CDN || ''}icons/${name}.svg#icon`}
+      ></use>
+    </svg>
   ),
 );
