@@ -1,5 +1,4 @@
-const MAX_YEARS_LENGTH = 5;
-const MONTHS_IN_YEAR = 12;
+import { MAX_YEARS_LENGTH, MONTHS_IN_YEAR } from './constants';
 
 export const getCreditTermYears = (minMonths: number, maxMonths: number) => {
   const creditTermYears: number[] = [];

@@ -31050,7 +31050,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 1767:
+/***/ 2818:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -32596,6 +32596,18 @@ const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step
 ;// CONCATENATED MODULE: ./src/utils/clamp.ts
 const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
 
+;// CONCATENATED MODULE: ./src/components/CreditCalculator/constants.ts
+const STEP_MONEY = 1000;
+const STEP_MONTHS = 1;
+const DEFAULT_MIN_SUM = 30000;
+const DEFAULT_MAX_SUM = 3000000;
+const DEFAULT_MIN_MONTHS = 1;
+const DEFAULT_MAX_MONTHS = 84;
+const DEFAULT_PAYMENT_TYPE = 'annuity';
+const DEFAULT_RATE = 5;
+const MAX_YEARS_LENGTH = 5;
+const MONTHS_IN_YEAR = 12;
+
 ;// CONCATENATED MODULE: ./src/components/CreditCalculator/getCalculatorParams.ts
 const getCalculatorParams = (params) => {
     const { tableRows, isSalaryEarner = false, isStateEmployee = false, isAnnuity = false } = params;
@@ -32610,7 +32622,7 @@ const getCalculatorParams = (params) => {
 };
 
 ;// CONCATENATED MODULE: ./src/components/CreditCalculator/getCreditRate.ts
-const DEFAULT_RATE = 5;
+
 const getCreditRate = (params) => {
     const { calculatorParams, isInsurance } = params;
     if (!calculatorParams)
@@ -32621,8 +32633,7 @@ const getCreditRate = (params) => {
 };
 
 ;// CONCATENATED MODULE: ./src/components/CreditCalculator/getCreditTermYears.ts
-const MAX_YEARS_LENGTH = 5;
-const MONTHS_IN_YEAR = 12;
+
 const getCreditTermYears = (minMonths, maxMonths) => {
     const creditTermYears = [];
     const totalYears = Math.ceil((maxMonths - minMonths) / 12);
@@ -32638,8 +32649,7 @@ const getCreditTermYears = (minMonths, maxMonths) => {
 
 ;// CONCATENATED MODULE: ./src/components/CreditCalculator/getMonthlyPayment.ts
 
-const DEFAULT_MIN_SUM = 30000;
-const DEFAULT_MAX_SUM = 3000000;
+
 const getMonthlyPayment = (params) => {
     const { calculatorParams, paymentType, rate, sum, months } = params;
     if (!calculatorParams)
@@ -32667,13 +32677,8 @@ const getMonthlyPayment = (params) => {
 
 
 
+
 const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
-const STEP_MONEY = 1000;
-const STEP_MONTHS = 1;
-const DEFAULT_MIN_MONTHS = 1;
-const DEFAULT_MAX_MONTHS = 84;
-const DEFAULT_PAYMENT_TYPE = 'annuity';
-const CreditCalculator_MONTHS_IN_YEAR = 12;
 const CreditCalculator = JSX(({ context, className }) => {
     const [moneyValue, setMoneyValue] = context.useState(350000);
     const [monthsValue, setMonthsValue] = context.useState(12);
@@ -32691,7 +32696,7 @@ const CreditCalculator = JSX(({ context, className }) => {
     });
     const creditTermYears = getCreditTermYears(calculatorParams.minMonths || DEFAULT_MIN_MONTHS, calculatorParams.maxMonths || DEFAULT_MAX_MONTHS);
     function handleButtonClick(value) {
-        setMonthsValue(clamp(value * CreditCalculator_MONTHS_IN_YEAR, calculatorParams?.minMonths || DEFAULT_MIN_MONTHS, calculatorParams?.maxMonths || DEFAULT_MAX_MONTHS));
+        setMonthsValue(clamp(value * MONTHS_IN_YEAR, calculatorParams?.minMonths || DEFAULT_MIN_MONTHS, calculatorParams?.maxMonths || DEFAULT_MAX_MONTHS));
     }
     return (jsx("section", { className: `font-sans text-primary-text bg-white p-4 ${className}`, children: jsxs("div", { className: `box-border p-12 flex flex-col justify-between ${borderStyle}`, children: [jsxs("div", { className: "flex justify-between", children: [jsxs("div", { className: "grow mr-11", children: [jsx(InputRange, { title: "\u0416\u0435\u043B\u0430\u0435\u043C\u0430\u044F \u0441\u0443\u043C\u043C\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u20BD", items: [
                                         `От ${addSpacesBetweenNumbers(String(calculatorParams.minSum))} рублей`,
@@ -39922,7 +39927,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(1767),
+  var _require = __webpack_require__(2818),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

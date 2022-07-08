@@ -6,6 +6,14 @@ import { Checkbox } from '../../ui-kit/Checkbox/Checkbox';
 import { InputRange } from '../../ui-kit/InputRange/InputRange';
 import { addSpacesBetweenNumbers } from '../../utils/addSpacesBetweenNumber';
 import { clamp } from '../../utils/clamp';
+import {
+  DEFAULT_MAX_MONTHS,
+  DEFAULT_MIN_MONTHS,
+  DEFAULT_PAYMENT_TYPE,
+  MONTHS_IN_YEAR,
+  STEP_MONEY,
+  STEP_MONTHS,
+} from './constants';
 import { getCalculatorParams } from './getCalculatorParams';
 import { getCreditRate } from './getCreditRate';
 import { getCreditTermYears } from './getCreditTermYears';
@@ -14,15 +22,6 @@ import { getMonthlyPayment } from './getMonthlyPayment';
 export interface CreditCalculatorProps extends UniBlockProps {}
 
 const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
-
-const STEP_MONEY = 1000;
-const STEP_MONTHS = 1;
-
-const DEFAULT_MIN_MONTHS = 1;
-const DEFAULT_MAX_MONTHS = 84;
-const DEFAULT_PAYMENT_TYPE = 'annuity';
-
-const MONTHS_IN_YEAR = 12;
 
 export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className }) => {
   const [moneyValue, setMoneyValue] = context.useState(350000);

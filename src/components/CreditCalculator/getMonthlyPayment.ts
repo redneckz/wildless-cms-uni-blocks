@@ -1,4 +1,5 @@
 import { clamp } from '../../utils/clamp';
+import { DEFAULT_MAX_SUM, DEFAULT_MIN_SUM } from './constants';
 import { CalculatorParams } from './CreditCalculatorContent';
 
 type PaymentType = 'annuity' | 'differentiated';
@@ -10,9 +11,6 @@ interface GetMonthlyPaymentParams {
   sum: number;
   months: number;
 }
-
-const DEFAULT_MIN_SUM = 30000;
-const DEFAULT_MAX_SUM = 3000000;
 
 export const getMonthlyPayment = (params: GetMonthlyPaymentParams) => {
   const { calculatorParams, paymentType, rate, sum, months } = params;
