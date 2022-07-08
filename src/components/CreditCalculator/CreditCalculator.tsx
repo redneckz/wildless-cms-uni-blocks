@@ -4,7 +4,7 @@ import { Button } from '../../ui-kit/Button/Button';
 import { Checkbox } from '../../ui-kit/Checkbox/Checkbox';
 import { InputRange } from '../../ui-kit/InputRange/InputRange';
 import { clamp } from '../../utils/clamp';
-import { defaultTable, getCalculatorParams, getMonthlyPayment } from './utils';
+import { defaultTable, getCalculatorParams, getCreditRate, getMonthlyPayment } from './utils';
 
 export interface CreditCalculatorProps extends UniBlockProps {}
 
@@ -29,16 +29,20 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
   const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(true);
   const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(true);
 
-  const calculatorParams = getCalculatorParams(
-    defaultTable,
-    true,
-    false,
-    isAnnuityChecked,
-    moneyValue,
-    isInsuranceChecked,
-  );
+  const calculatorParams = getCalculatorParams(defaultTable, true, false, isAnnuityChecked);
+  console.log('params', calculatorParams);
 
-  const montlyPayment = getMonthlyPayment('annuity', calculatorParams, moneyValue, monthsValue);
+  const rate = getCreditRate(calculatorParams, moneyValue, isInsuranceChecked);
+  console.log('rate', rate);
+
+  const montlyPayment = getMonthlyPayment(
+    'annuity',
+    calculatorParams,
+    moneyValue,
+    monthsValue,
+    rate || 0,
+  );
+  console.log('monthlyPayment', montlyPayment);
 
   const handleButtonClick = (value: number) => {
     setMonthsValue(
@@ -93,7 +97,7 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
             <div className="text-sm opacity-60">Ежемесячный платёж</div>
             <div className="text-lg mb-3">{montlyPayment.toFixed(0)} ₽</div>
             <div className="text-sm opacity-60">Ставка</div>
-            <div className="text-lg">{calculatorParams?.rate} %</div>
+            <div className="text-lg">{rate} %</div>
           </div>
         </div>
         <div className="flex items-center">

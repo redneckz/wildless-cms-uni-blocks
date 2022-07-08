@@ -1,6 +1,6 @@
 // Just a draft objects
 // TODO: Replace with async load from JSON
-const tableRow1: TableRow = {
+const tableRow1: CalculatorParams = {
   isSalaryEarner: true,
   isStateEmployee: true,
   isAnnuity: true,
@@ -13,7 +13,7 @@ const tableRow1: TableRow = {
   rateWithoutAnnuity: 16.5,
 };
 
-const tableRow2: TableRow = {
+const tableRow2: CalculatorParams = {
   isSalaryEarner: false,
   isStateEmployee: true,
   isAnnuity: true,
@@ -26,7 +26,7 @@ const tableRow2: TableRow = {
   rateWithoutAnnuity: 14.5,
 };
 
-const tableRow3: TableRow = {
+const tableRow3: CalculatorParams = {
   isSalaryEarner: true,
   isStateEmployee: false,
   isAnnuity: true,
@@ -39,7 +39,7 @@ const tableRow3: TableRow = {
   rateWithoutAnnuity: 11.5,
 };
 
-const tableRow4: TableRow = {
+const tableRow4: CalculatorParams = {
   isSalaryEarner: true,
   isStateEmployee: true,
   isAnnuity: false,
@@ -52,7 +52,7 @@ const tableRow4: TableRow = {
   rateWithoutAnnuity: 25.5,
 };
 
-const tableRow5: TableRow = {
+const tableRow5: CalculatorParams = {
   isSalaryEarner: true,
   isStateEmployee: true,
   isAnnuity: true,
@@ -65,7 +65,7 @@ const tableRow5: TableRow = {
   rateWithoutAnnuity: 4.5,
 };
 
-const tableRow6: TableRow = {
+const tableRow6: CalculatorParams = {
   isSalaryEarner: false,
   isStateEmployee: false,
   isAnnuity: true,
@@ -78,7 +78,7 @@ const tableRow6: TableRow = {
   rateWithoutAnnuity: 18.5,
 };
 
-const tableRow7: TableRow = {
+const tableRow7: CalculatorParams = {
   isSalaryEarner: false,
   isStateEmployee: true,
   isAnnuity: false,
@@ -91,7 +91,7 @@ const tableRow7: TableRow = {
   rateWithoutAnnuity: 14.5,
 };
 
-const tableRow8: TableRow = {
+const tableRow8: CalculatorParams = {
   isSalaryEarner: false,
   isStateEmployee: true,
   isAnnuity: true,
@@ -104,7 +104,7 @@ const tableRow8: TableRow = {
   rateWithoutAnnuity: 17.5,
 };
 
-const tableRow9: TableRow = {
+const tableRow9: CalculatorParams = {
   isSalaryEarner: true,
   isStateEmployee: false,
   isAnnuity: false,
@@ -117,7 +117,7 @@ const tableRow9: TableRow = {
   rateWithoutAnnuity: 18.5,
 };
 
-const tableRow10: TableRow = {
+const tableRow10: CalculatorParams = {
   isSalaryEarner: true,
   isStateEmployee: false,
   isAnnuity: true,
@@ -130,7 +130,7 @@ const tableRow10: TableRow = {
   rateWithoutAnnuity: 19.5,
 };
 
-const tableRow11: TableRow = {
+const tableRow11: CalculatorParams = {
   isSalaryEarner: true,
   isStateEmployee: true,
   isAnnuity: false,
@@ -143,7 +143,7 @@ const tableRow11: TableRow = {
   rateWithoutAnnuity: 10.5,
 };
 
-const tableRow12: TableRow = {
+const tableRow12: CalculatorParams = {
   isSalaryEarner: false,
   isStateEmployee: false,
   isAnnuity: false,
@@ -156,7 +156,7 @@ const tableRow12: TableRow = {
   rateWithoutAnnuity: 11.5,
 };
 
-const tableRow13: TableRow = {
+const tableRow13: CalculatorParams = {
   isSalaryEarner: false,
   isStateEmployee: true,
   isAnnuity: false,
@@ -169,7 +169,7 @@ const tableRow13: TableRow = {
   rateWithoutAnnuity: 22.5,
 };
 
-const tableRow14: TableRow = {
+const tableRow14: CalculatorParams = {
   isSalaryEarner: false,
   isStateEmployee: false,
   isAnnuity: true,
@@ -182,7 +182,7 @@ const tableRow14: TableRow = {
   rateWithoutAnnuity: 16.5,
 };
 
-const tableRow15: TableRow = {
+const tableRow15: CalculatorParams = {
   isSalaryEarner: false,
   isStateEmployee: false,
   isAnnuity: false,
@@ -195,7 +195,7 @@ const tableRow15: TableRow = {
   rateWithoutAnnuity: 44.5,
 };
 
-const tableRow16: TableRow = {
+const tableRow16: CalculatorParams = {
   isSalaryEarner: true,
   isStateEmployee: true,
   isAnnuity: false,
@@ -208,7 +208,7 @@ const tableRow16: TableRow = {
   rateWithoutAnnuity: 29.5,
 };
 
-export const defaultTable: TableRow[] = [
+export const defaultTable: CalculatorParams[] = [
   tableRow1,
   tableRow2,
   tableRow3,
@@ -227,7 +227,7 @@ export const defaultTable: TableRow[] = [
   tableRow16,
 ];
 
-export interface TableRow {
+export interface CalculatorParams {
   isSalaryEarner?: boolean;
   isStateEmployee?: boolean;
   isAnnuity?: boolean;
@@ -240,22 +240,12 @@ export interface TableRow {
   rateWithoutAnnuity?: number;
 }
 
-export interface CalculatorParams {
-  rate?: number;
-  minSum?: number;
-  maxSum?: number;
-  minMonths?: number;
-  maxMonths?: number;
-}
-
 // TODO: Replace params with object?
 export const getCalculatorParams = (
-  tableRows: TableRow[],
+  tableRows: CalculatorParams[],
   isSalaryEarner: boolean,
   isStateEmployee: boolean,
   isAnnuity: boolean,
-  sum: number,
-  insurance: boolean,
 ) => {
   const params = tableRows.find(
     (row) =>
@@ -264,26 +254,18 @@ export const getCalculatorParams = (
       row.isAnnuity === isAnnuity,
   );
 
-  // TODO: Return default values?
   if (!params) return {} as CalculatorParams;
 
-  if (params.isSalaryEarner === isSalaryEarner && params.isStateEmployee === isStateEmployee) {
-    const calculatorParams: CalculatorParams = {
-      minSum: params.minSum,
-      maxSum: params.maxSum,
-      minMonths: params.minMonths,
-      maxMonths: params.maxMonths,
-    };
+  return params;
+};
 
-    if (Number(params.minSum) <= sum && Number(params.maxSum) >= sum) {
-      if (insurance) {
-        calculatorParams.rate = params.rateWithAnnuity;
-      } else {
-        calculatorParams.rate = params.rateWithoutAnnuity;
-      }
+export const getCreditRate = (params: CalculatorParams, sum: number, insurance: boolean) => {
+  if (Number(params.minSum) <= sum && Number(params.maxSum) >= sum) {
+    if (insurance) {
+      return params.rateWithAnnuity;
+    } else {
+      return params.rateWithoutAnnuity;
     }
-
-    return calculatorParams;
   }
 };
 
@@ -295,14 +277,15 @@ export const getMonthlyPayment = (
   calculatorParams: CalculatorParams | undefined,
   sum: number,
   months: number,
+  rate: number,
 ) => {
   if (!calculatorParams) return 0;
 
   if (paymentType === 'annuity') {
-    const annuityCoef = Number(calculatorParams.rate) / 1200;
+    const annuityCoef = Number(rate) / 1200;
 
     return sum * (annuityCoef + annuityCoef / (Math.pow(1 + annuityCoef, months - 1) - 1));
   } else {
-    return sum / months + sum * (Number(calculatorParams.rate) / 12);
+    return sum / months + sum * (Number(rate) / 12);
   }
 };
