@@ -1,10 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { useCreditCalculatorData } from '../../hooks/useCreditCalculatorData';
 import { UniBlockProps } from '../../types';
 import { Button } from '../../ui-kit/Button/Button';
 import { Checkbox } from '../../ui-kit/Checkbox/Checkbox';
 import { InputRange } from '../../ui-kit/InputRange/InputRange';
 import { clamp } from '../../utils/clamp';
-import { defaultTable, getCalculatorParams, getCreditRate, getMonthlyPayment } from './utils';
+import { getCalculatorParams, getCreditRate, getMonthlyPayment } from './utils';
 
 export interface CreditCalculatorProps extends UniBlockProps {}
 
@@ -29,11 +30,11 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
   const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(true);
   const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(true);
 
-  const calculatorParams = getCalculatorParams(defaultTable, true, false, isAnnuityChecked);
-  console.log('params', calculatorParams);
+  const tableRows = useCreditCalculatorData(context.useAsyncData).rows;
+
+  const calculatorParams = getCalculatorParams({ tableRows, isAnnuity: isAnnuityChecked });
 
   const rate = getCreditRate(calculatorParams, moneyValue, isInsuranceChecked);
-  console.log('rate', rate);
 
   const montlyPayment = getMonthlyPayment(
     'annuity',
@@ -42,7 +43,6 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
     monthsValue,
     rate || 0,
   );
-  console.log('monthlyPayment', montlyPayment);
 
   const handleButtonClick = (value: number) => {
     setMonthsValue(

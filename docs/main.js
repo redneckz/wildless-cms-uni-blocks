@@ -31050,7 +31050,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 6143:
+/***/ 241:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31292,6 +31292,9 @@ const projectSettings = new (class {
     }
     get CDN() {
         return this._.CDN;
+    }
+    get CREDIT_CALCULATOR() {
+        return this._.CREDIT_CALCULATOR;
     }
 })();
 
@@ -32532,6 +32535,20 @@ const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { 
     editor: (jsx("div", { style: { background: "url('grid.svg')", height: '100%' }, children: jsx(ContentPage, { className: "bg-transparent", context: context, blocksRegistry: Blocks, data: data, blockDecorator: blockDecorator }) })),
 });
 
+;// CONCATENATED MODULE: ./src/hooks/useCreditCalculatorData.ts
+
+function useCreditCalculatorData(useAsyncData) {
+    const { data } = useAsyncData(creditCalculatorUrl(), fetchCreditCalculatorData);
+    return data || {};
+}
+async function fetchCreditCalculatorData() {
+    const response = await fetch(creditCalculatorUrl());
+    return await response.json();
+}
+function creditCalculatorUrl() {
+    return `/wcms-resources/${projectSettings.CREDIT_CALCULATOR || 'credit-calculator-data'}.json`;
+}
+
 ;// CONCATENATED MODULE: ./src/ui-kit/Checkbox/Checkbox.tsx
 
 
@@ -32576,220 +32593,11 @@ const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step
 const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
 
 ;// CONCATENATED MODULE: ./src/components/CreditCalculator/utils.ts
-// Just a draft objects
-// TODO: Replace with async load from JSON
-const tableRow1 = {
-    isSalaryEarner: true,
-    isStateEmployee: true,
-    isAnnuity: true,
-    isInsurance: true,
-    minSum: 30000,
-    maxSum: 3000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 12,
-    rateWithoutAnnuity: 16.5,
-};
-const tableRow2 = {
-    isSalaryEarner: false,
-    isStateEmployee: true,
-    isAnnuity: true,
-    isInsurance: true,
-    minSum: 15000,
-    maxSum: 2500000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 10,
-    rateWithoutAnnuity: 14.5,
-};
-const tableRow3 = {
-    isSalaryEarner: true,
-    isStateEmployee: false,
-    isAnnuity: true,
-    isInsurance: true,
-    minSum: 50000,
-    maxSum: 3000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 5,
-    rateWithoutAnnuity: 11.5,
-};
-const tableRow4 = {
-    isSalaryEarner: true,
-    isStateEmployee: true,
-    isAnnuity: false,
-    isInsurance: true,
-    minSum: 100000,
-    maxSum: 9000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 20,
-    rateWithoutAnnuity: 25.5,
-};
-const tableRow5 = {
-    isSalaryEarner: true,
-    isStateEmployee: true,
-    isAnnuity: true,
-    isInsurance: false,
-    minSum: 60000,
-    maxSum: 12000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 1,
-    rateWithoutAnnuity: 4.5,
-};
-const tableRow6 = {
-    isSalaryEarner: false,
-    isStateEmployee: false,
-    isAnnuity: true,
-    isInsurance: true,
-    minSum: 35000,
-    maxSum: 4500000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 8,
-    rateWithoutAnnuity: 18.5,
-};
-const tableRow7 = {
-    isSalaryEarner: false,
-    isStateEmployee: true,
-    isAnnuity: false,
-    isInsurance: true,
-    minSum: 60000,
-    maxSum: 6000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 16,
-    rateWithoutAnnuity: 14.5,
-};
-const tableRow8 = {
-    isSalaryEarner: false,
-    isStateEmployee: true,
-    isAnnuity: true,
-    isInsurance: false,
-    minSum: 70000,
-    maxSum: 7000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 17,
-    rateWithoutAnnuity: 17.5,
-};
-const tableRow9 = {
-    isSalaryEarner: true,
-    isStateEmployee: false,
-    isAnnuity: false,
-    isInsurance: true,
-    minSum: 80000,
-    maxSum: 8000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 18,
-    rateWithoutAnnuity: 18.5,
-};
-const tableRow10 = {
-    isSalaryEarner: true,
-    isStateEmployee: false,
-    isAnnuity: true,
-    isInsurance: false,
-    minSum: 90000,
-    maxSum: 9000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 19,
-    rateWithoutAnnuity: 19.5,
-};
-const tableRow11 = {
-    isSalaryEarner: true,
-    isStateEmployee: true,
-    isAnnuity: false,
-    isInsurance: false,
-    minSum: 100000,
-    maxSum: 10000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 10,
-    rateWithoutAnnuity: 10.5,
-};
-const tableRow12 = {
-    isSalaryEarner: false,
-    isStateEmployee: false,
-    isAnnuity: false,
-    isInsurance: true,
-    minSum: 110000,
-    maxSum: 11000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 12,
-    rateWithoutAnnuity: 11.5,
-};
-const tableRow13 = {
-    isSalaryEarner: false,
-    isStateEmployee: true,
-    isAnnuity: false,
-    isInsurance: false,
-    minSum: 120000,
-    maxSum: 12000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 22,
-    rateWithoutAnnuity: 22.5,
-};
-const tableRow14 = {
-    isSalaryEarner: false,
-    isStateEmployee: false,
-    isAnnuity: true,
-    isInsurance: false,
-    minSum: 130000,
-    maxSum: 13000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 13,
-    rateWithoutAnnuity: 16.5,
-};
-const tableRow15 = {
-    isSalaryEarner: false,
-    isStateEmployee: false,
-    isAnnuity: false,
-    isInsurance: false,
-    minSum: 140000,
-    maxSum: 15000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 44,
-    rateWithoutAnnuity: 44.5,
-};
-const tableRow16 = {
-    isSalaryEarner: true,
-    isStateEmployee: true,
-    isAnnuity: false,
-    isInsurance: false,
-    minSum: 150000,
-    maxSum: 16000000,
-    minMonths: 1,
-    maxMonths: 84,
-    rateWithAnnuity: 29,
-    rateWithoutAnnuity: 29.5,
-};
-const defaultTable = [
-    tableRow1,
-    tableRow2,
-    tableRow3,
-    tableRow4,
-    tableRow5,
-    tableRow6,
-    tableRow7,
-    tableRow8,
-    tableRow9,
-    tableRow10,
-    tableRow11,
-    tableRow12,
-    tableRow13,
-    tableRow14,
-    tableRow15,
-    tableRow16,
-];
 // TODO: Replace params with object?
-const getCalculatorParams = (tableRows, isSalaryEarner, isStateEmployee, isAnnuity) => {
+const getCalculatorParams = (props) => {
+    const { tableRows, isSalaryEarner = false, isStateEmployee = false, isAnnuity = false } = props;
+    if (!tableRows)
+        return {};
     const params = tableRows.find((row) => row.isSalaryEarner === isSalaryEarner &&
         row.isStateEmployee === isStateEmployee &&
         row.isAnnuity === isAnnuity);
@@ -32828,6 +32636,7 @@ const getMonthlyPayment = (paymentType, calculatorParams, sum, months, rate) => 
 
 
 
+
 const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
 // Not used yet
 const MIN_MONEY = 50000;
@@ -32843,12 +32652,10 @@ const CreditCalculator = JSX(({ context, className }) => {
     const [monthsValue, setMonthsValue] = context.useState(12);
     const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(true);
     const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(true);
-    const calculatorParams = getCalculatorParams(defaultTable, true, false, isAnnuityChecked);
-    console.log('params', calculatorParams);
+    const tableRows = useCreditCalculatorData(context.useAsyncData).rows;
+    const calculatorParams = getCalculatorParams({ tableRows, isAnnuity: isAnnuityChecked });
     const rate = getCreditRate(calculatorParams, moneyValue, isInsuranceChecked);
-    console.log('rate', rate);
     const montlyPayment = getMonthlyPayment('annuity', calculatorParams, moneyValue, monthsValue, rate || 0);
-    console.log('monthlyPayment', montlyPayment);
     const handleButtonClick = (value) => {
         setMonthsValue(clamp(value * MONTHS_IN_YEAR, calculatorParams?.minMonths || MIN_MONTHS, calculatorParams?.maxMonths || MAX_MONTHS));
     };
@@ -40076,7 +39883,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(6143),
+  var _require = __webpack_require__(241),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;
