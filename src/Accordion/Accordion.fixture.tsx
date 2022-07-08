@@ -28,30 +28,15 @@ const propsDocs: AccordionProps = {
   accordionItems: [
     {
       label: 'Accordion label 1',
-      components: [
-        {
-          name: 'Docs',
-          data: DOCS,
-        },
-      ],
+      docs: DOCS,
     },
     {
       label: 'Accordion label 2',
-      components: [
-        {
-          name: 'Docs',
-          data: DOCS,
-        },
-      ],
+      docs: DOCS,
     },
     {
       label: 'Accordion label 3',
-      components: [
-        {
-          name: 'Docs',
-          data: DOCS,
-        },
-      ],
+      docs: DOCS,
     },
   ],
 };
@@ -62,30 +47,15 @@ const propsText: AccordionProps = {
   accordionItems: [
     {
       label: 'Accordion label 1',
-      components: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-      ],
+      text: TEXT,
     },
     {
       label: 'Accordion label 2',
-      components: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-      ],
+      text: TEXT,
     },
     {
       label: 'Accordion label 3',
-      components: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-      ],
+      text: TEXT,
     },
   ],
 };
@@ -96,42 +66,16 @@ const propsTextAndDocs: AccordionProps = {
   accordionItems: [
     {
       label: 'Accordion label 1',
-      components: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-        {
-          name: 'Docs',
-          data: DOCS,
-        },
-      ],
+      text: TEXT,
     },
     {
       label: 'Accordion label 2',
-      components: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-        {
-          name: 'Docs',
-          data: DOCS,
-        },
-      ],
+      text: TEXT,
+      docs: DOCS,
     },
     {
       label: 'Accordion label 3',
-      components: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-        {
-          name: 'Docs',
-          data: DOCS,
-        },
-      ],
+      docs: DOCS,
     },
   ],
 };

@@ -1,18 +1,22 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { LinkContent } from '../model/LinkContent';
 import type { UniBlockProps } from '../types';
-import type { AccordionItemContent, AccordionComponentContent } from './AccordionContent';
+import { Doc } from '../ui-kit/Doc';
 import { Icon } from '../ui-kit/Icon';
-import ACCORDION_COMPONENTS from './AccordionComponents';
+import type { AccordionItemContent } from './AccordionContent';
 
 export interface AccordionItemProps extends AccordionItemContent, UniBlockProps {}
 
-export const AccordionItem = JSX<AccordionItemProps>(({ label, components, context }) => {
+export const AccordionItem = JSX<AccordionItemProps>(({ label, text, docs, context }) => {
   const [isActive, setIsActive] = context.useState(false);
-  const hasContent = components?.length;
+  const hasContent = Boolean(text) || docs?.length;
   const icon = isActive ? 'MinusIcon' : 'PlusIcon';
 
   const handleToggle = (e) => {
-    if (!hasContent) return null;
+    if (!hasContent) {
+      return;
+    }
+
     setIsActive(!isActive);
     const contentBlock =
       e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;
@@ -43,26 +47,26 @@ export const AccordionItem = JSX<AccordionItemProps>(({ label, components, conte
             isActive ? 'pb-5' : ''
           } text-sm transition-all duration-300 max-h-0 overflow-hidden group-last:last:pb-0 `}
         >
-          {components?.length ? components.map(renderComponent) : null}
+          {text && (
+            <AccordionContainer>
+              <p className="m-0">{text}</p>
+            </AccordionContainer>
+          )}
+          {docs?.length ? (
+            <AccordionContainer>
+              <ul className="list-none p-0">{docs.map(renderDoc)}</ul>
+            </AccordionContainer>
+          ) : null}
         </div>
       ) : null}
     </li>
   );
 });
 
-// TODO: draft, for dynamic rendering of components
+const renderDoc = (doc: LinkContent, i: number) => (
+  <li key={'doc' + i} className="mb-4 last:mb-0">
+    <Doc {...doc} />
+  </li>
+);
 
-const renderComponent = (component: AccordionComponentContent, i: number) => {
-  if (
-    component.name &&
-    component.data?.length &&
-    !ACCORDION_COMPONENTS.hasOwnProperty(component.name)
-  )
-    return null;
-  const callCurrentComponent = component.name && ACCORDION_COMPONENTS[component.name];
-  return (
-    <div className="mb-5 last:mb-0" key={'component' + i}>
-      {callCurrentComponent(component.data)}
-    </div>
-  );
-};
+const AccordionContainer = JSX(({ children }) => <div className="mb-5 last:mb-0">{children}</div>);
