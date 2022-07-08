@@ -31050,7 +31050,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 2241:
+/***/ 6143:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -32559,7 +32559,7 @@ const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step
         onChange(sanitizedValue);
     };
     const inputStyle = {
-        backgroundSize: `${(value * 100) / max - 1}% 100%`,
+        backgroundSize: `${(value * 100) / max - 0.5}% 100%`,
     };
     const handleBlur = () => {
         if (!onChange)
@@ -32575,6 +32575,258 @@ const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step
 ;// CONCATENATED MODULE: ./src/utils/clamp.ts
 const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
 
+;// CONCATENATED MODULE: ./src/components/CreditCalculator/utils.ts
+// Just a draft objects
+// TODO: Replace with async load from JSON
+const tableRow1 = {
+    isSalaryEarner: true,
+    isStateEmployee: true,
+    isAnnuity: true,
+    isInsurance: true,
+    minSum: 30000,
+    maxSum: 3000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 12,
+    rateWithoutAnnuity: 16.5,
+};
+const tableRow2 = {
+    isSalaryEarner: false,
+    isStateEmployee: true,
+    isAnnuity: true,
+    isInsurance: true,
+    minSum: 15000,
+    maxSum: 2500000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 10,
+    rateWithoutAnnuity: 14.5,
+};
+const tableRow3 = {
+    isSalaryEarner: true,
+    isStateEmployee: false,
+    isAnnuity: true,
+    isInsurance: true,
+    minSum: 50000,
+    maxSum: 3000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 5,
+    rateWithoutAnnuity: 11.5,
+};
+const tableRow4 = {
+    isSalaryEarner: true,
+    isStateEmployee: true,
+    isAnnuity: false,
+    isInsurance: true,
+    minSum: 100000,
+    maxSum: 9000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 20,
+    rateWithoutAnnuity: 25.5,
+};
+const tableRow5 = {
+    isSalaryEarner: true,
+    isStateEmployee: true,
+    isAnnuity: true,
+    isInsurance: false,
+    minSum: 60000,
+    maxSum: 12000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 1,
+    rateWithoutAnnuity: 4.5,
+};
+const tableRow6 = {
+    isSalaryEarner: false,
+    isStateEmployee: false,
+    isAnnuity: true,
+    isInsurance: true,
+    minSum: 35000,
+    maxSum: 4500000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 8,
+    rateWithoutAnnuity: 18.5,
+};
+const tableRow7 = {
+    isSalaryEarner: false,
+    isStateEmployee: true,
+    isAnnuity: false,
+    isInsurance: true,
+    minSum: 60000,
+    maxSum: 6000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 16,
+    rateWithoutAnnuity: 14.5,
+};
+const tableRow8 = {
+    isSalaryEarner: false,
+    isStateEmployee: true,
+    isAnnuity: true,
+    isInsurance: false,
+    minSum: 70000,
+    maxSum: 7000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 17,
+    rateWithoutAnnuity: 17.5,
+};
+const tableRow9 = {
+    isSalaryEarner: true,
+    isStateEmployee: false,
+    isAnnuity: false,
+    isInsurance: true,
+    minSum: 80000,
+    maxSum: 8000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 18,
+    rateWithoutAnnuity: 18.5,
+};
+const tableRow10 = {
+    isSalaryEarner: true,
+    isStateEmployee: false,
+    isAnnuity: true,
+    isInsurance: false,
+    minSum: 90000,
+    maxSum: 9000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 19,
+    rateWithoutAnnuity: 19.5,
+};
+const tableRow11 = {
+    isSalaryEarner: true,
+    isStateEmployee: true,
+    isAnnuity: false,
+    isInsurance: false,
+    minSum: 100000,
+    maxSum: 10000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 10,
+    rateWithoutAnnuity: 10.5,
+};
+const tableRow12 = {
+    isSalaryEarner: false,
+    isStateEmployee: false,
+    isAnnuity: false,
+    isInsurance: true,
+    minSum: 110000,
+    maxSum: 11000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 12,
+    rateWithoutAnnuity: 11.5,
+};
+const tableRow13 = {
+    isSalaryEarner: false,
+    isStateEmployee: true,
+    isAnnuity: false,
+    isInsurance: false,
+    minSum: 120000,
+    maxSum: 12000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 22,
+    rateWithoutAnnuity: 22.5,
+};
+const tableRow14 = {
+    isSalaryEarner: false,
+    isStateEmployee: false,
+    isAnnuity: true,
+    isInsurance: false,
+    minSum: 130000,
+    maxSum: 13000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 13,
+    rateWithoutAnnuity: 16.5,
+};
+const tableRow15 = {
+    isSalaryEarner: false,
+    isStateEmployee: false,
+    isAnnuity: false,
+    isInsurance: false,
+    minSum: 140000,
+    maxSum: 15000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 44,
+    rateWithoutAnnuity: 44.5,
+};
+const tableRow16 = {
+    isSalaryEarner: true,
+    isStateEmployee: true,
+    isAnnuity: false,
+    isInsurance: false,
+    minSum: 150000,
+    maxSum: 16000000,
+    minMonths: 1,
+    maxMonths: 84,
+    rateWithAnnuity: 29,
+    rateWithoutAnnuity: 29.5,
+};
+const defaultTable = [
+    tableRow1,
+    tableRow2,
+    tableRow3,
+    tableRow4,
+    tableRow5,
+    tableRow6,
+    tableRow7,
+    tableRow8,
+    tableRow9,
+    tableRow10,
+    tableRow11,
+    tableRow12,
+    tableRow13,
+    tableRow14,
+    tableRow15,
+    tableRow16,
+];
+// TODO: Replace params with object?
+const getCalculatorParams = (tableRows, isSalaryEarner, isStateEmployee, isAnnuity, sum, insurance) => {
+    const params = tableRows.find((row) => row.isSalaryEarner === isSalaryEarner &&
+        row.isStateEmployee === isStateEmployee &&
+        row.isAnnuity === isAnnuity);
+    // TODO: Return default values?
+    if (!params)
+        return {};
+    if (params.isSalaryEarner === isSalaryEarner && params.isStateEmployee === isStateEmployee) {
+        const calculatorParams = {
+            minSum: params.minSum,
+            maxSum: params.maxSum,
+            minMonths: params.minMonths,
+            maxMonths: params.maxMonths,
+        };
+        if (Number(params.minSum) <= sum && Number(params.maxSum) >= sum) {
+            if (insurance) {
+                calculatorParams.rate = params.rateWithAnnuity;
+            }
+            else {
+                calculatorParams.rate = params.rateWithoutAnnuity;
+            }
+        }
+        return calculatorParams;
+    }
+};
+// TODO: Replace params with object?
+const getMonthlyPayment = (paymentType, calculatorParams, sum, months) => {
+    if (!calculatorParams)
+        return 0;
+    if (paymentType === 'annuity') {
+        const annuityCoef = Number(calculatorParams.rate) / 1200;
+        return sum * (annuityCoef + annuityCoef / (Math.pow(1 + annuityCoef, months - 1) - 1));
+    }
+    else {
+        return sum / months + sum * (Number(calculatorParams.rate) / 12);
+    }
+};
+
 ;// CONCATENATED MODULE: ./src/components/CreditCalculator/CreditCalculator.tsx
 
 
@@ -32582,7 +32834,9 @@ const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
 
 
 
+
 const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
+// Not used yet
 const MIN_MONEY = 50000;
 const MAX_MONEY = 3000000;
 const STEP_MONEY = 1000;
@@ -32596,10 +32850,12 @@ const CreditCalculator = JSX(({ context, className }) => {
     const [monthsValue, setMonthsValue] = context.useState(12);
     const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(true);
     const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(true);
+    const calculatorParams = getCalculatorParams(defaultTable, true, false, isAnnuityChecked, moneyValue, isInsuranceChecked);
+    const montlyPayment = getMonthlyPayment('annuity', calculatorParams, moneyValue, monthsValue);
     const handleButtonClick = (value) => {
-        setMonthsValue(clamp(value * MONTHS_IN_YEAR, MIN_MONTHS, MAX_MONTHS));
+        setMonthsValue(clamp(value * MONTHS_IN_YEAR, calculatorParams?.minMonths || MIN_MONTHS, calculatorParams?.maxMonths || MAX_MONTHS));
     };
-    return (jsx("section", { className: `font-sans text-primary-text bg-white p-4 ${className}`, children: jsxs("div", { className: `box-border p-12 flex flex-col justify-between ${borderStyle}`, children: [jsxs("div", { className: "flex justify-between", children: [jsxs("div", { className: "grow mr-11", children: [jsx(InputRange, { title: "\u0416\u0435\u043B\u0430\u0435\u043C\u0430\u044F \u0441\u0443\u043C\u043C\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u20BD", items: ['От 50 000 рублей', 'До 3 000 000 рублей'], min: MIN_MONEY, max: MAX_MONEY, step: STEP_MONEY, value: moneyValue, onChange: setMoneyValue }), jsx(InputRange, { title: "\u0421\u0440\u043E\u043A \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u043C\u0435\u0441\u044F\u0446\u0435\u0432", items: ['Или выберите из предложенных вариантов ниже'], min: MIN_MONTHS, max: MAX_MONTHS, step: STEP_MONTHS, value: monthsValue, onChange: setMonthsValue }), jsx("div", { className: "flex mb-7", children: CREDIT_TERM_YEARS.map((number, i) => CreditCalculator_renderButton(number, i, handleButtonClick)) }), jsx(Checkbox, { text: "\u041F\u043E\u043B\u0443\u0447\u0430\u044E \u043F\u0435\u043D\u0441\u0438\u044E \u043D\u0430 \u043A\u0430\u0440\u0442\u0443 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", checked: isAnnuityChecked, onChange: setIsAnnuityChecked }), jsx(Checkbox, { className: "mb-4", text: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u044F \u0437\u0430\u0449\u0438\u0442\u0430", checked: isInsuranceChecked, onChange: setIsInsuranceChecked })] }), jsxs("div", { className: "p-9 bg-primary-main rounded-md text-white", children: [jsx("div", { className: "text-base mb-5", children: "\u041D\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx("div", { className: "text-sm opacity-60", children: "\u0415\u0436\u0435\u043C\u0435\u0441\u044F\u0447\u043D\u044B\u0439 \u043F\u043B\u0430\u0442\u0451\u0436" }), jsx("div", { className: "text-lg mb-3", children: "26 827 \u20BD" }), jsx("div", { className: "text-sm opacity-60", children: "\u0421\u0442\u0430\u0432\u043A\u0430" }), jsx("div", { className: "text-lg", children: "16,9 %" })] })] }), jsxs("div", { className: "flex items-center", children: [jsx(Button, { className: "mr-3", text: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443", version: "primary", href: "#" }), jsx("div", { className: "w-80 text-xxs leading-4 text-secondary-text", "aria-label": "\u0421\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u0437\u0430\u044F\u0432\u043A\u0443, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0424\u0417\u00A0\u00AB\u041E\u00A0\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\u00BB" })] })] }) }));
+    return (jsx("section", { className: `font-sans text-primary-text bg-white p-4 ${className}`, children: jsxs("div", { className: `box-border p-12 flex flex-col justify-between ${borderStyle}`, children: [jsxs("div", { className: "flex justify-between", children: [jsxs("div", { className: "grow mr-11", children: [jsx(InputRange, { title: "\u0416\u0435\u043B\u0430\u0435\u043C\u0430\u044F \u0441\u0443\u043C\u043C\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u20BD", items: ['От 50 000 рублей', 'До 3 000 000 рублей'], min: calculatorParams?.minSum, max: calculatorParams?.maxSum, step: STEP_MONEY, value: moneyValue, onChange: setMoneyValue }), jsx(InputRange, { title: "\u0421\u0440\u043E\u043A \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u043C\u0435\u0441\u044F\u0446\u0435\u0432", items: ['Или выберите из предложенных вариантов ниже'], min: calculatorParams?.minMonths, max: calculatorParams?.maxMonths, step: STEP_MONTHS, value: monthsValue, onChange: setMonthsValue }), jsx("div", { className: "flex mb-7", children: CREDIT_TERM_YEARS.map((number, i) => CreditCalculator_renderButton(number, i, handleButtonClick)) }), jsx(Checkbox, { text: "\u041F\u043E\u043B\u0443\u0447\u0430\u044E \u043F\u0435\u043D\u0441\u0438\u044E \u043D\u0430 \u043A\u0430\u0440\u0442\u0443 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", checked: isAnnuityChecked, onChange: setIsAnnuityChecked }), jsx(Checkbox, { className: "mb-4", text: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u044F \u0437\u0430\u0449\u0438\u0442\u0430", checked: isInsuranceChecked, onChange: setIsInsuranceChecked })] }), jsxs("div", { className: "p-9 bg-primary-main rounded-md text-white", children: [jsx("div", { className: "text-base mb-5", children: "\u041D\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx("div", { className: "text-sm opacity-60", children: "\u0415\u0436\u0435\u043C\u0435\u0441\u044F\u0447\u043D\u044B\u0439 \u043F\u043B\u0430\u0442\u0451\u0436" }), jsxs("div", { className: "text-lg mb-3", children: [montlyPayment.toFixed(0), " \u20BD"] }), jsx("div", { className: "text-sm opacity-60", children: "\u0421\u0442\u0430\u0432\u043A\u0430" }), jsxs("div", { className: "text-lg", children: [calculatorParams?.rate, " %"] })] })] }), jsxs("div", { className: "flex items-center", children: [jsx(Button, { className: "mr-3", text: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443", version: "primary", href: "#" }), jsx("div", { className: "w-80 text-xxs leading-4 text-secondary-text", "aria-label": "\u0421\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u0437\u0430\u044F\u0432\u043A\u0443, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0424\u0417\u00A0\u00AB\u041E\u00A0\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\u00BB" })] })] }) }));
 });
 const CreditCalculator_renderButton = (number, i, handleClick) => (jsx("div", { className: "bg-secondary-light rounded-3xl h-10 w-[75px] box-border mr-2 flex items-center justify-center cursor-pointer", role: "button", onClick: () => handleClick(number), children: jsxs("span", { className: "font-medium text-sm", children: [number, " ", number > 4 ? 'лет' : 'года'] }) }, String(i)));
 
@@ -39823,7 +40079,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(2241),
+  var _require = __webpack_require__(6143),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

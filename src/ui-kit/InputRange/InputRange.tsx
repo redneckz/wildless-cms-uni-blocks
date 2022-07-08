@@ -11,7 +11,7 @@ export const InputRange = JSX<InputRangeProps>(
     };
 
     const inputStyle = {
-      backgroundSize: `${(value * 100) / max - 1}% 100%`,
+      backgroundSize: `${(value * 100) / max - 0.5}% 100%`,
     };
 
     const handleBlur = () => {
