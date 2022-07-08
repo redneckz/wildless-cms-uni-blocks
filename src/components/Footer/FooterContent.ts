@@ -1,6 +1,5 @@
 import type { LinkContent } from '../../model/LinkContent';
 import type { SitemapContent } from '../../model/SitemapContent';
-import type { BlockDefProps } from '../../types';
 
 /**
  * @title Тип контакта
@@ -28,6 +27,7 @@ export interface ContactInfo {
 export interface SocialMedia extends Omit<LinkContent, 'text'> {}
 
 /**
+ * @title Подвал
  * @required ["topItems"]
  */
 export interface FooterContent extends SitemapContent {
@@ -39,16 +39,4 @@ export interface FooterContent extends SitemapContent {
   contacts?: ContactInfo[];
   /** @title Социальные сети */
   socialMedia?: SocialMedia[];
-}
-
-/**
- * @title Подвал
- */
-export interface FooterDef extends BlockDefProps {
-  content?: FooterContent;
-  /**
-   * @title Тип
-   * @default Footer
-   */
-  type: string;
 }

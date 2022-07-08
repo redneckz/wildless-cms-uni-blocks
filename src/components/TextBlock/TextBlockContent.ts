@@ -1,5 +1,4 @@
 import type { Picture } from '../../model/Picture';
-import type { BlockDefProps } from '../../types';
 
 /**
  * @title Цвет плитки
@@ -13,6 +12,9 @@ export type TextBlockVersion = 'primary' | 'secondary' | 'secondary-light';
  */
 export type TextBlockIconVersion = 'none' | 'small' | 'big';
 
+/**
+ * @title Текстовый блок
+ */
 export interface TextBlockContent {
   /** @title Заголовок */
   title?: string;
@@ -21,16 +23,4 @@ export interface TextBlockContent {
   blockVersion?: TextBlockVersion;
   iconVersion?: TextBlockIconVersion;
   image?: Picture;
-}
-
-/**
- * @title Текстовый блок
- */
-export interface TextBlockDef extends BlockDefProps {
-  content?: TextBlockContent;
-  /**
-   * @title Тип
-   * @default TextBlock
-   */
-  type: string;
 }

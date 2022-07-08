@@ -2,22 +2,12 @@ import type { BlockContent } from './components/BlockContent';
 import type { ContentPageContext } from './components/ContentPage/ContentPageContext';
 import type { BlockVersion } from './model/BlockVersion';
 
-export type ColorPalette = 'pc' | 'bc' | 'eo';
+export type ColorPalette = 'pc' | 'bc' | 'eo' | 'eo2' | 'eo3' | 'eo4';
 
-export interface BlockDefProps {
-  /**
-   * @title Тип блока
-   */
+export interface BlockDef {
   type: string;
-  /**
-   * @title Стиль
-   * @uniqueItems
-   */
   style?: string[];
   content?: BlockContent;
-}
-
-export interface BlockDef extends BlockDefProps {
   version?: BlockVersion;
   blocks?: BlockDef[];
   mobile?: Pick<BlockDef, 'content' | 'style'> & {

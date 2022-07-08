@@ -1,7 +1,7 @@
 import type { SitemapContent } from '../../model/SitemapContent';
-import type { BlockDefProps } from '../../types';
 
 /**
+ * @title Шапка
  * @required ["defaultLocation", "topItems"]
  */
 export interface HeaderContent extends SitemapContent {
@@ -10,16 +10,4 @@ export interface HeaderContent extends SitemapContent {
    * @default Москва
    */
   defaultLocation?: string;
-}
-
-/**
- * @title Шапка
- */
-export interface HeaderDef extends BlockDefProps {
-  content?: HeaderContent;
-  /**
-   * @title Тип
-   * @default Header
-   */
-  type: string;
 }

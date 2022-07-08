@@ -1,4 +1,3 @@
-import type { BlockDefProps } from '../../types';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
 
 export interface Benefit {
@@ -9,21 +8,12 @@ export interface Benefit {
   icon?: IconName;
 }
 
+/**
+ * @title Преимущества
+ */
 export interface BenefitsBlockContent {
   /** @title Заголовок */
   title?: string;
   /** @maxItems 6 */
   benefits?: Benefit[];
-}
-
-/**
- * @title Преимущества
- */
-export interface BenefitsBlockDef extends BlockDefProps {
-  content?: BenefitsBlockContent;
-  /**
-   * @title Тип
-   * @default BenefitsBlock
-   */
-  type: string;
 }

@@ -1,4 +1,3 @@
-import type { BlockDefProps } from '../types';
 import type { BenefitsBlockContent } from './BenefitsBlock/BenefitsBlockContent';
 import type { ComparisonTableContent } from './ComparisonTable/ComparisonTableContent';
 import type { ExchangeRateTileContent } from './ExchangeRateTile/ExchangeRateTileContent';

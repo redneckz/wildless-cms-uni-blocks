@@ -1,4 +1,3 @@
-import type { BlockDefProps } from '../../types';
 import type { ProductBlockInnerContent } from '../ProductBlock/ProductBlockContent';
 
 /** @title Кнопка под слайдом */
@@ -18,6 +17,9 @@ export interface ProductSlideContent {
   productBlock: ProductBlockInnerContent;
 }
 
+/**
+ * @title Продуктовая галерея
+ */
 export interface ProductGalleryContent {
   /**
    * @title Задержка
@@ -26,16 +28,4 @@ export interface ProductGalleryContent {
   duration?: number;
   /** @title Слайды */
   slides?: ProductSlideContent[];
-}
-
-/**
- * @title Продуктовая галерея
- */
-export interface ProductGalleryDef extends BlockDefProps {
-  content?: ProductGalleryContent;
-  /**
-   * @title Тип
-   * @default ProductGallery
-   */
-  type: string;
 }

@@ -1,5 +1,4 @@
 import type { Picture } from '../../model/Picture';
-import type { BlockDefProps } from '../../types';
 
 /**
  * @title Карточка
@@ -16,6 +15,9 @@ export interface GalleryCard {
   items?: string[];
 }
 
+/**
+ * @title Галерея
+ */
 export interface GalleryContent {
   /** @title Заголовок */
   title?: string;
@@ -23,16 +25,4 @@ export interface GalleryContent {
   description?: string;
   /** @title Карточки */
   cards?: GalleryCard[];
-}
-
-/**
- * @title Галерея
- */
-export interface GalleryDef extends BlockDefProps {
-  content?: GalleryContent;
-  /**
-   * @title Тип
-   * @default Gallery
-   */
-  type: string;
 }

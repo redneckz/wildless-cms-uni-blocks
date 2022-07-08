@@ -1,4 +1,3 @@
-import type { BlockDefProps } from '../../types';
 import type { BaseTileCommonProps } from '../BaseTile/BaseTileProps';
 
 /**
@@ -11,20 +10,11 @@ export interface QRCode {
   href?: string;
 }
 
+/**
+ * @title Мобильное приложение
+ */
 export interface MobileAppTileContent extends BaseTileCommonProps {
   /** @title Заголовок */
   title?: string;
   qr?: QRCode;
-}
-
-/**
- * @title Мобильное приложение
- */
-export interface MobileAppTileDef extends BlockDefProps {
-  content?: MobileAppTileContent;
-  /**
-   * @title Тип
-   * @default MobileAppTile
-   */
-  type: string;
 }

@@ -1,4 +1,3 @@
-import type { BlockDefProps } from '../../types';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
 
 /**
@@ -12,6 +11,9 @@ export interface Step {
   icon?: IconName;
 }
 
+/**
+ * @title Блок шаги
+ */
 export interface StepsBlockContent {
   /** @title Заголовок */
   title?: string;
@@ -20,16 +22,4 @@ export interface StepsBlockContent {
    * @maxItems 6
    */
   steps?: Step[];
-}
-
-/**
- * @title Блок шаги
- */
-export interface StepsBlockDef extends BlockDefProps {
-  content?: StepsBlockContent;
-  /**
-   * @title Тип
-   * @default StepsBlock
-   */
-  type: string;
 }
