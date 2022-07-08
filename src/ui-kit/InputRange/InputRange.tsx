@@ -1,4 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { addSpacesBetweenNumbers } from '../../utils/addSpacesBetweenNumber';
 import type { InputRangeProps } from './InputRangeProps';
 
 export const InputRange = JSX<InputRangeProps>(
@@ -33,7 +34,7 @@ export const InputRange = JSX<InputRangeProps>(
             className={`m-0 font-sans text-sm w-full h-12 border-2 border-solid border-main-divider rounded-md outline-none p-0 pl-4 m-0 box-border text-primary-text ${
               title ? 'pt-4' : ''
             }`}
-            value={String(value).replace(/\B(?=(\d{3})+(?!\d))/g, ' ')}
+            value={addSpacesBetweenNumbers(String(value))}
             onChange={(e) => handleChange(e.target.value)}
             onBlur={handleBlur}
           />

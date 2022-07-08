@@ -11,8 +11,6 @@ export interface CalculatorParams {
   rateWithoutAnnuity?: number;
 }
 
-export type PaymentType = 'annuity' | 'differentiated';
-
 export interface CreditCalculatorData {
   rows?: CalculatorParams[];
 }

@@ -67,7 +67,7 @@
       "isInsurance": true,
       "minSum": 35000,
       "maxSum": 4500000,
-      "minMonths": 1,
+      "minMonths": 8,
       "maxMonths": 84,
       "rateWithAnnuity": 8,
       "rateWithoutAnnuity": 18.5

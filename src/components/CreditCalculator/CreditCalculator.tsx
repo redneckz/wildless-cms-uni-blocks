@@ -4,23 +4,23 @@ import { UniBlockProps } from '../../types';
 import { Button } from '../../ui-kit/Button/Button';
 import { Checkbox } from '../../ui-kit/Checkbox/Checkbox';
 import { InputRange } from '../../ui-kit/InputRange/InputRange';
+import { addSpacesBetweenNumbers } from '../../utils/addSpacesBetweenNumber';
 import { clamp } from '../../utils/clamp';
-import { getCalculatorParams, getCreditRate, getMonthlyPayment } from './utils';
+import { getCalculatorParams } from './getCalculatorParams';
+import { getCreditRate } from './getCreditRate';
+import { getCreditTermYears } from './getCreditTermYears';
+import { getMonthlyPayment } from './getMonthlyPayment';
 
 export interface CreditCalculatorProps extends UniBlockProps {}
 
 const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
 
-// Not used yet
-const MIN_MONEY = 50000;
-const MAX_MONEY = 3000000;
 const STEP_MONEY = 1000;
-
-const CREDIT_TERM_YEARS = [2, 3, 4, 5, 6, 7];
-
-const MIN_MONTHS = 1;
-const MAX_MONTHS = 84;
 const STEP_MONTHS = 1;
+
+const DEFAULT_MIN_MONTHS = 1;
+const DEFAULT_MAX_MONTHS = 84;
+const DEFAULT_PAYMENT_TYPE = 'annuity';
 
 const MONTHS_IN_YEAR = 12;
 
@@ -34,25 +34,30 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
 
   const calculatorParams = getCalculatorParams({ tableRows, isAnnuity: isAnnuityChecked });
 
-  const rate = getCreditRate(calculatorParams, moneyValue, isInsuranceChecked);
+  const rate = getCreditRate({ calculatorParams, isInsurance: isInsuranceChecked });
 
-  const montlyPayment = getMonthlyPayment(
-    'annuity',
+  const montlyPayment = getMonthlyPayment({
     calculatorParams,
-    moneyValue,
-    monthsValue,
-    rate || 0,
+    paymentType: DEFAULT_PAYMENT_TYPE,
+    rate,
+    sum: moneyValue,
+    months: monthsValue,
+  });
+
+  const creditTermYears = getCreditTermYears(
+    calculatorParams.minMonths || DEFAULT_MIN_MONTHS,
+    calculatorParams.maxMonths || DEFAULT_MAX_MONTHS,
   );
 
-  const handleButtonClick = (value: number) => {
+  function handleButtonClick(value: number) {
     setMonthsValue(
       clamp(
         value * MONTHS_IN_YEAR,
-        calculatorParams?.minMonths || MIN_MONTHS,
-        calculatorParams?.maxMonths || MAX_MONTHS,
+        calculatorParams?.minMonths || DEFAULT_MIN_MONTHS,
+        calculatorParams?.maxMonths || DEFAULT_MAX_MONTHS,
       ),
     );
-  };
+  }
 
   return (
     <section className={`font-sans text-primary-text bg-white p-4 ${className}`}>
@@ -61,7 +66,10 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
           <div className="grow mr-11">
             <InputRange
               title="Желаемая сумма кредита, ₽"
-              items={['От 50 000 рублей', 'До 3 000 000 рублей']}
+              items={[
+                `От ${addSpacesBetweenNumbers(String(calculatorParams.minSum))} рублей`,
+                `До ${addSpacesBetweenNumbers(String(calculatorParams.maxSum))} рублей`,
+              ]}
               min={calculatorParams?.minSum}
               max={calculatorParams?.maxSum}
               step={STEP_MONEY}
@@ -78,7 +86,7 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
               onChange={setMonthsValue}
             />
             <div className="flex mb-7">
-              {CREDIT_TERM_YEARS.map((number, i) => renderButton(number, i, handleButtonClick))}
+              {creditTermYears.map((number, i) => renderButton(number, i, handleButtonClick))}
             </div>
             <Checkbox
               text="Получаю пенсию на карту Россельхозбанка"
@@ -95,7 +103,9 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
           <div className="p-9 bg-primary-main rounded-md text-white">
             <div className="text-base mb-5">Наше предложение</div>
             <div className="text-sm opacity-60">Ежемесячный платёж</div>
-            <div className="text-lg mb-3">{montlyPayment.toFixed(0)} ₽</div>
+            <div className="text-lg mb-3">
+              {addSpacesBetweenNumbers(montlyPayment.toFixed(0))} ₽
+            </div>
             <div className="text-sm opacity-60">Ставка</div>
             <div className="text-lg">{rate} %</div>
           </div>
@@ -115,15 +125,17 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
   );
 });
 
-const renderButton = (number: number, i: number, handleClick: (number: number) => void) => (
-  <div
-    key={String(i)}
-    className="bg-secondary-light rounded-3xl h-10 w-[75px] box-border mr-2 flex items-center justify-center cursor-pointer"
-    role="button"
-    onClick={() => handleClick(number)}
-  >
-    <span className="font-medium text-sm">
-      {number} {number > 4 ? 'лет' : 'года'}
-    </span>
-  </div>
-);
+function renderButton(number: number, i: number, handleClick: (number: number) => void) {
+  return (
+    <div
+      key={String(i)}
+      className="bg-secondary-light rounded-3xl h-10 w-[75px] box-border mr-2 flex items-center justify-center cursor-pointer"
+      role="button"
+      onClick={() => handleClick(number)}
+    >
+      <span className="font-medium text-sm">
+        {number} {number === 1 ? 'год' : number > 4 ? 'лет' : 'года'}
+      </span>
+    </div>
+  );
+}
