@@ -32580,7 +32580,7 @@ const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step
         onChange(sanitizedValue);
     };
     const inputStyle = {
-        backgroundSize: `${(value * 100) / max - 0.5}% 100%`,
+        backgroundSize: `${((value - min) * 100) / (max - min)}% 100%`,
     };
     const handleBlur = () => {
         if (!onChange)
