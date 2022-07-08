@@ -31758,19 +31758,15 @@ const columns2 = [
 
 
 const listStyleMap = {
-    primary: 'bg-primary-main',
-    secondary: 'bg-secondary-text',
+    primary: 'bg-primary-main w-[8px] h-[8px] min-w-[8px] min-h-[8px] mt-2 rounded-full',
+    secondary: 'bg-secondary-text w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
 };
 const textStyleMap = {
     primary: 'text-primary-text',
     secondary: 'text-secondary-text',
 };
-const dotStyleMap = {
-    primary: 'w-[8px] h-[8px] min-w-[8px] min-h-[8px] mt-2 rounded-full',
-    secondary: 'w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
-};
 const BlockItem = JSX(({ className, isDotted = true, text, children, version = 'primary' }) => {
-    return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [isDotted && (jsx("div", { className: `inline-block mr-3 ${dotStyleMap[version]} ${listStyleMap[version]}` })), jsx("span", { className: `text-base font-normal font-sans mr-3 ${textStyleMap[version]}`, children: text || children })] }));
+    return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [isDotted && jsx("div", { className: `inline-block mr-3 ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mr-3 ${textStyleMap[version]}`, children: text || children })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/utils/getColSpan.ts
