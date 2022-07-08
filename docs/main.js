@@ -32593,7 +32593,6 @@ const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step
 const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
 
 ;// CONCATENATED MODULE: ./src/components/CreditCalculator/utils.ts
-// TODO: Replace params with object?
 const getCalculatorParams = (props) => {
     const { tableRows, isSalaryEarner = false, isStateEmployee = false, isAnnuity = false } = props;
     if (!tableRows)

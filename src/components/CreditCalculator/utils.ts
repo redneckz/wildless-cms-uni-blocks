@@ -7,7 +7,6 @@ interface GetCalculatorParamsProps {
   isAnnuity?: boolean;
 }
 
-// TODO: Replace params with object?
 export const getCalculatorParams = (props: GetCalculatorParamsProps) => {
   const { tableRows, isSalaryEarner = false, isStateEmployee = false, isAnnuity = false } = props;
 
