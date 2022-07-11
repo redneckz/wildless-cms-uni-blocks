@@ -55,11 +55,11 @@ const renderComponent = (block: AccordionBlockContent, i: number) => {
   if (block.type && block.data && !AccordionBlocks.hasOwnProperty(block.type)) {
     return null;
   }
-  // const callAccordionElement = block.name && AccordionBlocks[block.name];
-  const AccordionElement = block.type && AccordionBlocks[block.type];
+
+  const AccordionBlock = block.type && AccordionBlocks[block.type];
   return (
     <div className="mb-5 last:mb-0" key={`component${i}`}>
-      <AccordionElement {...block.data} />
+      <AccordionBlock {...block.data} />
     </div>
   );
 };

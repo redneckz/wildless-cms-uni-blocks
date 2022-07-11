@@ -31336,9 +31336,8 @@ const renderComponent = (block, i) => {
     if (block.type && block.data && !Accordion_AccordionBlocks.hasOwnProperty(block.type)) {
         return null;
     }
-    // const callAccordionElement = block.name && AccordionBlocks[block.name];
-    const AccordionElement = block.type && Accordion_AccordionBlocks[block.type];
-    return (jsx("div", { className: "mb-5 last:mb-0", children: jsx(AccordionElement, { ...block.data }) }, `component${i}`));
+    const AccordionBlock = block.type && Accordion_AccordionBlocks[block.type];
+    return (jsx("div", { className: "mb-5 last:mb-0", children: jsx(AccordionBlock, { ...block.data }) }, `component${i}`));
 };
 const getContentBlock = (e) => e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;
 
