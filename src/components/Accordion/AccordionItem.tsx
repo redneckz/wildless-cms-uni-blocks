@@ -1,14 +1,14 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../../types';
-import type { AccordionItemContent, AccordionElementsContent } from './AccordionContent';
+import type { AccordionItemContent, AccordionBlockContent } from './AccordionContent';
 import { Icon } from '../../ui-kit/Icon/Icon';
-import AccordionElements from './AccordionElements';
+import AccordionBlocks from './AccordionBlocks';
 
 export interface AccordionItemProps extends AccordionItemContent, UniBlockProps {}
 
-export const AccordionItem = JSX<AccordionItemProps>(({ label, elements, context }) => {
+export const AccordionItem = JSX<AccordionItemProps>(({ label, blocks, context }) => {
   const [isActive, setIsActive] = context.useState(false);
-  const hasContent = elements?.length;
+  const hasContent = blocks?.length;
   const icon = isActive ? 'MinusIcon' : 'PlusIcon';
 
   const handleToggle = (e) => {
@@ -42,7 +42,7 @@ export const AccordionItem = JSX<AccordionItemProps>(({ label, elements, context
             isActive ? 'pb-5' : ''
           } text-sm transition-all duration-300 max-h-0 overflow-hidden group-last:last:pb-0 `}
         >
-          {elements?.length ? elements.map(renderComponent) : null}
+          {blocks?.length ? blocks.map(renderComponent) : null}
         </div>
       ) : null}
     </li>
@@ -51,14 +51,15 @@ export const AccordionItem = JSX<AccordionItemProps>(({ label, elements, context
 
 // TODO: draft, for dynamic rendering of components
 
-const renderComponent = (element: AccordionElementsContent, i: number) => {
-  if (element.name && element.data?.length && !AccordionElements.hasOwnProperty(element.name)) {
+const renderComponent = (block: AccordionBlockContent, i: number) => {
+  if (block.type && block.data && !AccordionBlocks.hasOwnProperty(block.type)) {
     return null;
   }
-  const callAccordionElement = element.name && AccordionElements[element.name];
+  // const callAccordionElement = block.name && AccordionBlocks[block.name];
+  const AccordionElement = block.type && AccordionBlocks[block.type];
   return (
     <div className="mb-5 last:mb-0" key={`component${i}`}>
-      {callAccordionElement(element.data)}
+      <AccordionElement {...block.data} />
     </div>
   );
 };

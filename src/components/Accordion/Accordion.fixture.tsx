@@ -1,142 +1,62 @@
 import { context } from '../../setup-fixture';
 import type { AccordionProps } from './Accordion';
+import type { TextBlockContent } from '../TextBlock/TextBlockContent';
 import { Accordion } from './Accordion';
 
-const DOCS = [
-  {
-    href: 'path-to-file.pdf',
-    text: 'doc text',
-  },
-  {
-    href: 'path-to-file.pdf',
-    text: 'doc text',
-    target: '_blank',
-  },
-  {
-    href: 'path-to-file.pdf',
-    text: 'doc text',
-    target: '_blank',
-  },
-];
+const TEXT_BLOCK: TextBlockContent = {
+  title: 'Title',
+  description:
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?',
+  blockVersion: 'secondary-light',
+  iconVersion: 'small',
+};
 
-const TEXT =
-  'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit labore eum iste ea atque accusantium architecto voluptate voluptates, corporis aperiam! Illo ducimus deserunt totam harum neque obcaecati tempore voluptatibus';
-
-const propsDocs: AccordionProps = {
+const propsTextBlock: AccordionProps = {
   title: 'Accordion title',
   context,
   accordionItems: [
     {
       label: 'Accordion label 1',
-      elements: [
+      blocks: [
         {
-          name: 'Docs',
-          data: DOCS,
+          type: 'TextBlock',
+          data: TEXT_BLOCK,
+        },
+        {
+          type: 'TextBlock',
+          data: TEXT_BLOCK,
         },
       ],
     },
     {
       label: 'Accordion label 2',
-      elements: [
+      blocks: [
         {
-          name: 'Docs',
-          data: DOCS,
+          type: 'TextBlock',
+          data: TEXT_BLOCK,
+        },
+        {
+          type: 'TextBlock',
+          data: TEXT_BLOCK,
         },
       ],
     },
     {
       label: 'Accordion label 3',
-      elements: [
+      blocks: [
         {
-          name: 'Docs',
-          data: DOCS,
+          type: 'TextBlock',
+          data: TEXT_BLOCK,
+        },
+        {
+          type: 'TextBlock',
+          data: TEXT_BLOCK,
         },
       ],
     },
   ],
 };
 
-const propsText: AccordionProps = {
-  title: 'Accordion title',
-  context,
-  accordionItems: [
-    {
-      label: 'Accordion label 1',
-      elements: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-      ],
-    },
-    {
-      label: 'Accordion label 2',
-      elements: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-      ],
-    },
-    {
-      label: 'Accordion label 3',
-      elements: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-      ],
-    },
-  ],
-};
-
-const propsTextAndDocs: AccordionProps = {
-  title: 'Accordion title',
-  context,
-  accordionItems: [
-    {
-      label: 'Accordion label 1',
-      elements: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-        {
-          name: 'Docs',
-          data: DOCS,
-        },
-      ],
-    },
-    {
-      label: 'Accordion label 2',
-      elements: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-        {
-          name: 'Docs',
-          data: DOCS,
-        },
-      ],
-    },
-    {
-      label: 'Accordion label 3',
-      elements: [
-        {
-          name: 'Text',
-          data: TEXT,
-        },
-        {
-          name: 'Docs',
-          data: DOCS,
-        },
-      ],
-    },
-  ],
-};
 export default {
-  'with docs': <Accordion {...propsDocs} />,
-  'with text': <Accordion {...propsText} />,
-  'with text and docs': <Accordion {...propsTextAndDocs} />,
+  'with text block': <Accordion {...propsTextBlock} />,
 };

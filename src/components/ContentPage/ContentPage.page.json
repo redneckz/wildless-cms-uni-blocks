@@ -1290,85 +1290,70 @@
         "accordionItems": [
           {
             "label": "Accordion label 1",
-            "elements": [
+            "blocks": [
               {
-                "name": "Text",
-                "data": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit labore eum iste ea atque accusantium architecto voluptate voluptates, corporis aperiam! Illo ducimus deserunt totam harum neque obcaecati tempore voluptatibus"
+                "type": "TextBlock",
+                "data": {
+                  "title": "Title",
+                  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?",
+                  "blockVersion": "secondary-light",
+                  "iconVersion": "small"
+                }
               },
               {
-                "name": "Docs",
-                "data": [
-                  {
-                    "href": "path-to-file.pdf",
-                    "text": "doc text"
-                  },
-                  {
-                    "href": "path-to-file.pdf",
-                    "text": "doc text",
-                    "target": "_blank"
-                  },
-                  {
-                    "href": "path-to-file.pdf",
-                    "text": "doc text",
-                    "target": "_blank"
-                  }
-                ]
+                "type": "TextBlock",
+                "data": {
+                  "title": "Title",
+                  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?",
+                  "blockVersion": "secondary-light",
+                  "iconVersion": "small"
+                }
               }
             ]
           },
           {
             "label": "Accordion label 2",
-            "elements": [
+            "blocks": [
               {
-                "name": "Text",
-                "data": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit labore eum iste ea atque accusantium architecto voluptate voluptates, corporis aperiam! Illo ducimus deserunt totam harum neque obcaecati tempore voluptatibus"
+                "type": "TextBlock",
+                "data": {
+                  "title": "Title",
+                  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?",
+                  "blockVersion": "secondary-light",
+                  "iconVersion": "small"
+                }
               },
               {
-                "name": "Docs",
-                "data": [
-                  {
-                    "href": "path-to-file.pdf",
-                    "text": "doc text"
-                  },
-                  {
-                    "href": "path-to-file.pdf",
-                    "text": "doc text",
-                    "target": "_blank"
-                  },
-                  {
-                    "href": "path-to-file.pdf",
-                    "text": "doc text",
-                    "target": "_blank"
-                  }
-                ]
+                "type": "TextBlock",
+                "data": {
+                  "title": "Title",
+                  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?",
+                  "blockVersion": "secondary-light",
+                  "iconVersion": "small"
+                }
               }
             ]
           },
           {
             "label": "Accordion label 3",
-            "elements": [
+            "blocks": [
               {
-                "name": "Text",
-                "data": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit labore eum iste ea atque accusantium architecto voluptate voluptates, corporis aperiam! Illo ducimus deserunt totam harum neque obcaecati tempore voluptatibus"
+                "type": "TextBlock",
+                "data": {
+                  "title": "Title",
+                  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?",
+                  "blockVersion": "secondary-light",
+                  "iconVersion": "small"
+                }
               },
               {
-                "name": "Docs",
-                "data": [
-                  {
-                    "href": "path-to-file.pdf",
-                    "text": "doc text"
-                  },
-                  {
-                    "href": "path-to-file.pdf",
-                    "text": "doc text",
-                    "target": "_blank"
-                  },
-                  {
-                    "href": "path-to-file.pdf",
-                    "text": "doc text",
-                    "target": "_blank"
-                  }
-                ]
+                "type": "TextBlock",
+                "data": {
+                  "title": "Title",
+                  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?",
+                  "blockVersion": "secondary-light",
+                  "iconVersion": "small"
+                }
               }
             ]
           }

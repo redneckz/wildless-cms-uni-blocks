@@ -1,4 +1,4 @@
-import type { LinkContent } from '../../model/LinkContent';
+import type { TextBlockContent } from '../TextBlock/TextBlockContent';
 
 export interface AccordionContent {
   title?: string;
@@ -7,17 +7,12 @@ export interface AccordionContent {
 
 export interface AccordionItemContent {
   label?: string;
-  elements?: AccordionElementsContent[];
+  blocks?: AccordionBlockContent[];
 }
 
-export type AccordionElementsContent = DocsElementContent | TextElementContent;
+export type AccordionBlockContent = {
+  type?: string;
+  data?: AccordionDataContent;
+};
 
-export interface DocsElementContent {
-  name?: string;
-  data?: LinkContent[];
-}
-
-export interface TextElementContent {
-  name?: string;
-  data?: string;
-}
+export type AccordionDataContent = TextBlockContent;
