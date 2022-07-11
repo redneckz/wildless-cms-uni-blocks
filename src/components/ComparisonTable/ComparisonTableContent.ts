@@ -18,35 +18,42 @@ export type RowData = Row[] | undefined;
 
 /**
  * @title Ячейка
- * @hidden  //! temporary hidden, because widget to edit not exist
  */
 export interface CellData {
   /** @title Заголовок */
   label?: string;
   /** @title Описание */
   description?: string;
-  /** @title Иконки */
+  /**
+   *  @title Иконки
+   *  @hidden
+   */
   icons?: IconName[];
+  /** @hidden */
   image?: Picture;
-  /** @title Кнопки */
+  /**
+   * @title Кнопки
+   * @hidden
+   */
   buttons?: ButtonProps[];
 }
 
 /**
  * @title Шапка колонки
- * @hidden  //! temporary hidden, because widget to edit not exist
  */
 export interface ColumnHeader {
   /** @title Заголовок */
   title?: string;
+  /** @hidden */
   icon?: IconName;
+  /** @hidden */
   image?: Picture;
+  /** @hidden */
   link?: LinkProps;
 }
 
 /**
  * @title Продукт
- * @hidden  //! temporary hidden, because widget to edit not exist
  */
 export interface Column {
   header?: ColumnHeader;
@@ -56,7 +63,6 @@ export interface Column {
 
 /**
  * @title Параметр
- * @hidden  //! temporary hidden, because widget to edit not exist
  */
 export interface RowHeader {
   /** @title Заголовок */
@@ -65,7 +71,90 @@ export interface RowHeader {
 }
 /**
  * @title Сравнительная таблица
- * @hidden  //! temporary hidden, because widget to edit not exist
+ * @examples [{
+ *   "title": "Заголовок",
+ *   "rowHeaders": [
+ *     {
+ *       "title": "Параметр 1"
+ *     },
+ *     {
+ *       "title": "Параметр 2"
+ *     },
+ *     {
+ *       "title": "Параметр 3"
+ *     }
+ *   ],
+ *   "columns": [
+ *     {
+ *       "header": {
+ *         "title": "Продукт 1",
+ *         "image": {
+ *           "format": "webp",
+ *           "size": {
+ *             "width": 100,
+ *             "height": 63
+ *           }
+ *         }
+ *       },
+ *       "data": [
+ *         [
+ *           {
+ *             "label": "Ячейка 1"
+ *           }
+ *         ],
+ *         [
+ *           {
+ *             "label": "Ячейка 2-1",
+ *             "description": "Описание для ячейки 2-1"
+ *           },
+ *           {
+ *             "label": "Ячейка 2-2",
+ *             "description": "Описание для ячейки 2-2"
+ *           }
+ *         ],
+ *         [
+ *           {
+ *             "label": "Ячейка 3"
+ *           }
+ *         ]
+ *       ]
+ *     },
+ *     {
+ *       "header": {
+ *         "title": "Продукт 2",
+ *         "image": {
+ *           "format": "webp",
+ *           "size": {
+ *             "width": 100,
+ *             "height": 63
+ *           }
+ *         }
+ *       },
+ *       "data": [
+ *         [
+ *           {
+ *             "label": "Ячейка 1"
+ *           }
+ *         ],
+ *         [
+ *           {
+ *             "label": "Ячейка 2-1",
+ *             "description": "Описание для ячейки 2-1"
+ *           },
+ *           {
+ *             "label": "Ячейка 2-2",
+ *             "description": "Описание для ячейки 2-2"
+ *           }
+ *         ],
+ *         [
+ *           {
+ *             "label": "Ячейка 3"
+ *           }
+ *         ]
+ *       ]
+ *     }
+ *   ]
+ * }]
  */
 export interface ComparisonTableContent {
   /** @title Заголовок */

@@ -13,6 +13,23 @@ export interface Step {
 
 /**
  * @title Блок шаги
+ * @examples [{
+ *  "title": "Шаги",
+ *  "steps": [
+ *    {
+ *      "label": "Шаг №1",
+ *      "icon": "NewDocIcon"
+ *    },
+ *    {
+ *      "label": "Шаг №2",
+ *      "icon": "PassSendIcon"
+ *    },
+ *    {
+ *      "label": "Шаг №3",
+ *      "icon": "ActualBalanceIcon"
+ *    }
+ *  ]
+ *}]
  */
 export interface StepsBlockContent {
   /** @title Заголовок */

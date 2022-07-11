@@ -14,6 +14,12 @@ export type TextBlockIconVersion = 'none' | 'small' | 'big';
 
 /**
  * @title Текстовый блок
+ * @examples [{
+ *   "title": "Заголовок",
+ *   "description": "Описание",
+ *   "blockVersion": "primary",
+ *   "iconVersion": "small"
+ * }]
  */
 export interface TextBlockContent {
   /** @title Заголовок */
