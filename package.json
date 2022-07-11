@@ -79,7 +79,7 @@
   "scripts": {
     "start": "npm run cosmos",
     "build": "npm run build:lib && npm run build:commonjs && npm run bundle && npm run build:style && npm run build:icons",
-    "postbuild": "npm run size",
+    "postbuild": "npm run size && npm run cosmos:export && copyfiles --up 1 \"./docs/**/*\" ./build",
     "build:lib": "rimraf ./lib && tsc --build --verbose",
     "postbuild:lib": "replace-in-file --configFile=replace-config.lib.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
@@ -121,6 +121,7 @@
     "@size-limit/file": "^7.0.8",
     "@types/jest": "^28.1.1",
     "autoprefixer": "^10.4.7",
+    "copyfiles": "^2.4.1",
     "css-loader": "^6.7.1",
     "cssnano": "^5.1.11",
     "html-webpack-plugin": "^5.5.0",
