@@ -5,6 +5,7 @@ import type { ContentPageDef } from '../types';
 import type { TransformationOptions } from './TransformationOptions';
 import { transformContentPage } from './transformContentPage';
 
+const INDEX_PAGE_SLUG = 'index';
 const find = util.promisify(glob);
 
 export function ContentPageRepository({
@@ -16,6 +17,11 @@ export function ContentPageRepository({
     return await Promise.all(pagePaths.map(readPage));
   }
 
+  async function getSecondaryContentPages() {
+    const pages = await getAllContentPages();
+    return pages.filter((content) => content.slug !== INDEX_PAGE_SLUG);
+  }
+
   async function getContentPageBySlug(slug: string): Promise<ContentPageDef | undefined> {
     const pages = await getAllContentPages();
     return pages.find((content) => content.slug === slug);
@@ -24,6 +30,14 @@ export function ContentPageRepository({
   async function getMobilePageBySlug(slug: string): Promise<ContentPageDef | undefined> {
     const page = await getContentPageBySlug(slug);
     return page && toMobilePage(page);
+  }
+
+  async function getIndexPage() {
+    return await getContentPageBySlug(INDEX_PAGE_SLUG);
+  }
+
+  async function getIndexMobilePage() {
+    return await getMobilePageBySlug(INDEX_PAGE_SLUG);
   }
 
   const cache: Record<string, ContentPageDef> = {};
@@ -41,5 +55,8 @@ export function ContentPageRepository({
     getAllContentPages,
     getContentPageBySlug,
     getMobilePageBySlug,
+    getSecondaryContentPages,
+    getIndexPage,
+    getIndexMobilePage,
   };
 }
