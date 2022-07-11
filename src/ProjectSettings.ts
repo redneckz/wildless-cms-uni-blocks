@@ -40,7 +40,4 @@ export const projectSettings = new (class implements ProjectSettings {
   get CDN() {
     return this._.CDN;
   }
-  get CREDIT_CALCULATOR() {
-    return this._.CREDIT_CALCULATOR;
-  }
 })();

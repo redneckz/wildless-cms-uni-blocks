@@ -1,5 +1,5 @@
 import { clamp } from '../../utils/clamp';
-import { DEFAULT_MAX_SUM, DEFAULT_MIN_SUM } from './constants';
+import { DEFAULT_MAX_SUM, DEFAULT_MIN_SUM, MONTHS_IN_YEAR } from './constants';
 import { CalculatorParams } from './CreditCalculatorContent';
 
 type PaymentType = 'annuity' | 'differentiated';
@@ -24,7 +24,7 @@ export const getMonthlyPayment = (params: GetMonthlyPaymentParams) => {
   );
 
   if (paymentType === 'annuity') {
-    const annuityCoef = Number(rate) / 1200;
+    const annuityCoef = Number(rate) / (MONTHS_IN_YEAR * 100);
     return finalSum * (annuityCoef + annuityCoef / (Math.pow(1 + annuityCoef, months) - 1));
   } else {
     return finalSum / months + finalSum * (Number(rate) / 12);

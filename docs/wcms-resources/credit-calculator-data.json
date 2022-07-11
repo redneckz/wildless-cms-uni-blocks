@@ -4,7 +4,7 @@
       "isAnnuity": true,
       "minSum": 15000,
       "maxSum": 2000000,
-      "minMonths": 1,
+      "minMonths": 12,
       "maxMonths": 84,
       "rateWithInsurance": 6,
       "rateWithoutInsurance": 8.5

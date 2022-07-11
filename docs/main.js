@@ -31050,7 +31050,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 2818:
+/***/ 1802:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -32533,16 +32533,16 @@ const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { 
 });
 
 ;// CONCATENATED MODULE: ./src/hooks/useCreditCalculatorData.ts
-function useCreditCalculatorData(useAsyncData) {
-    const { data } = useAsyncData(creditCalculatorUrl(), fetchCreditCalculatorData);
+function useCreditCalculatorData(useAsyncData, directoryName) {
+    const { data } = useAsyncData(creditCalculatorUrl(directoryName), () => fetchCreditCalculatorData(directoryName));
     return data || {};
 }
-async function fetchCreditCalculatorData() {
-    const response = await fetch(creditCalculatorUrl());
+async function fetchCreditCalculatorData(directoryName) {
+    const response = await fetch(creditCalculatorUrl(directoryName));
     return await response.json();
 }
-function creditCalculatorUrl() {
-    return `/wcms-resources/credit-calculator-data.json`;
+function creditCalculatorUrl(directoryName) {
+    return `/wcms-resources/${directoryName || 'credit-calculator-data'}.json`;
 }
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Checkbox/Checkbox.tsx
@@ -32561,8 +32561,8 @@ const Checkbox = JSX(({ text, checked, onChange, className }) => (jsx("div", { c
                     onChange(e.target.checked);
                 }, checked: checked }), jsx(SVG, { paths: CHECK_PATHS, className: "hidden absolute left-2 ml-px peer-checked:block", width: "11", height: "9", fill: "white", viewBox: "0 0 11 9" }), text ? jsx("span", { className: "font-sans ml-2 text-sm cursor-pointer", children: text }) : null] }) })));
 
-;// CONCATENATED MODULE: ./src/utils/addSpacesBetweenNumber.ts
-const addSpacesBetweenNumbers = (str) => str.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+;// CONCATENATED MODULE: ./src/utils/addSpacesBetweenNumbers.ts
+const addSpacesBetweenNumbers = (number) => new Intl.NumberFormat('ru-RU', { maximumSignificantDigits: 3 }).format(number);
 
 ;// CONCATENATED MODULE: ./src/ui-kit/InputRange/InputRange.tsx
 
@@ -32576,7 +32576,7 @@ const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step
         onChange(sanitizedValue);
     };
     const inputStyle = {
-        backgroundSize: `${(((value - min) * 100) / (max - min)).toFixed()}% 100%`,
+        backgroundSize: `${(((value - min) * 100) / (max - min)).toFixed(2)}% 100%`,
     };
     const handleBlur = () => {
         if (!onChange)
@@ -32586,7 +32586,7 @@ const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step
         if (value > max)
             onChange(max);
     };
-    return (jsxs("div", { className: className, children: [jsxs("div", { className: "relative", children: [title ? (jsx("span", { className: "absolute text-xs text-secondary-text top-1 mt-0.5 pl-4 ml-0.5", children: title })) : null, jsx("input", { className: `m-0 font-sans text-sm w-full h-12 border-2 border-solid border-main-divider rounded-md outline-none p-0 pl-4 m-0 box-border text-primary-text ${title ? 'pt-4' : ''}`, value: addSpacesBetweenNumbers(String(value)), onChange: (e) => handleChange(e.target.value), onBlur: handleBlur }), jsx("div", { className: "absolute inset-x-0 mt-0.5 top-8 px-4", children: jsx("input", { className: "box-border w-full m-0 cursor-pointer slider", type: "range", min: min, max: max, step: step, value: value, onChange: (e) => handleChange(e.target.value), style: inputStyle }) })] }), jsx("div", { className: "flex justify-between mt-3 mb-4", children: items.map((item, i) => (jsx("span", { className: "text-xs text-secondary-text pl-4", children: item }, String(i)))) })] }));
+    return (jsxs("div", { className: className, children: [jsxs("div", { className: "relative", children: [title ? (jsx("span", { className: "absolute text-xs text-secondary-text top-1 mt-0.5 pl-4 ml-0.5", children: title })) : null, jsx("input", { className: `m-0 font-sans text-sm w-full h-12 border-2 border-solid border-main-divider rounded-md outline-none p-0 pl-4 m-0 box-border text-primary-text ${title ? 'pt-4' : ''}`, value: addSpacesBetweenNumbers(value), onChange: (e) => handleChange(e.target.value), onBlur: handleBlur }), jsx("div", { className: "absolute inset-x-0 mt-0.5 top-8 px-4", children: jsx("input", { className: "box-border w-full m-0 cursor-pointer slider", type: "range", min: min, max: max, step: step, value: value, onChange: (e) => handleChange(e.target.value), style: inputStyle }) })] }), jsx("div", { className: "flex justify-between mt-3 mb-4", children: items.map((item, i) => (jsx("span", { className: "text-xs text-secondary-text pl-4", children: item }, String(i)))) })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/utils/clamp.ts
@@ -32625,16 +32625,13 @@ const getCreditRate = (params) => {
 
 const MAX_YEARS_LENGTH = 5;
 const getCreditTermYears = (minMonths, maxMonths) => {
-    const creditTermYears = [];
     const totalYears = Math.ceil((maxMonths - minMonths) / 12);
     const firstYear = Math.floor(minMonths / MONTHS_IN_YEAR) + 1;
-    for (let i = firstYear; i < totalYears + firstYear; i++) {
-        creditTermYears.push(i);
-    }
-    const maxYearValue = creditTermYears[creditTermYears.length - 1];
-    const res = creditTermYears.slice(0, MAX_YEARS_LENGTH);
-    res[creditTermYears.length - 1] = maxYearValue;
-    return res;
+    const result = new Array(Math.min(totalYears - 1, MAX_YEARS_LENGTH))
+        .fill(0)
+        .map((_, i) => firstYear + i);
+    const maxYear = totalYears + firstYear - 1;
+    return result.concat(maxYear);
 };
 
 ;// CONCATENATED MODULE: ./src/components/CreditCalculator/getMonthlyPayment.ts
@@ -32646,7 +32643,7 @@ const getMonthlyPayment = (params) => {
         return 0;
     const finalSum = clamp(sum, calculatorParams.minSum || DEFAULT_MIN_SUM, calculatorParams.maxSum || DEFAULT_MAX_SUM);
     if (paymentType === 'annuity') {
-        const annuityCoef = Number(rate) / 1200;
+        const annuityCoef = Number(rate) / (MONTHS_IN_YEAR * 100);
         return finalSum * (annuityCoef + annuityCoef / (Math.pow(1 + annuityCoef, months) - 1));
     }
     else {
@@ -32672,12 +32669,12 @@ const STEP_MONEY = 1000;
 const STEP_MONTHS = 1;
 const DEFAULT_PAYMENT_TYPE = 'annuity';
 const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
-const CreditCalculator = JSX(({ context, className }) => {
+const CreditCalculator = JSX(({ context, className, directoryName }) => {
     const [moneyValue, setMoneyValue] = context.useState(undefined);
     const [monthsValue, setMonthsValue] = context.useState(undefined);
     const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(true);
     const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(true);
-    const tableRows = useCreditCalculatorData(context.useAsyncData).rows;
+    const tableRows = useCreditCalculatorData(context.useAsyncData, directoryName).rows;
     const calculatorParams = getCalculatorParams({ tableRows, isAnnuity: isAnnuityChecked });
     const defaultSum = calculatorParams.maxSum && calculatorParams.minSum
         ? (calculatorParams.maxSum - calculatorParams.minSum) / 2
@@ -32698,9 +32695,9 @@ const CreditCalculator = JSX(({ context, className }) => {
         setMonthsValue(clamp(value * MONTHS_IN_YEAR, calculatorParams?.minMonths || DEFAULT_MIN_MONTHS, calculatorParams?.maxMonths || DEFAULT_MAX_MONTHS));
     }
     return (jsx("section", { className: `font-sans text-primary-text bg-white p-4 ${className}`, children: jsxs("div", { className: `box-border p-12 flex flex-col justify-between ${borderStyle}`, children: [jsxs("div", { className: "flex justify-between", children: [jsxs("div", { className: "grow mr-11", children: [jsx(InputRange, { title: "\u0416\u0435\u043B\u0430\u0435\u043C\u0430\u044F \u0441\u0443\u043C\u043C\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u20BD", items: [
-                                        `От ${addSpacesBetweenNumbers(String(calculatorParams.minSum))} рублей`,
-                                        `До ${addSpacesBetweenNumbers(String(calculatorParams.maxSum))} рублей`,
-                                    ], min: calculatorParams?.minSum, max: calculatorParams?.maxSum, step: STEP_MONEY, value: moneyValue || defaultSum, onChange: setMoneyValue }), jsx(InputRange, { title: "\u0421\u0440\u043E\u043A \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u043C\u0435\u0441\u044F\u0446\u0435\u0432", items: ['Или выберите из предложенных вариантов ниже'], min: calculatorParams?.minMonths, max: calculatorParams?.maxMonths, step: STEP_MONTHS, value: monthsValue || defaultMonths, onChange: setMonthsValue }), jsx("div", { className: "flex mb-7", children: creditTermYears.map((number, i) => CreditCalculator_renderButton(number, i, handleButtonClick)) }), jsx(Checkbox, { text: "\u041F\u043E\u043B\u0443\u0447\u0430\u044E \u043F\u0435\u043D\u0441\u0438\u044E \u043D\u0430 \u043A\u0430\u0440\u0442\u0443 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", checked: isAnnuityChecked, onChange: setIsAnnuityChecked }), jsx(Checkbox, { className: "mb-4", text: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u044F \u0437\u0430\u0449\u0438\u0442\u0430", checked: isInsuranceChecked, onChange: setIsInsuranceChecked })] }), jsxs("div", { className: "p-9 bg-primary-main rounded-md text-white", children: [jsx("div", { className: "text-base mb-5", children: "\u041D\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx("div", { className: "text-sm opacity-60", children: "\u0415\u0436\u0435\u043C\u0435\u0441\u044F\u0447\u043D\u044B\u0439 \u043F\u043B\u0430\u0442\u0451\u0436" }), jsxs("div", { className: "text-lg mb-3", children: [addSpacesBetweenNumbers(montlyPayment.toFixed(0)), " \u20BD"] }), jsx("div", { className: "text-sm opacity-60", children: "\u0421\u0442\u0430\u0432\u043A\u0430" }), jsxs("div", { className: "text-lg", children: [rate, " %"] })] })] }), jsxs("div", { className: "flex items-center", children: [jsx(Button, { className: "mr-3", text: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443", version: "primary", href: "#" }), jsx("div", { className: "w-80 text-xxs leading-4 text-secondary-text", "aria-label": "\u0421\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u0437\u0430\u044F\u0432\u043A\u0443, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0424\u0417\u00A0\u00AB\u041E\u00A0\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\u00BB" })] })] }) }));
+                                        `От ${addSpacesBetweenNumbers(Number(calculatorParams.minSum))} рублей`,
+                                        `До ${addSpacesBetweenNumbers(Number(calculatorParams.maxSum))} рублей`,
+                                    ], min: calculatorParams?.minSum, max: calculatorParams?.maxSum, step: STEP_MONEY, value: moneyValue || defaultSum, onChange: setMoneyValue }), jsx(InputRange, { title: "\u0421\u0440\u043E\u043A \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u043C\u0435\u0441\u044F\u0446\u0435\u0432", items: ['Или выберите из предложенных вариантов ниже'], min: calculatorParams?.minMonths, max: calculatorParams?.maxMonths, step: STEP_MONTHS, value: monthsValue || defaultMonths, onChange: setMonthsValue }), jsx("div", { className: "flex mb-7", children: creditTermYears.map((number, i) => CreditCalculator_renderButton(number, i, handleButtonClick)) }), jsx(Checkbox, { text: "\u041F\u043E\u043B\u0443\u0447\u0430\u044E \u043F\u0435\u043D\u0441\u0438\u044E \u043D\u0430 \u043A\u0430\u0440\u0442\u0443 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", checked: isAnnuityChecked, onChange: setIsAnnuityChecked }), jsx(Checkbox, { className: "mb-4", text: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u044F \u0437\u0430\u0449\u0438\u0442\u0430", checked: isInsuranceChecked, onChange: setIsInsuranceChecked })] }), jsxs("div", { className: "p-9 bg-primary-main rounded-md text-white", children: [jsx("div", { className: "text-base mb-5", children: "\u041D\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx("div", { className: "text-sm opacity-60", children: "\u0415\u0436\u0435\u043C\u0435\u0441\u044F\u0447\u043D\u044B\u0439 \u043F\u043B\u0430\u0442\u0451\u0436" }), jsxs("div", { className: "text-lg mb-3", children: [addSpacesBetweenNumbers(Math.round(montlyPayment)), " \u20BD"] }), jsx("div", { className: "text-sm opacity-60", children: "\u0421\u0442\u0430\u0432\u043A\u0430" }), jsxs("div", { className: "text-lg", children: [rate, " %"] })] })] }), jsxs("div", { className: "flex items-center", children: [jsx(Button, { className: "mr-3", text: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443", version: "primary", href: "#" }), jsx("div", { className: "w-80 text-xxs leading-4 text-secondary-text", "aria-label": "\u0421\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u0437\u0430\u044F\u0432\u043A\u0443, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0424\u0417\u00A0\u00AB\u041E\u00A0\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\u00BB" })] })] }) }));
 });
 function CreditCalculator_renderButton(number, i, handleClick) {
     return (jsx("button", { className: "bg-secondary-light rounded-3xl h-10 w-[75px] box-border mr-2 flex items-center justify-center cursor-pointer border-none", onClick: () => handleClick(number), children: jsxs("span", { className: "font-semibold text-sm", children: [number, " ", number === 1 ? 'год' : number > 4 ? 'лет' : 'года'] }) }, String(i)));
@@ -32710,7 +32707,7 @@ function CreditCalculator_renderButton(number, i, handleClick) {
 
 
 
-/* harmony default export */ const CreditCalculator_fixture = (jsx(CreditCalculator, { context: context }));
+/* harmony default export */ const CreditCalculator_fixture = (jsx(CreditCalculator, { context: context, directoryName: "credit-calculator-data" }));
 
 ;// CONCATENATED MODULE: ./src/components/ExchangeRateTile/ExchangeRateTile.fixture.tsx
 
@@ -39926,7 +39923,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(2818),
+  var _require = __webpack_require__(1802),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

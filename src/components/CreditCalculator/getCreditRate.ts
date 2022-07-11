@@ -1,5 +1,6 @@
-import { DEFAULT_RATE } from './constants';
 import { CalculatorParams } from './CreditCalculatorContent';
+
+const DEFAULT_RATE = 5;
 
 interface GetCreditRateParams {
   calculatorParams?: CalculatorParams;
@@ -12,6 +13,6 @@ export const getCreditRate = (params: GetCreditRateParams) => {
   if (!calculatorParams) return DEFAULT_RATE;
 
   return isInsurance
-    ? calculatorParams?.rateWithAnnuity || DEFAULT_RATE
-    : calculatorParams?.rateWithoutAnnuity || DEFAULT_RATE;
+    ? calculatorParams?.rateWithInsurance || DEFAULT_RATE
+    : calculatorParams?.rateWithoutInsurance || DEFAULT_RATE;
 };

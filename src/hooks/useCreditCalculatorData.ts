@@ -1,17 +1,23 @@
 import type { AsyncDataHook } from '../components/ContentPage/ContentPageContext';
 import { CreditCalculatorData } from '../components/CreditCalculator/CreditCalculatorContent';
-import { projectSettings } from '../ProjectSettings';
 
-export function useCreditCalculatorData(useAsyncData: AsyncDataHook): CreditCalculatorData {
-  const { data } = useAsyncData(creditCalculatorUrl(), fetchCreditCalculatorData);
+export function useCreditCalculatorData(
+  useAsyncData: AsyncDataHook,
+  directoryName: string | undefined,
+): CreditCalculatorData {
+  const { data } = useAsyncData(creditCalculatorUrl(directoryName), () =>
+    fetchCreditCalculatorData(directoryName),
+  );
   return data || {};
 }
 
-async function fetchCreditCalculatorData(): Promise<CreditCalculatorData> {
-  const response = await fetch(creditCalculatorUrl());
+async function fetchCreditCalculatorData(
+  directoryName: string | undefined,
+): Promise<CreditCalculatorData> {
+  const response = await fetch(creditCalculatorUrl(directoryName));
   return await response.json();
 }
 
-function creditCalculatorUrl() {
-  return `/wcms-resources/${projectSettings.CREDIT_CALCULATOR || 'credit-calculator-data'}.json`;
+function creditCalculatorUrl(directoryName: string | undefined) {
+  return `/wcms-resources/${directoryName || 'credit-calculator-data'}.json`;
 }
