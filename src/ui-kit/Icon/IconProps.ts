@@ -19,6 +19,9 @@ export enum IconMap {
   'TelegramIcon',
   'VKIcon',
   'GlassIcon',
+  'DocIcon',
+  'PlusIcon',
+  'MinusIcon',
 }
 
 export type IconName = keyof typeof IconMap;
