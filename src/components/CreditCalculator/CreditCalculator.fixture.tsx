@@ -1,4 +1,4 @@
 import { CreditCalculator } from './CreditCalculator';
 import { context } from '../../setup-fixture';
 
-export default <CreditCalculator context={context} />;
+export default <CreditCalculator context={context} directoryName="credit-calculator-data" />;

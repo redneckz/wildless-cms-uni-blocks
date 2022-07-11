@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci --ignore-scripts
+      - run: npm install react react-dom --no-save
       - run: npm run build
       - run: npm test
         env:

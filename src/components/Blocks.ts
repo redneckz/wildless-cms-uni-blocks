@@ -1,3 +1,4 @@
+import { Accordion } from './Accordion/Accordion';
 import { BenefitsBlock } from './BenefitsBlock/BenefitsBlock';
 import { ComparisonTable } from './ComparisonTable/ComparisonTable';
 import { ExchangeRateTile } from './ExchangeRateTile/ExchangeRateTile';
@@ -16,20 +17,21 @@ import { TextBlock } from './TextBlock/TextBlock';
 import { Tile } from './Tile/Tile';
 
 export const Blocks = {
-  Header,
-  Footer,
-  Placeholder,
-  Tile,
-  PromoTile,
-  TextBlock,
-  ProductTile,
-  ProductBlock,
-  StepsBlock,
+  Accordion,
   BenefitsBlock,
-  ProductGallery,
-  ExchangeRateTile,
-  MobileAppTile,
-  Gallery,
-  MiniGallery,
   ComparisonTable,
+  ExchangeRateTile,
+  Footer,
+  Gallery,
+  Header,
+  MiniGallery,
+  MobileAppTile,
+  Placeholder,
+  ProductBlock,
+  ProductGallery,
+  ProductTile,
+  PromoTile,
+  StepsBlock,
+  TextBlock,
+  Tile,
 };
