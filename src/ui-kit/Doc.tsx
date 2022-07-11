@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { LinkContent } from '../model/LinkContent';
-import { Icon } from './Icon';
+import { Icon } from './Icon/Icon';
 
 export const Doc = JSX<LinkContent>(({ href, text, target }) => {
   return (
