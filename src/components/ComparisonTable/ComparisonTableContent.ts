@@ -1,4 +1,4 @@
-import type { LinkContent } from '../../model/LinkContent';
+import type { LinkProps } from '../../model/LinkProps';
 import type { Picture } from '../../model/Picture';
 import type { ButtonProps } from '../../ui-kit/Button/ButtonProps';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
@@ -41,7 +41,7 @@ export interface ColumnHeader {
   title?: string;
   icon?: IconName;
   image?: Picture;
-  link?: LinkContent;
+  link?: LinkProps;
 }
 
 /**

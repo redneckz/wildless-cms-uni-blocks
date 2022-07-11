@@ -1,5 +1,8 @@
 import type { IconName } from '../../ui-kit/Icon/IconProps';
 
+/**
+ * @title Преимущество
+ */
 export interface Benefit {
   /** @title Название */
   label?: string;
@@ -9,11 +12,14 @@ export interface Benefit {
 }
 
 /**
- * @title Преимущества
+ * @title Блок преимущества
  */
 export interface BenefitsBlockContent {
   /** @title Заголовок */
   title?: string;
-  /** @maxItems 6 */
+  /**
+   * @title Список преимущества
+   * @maxItems 6
+   */
   benefits?: Benefit[];
 }

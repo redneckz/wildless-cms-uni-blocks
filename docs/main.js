@@ -31944,14 +31944,6 @@ const HorizontalNavigation = JSX(({ className, links, context }) => {
 });
 const HorizontalNavigationLink = JSX(({ className, index, text, href, target, onClick }) => (jsx("a", { className: `font-sans font-normal text-sm text-secondary-text hover:text-primary-text inline-block no-underline max-w-[292px] ${className || ''}`, href: href, target: target, onClick: onClick, children: text || `Документ ${index}` })));
 
-;// CONCATENATED MODULE: ./src/mergeTopItems.ts
-const cmp = (a) => (b) => a?.href === b?.href;
-const substitute = (items, substitution) => (items || []).map((_) => substitution?.find(cmp(_)) || _);
-const subtract = (minuend, subtrahend) => (minuend || []).filter((_) => !subtrahend?.find(cmp(_)));
-function mergeTopItems(left, right) {
-    return substitute(left, right).concat(subtract(right, left));
-}
-
 ;// CONCATENATED MODULE: ./src/hooks/useSitemap.ts
 
 function useSitemap(useAsyncData) {
@@ -31964,6 +31956,14 @@ async function fetchSitemap() {
 }
 function sitemapURL() {
     return `/wcms-resources/${projectSettings.SITEMAP || 'sitemap'}.json`;
+}
+
+;// CONCATENATED MODULE: ./src/mergeTopItems.ts
+const cmp = (a) => (b) => a?.href === b?.href;
+const substitute = (items, substitution) => (items || []).map((_) => substitution?.find(cmp(_)) || _);
+const subtract = (minuend, subtrahend) => (minuend || []).filter((_) => !subtrahend?.find(cmp(_)));
+function mergeTopItems(left, right) {
+    return substitute(left, right).concat(subtract(right, left));
 }
 
 ;// CONCATENATED MODULE: ./src/components/Footer/Sitemap.tsx

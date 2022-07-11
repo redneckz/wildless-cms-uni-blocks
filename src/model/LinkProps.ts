@@ -13,7 +13,7 @@ export type Target = '_blank' | '_self' | '_parent' | '_top';
  * @title Ссылка
  * @required ["text", "href"]
  */
-export interface LinkContent {
+export interface LinkProps {
   /** @title Текст */
   text?: string;
   /** @title URL (href) */

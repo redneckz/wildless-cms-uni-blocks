@@ -1,15 +1,16 @@
-import type { LinkContent } from '../../model/LinkContent';
+import type { LinkProps } from '../../model/LinkProps';
 import type { BaseTileCommonProps } from '../BaseTile/BaseTileProps';
 import type { Benefit } from '../BenefitsBlock/BenefitsBlockContent';
 
-export interface ProductBlockInnerContent extends BaseTileCommonProps {
+export interface ProductBlockInnerCommonProps extends BaseTileCommonProps {
+  /** @title Преимущества */
   benefits?: Benefit[];
 }
 
 /**
  * @title Продуктовый блок
  */
-export interface ProductBlockContent extends ProductBlockInnerContent {
+export interface ProductBlockContent extends ProductBlockInnerCommonProps {
   /** @title Хлебные крошки */
-  breadcrumbs?: LinkContent[];
+  breadcrumbs?: LinkProps[];
 }

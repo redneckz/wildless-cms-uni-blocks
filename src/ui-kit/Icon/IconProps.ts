@@ -35,7 +35,7 @@ export enum IconMap {
  *    "Доллар",
  *    "Кошелек",
  *    "Евро",
- *    "Зеркало"
+ *    "Зеркало",
  *    "Сетка",
  *    "Лупа",
  *    "Новый документ",
@@ -46,7 +46,7 @@ export enum IconMap {
  *    "Профиль",
  *    "Подписанные документы",
  *    "Лого «Telegram»",
- *    "Лого «VK»",
+ *    "Лого «VK»"
  *  ]
  */
 export type IconName = keyof typeof IconMap;

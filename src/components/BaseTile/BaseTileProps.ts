@@ -8,6 +8,9 @@ export interface BaseTileIconButton extends ButtonWithIconProps {
   icon?: IconName;
 }
 
+/**
+ * @title Плитка
+ */
 export interface BaseTileCommonProps {
   /** @title Заголовок */
   title?: string;

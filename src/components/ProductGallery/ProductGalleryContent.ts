@@ -1,4 +1,4 @@
-import type { ProductBlockInnerContent } from '../ProductBlock/ProductBlockContent';
+import type { ProductBlockInnerCommonProps } from '../ProductBlock/ProductBlockContent';
 
 /** @title Кнопка под слайдом */
 interface ProductGalleryNav {
@@ -14,7 +14,7 @@ interface ProductGalleryNav {
 export interface ProductSlideContent {
   nav: ProductGalleryNav;
   /** @title Содержимое слайда */
-  productBlock: ProductBlockInnerContent;
+  productBlock: ProductBlockInnerCommonProps;
 }
 
 /**

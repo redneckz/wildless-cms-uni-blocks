@@ -1,5 +1,5 @@
-import type { LinkContent } from '../../model/LinkContent';
-import type { SitemapContent } from '../../model/SitemapContent';
+import type { LinkProps } from '../../model/LinkProps';
+import type { SitemapProps } from '../../model/SitemapProps';
 
 /**
  * @title Тип контакта
@@ -24,17 +24,17 @@ export interface ContactInfo {
 /**
  * @required ["href"]
  */
-export interface SocialMedia extends Omit<LinkContent, 'text'> {}
+export interface SocialMedia extends Omit<LinkProps, 'text'> {}
 
 /**
  * @title Подвал
  * @required ["topItems"]
  */
-export interface FooterContent extends SitemapContent {
+export interface FooterContent extends SitemapProps {
   /** @title Обязательные документы */
-  documents?: LinkContent[];
+  documents?: LinkProps[];
   /** @title Другие предприятия */
-  relatedEnterprises?: LinkContent[];
+  relatedEnterprises?: LinkProps[];
   /** @title Контакты */
   contacts?: ContactInfo[];
   /** @title Социальные сети */

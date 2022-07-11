@@ -1,10 +1,10 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent } from '../../model/LinkContent';
+import { useLink } from '../../hooks/useLink';
+import type { LinkProps } from '../../model/LinkProps';
 import type { UniBlockProps } from '../../types';
+import { Button } from '../../ui-kit/Button/Button';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
-import { useLink } from '../../hooks/useLink';
-import { Button } from '../../ui-kit/Button/Button';
 
 const ICONS_MAP: Array<{ origins: string[]; icon: IconName; label: string }> = [
   { origins: ['t.me', 'telegram.org'], icon: 'TelegramIcon', label: 'Телеграм' },
@@ -13,7 +13,7 @@ const ICONS_MAP: Array<{ origins: string[]; icon: IconName; label: string }> = [
 ];
 
 export interface SocialMediaProps extends UniBlockProps {
-  media?: Omit<LinkContent, 'text'>[];
+  media?: Omit<LinkProps, 'text'>[];
 }
 
 export const SocialMedia = JSX<SocialMediaProps>(({ className, media, context }) => {

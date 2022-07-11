@@ -1,5 +1,5 @@
 import type { ButtonVersion } from '../../model/ButtonVersion';
-import type { LinkContent } from '../../model/LinkContent';
+import type { LinkProps } from '../../model/LinkProps';
 
 /**
  * @hidden
@@ -12,14 +12,16 @@ export interface ButtonAdditionalProps {
   onClick?: (ev: MouseEvent) => any;
 }
 
-export interface ButtonProps extends ButtonAdditionalProps, LinkContent {
+export interface ButtonProps extends ButtonAdditionalProps, LinkProps {
   text?: string;
   version?: ButtonVersion;
 }
 
 export interface ButtonWithIconProps extends ButtonProps {
+  /** @hidden */
   aboveText?: string;
   /** @hidden */
   appendLeft?: any;
+  /** @hidden */
   rounded?: boolean;
 }
