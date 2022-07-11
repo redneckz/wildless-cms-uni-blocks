@@ -14,6 +14,7 @@ import { StepsBlock } from './StepsBlock/StepsBlock';
 import { TextBlock } from './TextBlock/TextBlock';
 import { Tile } from './Tile/Tile';
 import { ComparisonTable } from './ComparisonTable/ComparisonTable';
+import { Accordion } from './Accordion/Accordion';
 
 export const Blocks = {
   Header,
@@ -32,4 +33,5 @@ export const Blocks = {
   Gallery,
   MiniGallery,
   ComparisonTable,
+  Accordion,
 };
