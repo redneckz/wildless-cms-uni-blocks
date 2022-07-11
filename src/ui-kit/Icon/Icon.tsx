@@ -10,7 +10,7 @@ export const Icon = JSX<IconProps>(
       <use
         href={`${projectSettings.CDN || ''}icons/${name}.svg#icon`}
         xlinkHref={`${projectSettings.CDN || ''}icons/${name}.svg#icon`}
-      ></use>
+      />
     </svg>
   ),
 );
