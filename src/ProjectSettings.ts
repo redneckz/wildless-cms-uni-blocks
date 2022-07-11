@@ -6,6 +6,7 @@ export interface ProjectSettings {
   ENABLE_ASSIST?: boolean;
   SITEMAP?: string;
   CDN?: string; // Should ends with "/"
+  CREDIT_CALCULATOR?: string;
 }
 
 export const projectSettings = new (class implements ProjectSettings {
