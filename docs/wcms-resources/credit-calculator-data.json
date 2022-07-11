@@ -1,196 +1,22 @@
 {
   "rows": [
     {
-      "isSalaryEarner": true,
-      "isStateEmployee": true,
       "isAnnuity": true,
-      "isInsurance": true,
-      "minSum": 30000,
-      "maxSum": 3000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 12,
-      "rateWithoutAnnuity": 16.5
-    },
-    {
-      "isSalaryEarner": false,
-      "isStateEmployee": true,
-      "isAnnuity": true,
-      "isInsurance": true,
       "minSum": 15000,
-      "maxSum": 2500000,
+      "maxSum": 2000000,
       "minMonths": 1,
       "maxMonths": 84,
-      "rateWithAnnuity": 10,
-      "rateWithoutAnnuity": 14.5
+      "rateWithInsurance": 6,
+      "rateWithoutInsurance": 8.5
     },
     {
-      "isSalaryEarner": true,
-      "isStateEmployee": false,
-      "isAnnuity": true,
-      "isInsurance": true,
-      "minSum": 50000,
-      "maxSum": 3000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 5,
-      "rateWithoutAnnuity": 11.5
-    },
-    {
-      "isSalaryEarner": true,
-      "isStateEmployee": true,
       "isAnnuity": false,
-      "isInsurance": true,
-      "minSum": 100000,
-      "maxSum": 9000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 20,
-      "rateWithoutAnnuity": 25.5
-    },
-    {
-      "isSalaryEarner": true,
-      "isStateEmployee": true,
-      "isAnnuity": true,
-      "isInsurance": false,
-      "minSum": 60000,
-      "maxSum": 12000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 1,
-      "rateWithoutAnnuity": 4.5
-    },
-    {
-      "isSalaryEarner": false,
-      "isStateEmployee": false,
-      "isAnnuity": true,
-      "isInsurance": true,
-      "minSum": 35000,
+      "minSum": 30000,
       "maxSum": 4500000,
-      "minMonths": 8,
-      "maxMonths": 84,
-      "rateWithAnnuity": 8,
-      "rateWithoutAnnuity": 18.5
-    },
-    {
-      "isSalaryEarner": false,
-      "isStateEmployee": true,
-      "isAnnuity": false,
-      "isInsurance": true,
-      "minSum": 60000,
-      "maxSum": 6000000,
       "minMonths": 1,
       "maxMonths": 84,
-      "rateWithAnnuity": 16,
-      "rateWithoutAnnuity": 14.5
-    },
-    {
-      "isSalaryEarner": false,
-      "isStateEmployee": true,
-      "isAnnuity": true,
-      "isInsurance": false,
-      "minSum": 70000,
-      "maxSum": 7000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 17,
-      "rateWithoutAnnuity": 17.5
-    },
-    {
-      "isSalaryEarner": true,
-      "isStateEmployee": false,
-      "isAnnuity": false,
-      "isInsurance": true,
-      "minSum": 80000,
-      "maxSum": 8000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 18,
-      "rateWithoutAnnuity": 18.5
-    },
-    {
-      "isSalaryEarner": true,
-      "isStateEmployee": false,
-      "isAnnuity": true,
-      "isInsurance": false,
-      "minSum": 90000,
-      "maxSum": 9000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 19,
-      "rateWithoutAnnuity": 19.5
-    },
-    {
-      "isSalaryEarner": true,
-      "isStateEmployee": true,
-      "isAnnuity": false,
-      "isInsurance": false,
-      "minSum": 100000,
-      "maxSum": 10000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 10,
-      "rateWithoutAnnuity": 10.5
-    },
-    {
-      "isSalaryEarner": false,
-      "isStateEmployee": false,
-      "isAnnuity": false,
-      "isInsurance": true,
-      "minSum": 110000,
-      "maxSum": 11000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 12,
-      "rateWithoutAnnuity": 11.5
-    },
-    {
-      "isSalaryEarner": false,
-      "isStateEmployee": true,
-      "isAnnuity": false,
-      "isInsurance": false,
-      "minSum": 120000,
-      "maxSum": 12000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 22,
-      "rateWithoutAnnuity": 22.5
-    },
-    {
-      "isSalaryEarner": false,
-      "isStateEmployee": false,
-      "isAnnuity": true,
-      "isInsurance": false,
-      "minSum": 130000,
-      "maxSum": 13000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 13,
-      "rateWithoutAnnuity": 16.5
-    },
-    {
-      "isSalaryEarner": false,
-      "isStateEmployee": false,
-      "isAnnuity": false,
-      "isInsurance": false,
-      "minSum": 140000,
-      "maxSum": 15000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 44,
-      "rateWithoutAnnuity": 44.5
-    },
-    {
-      "isSalaryEarner": true,
-      "isStateEmployee": true,
-      "isAnnuity": false,
-      "isInsurance": false,
-      "minSum": 150000,
-      "maxSum": 16000000,
-      "minMonths": 1,
-      "maxMonths": 84,
-      "rateWithAnnuity": 29,
-      "rateWithoutAnnuity": 29.5
+      "rateWithInsurance": 7,
+      "rateWithoutInsurance": 9.5
     }
   ]
 }
