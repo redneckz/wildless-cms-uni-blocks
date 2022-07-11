@@ -98,4 +98,44 @@
     scroll-snap-stop: always;
     width: 100%;
   }
+
+  input[type='range'].slider {
+    -webkit-appearance: none;
+    height: 4px;
+    background: transparent;
+    border-radius: 5px;
+    background-image: linear-gradient(#42ab44, #42ab44);
+    background-repeat: no-repeat;
+  }
+
+  input[type='range'].slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: none;
+    border: 3px solid #42ab44;
+  }
+
+  input[type='range'].slider::-moz-range-thumb {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: none;
+    border: 3px solid #42ab44;
+  }
+
+  input[type='range'].slider::-ms-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: none;
+    border: 3px solid #42ab44;
+  }
 }

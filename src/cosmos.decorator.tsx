@@ -1,5 +1,11 @@
 export default ({ children }) => {
   document.querySelector(':root')?.setAttribute('lang', 'ru'); // for lighthouse accessibility metrics
+  if (!document.querySelector('meta[name=description]')) {
+    const meta = document.createElement('meta');
+    meta.name = 'description';
+    meta.content = 'description';
+    document.getElementsByTagName('head')[0].appendChild(meta);
+  }
 
   return (
     <div
