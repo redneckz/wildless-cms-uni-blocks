@@ -1,0 +1,28 @@
+resources:
+  limits:
+    memory: 128Mi
+    cpu: 100m
+  requests:
+    memory: 128Mi
+    cpu: 100m
+
+#probeLangOverrides:
+#  java:
+#    readinessProbe:
+#      initialDelaySeconds: 500
+#    livenessProbe:
+#      initialDelaySeconds: 500
+
+psvc:
+  name: Сервис Design (UI-Viewer)
+  description: Сервис Design (UI-Viewer)
+
+
+#vaultSecretKeys:
+#  - AUTH_GUEST_KEY
+#  - AUTH_GUEST_IV
+
+#links:
+#  - targetProtocol: HTTP
+#    targetInformationSystemId: gentics
+#    targetServiceId: mesh-core

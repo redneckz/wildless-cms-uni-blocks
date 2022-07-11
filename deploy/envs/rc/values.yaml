@@ -1,0 +1,14 @@
+strategyType: Recreate
+
+psvc:
+  istioSidecarSettings:
+    limits:
+      memory: 300Mi
+      cpu: 100m
+    requests:
+      memory: 300Mi
+      cpu: 100m
+
+replicaCount: 1
+
+#env:
