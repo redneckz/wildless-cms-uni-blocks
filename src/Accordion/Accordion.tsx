@@ -13,7 +13,7 @@ export const Accordion = JSX<AccordionProps>(({ title, accordionItems, context, 
       {accordionItems?.length ? (
         <ul className="list-none m-0 p-0">
           {accordionItems.map((item, i) => (
-            <AccordionItem key={'AccordionItem' + i} {...item} context={context} />
+            <AccordionItem key={`AccordionItem${i}`} {...item} context={context} />
           ))}
         </ul>
       ) : null}

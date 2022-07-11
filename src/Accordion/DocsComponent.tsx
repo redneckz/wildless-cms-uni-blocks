@@ -1,5 +1,5 @@
-import type { LinkContent } from '../model/LinkContent';
 import { Doc } from '../ui-kit/Doc';
+import type { LinkContent } from '../model/LinkContent';
 
 const DocsComponent = (data: LinkContent[]) => {
   return (
@@ -13,11 +13,4 @@ const DocsComponent = (data: LinkContent[]) => {
   );
 };
 
-const TextComponent = (data: string) => <p className="m-0">{data}</p>;
-
-const ACCORDION_COMPONENTS = {
-  Text: TextComponent,
-  Docs: DocsComponent,
-};
-
-export default ACCORDION_COMPONENTS;
+export default DocsComponent;

@@ -28,7 +28,7 @@ const propsDocs: AccordionProps = {
   accordionItems: [
     {
       label: 'Accordion label 1',
-      components: [
+      elements: [
         {
           name: 'Docs',
           data: DOCS,
@@ -37,7 +37,7 @@ const propsDocs: AccordionProps = {
     },
     {
       label: 'Accordion label 2',
-      components: [
+      elements: [
         {
           name: 'Docs',
           data: DOCS,
@@ -46,7 +46,7 @@ const propsDocs: AccordionProps = {
     },
     {
       label: 'Accordion label 3',
-      components: [
+      elements: [
         {
           name: 'Docs',
           data: DOCS,
@@ -62,7 +62,7 @@ const propsText: AccordionProps = {
   accordionItems: [
     {
       label: 'Accordion label 1',
-      components: [
+      elements: [
         {
           name: 'Text',
           data: TEXT,
@@ -71,7 +71,7 @@ const propsText: AccordionProps = {
     },
     {
       label: 'Accordion label 2',
-      components: [
+      elements: [
         {
           name: 'Text',
           data: TEXT,
@@ -80,7 +80,7 @@ const propsText: AccordionProps = {
     },
     {
       label: 'Accordion label 3',
-      components: [
+      elements: [
         {
           name: 'Text',
           data: TEXT,
@@ -96,7 +96,7 @@ const propsTextAndDocs: AccordionProps = {
   accordionItems: [
     {
       label: 'Accordion label 1',
-      components: [
+      elements: [
         {
           name: 'Text',
           data: TEXT,
@@ -109,7 +109,7 @@ const propsTextAndDocs: AccordionProps = {
     },
     {
       label: 'Accordion label 2',
-      components: [
+      elements: [
         {
           name: 'Text',
           data: TEXT,
@@ -122,7 +122,7 @@ const propsTextAndDocs: AccordionProps = {
     },
     {
       label: 'Accordion label 3',
-      components: [
+      elements: [
         {
           name: 'Text',
           data: TEXT,

@@ -1290,7 +1290,7 @@
         "accordionItems": [
           {
             "label": "Accordion label 1",
-            "components": [
+            "elements": [
               {
                 "name": "Text",
                 "data": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit labore eum iste ea atque accusantium architecto voluptate voluptates, corporis aperiam! Illo ducimus deserunt totam harum neque obcaecati tempore voluptatibus"
@@ -1318,7 +1318,7 @@
           },
           {
             "label": "Accordion label 2",
-            "components": [
+            "elements": [
               {
                 "name": "Text",
                 "data": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit labore eum iste ea atque accusantium architecto voluptate voluptates, corporis aperiam! Illo ducimus deserunt totam harum neque obcaecati tempore voluptatibus"
@@ -1346,7 +1346,7 @@
           },
           {
             "label": "Accordion label 3",
-            "components": [
+            "elements": [
               {
                 "name": "Text",
                 "data": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae sit labore eum iste ea atque accusantium architecto voluptate voluptates, corporis aperiam! Illo ducimus deserunt totam harum neque obcaecati tempore voluptatibus"

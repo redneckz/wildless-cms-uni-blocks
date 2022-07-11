@@ -1,24 +1,23 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../types';
-import type { AccordionItemContent, AccordionComponentContent } from './AccordionContent';
+import type { AccordionItemContent, AccordionElementsContent } from './AccordionContent';
 import { Icon } from '../ui-kit/Icon';
-import ACCORDION_COMPONENTS from './AccordionComponents';
+import AccordionElements from './AccordionElements';
 
 export interface AccordionItemProps extends AccordionItemContent, UniBlockProps {}
 
-export const AccordionItem = JSX<AccordionItemProps>(({ label, components, context }) => {
+export const AccordionItem = JSX<AccordionItemProps>(({ label, elements, context }) => {
   const [isActive, setIsActive] = context.useState(false);
-  const hasContent = components?.length;
+  const hasContent = elements?.length;
   const icon = isActive ? 'MinusIcon' : 'PlusIcon';
 
   const handleToggle = (e) => {
     if (!hasContent) return null;
     setIsActive(!isActive);
-    const contentBlock =
-      e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;
+    const contentBlock = getContentBlock(e);
     contentBlock.style.maxHeight = contentBlock.style.maxHeight
       ? null
-      : contentBlock.scrollHeight + 'px';
+      : `${contentBlock.scrollHeight}px`;
   };
 
   return (
@@ -43,7 +42,7 @@ export const AccordionItem = JSX<AccordionItemProps>(({ label, components, conte
             isActive ? 'pb-5' : ''
           } text-sm transition-all duration-300 max-h-0 overflow-hidden group-last:last:pb-0 `}
         >
-          {components?.length ? components.map(renderComponent) : null}
+          {elements?.length ? elements.map(renderComponent) : null}
         </div>
       ) : null}
     </li>
@@ -52,17 +51,17 @@ export const AccordionItem = JSX<AccordionItemProps>(({ label, components, conte
 
 // TODO: draft, for dynamic rendering of components
 
-const renderComponent = (component: AccordionComponentContent, i: number) => {
-  if (
-    component.name &&
-    component.data?.length &&
-    !ACCORDION_COMPONENTS.hasOwnProperty(component.name)
-  )
+const renderComponent = (element: AccordionElementsContent, i: number) => {
+  if (element.name && element.data?.length && !AccordionElements.hasOwnProperty(element.name)) {
     return null;
-  const callCurrentComponent = component.name && ACCORDION_COMPONENTS[component.name];
+  }
+  const callAccordionElement = element.name && AccordionElements[element.name];
   return (
-    <div className="mb-5 last:mb-0" key={'component' + i}>
-      {callCurrentComponent(component.data)}
+    <div className="mb-5 last:mb-0" key={`component${i}`}>
+      {callAccordionElement(element.data)}
     </div>
   );
 };
+
+const getContentBlock = (e) =>
+  e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;

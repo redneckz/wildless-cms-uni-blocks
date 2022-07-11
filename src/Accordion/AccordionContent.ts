@@ -1,3 +1,5 @@
+import type { LinkContent } from '../model/LinkContent';
+
 export interface AccordionContent {
   title?: string;
   accordionItems?: AccordionItemContent[];
@@ -5,10 +7,17 @@ export interface AccordionContent {
 
 export interface AccordionItemContent {
   label?: string;
-  components?: AccordionComponentContent[];
+  elements?: AccordionElementsContent[];
 }
 
-export interface AccordionComponentContent {
+export type AccordionElementsContent = DocsElementContent | TextElementContent;
+
+export interface DocsElementContent {
   name?: string;
-  data?: any;
+  data?: LinkContent[];
+}
+
+export interface TextElementContent {
+  name?: string;
+  data?: string;
 }
