@@ -9,7 +9,9 @@ import { clamp } from '../../utils/clamp';
 import {
   DEFAULT_MAX_MONTHS,
   DEFAULT_MIN_MONTHS,
+  DEFAULT_MONTHS,
   DEFAULT_PAYMENT_TYPE,
+  DEFAULT_SUM,
   MONTHS_IN_YEAR,
   STEP_MONEY,
   STEP_MONTHS,
@@ -24,8 +26,8 @@ export interface CreditCalculatorProps extends UniBlockProps {}
 const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
 
 export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className }) => {
-  const [moneyValue, setMoneyValue] = context.useState(350000);
-  const [monthsValue, setMonthsValue] = context.useState(12);
+  const [moneyValue, setMoneyValue] = context.useState<number | undefined>(undefined);
+  const [monthsValue, setMonthsValue] = context.useState<number | undefined>(undefined);
   const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(true);
   const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(true);
 
@@ -33,14 +35,24 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
 
   const calculatorParams = getCalculatorParams({ tableRows, isAnnuity: isAnnuityChecked });
 
+  const defaultSum =
+    calculatorParams.maxSum && calculatorParams.minSum
+      ? (calculatorParams.maxSum - calculatorParams.minSum) / 2
+      : DEFAULT_SUM;
+
+  const defaultMonths =
+    calculatorParams.maxMonths && calculatorParams.minMonths
+      ? (calculatorParams.maxMonths - calculatorParams.minMonths) / 2
+      : DEFAULT_MONTHS;
+
   const rate = getCreditRate({ calculatorParams, isInsurance: isInsuranceChecked });
 
   const montlyPayment = getMonthlyPayment({
     calculatorParams,
     paymentType: DEFAULT_PAYMENT_TYPE,
     rate,
-    sum: moneyValue,
-    months: monthsValue,
+    sum: moneyValue || defaultSum,
+    months: monthsValue || defaultMonths,
   });
 
   const creditTermYears = getCreditTermYears(
@@ -72,7 +84,7 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
               min={calculatorParams?.minSum}
               max={calculatorParams?.maxSum}
               step={STEP_MONEY}
-              value={moneyValue}
+              value={moneyValue || defaultSum}
               onChange={setMoneyValue}
             />
             <InputRange
@@ -81,7 +93,7 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(({ context, className
               min={calculatorParams?.minMonths}
               max={calculatorParams?.maxMonths}
               step={STEP_MONTHS}
-              value={monthsValue}
+              value={monthsValue || defaultMonths}
               onChange={setMonthsValue}
             />
             <div className="flex mb-7">
