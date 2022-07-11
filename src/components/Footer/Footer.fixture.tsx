@@ -188,7 +188,7 @@ export default (
         ],
       },
     ]}
-    socialMedia={[{ href: 'https://vk.com' }, { href: 'https://ok.ru' }, { href: 'https://t.me' }]}
+    socialMedia={[{ href: 'https://t.me' }, { href: 'https://vk.com' }, { href: 'https://ok.ru' }]}
     contacts={[
       {
         text: '+7 (495) 787-7-787',

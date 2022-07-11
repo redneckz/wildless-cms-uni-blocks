@@ -6,10 +6,22 @@ import type { IconName } from '../../ui-kit/Icon/IconProps';
 import { useLink } from '../../hooks/useLink';
 import { Button } from '../../ui-kit/Button/Button';
 
-const ICONS_MAP: Array<{ origins: string[]; icon: IconName; label: string }> = [
-  { origins: ['t.me', 'telegram.org'], icon: 'TelegramIcon', label: 'Телеграм' },
-  { origins: ['vk.com'], icon: 'VKIcon', label: 'ВКонтакте' },
-  { origins: ['ok.ru'], icon: 'OkIcon', label: 'Одноклассники' },
+const ICONS_MAP: Array<{
+  origins: string[];
+  icon: IconName;
+  label: string;
+  width: string;
+  height: string;
+}> = [
+  {
+    origins: ['t.me', 'telegram.org'],
+    icon: 'TelegramIcon',
+    label: 'Телеграм',
+    width: '20px',
+    height: '16px',
+  },
+  { origins: ['vk.com'], icon: 'VKIcon', label: 'ВКонтакте', width: '24px', height: '12px' },
+  { origins: ['ok.ru'], icon: 'OkIcon', label: 'Одноклассники', width: '12px', height: '20px' },
 ];
 
 export interface SocialMediaProps extends UniBlockProps {
@@ -33,7 +45,7 @@ interface MediaButtonProps {
 }
 
 const MediaButton = JSX<MediaButtonProps>(({ href }) => {
-  const { icon, label } =
+  const { icon, label, width, height } =
     ICONS_MAP.find(({ origins }) => origins.some((_) => href?.includes(_))) || {};
 
   if (!icon) return null;
@@ -45,8 +57,15 @@ const MediaButton = JSX<MediaButtonProps>(({ href }) => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="border-solid border border-main-divider w-9 h-9 flex items-center justify-center hover:text-primary-main"
-      appendLeft={<Icon name={icon} />}
+      className="border-solid border border-main-divider w-9 h-9 flex items-center justify-center hover:fill-primary-main"
+      appendLeft={
+        <Icon
+          name={icon}
+          width={width}
+          height={height}
+          className="[&>*]:fill-primary-text [&>*]:hover:fill-primary-main"
+        />
+      }
     />
   );
 });
