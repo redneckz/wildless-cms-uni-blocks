@@ -1,0 +1,3 @@
+include:
+  - project: rshbintech/integrations/ckpr/ci-cd/base
+    file: /flow/ci-cdp/svc/frontend.yml

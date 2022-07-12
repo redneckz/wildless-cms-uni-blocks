@@ -45,10 +45,14 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
           <Icon name="ProfileIcon" aria-hidden="true" />
         </HeaderSecondaryMenuButton>
         <HeaderSecondaryMenuButton
-          className="mr-5 text-secondary-light hover:text-secondary-active min-w-[32px] min-h-[32px]"
+          className="mr-5 text-secondary-light hover:text-primary-main min-w-[32px] min-h-[32px]"
           ariaLabel="Дополнительные ссылки"
         >
-          <Icon name="GridIcon" aria-hidden="true" />
+          <Icon
+            name="GridIcon"
+            aria-hidden="true"
+            className="[&>*]:fill-secondary-light [&>*]:hover:fill-primary-main"
+          />
         </HeaderSecondaryMenuButton>
       </div>
     );
