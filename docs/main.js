@@ -32459,193 +32459,6 @@ const renderStepTitle = (step, i) => {
     return (jsx("div", { className: "flex flex-col items-center text-center relative w-[276px]", children: jsxs("div", { className: "max-w-min", children: [jsx("h5", { className: "font-medium text-xl m-0 mt-4 whitespace-nowrap px-3", children: step.label }), step.description && (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: step.description }))] }) }, String(i)));
 };
 
-;// CONCATENATED MODULE: ./src/components/Blocks.ts
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const Blocks = {
-    Header: Header,
-    Footer: Footer,
-    Placeholder: Placeholder,
-    Tile: Tile,
-    PromoTile: PromoTile,
-    TextBlock: TextBlock,
-    ProductTile: ProductTile,
-    ProductBlock: ProductBlock,
-    StepsBlock: StepsBlock,
-    BenefitsBlock: BenefitsBlock,
-    ProductGallery: ProductGallery,
-    ExchangeRateTile: ExchangeRateTile,
-    MobileAppTile: MobileAppTile,
-    Gallery: Gallery,
-    MiniGallery: MiniGallery,
-    ComparisonTable: ComparisonTable,
-    Accordion: Accordion,
-};
-
-;// CONCATENATED MODULE: ./src/ui-kit/Button/LikeButton.tsx
-
-
-const LikeButton = JSX(({ className, onClick, ariaLabel }) => (jsx("button", { type: "button", className: `border-0 w-[36px] bg-inherit cursor-pointer ${className || ''}`, onClick: onClick, "aria-label": ariaLabel, children: renderLikeIcon() })));
-const renderLikeIcon = () => {
-    const params = {
-        stroke: '#292D32',
-        strokeLinecap: 'round',
-        strokeLinejoin: 'round',
-        strokeWidth: '1.5',
-    };
-    return (jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 24 24", children: [jsx("path", { ...params, strokeMiterlimit: "10", d: "M21.48 11.95c.5-1.4-.4-2.6-1.9-2.6h-4c-.6 0-1.1-.5-1-1.2l.5-3.2c.2-.9-.4-1.9-1.3-2.2-.8-.3-1.8.1-2.2.7l-4.1 6.1M7.48 18.35l3.1 2.4c.4.4 1.3.6 1.9.6h3.8c1.2 0 2.5-.9 2.8-2.1l1.24-3.77" }), jsx("path", { ...params, d: "M2.38 18.35v-9.8c0-1.4.6-1.9 2-1.9h1c1.4 0 2 .5 2 1.9v9.8c0 1.4-.6 1.9-2 1.9h-1c-1.4 0-2-.5-2-1.9Z" })] }));
-};
-
-;// CONCATENATED MODULE: ./src/components/LikeControl/LikeControl.tsx
-
-
-
-const LikeControl = JSX(({ className, context }) => {
-    const likeService = context.useLikeService();
-    return (jsxs("div", { className: `border-main border-2 border-solid bg-white flex w-[125px] items-center justify-center gap-3 p-2 font-sans ${className || ''}`, children: [jsx(LikeButton, { onClick: likeService.like, ariaLabel: "\u041F\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043E\u0442\u043C\u0435\u0442\u043A\u0443 \u00AB\u043B\u0430\u0439\u043A\u00BB" }), jsx(LikeButton, { onClick: likeService.dislike, className: "rotate-180", ariaLabel: "\u041F\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043E\u0442\u043C\u0435\u0442\u043A\u0443 \u00AB\u0434\u0438\u0437\u043B\u0430\u0439\u043A\u00BB" }), jsx("span", { className: "select-none", children: likeService.likeCount })] }));
-});
-
-;// CONCATENATED MODULE: ./src/components/ContentPage/ContentPage.tsx
-
-
-
-
-const defaultBlockDecorator = ({ blockClassName, block, render }) => render({ blockClassName, block });
-const ContentPage = JSX(({ className, context, blocksRegistry, data: { style: pageStyle, blocks, likeControl, colorPalette = 'pc' }, blockDecorator = defaultBlockDecorator, }) => {
-    return (jsxs("section", { className: "relative", "data-theme": colorPalette, children: [jsx("div", { className: `grid grid-cols-12 gap-1 ${style2className(pageStyle)} ${className || ''}`, children: blocks?.length ? blocks.map(renderBlock) : null }), likeControl && (jsx("div", { className: "flex items-end absolute bottom-0 right-0 h-full pointer-events-none", children: jsx(LikeControl, { className: "rounded-tl-lg sticky bottom-0 pointer-events-auto", context: context }) }))] }));
-    function renderBlock(block, i) {
-        const { type } = block;
-        if (!(type in blocksRegistry)) {
-            console.warn(`No block with "${type}" is registered`);
-        }
-        const BlockComponent = blocksRegistry[type] || Placeholder;
-        return blockDecorator({
-            blockClassName: style2className(block.style),
-            block,
-            render: (props) => {
-                const { version, content, blocks } = props.block;
-                return (jsx(BlockComponent, { className: props.blockClassName, version: version, context: context, ...content, children: blocks?.length ? blocks.map(renderBlock) : null }, `${type}-${i}`));
-            },
-        }, `block-${i}`);
-    }
-});
-function style2className(style) {
-    return style ? style.join(' ') : '';
-}
-
-;// CONCATENATED MODULE: ./src/components/Footer/Footer.mobile.tsx
-
-
-
-const Footer_mobile_Footer = JSX(({ className, context }) => (jsx("footer", { className: `${className} px-9 py-2 bg-white rounded-bl-3xl rounded-br-3xl`, children: jsx(TextInformation, { context: context }) })));
-
-;// CONCATENATED MODULE: ./src/components/Gallery/Gallery.mobile.tsx
-
-
-
-
-
-
-const Gallery_mobile_Gallery = JSX(({ title, description, cards = [], className }) => {
-    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-4 overflow-hidden ${className}`, children: [jsxs("div", { className: "flex flex-col items-center mb-8", children: [jsx(Title, { className: "font-medium m-0 text-centers", children: title }), description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { className: "horizontal-list no-scrollbar", role: "list", children: cards?.map(Gallery_mobile_renderCard) })] }));
-});
-function Gallery_mobile_renderCard(card, key) {
-    return (jsxs("div", { className: "box-border horizontal-list-item border-solid border rounded-md border-main-divider p-4 mx-1 flex flex-col justify-between items-stretch", role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? Gallery_mobile_renderItems(card.items) : null] }), card.href ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.href })) : null] }, key));
-}
-function Gallery_mobile_renderItems(items = []) {
-    return (jsx("section", { className: "max-w-[308px] mt-2", role: "list", children: items.map((item, i) => (jsx(BlockItem, { children: jsx("span", { className: "text-sm text-secondary-text", children: item }) }, String(i)))) }));
-}
-
-;// CONCATENATED MODULE: ./src/components/ProductBlock/ProductBlock.mobile.tsx
-
-
-
-const ProductBlock_mobile_ProductBlock = JSX(({ titleSize, image, benefits, ...props } /* Get rid of image and benefits */) => {
-    const { className } = props;
-    return (jsx("section", { className: `font-sans bg-white pt-10 pl-[50px] pb-[50px] pr-[7.5rem] ${className || ''}`, children: jsx(ProductBlockInner, { ...props, titleSize: "L" }) }));
-});
-
-;// CONCATENATED MODULE: ./src/components/MobileBlocks.ts
-
-
-
-
-
-
-
-
-
-
-const MobileBlocks = {
-    Header: Header,
-    Footer: Footer_mobile_Footer,
-    Placeholder: Placeholder,
-    Tile: Tile,
-    ProductTile: ProductTile,
-    ProductBlock: ProductBlock_mobile_ProductBlock,
-    TextBlock: TextBlock,
-    ExchangeRateTile: ExchangeRateTile,
-    MobileAppTile: MobileAppTile,
-    Gallery: Gallery_mobile_Gallery,
-    // TODO StepsBlock,
-    // TODO BenefitsBlock,
-    // TODO ProductGallery
-};
-
-;// CONCATENATED MODULE: ./src/components/ContentPage/toMobilePage.ts
-function toMobilePage(contentPage) {
-    const blocks = contentPage.blocks?.filter(({ mobile }) => !mobile?.hidden).map(toMobileBlock);
-    return {
-        ...contentPage,
-        blocks,
-    };
-}
-function toMobileBlock(block) {
-    const { mobile } = block;
-    if (mobile) {
-        return {
-            ...block,
-            style: mobile.style?.length ? mobile.style : block.style,
-        };
-    }
-    else {
-        return block;
-    }
-}
-
-;// CONCATENATED MODULE: ./src/components/ContentPage/ContentPage.fixture.tsx
-
-
-
-
-
-
-const data = __webpack_require__(1703);
-const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { className: `relative flex items-stretch ${blockClassName}`, onClick: () => console.log('Edit', block), children: [render({ block, blockClassName: `${blockClassName} w-full` }), jsx("button", { className: "absolute w-8 h-8 top-4 right-4 border rounded-full", onClick: (e) => {
-                console.log('Delete', block);
-                e.stopPropagation();
-            }, children: "\u2573" })] }, i));
-/* harmony default export */ const ContentPage_fixture = ({
-    default: (jsx(ContentPage, { className: "bg-main", context: context, blocksRegistry: Blocks, data: data })),
-    mobile: (jsx(ContentPage, { className: "bg-secondary-text", context: mobileContext, blocksRegistry: MobileBlocks, data: toMobilePage(data) })),
-    editor: (jsx("div", { style: { background: "url('grid.svg')", height: '100%' }, children: jsx(ContentPage, { className: "bg-transparent", context: context, blocksRegistry: Blocks, data: data, blockDecorator: blockDecorator }) })),
-});
-
 ;// CONCATENATED MODULE: ./src/hooks/useCreditCalculatorData.ts
 function useCreditCalculatorData(useAsyncData, directoryName) {
     const { data } = useAsyncData(creditCalculatorUrl(directoryName), () => fetchCreditCalculatorData(directoryName));
@@ -32796,6 +32609,10 @@ const CreditCalculator = JSX(({ context, className, directoryName }) => {
     const defaultMonths = calculatorParams.maxMonths && calculatorParams.minMonths
         ? Math.round((calculatorParams.maxMonths - calculatorParams.minMonths) / 2)
         : DEFAULT_MONTHS;
+    const minSum = calculatorParams?.minSum || DEFAULT_MIN_SUM;
+    const maxSum = calculatorParams?.maxSum || DEFAULT_MAX_SUM;
+    const minMonths = calculatorParams?.minMonths || DEFAULT_MIN_MONTHS;
+    const maxMonths = calculatorParams?.maxMonths || DEFAULT_MAX_MONTHS;
     const rate = getCreditRate({ calculatorParams, isInsurance: isInsuranceChecked });
     const montlyPayment = getMonthlyPayment({
         calculatorParams,
@@ -32804,18 +32621,207 @@ const CreditCalculator = JSX(({ context, className, directoryName }) => {
         sum: moneyValue || defaultSum,
         months: monthsValue || defaultMonths,
     });
-    const creditTermYears = getCreditTermYears(calculatorParams.minMonths || DEFAULT_MIN_MONTHS, calculatorParams.maxMonths || DEFAULT_MAX_MONTHS);
+    const creditTermYears = getCreditTermYears(minMonths, maxMonths);
     function handleButtonClick(value) {
-        setMonthsValue(clamp(value * MONTHS_IN_YEAR, calculatorParams?.minMonths || DEFAULT_MIN_MONTHS, calculatorParams?.maxMonths || DEFAULT_MAX_MONTHS));
+        setMonthsValue(clamp(value * MONTHS_IN_YEAR, minMonths, maxMonths));
     }
     return (jsx("section", { className: `font-sans text-primary-text bg-white p-4 ${className}`, children: jsxs("div", { className: `box-border p-12 flex flex-col justify-between ${borderStyle}`, children: [jsxs("div", { className: "flex justify-between", children: [jsxs("div", { className: "grow mr-11", children: [jsx(InputRange, { title: "\u0416\u0435\u043B\u0430\u0435\u043C\u0430\u044F \u0441\u0443\u043C\u043C\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u20BD", items: [
-                                        `От ${addSpacesBetweenNumbers(Number(calculatorParams.minSum))} рублей`,
-                                        `До ${addSpacesBetweenNumbers(Number(calculatorParams.maxSum))} рублей`,
-                                    ], min: calculatorParams?.minSum, max: calculatorParams?.maxSum, step: STEP_MONEY, value: moneyValue || defaultSum, onChange: setMoneyValue }), jsx(InputRange, { title: "\u0421\u0440\u043E\u043A \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u043C\u0435\u0441\u044F\u0446\u0435\u0432", items: ['Или выберите из предложенных вариантов ниже'], min: calculatorParams?.minMonths, max: calculatorParams?.maxMonths, step: STEP_MONTHS, value: monthsValue || defaultMonths, onChange: setMonthsValue }), jsx("div", { className: "flex mb-7", children: creditTermYears.map((number, i) => CreditCalculator_renderButton(number, i, handleButtonClick)) }), jsx(Checkbox, { text: "\u041F\u043E\u043B\u0443\u0447\u0430\u044E \u043F\u0435\u043D\u0441\u0438\u044E \u043D\u0430 \u043A\u0430\u0440\u0442\u0443 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", checked: isAnnuityChecked, onChange: setIsAnnuityChecked }), jsx(Checkbox, { className: "mb-4", text: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u044F \u0437\u0430\u0449\u0438\u0442\u0430", checked: isInsuranceChecked, onChange: setIsInsuranceChecked })] }), jsxs("div", { className: "p-9 bg-primary-main rounded-md text-white", children: [jsx("div", { className: "text-base mb-5", children: "\u041D\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx("div", { className: "text-sm opacity-60", children: "\u0415\u0436\u0435\u043C\u0435\u0441\u044F\u0447\u043D\u044B\u0439 \u043F\u043B\u0430\u0442\u0451\u0436" }), jsxs("div", { className: "text-lg mb-3", children: [addSpacesBetweenNumbers(Math.round(montlyPayment)), " \u20BD"] }), jsx("div", { className: "text-sm opacity-60", children: "\u0421\u0442\u0430\u0432\u043A\u0430" }), jsxs("div", { className: "text-lg", children: [rate, " %"] })] })] }), jsxs("div", { className: "flex items-center", children: [jsx(Button, { className: "mr-3", text: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443", version: "primary", href: "#" }), jsx("div", { className: "w-80 text-xxs leading-4 text-secondary-text", "aria-label": "\u0421\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u0437\u0430\u044F\u0432\u043A\u0443, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0424\u0417\u00A0\u00AB\u041E\u00A0\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\u00BB" })] })] }) }));
+                                        `От ${addSpacesBetweenNumbers(minSum)} рублей`,
+                                        `До ${addSpacesBetweenNumbers(maxSum)} рублей`,
+                                    ], min: minSum, max: maxSum, step: STEP_MONEY, value: moneyValue || defaultSum, onChange: setMoneyValue }), jsx(InputRange, { title: "\u0421\u0440\u043E\u043A \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u043C\u0435\u0441\u044F\u0446\u0435\u0432", items: ['Или выберите из предложенных вариантов ниже'], min: minMonths, max: maxMonths, step: STEP_MONTHS, value: monthsValue || defaultMonths, onChange: setMonthsValue }), jsx("div", { className: "flex mb-7", children: creditTermYears.map((number, i) => CreditCalculator_renderButton(number, i, handleButtonClick)) }), jsx(Checkbox, { text: "\u041F\u043E\u043B\u0443\u0447\u0430\u044E \u043F\u0435\u043D\u0441\u0438\u044E \u043D\u0430 \u043A\u0430\u0440\u0442\u0443 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", checked: isAnnuityChecked, onChange: setIsAnnuityChecked }), jsx(Checkbox, { className: "mb-4", text: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u044F \u0437\u0430\u0449\u0438\u0442\u0430", checked: isInsuranceChecked, onChange: setIsInsuranceChecked })] }), jsxs("div", { className: "p-9 bg-primary-main rounded-md text-white", children: [jsx("div", { className: "text-base mb-5", children: "\u041D\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx("div", { className: "text-sm opacity-60", children: "\u0415\u0436\u0435\u043C\u0435\u0441\u044F\u0447\u043D\u044B\u0439 \u043F\u043B\u0430\u0442\u0451\u0436" }), jsxs("div", { className: "text-lg mb-3", children: [addSpacesBetweenNumbers(Math.round(montlyPayment)), " \u20BD"] }), jsx("div", { className: "text-sm opacity-60", children: "\u0421\u0442\u0430\u0432\u043A\u0430" }), jsxs("div", { className: "text-lg", children: [rate, " %"] })] })] }), jsxs("div", { className: "flex items-center", children: [jsx(Button, { className: "mr-3", text: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443", version: "primary", href: "#" }), jsx("div", { className: "w-80 text-xxs leading-4 text-secondary-text", "aria-label": "\u0421\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u0437\u0430\u044F\u0432\u043A\u0443, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0424\u0417\u00A0\u00AB\u041E\u00A0\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\u00BB" })] })] }) }));
 });
 function CreditCalculator_renderButton(number, i, handleClick) {
     return (jsx("button", { className: "bg-secondary-light rounded-3xl h-10 w-[75px] box-border mr-2 flex items-center justify-center cursor-pointer border-none", onClick: () => handleClick(number), children: jsxs("span", { className: "font-semibold text-sm", children: [number, " ", number === 1 ? 'год' : number > 4 ? 'лет' : 'года'] }) }, String(i)));
 }
+
+;// CONCATENATED MODULE: ./src/components/Blocks.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const Blocks = {
+    Header: Header,
+    Footer: Footer,
+    Placeholder: Placeholder,
+    Tile: Tile,
+    PromoTile: PromoTile,
+    TextBlock: TextBlock,
+    ProductTile: ProductTile,
+    ProductBlock: ProductBlock,
+    StepsBlock: StepsBlock,
+    BenefitsBlock: BenefitsBlock,
+    ProductGallery: ProductGallery,
+    ExchangeRateTile: ExchangeRateTile,
+    MobileAppTile: MobileAppTile,
+    Gallery: Gallery,
+    MiniGallery: MiniGallery,
+    ComparisonTable: ComparisonTable,
+    Accordion: Accordion,
+    CreditCalculator: CreditCalculator,
+};
+
+;// CONCATENATED MODULE: ./src/ui-kit/Button/LikeButton.tsx
+
+
+const LikeButton = JSX(({ className, onClick, ariaLabel }) => (jsx("button", { type: "button", className: `border-0 w-[36px] bg-inherit cursor-pointer ${className || ''}`, onClick: onClick, "aria-label": ariaLabel, children: renderLikeIcon() })));
+const renderLikeIcon = () => {
+    const params = {
+        stroke: '#292D32',
+        strokeLinecap: 'round',
+        strokeLinejoin: 'round',
+        strokeWidth: '1.5',
+    };
+    return (jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 24 24", children: [jsx("path", { ...params, strokeMiterlimit: "10", d: "M21.48 11.95c.5-1.4-.4-2.6-1.9-2.6h-4c-.6 0-1.1-.5-1-1.2l.5-3.2c.2-.9-.4-1.9-1.3-2.2-.8-.3-1.8.1-2.2.7l-4.1 6.1M7.48 18.35l3.1 2.4c.4.4 1.3.6 1.9.6h3.8c1.2 0 2.5-.9 2.8-2.1l1.24-3.77" }), jsx("path", { ...params, d: "M2.38 18.35v-9.8c0-1.4.6-1.9 2-1.9h1c1.4 0 2 .5 2 1.9v9.8c0 1.4-.6 1.9-2 1.9h-1c-1.4 0-2-.5-2-1.9Z" })] }));
+};
+
+;// CONCATENATED MODULE: ./src/components/LikeControl/LikeControl.tsx
+
+
+
+const LikeControl = JSX(({ className, context }) => {
+    const likeService = context.useLikeService();
+    return (jsxs("div", { className: `border-main border-2 border-solid bg-white flex w-[125px] items-center justify-center gap-3 p-2 font-sans ${className || ''}`, children: [jsx(LikeButton, { onClick: likeService.like, ariaLabel: "\u041F\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043E\u0442\u043C\u0435\u0442\u043A\u0443 \u00AB\u043B\u0430\u0439\u043A\u00BB" }), jsx(LikeButton, { onClick: likeService.dislike, className: "rotate-180", ariaLabel: "\u041F\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u043E\u0442\u043C\u0435\u0442\u043A\u0443 \u00AB\u0434\u0438\u0437\u043B\u0430\u0439\u043A\u00BB" }), jsx("span", { className: "select-none", children: likeService.likeCount })] }));
+});
+
+;// CONCATENATED MODULE: ./src/components/ContentPage/ContentPage.tsx
+
+
+
+
+const defaultBlockDecorator = ({ blockClassName, block, render }) => render({ blockClassName, block });
+const ContentPage = JSX(({ className, context, blocksRegistry, data: { style: pageStyle, blocks, likeControl, colorPalette = 'pc' }, blockDecorator = defaultBlockDecorator, }) => {
+    return (jsxs("section", { className: "relative", "data-theme": colorPalette, children: [jsx("div", { className: `grid grid-cols-12 gap-1 ${style2className(pageStyle)} ${className || ''}`, children: blocks?.length ? blocks.map(renderBlock) : null }), likeControl && (jsx("div", { className: "flex items-end absolute bottom-0 right-0 h-full pointer-events-none", children: jsx(LikeControl, { className: "rounded-tl-lg sticky bottom-0 pointer-events-auto", context: context }) }))] }));
+    function renderBlock(block, i) {
+        const { type } = block;
+        if (!(type in blocksRegistry)) {
+            console.warn(`No block with "${type}" is registered`);
+        }
+        const BlockComponent = blocksRegistry[type] || Placeholder;
+        return blockDecorator({
+            blockClassName: style2className(block.style),
+            block,
+            render: (props) => {
+                const { version, content, blocks } = props.block;
+                return (jsx(BlockComponent, { className: props.blockClassName, version: version, context: context, ...content, children: blocks?.length ? blocks.map(renderBlock) : null }, `${type}-${i}`));
+            },
+        }, `block-${i}`);
+    }
+});
+function style2className(style) {
+    return style ? style.join(' ') : '';
+}
+
+;// CONCATENATED MODULE: ./src/components/Footer/Footer.mobile.tsx
+
+
+
+const Footer_mobile_Footer = JSX(({ className, context }) => (jsx("footer", { className: `${className} px-9 py-2 bg-white rounded-bl-3xl rounded-br-3xl`, children: jsx(TextInformation, { context: context }) })));
+
+;// CONCATENATED MODULE: ./src/components/Gallery/Gallery.mobile.tsx
+
+
+
+
+
+
+const Gallery_mobile_Gallery = JSX(({ title, description, cards = [], className }) => {
+    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-4 overflow-hidden ${className}`, children: [jsxs("div", { className: "flex flex-col items-center mb-8", children: [jsx(Title, { className: "font-medium m-0 text-centers", children: title }), description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { className: "horizontal-list no-scrollbar", role: "list", children: cards?.map(Gallery_mobile_renderCard) })] }));
+});
+function Gallery_mobile_renderCard(card, key) {
+    return (jsxs("div", { className: "box-border horizontal-list-item border-solid border rounded-md border-main-divider p-4 mx-1 flex flex-col justify-between items-stretch", role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? Gallery_mobile_renderItems(card.items) : null] }), card.href ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.href })) : null] }, key));
+}
+function Gallery_mobile_renderItems(items = []) {
+    return (jsx("section", { className: "max-w-[308px] mt-2", role: "list", children: items.map((item, i) => (jsx(BlockItem, { children: jsx("span", { className: "text-sm text-secondary-text", children: item }) }, String(i)))) }));
+}
+
+;// CONCATENATED MODULE: ./src/components/ProductBlock/ProductBlock.mobile.tsx
+
+
+
+const ProductBlock_mobile_ProductBlock = JSX(({ titleSize, image, benefits, ...props } /* Get rid of image and benefits */) => {
+    const { className } = props;
+    return (jsx("section", { className: `font-sans bg-white pt-10 pl-[50px] pb-[50px] pr-[7.5rem] ${className || ''}`, children: jsx(ProductBlockInner, { ...props, titleSize: "L" }) }));
+});
+
+;// CONCATENATED MODULE: ./src/components/MobileBlocks.ts
+
+
+
+
+
+
+
+
+
+
+const MobileBlocks = {
+    Header: Header,
+    Footer: Footer_mobile_Footer,
+    Placeholder: Placeholder,
+    Tile: Tile,
+    ProductTile: ProductTile,
+    ProductBlock: ProductBlock_mobile_ProductBlock,
+    TextBlock: TextBlock,
+    ExchangeRateTile: ExchangeRateTile,
+    MobileAppTile: MobileAppTile,
+    Gallery: Gallery_mobile_Gallery,
+    // TODO StepsBlock,
+    // TODO BenefitsBlock,
+    // TODO ProductGallery
+};
+
+;// CONCATENATED MODULE: ./src/components/ContentPage/toMobilePage.ts
+function toMobilePage(contentPage) {
+    const blocks = contentPage.blocks?.filter(({ mobile }) => !mobile?.hidden).map(toMobileBlock);
+    return {
+        ...contentPage,
+        blocks,
+    };
+}
+function toMobileBlock(block) {
+    const { mobile } = block;
+    if (mobile) {
+        return {
+            ...block,
+            style: mobile.style?.length ? mobile.style : block.style,
+        };
+    }
+    else {
+        return block;
+    }
+}
+
+;// CONCATENATED MODULE: ./src/components/ContentPage/ContentPage.fixture.tsx
+
+
+
+
+
+
+const data = __webpack_require__(1703);
+const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { className: `relative flex items-stretch ${blockClassName}`, onClick: () => console.log('Edit', block), children: [render({ block, blockClassName: `${blockClassName} w-full` }), jsx("button", { className: "absolute w-8 h-8 top-4 right-4 border rounded-full", onClick: (e) => {
+                console.log('Delete', block);
+                e.stopPropagation();
+            }, children: "\u2573" })] }, i));
+/* harmony default export */ const ContentPage_fixture = ({
+    default: (jsx(ContentPage, { className: "bg-main", context: context, blocksRegistry: Blocks, data: data })),
+    mobile: (jsx(ContentPage, { className: "bg-secondary-text", context: mobileContext, blocksRegistry: MobileBlocks, data: toMobilePage(data) })),
+    editor: (jsx("div", { style: { background: "url('grid.svg')", height: '100%' }, children: jsx(ContentPage, { className: "bg-transparent", context: context, blocksRegistry: Blocks, data: data, blockDecorator: blockDecorator }) })),
+});
 
 ;// CONCATENATED MODULE: ./src/components/CreditCalculator/CreditCalculator.fixture.tsx
 
@@ -39865,7 +39871,7 @@ module.exports = __webpack_require__.p + "92c10e8d48ecdcd8ee10.woff2";
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"title":"Кредиты","slug":"credits","description":"Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.","keywords":["кредит","акция"],"robots":["index","follow"],"og":{"type":"article","url":"https://foo.com/bar/baz"},"date":"2022-04-08","style":["p-20","pt-0","gap-5","bg-secondary-light"],"likeControl":true,"blocks":[{"type":"Header","style":["col-span-12","-mx-20","mb-5","shadow-[0_8px_32px_0px_#00000014]"],"content":{"defaultLocation":"Москва","topItems":[{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank"},{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank"}]}},{"type":"ProductGallery","style":["col-span-12"],"content":{"slides":[{"nav":{"title":"Деньги на любые цели","desc":"Ставка от 12,5% годовых на срок до 5 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 5 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","alt":"Кредит наличными","size":{"width":280,"height":280}}}},{"nav":{"title":"Для людей в возрасте","desc":"Ставка от 12,5% годовых на срок до 3 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 3 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"worker.png","title":"Рабочий","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Выгодно покупать","desc":"Дополнительные бонусные баллы за покупки"},"productBlock":{"title":"Дополнительные бонусные баллы за покупки!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Карты Unionpay","desc":"Кэшбэк до 20% у партнеров"},"productBlock":{"title":"Карты Unionpay»","description":"Кэшбэк до 20% у партнеров","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}}]}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Кредиты","items":["Кредитный лимит до 10 млн ₽","Кредиты наличными на любые цели","Получите деньги без залога и поручителей"],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","version":"secondary","style":["col-span-4"],"content":{"title":"Ипотека","titleSize":"M","description":"Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"promo":true},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Банковские пластиковые карты","items":["Счета в разных валютах","Бесплатное обслуживание","Кэшбэк до 15% от покупок"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Премиальные продукты","description":"Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"column-1.png","alt":"Column","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Экосистема «СВОЕ», созданная для людей","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом","Подробная база вакансий для жителей сельской местности"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"globe-1.png","title":"Глобус","format":"webp","size":{"width":200,"height":200}}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Драгоценные металлы","items":["Счета в драгоценных металлах","Слитки  и монеты из драгоценных металлов"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Банковские ячейки","items":["Полная конфиденциальность","Разный размер ячеек","Оформление доверенностей"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Вклады и сбережения","items":["Доходность по вкладам  до 15% годовых","Минимальная сумма вклада  от 3000 Р","Минимальный срок вклада от 1 месяца"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"PromoTile","style":["col-span-4"],"content":{"title":"Акции и спецпредложения","version":"secondary","date":"2022-04-16","description":"Пенсионный кредит по специальной процентной ставке","buttons":[{"text":"Все акции","href":"/credits","version":"secondary"}]},"mobile":{"hidden":true}},{"type":"ExchangeRateTile","style":["col-span-4"],"mobile":{"style":["col-span-12"]}},{"type":"MobileAppTile","style":["col-span-4"],"content":{"qr":{"href":"https://rshbnaturaldbo.onelink.me/qhkF/f182074f?af_qr=true","src":"data:image/png;base64,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"},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"#","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarketIcon","href":"#","version":"secondary"}]},"mobile":{"style":["col-span-12"]},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"/credits","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarket","href":"/credits","version":"secondary"}]},{"type":"Unknown","style":["col-span-12"],"content":{"title":"Какой то новый блок"}},{"type":"ProductBlock","style":["col-span-12"],"content":{"title":"Потребительский кредит наличными","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","breadcrumbs":[{"text":"Главная","href":"/"},{"text":"Кредитные карты","href":"/credit"},{"text":"Кредитная карта Своя Union Pay"}],"benefits":[{"label":"До 5 млн ₽","description":"Кредитный лимит","icon":"EmptyWalletIcon"},{"label":"От 16,9%","description":"Ставка по кредиту","icon":"PercentageSquareIcon"},{"label":"До 5 лет","description":"Срок кредитования","icon":"CalendarIcon"}],"buttons":[{"href":"https://rshb.ru","text":"Оформить карту","target":"_blank","version":"primary"},{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"secondary"}],"image":{"src":"money-1.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":280,"height":280}}}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Кредит На все, что хочется!”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 5 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 5 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"card-with-diamond.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Пенсионный кредит”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 3 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"letter-with-money.png","alt":"Пенсионный кредит в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-8"],"content":{"title":"Кредит под залог недвижимости","description":"Без переоформления залогой недвижимости на банк","benefits":[{"label":"Кредитный лимит","description":"до 10 млн Р"},{"label":"Процентная ставка","description":"от 21,5%"},{"label":"Срок кредитования","description":"до 10 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"building.png","alt":"Кредит под залог недвижимости в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-4"],"version":"secondary","content":{"title":"Кредит пенсионный","titleSize":"M","description":"Для людей в возрасте до 75 лет","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 16,8%"},{"label":"Срок кредитования","description":"до 150 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Рефинансирование кредитов","items":["Без справок и документов из других банков","Погашение ранее взятых кредитов в любых банках","Рефинансировать можно  кредит физического лица, кредитную карту, микрозайм или ипотеку"],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":200,"height":200}}}},{"type":"StepsBlock","style":["col-span-12"],"content":{"title":"Рассчитайте условия на онлайн-калькуляторе и оставьте заявку на потребительский кредит","steps":[{"label":"Заявка на кредит","description":"Оставьте онлайн-заявку на потребительский кредит"},{"label":"В случае одобрения","description":"Менеджер свяжется с вами и согласует встречу"},{"label":"Получение наличных","description":"Получите наличные в отделении банка"}]}},{"type":"TextBlock","style":["col-span-12"],"content":{"title":"Все карты Россельхозбанка работают","description":"Если не планируете поездку за границу, продолжайте пользоваться картой Своя. Для поездок за границу можно заказать карту \'Кредитная карта Своя Union Pay\' на сайте и в приложении Россельхозбанка","blockVersion":"primary","iconVersion":"small"}},{"type":"Gallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"money-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"globe-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]}]}},{"type":"MiniGallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"}]}},{"type":"ComparisonTable","style":["col-span-12"],"content":{"title":"Другие вклады и сбережения","rowHeaders":[{"title":"Начисление процентов на остаток по счету"},{"title":"Снятие наличных"},{"title":"Оформление онлайн"},{"title":"Кэшбэк баллами"},{"title":"Стоимость обслуживания"},{"title":"Стоимость SMS-сервиса"},{"title":"Дополнительная информация"}],"columns":[{"header":{"title":"Россельхоз-Росснефть","image":{"alt":"card-1","src":"card-1.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"Бесплатно","description":"В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 7%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть"}]]},{"header":{"title":"Panasonic","image":{"alt":"card-2","src":"card-2.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"1%","description":"В сторонних банкоматах, минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic"}]]},{"header":{"title":"Профсоюзная","image":{"alt":"card-3","src":"card-3.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно"}],[{"label":"Есть"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Для членов профсоюзных организаций"}]]},{"header":{"title":"Россельхоз-Росснефть","image":{"alt":"card-1","src":"card-1.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"Бесплатно","description":"В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 7%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть"}]]},{"header":{"title":"Panasonic","image":{"alt":"card-2","src":"card-2.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"1%","description":"В сторонних банкоматах, минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic"}]]},{"header":{"title":"Профсоюзная","image":{"alt":"card-3","src":"card-3.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно"}],[{"label":"Есть"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Для членов профсоюзных организаций"}]]}]}},{"type":"Accordion","style":["col-span-12"],"content":{"title":"Accordion title","accordionItems":[{"label":"Accordion label 1","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]},{"label":"Accordion label 2","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]},{"label":"Accordion label 3","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]}]}},{"type":"Footer","style":["col-span-12"],"content":{"topItems":[{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"Кредитные карты"},{"href":"https://rshb.ru/","text":"Дебетовые карты"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Ипотека"},{"href":"https://rshb.ru/","text":"Вклады и сбережения"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Премиальным клиентам"},{"href":"https://rshb.ru/","text":"Биометрическая регистрация"},{"href":"https://rshb.ru/","text":"Перевод денег"},{"href":"https://rshb.ru/","text":"Обмен денег"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]},{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"РКО"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Депозиты"},{"href":"https://rshb.ru/","text":"Эквайринг"},{"href":"https://rshb.ru/","text":"Банковские карты"},{"href":"https://rshb.ru/","text":"ВЭД"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Обмен валюты"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Партнёрские программы"},{"href":"https://rshb.ru/","text":"Онлайн-сервисы"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]}],"contacts":[{"text":"+7 (495) 787-7-787","description":"Для звонков из-за границы","type":"tel"},{"text":"example@example.com","description":"Для писем","type":"email"},{"text":"7787","description":"Абонентам МТС, Мегафон, Билайн и Tele2","type":"tel"}],"documents":[{"text":"Информация о процентных ставках по договорам банковского вклада с физическими лицами","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации профессиональным участником рынка ценных бумаг","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации","href":"https://rshb.ru/","target":"_blank"},{"text":"Удостоверяющий центр","href":"https://rshb.ru/","target":"_blank"},{"text":"Финансовая культура","href":"https://rshb.ru/","target":"_blank"}],"socialMedia":[{"href":"https://vk.com"},{"href":"https://ok.ru"},{"href":"https://t.me"}]}}]}');
+module.exports = JSON.parse('{"title":"Кредиты","slug":"credits","description":"Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.","keywords":["кредит","акция"],"robots":["index","follow"],"og":{"type":"article","url":"https://foo.com/bar/baz"},"date":"2022-04-08","style":["p-20","pt-0","gap-5","bg-secondary-light"],"likeControl":true,"blocks":[{"type":"Header","style":["col-span-12","-mx-20","mb-5","shadow-[0_8px_32px_0px_#00000014]"],"content":{"defaultLocation":"Москва","topItems":[{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank"},{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank"}]}},{"type":"ProductGallery","style":["col-span-12"],"content":{"slides":[{"nav":{"title":"Деньги на любые цели","desc":"Ставка от 12,5% годовых на срок до 5 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 5 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","alt":"Кредит наличными","size":{"width":280,"height":280}}}},{"nav":{"title":"Для людей в возрасте","desc":"Ставка от 12,5% годовых на срок до 3 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 3 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"worker.png","title":"Рабочий","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Выгодно покупать","desc":"Дополнительные бонусные баллы за покупки"},"productBlock":{"title":"Дополнительные бонусные баллы за покупки!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Карты Unionpay","desc":"Кэшбэк до 20% у партнеров"},"productBlock":{"title":"Карты Unionpay»","description":"Кэшбэк до 20% у партнеров","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}}]}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Кредиты","items":["Кредитный лимит до 10 млн ₽","Кредиты наличными на любые цели","Получите деньги без залога и поручителей"],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","version":"secondary","style":["col-span-4"],"content":{"title":"Ипотека","titleSize":"M","description":"Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"promo":true},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Банковские пластиковые карты","items":["Счета в разных валютах","Бесплатное обслуживание","Кэшбэк до 15% от покупок"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Премиальные продукты","description":"Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"column-1.png","alt":"Column","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Экосистема «СВОЕ», созданная для людей","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом","Подробная база вакансий для жителей сельской местности"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"globe-1.png","title":"Глобус","format":"webp","size":{"width":200,"height":200}}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Драгоценные металлы","items":["Счета в драгоценных металлах","Слитки  и монеты из драгоценных металлов"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Банковские ячейки","items":["Полная конфиденциальность","Разный размер ячеек","Оформление доверенностей"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Вклады и сбережения","items":["Доходность по вкладам  до 15% годовых","Минимальная сумма вклада  от 3000 Р","Минимальный срок вклада от 1 месяца"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"PromoTile","style":["col-span-4"],"content":{"title":"Акции и спецпредложения","version":"secondary","date":"2022-04-16","description":"Пенсионный кредит по специальной процентной ставке","buttons":[{"text":"Все акции","href":"/credits","version":"secondary"}]},"mobile":{"hidden":true}},{"type":"ExchangeRateTile","style":["col-span-4"],"mobile":{"style":["col-span-12"]}},{"type":"MobileAppTile","style":["col-span-4"],"content":{"qr":{"href":"https://rshbnaturaldbo.onelink.me/qhkF/f182074f?af_qr=true","src":"data:image/png;base64,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"},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"#","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarketIcon","href":"#","version":"secondary"}]},"mobile":{"style":["col-span-12"]},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"/credits","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarket","href":"/credits","version":"secondary"}]},{"type":"Unknown","style":["col-span-12"],"content":{"title":"Какой то новый блок"}},{"type":"ProductBlock","style":["col-span-12"],"content":{"title":"Потребительский кредит наличными","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","breadcrumbs":[{"text":"Главная","href":"/"},{"text":"Кредитные карты","href":"/credit"},{"text":"Кредитная карта Своя Union Pay"}],"benefits":[{"label":"До 5 млн ₽","description":"Кредитный лимит","icon":"EmptyWalletIcon"},{"label":"От 16,9%","description":"Ставка по кредиту","icon":"PercentageSquareIcon"},{"label":"До 5 лет","description":"Срок кредитования","icon":"CalendarIcon"}],"buttons":[{"href":"https://rshb.ru","text":"Оформить карту","target":"_blank","version":"primary"},{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"secondary"}],"image":{"src":"money-1.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":280,"height":280}}}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Кредит На все, что хочется!”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 5 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 5 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"card-with-diamond.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Пенсионный кредит”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 3 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"letter-with-money.png","alt":"Пенсионный кредит в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-8"],"content":{"title":"Кредит под залог недвижимости","description":"Без переоформления залогой недвижимости на банк","benefits":[{"label":"Кредитный лимит","description":"до 10 млн Р"},{"label":"Процентная ставка","description":"от 21,5%"},{"label":"Срок кредитования","description":"до 10 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"building.png","alt":"Кредит под залог недвижимости в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-4"],"version":"secondary","content":{"title":"Кредит пенсионный","titleSize":"M","description":"Для людей в возрасте до 75 лет","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 16,8%"},{"label":"Срок кредитования","description":"до 150 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Рефинансирование кредитов","items":["Без справок и документов из других банков","Погашение ранее взятых кредитов в любых банках","Рефинансировать можно  кредит физического лица, кредитную карту, микрозайм или ипотеку"],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":200,"height":200}}}},{"type":"StepsBlock","style":["col-span-12"],"content":{"title":"Рассчитайте условия на онлайн-калькуляторе и оставьте заявку на потребительский кредит","steps":[{"label":"Заявка на кредит","description":"Оставьте онлайн-заявку на потребительский кредит"},{"label":"В случае одобрения","description":"Менеджер свяжется с вами и согласует встречу"},{"label":"Получение наличных","description":"Получите наличные в отделении банка"}]}},{"type":"TextBlock","style":["col-span-12"],"content":{"title":"Все карты Россельхозбанка работают","description":"Если не планируете поездку за границу, продолжайте пользоваться картой Своя. Для поездок за границу можно заказать карту \'Кредитная карта Своя Union Pay\' на сайте и в приложении Россельхозбанка","blockVersion":"primary","iconVersion":"small"}},{"type":"Gallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"money-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"globe-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]}]}},{"type":"MiniGallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"}]}},{"type":"ComparisonTable","style":["col-span-12"],"content":{"title":"Другие вклады и сбережения","rowHeaders":[{"title":"Начисление процентов на остаток по счету"},{"title":"Снятие наличных"},{"title":"Оформление онлайн"},{"title":"Кэшбэк баллами"},{"title":"Стоимость обслуживания"},{"title":"Стоимость SMS-сервиса"},{"title":"Дополнительная информация"}],"columns":[{"header":{"title":"Россельхоз-Росснефть","image":{"alt":"card-1","src":"card-1.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"Бесплатно","description":"В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 7%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть"}]]},{"header":{"title":"Panasonic","image":{"alt":"card-2","src":"card-2.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"1%","description":"В сторонних банкоматах, минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic"}]]},{"header":{"title":"Профсоюзная","image":{"alt":"card-3","src":"card-3.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно"}],[{"label":"Есть"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Для членов профсоюзных организаций"}]]},{"header":{"title":"Россельхоз-Росснефть","image":{"alt":"card-1","src":"card-1.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"Бесплатно","description":"В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 7%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть"}]]},{"header":{"title":"Panasonic","image":{"alt":"card-2","src":"card-2.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"1%","description":"В сторонних банкоматах, минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic"}]]},{"header":{"title":"Профсоюзная","image":{"alt":"card-3","src":"card-3.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно"}],[{"label":"Есть"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Для членов профсоюзных организаций"}]]}]}},{"type":"Accordion","style":["col-span-12"],"content":{"title":"Accordion title","accordionItems":[{"label":"Accordion label 1","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]},{"label":"Accordion label 2","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]},{"label":"Accordion label 3","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]}]}},{"type":"CreditCalculator","style":["col-span-12"],"content":{"directoryName":"credit-calculator-data"}},{"type":"Footer","style":["col-span-12"],"content":{"topItems":[{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"Кредитные карты"},{"href":"https://rshb.ru/","text":"Дебетовые карты"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Ипотека"},{"href":"https://rshb.ru/","text":"Вклады и сбережения"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Премиальным клиентам"},{"href":"https://rshb.ru/","text":"Биометрическая регистрация"},{"href":"https://rshb.ru/","text":"Перевод денег"},{"href":"https://rshb.ru/","text":"Обмен денег"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]},{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"РКО"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Депозиты"},{"href":"https://rshb.ru/","text":"Эквайринг"},{"href":"https://rshb.ru/","text":"Банковские карты"},{"href":"https://rshb.ru/","text":"ВЭД"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Обмен валюты"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Партнёрские программы"},{"href":"https://rshb.ru/","text":"Онлайн-сервисы"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]}],"contacts":[{"text":"+7 (495) 787-7-787","description":"Для звонков из-за границы","type":"tel"},{"text":"example@example.com","description":"Для писем","type":"email"},{"text":"7787","description":"Абонентам МТС, Мегафон, Билайн и Tele2","type":"tel"}],"documents":[{"text":"Информация о процентных ставках по договорам банковского вклада с физическими лицами","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации профессиональным участником рынка ценных бумаг","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации","href":"https://rshb.ru/","target":"_blank"},{"text":"Удостоверяющий центр","href":"https://rshb.ru/","target":"_blank"},{"text":"Финансовая культура","href":"https://rshb.ru/","target":"_blank"}],"socialMedia":[{"href":"https://vk.com"},{"href":"https://ok.ru"},{"href":"https://t.me"}]}}]}');
 
 /***/ })
 
