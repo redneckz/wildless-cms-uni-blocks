@@ -1,6 +1,6 @@
 import { LinkDocs } from './LinkDocs';
 import { context } from '../../setup-fixture';
-import { LinkDocsContent } from './LinkDocsContent';
+import type { LinkDocsContent } from './LinkDocsContent';
 
 export const LinkDocsFixtureSetOne: LinkDocsContent = {
   title: { text: 'Дополнительные документы' },

@@ -1,4 +1,4 @@
-import { AccordionBlocksType } from './AccordionBlocks';
+import type { AccordionBlocksType } from './AccordionBlocks';
 
 export interface AccordionContent {
   title?: string;

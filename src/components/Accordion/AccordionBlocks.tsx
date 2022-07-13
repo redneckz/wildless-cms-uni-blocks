@@ -1,7 +1,7 @@
 import { TextBlock } from '../TextBlock/TextBlock';
 import { LinkDocs } from '../LinkDocs/LinkDocs';
-import { TextBlockContent } from '../TextBlock/TextBlockContent';
-import { LinkDocsContent } from '../LinkDocs/LinkDocsContent';
+import type { TextBlockContent } from '../TextBlock/TextBlockContent';
+import type { LinkDocsContent } from '../LinkDocs/LinkDocsContent';
 
 const AccordionBlocks = {
   TextBlock,

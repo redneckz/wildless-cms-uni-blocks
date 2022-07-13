@@ -1,9 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { UniBlockProps } from '../../types';
+import type { UniBlockProps } from '../../types';
+import type { LinkDocsContent } from './LinkDocsContent';
 import { Title } from '../../ui-kit/Title/Title';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import { Button } from '../../ui-kit/Button/Button';
-import { LinkDocsContent } from './LinkDocsContent';
 import { TITLE_CLASSES_MAP } from './constants';
 
 export interface LinkDocsProps extends LinkDocsContent, UniBlockProps {}

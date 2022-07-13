@@ -1,5 +1,5 @@
-import { LinkContent } from '../../model/LinkContent';
-import { IconName } from '../../ui-kit/Icon/IconProps';
+import type { LinkContent } from '../../model/LinkContent';
+import type { IconName } from '../../ui-kit/Icon/IconProps';
 
 export interface LinkDocsItem extends LinkContent {
   icon?: IconName;
