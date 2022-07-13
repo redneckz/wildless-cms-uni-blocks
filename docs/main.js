@@ -33322,7 +33322,7 @@ const onlyTitleProps = {
 
 
 const HeadlineBlock = JSX(({ bgColor, ...props }) => {
-    return (jsx("section", { className: `font-sans font-medium py-10 ${bgColor}`, children: jsx(BaseTile, { ...props }) }));
+    return (jsx("section", { className: `py-10 ${bgColor}`, children: jsx(BaseTile, { ...props }) }));
 });
 
 ;// CONCATENATED MODULE: ./src/components/HeadlineBlock/HeadlineBlock.fixture.tsx
