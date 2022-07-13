@@ -1,7 +1,10 @@
 {
-  "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.82",
+  "name": "@rshbintech.ctp/design",
+  "version": "0.0.0-local",
+  "private": true,
   "license": "MIT",
+  "author": "ЦК",
+  "description": "Инструмент для просмотра UI Kit",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./lib/index.d.ts",
@@ -66,10 +69,6 @@
     "fonts",
     "src"
   ],
-  "author": {
-    "name": "redneckz",
-    "email": "vasyaselsky@yandex.ru"
-  },
   "repository": {
     "url": "https://github.com/redneckz/wildless-cms-uni-blocks.git"
   },
@@ -78,8 +77,10 @@
   },
   "scripts": {
     "start": "npm run cosmos",
-    "build": "npm run build:lib && npm run build:commonjs && npm run bundle && npm run build:style && npm run build:icons",
-    "postbuild": "npm run size && npm run cosmos:export && copyfiles --up 1 \"./docs/**/*\" ./build",
+    "build": "npm run build:lib && npm run build:commonjs && npm run bundle && npm run build:style && npm run build:icons && npm run build:design",
+    "postbuild": "npm run size",
+    "build:design": "npm run cosmos:export || exit 0",
+    "postbuild:design": "copyfiles --up 1 \"./docs/**/*\" ./build || exit 0",
     "build:lib": "rimraf ./lib && tsc --build --verbose",
     "postbuild:lib": "replace-in-file --configFile=replace-config.lib.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
@@ -98,14 +99,6 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  },
-  "peerDependenciesMeta": {
-    "react": {
-      "optional": true
-    },
-    "react-dom": {
-      "optional": true
-    }
   },
   "dependencies": {
     "@redneckz/uni-jsx": "^0.1.6",
