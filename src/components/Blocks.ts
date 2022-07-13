@@ -15,6 +15,7 @@ import { TextBlock } from './TextBlock/TextBlock';
 import { Tile } from './Tile/Tile';
 import { ComparisonTable } from './ComparisonTable/ComparisonTable';
 import { Accordion } from './Accordion/Accordion';
+import { CreditCalculator } from './CreditCalculator/CreditCalculator';
 
 export const Blocks = {
   Header,
@@ -34,4 +35,5 @@ export const Blocks = {
   MiniGallery,
   ComparisonTable,
   Accordion,
+  CreditCalculator,
 };
