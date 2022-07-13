@@ -33448,6 +33448,7 @@ const PictureText_fixture_image = {
         width: 200,
         height: 200,
     },
+    alt: 'legal-support-business',
 };
 /* harmony default export */ const PictureText_fixture = ({
     default: (jsx(PictureText, { context: context, title: 'Варианты потребительского кредита', benefits: [

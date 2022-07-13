@@ -10,6 +10,7 @@ const image: Picture = {
     width: 200,
     height: 200,
   },
+  alt: 'legal-support-business',
 };
 
 export default {
