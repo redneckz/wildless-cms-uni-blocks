@@ -1,4 +1,4 @@
-import { BaseTileContent } from '../BaseTile/BaseTileContent';
+import type { BaseTileContent } from '../BaseTile/BaseTileContent';
 
 export type HeadlineBgColor = 'transparent' | 'bg-white';
 

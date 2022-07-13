@@ -10,9 +10,8 @@ import { Img } from '../../ui-kit/Img';
 import { Title } from '../../ui-kit/Title/Title';
 import { useLink } from '../../hooks/useLink';
 import { getColSpan } from '../../utils/getColSpan';
-import { ButtonVersion } from '../../model/ButtonVersion';
+import { AlignType } from './BaseTileContent';
 
-type AlignType = 'left' | 'center' | 'right';
 const alignBlock: Record<AlignType, string> = {
   left: 'items-start',
   center: 'items-center',
