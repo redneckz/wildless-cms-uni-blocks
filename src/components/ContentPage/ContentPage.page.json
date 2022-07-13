@@ -1361,6 +1361,16 @@
       }
     },
     {
+      "type": "Headline",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Своя кредитная карта",
+        "description": "Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.",
+        "align": "left",
+        "bgColor": "bg-white"
+      }
+    },
+    {
       "type": "Footer",
       "style": ["col-span-12"],
       "content": {
