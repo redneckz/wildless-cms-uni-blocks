@@ -2,7 +2,7 @@ import { LinkDocs } from './LinkDocs';
 import { context } from '../../setup-fixture';
 import { LinkDocsContent } from './LinkDocsContent';
 
-const set1: LinkDocsContent = {
+export const LinkDocsFixtureSetOne: LinkDocsContent = {
   title: { text: 'Дополнительные документы' },
   documents: [
     { text: 'target self', href: '/abc1', target: '_self' },
@@ -18,9 +18,12 @@ const set1: LinkDocsContent = {
   ],
 };
 
-const set2: LinkDocsContent = { ...set1, columns: 'single' };
+export const LinkDocsFixtureSetTwo: LinkDocsContent = {
+  ...LinkDocsFixtureSetOne,
+  columns: 'single',
+};
 
 export default {
-  'default, 2 columns': <LinkDocs context={context} {...set1} />,
-  'one column': <LinkDocs context={context} {...set2} />,
+  'default, 2 columns': <LinkDocs context={context} {...LinkDocsFixtureSetOne} />,
+  'one column': <LinkDocs context={context} {...LinkDocsFixtureSetTwo} />,
 };

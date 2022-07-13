@@ -31460,7 +31460,36 @@ const Accordion = JSX(({ title, accordionItems, context, className }) => {
     return (jsxs("section", { className: `p-[50px] font-sans bg-white text-primary-text ${className || ''}`, children: [title ? jsx(Title, { className: "m-0 mb-2.5", children: title }) : null, accordionItems?.length ? (jsx("ul", { className: "list-none m-0 p-0", children: accordionItems.map((item, i) => (jsx(AccordionItem, { ...item, context: context }, `AccordionItem${i}`))) })) : null] }));
 });
 
+;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.fixture.tsx
+
+
+
+const LinkDocsFixtureSetOne = {
+    title: { text: 'Дополнительные документы' },
+    documents: [
+        { text: 'target self', href: '/abc1', target: '_self' },
+        { text: 'target blank', href: '/abc2', target: '_blank' },
+        { text: 'GlassIcon', href: '/abc3', icon: 'GlassIcon' },
+        { text: 'no icon', href: '/abc4', showIcon: false },
+        { text: 'документ 5', href: '/abc5', ext: 'pdf' },
+        { text: 'документ 6', href: '/abc6', ext: 'pdf' },
+        { text: 'PDF без отображения формата', href: '/abc7', ext: 'pdf', showExt: false },
+        { text: 'расширение и размер', href: '/abc8', ext: 'doc', fileSize: '10 МБ' },
+        { text: 'только размер файла', href: '/abc9', ext: 'doc', showExt: false, fileSize: '10 МБ' },
+        { text: 'с размером файла', href: '/abc10', fileSize: '2.22МБ' },
+    ],
+};
+const LinkDocsFixtureSetTwo = {
+    ...LinkDocsFixtureSetOne,
+    columns: 'single',
+};
+/* harmony default export */ const LinkDocs_fixture = ({
+    'default, 2 columns': jsx(LinkDocs, { context: context, ...LinkDocsFixtureSetOne }),
+    'one column': jsx(LinkDocs, { context: context, ...LinkDocsFixtureSetTwo }),
+});
+
 ;// CONCATENATED MODULE: ./src/components/Accordion/Accordion.fixture.tsx
+
 
 
 
@@ -31515,25 +31544,6 @@ const propsTextBlock = {
         },
     ],
 };
-const LINKDOCS_BLOCK = {
-    title: { text: 'Дополнительные документы' },
-    documents: [
-        { text: 'target self', href: '/abc1', target: '_self' },
-        { text: 'target blank', href: '/abc2', target: '_blank' },
-        { text: 'GlassIcon', href: '/abc3', icon: 'GlassIcon' },
-        { text: 'no icon', href: '/abc4', showIcon: false },
-        { text: 'документ 5', href: '/abc5', ext: 'pdf' },
-        { text: 'документ 6', href: '/abc6', ext: 'pdf' },
-        { text: 'PDF без отображения формата', href: '/abc7', ext: 'pdf', showExt: false },
-        { text: 'расширение и размер', href: '/abc8', ext: 'doc', fileSize: '10 МБ' },
-        { text: 'только размер файла', href: '/abc9', ext: 'doc', showExt: false, fileSize: '10 МБ' },
-        { text: 'с размером файла', href: '/abc10', fileSize: '2.22МБ' },
-    ],
-};
-const LINKDOCS_ONE_COL_BLOCK = {
-    ...LINKDOCS_BLOCK,
-    columns: 'single',
-};
 const propsLinkDocs = {
     title: 'Accordion title',
     context: context,
@@ -31543,7 +31553,7 @@ const propsLinkDocs = {
             blocks: [
                 {
                     type: 'LinkDocs',
-                    data: LINKDOCS_BLOCK,
+                    data: LinkDocsFixtureSetOne,
                 },
             ],
         },
@@ -31552,7 +31562,7 @@ const propsLinkDocs = {
             blocks: [
                 {
                     type: 'LinkDocs',
-                    data: LINKDOCS_ONE_COL_BLOCK,
+                    data: LinkDocsFixtureSetTwo,
                 },
             ],
         },
@@ -33385,31 +33395,6 @@ const onlyTitleProps = {
 
 
 /* harmony default export */ const LikeControl_fixture = (jsx(LikeControl, { context: context }));
-
-;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.fixture.tsx
-
-
-
-const set1 = {
-    title: { text: 'Дополнительные документы' },
-    documents: [
-        { text: 'target self', href: '/abc1', target: '_self' },
-        { text: 'target blank', href: '/abc2', target: '_blank' },
-        { text: 'GlassIcon', href: '/abc3', icon: 'GlassIcon' },
-        { text: 'no icon', href: '/abc4', showIcon: false },
-        { text: 'документ 5', href: '/abc5', ext: 'pdf' },
-        { text: 'документ 6', href: '/abc6', ext: 'pdf' },
-        { text: 'PDF без отображения формата', href: '/abc7', ext: 'pdf', showExt: false },
-        { text: 'расширение и размер', href: '/abc8', ext: 'doc', fileSize: '10 МБ' },
-        { text: 'только размер файла', href: '/abc9', ext: 'doc', showExt: false, fileSize: '10 МБ' },
-        { text: 'с размером файла', href: '/abc10', fileSize: '2.22МБ' },
-    ],
-};
-const set2 = { ...set1, columns: 'single' };
-/* harmony default export */ const LinkDocs_fixture = ({
-    'default, 2 columns': jsx(LinkDocs, { context: context, ...set1 }),
-    'one column': jsx(LinkDocs, { context: context, ...set2 }),
-});
 
 ;// CONCATENATED MODULE: ./src/components/MiniGallery/MiniGallery.fixture.tsx
 
