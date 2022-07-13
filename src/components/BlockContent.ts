@@ -13,6 +13,7 @@ import type { StepsBlockContent } from './StepsBlock/StepsBlockContent';
 import type { TextBlockContent } from './TextBlock/TextBlockContent';
 import type { TileContent } from './Tile/TileContent';
 import type { ComparisonTableContent } from './ComparisonTable/ComparisonTableContent';
+import type { LinkDocsContent } from './LinkDocs/LinkDocsContent';
 
 export type BlockContent =
   | HeaderContent
@@ -29,4 +30,5 @@ export type BlockContent =
   | ExchangeRateTileContent
   | MobileAppTileContent
   | GalleryContent
-  | ComparisonTableContent;
+  | ComparisonTableContent
+  | LinkDocsContent;

@@ -3,27 +3,45 @@ import { context } from '../../setup-fixture';
 import type { LinkDocsContent } from './LinkDocsContent';
 
 export const LinkDocsFixtureSetOne: LinkDocsContent = {
-  title: { text: 'Дополнительные документы' },
+  title: 'Дополнительные документы',
   documents: [
-    { text: 'target self', href: '/abc1', target: '_self' },
-    { text: 'target blank', href: '/abc2', target: '_blank' },
-    { text: 'GlassIcon', href: '/abc3', icon: 'GlassIcon' },
-    { text: 'no icon', href: '/abc4', showIcon: false },
-    { text: 'документ 5', href: '/abc5', ext: 'pdf' },
-    { text: 'документ 6', href: '/abc6', ext: 'pdf' },
-    { text: 'PDF без отображения формата', href: '/abc7', ext: 'pdf', showExt: false },
-    { text: 'расширение и размер', href: '/abc8', ext: 'doc', fileSize: '10 МБ' },
-    { text: 'только размер файла', href: '/abc9', ext: 'doc', showExt: false, fileSize: '10 МБ' },
-    { text: 'с размером файла', href: '/abc10', fileSize: '2.22МБ' },
+    { text: 'target self', href: '/abc1/cooldoc.doc', target: '_self' },
+    { text: 'target blank', href: '/abc2/wtf.rtf', target: '_blank' },
+    { text: 'GlassIcon', href: '/abc3/map.jpeg' },
+    { text: 'no icon', href: '/abc4' },
+    { text: 'документ 5', href: '/abc5' },
+    { text: 'документ 6', href: '/abc6/abc.pdf' },
+    { text: 'Text text text', href: '/abc7/yolo.png' },
+    {
+      text: 'Some more generic text, and even more, more text',
+      href: '/abc8/archive.zip',
+      fileSize: '2.3МБ',
+    },
+    { text: 'И ещё немного текста', href: '/abc9/rarniw.rar', fileSize: '666МБ' },
+    {
+      text: 'Форматируем, сортируем, смотрим как отображается...',
+      href: '/abc10/',
+      fileSize: '65ГБ',
+    },
   ],
 };
 
 export const LinkDocsFixtureSetTwo: LinkDocsContent = {
   ...LinkDocsFixtureSetOne,
-  columns: 'single',
+  linkColumns: 'single',
+  showIcons: false,
+  showExt: false,
+};
+
+export const LinkDocsFixtureSetThree: LinkDocsContent = {
+  ...LinkDocsFixtureSetOne,
+  icon: 'GlassIcon',
+  title: '',
+  showExt: false,
 };
 
 export default {
   'default, 2 columns': <LinkDocs context={context} {...LinkDocsFixtureSetOne} />,
   'one column': <LinkDocs context={context} {...LinkDocsFixtureSetTwo} />,
+  'another icon, no extensions': <LinkDocs context={context} {...LinkDocsFixtureSetThree} />,
 };

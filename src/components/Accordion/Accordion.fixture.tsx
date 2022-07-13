@@ -2,7 +2,11 @@ import { context } from '../../setup-fixture';
 import type { AccordionProps } from './Accordion';
 import type { TextBlockContent } from '../TextBlock/TextBlockContent';
 import { Accordion } from './Accordion';
-import { LinkDocsFixtureSetOne, LinkDocsFixtureSetTwo } from '../LinkDocs/LinkDocs.fixture';
+import {
+  LinkDocsFixtureSetOne,
+  LinkDocsFixtureSetThree,
+  LinkDocsFixtureSetTwo,
+} from '../LinkDocs/LinkDocs.fixture';
 
 const TEXT_BLOCK: TextBlockContent = {
   title: 'Title',
@@ -67,7 +71,7 @@ const propsLinkDocs: AccordionProps = {
       blocks: [
         {
           type: 'LinkDocs',
-          data: LinkDocsFixtureSetOne,
+          data: { ...LinkDocsFixtureSetOne, title: '' },
         },
       ],
     },
@@ -76,7 +80,16 @@ const propsLinkDocs: AccordionProps = {
       blocks: [
         {
           type: 'LinkDocs',
-          data: LinkDocsFixtureSetTwo,
+          data: { ...LinkDocsFixtureSetTwo, title: '' },
+        },
+      ],
+    },
+    {
+      label: 'Немного кастомизированный список',
+      blocks: [
+        {
+          type: 'LinkDocs',
+          data: LinkDocsFixtureSetThree,
         },
       ],
     },

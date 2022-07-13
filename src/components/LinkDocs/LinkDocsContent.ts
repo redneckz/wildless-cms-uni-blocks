@@ -1,25 +1,20 @@
 import type { LinkContent } from '../../model/LinkContent';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
 
-export interface LinkDocsItem extends LinkContent {
-  icon?: IconName;
-  showIcon?: boolean;
-  ext?: string;
-  showExt?: boolean;
-  fileSize?: string;
-}
-
-export type ColumnsMode = 'single' | 'double';
+export type LinkColumnsMode = 'single' | 'double';
 
 export type LinkDocsTitleAlignment = 'left' | 'center' | 'right';
 
-export interface LinkDocsTitle {
-  text?: string;
-  align?: LinkDocsTitleAlignment;
+export interface LinkDocsItem extends LinkContent {
+  fileSize?: string;
 }
 
 export interface LinkDocsContent {
-  title?: LinkDocsTitle;
+  title?: string;
+  titleAlign?: LinkDocsTitleAlignment;
+  icon?: IconName;
+  showIcons?: boolean;
+  showExt?: boolean;
   documents?: LinkDocsItem[];
-  columns?: ColumnsMode;
+  linkColumns?: LinkColumnsMode;
 }
