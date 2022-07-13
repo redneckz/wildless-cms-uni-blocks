@@ -31346,10 +31346,77 @@ function renderImage(image) {
     return image?.src ? jsx(Img, { className: "pt-0.5 pr-3", image: image }) : null;
 }
 
+;// CONCATENATED MODULE: ./src/ui-kit/Title/TitleProps.ts
+var SizeTableClass;
+(function (SizeTableClass) {
+    SizeTableClass["XL"] = "text-title-lg";
+    SizeTableClass["L"] = "text-title";
+    SizeTableClass["M"] = "text-title-sm";
+    SizeTableClass["S"] = "text-title-xs";
+})(SizeTableClass || (SizeTableClass = {}));
+
+;// CONCATENATED MODULE: ./src/ui-kit/Title/Title.tsx
+
+
+
+const Title = JSX(({ size = 'L', className, children, ...rest }) => {
+    const Tag = size === 'XL' ? 'h1' : 'h2';
+    return (jsx(Tag, { className: getClasses(SizeTableClass[size], className), ...rest, children: children }));
+});
+const getClasses = (...classes) => classes.filter(Boolean).join(' ');
+
+;// CONCATENATED MODULE: ./src/ui-kit/Button/Button.tsx
+
+
+const buttonStyleMap = {
+    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
+    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
+};
+const buttonDisabledStyleMap = {
+    primary: 'bg-secondary-dark text-secondary-text',
+    secondary: 'bg-secondary-light text-secondary-text',
+};
+const styleButton = 'inline-block text-center font-sans select-none';
+const Button = JSX(({ className, text, aboveText, appendLeft, href, target, onClick, children, disabled, rounded, version = 'none', ariaLabel, ...rest }) => {
+    const buttonInner = children ?? (jsx(ButtonInner, { text: text, aboveText: aboveText, appendLeft: appendLeft, rounded: rounded }));
+    if (disabled) {
+        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabIndex: "-1", className: `${styleButton} ${buttonDisabledStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, children: buttonInner }));
+    }
+    return (jsx("a", { className: `${styleButton} cursor-pointer no-underline ${buttonStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, role: !href ? 'button' : 'link', ...rest, children: buttonInner }));
+});
+const ButtonInner = JSX(({ text, aboveText, appendLeft, rounded }) => {
+    const withoutText = !text && !aboveText && Boolean(appendLeft);
+    const buttonInnerClasses = `flex items-center justify-center ${withoutText ? 'h-12 w-12 min-h-12 min-w-12' : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`} ${rounded ? 'rounded-full' : ''}`;
+    return (jsxs("div", { className: buttonInnerClasses, children: [appendLeft ? appendLeft : null, !withoutText ? (jsxs("div", { children: [jsx("div", { className: "text-xxs text-left", children: aboveText }), jsx("div", { className: "text-sm font-medium text-left", children: text })] })) : null] }));
+});
+
+;// CONCATENATED MODULE: ./src/components/LinkDocs/constants.ts
+const TITLE_CLASSES_MAP = {
+    left: 'text-left',
+    center: 'text-center',
+    right: 'text-right',
+};
+
+;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.tsx
+
+
+
+
+
+
+const LinkDocs = JSX(({ className, context, title, documents, columns = 'double' }) => {
+    const containerClasses = columns === 'double' ? 'gap-x-5 gap-y-[26px] flex-wrap ' : 'gap-3.5 flex-col';
+    return (jsxs("section", { className: "", children: [title?.text && (jsx(Title, { className: title?.align ? TITLE_CLASSES_MAP[title.align] : TITLE_CLASSES_MAP.center, children: title.text })), jsx("div", { className: `flex ${containerClasses}`, children: documents?.length &&
+                    documents.map(({ text, icon = 'DocIcon', showIcon = true, ext, showExt = true, fileSize, ...linkProps }) => (jsxs("div", { className: `group flex items-center text-sm flex hover:cursor-pointer
+                              ${columns === 'double' ? 'basis-[calc(50%-20px)]' : ''}`, children: [showIcon && icon && (jsx(Icon, { className: "mr-3.5", name: icon, width: "24px", height: "24px" })), text && (jsxs(Button, { className: "text-primary-text group-hover:text-primary-main", ...linkProps, children: [text, jsxs("span", { className: "text-secondary-text group-hover:text-primary-main", children: [(showExt && ext) || fileSize ? ',' : '', `${showExt && ext ? ` ${ext}` : ''}`, fileSize ? ` (${fileSize})` : null] })] }))] }))) })] }));
+});
+
 ;// CONCATENATED MODULE: ./src/components/Accordion/AccordionBlocks.tsx
+
 
 const AccordionBlocks = {
     TextBlock: TextBlock,
+    LinkDocs: LinkDocs,
 };
 /* harmony default export */ const Accordion_AccordionBlocks = (AccordionBlocks);
 
@@ -31383,25 +31450,6 @@ const renderComponent = (block, i) => {
     return (jsx("div", { className: "mb-5 last:mb-0", children: jsx(AccordionBlock, { ...block.data }) }, `component${i}`));
 };
 const getContentBlock = (e) => e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;
-
-;// CONCATENATED MODULE: ./src/ui-kit/Title/TitleProps.ts
-var SizeTableClass;
-(function (SizeTableClass) {
-    SizeTableClass["XL"] = "text-title-lg";
-    SizeTableClass["L"] = "text-title";
-    SizeTableClass["M"] = "text-title-sm";
-    SizeTableClass["S"] = "text-title-xs";
-})(SizeTableClass || (SizeTableClass = {}));
-
-;// CONCATENATED MODULE: ./src/ui-kit/Title/Title.tsx
-
-
-
-const Title = JSX(({ size = 'L', className, children, ...rest }) => {
-    const Tag = size === 'XL' ? 'h1' : 'h2';
-    return (jsx(Tag, { className: getClasses(SizeTableClass[size], className), ...rest, children: children }));
-});
-const getClasses = (...classes) => classes.filter(Boolean).join(' ');
 
 ;// CONCATENATED MODULE: ./src/components/Accordion/Accordion.tsx
 
@@ -31467,8 +31515,52 @@ const propsTextBlock = {
         },
     ],
 };
+const LINKDOCS_BLOCK = {
+    title: { text: 'Дополнительные документы' },
+    documents: [
+        { text: 'target self', href: '/abc1', target: '_self' },
+        { text: 'target blank', href: '/abc2', target: '_blank' },
+        { text: 'GlassIcon', href: '/abc3', icon: 'GlassIcon' },
+        { text: 'no icon', href: '/abc4', showIcon: false },
+        { text: 'документ 5', href: '/abc5', ext: 'pdf' },
+        { text: 'документ 6', href: '/abc6', ext: 'pdf' },
+        { text: 'PDF без отображения формата', href: '/abc7', ext: 'pdf', showExt: false },
+        { text: 'расширение и размер', href: '/abc8', ext: 'doc', fileSize: '10 МБ' },
+        { text: 'только размер файла', href: '/abc9', ext: 'doc', showExt: false, fileSize: '10 МБ' },
+        { text: 'с размером файла', href: '/abc10', fileSize: '2.22МБ' },
+    ],
+};
+const LINKDOCS_ONE_COL_BLOCK = {
+    ...LINKDOCS_BLOCK,
+    columns: 'single',
+};
+const propsLinkDocs = {
+    title: 'Accordion title',
+    context: context,
+    accordionItems: [
+        {
+            label: 'Список документов в 2 колонки',
+            blocks: [
+                {
+                    type: 'LinkDocs',
+                    data: LINKDOCS_BLOCK,
+                },
+            ],
+        },
+        {
+            label: 'Список документов в одну колонку',
+            blocks: [
+                {
+                    type: 'LinkDocs',
+                    data: LINKDOCS_ONE_COL_BLOCK,
+                },
+            ],
+        },
+    ],
+};
 /* harmony default export */ const Accordion_fixture = ({
     'with text block': jsx(Accordion, { ...propsTextBlock }),
+    'with link docs block': jsx(Accordion, { ...propsLinkDocs }),
 });
 
 ;// CONCATENATED MODULE: ./src/components/BenefitsBlock/BenefitsBlock.tsx
@@ -31508,31 +31600,6 @@ const renderStep = (benefit, i) => {
             icon: 'ActualBalanceIcon',
         },
     ] }));
-
-;// CONCATENATED MODULE: ./src/ui-kit/Button/Button.tsx
-
-
-const buttonStyleMap = {
-    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
-    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
-};
-const buttonDisabledStyleMap = {
-    primary: 'bg-secondary-dark text-secondary-text',
-    secondary: 'bg-secondary-light text-secondary-text',
-};
-const styleButton = 'inline-block text-center font-sans select-none';
-const Button = JSX(({ className, text, aboveText, appendLeft, href, target, onClick, children, disabled, rounded, version = 'none', ariaLabel, ...rest }) => {
-    const buttonInner = children ?? (jsx(ButtonInner, { text: text, aboveText: aboveText, appendLeft: appendLeft, rounded: rounded }));
-    if (disabled) {
-        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabIndex: "-1", className: `${styleButton} ${buttonDisabledStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, children: buttonInner }));
-    }
-    return (jsx("a", { className: `${styleButton} cursor-pointer no-underline ${buttonStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, role: !href ? 'button' : 'link', ...rest, children: buttonInner }));
-});
-const ButtonInner = JSX(({ text, aboveText, appendLeft, rounded }) => {
-    const withoutText = !text && !aboveText && Boolean(appendLeft);
-    const buttonInnerClasses = `flex items-center justify-center ${withoutText ? 'h-12 w-12 min-h-12 min-w-12' : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`} ${rounded ? 'rounded-full' : ''}`;
-    return (jsxs("div", { className: buttonInnerClasses, children: [appendLeft ? appendLeft : null, !withoutText ? (jsxs("div", { children: [jsx("div", { className: "text-xxs text-left", children: aboveText }), jsx("div", { className: "text-sm font-medium text-left", children: text })] })) : null] }));
-});
 
 ;// CONCATENATED MODULE: ./src/ui-kit/SVG.tsx
 
@@ -33318,27 +33385,6 @@ const onlyTitleProps = {
 
 
 /* harmony default export */ const LikeControl_fixture = (jsx(LikeControl, { context: context }));
-
-;// CONCATENATED MODULE: ./src/components/LinkDocs/constants.ts
-const TITLE_CLASSES_MAP = {
-    left: 'text-left',
-    center: 'text-center',
-    right: 'text-right',
-};
-
-;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.tsx
-
-
-
-
-
-
-const LinkDocs = JSX(({ className, context, title, documents, columns = 'double' }) => {
-    const containerClasses = columns === 'double' ? 'gap-x-5 gap-y-[26px] flex-wrap ' : 'gap-3.5 flex-col';
-    return (jsxs("section", { className: "", children: [title?.text && (jsx(Title, { className: title?.align ? TITLE_CLASSES_MAP[title.align] : TITLE_CLASSES_MAP.center, children: title.text })), jsx("div", { className: `flex ${containerClasses}`, children: documents?.length &&
-                    documents.map(({ text, icon = 'DocIcon', showIcon = true, ext, showExt = true, fileSize, ...linkProps }) => (jsxs("div", { className: `group flex items-center text-sm flex hover:cursor-pointer
-                              ${columns === 'double' ? 'basis-[calc(50%-20px)]' : ''}`, children: [showIcon && icon && (jsx(Icon, { className: "mr-3.5", name: icon, width: "24px", height: "24px" })), text && (jsxs(Button, { className: "text-primary-text group-hover:text-primary-main", ...linkProps, children: [text, jsxs("span", { className: "text-secondary-text group-hover:text-primary-main", children: [(showExt && ext) || fileSize ? ',' : '', `${showExt && ext ? ` ${ext}` : ''}`, fileSize ? ` (${fileSize})` : null] })] }))] }))) })] }));
-});
 
 ;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.fixture.tsx
 
