@@ -16,6 +16,7 @@ import { Tile } from './Tile/Tile';
 import { ComparisonTable } from './ComparisonTable/ComparisonTable';
 import { Accordion } from './Accordion/Accordion';
 import { CreditCalculator } from './CreditCalculator/CreditCalculator';
+import { PictureText } from './PictureText/PictureText';
 
 export const Blocks = {
   Header,
@@ -36,4 +37,5 @@ export const Blocks = {
   ComparisonTable,
   Accordion,
   CreditCalculator,
+  PictureText,
 };

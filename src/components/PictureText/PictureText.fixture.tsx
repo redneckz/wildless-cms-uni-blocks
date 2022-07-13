@@ -10,7 +10,7 @@ const image: Picture = {
     width: 200,
     height: 200,
   },
-  alt: 'legal-support-business',
+  alt: 'Варианты потребительского кредита',
 };
 
 export default {

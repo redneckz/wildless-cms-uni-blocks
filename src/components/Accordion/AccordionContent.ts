@@ -1,4 +1,5 @@
 import type { TextBlockContent } from '../TextBlock/TextBlockContent';
+import type { PictureTextContent } from '../PictureText/PictureTextContent';
 
 export interface AccordionContent {
   title?: string;
@@ -15,4 +16,4 @@ export type AccordionBlockContent = {
   data?: AccordionDataContent;
 };
 
-export type AccordionDataContent = TextBlockContent;
+export type AccordionDataContent = TextBlockContent | PictureTextContent;
