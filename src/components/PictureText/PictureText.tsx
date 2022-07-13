@@ -13,10 +13,10 @@ export const PictureText = JSX<PictureTextProps>(({ className, title, image, ben
   return (
     <section className={`relative font-sans text-primary-text bg-white p-14 ${className}`}>
       <Title className="font-medium m-0 text-center">{title}</Title>
-      <div className={'flex m-auto mt-9 max-w-[800px]'}>
+      <div className={'flex justify-center mt-9'}>
         {image?.src && <Img className="mr-6" image={image} />}
         {benefits?.length ? (
-          <div className="flex flex-col max-w-[558px]">{benefits.map(renderBenefit)}</div>
+          <div className="flex flex-col">{benefits.map(renderBenefit)}</div>
         ) : null}
       </div>
     </section>
@@ -35,9 +35,13 @@ function renderBenefit(benefit: Benefit, i: number) {
         />
       )}
       <div className="flex gap-1 flex-col h-full ml-5">
-        <div className="font-medium text-primary-text text-xl m-0">{benefit.label}</div>
+        <div className="font-medium text-primary-text text-xl m-0 max-w-[490px]">
+          {benefit.label}
+        </div>
         {benefit.description && (
-          <div className="font-normal text-sm text-secondary-text">{benefit.description}</div>
+          <div className="font-normal text-sm text-secondary-text max-w-[490px]">
+            {benefit.description}
+          </div>
         )}
       </div>
     </div>
