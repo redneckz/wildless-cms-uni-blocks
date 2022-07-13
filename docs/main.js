@@ -33336,7 +33336,7 @@ const TITLE_CLASSES_MAP = {
 const LinkDocs = JSX(({ className, context, title, documents, columns = 'double' }) => {
     const containerClasses = columns === 'double' ? 'gap-x-5 gap-y-[26px] flex-wrap ' : 'gap-3.5 flex-col';
     return (jsxs("section", { className: "", children: [title?.text && (jsx(Title, { className: title?.align ? TITLE_CLASSES_MAP[title.align] : TITLE_CLASSES_MAP.center, children: title.text })), jsx("div", { className: `flex ${containerClasses}`, children: documents?.length &&
-                    documents.map(({ text, icon = 'DollarIcon', showIcon = true, ext, showExt = true, fileSize, ...linkProps }) => (jsxs("div", { className: `group flex items-center text-sm flex hover:cursor-pointer
+                    documents.map(({ text, icon = 'DocIcon', showIcon = true, ext, showExt = true, fileSize, ...linkProps }) => (jsxs("div", { className: `group flex items-center text-sm flex hover:cursor-pointer
                               ${columns === 'double' ? 'basis-[calc(50%-20px)]' : ''}`, children: [showIcon && icon && (jsx(Icon, { className: "mr-3.5", name: icon, width: "24px", height: "24px" })), text && (jsxs(Button, { className: "text-primary-text group-hover:text-primary-main", ...linkProps, children: [text, jsxs("span", { className: "text-secondary-text group-hover:text-primary-main", children: [(showExt && ext) || fileSize ? ',' : '', `${showExt && ext ? ` ${ext}` : ''}`, fileSize ? ` (${fileSize})` : null] })] }))] }))) })] }));
 });
 

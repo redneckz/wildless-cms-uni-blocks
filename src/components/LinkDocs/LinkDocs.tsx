@@ -27,7 +27,7 @@ export const LinkDocs = JSX<LinkDocsProps>(
             documents.map(
               ({
                 text,
-                icon = 'DollarIcon',
+                icon = 'DocIcon',
                 showIcon = true,
                 ext,
                 showExt = true,
