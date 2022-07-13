@@ -4,15 +4,14 @@ import type { IconProps } from './IconProps';
 
 export const Icon = JSX<IconProps>(
   ({ className, name, alt = `Icon ${name}`, title = alt, asSVG, ...imgProps }) => {
+    const href = `${projectSettings.CDN || ''}icons/${name}.svg`;
+
     if (asSVG) {
       return (
         <svg className={className} {...imgProps} aria-hidden="true">
           {title ? <title>{title}</title> : null}
           {alt ? <desc>{alt}</desc> : null}
-          <use
-            href={`${projectSettings.CDN || ''}icons/${name}.svg#icon`}
-            xlinkHref={`${projectSettings.CDN || ''}icons/${name}.svg#icon`}
-          />
+          <use href={`${href}#icon`} xlinkHref={`${href}#icon`} />
         </svg>
       );
     }
@@ -20,7 +19,7 @@ export const Icon = JSX<IconProps>(
     return (
       <img
         className={className}
-        src={`${projectSettings.CDN || ''}icons/${name}.svg`}
+        src={href}
         alt={alt}
         title={title}
         {...imgProps}
