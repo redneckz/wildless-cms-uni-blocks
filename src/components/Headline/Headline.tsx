@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 
 import { BaseTile } from '../BaseTile/BaseTile';
-import type { HeadlineContent } from './HeadlineContetnt';
+import type { HeadlineContent } from './HeadlineContent';
 import type { UniBlockProps } from '../../types';
 
 export interface HeadlineProps extends UniBlockProps, HeadlineContent {}
