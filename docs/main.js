@@ -31050,7 +31050,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 7752:
+/***/ 9141:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -33317,19 +33317,19 @@ const onlyTitleProps = {
         },
     ] }));
 
-;// CONCATENATED MODULE: ./src/components/HeadlineBlock/HeadlineBlock.tsx
+;// CONCATENATED MODULE: ./src/components/HeadlineBlock/Headline.tsx
 
 
 
-const HeadlineBlock = JSX(({ bgColor, ...props }) => {
+const Headline = JSX(({ bgColor, ...props }) => {
     return (jsx("section", { className: `py-10 ${bgColor}`, children: jsx(BaseTile, { ...props }) }));
 });
 
-;// CONCATENATED MODULE: ./src/components/HeadlineBlock/HeadlineBlock.fixture.tsx
+;// CONCATENATED MODULE: ./src/components/HeadlineBlock/Headline.fixture.tsx
 
 
 
-/* harmony default export */ const HeadlineBlock_fixture = (jsx(HeadlineBlock, { title: "\u0421\u0432\u043E\u044F \u043A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430", description: "\u041A\u0430\u0440\u0442\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432 180 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u043C\u0438\u0440\u0430. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0435 \u0441\u043D\u044F\u0442\u0438\u0435 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u043B\u044E\u0431\u044B\u0445 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u0430\u0445.", align: "left", bgColor: "bg-white", context: context }));
+/* harmony default export */ const Headline_fixture = (jsx(Headline, { title: "\u0421\u0432\u043E\u044F \u043A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430", description: "\u041A\u0430\u0440\u0442\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432 180 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u043C\u0438\u0440\u0430. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0435 \u0441\u043D\u044F\u0442\u0438\u0435 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u043B\u044E\u0431\u044B\u0445 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u0430\u0445.", align: "left", bgColor: "bg-white", context: context }));
 
 ;// CONCATENATED MODULE: ./src/components/LikeControl/LikeControl.fixture.tsx
 
@@ -34048,7 +34048,7 @@ const fixtures = {
   'src/components/Footer/Footer.fixture.tsx': { module: { default: Footer_fixture } },
   'src/components/Gallery/Gallery.fixture.tsx': { module: { default: Gallery_fixture } },
   'src/components/Header/Header.fixture.tsx': { module: { default: Header_fixture } },
-  'src/components/HeadlineBlock/HeadlineBlock.fixture.tsx': { module: { default: HeadlineBlock_fixture } },
+  'src/components/HeadlineBlock/Headline.fixture.tsx': { module: { default: Headline_fixture } },
   'src/components/LikeControl/LikeControl.fixture.tsx': { module: { default: LikeControl_fixture } },
   'src/components/MiniGallery/MiniGallery.fixture.tsx': { module: { default: MiniGallery_fixture } },
   'src/components/MobileAppTile/MobileAppTile.fixture.tsx': { module: { default: MobileAppTile_fixture } },
@@ -40068,7 +40068,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(7752),
+  var _require = __webpack_require__(9141),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

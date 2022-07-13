@@ -1,9 +1,9 @@
 import { context } from '../../setup-fixture';
 
-import { HeadlineBlock } from './HeadlineBlock';
+import { Headline } from './Headline';
 
 export default (
-  <HeadlineBlock
+  <Headline
     title="Своя кредитная карта"
     description="Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах."
     align="left"
