@@ -11,4 +11,5 @@ export interface BaseTileContent {
   items?: string[];
   buttons?: ButtonWithIconProps[];
   version?: BlockVersion;
+  align?: string;
 }
