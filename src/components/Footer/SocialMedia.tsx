@@ -1,10 +1,10 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { useLink } from '../../hooks/useLink';
 import type { LinkContent } from '../../model/LinkContent';
 import type { UniBlockProps } from '../../types';
+import { Button } from '../../ui-kit/Button/Button';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
-import { useLink } from '../../hooks/useLink';
-import { Button } from '../../ui-kit/Button/Button';
 
 const ICONS_MAP: Array<{
   origins: string[];
@@ -58,14 +58,7 @@ const MediaButton = JSX<MediaButtonProps>(({ href }) => {
       rel="noopener noreferrer"
       aria-label={label}
       className="border-solid border border-main-divider w-9 h-9 flex items-center justify-center hover:fill-primary-main"
-      appendLeft={
-        <Icon
-          name={icon}
-          width={width}
-          height={height}
-          className="[&>*]:fill-primary-text [&>*]:hover:fill-primary-main"
-        />
-      }
+      appendLeft={<Icon name={icon} width={width} height={height} asSVG />}
     />
   );
 });
