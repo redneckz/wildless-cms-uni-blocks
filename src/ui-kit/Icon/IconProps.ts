@@ -33,5 +33,5 @@ export interface IconProps {
   title?: string;
   width?: string;
   height?: string;
-  'aria-hidden'?: 'true';
+  asSVG?: boolean;
 }
