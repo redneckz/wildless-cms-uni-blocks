@@ -8,7 +8,9 @@ import { addSpacesBetweenNumbers } from '../../utils/addSpacesBetweenNumbers';
 import { clamp } from '../../utils/clamp';
 import {
   DEFAULT_MAX_MONTHS,
+  DEFAULT_MAX_SUM,
   DEFAULT_MIN_MONTHS,
+  DEFAULT_MIN_SUM,
   DEFAULT_MONTHS,
   DEFAULT_SUM,
   MONTHS_IN_YEAR,
@@ -48,6 +50,11 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
         ? Math.round((calculatorParams.maxMonths - calculatorParams.minMonths) / 2)
         : DEFAULT_MONTHS;
 
+    const minSum = calculatorParams?.minSum || DEFAULT_MIN_SUM;
+    const maxSum = calculatorParams?.maxSum || DEFAULT_MAX_SUM;
+    const minMonths = calculatorParams?.minMonths || DEFAULT_MIN_MONTHS;
+    const maxMonths = calculatorParams?.maxMonths || DEFAULT_MAX_MONTHS;
+
     const rate = getCreditRate({ calculatorParams, isInsurance: isInsuranceChecked });
 
     const montlyPayment = getMonthlyPayment({
@@ -58,19 +65,10 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
       months: monthsValue || defaultMonths,
     });
 
-    const creditTermYears = getCreditTermYears(
-      calculatorParams.minMonths || DEFAULT_MIN_MONTHS,
-      calculatorParams.maxMonths || DEFAULT_MAX_MONTHS,
-    );
+    const creditTermYears = getCreditTermYears(minMonths, maxMonths);
 
     function handleButtonClick(value: number) {
-      setMonthsValue(
-        clamp(
-          value * MONTHS_IN_YEAR,
-          calculatorParams?.minMonths || DEFAULT_MIN_MONTHS,
-          calculatorParams?.maxMonths || DEFAULT_MAX_MONTHS,
-        ),
-      );
+      setMonthsValue(clamp(value * MONTHS_IN_YEAR, minMonths, maxMonths));
     }
 
     return (
@@ -81,11 +79,11 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
               <InputRange
                 title="Желаемая сумма кредита, ₽"
                 items={[
-                  `От ${addSpacesBetweenNumbers(Number(calculatorParams.minSum))} рублей`,
-                  `До ${addSpacesBetweenNumbers(Number(calculatorParams.maxSum))} рублей`,
+                  `От ${addSpacesBetweenNumbers(minSum)} рублей`,
+                  `До ${addSpacesBetweenNumbers(maxSum)} рублей`,
                 ]}
-                min={calculatorParams?.minSum}
-                max={calculatorParams?.maxSum}
+                min={minSum}
+                max={maxSum}
                 step={STEP_MONEY}
                 value={moneyValue || defaultSum}
                 onChange={setMoneyValue}
@@ -93,8 +91,8 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
               <InputRange
                 title="Срок кредита, месяцев"
                 items={['Или выберите из предложенных вариантов ниже']}
-                min={calculatorParams?.minMonths}
-                max={calculatorParams?.maxMonths}
+                min={minMonths}
+                max={maxMonths}
                 step={STEP_MONTHS}
                 value={monthsValue || defaultMonths}
                 onChange={setMonthsValue}

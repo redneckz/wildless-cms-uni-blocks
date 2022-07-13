@@ -1371,6 +1371,13 @@
       }
     },
     {
+      "type": "CreditCalculator",
+      "style": ["col-span-12"],
+      "content": {
+        "directoryName": "credit-calculator-data"
+      }
+    },
+    {
       "type": "Footer",
       "style": ["col-span-12"],
       "content": {
