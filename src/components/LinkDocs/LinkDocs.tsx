@@ -22,7 +22,7 @@ export const LinkDocs = JSX<LinkDocsProps>(
             {title.text}
           </Title>
         )}
-        <div className={`flex ${containerClasses}`}>
+        <div className={`flex ${containerClasses}`} role="list">
           {documents?.length &&
             documents.map(
               ({
@@ -35,8 +35,9 @@ export const LinkDocs = JSX<LinkDocsProps>(
                 ...linkProps
               }) => (
                 <div
-                  className={`group flex items-center text-sm flex hover:cursor-pointer
+                  className={`group flex items-center text-sm flex
                               ${columns === 'double' ? 'basis-[calc(50%-20px)]' : ''}`}
+                  role="listitem"
                 >
                   {showIcon && icon && (
                     <Icon className="mr-3.5" name={icon} width="24px" height="24px" />
