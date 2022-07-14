@@ -19,31 +19,6 @@ export interface ProductSlideContent {
 
 /**
  * @title Продуктовая галерея
- * @examples [{
- *   "slides": [
- *     {
- *       "nav": {
- *         "title": "Заголовок",
- *         "desc": "Описание"
- *       },
- *       "productBlock": {
- *         "title": "Продуктовая галерея",
- *         "image": {
- *           "format": "webp",
- *           "size": {
- *             "width": 300
- *           }
- *         },
- *         "description": "Описание",
- *         "items": [
- *           "Элемент списка 1",
- *           "Элемент списка 2",
- *           "Элемент списка 3"
- *         ]
- *       }
- *     }
- *   ]
- * }]
  */
 export interface ProductGalleryContent {
   /**

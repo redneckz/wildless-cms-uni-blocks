@@ -13,19 +13,6 @@ export interface Benefit {
 
 /**
  * @title Блок преимущества
- * @examples [{
- *   "title": "Преимущества",
- *   "benefits": [
- *     {
- *       "label": "Преимущество №1",
- *       "icon": "ClockIcon"
- *     },
- *     {
- *       "label": "Преимущество №2",
- *       "icon": "SignDocsIcon"
- *     }
- *   ]
- * }]
  */
 export interface BenefitsBlockContent {
   /** @title Заголовок */
