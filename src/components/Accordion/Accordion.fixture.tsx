@@ -1,10 +1,15 @@
 import { context } from '../../setup-fixture';
+import type { AccordionProps } from './Accordion';
 import type { HeadlineProps } from '../Headline/Headline';
 import type { PictureTextContent } from '../PictureText/PictureTextContent';
 import type { TextBlockContent } from '../TextBlock/TextBlockContent';
-import type { AccordionProps } from './Accordion';
 
 import { Accordion } from './Accordion';
+import {
+  LinkDocsFixtureSetOne,
+  LinkDocsFixtureSetThree,
+  LinkDocsFixtureSetTwo,
+} from '../LinkDocs/LinkDocs.fixture';
 
 const TEXT_BLOCK: TextBlockContent = {
   description:
@@ -103,6 +108,41 @@ const propsTextBlock: AccordionProps = {
   ],
 };
 
+const propsLinkDocs: AccordionProps = {
+  title: 'Accordion title',
+  context,
+  accordionItems: [
+    {
+      label: 'Список документов в 2 колонки',
+      blocks: [
+        {
+          type: 'LinkDocs',
+          data: { ...LinkDocsFixtureSetOne, title: '' },
+        },
+      ],
+    },
+    {
+      label: 'Список документов в одну колонку',
+      blocks: [
+        {
+          type: 'LinkDocs',
+          data: { ...LinkDocsFixtureSetTwo, title: '' },
+        },
+      ],
+    },
+    {
+      label: 'Немного кастомизированный список',
+      blocks: [
+        {
+          type: 'LinkDocs',
+          data: LinkDocsFixtureSetThree,
+        },
+      ],
+    },
+  ],
+};
+
 export default {
   'with text block': <Accordion {...propsTextBlock} />,
+  'with link docs block': <Accordion {...propsLinkDocs} />,
 };

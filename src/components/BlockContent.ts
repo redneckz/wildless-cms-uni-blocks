@@ -4,6 +4,7 @@ import type { ExchangeRateTileContent } from './ExchangeRateTile/ExchangeRateTil
 import type { FooterContent } from './Footer/FooterContent';
 import type { GalleryContent } from './Gallery/GalleryContent';
 import type { HeaderContent } from './Header/HeaderContent';
+import type { LinkDocsContent } from './LinkDocs/LinkDocsContent';
 import type { MobileAppTileContent } from './MobileAppTile/MobileAppTileContent';
 import type { PictureTextContent } from './PictureText/PictureTextContent';
 import type { PlaceholderContent } from './Placeholder/PlaceholderContent';
@@ -14,6 +15,7 @@ import type { PromoTileContent } from './PromoTile/PromoTileContent';
 import type { StepsBlockContent } from './StepsBlock/StepsBlockContent';
 import type { TextBlockContent } from './TextBlock/TextBlockContent';
 import type { TileContent } from './Tile/TileContent';
+
 /**
  * @hidden
  */
@@ -24,6 +26,7 @@ export type BlockContent =
   | FooterContent
   | GalleryContent
   | HeaderContent
+  | LinkDocsContent
   | MobileAppTileContent
   | PictureTextContent
   | PlaceholderContent

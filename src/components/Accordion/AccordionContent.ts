@@ -1,13 +1,25 @@
+import type { HeadlineContent } from '../Headline/HeadlineContent';
+import type { LinkDocsContent } from '../LinkDocs/LinkDocsContent';
+import type { PictureTextContent } from '../PictureText/PictureTextContent';
 import type { TextBlockContent } from '../TextBlock/TextBlockContent';
-
-/** @title Содержимое блока */
-export type AccordionData = TextBlockContent;
+import AccordionBlocks from './AccordionBlocks';
 
 /**
- * @title Тип блока
- * @enumNames ["Текстовый блок"]
+ * @hidden
+ * @title Содержимое блока
  */
-export type AccordionTypeBlock = 'TextBlock' | 'Headline' | 'PictureText';
+export type AccordionData =
+  | HeadlineContent
+  | LinkDocsContent
+  | TextBlockContent
+  | PictureTextContent;
+
+/**
+ * @hidden
+ * @title Тип блока
+ * @enumNames ["Заголовок", "Блок документов", Текстовый блок", "Картинка с текстом"]
+ */
+export type AccordionTypeBlock = keyof typeof AccordionBlocks;
 
 /**
  * Блок
