@@ -1,20 +1,20 @@
 import type { TextBlockContent } from '../TextBlock/TextBlockContent';
 
 /** @title Содержимое блока */
-export type AccordionDataContent = TextBlockContent;
+export type AccordionData = TextBlockContent;
 
 /**
  * @title Тип блока
  * @enumNames ["Текстовый блок"]
  */
-export type AccordionDataBlocks = 'TextBlock';
+export type AccordionTypeBlock = 'TextBlock' | 'Headline';
 
 /**
  * Блок
  */
 export interface AccordionBlock {
-  type?: AccordionDataBlocks;
-  data?: AccordionDataContent;
+  type?: AccordionTypeBlock;
+  data?: AccordionData;
 }
 
 /**

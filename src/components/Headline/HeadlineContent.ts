@@ -1,9 +1,18 @@
-import type { BaseTileContent } from '../BaseTile/BaseTileContent';
+import type { BaseTileCommonProps } from '../BaseTile/BaseTileProps';
 
-export interface UniBlockProps {
-  className?: string;
-}
+/**
+ * @title Цвет фона
+ * @enumNames [
+ *    "Прозрачный",
+ *    "Белый"
+ * ]
+ */
+export type HeadlineBgColor = 'transparent' | 'bg-white';
 
-export interface HeadlineContent extends BaseTileContent {
-  bgColor?: 'transparent' | 'bg-white';
+/**
+ * @title Заголовок
+ */
+export interface HeadlineContent
+  extends Pick<BaseTileCommonProps, 'title' | 'titleSize' | 'description' | 'align'> {
+  bgColor?: HeadlineBgColor;
 }

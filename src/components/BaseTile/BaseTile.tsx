@@ -1,16 +1,14 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { BaseTileContent } from './BaseTileContent';
+import { useLink } from '../../hooks/useLink';
 import type { BlockVersion } from '../../model/BlockVersion';
 import type { UniBlockProps } from '../../types';
 import { BlockItem } from '../../ui-kit/BlockItem/BlockItem';
 import { Button } from '../../ui-kit/Button/Button';
-import type { ButtonWithIconProps } from '../../ui-kit/Button/ButtonProps';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import { Img } from '../../ui-kit/Img';
 import { Title } from '../../ui-kit/Title/Title';
-import { useLink } from '../../hooks/useLink';
 import { getColSpan } from '../../utils/getColSpan';
-import { AlignType } from './BaseTileContent';
+import type { AlignType, BaseTileCommonProps, BaseTileIconButton } from './BaseTileProps';
 
 const alignBlock: Record<AlignType, string> = {
   left: 'items-start',
@@ -23,7 +21,7 @@ const alignText: Record<AlignType, string> = {
   right: 'text-right',
 };
 
-export interface BaseTileProps extends BaseTileContent, UniBlockProps {}
+export interface BaseTileProps extends BaseTileCommonProps, UniBlockProps {}
 
 const TITLE_CLASSES = 'font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]';
 
@@ -97,7 +95,7 @@ function renderItems(items: string[] = [], version?: BlockVersion) {
   );
 }
 
-function renderButton({ icon, ...button }: ButtonWithIconProps, i: number) {
+function renderButton({ icon, ...button }: BaseTileIconButton, i: number) {
   if (!button?.text) return;
 
   if (icon)
