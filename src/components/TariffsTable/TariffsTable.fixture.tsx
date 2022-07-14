@@ -1,7 +1,7 @@
 import { context } from '../../setup-fixture';
 import { TariffsTable } from './TariffsTable';
 import type { Picture } from '../../model/Picture';
-import type { Column, RowHeader } from '../ComparisonTable/ComparisonTableContent';
+import type { TariffsTableColumn, TariffsTableRowHeader } from './TariffsTableContent';
 
 const image1: Picture = {
   src: 'card-1.png',
@@ -39,7 +39,7 @@ const image4: Picture = {
   },
 };
 
-const rowHeaders: RowHeader[] = [
+const rowHeaders: TariffsTableRowHeader[] = [
   { title: 'Начисление процентов на остаток по счету', icon: 'OkIcon' },
   { title: 'Снятие наличных', icon: 'GlassIcon' },
   { title: 'Оформление онлайн', icon: 'ShieldTickIcon' },
@@ -48,22 +48,14 @@ const rowHeaders: RowHeader[] = [
   { title: 'Стоимость SMS-сервиса' },
   { title: 'Дополнительная информация' },
 ];
-const rowHeaders2: RowHeader[] = [
+const rowHeaders2: TariffsTableRowHeader[] = [
   { title: 'Срок вклада (дней)' },
   { title: 'Ставка по вкладу' },
   { title: 'Минимальная сумма' },
   { title: 'Максимальная сумма' },
 ];
-const columns: Column[] = [
+const columns: TariffsTableColumn[] = [
   {
-    header: {
-      title: 'Россельхоз-Росснефть',
-      image: image1,
-      link: {
-        text: 'Подробнее',
-        href: '/credits',
-      },
-    },
     data: [
       [{ label: 'Нет' }],
       [
@@ -79,17 +71,31 @@ const columns: Column[] = [
       [{ label: 'Нет' }],
       [{ label: 'Платёжные системы картинкой' }, { image: image4 }],
       [
-        { label: 'Платёжные системы иконками' },
-        { icons: ['VisaIcon', 'MirIcon', 'UnionPayIcon', 'JCBIcon', 'MasterCardIcon'] },
+        { label: 'Кнопки-иконки' },
+        {
+          buttons: [
+            {
+              icon: 'AppleIcon',
+              rounded: true,
+              version: 'secondary',
+              href: '/_blank',
+              target: '_blank',
+            },
+            {
+              icon: 'PlayMarketIcon',
+              rounded: true,
+              version: 'secondary',
+              href: '/secondary',
+            },
+          ],
+        },
       ],
       [
         {
           label: 'Бесплатно',
-          items: [
-            { text: 'item 1', version: 'secondary' },
-            { text: 'primary', version: 'primary' },
-            { text: 'secondary', version: 'secondary' },
-          ],
+          list: {
+            items: ['item 1', 'item 2', 'item 3'],
+          },
         },
       ],
       [
@@ -104,33 +110,9 @@ const columns: Column[] = [
           },
         },
       ],
-      [
-        {
-          buttons: [
-            {
-              icon: 'AppleIcon',
-              rounded: true,
-              version: 'secondary',
-            },
-            {
-              icon: 'PlayMarketIcon',
-              rounded: true,
-              version: 'secondary',
-            },
-          ],
-        },
-      ],
     ],
   },
   {
-    header: {
-      title: 'Panasonic',
-      image: image2,
-      link: {
-        text: 'Подробнее',
-        href: '/credits',
-      },
-    },
     data: [
       [{ label: 'Нет' }],
       [
@@ -144,14 +126,30 @@ const columns: Column[] = [
         },
       ],
       [{ label: 'Нет' }],
-      [{ label: 'До 20%' }],
+      [
+        { label: 'До 20%' },
+        {
+          list: {
+            isDotted: false,
+            items: ['item 1', 'item 2', 'item 3'],
+          },
+        },
+      ],
       [
         {
           label: 'Бесплатно',
           description: 'При обороте по карте от 10000 ₽ в месяц',
         },
       ],
-      [{ label: '69 рублей в месяц' }],
+      [
+        { label: '69 рублей в месяц' },
+        {
+          list: {
+            version: 'primary',
+            items: ['item 1', 'item 2', 'item 3'],
+          },
+        },
+      ],
       [
         {
           description:
@@ -161,14 +159,6 @@ const columns: Column[] = [
     ],
   },
   {
-    header: {
-      title: 'Профсоюзная',
-      image: image3,
-      link: {
-        text: 'Подробнее',
-        href: '/credits',
-      },
-    },
     data: [
       [{ label: 'Нет' }],
       [{ label: 'Бесплатно' }],
@@ -182,57 +172,6 @@ const columns: Column[] = [
       ],
       [{ label: '69 рублей в месяц' }],
       [{ description: 'Для членов профсоюзных организаций' }],
-    ],
-  },
-];
-
-const columns2: Column[] = [
-  {
-    header: {
-      title: '«Пополняемый»',
-      icon: 'ShieldTickIcon',
-      link: {
-        text: 'Подробнее',
-        href: '/credits',
-      },
-    },
-    data: [
-      [{ label: 'от 91 до 1095' }],
-      [{ label: 'до 8,2% ₽' }, { label: 'до 0,01% USD' }],
-      [{ label: 'От 3000 ₽' }, { label: 'От 50 USD' }],
-      [{ label: 'до 10 млн ₽' }, { label: 'до 300 тыс. USD' }],
-    ],
-  },
-  {
-    header: {
-      title: '«Комфортный»',
-      icon: 'ComfortableCompIcon',
-      link: {
-        text: 'Подробнее',
-        href: '/credits',
-      },
-    },
-    data: [
-      [{ label: 'от 91 до 1095' }],
-      [{ label: 'до 7,2% ₽' }, { label: 'до 0,01% USD' }],
-      [{ label: 'От 10 000 ₽' }, { label: 'От 150 USD' }],
-      [{ label: 'до 10 млн ₽' }, { label: 'до 300 тыс. USD' }],
-    ],
-  },
-  {
-    header: {
-      title: '«Доходный пенсионный»',
-      icon: 'ClockIcon',
-      link: {
-        text: 'Подробнее',
-        href: '/credits',
-      },
-    },
-    data: [
-      [{ label: 'от 91 до 1460' }],
-      [{ label: 'до 9,5% ₽' }],
-      [{ label: 'От 500 ₽' }],
-      [{ label: 'Без ограничений' }],
     ],
   },
 ];

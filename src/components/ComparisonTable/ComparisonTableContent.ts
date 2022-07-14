@@ -1,7 +1,5 @@
 import type { LinkContent } from '../../model/LinkContent';
 import type { Picture } from '../../model/Picture';
-import type { BlockItemProps } from '../../ui-kit/BlockItem/BlockItemProps';
-import type { ButtonWithIconProps } from '../../ui-kit/Button/ButtonProps';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
 
 export type Row = {
@@ -14,10 +12,6 @@ export type RowData = Row[] | undefined;
 export interface CellData {
   label?: string;
   description?: string;
-  items?: BlockItemProps[];
-  icons?: IconName[];
-  image?: Picture;
-  buttons?: ButtonWithIconProps[];
 }
 
 export interface ColumnHeader {
@@ -26,6 +20,7 @@ export interface ColumnHeader {
   image?: Picture;
   link?: LinkContent;
 }
+
 export interface Column {
   header?: ColumnHeader;
   data?: CellData[][];
@@ -33,7 +28,6 @@ export interface Column {
 
 export interface RowHeader {
   title?: string;
-  icon?: IconName;
 }
 
 export interface ComparisonTableContent {

@@ -1,19 +1,19 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { Row } from '../ComparisonTable/ComparisonTableContent';
-import { DIVIDER_CLASSES, FIRST_CELL_CLASSES } from './constants';
+import { COLUMN_WIDTH, DIVIDER_CLASSES, FIRST_CELL_CLASSES } from './constants';
 import { Icon } from '../../ui-kit/Icon/Icon';
-import { TableCarouselContainer } from './TableCarouselContainer';
-import { TableRowContainer } from './TableRowContainer';
-import { TableCell } from './TableCell';
+import { TariffsTableCell } from './TariffsTableCell';
+import { TableRowContainer } from '../ComparisonTable/TableRowContainer';
+import { TableCarouselContainer } from '../ComparisonTable/TableCarouselContainer';
+import type { ITariffsTableRow } from './TariffsTableContent';
 
-export interface TableRowProps {
+export interface TariffsTableRowProps {
   className?: string;
-  row: Row;
+  row: ITariffsTableRow;
   activeCardIndex: number;
   isLastRow: boolean;
 }
 
-export const TableRow = JSX<TableRowProps>(
+export const TariffsTableRow = JSX<TariffsTableRowProps>(
   ({ row: { header, data }, activeCardIndex, isLastRow }) => {
     return (
       <TableRowContainer>
@@ -30,9 +30,13 @@ export const TableRow = JSX<TableRowProps>(
           </div>
         </div>
         {data?.length ? (
-          <TableCarouselContainer activeCardIndex={activeCardIndex}>
+          <TableCarouselContainer
+            activeCardIndex={activeCardIndex}
+            columnWidth={COLUMN_WIDTH}
+            version="tariff"
+          >
             {data.map((cell, i) => (
-              <TableCell key={String(i)} cell={cell} isLastRow={isLastRow} />
+              <TariffsTableCell key={String(i)} cell={cell} isLastRow={isLastRow} />
             ))}
           </TableCarouselContainer>
         ) : null}
