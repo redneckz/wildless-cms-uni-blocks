@@ -1,8 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../../types';
+import { Title } from '../../ui-kit/Title/Title';
 import type { AccordionContent } from './AccordionContent';
 import { AccordionItem } from './AccordionItem';
-import { Title } from '../../ui-kit/Title/Title';
 
 export interface AccordionProps extends AccordionContent, UniBlockProps {}
 

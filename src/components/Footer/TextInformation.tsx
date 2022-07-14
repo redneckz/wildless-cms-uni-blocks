@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent } from '../../model/LinkContent';
 import { useLink } from '../../hooks/useLink';
+import type { LinkProps } from '../../model/LinkProps';
 import { FooterLink } from './FooterLink';
 
 export const TextInformation = JSX<FooterLink>(({ className, links, context }) => {
@@ -28,7 +28,7 @@ export const TextInformation = JSX<FooterLink>(({ className, links, context }) =
   );
 });
 
-interface TextInformationLinkProps extends LinkContent {
+interface TextInformationLinkProps extends LinkProps {
   className: string;
   index: number;
   onClick: (ev: MouseEvent) => any;

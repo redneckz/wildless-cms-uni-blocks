@@ -75,7 +75,7 @@ module.exports = {
         ...theme('spacing'),
       }),
       animation: {
-        slide: 'progress linear',
+        slide: 'progress linear', //TODO: I'm not sure, but it doesn't seem to be used. Need to check
       },
       keyframes: {
         progress: {

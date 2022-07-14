@@ -1,6 +1,10 @@
-import type { BaseTileContent } from '../BaseTile/BaseTileContent';
+import type { BaseTileCommonProps } from '../BaseTile/BaseTileProps';
 import type { Benefit } from '../BenefitsBlock/BenefitsBlockContent';
 
-export interface ProductTileContent extends BaseTileContent {
+/**
+ * @title Продуктовая плитка
+ */
+export interface ProductTileContent extends BaseTileCommonProps {
+  /** @title Преимущества */
   benefits?: Benefit[];
 }

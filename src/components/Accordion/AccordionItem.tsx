@@ -1,10 +1,12 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../../types';
-import type { AccordionItemContent, AccordionBlockContent } from './AccordionContent';
 import { Icon } from '../../ui-kit/Icon/Icon';
+import type { JSXBlock } from '../ContentPage/ContentPage';
+import { ContentPageContext } from '../ContentPage/ContentPageContext';
 import AccordionBlocks from './AccordionBlocks';
+import type { AccordionBlock, AccordionItemCommonProps } from './AccordionContent';
 
-export interface AccordionItemProps extends AccordionItemContent, UniBlockProps {}
+export interface AccordionItemProps extends AccordionItemCommonProps, UniBlockProps {}
 
 export const AccordionItem = JSX<AccordionItemProps>(({ label, blocks, context }) => {
   const [isActive, setIsActive] = context.useState(false);
@@ -42,24 +44,22 @@ export const AccordionItem = JSX<AccordionItemProps>(({ label, blocks, context }
             isActive ? 'pb-5' : ''
           } text-sm transition-all duration-300 max-h-0 overflow-hidden group-last:last:pb-0 `}
         >
-          {blocks?.length ? blocks.map(renderComponent) : null}
+          {blocks?.length ? blocks.map((block, i) => renderBlock(block, i, context)) : null}
         </div>
       ) : null}
     </li>
   );
 });
 
-// TODO: draft, for dynamic rendering of components
-
-const renderComponent = (block: AccordionBlockContent, i: number) => {
-  if (block.type && block.data && !AccordionBlocks.hasOwnProperty(block.type)) {
+const renderBlock = (block: AccordionBlock, i: number, context: ContentPageContext) => {
+  if (!block.type || !block.data || !AccordionBlocks.hasOwnProperty(block.type)) {
     return null;
   }
 
-  const AccordionBlock = block.type && AccordionBlocks[block.type];
+  const AccordionBlock: JSXBlock = AccordionBlocks[block.type];
   return (
-    <div className="mb-5 last:mb-0" key={`component${i}`}>
-      <AccordionBlock {...block.data} />
+    <div className="mb-5 last:mb-0" key={`block_${i}`}>
+      <AccordionBlock context={context} {...block.data} />
     </div>
   );
 };

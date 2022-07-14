@@ -1,5 +1,5 @@
 import { HandlerDecorator, Router } from '../components/ContentPage/ContentPageContext';
-import type { LinkContent } from '../model/LinkContent';
+import type { LinkProps } from '../model/LinkProps';
 import { adjustHref, isURL } from '../utils/url';
 
 const defaultHandlerDecorator: HandlerDecorator = (handler, targetContent) => handler;
@@ -9,7 +9,7 @@ export function useLink(
     router,
     handlerDecorator = defaultHandlerDecorator,
   }: { router: Router; handlerDecorator?: HandlerDecorator },
-  link: Partial<LinkContent & { className: string }>,
+  link: Partial<LinkProps & { className: string }>,
 ) {
   const href = adjustHref(link.href, router);
   return {
