@@ -31394,7 +31394,7 @@ const LinkDocs = JSX(({ className, context, title, titleAlign, documents, icon, 
     return (jsxs("section", { className: `p-[50px] bg-white ${className}`, children: [title && (jsx(Title, { className: `mt-0 ${titleMarginsStyleMap[columnsMode]} ${titleAlignStyleMap[titleAlign ?? 'center']}`, children: title })), jsx("div", { className: `flex ${containerClasses}`, role: "list", children: documents?.length
                     ? documents.map(({ text, fileSize, ...linkProps }) => (jsxs("a", { className: `group flex items-center text-sm
               text-sm font-sans align-middle items-center text-primary-text no-underline group hover:text-primary-main
-              ${columnsMode === 'double' ? 'basis-[calc(50%-20px)]' : ''}`, role: "listitem", ...linkProps, children: [icon && jsx(Icon, { className: "mr-3.5", name: icon, width: "24px", height: "24px" }), text, jsx("span", { className: "text-secondary-text group-hover:text-primary-main", children: linkProps?.href && formatSuffix(getExtFromHref(linkProps.href), fileSize) })] })))
+              ${columnsMode === 'double' ? 'basis-[calc(50%-20px)]' : ''}`, role: "listitem", ...linkProps, children: [icon && jsx(Icon, { className: "mr-3.5", name: icon, width: "24px", height: "24px" }), jsxs("span", { children: [text, jsx("span", { className: "text-secondary-text group-hover:text-primary-main", children: linkProps?.href && formatSuffix(getExtFromHref(linkProps.href), fileSize) })] })] })))
                     : null })] }));
 });
 const getExtFromHref = (href) => {

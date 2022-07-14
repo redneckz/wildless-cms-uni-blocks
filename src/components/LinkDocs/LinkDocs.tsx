@@ -49,9 +49,11 @@ export const LinkDocs = JSX<LinkDocsProps>(
                   {...linkProps}
                 >
                   {icon && <Icon className="mr-3.5" name={icon} width="24px" height="24px" />}
-                  {text}
-                  <span className="text-secondary-text group-hover:text-primary-main">
-                    {linkProps?.href && formatSuffix(getExtFromHref(linkProps.href), fileSize)}
+                  <span>
+                    {text}
+                    <span className="text-secondary-text group-hover:text-primary-main">
+                      {linkProps?.href && formatSuffix(getExtFromHref(linkProps.href), fileSize)}
+                    </span>
                   </span>
                 </a>
               ))
