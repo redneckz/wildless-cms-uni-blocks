@@ -31050,7 +31050,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 9266:
+/***/ 5566:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31371,7 +31371,11 @@ const Title = JSX(({ size = 'L', className, children, ...rest }) => {
 });
 const getClasses = (...classes) => classes.filter(Boolean).join(' ');
 
-;// CONCATENATED MODULE: ./src/components/LinkDocs/constants.ts
+;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.tsx
+
+
+
+
 const titleAlignClassesMap = {
     left: 'text-left',
     center: 'text-center',
@@ -31381,19 +31385,12 @@ const titleColumnsModeClassesMap = {
     double: 'mb-8',
     single: '',
 };
-const LinkColumnsModeClassesMap = {
+const linkColumnsModeClassesMap = {
     double: 'gap-x-5 gap-y-[26px] flex-wrap',
     single: 'gap-3.5 flex-col',
 };
-
-;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.tsx
-
-
-
-
-
 const LinkDocs = JSX(({ className, context, title, titleAlign, documents, icon = 'DocIcon', showIcons = true, showExt = true, linkColumns = 'double', }) => {
-    const containerClasses = LinkColumnsModeClassesMap[linkColumns];
+    const containerClasses = linkColumnsModeClassesMap[linkColumns];
     return (jsxs("section", { className: `p-[50px] bg-white ${className}`, children: [title && (jsx(Title, { className: `mt-0 ${titleColumnsModeClassesMap[linkColumns]} ${titleAlignClassesMap[titleAlign ?? 'center']}`, children: title })), jsx("div", { className: `flex ${containerClasses}`, role: "list", children: documents?.length &&
                     documents.map(({ text, fileSize, ...linkProps }) => (jsxs("a", { className: `group flex items-center text-sm
               text-sm font-sans align-middle items-center text-primary-text no-underline group hover:text-primary-main
@@ -40185,7 +40182,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(9266),
+  var _require = __webpack_require__(5566),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

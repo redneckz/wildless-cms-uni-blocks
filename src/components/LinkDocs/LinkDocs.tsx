@@ -1,13 +1,25 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../../types';
 import type { LinkDocsContent } from './LinkDocsContent';
+import type { LinkColumnsMode, LinkDocsTitleAlignment } from './LinkDocsContent';
 import { Title } from '../../ui-kit/Title/Title';
 import { Icon } from '../../ui-kit/Icon/Icon';
-import {
-  LinkColumnsModeClassesMap,
-  titleAlignClassesMap,
-  titleColumnsModeClassesMap,
-} from './constants';
+
+export const titleAlignClassesMap: Record<LinkDocsTitleAlignment, string> = {
+  left: 'text-left',
+  center: 'text-center',
+  right: 'text-right',
+};
+
+export const titleColumnsModeClassesMap: Record<LinkColumnsMode, string> = {
+  double: 'mb-8',
+  single: '',
+};
+
+export const linkColumnsModeClassesMap: Record<LinkColumnsMode, string> = {
+  double: 'gap-x-5 gap-y-[26px] flex-wrap',
+  single: 'gap-3.5 flex-col',
+};
 
 export interface LinkDocsProps extends LinkDocsContent, UniBlockProps {}
 
@@ -23,7 +35,7 @@ export const LinkDocs = JSX<LinkDocsProps>(
     showExt = true,
     linkColumns = 'double',
   }) => {
-    const containerClasses = LinkColumnsModeClassesMap[linkColumns];
+    const containerClasses = linkColumnsModeClassesMap[linkColumns];
 
     return (
       <section className={`p-[50px] bg-white ${className}`}>
