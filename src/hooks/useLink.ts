@@ -2,7 +2,7 @@ import { HandlerDecorator, Router } from '../components/ContentPage/ContentPageC
 import type { LinkProps } from '../model/LinkProps';
 import { adjustHref, isURL } from '../utils/url';
 
-const defaultHandlerDecorator: HandlerDecorator = (handler, targetContent) => handler;
+const defaultHandlerDecorator: HandlerDecorator = (handler) => handler;
 
 export function useLink(
   {
