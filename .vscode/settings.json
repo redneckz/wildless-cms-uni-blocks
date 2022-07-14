@@ -2,6 +2,9 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "javascript.preferences.importModuleSpecifierEnding": "js",
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "json.schemas": [
     {

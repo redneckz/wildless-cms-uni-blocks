@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { useLink } from '../../hooks/useLink';
-import type { LinkContent } from '../../model/LinkContent';
+import type { LinkProps } from '../../model/LinkProps';
 import type { UniBlockProps } from '../../types';
 import { Button } from '../../ui-kit/Button/Button';
 import { Icon } from '../../ui-kit/Icon/Icon';
@@ -25,7 +25,7 @@ const ICONS_MAP: Array<{
 ];
 
 export interface SocialMediaProps extends UniBlockProps {
-  media?: Omit<LinkContent, 'text'>[];
+  media?: Omit<LinkProps, 'text'>[];
 }
 
 export const SocialMedia = JSX<SocialMediaProps>(({ className, media, context }) => {

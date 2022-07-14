@@ -1,10 +1,10 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { mergeTopItems } from '../../mergeTopItems';
-import type { LinkContent } from '../../model/LinkContent';
-import type { TopMenuItem } from '../../model/SitemapContent';
-import type { UniBlockProps } from '../../types';
 import { useLink } from '../../hooks/useLink';
 import { useSitemap } from '../../hooks/useSitemap';
+import { mergeTopItems } from '../../mergeTopItems';
+import type { LinkProps } from '../../model/LinkProps';
+import type { TopMenuItem } from '../../model/SitemapProps';
+import type { UniBlockProps } from '../../types';
 export interface SitemapProps extends UniBlockProps {
   items?: TopMenuItem[];
 }
@@ -43,7 +43,7 @@ const renderColumn = (c: TopMenuItem, index: number, { router, handlerDecorator 
   );
 };
 
-interface ColumnItemProps extends LinkContent {
+interface ColumnItemProps extends LinkProps {
   index?: number;
 }
 
