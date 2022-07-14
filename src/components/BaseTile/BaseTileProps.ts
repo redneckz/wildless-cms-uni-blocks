@@ -4,6 +4,16 @@ import type { ButtonWithIconProps } from '../../ui-kit/Button/ButtonProps';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
 import type { TitleSize } from '../../ui-kit/Title/TitleProps';
 
+/**
+ * @title Выравнивание
+ * @enumNames [
+ *    "По левому краю",
+ *    "По центру",
+ *    "По правому краю"
+ * ]
+ */
+export type AlignType = 'left' | 'center' | 'right';
+
 export interface BaseTileIconButton extends ButtonWithIconProps {
   icon?: IconName;
 }
@@ -30,4 +40,5 @@ export interface BaseTileCommonProps {
    */
   buttons?: BaseTileIconButton[];
   version?: BlockVersion;
+  align?: AlignType;
 }
