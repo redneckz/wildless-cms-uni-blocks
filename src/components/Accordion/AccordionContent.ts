@@ -5,12 +5,12 @@ import AccordionBlocks from './AccordionBlocks';
  * @hidden
  * @title Содержимое блока
  */
-export type AccordionDataContent = AccordionBlocksType;
+export type AccordionData = AccordionBlocksType;
 
 /**
  * @hidden
  * @title Тип блока
- * @enumNames ["Текстовый блок", "Блок документов"]
+ * @enumNames ["Заголовок", "Блок документов", Текстовый блок"]
  */
 export type AccordionDataBlocks = keyof typeof AccordionBlocks;
 
@@ -19,7 +19,7 @@ export type AccordionDataBlocks = keyof typeof AccordionBlocks;
  */
 export interface AccordionBlock {
   type?: AccordionDataBlocks;
-  data?: AccordionDataContent;
+  data?: AccordionData;
 }
 
 /**

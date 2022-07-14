@@ -8,6 +8,7 @@ import { ProductBlock } from './ProductBlock/ProductBlock.mobile';
 import { ProductTile } from './ProductTile/ProductTile';
 import { TextBlock } from './TextBlock/TextBlock';
 import { Tile } from './Tile/Tile';
+import { Headline } from './Headline/Headline';
 
 export const MobileBlocks = {
   Header,
@@ -20,6 +21,7 @@ export const MobileBlocks = {
   ExchangeRateTile,
   MobileAppTile,
   Gallery,
+  Headline,
   // TODO StepsBlock,
   // TODO BenefitsBlock,
   // TODO ProductGallery

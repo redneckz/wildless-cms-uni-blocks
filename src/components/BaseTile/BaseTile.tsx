@@ -8,7 +8,18 @@ import { Icon } from '../../ui-kit/Icon/Icon';
 import { Img } from '../../ui-kit/Img';
 import { Title } from '../../ui-kit/Title/Title';
 import { getColSpan } from '../../utils/getColSpan';
-import type { BaseTileCommonProps, BaseTileIconButton } from './BaseTileProps';
+import type { AlignType, BaseTileCommonProps, BaseTileIconButton } from './BaseTileProps';
+
+const alignBlock: Record<AlignType, string> = {
+  left: 'items-start',
+  center: 'items-center',
+  right: 'items-end',
+};
+const alignText: Record<AlignType, string> = {
+  left: 'text-left',
+  center: 'text-center',
+  right: 'text-right',
+};
 
 export interface BaseTileProps extends BaseTileCommonProps, UniBlockProps {}
 
@@ -26,21 +37,24 @@ export const BaseTile = JSX<BaseTileProps>(
     image,
     items,
     version = 'primary',
+    align = 'left',
   }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
     return (
-      <div className={`font-sans flex flex-col grow h-full`}>
+      <div className={`font-sans flex flex-col grow h-full ${alignBlock[align]}`}>
         {title && (
           <Title size={titleSize || getTitleSizeByClassName(className)} className={TITLE_CLASSES}>
             {title}
           </Title>
         )}
         <div className="flex grow justify-between">
-          <div className="flex flex-col justify-between items-start">
+          <div className={`flex flex-col justify-between ${alignBlock[align]}`}>
             <div>
               {description ? (
-                <div className="font-normal text-base max-w-[600px] mb-5">{description}</div>
+                <div className={`font-normal text-base max-w-[600px] ${alignText[align]}`}>
+                  {description}
+                </div>
               ) : null}
               {children}
               {items?.length ? renderItems(items, version) : null}
@@ -73,7 +87,7 @@ function getTitleSizeByClassName(className: string = '') {
 
 function renderItems(items: string[] = [], version?: BlockVersion) {
   return (
-    <section className="max-w-[600px]" role="list">
+    <section className="max-w-[600px] mt-5" role="list">
       {items.map((_, i) => (
         <BlockItem key={String(i)} className={i ? 'mt-2.5' : ''} text={_} version={version} />
       ))}
