@@ -1,5 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { LinkContent } from '../../model/LinkContent';
+import type { LinkProps } from '../../model/LinkProps';
 import type { Picture } from '../../model/Picture';
 import { Button } from '../../ui-kit/Button/Button';
 import { Icon } from '../../ui-kit/Icon/Icon';
@@ -12,7 +12,7 @@ export interface HeaderCellProps {
   icon?: IconName;
   image?: Picture;
   title?: string;
-  link?: LinkContent;
+  link?: LinkProps;
 }
 
 export const HeaderCell = JSX<HeaderCellProps>(({ icon, image, title, link }) => (

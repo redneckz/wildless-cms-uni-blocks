@@ -19,26 +19,6 @@
       "require": "./dist/*.js",
       "types": "./lib/*.d.ts"
     },
-    "./lib/Header": {
-      "import": "./lib/Header/index.js",
-      "require": "./dist/Header/index.js",
-      "types": "./lib/Header/index.d.ts"
-    },
-    "./lib/Header/*.js": {
-      "import": "./lib/Header/*.js",
-      "require": "./dist/Header/*.js",
-      "types": "./lib/Header/*.d.ts"
-    },
-    "./lib/Footer": {
-      "import": "./lib/Footer/index.js",
-      "require": "./dist/Footer/index.js",
-      "types": "./lib/Footer/index.d.ts"
-    },
-    "./lib/Footer/*.js": {
-      "import": "./lib/Footer/*.js",
-      "require": "./dist/Footer/*.js",
-      "types": "./lib/Footer/*.d.ts"
-    },
     "./lib/common.css": "./lib/common.css",
     "./fonts/ubuntu/*": "./fonts/ubuntu/*",
     "./lib/content-page-repository": {
@@ -85,7 +65,7 @@
     "postbuild:lib": "replace-in-file --configFile=replace-config.lib.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
     "bundle": "rimraf ./bundle && rollup -c && npm run build:schema",
-    "build:schema": "ts-json-schema-generator --path ./src/**/*Content.ts --no-type-check -o ./bundle/blocks.schema.json",
+    "build:schema": "ts-json-schema-generator --path './src/**/*Content.ts' --additional-properties --validation-keywords enumNames --validation-keywords required --minify --no-type-check -o ./bundle/blocks.schema.json",
     "build:style": "postcss ./src/**/*.css --env production --dir ./lib",
     "build:icons": "svgo -f ./src/icons -o ./cosmos-static/icons",
     "size": "size-limit",

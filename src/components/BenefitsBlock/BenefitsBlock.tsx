@@ -1,7 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { Benefit, BenefitsBlockContent } from './BenefitsBlockContent';
 import type { UniBlockProps } from '../../types';
 import { Icon } from '../../ui-kit/Icon/Icon';
+import { Title } from '../../ui-kit/Title/Title';
+import type { Benefit, BenefitsBlockContent } from './BenefitsBlockContent';
 
 export interface BenefitsBlockProps extends BenefitsBlockContent, UniBlockProps {}
 
@@ -12,7 +13,7 @@ export const BenefitsBlock = JSX<BenefitsBlockProps>(({ className, title, benefi
         className || ''
       }`}
     >
-      <h2 className="font-medium text-title m-0 max-w-[47rem] text-center">{title}</h2>
+      {title ? <Title className="font-medium m-0 max-w-[47rem] text-center">{title}</Title> : null}
       {benefits?.length ? (
         <div className="grid grid-cols-2 gap-5 mt-9">{benefits.map(renderStep)}</div>
       ) : null}

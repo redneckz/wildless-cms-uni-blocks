@@ -1,19 +1,38 @@
 import type { TextBlockContent } from '../TextBlock/TextBlockContent';
-import type { PictureTextContent } from '../PictureText/PictureTextContent';
 
-export interface AccordionContent {
-  title?: string;
-  accordionItems?: AccordionItemContent[];
+/** @title Содержимое блока */
+export type AccordionData = TextBlockContent;
+
+/**
+ * @title Тип блока
+ * @enumNames ["Текстовый блок"]
+ */
+export type AccordionTypeBlock = 'TextBlock' | 'Headline' | 'PictureText';
+
+/**
+ * Блок
+ */
+export interface AccordionBlock {
+  type?: AccordionTypeBlock;
+  data?: AccordionData;
 }
 
-export interface AccordionItemContent {
+/**
+ * @title Элемент списка
+ */
+export interface AccordionItemCommonProps {
+  /** @title Название */
   label?: string;
-  blocks?: AccordionBlockContent[];
+  /** @title Блоки */
+  blocks?: AccordionBlock[];
 }
 
-export type AccordionBlockContent = {
-  type?: string;
-  data?: AccordionDataContent;
-};
-
-export type AccordionDataContent = TextBlockContent | PictureTextContent;
+/**
+ * @title Аккордеон
+ */
+export interface AccordionContent {
+  /** @title Заголовок */
+  title?: string;
+  /** @title Список */
+  accordionItems?: AccordionItemCommonProps[];
+}
