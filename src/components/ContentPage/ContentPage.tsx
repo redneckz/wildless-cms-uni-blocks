@@ -1,8 +1,8 @@
 import { JSX, PropsWithChildren } from '@redneckz/uni-jsx';
+import type { BlockDef, ContentPageDef, UniBlockProps } from '../../types';
 import type { BlockContent } from '../BlockContent';
 import { LikeControl } from '../LikeControl/LikeControl';
 import { Placeholder } from '../Placeholder/Placeholder';
-import type { BlockDef, ContentPageDef, UniBlockProps } from '../../types';
 
 interface BlockDecoratorProps<VNode> {
   blockClassName: string;
@@ -15,11 +15,13 @@ export type BlockDecorator<VNode = any> = (
   index?: number | string,
 ) => any;
 
+export type JSXBlock = (
+  props: PropsWithChildren<UniBlockProps & BlockContent, any>,
+  context?: any,
+) => any;
+
 export interface ContentPageProps extends UniBlockProps {
-  blocksRegistry: Record<
-    string,
-    (props: PropsWithChildren<UniBlockProps & BlockContent, any>, context?: any) => any
-  >;
+  blocksRegistry: Record<string, JSXBlock>;
   data: ContentPageDef;
   blockDecorator?: BlockDecorator;
 }

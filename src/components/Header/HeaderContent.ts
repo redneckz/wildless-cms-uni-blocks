@@ -1,5 +1,13 @@
-import { SitemapContent } from '../../model/SitemapContent';
+import type { SitemapProps } from '../../model/SitemapProps';
 
-export interface HeaderContent extends SitemapContent {
+/**
+ * @title Шапка
+ * @required ["defaultLocation", "topItems"]
+ */
+export interface HeaderContent extends SitemapProps {
+  /**
+   * @title Город по-умолчанию
+   * @default Москва
+   */
   defaultLocation?: string;
 }
