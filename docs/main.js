@@ -31375,7 +31375,7 @@ const PictureText = JSX(({ className, title, image, benefits }) => {
     return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-14 ${className}`, children: [jsx(Title, { className: "font-medium m-0 text-center", children: title }), jsxs("div", { className: 'flex justify-center mt-9', children: [image?.src && jsx(Img, { className: "mr-6", image: image }), benefits?.length ? (jsx("div", { className: "flex flex-col", children: benefits.map(renderBenefit) })) : null] })] }));
 });
 function renderBenefit(benefit, i) {
-    return (jsxs("div", { className: "flex flex-row mb-8", children: [benefit.icon && (jsx(Icon, { className: "w-[48px] h-[48px] bg-main rounded-full box-border p-[12px]", name: benefit.icon, width: "48", height: "48" })), jsxs("div", { className: "flex gap-1 flex-col h-full ml-5", children: [jsx("div", { className: "font-medium text-primary-text text-xl m-0 max-w-[490px]", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary-text max-w-[490px]", children: benefit.description }))] })] }, String(i)));
+    return (jsxs("div", { className: "flex flex-row mb-8", children: [benefit.icon && (jsx(Icon, { className: "w-[48px] h-[48px] bg-main rounded-full box-border p-[12px]", name: benefit.icon, width: "48", height: "48" })), jsxs("div", { className: "flex gap-1 flex-col h-full ml-5 max-w-[490px]", children: [jsx("div", { className: "font-medium text-primary-text text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary-text", children: benefit.description }))] })] }, String(i)));
 }
 
 ;// CONCATENATED MODULE: ./src/components/Accordion/AccordionBlocks.tsx
