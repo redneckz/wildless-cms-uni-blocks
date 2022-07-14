@@ -36,23 +36,19 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
           className="mr-5 text-primary-text hover:text-primary-main"
           ariaLabel="Поиск по сайту"
         >
-          <Icon name="LoupeIcon" aria-hidden="true" />
+          <Icon name="LoupeIcon" aria-hidden="true" className="h-full" asSVG />
         </HeaderSecondaryMenuButton>
         <HeaderSecondaryMenuButton
           className="mr-5 text-primary-text hover:text-primary-main"
           ariaLabel="Профиль"
         >
-          <Icon name="ProfileIcon" aria-hidden="true" />
+          <Icon name="ProfileIcon" aria-hidden="true" className="h-full" asSVG />
         </HeaderSecondaryMenuButton>
         <HeaderSecondaryMenuButton
-          className="mr-5 text-secondary-light hover:text-primary-main min-w-[32px] min-h-[32px]"
+          className="min-w-[32px] min-h-[32px] fill-secondary-light hover:fill-secondary-hover"
           ariaLabel="Дополнительные ссылки"
         >
-          <Icon
-            name="GridIcon"
-            aria-hidden="true"
-            className="[&>*]:fill-secondary-light [&>*]:hover:fill-primary-main"
-          />
+          <Icon name="GridIcon" aria-hidden="true" className="h-full" asSVG />
         </HeaderSecondaryMenuButton>
       </div>
     );

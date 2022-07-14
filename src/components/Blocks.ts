@@ -1,6 +1,4 @@
-import { Accordion } from './Accordion/Accordion';
 import { BenefitsBlock } from './BenefitsBlock/BenefitsBlock';
-import { ComparisonTable } from './ComparisonTable/ComparisonTable';
 import { ExchangeRateTile } from './ExchangeRateTile/ExchangeRateTile';
 import { Footer } from './Footer/Footer';
 import { Gallery } from './Gallery/Gallery';
@@ -15,23 +13,27 @@ import { PromoTile } from './PromoTile/PromoTile';
 import { StepsBlock } from './StepsBlock/StepsBlock';
 import { TextBlock } from './TextBlock/TextBlock';
 import { Tile } from './Tile/Tile';
+import { ComparisonTable } from './ComparisonTable/ComparisonTable';
+import { Accordion } from './Accordion/Accordion';
+import { CreditCalculator } from './CreditCalculator/CreditCalculator';
 
 export const Blocks = {
-  Accordion,
-  BenefitsBlock,
-  ComparisonTable,
-  ExchangeRateTile,
-  Footer,
-  Gallery,
   Header,
-  MiniGallery,
-  MobileAppTile,
+  Footer,
   Placeholder,
-  ProductBlock,
-  ProductGallery,
-  ProductTile,
-  PromoTile,
-  StepsBlock,
-  TextBlock,
   Tile,
+  PromoTile,
+  TextBlock,
+  ProductTile,
+  ProductBlock,
+  StepsBlock,
+  BenefitsBlock,
+  ProductGallery,
+  ExchangeRateTile,
+  MobileAppTile,
+  Gallery,
+  MiniGallery,
+  ComparisonTable,
+  Accordion,
+  CreditCalculator,
 };

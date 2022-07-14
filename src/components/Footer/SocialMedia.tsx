@@ -58,14 +58,7 @@ const MediaButton = JSX<MediaButtonProps>(({ href }) => {
       rel="noopener noreferrer"
       aria-label={label}
       className="border-solid border border-main-divider w-9 h-9 flex items-center justify-center hover:fill-primary-main"
-      appendLeft={
-        <Icon
-          name={icon}
-          width={width}
-          height={height}
-          className="[&>*]:fill-primary-text [&>*]:hover:fill-primary-main"
-        />
-      }
+      appendLeft={<Icon name={icon} width={width} height={height} asSVG />}
     />
   );
 });
