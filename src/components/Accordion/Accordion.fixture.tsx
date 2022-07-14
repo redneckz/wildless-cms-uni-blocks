@@ -1,6 +1,6 @@
 import { context } from '../../setup-fixture';
-import type { TextBlockContent } from '../TextBlock/TextBlockContent';
 import type { AccordionProps } from './Accordion';
+import type { TextBlockContent } from '../TextBlock/TextBlockContent';
 import { Accordion } from './Accordion';
 import {
   LinkDocsFixtureSetOne,

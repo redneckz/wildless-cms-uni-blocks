@@ -19,26 +19,6 @@
       "require": "./dist/*.js",
       "types": "./lib/*.d.ts"
     },
-    "./lib/Header": {
-      "import": "./lib/Header/index.js",
-      "require": "./dist/Header/index.js",
-      "types": "./lib/Header/index.d.ts"
-    },
-    "./lib/Header/*.js": {
-      "import": "./lib/Header/*.js",
-      "require": "./dist/Header/*.js",
-      "types": "./lib/Header/*.d.ts"
-    },
-    "./lib/Footer": {
-      "import": "./lib/Footer/index.js",
-      "require": "./dist/Footer/index.js",
-      "types": "./lib/Footer/index.d.ts"
-    },
-    "./lib/Footer/*.js": {
-      "import": "./lib/Footer/*.js",
-      "require": "./dist/Footer/*.js",
-      "types": "./lib/Footer/*.d.ts"
-    },
     "./lib/common.css": "./lib/common.css",
     "./fonts/ubuntu/*": "./fonts/ubuntu/*",
     "./lib/content-page-repository": {
