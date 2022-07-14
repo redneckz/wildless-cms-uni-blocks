@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { ButtonVersion } from '../../model/ButtonVersion';
-import type { ButtonInnerProps, ButtonProps } from './ButtonProps';
+import type { ButtonProps, ButtonWithIconProps } from './ButtonProps';
 
 const buttonStyleMap: Record<ButtonVersion, string> = {
   primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
@@ -15,7 +15,11 @@ const buttonDisabledStyleMap: Record<ButtonVersion, string> = {
 
 const styleButton = 'inline-block text-center font-sans select-none';
 
-export const Button = JSX<ButtonProps>(
+export interface ButtonCommonProps extends ButtonProps, ButtonWithIconProps {}
+
+export type ButtonInner = Pick<ButtonCommonProps, 'text' | 'aboveText' | 'appendLeft' | 'rounded'>;
+
+export const Button = JSX<ButtonCommonProps>(
   ({
     className,
     text,
@@ -69,7 +73,7 @@ export const Button = JSX<ButtonProps>(
   },
 );
 
-export const ButtonInner = JSX<ButtonInnerProps>(({ text, aboveText, appendLeft, rounded }) => {
+export const ButtonInner = JSX<ButtonInner>(({ text, aboveText, appendLeft, rounded }) => {
   const withoutText = !text && !aboveText && Boolean(appendLeft);
 
   const buttonInnerClasses = `flex items-center justify-center ${

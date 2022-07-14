@@ -1,7 +1,7 @@
-import type { Router } from '../ContentPage/ContentPageContext';
-import type { LinkContent } from '../../model/LinkContent';
+import type { LinkProps } from '../../model/LinkProps';
 import { isHrefActive } from '../../utils/url';
+import type { Router } from '../ContentPage/ContentPageContext';
 
 export function isSubItemActive(router: Router) {
-  return (subItem: LinkContent): boolean => isHrefActive(subItem.href, router);
+  return (subItem: LinkProps): boolean => isHrefActive(subItem.href, router);
 }

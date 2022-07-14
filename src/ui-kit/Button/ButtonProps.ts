@@ -1,24 +1,27 @@
 import type { ButtonVersion } from '../../model/ButtonVersion';
-import type { LinkContent } from '../../model/LinkContent';
-import { IconName } from '../Icon/IconProps';
+import type { LinkProps } from '../../model/LinkProps';
 
-export interface ButtonInnerProps {
-  text?: string;
-  aboveText?: string;
-  appendLeft?: any;
-  rounded?: boolean;
-}
-
-export interface ButtonProps extends LinkContent, ButtonInnerProps {
+/**
+ * @hidden
+ */
+export interface ButtonAdditionalProps {
   className?: string;
-  version?: ButtonVersion;
   disabled?: boolean;
   rel?: string;
   ariaLabel?: string;
-  /** @hidden */
   onClick?: (ev: MouseEvent) => any;
 }
 
+export interface ButtonProps extends ButtonAdditionalProps, LinkProps {
+  text?: string;
+  version?: ButtonVersion;
+}
+
 export interface ButtonWithIconProps extends ButtonProps {
-  icon?: IconName;
+  /** @hidden */
+  aboveText?: string;
+  /** @hidden */
+  appendLeft?: any;
+  /** @hidden */
+  rounded?: boolean;
 }
