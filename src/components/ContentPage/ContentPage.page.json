@@ -1372,6 +1372,7 @@
       "style": ["col-span-12"],
       "content": {
         "title": "Дополнительные документы",
+        "icon": "DocIcon",
         "documents": [
           {
             "text": "target self",

@@ -13,8 +13,6 @@ export interface LinkDocsContent {
   title?: string;
   titleAlign?: LinkDocsTitleAlignment;
   icon?: IconName;
-  showIcons?: boolean;
-  showExt?: boolean;
   documents?: LinkDocsItem[];
-  linkColumns?: LinkColumnsMode;
+  columnsMode?: LinkColumnsMode;
 }

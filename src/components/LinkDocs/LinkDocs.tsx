@@ -5,18 +5,18 @@ import type { LinkColumnsMode, LinkDocsTitleAlignment } from './LinkDocsContent'
 import { Title } from '../../ui-kit/Title/Title';
 import { Icon } from '../../ui-kit/Icon/Icon';
 
-export const titleAlignClassesMap: Record<LinkDocsTitleAlignment, string> = {
+const titleAlignStyleMap: Record<LinkDocsTitleAlignment, string> = {
   left: 'text-left',
   center: 'text-center',
   right: 'text-right',
 };
 
-export const titleColumnsModeClassesMap: Record<LinkColumnsMode, string> = {
+const titleMarginsStyleMap: Record<LinkColumnsMode, string> = {
   double: 'mb-8',
   single: '',
 };
 
-export const linkColumnsModeClassesMap: Record<LinkColumnsMode, string> = {
+const linkColumnsModeStyleMap: Record<LinkColumnsMode, string> = {
   double: 'gap-x-5 gap-y-[26px] flex-wrap',
   single: 'gap-3.5 flex-col',
 };
@@ -24,51 +24,38 @@ export const linkColumnsModeClassesMap: Record<LinkColumnsMode, string> = {
 export interface LinkDocsProps extends LinkDocsContent, UniBlockProps {}
 
 export const LinkDocs = JSX<LinkDocsProps>(
-  ({
-    className,
-    context,
-    title,
-    titleAlign,
-    documents,
-    icon = 'DocIcon',
-    showIcons = true,
-    showExt = true,
-    linkColumns = 'double',
-  }) => {
-    const containerClasses = linkColumnsModeClassesMap[linkColumns];
+  ({ className, context, title, titleAlign, documents, icon, columnsMode = 'double' }) => {
+    const containerClasses = linkColumnsModeStyleMap[columnsMode];
 
     return (
       <section className={`p-[50px] bg-white ${className}`}>
         {title && (
           <Title
-            className={`mt-0 ${titleColumnsModeClassesMap[linkColumns]} ${
-              titleAlignClassesMap[titleAlign ?? 'center']
+            className={`mt-0 ${titleMarginsStyleMap[columnsMode]} ${
+              titleAlignStyleMap[titleAlign ?? 'center']
             }`}
           >
             {title}
           </Title>
         )}
         <div className={`flex ${containerClasses}`} role="list">
-          {documents?.length &&
-            documents.map(({ text, fileSize, ...linkProps }) => (
-              <a
-                className={`group flex items-center text-sm
+          {documents?.length
+            ? documents.map(({ text, fileSize, ...linkProps }) => (
+                <a
+                  className={`group flex items-center text-sm
               text-sm font-sans align-middle items-center text-primary-text no-underline group hover:text-primary-main
-              ${linkColumns === 'double' ? 'basis-[calc(50%-20px)]' : ''}`}
-                role="listitem"
-                {...linkProps}
-              >
-                {showIcons && icon && (
-                  <Icon className="mr-3.5" name={icon} width="24px" height="24px" />
-                )}
-                {text}
-                <span className="text-secondary-text group-hover:text-primary-main">
-                  {showExt &&
-                    linkProps?.href &&
-                    formatSuffix(getExtFromHref(linkProps.href), fileSize)}
-                </span>
-              </a>
-            ))}
+              ${columnsMode === 'double' ? 'basis-[calc(50%-20px)]' : ''}`}
+                  role="listitem"
+                  {...linkProps}
+                >
+                  {icon && <Icon className="mr-3.5" name={icon} width="24px" height="24px" />}
+                  {text}
+                  <span className="text-secondary-text group-hover:text-primary-main">
+                    {linkProps?.href && formatSuffix(getExtFromHref(linkProps.href), fileSize)}
+                  </span>
+                </a>
+              ))
+            : null}
         </div>
       </section>
     );

@@ -4,6 +4,7 @@ import type { LinkDocsContent } from './LinkDocsContent';
 
 export const LinkDocsFixtureSetOne: LinkDocsContent = {
   title: 'Дополнительные документы',
+  icon: 'DocIcon',
   documents: [
     { text: 'target self', href: '/abc1/cooldoc.doc', target: '_self' },
     { text: 'target blank', href: '/abc2/wtf.rtf', target: '_blank' },
@@ -28,20 +29,23 @@ export const LinkDocsFixtureSetOne: LinkDocsContent = {
 
 export const LinkDocsFixtureSetTwo: LinkDocsContent = {
   ...LinkDocsFixtureSetOne,
-  linkColumns: 'single',
-  showIcons: false,
-  showExt: false,
+  columnsMode: 'single',
 };
 
 export const LinkDocsFixtureSetThree: LinkDocsContent = {
   ...LinkDocsFixtureSetOne,
   icon: 'GlassIcon',
   title: '',
-  showExt: false,
+};
+
+export const LinkDocsFixtureSetFour: LinkDocsContent = {
+  ...LinkDocsFixtureSetOne,
+  icon: undefined,
 };
 
 export default {
   'default, 2 columns': <LinkDocs context={context} {...LinkDocsFixtureSetOne} />,
   'one column': <LinkDocs context={context} {...LinkDocsFixtureSetTwo} />,
   'another icon, no extensions': <LinkDocs context={context} {...LinkDocsFixtureSetThree} />,
+  'no icon': <LinkDocs context={context} {...LinkDocsFixtureSetFour} />,
 };
