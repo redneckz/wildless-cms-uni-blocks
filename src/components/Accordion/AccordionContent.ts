@@ -7,7 +7,7 @@ export type AccordionData = TextBlockContent;
  * @title Тип блока
  * @enumNames ["Текстовый блок"]
  */
-export type AccordionTypeBlock = 'TextBlock' | 'Headline';
+export type AccordionTypeBlock = 'TextBlock' | 'Headline' | 'PictureText';
 
 /**
  * Блок
