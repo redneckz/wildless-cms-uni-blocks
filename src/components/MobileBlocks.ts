@@ -2,26 +2,28 @@ import { ExchangeRateTile } from './ExchangeRateTile/ExchangeRateTile';
 import { Footer } from './Footer/Footer.mobile';
 import { Gallery } from './Gallery/Gallery.mobile';
 import { Header } from './Header/Header';
+import { Headline } from './Headline/Headline';
 import { MobileAppTile } from './MobileAppTile/MobileAppTile';
+import { PictureText } from './PictureText/PictureText';
 import { Placeholder } from './Placeholder/Placeholder';
 import { ProductBlock } from './ProductBlock/ProductBlock.mobile';
 import { ProductTile } from './ProductTile/ProductTile';
 import { TextBlock } from './TextBlock/TextBlock';
 import { Tile } from './Tile/Tile';
-import { Headline } from './Headline/Headline';
 
 export const MobileBlocks = {
-  Header,
-  Footer,
-  Placeholder,
-  Tile,
-  ProductTile,
-  ProductBlock,
-  TextBlock,
   ExchangeRateTile,
-  MobileAppTile,
+  Footer,
   Gallery,
+  Header,
   Headline,
+  MobileAppTile,
+  PictureText,
+  Placeholder,
+  ProductBlock,
+  ProductTile,
+  TextBlock,
+  Tile,
   // TODO StepsBlock,
   // TODO BenefitsBlock,
   // TODO ProductGallery

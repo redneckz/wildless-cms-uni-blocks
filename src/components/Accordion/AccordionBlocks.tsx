@@ -1,16 +1,13 @@
-import { TextBlock } from '../TextBlock/TextBlock';
 import { Headline } from '../Headline/Headline';
 import { LinkDocs } from '../LinkDocs/LinkDocs';
-import type { TextBlockContent } from '../TextBlock/TextBlockContent';
-import type { LinkDocsContent } from '../LinkDocs/LinkDocsContent';
-import type { HeadlineContent } from '../Headline/HeadlineContent';
+import { PictureText } from '../PictureText/PictureText';
+import { TextBlock } from '../TextBlock/TextBlock';
 
 const AccordionBlocks = {
   Headline,
   LinkDocs,
   TextBlock,
+  PictureText,
 };
-
-export type AccordionBlocksType = HeadlineContent | TextBlockContent | LinkDocsContent;
 
 export default AccordionBlocks;

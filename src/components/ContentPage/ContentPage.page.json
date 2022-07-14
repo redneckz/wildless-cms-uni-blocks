@@ -1366,8 +1366,8 @@
       "content": {
         "title": "Своя кредитная карта",
         "description": "Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.",
-        "align": "left",
-        "bgColor": "bg-white"
+        "align": "center",
+        "bgColor": "transparent"
       }
     },
     {
@@ -1423,6 +1423,34 @@
             "fileSize": "65ГБ"
           }
         ]
+      }
+    },
+    {
+      "type": "PictureText",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Варианты потребительского кредита",
+        "benefits": [
+          {
+            "label": "Кредит по одному документу",
+            "description": "До 300 тыс ₽ по упрощённой процедуре получения кредита",
+            "icon": "DocumentText"
+          },
+          {
+            "label": "Кредит на общих условиях",
+            "description": "До 5 млн ₽ на общих условиях получения кредита",
+            "icon": "DiscountShape"
+          }
+        ],
+        "image": {
+          "src": "legal-support-business.png",
+          "alt": "Варианты потребительского кредита",
+          "format": "webp",
+          "size": {
+            "width": 200,
+            "height": 200
+          }
+        }
       }
     },
     {

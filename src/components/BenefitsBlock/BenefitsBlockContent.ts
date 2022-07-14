@@ -18,7 +18,7 @@ export interface BenefitsBlockContent {
   /** @title Заголовок */
   title?: string;
   /**
-   * @title Список преимущества
+   * @title Список преимуществ
    * @maxItems 6
    */
   benefits?: Benefit[];

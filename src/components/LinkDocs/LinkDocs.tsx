@@ -1,11 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../../types';
-import type { LinkDocsContent } from './LinkDocsContent';
-import type { LinkColumnsMode, LinkDocsTitleAlignment } from './LinkDocsContent';
-import { Title } from '../../ui-kit/Title/Title';
 import { Icon } from '../../ui-kit/Icon/Icon';
+import { Title } from '../../ui-kit/Title/Title';
+import { AlignType } from '../BaseTile/BaseTileProps';
+import type { LinkColumnsMode, LinkDocsContent } from './LinkDocsContent';
 
-const titleAlignStyleMap: Record<LinkDocsTitleAlignment, string> = {
+const titleAlignStyleMap: Record<AlignType, string> = {
   left: 'text-left',
   center: 'text-center',
   right: 'text-right',
@@ -24,15 +24,15 @@ const linkColumnsModeStyleMap: Record<LinkColumnsMode, string> = {
 export interface LinkDocsProps extends LinkDocsContent, UniBlockProps {}
 
 export const LinkDocs = JSX<LinkDocsProps>(
-  ({ className, context, title, titleAlign, documents, icon, columnsMode = 'double' }) => {
+  ({ className, title, align, documents, icon, columnsMode = 'double' }) => {
     const containerClasses = linkColumnsModeStyleMap[columnsMode];
 
     return (
-      <section className={`p-[50px] bg-white ${className}`}>
+      <section className={`font-sans p-[50px] bg-white ${className}`}>
         {title && (
           <Title
-            className={`mt-0 ${titleMarginsStyleMap[columnsMode]} ${
-              titleAlignStyleMap[titleAlign ?? 'center']
+            className={`font-medium m-0 ${titleMarginsStyleMap[columnsMode]} ${
+              titleAlignStyleMap[align ?? 'center']
             }`}
           >
             {title}
