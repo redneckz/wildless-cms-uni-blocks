@@ -1,15 +1,42 @@
-import type { LinkContent } from '../../model/LinkContent';
-import type { SitemapContent } from '../../model/SitemapContent';
+import type { LinkProps } from '../../model/LinkProps';
+import type { SitemapProps } from '../../model/SitemapProps';
 
+/**
+ * @title Тип контакта
+ * @enumNames [
+ *    "Телефон",
+ *    "Почта"
+ *  ]
+ */
+export type ContactType = 'tel' | 'email';
+
+/**
+ * @title Контакт
+ */
 export interface ContactInfo {
-  text: string;
-  type: 'tel' | 'email';
-  description: string;
+  /** @title Текст */
+  text?: string;
+  type?: ContactType;
+  /** @title Описание */
+  description?: string;
 }
 
-export interface FooterContent extends SitemapContent {
-  documents?: LinkContent[];
-  relatedEnterprises?: LinkContent[];
+/**
+ * @required ["href"]
+ */
+export interface SocialMedia extends Omit<LinkProps, 'text'> {}
+
+/**
+ * @title Подвал
+ * @required ["topItems"]
+ */
+export interface FooterContent extends SitemapProps {
+  /** @title Обязательные документы */
+  documents?: LinkProps[];
+  /** @title Другие предприятия */
+  relatedEnterprises?: LinkProps[];
+  /** @title Контакты */
   contacts?: ContactInfo[];
-  socialMedia?: Omit<LinkContent, 'text'>[];
+  /** @title Социальные сети */
+  socialMedia?: SocialMedia[];
 }

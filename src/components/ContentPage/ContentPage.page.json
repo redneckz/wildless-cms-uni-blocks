@@ -1361,10 +1361,96 @@
       }
     },
     {
-      "type": "CreditCalculator",
+      "type": "Headline",
       "style": ["col-span-12"],
       "content": {
-        "directoryName": "credit-calculator-data"
+        "title": "Своя кредитная карта",
+        "description": "Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.",
+        "align": "center",
+        "bgColor": "transparent"
+      }
+    },
+    {
+      "type": "LinkDocs",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Дополнительные документы",
+        "icon": "DocIcon",
+        "documents": [
+          {
+            "text": "target self",
+            "href": "/abc1/cooldoc.doc",
+            "target": "_self"
+          },
+          {
+            "text": "target blank",
+            "href": "/abc2/wtf.rtf",
+            "target": "_blank"
+          },
+          {
+            "text": "GlassIcon",
+            "href": "/abc3/map.jpeg"
+          },
+          {
+            "text": "no icon",
+            "href": "/abc4"
+          },
+          {
+            "text": "документ 5",
+            "href": "/abc5"
+          },
+          {
+            "text": "документ 6",
+            "href": "/abc6/abc.pdf"
+          },
+          {
+            "text": "Text text text",
+            "href": "/abc7/yolo.png"
+          },
+          {
+            "text": "Some more generic text, and even more, more text",
+            "href": "/abc8/archive.zip",
+            "fileSize": "2.3МБ"
+          },
+          {
+            "text": "И ещё немного текста",
+            "href": "/abc9/rarniw.rar",
+            "fileSize": "666МБ"
+          },
+          {
+            "text": "Форматируем, сортируем, смотрим как отображается...",
+            "href": "/abc10/",
+            "fileSize": "65ГБ"
+          }
+        ]
+      }
+    },
+    {
+      "type": "PictureText",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Варианты потребительского кредита",
+        "benefits": [
+          {
+            "label": "Кредит по одному документу",
+            "description": "До 300 тыс ₽ по упрощённой процедуре получения кредита",
+            "icon": "DocumentText"
+          },
+          {
+            "label": "Кредит на общих условиях",
+            "description": "До 5 млн ₽ на общих условиях получения кредита",
+            "icon": "DiscountShape"
+          }
+        ],
+        "image": {
+          "src": "legal-support-business.png",
+          "alt": "Варианты потребительского кредита",
+          "format": "webp",
+          "size": {
+            "width": 200,
+            "height": 200
+          }
+        }
       }
     },
     {

@@ -1,0 +1,20 @@
+{
+  "title": "Продукт",
+  "description": "Описание",
+  "image": {
+    "format": "webp",
+    "size": {
+      "width": 300
+    }
+  },
+  "benefits": [
+    {
+      "label": "Преимущество №1",
+      "icon": "DocumentText"
+    },
+    {
+      "label": "Преимущество №2",
+      "icon": "DiscountShape"
+    }
+  ]
+}

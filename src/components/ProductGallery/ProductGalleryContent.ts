@@ -1,16 +1,31 @@
-import type { ProductBlockInnerContent } from '../ProductBlock/ProductBlockContent';
+import type { ProductBlockInnerCommonProps } from '../ProductBlock/ProductBlockContent';
 
+/** @title Кнопка под слайдом */
 interface ProductGalleryNav {
+  /** @title Заголовок */
   title: string;
+  /** @title Описание */
   desc: string;
 }
 
-export interface ProductSlideContent {
+/**
+ * @title Слайд
+ */
+export interface ProductSlide {
   nav: ProductGalleryNav;
-  productBlock: ProductBlockInnerContent;
+  /** @title Содержимое слайда */
+  productBlock: ProductBlockInnerCommonProps;
 }
 
+/**
+ * @title Продуктовая галерея
+ */
 export interface ProductGalleryContent {
+  /**
+   * @title Задержка
+   * @hidden //! temporary not used
+   */
   duration?: number;
-  slides?: ProductSlideContent[];
+  /** @title Слайды */
+  slides?: ProductSlide[];
 }

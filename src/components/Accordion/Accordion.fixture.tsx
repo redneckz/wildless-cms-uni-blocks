@@ -1,14 +1,52 @@
 import { context } from '../../setup-fixture';
 import type { AccordionProps } from './Accordion';
+import type { HeadlineProps } from '../Headline/Headline';
+import type { PictureTextContent } from '../PictureText/PictureTextContent';
 import type { TextBlockContent } from '../TextBlock/TextBlockContent';
+
 import { Accordion } from './Accordion';
+import {
+  LinkDocsFixtureSetOne,
+  LinkDocsFixtureSetThree,
+  LinkDocsFixtureSetTwo,
+} from '../LinkDocs/LinkDocs.fixture';
 
 const TEXT_BLOCK: TextBlockContent = {
-  title: 'Title',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?',
-  blockVersion: 'secondary-light',
-  iconVersion: 'small',
+};
+
+const HEADLINE: HeadlineProps = {
+  context,
+  title: 'Своя кредитная карта',
+  description: 'Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.',
+  align: 'left',
+  bgColor: 'bg-white',
+};
+
+const PICTURE_TEXT: PictureTextContent = {
+  title: 'Варианты потребительского кредита',
+  benefits: [
+    {
+      label: 'Кредит по одному документу',
+      description: 'До 300 тыс ₽ по упрощённой процедуре получения кредита',
+      icon: 'DocumentText',
+    },
+    {
+      label: 'Кредит на общих условиях',
+      description: 'До 5 млн ₽ на общих условиях получения кредита',
+      icon: 'DiscountShape',
+    },
+  ],
+  image: {
+    src: 'legal-support-business.png',
+    alt: 'Варианты потребительского кредита',
+    format: 'webp',
+    size: {
+      width: 200,
+      height: 200,
+    },
+  },
 };
 
 const propsTextBlock: AccordionProps = {
@@ -45,12 +83,59 @@ const propsTextBlock: AccordionProps = {
       label: 'Accordion label 3',
       blocks: [
         {
-          type: 'TextBlock',
-          data: TEXT_BLOCK,
+          type: 'PictureText',
+          data: PICTURE_TEXT,
         },
         {
-          type: 'TextBlock',
-          data: TEXT_BLOCK,
+          type: 'PictureText',
+          data: PICTURE_TEXT,
+        },
+      ],
+    },
+    {
+      label: 'Accordion label 4',
+      blocks: [
+        {
+          type: 'Headline',
+          data: HEADLINE,
+        },
+        {
+          type: 'Headline',
+          data: HEADLINE,
+        },
+      ],
+    },
+  ],
+};
+
+const propsLinkDocs: AccordionProps = {
+  title: 'Accordion title',
+  context,
+  accordionItems: [
+    {
+      label: 'Список документов в 2 колонки',
+      blocks: [
+        {
+          type: 'LinkDocs',
+          data: { ...LinkDocsFixtureSetOne, title: '' },
+        },
+      ],
+    },
+    {
+      label: 'Список документов в одну колонку',
+      blocks: [
+        {
+          type: 'LinkDocs',
+          data: { ...LinkDocsFixtureSetTwo, title: '' },
+        },
+      ],
+    },
+    {
+      label: 'Немного кастомизированный список',
+      blocks: [
+        {
+          type: 'LinkDocs',
+          data: LinkDocsFixtureSetThree,
         },
       ],
     },
@@ -59,4 +144,5 @@ const propsTextBlock: AccordionProps = {
 
 export default {
   'with text block': <Accordion {...propsTextBlock} />,
+  'with link docs block': <Accordion {...propsLinkDocs} />,
 };

@@ -5,26 +5,19 @@ import { COLS_LENGTH_FOR_SCROLL } from './constants';
 import { TariffsTableRow } from './TariffsTableRow';
 import type { UniBlockProps } from '../../types';
 import type { TariffsTableContent } from './TariffsTableContent';
-import { useComparisonTableState } from '../../hooks/useComparisonTableState';
-import { useComparisonTableData } from '../../hooks/useComparisonTableData';
 import { useComparisonTableScroll } from '../../hooks/useComparisonTableScroll';
 
 export interface TariffsTableProps extends TariffsTableContent, UniBlockProps {}
 
 export const TariffsTable = JSX<TariffsTableProps>(
-  ({ className, context, title, rowHeaders, columns, visibleRowLength = 0 }) => {
-    const { activeCardIndex, setActiveCardIndex, isShowAllRow } = useComparisonTableState(
-      context,
-      0,
-      visibleRowLength,
-    );
+  ({ className, context, title, rowHeaders, columns }) => {
+    const [activeCardIndex, setActiveCardIndex] = context.useState(0);
 
-    const { colData, rowData } = useComparisonTableData(
-      isShowAllRow,
-      columns,
-      rowHeaders,
-      visibleRowLength,
-    );
+    const colData = columns?.map(({ data }) => data) || [];
+    const rowData = rowHeaders?.map((header, i) => ({
+      header,
+      data: colData.map((col) => col?.[i] || [{}]),
+    }));
 
     const { nextClick, prevClick, isScrollAvailable, showNextButton, showPrevButton } =
       useComparisonTableScroll(

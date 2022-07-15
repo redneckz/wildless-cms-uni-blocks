@@ -5134,7 +5134,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@font-face{font-display:swap;font-fami
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_postcss_loader_dist_cjs_js_fonts_ubuntu_ubuntu_css__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo2]{--color-primary-main:255,204,0;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo3]{--color-primary-main:225,186,30;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo4]{--color-primary-main:233,191,23;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.inset-x-0{left:0;right:0}.top-1{top:.25rem}.right-1{right:.25rem}.top-7{top:1.75rem}.right-7{right:1.75rem}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.top-4{top:1rem}.right-4{right:1rem}.top-1\\/2{top:50%}.left-8{left:2rem}.left-0{left:0}.left-2{left:.5rem}.-bottom-2{bottom:-.5rem}.top-8{top:2rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.mb-2\\.5{margin-bottom:.625rem}.mb-2{margin-bottom:.5rem}.mb-5{margin-bottom:1.25rem}.mb-4{margin-bottom:1rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.mb-9{margin-bottom:2.25rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mr-6{margin-right:1.5rem}.mr-11{margin-right:2.75rem}.mb-7{margin-bottom:1.75rem}.mb-3{margin-bottom:.75rem}.mr-3{margin-right:.75rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mt-3{margin-top:.75rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.ml-4{margin-left:1rem}.mb-3\\.5{margin-bottom:.875rem}.mb-1{margin-bottom:.25rem}.ml-3{margin-left:.75rem}.ml-px{margin-left:1px}.mt-0\\.5{margin-top:.125rem}.ml-0\\.5{margin-left:.125rem}.mt-0{margin-top:0}.ml-0{margin-left:0}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[24px\\]{height:24px}.h-\\[70px\\]{height:70px}.h-\\[63px\\]{height:63px}.h-8{height:2rem}.h-10{height:2.5rem}.h-9{height:2.25rem}.h-\\[1px\\]{height:1px}.h-\\[90px\\]{height:90px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-12{height:3rem}.h-\\[8px\\]{height:8px}.h-\\[6px\\]{height:6px}.h-5{height:1.25rem}.h-\\[2px\\]{height:2px}.max-h-0{max-height:0}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[8px\\]{min-height:8px}.min-h-\\[6px\\]{min-height:6px}.min-h-12{min-height:3rem}.w-\\[24px\\]{width:24px}.w-full{width:100%}.w-\\[70px\\]{width:70px}.w-\\[1280px\\]{width:1280px}.w-\\[84px\\]{width:84px}.w-\\[200px\\]{width:200px}.w-80{width:20rem}.w-\\[63px\\]{width:63px}.w-8{width:2rem}.w-\\[75px\\]{width:75px}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-9{width:2.25rem}.w-\\[364px\\]{width:364px}.w-\\[260px\\]{width:260px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-\\[354px\\]{width:354px}.w-12{width:3rem}.w-4{width:1rem}.w-\\[8px\\]{width:8px}.w-\\[6px\\]{width:6px}.w-\\[36px\\]{width:36px}.w-5{width:1.25rem}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[260px\\]{min-width:260px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[8px\\]{min-width:8px}.min-w-\\[6px\\]{min-width:6px}.min-w-12{min-width:3rem}.max-w-\\[170px\\]{max-width:170px}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[308px\\]{max-width:308px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.flex-1{flex:1 1 0%}.flex-shrink-0,.shrink-0{flex-shrink:0}.flex-grow,.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.list-none{list-style-type:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3\\.5{gap:.875rem}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-24{-moz-column-gap:6rem;column-gap:6rem}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-x-0{border-left-width:0;border-right-width:0}.border-y-0{border-bottom-width:0;border-top-width:0}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-t-0{border-top-width:0}.border-b-0{border-bottom-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.fill-secondary-light{fill:#f5f7f9}.p-\\[50px\\]{padding:50px}.p-0{padding:0}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-9{padding:2.25rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.px-0{padding-left:0;padding-right:0}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.px-20{padding-left:5rem;padding-right:5rem}.py-4{padding-bottom:1rem;padding-top:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.px-3{padding-left:.75rem;padding-right:.75rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-4{padding-right:1rem}.pl-4,.px-4{padding-left:1rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.pr-2\\.5{padding-right:.625rem}.pr-2{padding-right:.5rem}.pb-5{padding-bottom:1.25rem}.pb-2{padding-bottom:.5rem}.pl-\\[50px\\]{padding-left:50px}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-12{padding-bottom:3rem}.pt-6{padding-top:1.5rem}.pt-0{padding-top:0}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pt-10{padding-top:2.5rem}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pt-1{padding-top:.25rem}.pl-10{padding-left:2.5rem}.pr-\\[14px\\]{padding-right:14px}.pt-1\\.5{padding-top:.375rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-title{font-size:2rem;line-height:2.5rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-lg{font-size:2.188rem;line-height:3rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-normal{font-weight:400}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-4{line-height:1rem}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.opacity-60{opacity:.6}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}input[type=range].slider{-webkit-appearance:none;background:transparent;background-image:linear-gradient(#42ab44,#42ab44);background-repeat:no-repeat;border-radius:5px;height:4px}input[type=range].slider::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}input[type=range].slider::-moz-range-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:12px;width:12px}input[type=range].slider::-ms-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}.first\\:pt-7:first-child{padding-top:1.75rem}.first\\:pl-0:first-child{padding-left:0}.first\\:pt-5:first-child{padding-top:1.25rem}.last\\:mb-0:last-child{margin-bottom:0}.last\\:border-b-0:last-child{border-bottom-width:0}.last\\:pb-7:last-child{padding-bottom:1.75rem}.last\\:pb-5:last-child{padding-bottom:1.25rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.checked\\:border-primary-main:checked{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.checked\\:bg-primary-main:checked{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:fill-primary-main:hover{fill:rgba(var(--color-primary-main),1)}.hover\\:fill-secondary-hover:hover{fill:rgba(var(--color-secondary-hover),1)}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.group:last-child .group-last\\:last\\:pb-0:last-child{padding-bottom:0}.group:hover .group-hover\\:text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.peer:checked~.peer-checked\\:block{display:block}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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AnB,eAAmB,CAAnB,cAAmB,CAAnB,WAAmB,CAAnB,UAAmB,CAAnB,oCAAA,eAAmB,CAAnB,wBAAmB,CAAnB,iBAAmB,CAAnB,eAAmB,CAAnB,cAAmB,CAAnB,WAAmB,CAAnB,UAAmB,CAhEnB,yBAAA,oBCAA,ADAA,yBAAA,eCAA,ADAA,yBAAA,oBCAA,ADAA,uBAAA,gBCAA,ADAA,6BAAA,sBCAA,ADAA,uBAAA,uBCAA,ADAA,uBAAA,uBCAA,ADAA,sCAAA,+CCAA,ADAA,sCAAA,sBCAA,ADAA,sECAA,ADAA,kCAAA,kBCAA,ADAA,sECAA,ADAA,kCAAA,sBCAA,ADAA,sECAA,ADAA,+BAAA,kBCAA,ADAA,uECAA,ADAA,iCAAA,kBCAA,ADAA,yECAA,ADAA,gCAAA,uCCAA,ADAA,mCAAA,0CCAA,ADAA,yBAAA,oBCAA,ADAA,8CCAA,ADAA,gCAAA,oBCAA,ADAA,6DCAA,ADAA,gCAAA,oBCAA,ADAA,4CCAA,ADAA,kCAAA,kBCAA,ADAA,wECAA,ADAA,oCAAA,kBCAA,ADAA,0ECAA,ADAA,qDAAA,iBCAA,ADAA,6CAAA,oBCAA,ADAA,6DCAA,ADAA,6CAAA,oBCAA,ADAA,4CCAA,ADAA,mCAAA,cCAA,ADAA,iDAAA,iBAAA,YCAA,ADAA,WAAA,SCAA,ADAA,WAAA,YCAA,CAAA","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo2'] {\n  --color-primary-main: 255, 204, 0;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo3'] {\n  --color-primary-main: 225, 186, 30;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo4'] {\n  --color-primary-main: 233, 191, 23;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n\n  input[type='range'].slider {\n    -webkit-appearance: none;\n    height: 4px;\n    background: transparent;\n    border-radius: 5px;\n    background-image: linear-gradient(#42ab44, #42ab44);\n    background-repeat: no-repeat;\n  }\n\n  input[type='range'].slider::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-moz-range-thumb {\n    height: 12px;\n    width: 12px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-ms-thumb {\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n}\n",null],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo2]{--color-primary-main:255,204,0;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo3]{--color-primary-main:225,186,30;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo4]{--color-primary-main:233,191,23;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.inset-x-0{left:0;right:0}.top-1{top:.25rem}.right-1{right:.25rem}.top-7{top:1.75rem}.right-7{right:1.75rem}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.top-4{top:1rem}.right-4{right:1rem}.top-1\\/2{top:50%}.left-8{left:2rem}.left-0{left:0}.left-2{left:.5rem}.-bottom-2{bottom:-.5rem}.top-8{top:2rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.mb-2\\.5{margin-bottom:.625rem}.mb-2{margin-bottom:.5rem}.mb-5{margin-bottom:1.25rem}.mb-4{margin-bottom:1rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-5{margin-top:1.25rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.mb-9{margin-bottom:2.25rem}.mt-4{margin-top:1rem}.mr-6{margin-right:1.5rem}.mr-11{margin-right:2.75rem}.mb-7{margin-bottom:1.75rem}.mb-3{margin-bottom:.75rem}.mr-3{margin-right:.75rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mt-3{margin-top:.75rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.mr-3\\.5{margin-right:.875rem}.ml-4{margin-left:1rem}.ml-5{margin-left:1.25rem}.mb-3\\.5{margin-bottom:.875rem}.mb-1{margin-bottom:.25rem}.ml-3{margin-left:.75rem}.ml-px{margin-left:1px}.mt-0\\.5{margin-top:.125rem}.ml-0\\.5{margin-left:.125rem}.mt-0{margin-top:0}.ml-0{margin-left:0}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.\\!block{display:block!important}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[24px\\]{height:24px}.h-\\[70px\\]{height:70px}.h-\\[63px\\]{height:63px}.h-8{height:2rem}.h-10{height:2.5rem}.h-9{height:2.25rem}.h-\\[1px\\]{height:1px}.h-\\[90px\\]{height:90px}.h-\\[48px\\]{height:48px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-12{height:3rem}.h-\\[8px\\]{height:8px}.h-\\[6px\\]{height:6px}.h-5{height:1.25rem}.h-\\[2px\\]{height:2px}.max-h-0{max-height:0}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[8px\\]{min-height:8px}.min-h-\\[6px\\]{min-height:6px}.min-h-12{min-height:3rem}.w-\\[24px\\]{width:24px}.w-full{width:100%}.w-\\[70px\\]{width:70px}.w-\\[1280px\\]{width:1280px}.w-\\[84px\\]{width:84px}.w-\\[200px\\]{width:200px}.w-80{width:20rem}.w-\\[63px\\]{width:63px}.w-8{width:2rem}.w-\\[75px\\]{width:75px}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-9{width:2.25rem}.w-\\[364px\\]{width:364px}.w-\\[260px\\]{width:260px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[48px\\]{width:48px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-\\[354px\\]{width:354px}.w-12{width:3rem}.w-4{width:1rem}.w-\\[8px\\]{width:8px}.w-\\[6px\\]{width:6px}.w-\\[36px\\]{width:36px}.w-5{width:1.25rem}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[260px\\]{min-width:260px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[8px\\]{min-width:8px}.min-w-\\[6px\\]{min-width:6px}.min-w-12{min-width:3rem}.max-w-\\[170px\\]{max-width:170px}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[308px\\]{max-width:308px}.max-w-\\[490px\\]{max-width:490px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.flex-1{flex:1 1 0%}.flex-shrink-0,.shrink-0{flex-shrink:0}.flex-grow,.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-\\[calc\\(50\\%-20px\\)\\]{flex-basis:calc(50% - 20px)}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.list-none{list-style-type:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3\\.5{gap:.875rem}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem}.gap-y-\\[26px\\]{row-gap:26px}.gap-x-24{-moz-column-gap:6rem;column-gap:6rem}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-x-0{border-left-width:0;border-right-width:0}.border-y-0{border-bottom-width:0;border-top-width:0}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-t-0{border-top-width:0}.border-b-0{border-bottom-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.fill-secondary-light{fill:#f5f7f9}.p-\\[50px\\]{padding:50px}.p-0{padding:0}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-9{padding:2.25rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-14{padding:3.5rem}.p-\\[12px\\]{padding:12px}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.px-0{padding-left:0;padding-right:0}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.px-20{padding-left:5rem;padding-right:5rem}.py-4{padding-bottom:1rem;padding-top:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.px-3{padding-left:.75rem;padding-right:.75rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-4{padding-right:1rem}.pl-4,.px-4{padding-left:1rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.pr-2\\.5{padding-right:.625rem}.pr-2{padding-right:.5rem}.pb-5{padding-bottom:1.25rem}.pb-2{padding-bottom:.5rem}.pl-\\[50px\\]{padding-left:50px}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-12{padding-bottom:3rem}.pt-6{padding-top:1.5rem}.pt-0{padding-top:0}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pt-10{padding-top:2.5rem}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pt-1{padding-top:.25rem}.pl-10{padding-left:2.5rem}.pr-\\[14px\\]{padding-right:14px}.pt-1\\.5{padding-top:.375rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.align-middle{vertical-align:middle}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-lg{font-size:2.188rem;line-height:3rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title{font-size:2rem;line-height:2.5rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-normal{font-weight:400}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-4{line-height:1rem}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.opacity-60{opacity:.6}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}input[type=range].slider{-webkit-appearance:none;background:transparent;background-image:linear-gradient(#42ab44,#42ab44);background-repeat:no-repeat;border-radius:5px;height:4px}input[type=range].slider::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}input[type=range].slider::-moz-range-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:12px;width:12px}input[type=range].slider::-ms-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}.first\\:pt-7:first-child{padding-top:1.75rem}.first\\:pl-0:first-child{padding-left:0}.first\\:pt-5:first-child{padding-top:1.25rem}.last\\:mb-0:last-child{margin-bottom:0}.last\\:border-b-0:last-child{border-bottom-width:0}.last\\:pb-7:last-child{padding-bottom:1.75rem}.last\\:pb-5:last-child{padding-bottom:1.25rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.checked\\:border-primary-main:checked{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.checked\\:bg-primary-main:checked{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:fill-primary-main:hover{fill:rgba(var(--color-primary-main),1)}.hover\\:fill-secondary-hover:hover{fill:rgba(var(--color-secondary-hover),1)}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.group:last-child .group-last\\:last\\:pb-0:last-child{padding-bottom:0}.group:hover .group-hover\\:text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.peer:checked~.peer-checked\\:block{display:block}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo2'] {\n  --color-primary-main: 255, 204, 0;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo3'] {\n  --color-primary-main: 225, 186, 30;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo4'] {\n  --color-primary-main: 233, 191, 23;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n\n  input[type='range'].slider {\n    -webkit-appearance: none;\n    height: 4px;\n    background: transparent;\n    border-radius: 5px;\n    background-image: linear-gradient(#42ab44, #42ab44);\n    background-repeat: no-repeat;\n  }\n\n  input[type='range'].slider::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-moz-range-thumb {\n    height: 12px;\n    width: 12px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-ms-thumb {\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n}\n",null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31050,7 +31050,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 6525:
+/***/ 2049:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31263,6 +31263,25 @@ const mobileContext = {
     }),
 };
 
+;// CONCATENATED MODULE: ./src/ui-kit/Title/TitleProps.ts
+var SizeTableClass;
+(function (SizeTableClass) {
+    SizeTableClass["XL"] = "text-title-lg";
+    SizeTableClass["L"] = "text-title";
+    SizeTableClass["M"] = "text-title-sm";
+    SizeTableClass["S"] = "text-title-xs";
+})(SizeTableClass || (SizeTableClass = {}));
+
+;// CONCATENATED MODULE: ./src/ui-kit/Title/Title.tsx
+
+
+
+const Title = JSX(({ size = 'L', className, children, ...rest }) => {
+    const Tag = size === 'XL' ? 'h1' : 'h2';
+    return (jsx(Tag, { className: getClasses(SizeTableClass[size], className), ...rest, children: children }));
+});
+const getClasses = (...classes) => classes.filter(Boolean).join(' ');
+
 ;// CONCATENATED MODULE: ./src/ProjectSettings.ts
 const projectSettings = new (class {
     _ = {
@@ -31306,281 +31325,6 @@ const Icon = JSX(({ className, name, alt = `Icon ${name}`, title = alt, asSVG, .
     }
     return (jsx("img", { className: className, src: href, alt: alt, title: title, ...imgProps, "aria-hidden": "true" }));
 });
-
-;// CONCATENATED MODULE: ./src/ui-kit/Img.tsx
-
-
-const Img = JSX(({ className, image }) => (jsxs("picture", { className: `${className || ''}`, children: [image.sources?.length
-            ? image.sources.map(({ src, format }, index) => (jsx("source", { srcSet: src, type: formatToMimeType(format) }, `${index}_${src}`)))
-            : null, jsx("img", { src: image.src, alt: image.alt || image.title, title: image.title, ...image?.size })] })));
-function formatToMimeType(format) {
-    return format ? `image/${String(format)}` : undefined;
-}
-
-;// CONCATENATED MODULE: ./src/components/TextBlock/TextBlock.tsx
-
-
-
-const textBlockStyleMaps = {
-    primary: {
-        background: 'bg-white',
-        icon: 'bg-primary-main text-white',
-        title: 'text-primary-text',
-        description: 'text-secondary-text',
-    },
-    secondary: {
-        background: 'bg-primary-main',
-        icon: 'bg-white text-primary-main',
-        title: 'text-white',
-        description: 'text-white',
-    },
-    'secondary-light': {
-        background: 'bg-primary-main/10',
-        icon: 'bg-primary-main text-white',
-        title: 'text-primary-text',
-        description: 'text-secondary-text',
-    },
-};
-const TextBlock = JSX(({ title, description, blockVersion = 'primary', iconVersion, image, className }) => {
-    const textBlockStyleMap = textBlockStyleMaps[blockVersion];
-    return (jsxs("section", { className: `font-sans px-9 py-4 flex ${textBlockStyleMap.background} ${className || ''}`, children: [iconVersion && iconVersion === 'small' ? renderIcon(textBlockStyleMap.icon) : null, iconVersion && iconVersion === 'big' ? renderImage(image) : null, jsxs("div", { className: "py-0.5", children: [title && (jsx("div", { className: `font-medium text-base mb-1 ${textBlockStyleMap.title}`, children: title })), description && (jsx("div", { className: `text-sm ${textBlockStyleMap.description}`, children: description }))] })] }));
-});
-function renderIcon(className) {
-    return (jsx("div", { className: `pt-1.5 pr-4`, children: jsx("div", { className: `rounded-full h-4 w-4 text-center text-xs ${className}`, children: "i" }) }));
-}
-function renderImage(image) {
-    return image?.src ? jsx(Img, { className: "pt-0.5 pr-3", image: image }) : null;
-}
-
-;// CONCATENATED MODULE: ./src/components/Accordion/AccordionBlocks.tsx
-
-const AccordionBlocks = {
-    TextBlock: TextBlock,
-};
-/* harmony default export */ const Accordion_AccordionBlocks = (AccordionBlocks);
-
-;// CONCATENATED MODULE: ./src/components/Accordion/AccordionItem.tsx
-
-
-
-
-const AccordionItem = JSX(({ label, blocks, context }) => {
-    const [isActive, setIsActive] = context.useState(false);
-    const hasContent = blocks?.length;
-    const icon = isActive ? 'MinusIcon' : 'PlusIcon';
-    const handleToggle = (e) => {
-        if (!hasContent)
-            return null;
-        setIsActive(!isActive);
-        const contentBlock = getContentBlock(e);
-        contentBlock.style.maxHeight = contentBlock.style.maxHeight
-            ? null
-            : `${contentBlock.scrollHeight}px`;
-    };
-    return (jsxs("li", { className: "border-0 border-b border-solid border-main-divider last:border-b-0", children: [jsxs("button", { className: `border-none bg-transparent px-0 py-5 flex justify-between text-left w-full font-sans text-primary-text
-        ${hasContent ? 'group cursor-pointer' : ''}`, onClick: handleToggle, children: [jsx("span", { className: `m-0 text-xl pr-2.5 font-medium ${hasContent ? 'group-hover:text-primary-main' : ''}`, children: label }), hasContent ? jsx(Icon, { name: icon, width: "24", height: "24" }) : null] }), hasContent ? (jsx("div", { className: `${isActive ? 'pb-5' : ''} text-sm transition-all duration-300 max-h-0 overflow-hidden group-last:last:pb-0 `, children: blocks?.length ? blocks.map(renderComponent) : null })) : null] }));
-});
-// TODO: draft, for dynamic rendering of components
-const renderComponent = (block, i) => {
-    if (block.type && block.data && !Accordion_AccordionBlocks.hasOwnProperty(block.type)) {
-        return null;
-    }
-    const AccordionBlock = block.type && Accordion_AccordionBlocks[block.type];
-    return (jsx("div", { className: "mb-5 last:mb-0", children: jsx(AccordionBlock, { ...block.data }) }, `component${i}`));
-};
-const getContentBlock = (e) => e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;
-
-;// CONCATENATED MODULE: ./src/ui-kit/Title/TitleProps.ts
-var SizeTableClass;
-(function (SizeTableClass) {
-    SizeTableClass["XL"] = "text-title-lg";
-    SizeTableClass["L"] = "text-title";
-    SizeTableClass["M"] = "text-title-sm";
-    SizeTableClass["S"] = "text-title-xs";
-})(SizeTableClass || (SizeTableClass = {}));
-
-;// CONCATENATED MODULE: ./src/ui-kit/Title/Title.tsx
-
-
-
-const Title = JSX(({ size = 'L', className, children, ...rest }) => {
-    const Tag = size === 'XL' ? 'h1' : 'h2';
-    return (jsx(Tag, { className: getClasses(SizeTableClass[size], className), ...rest, children: children }));
-});
-const getClasses = (...classes) => classes.filter(Boolean).join(' ');
-
-;// CONCATENATED MODULE: ./src/components/Accordion/Accordion.tsx
-
-
-
-
-const Accordion = JSX(({ title, accordionItems, context, className }) => {
-    return (jsxs("section", { className: `p-[50px] font-sans bg-white text-primary-text ${className || ''}`, children: [title ? jsx(Title, { className: "m-0 mb-2.5", children: title }) : null, accordionItems?.length ? (jsx("ul", { className: "list-none m-0 p-0", children: accordionItems.map((item, i) => (jsx(AccordionItem, { ...item, context: context }, `AccordionItem${i}`))) })) : null] }));
-});
-
-;// CONCATENATED MODULE: ./src/components/Accordion/Accordion.fixture.tsx
-
-
-
-const TEXT_BLOCK = {
-    title: 'Title',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?',
-    blockVersion: 'secondary-light',
-    iconVersion: 'small',
-};
-const propsTextBlock = {
-    title: 'Accordion title',
-    context: context,
-    accordionItems: [
-        {
-            label: 'Accordion label 1',
-            blocks: [
-                {
-                    type: 'TextBlock',
-                    data: TEXT_BLOCK,
-                },
-                {
-                    type: 'TextBlock',
-                    data: TEXT_BLOCK,
-                },
-            ],
-        },
-        {
-            label: 'Accordion label 2',
-            blocks: [
-                {
-                    type: 'TextBlock',
-                    data: TEXT_BLOCK,
-                },
-                {
-                    type: 'TextBlock',
-                    data: TEXT_BLOCK,
-                },
-            ],
-        },
-        {
-            label: 'Accordion label 3',
-            blocks: [
-                {
-                    type: 'TextBlock',
-                    data: TEXT_BLOCK,
-                },
-                {
-                    type: 'TextBlock',
-                    data: TEXT_BLOCK,
-                },
-            ],
-        },
-    ],
-};
-/* harmony default export */ const Accordion_fixture = ({
-    'with text block': jsx(Accordion, { ...propsTextBlock }),
-});
-
-;// CONCATENATED MODULE: ./src/components/BenefitsBlock/BenefitsBlock.tsx
-
-
-
-const BenefitsBlock = JSX(({ className, title, benefits }) => {
-    return (jsxs("section", { className: `font-sans text-primary-text bg-white p-12 pb-2 flex flex-col items-center ${className || ''}`, children: [jsx("h2", { className: "font-medium text-title m-0 max-w-[47rem] text-center", children: title }), benefits?.length ? (jsx("div", { className: "grid grid-cols-2 gap-5 mt-9", children: benefits.map(renderStep) })) : null] }));
-});
-const renderStep = (benefit, i) => {
-    return (jsxs("div", { className: "flex items-center p-10 gap-5 max-w-[580px]", children: [benefit.icon && (jsx(Icon, { className: "h-[70px] w-[70px] min-w-[70px] min-h-[70px]", name: benefit.icon, width: "70", height: "70" })), jsxs("div", { children: [jsx("h3", { className: "font-medium text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm mt-2", children: benefit.description }))] })] }, String(i)));
-};
-
-;// CONCATENATED MODULE: ./src/components/BenefitsBlock/BenefitsBlock.fixture.tsx
-
-
-
-/* harmony default export */ const BenefitsBlock_fixture = (jsx(BenefitsBlock, { context: context, title: "\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430", benefits: [
-        {
-            label: 'Без комиссии',
-            description: 'Комиссия за выдачу кредита не взимается. Допускается полное или частичное погашение кредита',
-            icon: 'ClockIcon',
-        },
-        {
-            label: 'Оформление по паспорту',
-            description: 'Обеспечение не требуется. Кредит можно получить на любые цели',
-            icon: 'SignDocsIcon',
-        },
-        {
-            label: 'Без залога и поручительства',
-            description: 'Единовременное перечисление суммы кредита в полном объёме на текущий счет в Банке',
-            icon: 'ComfortableCompIcon',
-        },
-        {
-            label: 'Деньги за 3 дня',
-            description: 'Рассмотрение заявки с момента предоставления полного комплекта документов',
-            icon: 'ActualBalanceIcon',
-        },
-    ] }));
-
-;// CONCATENATED MODULE: ./src/ui-kit/Button/Button.tsx
-
-
-const buttonStyleMap = {
-    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
-    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
-};
-const buttonDisabledStyleMap = {
-    primary: 'bg-secondary-dark text-secondary-text',
-    secondary: 'bg-secondary-light text-secondary-text',
-};
-const styleButton = 'inline-block text-center font-sans select-none';
-const Button = JSX(({ className, text, aboveText, appendLeft, href, target, onClick, children, disabled, rounded, version = 'none', ariaLabel, ...rest }) => {
-    const buttonInner = children ?? (jsx(ButtonInner, { text: text, aboveText: aboveText, appendLeft: appendLeft, rounded: rounded }));
-    if (disabled) {
-        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabIndex: "-1", className: `${styleButton} ${buttonDisabledStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, children: buttonInner }));
-    }
-    return (jsx("a", { className: `${styleButton} cursor-pointer no-underline ${buttonStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, role: !href ? 'button' : 'link', ...rest, children: buttonInner }));
-});
-const ButtonInner = JSX(({ text, aboveText, appendLeft, rounded }) => {
-    const withoutText = !text && !aboveText && Boolean(appendLeft);
-    const buttonInnerClasses = `flex items-center justify-center ${withoutText ? 'h-12 w-12 min-h-12 min-w-12' : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`} ${rounded ? 'rounded-full' : ''}`;
-    return (jsxs("div", { className: buttonInnerClasses, children: [appendLeft ? appendLeft : null, !withoutText ? (jsxs("div", { children: [jsx("div", { className: "text-xxs text-left", children: aboveText }), jsx("div", { className: "text-sm font-medium text-left", children: text })] })) : null] }));
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/SVG.tsx
-
-
-const SVG = JSX(({ className, viewBox, fill = 'none', width, height, paths, ...commonOptions }) => {
-    return (jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className: className, viewBox: viewBox, fill: fill, width: width, height: height, children: paths.map(({ d, fill, ...options }, i) => (jsx("path", { d: d, fill: fill || 'currentColor', ...commonOptions, ...options }, i))) }));
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/Button/ArrowButton.tsx
-
-
-
-
-const ARROW_PATHS = [
-    {
-        d: 'm9 12 4-4-4-4',
-        stroke: 'currentColor',
-        strokeWidth: '2',
-        strokeLinecap: 'round',
-        fill: 'none',
-    },
-    {
-        d: 'M2 9a1 1 0 0 1 0-2v2Zm6-2a1 1 0 0 1 0 2V7ZM2 7h6v2H2V7Z',
-    },
-];
-const ArrowButton = JSX(({ className, disabled, ...rest }) => (jsx(Button, { rounded: true, className: `shadow-[0_4px_25px_rgba(0,0,0,0.07)] w-12 h-12 min-h-12 max-h-12 flex items-center justify-center ${disabled
-        ? 'bg-secondary-light text-secondary-text'
-        : 'bg-white text-primary-text hover:text-primary-main'} ${className || ''}`, disabled: disabled, ...rest, children: jsx(SVG, { paths: ARROW_PATHS, viewBox: "0 0 16 16", fill: "none", width: "16", height: "16" }) })));
-
-;// CONCATENATED MODULE: ./src/components/ComparisonTable/TableRowContainer.tsx
-
-
-const TableRowContainer = JSX(({ children }) => (jsx("div", { className: "self-start flex flex-col", role: "row", children: jsx("div", { className: "flex", children: children }) })));
-
-;// CONCATENATED MODULE: ./src/components/ComparisonTable/TableCarouselContainer.tsx
-
-
-const carouselContainerClassesMap = {
-    comparison: 'flex gap-4 duration-1000',
-    tariff: 'flex flex-grow duration-1000',
-};
-const TableCarouselContainer = JSX(({ children, activeCardIndex, columnWidth, version = 'comparison' }) => (jsx("div", { className: "flex flex-1 overflow-hidden", children: jsx("div", { className: carouselContainerClassesMap[version], style: { transform: `translateX(-${activeCardIndex * columnWidth}px)` }, children: children }) })));
 
 ;// CONCATENATED MODULE: ./src/utils/url.ts
 const MOBILE_URL_PATH = '/mobile';
@@ -31636,6 +31380,525 @@ function useLink({ router, handlerDecorator = defaultHandlerDecorator, }, link) 
     };
 }
 
+;// CONCATENATED MODULE: ./src/ui-kit/BlockItem/BlockItem.tsx
+
+
+const listStyleMap = {
+    primary: 'bg-primary-main w-[8px] h-[8px] min-w-[8px] min-h-[8px] mt-2 rounded-full',
+    secondary: 'bg-secondary-text w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
+};
+const textStyleMap = {
+    primary: 'text-primary-text',
+    secondary: 'text-secondary-text',
+};
+const BlockItem = JSX(({ className, isDotted = true, text, children, version = 'primary' }) => {
+    return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [isDotted && jsx("div", { className: `inline-block mr-3 ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mr-3 ${textStyleMap[version]}`, children: text || children })] }));
+});
+
+;// CONCATENATED MODULE: ./src/ui-kit/Button/Button.tsx
+
+
+const buttonStyleMap = {
+    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
+    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
+};
+const buttonDisabledStyleMap = {
+    primary: 'bg-secondary-dark text-secondary-text',
+    secondary: 'bg-secondary-light text-secondary-text',
+};
+const styleButton = 'inline-block text-center font-sans select-none';
+const Button = JSX(({ className, text, aboveText, appendLeft, href, target, onClick, children, disabled, rounded, version = 'none', ariaLabel, ...rest }) => {
+    const buttonInner = children ?? (jsx(ButtonInner, { text: text, aboveText: aboveText, appendLeft: appendLeft, rounded: rounded }));
+    if (disabled) {
+        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabIndex: "-1", className: `${styleButton} ${buttonDisabledStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, children: buttonInner }));
+    }
+    return (jsx("a", { className: `${styleButton} cursor-pointer no-underline ${buttonStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, role: !href ? 'button' : 'link', ...rest, children: buttonInner }));
+});
+const ButtonInner = JSX(({ text, aboveText, appendLeft, rounded }) => {
+    const withoutText = !text && !aboveText && Boolean(appendLeft);
+    const buttonInnerClasses = `flex items-center justify-center ${withoutText ? 'h-12 w-12 min-h-12 min-w-12' : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`} ${rounded ? 'rounded-full' : ''}`;
+    return (jsxs("div", { className: buttonInnerClasses, children: [appendLeft ? appendLeft : null, !withoutText ? (jsxs("div", { children: [jsx("div", { className: "text-xxs text-left", children: aboveText }), jsx("div", { className: "text-sm font-medium text-left", children: text })] })) : null] }));
+});
+
+;// CONCATENATED MODULE: ./src/ui-kit/Img.tsx
+
+
+const Img = JSX(({ className, image }) => (jsxs("picture", { className: `${className || ''}`, children: [image.sources?.length
+            ? image.sources.map(({ src, format }, index) => (jsx("source", { srcSet: src, type: formatToMimeType(format) }, `${index}_${src}`)))
+            : null, jsx("img", { src: image.src, alt: image.alt || image.title, title: image.title, ...image?.size })] })));
+function formatToMimeType(format) {
+    return format ? `image/${String(format)}` : undefined;
+}
+
+;// CONCATENATED MODULE: ./src/utils/getColSpan.ts
+const getColSpan = (className) => {
+    const colSpanPrefix = 'col-span-';
+    const colSpanStr = className.split(/\s+/).find((_) => _.startsWith(colSpanPrefix));
+    return colSpanStr ? parseInt(colSpanStr.substring(colSpanPrefix.length), 10) : 12;
+};
+
+;// CONCATENATED MODULE: ./src/components/BaseTile/BaseTile.tsx
+
+
+
+
+
+
+
+
+
+const alignBlock = {
+    left: 'items-start',
+    center: 'items-center',
+    right: 'items-end',
+};
+const alignText = {
+    left: 'text-left',
+    center: 'text-center',
+    right: 'text-right',
+};
+const TITLE_CLASSES = 'font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]';
+const BaseTile = JSX(({ className, context, title, titleSize, description, children, buttons, image, items, version = 'primary', align = 'left', }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    return (jsxs("div", { className: `font-sans flex flex-col grow h-full ${alignBlock[align]}`, children: [title && (jsx(Title, { size: titleSize || getTitleSizeByClassName(className), className: TITLE_CLASSES, children: title })), jsxs("div", { className: "flex grow justify-between", children: [jsxs("div", { className: `flex flex-col justify-between ${alignBlock[align]}`, children: [jsxs("div", { children: [description ? (jsx("div", { className: `font-normal text-base max-w-[600px] ${alignText[align]}`, children: description })) : null, children, items?.length ? renderItems(items, version) : null] }), buttons?.length ? (jsx("div", { className: "flex mt-9 gap-3", children: buttons.map((button, index) => renderButton(useLink({ router, handlerDecorator }, button), index)) })) : null] }), image?.src && jsx(Img, { className: "mt-auto ml-7", image: image })] })] }));
+});
+function getTitleSizeByClassName(className = '') {
+    const colSpan = getColSpan(className);
+    if (colSpan <= 4) {
+        return 'S';
+    }
+    else if (colSpan <= 8) {
+        return 'M';
+    }
+    else {
+        return 'L';
+    }
+}
+function renderItems(items = [], version) {
+    return (jsx("section", { className: "max-w-[600px] mt-5", role: "list", children: items.map((_, i) => (jsx(BlockItem, { className: i ? 'mt-2.5' : '', text: _, version: version }, String(i)))) }));
+}
+function renderButton({ icon, ...button }, i) {
+    if (!button?.text)
+        return;
+    if (icon)
+        return (jsx(Button, { appendLeft: jsx(Icon, { name: icon, width: "24", height: "24" }), ...button }, String(i)));
+    return jsx(Button, { ...button }, String(i));
+}
+
+;// CONCATENATED MODULE: ./src/components/Headline/Headline.tsx
+
+
+
+const Headline = JSX(({ bgColor = 'bg-white', className, ...props }) => {
+    return (jsx("section", { className: `p-10 ${bgColor} ${className || ''} `, children: jsx(BaseTile, { ...props }) }));
+});
+
+;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.tsx
+
+
+
+
+const titleAlignStyleMap = {
+    left: 'text-left',
+    center: 'text-center',
+    right: 'text-right',
+};
+const titleMarginsStyleMap = {
+    double: 'mb-8',
+    single: '',
+};
+const linkColumnsModeStyleMap = {
+    double: 'gap-x-5 gap-y-[26px] flex-wrap',
+    single: 'gap-3.5 flex-col',
+};
+const LinkDocs = JSX(({ className, title, align, documents, icon, columnsMode = 'double' }) => {
+    const containerClasses = linkColumnsModeStyleMap[columnsMode];
+    return (jsxs("section", { className: `font-sans p-[50px] bg-white ${className}`, children: [title && (jsx(Title, { className: `font-medium m-0 ${titleMarginsStyleMap[columnsMode]} ${titleAlignStyleMap[align ?? 'center']}`, children: title })), jsx("div", { className: `flex ${containerClasses}`, role: "list", children: documents?.length
+                    ? documents.map(({ text, fileSize, ...linkProps }) => (jsxs("a", { className: `group flex items-center text-sm
+              text-sm font-sans align-middle items-center text-primary-text no-underline group hover:text-primary-main
+              ${columnsMode === 'double' ? 'basis-[calc(50%-20px)]' : ''}`, role: "listitem", ...linkProps, children: [icon && jsx(Icon, { className: "mr-3.5", name: icon, width: "24px", height: "24px" }), jsxs("span", { children: [text, jsx("span", { className: "text-secondary-text group-hover:text-primary-main", children: linkProps?.href && formatSuffix(getExtFromHref(linkProps.href), fileSize) })] })] })))
+                    : null })] }));
+});
+const getExtFromHref = (href) => {
+    if (!href)
+        return '';
+    const lastChunk = href.split('.').pop();
+    if (!lastChunk || lastChunk.includes('/'))
+        return '';
+    return lastChunk;
+};
+const formatSuffix = (ext, fileSize) => {
+    const prefix = ext || fileSize ? ',' : '';
+    const extension = ext ? ` ${ext}` : '';
+    const size = fileSize ? ` (${fileSize})` : '';
+    return prefix + extension + size;
+};
+
+;// CONCATENATED MODULE: ./src/components/PictureText/PictureText.tsx
+
+
+
+
+
+const PictureText = JSX(({ className, title, image, benefits }) => {
+    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-14 ${className}`, children: [jsx(Title, { className: "font-medium m-0 text-center", children: title }), jsxs("div", { className: 'flex justify-center mt-9', children: [image?.src && jsx(Img, { className: "mr-6", image: image }), benefits?.length ? (jsx("div", { className: "flex flex-col", children: benefits.map(renderBenefit) })) : null] })] }));
+});
+function renderBenefit(benefit, i) {
+    return (jsxs("div", { className: "flex flex-row mb-8", children: [benefit.icon && (jsx(Icon, { className: "w-[48px] h-[48px] bg-main rounded-full box-border p-[12px]", name: benefit.icon, width: "48", height: "48" })), jsxs("div", { className: "flex gap-1 flex-col h-full ml-5 max-w-[490px]", children: [jsx("div", { className: "font-medium text-primary-text text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary-text", children: benefit.description }))] })] }, String(i)));
+}
+
+;// CONCATENATED MODULE: ./src/components/TextBlock/TextBlock.tsx
+
+
+
+const textBlockStyleMaps = {
+    primary: {
+        background: 'bg-white',
+        icon: 'bg-primary-main text-white',
+        title: 'text-primary-text',
+        description: 'text-secondary-text',
+    },
+    secondary: {
+        background: 'bg-primary-main',
+        icon: 'bg-white text-primary-main',
+        title: 'text-white',
+        description: 'text-white',
+    },
+    'secondary-light': {
+        background: 'bg-primary-main/10',
+        icon: 'bg-primary-main text-white',
+        title: 'text-primary-text',
+        description: 'text-secondary-text',
+    },
+};
+const TextBlock = JSX(({ title, description, blockVersion = 'primary', iconVersion, image, className }) => {
+    const textBlockStyleMap = textBlockStyleMaps[blockVersion];
+    return (jsxs("section", { className: `font-sans px-9 py-4 flex ${textBlockStyleMap.background} ${className || ''}`, children: [iconVersion && iconVersion === 'small' ? renderIcon(textBlockStyleMap.icon) : null, iconVersion && iconVersion === 'big' ? renderImage(image) : null, jsxs("div", { className: "py-0.5", children: [title && (jsx("div", { className: `font-medium text-base mb-1 ${textBlockStyleMap.title}`, children: title })), description && (jsx("div", { className: `text-sm ${textBlockStyleMap.description}`, children: description }))] })] }));
+});
+function renderIcon(className) {
+    return (jsx("div", { className: `pt-1.5 pr-4`, children: jsx("div", { className: `rounded-full h-4 w-4 text-center text-xs ${className}`, children: "i" }) }));
+}
+function renderImage(image) {
+    return image?.src ? jsx(Img, { className: "pt-0.5 pr-3", image: image }) : null;
+}
+
+;// CONCATENATED MODULE: ./src/components/Accordion/AccordionBlocks.tsx
+
+
+
+
+const AccordionBlocks = {
+    Headline: Headline,
+    LinkDocs: LinkDocs,
+    TextBlock: TextBlock,
+    PictureText: PictureText,
+};
+/* harmony default export */ const Accordion_AccordionBlocks = (AccordionBlocks);
+
+;// CONCATENATED MODULE: ./src/components/Accordion/AccordionItem.tsx
+
+
+
+
+const AccordionItem = JSX(({ label, blocks, context }) => {
+    const [isActive, setIsActive] = context.useState(false);
+    const hasContent = blocks?.length;
+    const icon = isActive ? 'MinusIcon' : 'PlusIcon';
+    const handleToggle = (e) => {
+        if (!hasContent)
+            return null;
+        setIsActive(!isActive);
+        const contentBlock = getContentBlock(e);
+        contentBlock.style.maxHeight = contentBlock.style.maxHeight
+            ? null
+            : `${contentBlock.scrollHeight}px`;
+    };
+    return (jsxs("li", { className: "border-0 border-b border-solid border-main-divider last:border-b-0", children: [jsxs("button", { className: `border-none bg-transparent px-0 py-5 flex justify-between text-left w-full font-sans text-primary-text
+        ${hasContent ? 'group cursor-pointer' : ''}`, onClick: handleToggle, children: [jsx("span", { className: `m-0 text-xl pr-2.5 font-medium ${hasContent ? 'group-hover:text-primary-main' : ''}`, children: label }), hasContent ? jsx(Icon, { name: icon, width: "24", height: "24" }) : null] }), hasContent ? (jsx("div", { className: `${isActive ? 'pb-5' : ''} text-sm transition-all duration-300 max-h-0 overflow-hidden group-last:last:pb-0 `, children: blocks?.length ? blocks.map((block, i) => renderBlock(block, i, context)) : null })) : null] }));
+});
+const renderBlock = (block, i, context) => {
+    if (!block.type || !block.data || !Accordion_AccordionBlocks.hasOwnProperty(block.type)) {
+        return null;
+    }
+    const AccordionBlock = Accordion_AccordionBlocks[block.type];
+    return (jsx("div", { className: "mb-5 last:mb-0", children: jsx(AccordionBlock, { context: context, ...block.data }) }, `block_${i}`));
+};
+const getContentBlock = (e) => e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;
+
+;// CONCATENATED MODULE: ./src/components/Accordion/Accordion.tsx
+
+
+
+
+const Accordion = JSX(({ title, accordionItems, context, className }) => {
+    return (jsxs("section", { className: `p-[50px] font-sans bg-white text-primary-text ${className || ''}`, children: [title ? jsx(Title, { className: "m-0 mb-2.5", children: title }) : null, accordionItems?.length ? (jsx("ul", { className: "list-none m-0 p-0", children: accordionItems.map((item, i) => (jsx(AccordionItem, { ...item, context: context }, `AccordionItem${i}`))) })) : null] }));
+});
+
+;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.fixture.tsx
+
+
+
+const LinkDocsFixtureSetOne = {
+    title: 'Дополнительные документы',
+    icon: 'DocIcon',
+    documents: [
+        { text: 'target self', href: '/abc1/cooldoc.doc', target: '_self' },
+        { text: 'target blank', href: '/abc2/wtf.rtf', target: '_blank' },
+        { text: 'GlassIcon', href: '/abc3/map.jpeg' },
+        { text: 'no icon', href: '/abc4' },
+        { text: 'документ 5', href: '/abc5' },
+        { text: 'документ 6', href: '/abc6/abc.pdf' },
+        { text: 'Text text text', href: '/abc7/yolo.png' },
+        {
+            text: 'Some more generic text, and even more, more text',
+            href: '/abc8/archive.zip',
+            fileSize: '2.3МБ',
+        },
+        { text: 'И ещё немного текста', href: '/abc9/rarniw.rar', fileSize: '666МБ' },
+        {
+            text: 'Форматируем, сортируем, смотрим как отображается...',
+            href: '/abc10/',
+            fileSize: '65ГБ',
+        },
+    ],
+};
+const LinkDocsFixtureSetTwo = {
+    ...LinkDocsFixtureSetOne,
+    columnsMode: 'single',
+};
+const LinkDocsFixtureSetThree = {
+    ...LinkDocsFixtureSetOne,
+    icon: 'GlassIcon',
+    title: '',
+};
+const LinkDocsFixtureSetFour = {
+    ...LinkDocsFixtureSetOne,
+    icon: undefined,
+};
+/* harmony default export */ const LinkDocs_fixture = ({
+    'default, 2 columns': jsx(LinkDocs, { context: context, ...LinkDocsFixtureSetOne }),
+    'one column': jsx(LinkDocs, { context: context, ...LinkDocsFixtureSetTwo }),
+    'another icon, no extensions': jsx(LinkDocs, { context: context, ...LinkDocsFixtureSetThree }),
+    'no icon': jsx(LinkDocs, { context: context, ...LinkDocsFixtureSetFour }),
+});
+
+;// CONCATENATED MODULE: ./src/components/Accordion/Accordion.fixture.tsx
+
+
+
+
+const TEXT_BLOCK = {
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?',
+};
+const HEADLINE = {
+    context: context,
+    title: 'Своя кредитная карта',
+    description: 'Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.',
+    align: 'left',
+    bgColor: 'bg-white',
+};
+const PICTURE_TEXT = {
+    title: 'Варианты потребительского кредита',
+    benefits: [
+        {
+            label: 'Кредит по одному документу',
+            description: 'До 300 тыс ₽ по упрощённой процедуре получения кредита',
+            icon: 'DocumentText',
+        },
+        {
+            label: 'Кредит на общих условиях',
+            description: 'До 5 млн ₽ на общих условиях получения кредита',
+            icon: 'DiscountShape',
+        },
+    ],
+    image: {
+        src: 'legal-support-business.png',
+        alt: 'Варианты потребительского кредита',
+        format: 'webp',
+        size: {
+            width: 200,
+            height: 200,
+        },
+    },
+};
+const propsTextBlock = {
+    title: 'Accordion title',
+    context: context,
+    accordionItems: [
+        {
+            label: 'Accordion label 1',
+            blocks: [
+                {
+                    type: 'TextBlock',
+                    data: TEXT_BLOCK,
+                },
+                {
+                    type: 'TextBlock',
+                    data: TEXT_BLOCK,
+                },
+            ],
+        },
+        {
+            label: 'Accordion label 2',
+            blocks: [
+                {
+                    type: 'TextBlock',
+                    data: TEXT_BLOCK,
+                },
+                {
+                    type: 'TextBlock',
+                    data: TEXT_BLOCK,
+                },
+            ],
+        },
+        {
+            label: 'Accordion label 3',
+            blocks: [
+                {
+                    type: 'PictureText',
+                    data: PICTURE_TEXT,
+                },
+                {
+                    type: 'PictureText',
+                    data: PICTURE_TEXT,
+                },
+            ],
+        },
+        {
+            label: 'Accordion label 4',
+            blocks: [
+                {
+                    type: 'Headline',
+                    data: HEADLINE,
+                },
+                {
+                    type: 'Headline',
+                    data: HEADLINE,
+                },
+            ],
+        },
+    ],
+};
+const propsLinkDocs = {
+    title: 'Accordion title',
+    context: context,
+    accordionItems: [
+        {
+            label: 'Список документов в 2 колонки',
+            blocks: [
+                {
+                    type: 'LinkDocs',
+                    data: { ...LinkDocsFixtureSetOne, title: '' },
+                },
+            ],
+        },
+        {
+            label: 'Список документов в одну колонку',
+            blocks: [
+                {
+                    type: 'LinkDocs',
+                    data: { ...LinkDocsFixtureSetTwo, title: '' },
+                },
+            ],
+        },
+        {
+            label: 'Немного кастомизированный список',
+            blocks: [
+                {
+                    type: 'LinkDocs',
+                    data: LinkDocsFixtureSetThree,
+                },
+            ],
+        },
+    ],
+};
+/* harmony default export */ const Accordion_fixture = ({
+    'with text block': jsx(Accordion, { ...propsTextBlock }),
+    'with link docs block': jsx(Accordion, { ...propsLinkDocs }),
+});
+
+;// CONCATENATED MODULE: ./src/components/BenefitsBlock/BenefitsBlock.tsx
+
+
+
+
+const BenefitsBlock = JSX(({ className, title, benefits }) => {
+    return (jsxs("section", { className: `font-sans text-primary-text bg-white p-12 pb-2 flex flex-col items-center ${className || ''}`, children: [title ? jsx(Title, { className: "font-medium m-0 max-w-[47rem] text-center", children: title }) : null, benefits?.length ? (jsx("div", { className: "grid grid-cols-2 gap-5 mt-9", children: benefits.map(renderStep) })) : null] }));
+});
+const renderStep = (benefit, i) => {
+    return (jsxs("div", { className: "flex items-center p-10 gap-5 max-w-[580px]", children: [benefit.icon && (jsx(Icon, { className: "h-[70px] w-[70px] min-w-[70px] min-h-[70px]", name: benefit.icon, width: "70", height: "70" })), jsxs("div", { children: [jsx("h3", { className: "font-medium text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm mt-2", children: benefit.description }))] })] }, String(i)));
+};
+
+;// CONCATENATED MODULE: ./src/components/BenefitsBlock/BenefitsBlock.fixture.tsx
+
+
+
+/* harmony default export */ const BenefitsBlock_fixture = (jsx(BenefitsBlock, { context: context, title: "\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430", benefits: [
+        {
+            label: 'Без комиссии',
+            description: 'Комиссия за выдачу кредита не взимается. Допускается полное или частичное погашение кредита',
+            icon: 'ClockIcon',
+        },
+        {
+            label: 'Оформление по паспорту',
+            description: 'Обеспечение не требуется. Кредит можно получить на любые цели',
+            icon: 'SignDocsIcon',
+        },
+        {
+            label: 'Без залога и поручительства',
+            description: 'Единовременное перечисление суммы кредита в полном объёме на текущий счет в Банке',
+            icon: 'ComfortableCompIcon',
+        },
+        {
+            label: 'Деньги за 3 дня',
+            description: 'Рассмотрение заявки с момента предоставления полного комплекта документов',
+            icon: 'ActualBalanceIcon',
+        },
+    ] }));
+
+;// CONCATENATED MODULE: ./src/ui-kit/SVG.tsx
+
+
+const SVG = JSX(({ className, viewBox, fill = 'none', width, height, paths, ...commonOptions }) => {
+    return (jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className: className, viewBox: viewBox, fill: fill, width: width, height: height, children: paths.map(({ d, fill, ...options }, i) => (jsx("path", { d: d, fill: fill || 'currentColor', ...commonOptions, ...options }, i))) }));
+});
+
+;// CONCATENATED MODULE: ./src/ui-kit/Button/ArrowButton.tsx
+
+
+
+
+const ARROW_PATHS = [
+    {
+        d: 'm9 12 4-4-4-4',
+        stroke: 'currentColor',
+        strokeWidth: '2',
+        strokeLinecap: 'round',
+        fill: 'none',
+    },
+    {
+        d: 'M2 9a1 1 0 0 1 0-2v2Zm6-2a1 1 0 0 1 0 2V7ZM2 7h6v2H2V7Z',
+    },
+];
+const ArrowButton = JSX(({ className, disabled, ...rest }) => (jsx(Button, { rounded: true, className: `shadow-[0_4px_25px_rgba(0,0,0,0.07)] w-12 h-12 min-h-12 max-h-12 flex items-center justify-center ${disabled
+        ? 'bg-secondary-light text-secondary-text'
+        : 'bg-white text-primary-text hover:text-primary-main'} ${className || ''}`, disabled: disabled, ...rest, children: jsx(SVG, { paths: ARROW_PATHS, viewBox: "0 0 16 16", fill: "none", width: "16", height: "16" }) })));
+
+;// CONCATENATED MODULE: ./src/components/ComparisonTable/TableRowContainer.tsx
+
+
+const TableRowContainer = JSX(({ children }) => (jsx("div", { className: "self-start flex flex-col", role: "row", children: jsx("div", { className: "flex", children: children }) })));
+
+;// CONCATENATED MODULE: ./src/components/ComparisonTable/TableCarouselContainer.tsx
+
+
+const carouselContainerClassesMap = {
+    comparison: 'flex gap-4 duration-1000',
+    tariff: 'flex flex-grow duration-1000',
+};
+const TableCarouselContainer = JSX(({ children, activeCardIndex, columnWidth, version = 'comparison' }) => (jsx("div", { className: "flex flex-1 overflow-hidden", children: jsx("div", { className: carouselContainerClassesMap[version], style: { transform: `translateX(-${activeCardIndex * columnWidth}px)` }, children: children }) })));
+
 ;// CONCATENATED MODULE: ./src/components/ComparisonTable/constants.ts
 const GRADIENT = 'bg-gradient-to-r from-main-gradient-start to-main-gradient-end';
 const BORDER_CLASSES = 'border-main-stroke border-solid border';
@@ -31674,31 +31937,6 @@ const renderCellInner = ({ label, description }, i, isFillGradient) => (jsxs("di
 
 const TableRow = JSX(({ row: { header, data }, activeCardIndex, isColoredFirstColumn, isFirstRow, isLastRow }) => (jsxs(TableRowContainer, { children: [header?.title ? (jsx("div", { className: `text-sm py-7 ${DIVIDER_CLASSES} ${FIRST_CELL_CLASSES} ${!isLastRow ? 'border-solid' : ''}`, children: header.title })) : null, data?.length ? (jsx(TableCarouselContainer, { activeCardIndex: activeCardIndex, columnWidth: COLUMN_WIDTH, children: data.map((cell, i) => (jsx(TableCell, { cell: cell, isFirstRow: isFirstRow, isLastRow: isLastRow, isFillGradient: isColoredFirstColumn && i === 0 }, String(i)))) })) : null] })));
 
-;// CONCATENATED MODULE: ./src/hooks/useComparisonTableState.ts
-const useComparisonTableState = (context, activeCardInit, visibleRowLengthInit) => {
-    const [activeCardIndex, setActiveCardIndex] = context.useState(activeCardInit);
-    const [isShowAllRow, setIsShowAllRow] = context.useState(!visibleRowLengthInit);
-    return {
-        activeCardIndex,
-        setActiveCardIndex,
-        isShowAllRow,
-        setIsShowAllRow,
-    };
-};
-
-;// CONCATENATED MODULE: ./src/hooks/useComparisonTableData.ts
-const useComparisonTableData = (isShowAllRow, columns, rowHeaders, visibleRowLength = 0) => {
-    const colHeaders = columns?.map(({ header }) => header || {});
-    const colData = columns?.map(({ data }) => data) || [];
-    const rowData = rowHeaders
-        ?.map((header, i) => ({
-        header,
-        data: colData.map((col) => col?.[i] || [{}]),
-    }))
-        .slice(0, isShowAllRow ? rowHeaders.length : visibleRowLength);
-    return { colHeaders, colData, rowData };
-};
-
 ;// CONCATENATED MODULE: ./src/hooks/useComparisonTableScroll.ts
 const useComparisonTableScroll = (colData, colsLengthForScroll, activeCardIndex, setActiveCardIndex) => {
     const nextClick = () => setActiveCardIndex(activeCardIndex + 1);
@@ -31721,13 +31959,19 @@ const useComparisonTableScroll = (colData, colsLengthForScroll, activeCardIndex,
 
 
 
-
-
 const ComparisonTable = JSX(({ className, context, title, rowHeaders, columns, visibleRowLength = 0, isColoredFirstColumn = false, }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
-    const { activeCardIndex, setActiveCardIndex, isShowAllRow, setIsShowAllRow } = useComparisonTableState(context, 0, visibleRowLength);
-    const { colHeaders, colData, rowData } = useComparisonTableData(isShowAllRow, columns, rowHeaders, visibleRowLength);
+    const [activeCardIndex, setActiveCardIndex] = context.useState(0);
+    const [isShowAllRow, setIsShowAllRow] = context.useState(!visibleRowLength);
+    const colHeaders = columns?.map(({ header }) => header || {});
+    const colData = columns?.map(({ data }) => data) || [];
+    const rowData = rowHeaders
+        ?.map((header, i) => ({
+        header,
+        data: colData.map((col) => col?.[i] || [{}]),
+    }))
+        .slice(0, isShowAllRow ? rowHeaders.length : visibleRowLength);
     const { nextClick, prevClick, isScrollAvailable, showNextButton, showPrevButton } = useComparisonTableScroll(colData, COLS_LENGTH_FOR_SCROLL, activeCardIndex, setActiveCardIndex);
     const showToggle = () => setIsShowAllRow(!isShowAllRow);
     return (jsxs("section", { className: `bg-white font-sans py-[50px] pl-[50px] overflow-hidden text-primary-text relative ${className || ''}`, children: [jsx(Title, { className: "font-medium m-0 max-w-[47rem] text-center mb-9 mx-auto", children: title }), jsxs("div", { role: "table", children: [colHeaders?.length ? (jsxs(TableRowContainer, { children: [jsx("div", { className: FIRST_CELL_CLASSES, role: "columnheader", scope: "col" }), jsx(TableCarouselContainer, { activeCardIndex: activeCardIndex, columnWidth: COLUMN_WIDTH, children: colHeaders.map((header, i) => (jsx(HeaderCell, { ...header, link: header.link && useLink({ router, handlerDecorator }, header.link) }, String(i)))) })] })) : null, rowData?.length ? (jsxs("div", { className: "relative", children: [rowData.map((row, i, { length }) => (jsx(TableRow, { row: row, isFirstRow: i === 0, isLastRow: i + 1 === length, activeCardIndex: activeCardIndex, isColoredFirstColumn: isColoredFirstColumn }, String(i)))), isScrollAvailable ? (jsx("div", { children: jsxs("div", { className: "absolute top-7 right-7 z-10", children: [jsx(ArrowButton, { onClick: nextClick, disabled: !showNextButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" }), jsx(ArrowButton, { className: "mt-4 rotate-180", onClick: prevClick, disabled: !showPrevButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })] }) })) : null] })) : null] }), isScrollAvailable ? (jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })) : null, visibleRowLength ? (jsx("div", { className: "pr-[50px]", children: jsxs("div", { className: "flex w-full", children: [jsx("div", { className: FIRST_CELL_CLASSES }), jsx("button", { onClick: showToggle, className: "mt-5 flex-1 border-main-stroke border-solid border text-primary-text bg-white hover:border-primary-main hover:text-primary-main", children: jsx("div", { className: "font-sans font-medium text-xs py-[11px]", children: !isShowAllRow ? 'Показать все параметры' : 'Скрыть' }) })] }) })) : null] }));
@@ -31930,65 +32174,179 @@ const columns2 = [
     'with icons and two cols': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: columns2.slice(0, 2) }) }) })),
 });
 
-;// CONCATENATED MODULE: ./src/ui-kit/BlockItem/BlockItem.tsx
+;// CONCATENATED MODULE: ./src/hooks/useCreditCalculatorData.ts
+function useCreditCalculatorData(useAsyncData, directoryName) {
+    const { data } = useAsyncData(creditCalculatorUrl(directoryName), () => fetchCreditCalculatorData(directoryName));
+    return data || {};
+}
+async function fetchCreditCalculatorData(directoryName) {
+    const response = await fetch(creditCalculatorUrl(directoryName));
+    return await response.json();
+}
+function creditCalculatorUrl(directoryName) {
+    return `/wcms-resources/${directoryName || 'credit-calculator-data'}.json`;
+}
+
+;// CONCATENATED MODULE: ./src/ui-kit/Checkbox/Checkbox.tsx
 
 
-const listStyleMap = {
-    primary: 'bg-primary-main w-[8px] h-[8px] min-w-[8px] min-h-[8px] mt-2 rounded-full',
-    secondary: 'bg-secondary-text w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
-};
-const textStyleMap = {
-    primary: 'text-primary-text',
-    secondary: 'text-secondary-text',
-};
-const BlockItem = JSX(({ className, isDotted = true, text, children, version = 'primary' }) => {
-    return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [isDotted && jsx("div", { className: `inline-block mr-3 ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mr-3 ${textStyleMap[version]}`, children: text || children })] }));
+
+const CHECK_PATHS = [
+    {
+        d: 'M10.207.793a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0l-2.5-2.5a1 1 0 0 1 1.414-1.414L3.5 6.086 8.793.793a1 1 0 0 1 1.414 0Z',
+        fillRule: 'evenodd',
+        clipRule: 'evenodd',
+        fill: 'white',
+    },
+];
+const Checkbox = JSX(({ text, checked, onChange, className }) => (jsx("div", { className: className, children: jsxs("label", { className: "flex items-center cursor-pointer relative", children: [jsx("input", { className: `peer appearance-none w-5 h-5 border-solid border rounded border-black checked:bg-primary-main checked:border-primary-main`, type: "checkbox", onChange: (e) => {
+                    onChange(e.target.checked);
+                }, checked: checked }), jsx(SVG, { paths: CHECK_PATHS, className: "hidden absolute left-2 ml-px peer-checked:block", width: "11", height: "9", fill: "white", viewBox: "0 0 11 9" }), text ? jsx("span", { className: "font-sans ml-2 text-sm cursor-pointer", children: text }) : null] }) })));
+
+;// CONCATENATED MODULE: ./src/utils/addSpacesBetweenNumbers.ts
+const addSpacesBetweenNumbers = (number) => new Intl.NumberFormat('ru-RU', { maximumSignificantDigits: 3 }).format(number);
+
+;// CONCATENATED MODULE: ./src/ui-kit/InputRange/InputRange.tsx
+
+
+
+const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step = 1, value = min, onChange }) => {
+    const handleChange = (value) => {
+        if (!onChange)
+            return;
+        const sanitizedValue = Number(value.replace(/\D/g, ''));
+        onChange(sanitizedValue);
+    };
+    const inputStyle = {
+        backgroundSize: `${(((value - min) * 100) / (max - min)).toFixed(2)}% 100%`,
+    };
+    const handleBlur = () => {
+        if (!onChange)
+            return;
+        if (value < min)
+            onChange(min);
+        if (value > max)
+            onChange(max);
+    };
+    return (jsxs("div", { className: className, children: [jsxs("div", { className: "relative", children: [title ? (jsx("span", { className: "absolute text-xs text-secondary-text top-1 mt-0.5 pl-4 ml-0.5", children: title })) : null, jsx("input", { className: `m-0 font-sans text-sm w-full h-12 border-2 border-solid border-main-divider rounded-md outline-none p-0 pl-4 m-0 box-border text-primary-text ${title ? 'pt-4' : ''}`, value: addSpacesBetweenNumbers(value), onChange: (e) => handleChange(e.target.value), onBlur: handleBlur }), jsx("div", { className: "absolute inset-x-0 mt-0.5 top-8 px-4", children: jsx("input", { className: "box-border w-full m-0 cursor-pointer slider", type: "range", min: min, max: max, step: step, value: value, onChange: (e) => handleChange(e.target.value), style: inputStyle }) })] }), jsx("div", { className: "flex justify-between mt-3 mb-4", children: items.map((item, i) => (jsx("span", { className: "text-xs text-secondary-text pl-4", children: item }, String(i)))) })] }));
 });
 
-;// CONCATENATED MODULE: ./src/utils/getColSpan.ts
-const getColSpan = (className) => {
-    const colSpanPrefix = 'col-span-';
-    const colSpanStr = className.split(/\s+/).find((_) => _.startsWith(colSpanPrefix));
-    return colSpanStr ? parseInt(colSpanStr.substring(colSpanPrefix.length), 10) : 12;
+;// CONCATENATED MODULE: ./src/utils/clamp.ts
+const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
+
+;// CONCATENATED MODULE: ./src/components/CreditCalculator/constants.ts
+const DEFAULT_MIN_SUM = 30000;
+const DEFAULT_MAX_SUM = 3000000;
+const DEFAULT_SUM = (DEFAULT_MAX_SUM - DEFAULT_MIN_SUM) / 2;
+const DEFAULT_MIN_MONTHS = 1;
+const DEFAULT_MAX_MONTHS = 84;
+const DEFAULT_MONTHS = Math.round((DEFAULT_MAX_MONTHS - DEFAULT_MIN_MONTHS) / 2);
+const MONTHS_IN_YEAR = 12;
+
+;// CONCATENATED MODULE: ./src/components/CreditCalculator/getCalculatorParams.ts
+const getCalculatorParams = (params) => {
+    const { tableRows, isAnnuity = false } = params;
+    if (!tableRows)
+        return {};
+    const calculatorParams = tableRows.find((row) => row.isAnnuity === isAnnuity);
+    return calculatorParams || {};
 };
 
-;// CONCATENATED MODULE: ./src/components/BaseTile/BaseTile.tsx
+;// CONCATENATED MODULE: ./src/components/CreditCalculator/getCreditRate.ts
+const DEFAULT_RATE = 5;
+const getCreditRate = (params) => {
+    const { calculatorParams, isInsurance } = params;
+    if (!calculatorParams)
+        return DEFAULT_RATE;
+    return isInsurance
+        ? calculatorParams?.rateWithInsurance || DEFAULT_RATE
+        : calculatorParams?.rateWithoutInsurance || DEFAULT_RATE;
+};
+
+;// CONCATENATED MODULE: ./src/components/CreditCalculator/getCreditTermYears.ts
+
+const MAX_YEARS_LENGTH = 5;
+const getCreditTermYears = (minMonths, maxMonths) => {
+    const totalYears = Math.ceil((maxMonths - minMonths) / 12);
+    const firstYear = Math.floor(minMonths / MONTHS_IN_YEAR) + 1;
+    const result = new Array(Math.min(totalYears - 1, MAX_YEARS_LENGTH))
+        .fill(0)
+        .map((_, i) => firstYear + i);
+    const maxYear = totalYears + firstYear - 1;
+    return result.concat(maxYear);
+};
+
+;// CONCATENATED MODULE: ./src/components/CreditCalculator/getMonthlyPayment.ts
 
 
-
-
-
-
-
-
-
-const TITLE_CLASSES = 'font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]';
-const BaseTile = JSX(({ className, context, title, titleSize, description, children, buttons, image, items, version = 'primary', }) => {
-    const router = context.useRouter();
-    const { handlerDecorator } = context;
-    return (jsxs("div", { className: `font-sans flex flex-col grow h-full`, children: [title && (jsx(Title, { size: titleSize || getTitleSizeByClassName(className), className: TITLE_CLASSES, children: title })), jsxs("div", { className: "flex grow justify-between", children: [jsxs("div", { className: "flex flex-col justify-between items-start", children: [jsxs("div", { children: [description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mb-5", children: description })) : null, children, items?.length ? renderItems(items, version) : null] }), buttons?.length ? (jsx("div", { className: "flex mt-9 gap-3", children: buttons.map((button, index) => renderButton(useLink({ router, handlerDecorator }, button), index)) })) : null] }), image?.src && jsx(Img, { className: "mt-auto ml-7", image: image })] })] }));
-});
-function getTitleSizeByClassName(className = '') {
-    const colSpan = getColSpan(className);
-    if (colSpan <= 4) {
-        return 'S';
-    }
-    else if (colSpan <= 8) {
-        return 'M';
+const getMonthlyPayment = (params) => {
+    const { calculatorParams, paymentType, rate, sum, months } = params;
+    if (!calculatorParams)
+        return 0;
+    const finalSum = clamp(sum, calculatorParams.minSum || DEFAULT_MIN_SUM, calculatorParams.maxSum || DEFAULT_MAX_SUM);
+    if (paymentType === 'annuity') {
+        const annuityCoef = Number(rate) / (MONTHS_IN_YEAR * 100);
+        return finalSum * (annuityCoef + annuityCoef / (Math.pow(1 + annuityCoef, months) - 1));
     }
     else {
-        return 'L';
+        return finalSum / months + finalSum * (Number(rate) / 12);
     }
-}
-function renderItems(items = [], version) {
-    return (jsx("section", { className: "max-w-[600px]", role: "list", children: items.map((_, i) => (jsx(BlockItem, { className: i ? 'mt-2.5' : '', text: _, version: version }, String(i)))) }));
-}
-function renderButton({ icon, ...button }, i) {
-    if (!button?.text)
-        return;
-    if (icon)
-        return (jsx(Button, { appendLeft: jsx(Icon, { name: icon, width: "24", height: "24" }), ...button }, String(i)));
-    return jsx(Button, { ...button }, String(i));
+};
+
+;// CONCATENATED MODULE: ./src/components/CreditCalculator/CreditCalculator.tsx
+
+
+
+
+
+
+
+
+
+
+
+
+
+const STEP_MONEY = 1000;
+const STEP_MONTHS = 1;
+const DEFAULT_PAYMENT_TYPE = 'annuity';
+const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
+const CreditCalculator = JSX(({ context, className, directoryName }) => {
+    const [moneyValue, setMoneyValue] = context.useState(undefined);
+    const [monthsValue, setMonthsValue] = context.useState(undefined);
+    const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(true);
+    const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(true);
+    const tableRows = useCreditCalculatorData(context.useAsyncData, directoryName).rows;
+    const calculatorParams = getCalculatorParams({ tableRows, isAnnuity: isAnnuityChecked });
+    const defaultSum = calculatorParams.maxSum && calculatorParams.minSum
+        ? (calculatorParams.maxSum - calculatorParams.minSum) / 2
+        : DEFAULT_SUM;
+    const defaultMonths = calculatorParams.maxMonths && calculatorParams.minMonths
+        ? Math.round((calculatorParams.maxMonths - calculatorParams.minMonths) / 2)
+        : DEFAULT_MONTHS;
+    const minSum = calculatorParams?.minSum || DEFAULT_MIN_SUM;
+    const maxSum = calculatorParams?.maxSum || DEFAULT_MAX_SUM;
+    const minMonths = calculatorParams?.minMonths || DEFAULT_MIN_MONTHS;
+    const maxMonths = calculatorParams?.maxMonths || DEFAULT_MAX_MONTHS;
+    const rate = getCreditRate({ calculatorParams, isInsurance: isInsuranceChecked });
+    const montlyPayment = getMonthlyPayment({
+        calculatorParams,
+        paymentType: DEFAULT_PAYMENT_TYPE,
+        rate,
+        sum: moneyValue || defaultSum,
+        months: monthsValue || defaultMonths,
+    });
+    const creditTermYears = getCreditTermYears(minMonths, maxMonths);
+    function handleButtonClick(value) {
+        setMonthsValue(clamp(value * MONTHS_IN_YEAR, minMonths, maxMonths));
+    }
+    return (jsx("section", { className: `font-sans text-primary-text bg-white p-4 ${className}`, children: jsxs("div", { className: `box-border p-12 flex flex-col justify-between ${borderStyle}`, children: [jsxs("div", { className: "flex justify-between", children: [jsxs("div", { className: "grow mr-11", children: [jsx(InputRange, { title: "\u0416\u0435\u043B\u0430\u0435\u043C\u0430\u044F \u0441\u0443\u043C\u043C\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u20BD", items: [
+                                        `От ${addSpacesBetweenNumbers(minSum)} рублей`,
+                                        `До ${addSpacesBetweenNumbers(maxSum)} рублей`,
+                                    ], min: minSum, max: maxSum, step: STEP_MONEY, value: moneyValue || defaultSum, onChange: setMoneyValue }), jsx(InputRange, { title: "\u0421\u0440\u043E\u043A \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u043C\u0435\u0441\u044F\u0446\u0435\u0432", items: ['Или выберите из предложенных вариантов ниже'], min: minMonths, max: maxMonths, step: STEP_MONTHS, value: monthsValue || defaultMonths, onChange: setMonthsValue }), jsx("div", { className: "flex mb-7", children: creditTermYears.map((number, i) => CreditCalculator_renderButton(number, i, handleButtonClick)) }), jsx(Checkbox, { text: "\u041F\u043E\u043B\u0443\u0447\u0430\u044E \u043F\u0435\u043D\u0441\u0438\u044E \u043D\u0430 \u043A\u0430\u0440\u0442\u0443 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", checked: isAnnuityChecked, onChange: setIsAnnuityChecked }), jsx(Checkbox, { className: "mb-4", text: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u044F \u0437\u0430\u0449\u0438\u0442\u0430", checked: isInsuranceChecked, onChange: setIsInsuranceChecked })] }), jsxs("div", { className: "p-9 bg-primary-main rounded-md text-white", children: [jsx("div", { className: "text-base mb-5", children: "\u041D\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx("div", { className: "text-sm opacity-60", children: "\u0415\u0436\u0435\u043C\u0435\u0441\u044F\u0447\u043D\u044B\u0439 \u043F\u043B\u0430\u0442\u0451\u0436" }), jsxs("div", { className: "text-lg mb-3", children: [addSpacesBetweenNumbers(Math.round(montlyPayment)), " \u20BD"] }), jsx("div", { className: "text-sm opacity-60", children: "\u0421\u0442\u0430\u0432\u043A\u0430" }), jsxs("div", { className: "text-lg", children: [rate, " %"] })] })] }), jsxs("div", { className: "flex items-center", children: [jsx(Button, { className: "mr-3", text: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443", version: "primary", href: "#" }), jsx("div", { className: "w-80 text-xxs leading-4 text-secondary-text", "aria-label": "\u0421\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u0437\u0430\u044F\u0432\u043A\u0443, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0424\u0417\u00A0\u00AB\u041E\u00A0\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\u00BB" })] })] }) }));
+});
+function CreditCalculator_renderButton(number, i, handleClick) {
+    return (jsx("button", { className: "bg-secondary-light rounded-3xl h-10 w-[75px] box-border mr-2 flex items-center justify-center cursor-pointer border-none", onClick: () => handleClick(number), children: jsxs("span", { className: "font-semibold text-sm", children: [number, " ", number === 1 ? 'год' : number > 4 ? 'лет' : 'года'] }) }, String(i)));
 }
 
 ;// CONCATENATED MODULE: ./src/components/Tile/Tile.tsx
@@ -32096,7 +32454,7 @@ const renderContact = (item, index) => {
     const { type, text, description } = item;
     return (jsxs("div", { className: "mb-4", children: [jsx("div", { children: renderText(type, text) }), jsx("div", { className: "font-sans text-sm text-secondary-text", children: description })] }, String(index)));
 };
-const renderText = (type, text) => {
+const renderText = (type, text = '') => {
     switch (type) {
         case 'tel':
             return (jsx("a", { className: "font-sans font-medium text-xl text-primary-text no-underline", href: `tel:${formatTel(text)}`, children: text }));
@@ -32119,14 +32477,6 @@ const HorizontalNavigation = JSX(({ className, links, context }) => {
 });
 const HorizontalNavigationLink = JSX(({ className, index, text, href, target, onClick }) => (jsx("a", { className: `font-sans font-normal text-sm text-secondary-text hover:text-primary-text inline-block no-underline max-w-[292px] ${className || ''}`, href: href, target: target, onClick: onClick, children: text || `Документ ${index}` })));
 
-;// CONCATENATED MODULE: ./src/mergeTopItems.ts
-const cmp = (a) => (b) => a?.href === b?.href;
-const substitute = (items, substitution) => (items || []).map((_) => substitution?.find(cmp(_)) || _);
-const subtract = (minuend, subtrahend) => (minuend || []).filter((_) => !subtrahend?.find(cmp(_)));
-function mergeTopItems(left, right) {
-    return substitute(left, right).concat(subtract(right, left));
-}
-
 ;// CONCATENATED MODULE: ./src/hooks/useSitemap.ts
 
 function useSitemap(useAsyncData) {
@@ -32139,6 +32489,14 @@ async function fetchSitemap() {
 }
 function sitemapURL() {
     return `/wcms-resources/${projectSettings.SITEMAP || 'sitemap'}.json`;
+}
+
+;// CONCATENATED MODULE: ./src/mergeTopItems.ts
+const cmp = (a) => (b) => a?.href === b?.href;
+const substitute = (items, substitution) => (items || []).map((_) => substitution?.find(cmp(_)) || _);
+const subtract = (minuend, subtrahend) => (minuend || []).filter((_) => !subtrahend?.find(cmp(_)));
+function mergeTopItems(left, right) {
+    return substitute(left, right).concat(subtract(right, left));
 }
 
 ;// CONCATENATED MODULE: ./src/components/Footer/Sitemap.tsx
@@ -32379,9 +32737,9 @@ const goldenSequence = (first, size) => [first].concat(size > 0 ? goldenSequence
 const ProductBlockInner = JSX(({ className, context, title, titleSize, description, benefits, buttons, image, items }) => {
     return (jsxs("div", { className: `flex grow justify-between items-stretch ${className || ''}`, children: [jsxs("div", { className: 'flex flex-col', children: [title && (
                     /* TODO Why <Title> is duplicated here?  */
-                    jsx(Title, { size: titleSize || 'XL', className: "font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px] text-primary-text", children: title })), jsx(BaseTile, { context: context, description: description, items: items, buttons: buttons, children: benefits?.length ? (jsx("div", { className: "flex gap-6 mt-6 mb-3.5", children: benefits.map(renderBenefit) })) : null })] }), image?.src && jsx(Img, { className: "mt-auto", image: image })] }));
+                    jsx(Title, { size: titleSize || 'XL', className: "font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px] text-primary-text", children: title })), jsx(BaseTile, { context: context, description: description, items: items, buttons: buttons, children: benefits?.length ? (jsx("div", { className: "flex gap-6 mt-6 mb-3.5", children: benefits.map(ProductBlockInner_renderBenefit) })) : null })] }), image?.src && jsx(Img, { className: "mt-auto", image: image })] }));
 });
-function renderBenefit(benefit, i) {
+function ProductBlockInner_renderBenefit(benefit, i) {
     return (jsxs("div", { className: "flex gap-4 items-center", children: [benefit.icon && (jsx(Icon, { className: "w-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border", name: benefit.icon, width: "24", height: "24" })), jsxs("div", { className: "flex gap-1 flex-col h-full", children: [jsx("h4", { className: "font-medium text-primary-text text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary-text", children: benefit.description }))] })] }, String(i)));
 }
 
@@ -32494,181 +32852,6 @@ const renderStepTitle = (step, i) => {
     return (jsx("div", { className: "flex flex-col items-center text-center relative w-[276px]", children: jsxs("div", { className: "max-w-min", children: [jsx("h5", { className: "font-medium text-xl m-0 mt-4 whitespace-nowrap px-3", children: step.label }), step.description && (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: step.description }))] }) }, String(i)));
 };
 
-;// CONCATENATED MODULE: ./src/hooks/useCreditCalculatorData.ts
-function useCreditCalculatorData(useAsyncData, directoryName) {
-    const { data } = useAsyncData(creditCalculatorUrl(directoryName), () => fetchCreditCalculatorData(directoryName));
-    return data || {};
-}
-async function fetchCreditCalculatorData(directoryName) {
-    const response = await fetch(creditCalculatorUrl(directoryName));
-    return await response.json();
-}
-function creditCalculatorUrl(directoryName) {
-    return `/wcms-resources/${directoryName || 'credit-calculator-data'}.json`;
-}
-
-;// CONCATENATED MODULE: ./src/ui-kit/Checkbox/Checkbox.tsx
-
-
-
-const CHECK_PATHS = [
-    {
-        d: 'M10.207.793a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0l-2.5-2.5a1 1 0 0 1 1.414-1.414L3.5 6.086 8.793.793a1 1 0 0 1 1.414 0Z',
-        fillRule: 'evenodd',
-        clipRule: 'evenodd',
-        fill: 'white',
-    },
-];
-const Checkbox = JSX(({ text, checked, onChange, className }) => (jsx("div", { className: className, children: jsxs("label", { className: "flex items-center cursor-pointer relative", children: [jsx("input", { className: `peer appearance-none w-5 h-5 border-solid border rounded border-black checked:bg-primary-main checked:border-primary-main`, type: "checkbox", onChange: (e) => {
-                    onChange(e.target.checked);
-                }, checked: checked }), jsx(SVG, { paths: CHECK_PATHS, className: "hidden absolute left-2 ml-px peer-checked:block", width: "11", height: "9", fill: "white", viewBox: "0 0 11 9" }), text ? jsx("span", { className: "font-sans ml-2 text-sm cursor-pointer", children: text }) : null] }) })));
-
-;// CONCATENATED MODULE: ./src/utils/addSpacesBetweenNumbers.ts
-const addSpacesBetweenNumbers = (number) => new Intl.NumberFormat('ru-RU', { maximumSignificantDigits: 3 }).format(number);
-
-;// CONCATENATED MODULE: ./src/ui-kit/InputRange/InputRange.tsx
-
-
-
-const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step = 1, value = min, onChange }) => {
-    const handleChange = (value) => {
-        if (!onChange)
-            return;
-        const sanitizedValue = Number(value.replace(/\D/g, ''));
-        onChange(sanitizedValue);
-    };
-    const inputStyle = {
-        backgroundSize: `${(((value - min) * 100) / (max - min)).toFixed(2)}% 100%`,
-    };
-    const handleBlur = () => {
-        if (!onChange)
-            return;
-        if (value < min)
-            onChange(min);
-        if (value > max)
-            onChange(max);
-    };
-    return (jsxs("div", { className: className, children: [jsxs("div", { className: "relative", children: [title ? (jsx("span", { className: "absolute text-xs text-secondary-text top-1 mt-0.5 pl-4 ml-0.5", children: title })) : null, jsx("input", { className: `m-0 font-sans text-sm w-full h-12 border-2 border-solid border-main-divider rounded-md outline-none p-0 pl-4 m-0 box-border text-primary-text ${title ? 'pt-4' : ''}`, value: addSpacesBetweenNumbers(value), onChange: (e) => handleChange(e.target.value), onBlur: handleBlur }), jsx("div", { className: "absolute inset-x-0 mt-0.5 top-8 px-4", children: jsx("input", { className: "box-border w-full m-0 cursor-pointer slider", type: "range", min: min, max: max, step: step, value: value, onChange: (e) => handleChange(e.target.value), style: inputStyle }) })] }), jsx("div", { className: "flex justify-between mt-3 mb-4", children: items.map((item, i) => (jsx("span", { className: "text-xs text-secondary-text pl-4", children: item }, String(i)))) })] }));
-});
-
-;// CONCATENATED MODULE: ./src/utils/clamp.ts
-const clamp = (value, min, max) => Math.max(min, Math.min(value, max));
-
-;// CONCATENATED MODULE: ./src/components/CreditCalculator/constants.ts
-const DEFAULT_MIN_SUM = 30000;
-const DEFAULT_MAX_SUM = 3000000;
-const DEFAULT_SUM = (DEFAULT_MAX_SUM - DEFAULT_MIN_SUM) / 2;
-const DEFAULT_MIN_MONTHS = 1;
-const DEFAULT_MAX_MONTHS = 84;
-const DEFAULT_MONTHS = Math.round((DEFAULT_MAX_MONTHS - DEFAULT_MIN_MONTHS) / 2);
-const MONTHS_IN_YEAR = 12;
-
-;// CONCATENATED MODULE: ./src/components/CreditCalculator/getCalculatorParams.ts
-const getCalculatorParams = (params) => {
-    const { tableRows, isAnnuity = false } = params;
-    if (!tableRows)
-        return {};
-    const calculatorParams = tableRows.find((row) => row.isAnnuity === isAnnuity);
-    return calculatorParams || {};
-};
-
-;// CONCATENATED MODULE: ./src/components/CreditCalculator/getCreditRate.ts
-const DEFAULT_RATE = 5;
-const getCreditRate = (params) => {
-    const { calculatorParams, isInsurance } = params;
-    if (!calculatorParams)
-        return DEFAULT_RATE;
-    return isInsurance
-        ? calculatorParams?.rateWithInsurance || DEFAULT_RATE
-        : calculatorParams?.rateWithoutInsurance || DEFAULT_RATE;
-};
-
-;// CONCATENATED MODULE: ./src/components/CreditCalculator/getCreditTermYears.ts
-
-const MAX_YEARS_LENGTH = 5;
-const getCreditTermYears = (minMonths, maxMonths) => {
-    const totalYears = Math.ceil((maxMonths - minMonths) / 12);
-    const firstYear = Math.floor(minMonths / MONTHS_IN_YEAR) + 1;
-    const result = new Array(Math.min(totalYears - 1, MAX_YEARS_LENGTH))
-        .fill(0)
-        .map((_, i) => firstYear + i);
-    const maxYear = totalYears + firstYear - 1;
-    return result.concat(maxYear);
-};
-
-;// CONCATENATED MODULE: ./src/components/CreditCalculator/getMonthlyPayment.ts
-
-
-const getMonthlyPayment = (params) => {
-    const { calculatorParams, paymentType, rate, sum, months } = params;
-    if (!calculatorParams)
-        return 0;
-    const finalSum = clamp(sum, calculatorParams.minSum || DEFAULT_MIN_SUM, calculatorParams.maxSum || DEFAULT_MAX_SUM);
-    if (paymentType === 'annuity') {
-        const annuityCoef = Number(rate) / (MONTHS_IN_YEAR * 100);
-        return finalSum * (annuityCoef + annuityCoef / (Math.pow(1 + annuityCoef, months) - 1));
-    }
-    else {
-        return finalSum / months + finalSum * (Number(rate) / 12);
-    }
-};
-
-;// CONCATENATED MODULE: ./src/components/CreditCalculator/CreditCalculator.tsx
-
-
-
-
-
-
-
-
-
-
-
-
-
-const STEP_MONEY = 1000;
-const STEP_MONTHS = 1;
-const DEFAULT_PAYMENT_TYPE = 'annuity';
-const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
-const CreditCalculator = JSX(({ context, className, directoryName }) => {
-    const [moneyValue, setMoneyValue] = context.useState(undefined);
-    const [monthsValue, setMonthsValue] = context.useState(undefined);
-    const [isAnnuityChecked, setIsAnnuityChecked] = context.useState(true);
-    const [isInsuranceChecked, setIsInsuranceChecked] = context.useState(true);
-    const tableRows = useCreditCalculatorData(context.useAsyncData, directoryName).rows;
-    const calculatorParams = getCalculatorParams({ tableRows, isAnnuity: isAnnuityChecked });
-    const defaultSum = calculatorParams.maxSum && calculatorParams.minSum
-        ? (calculatorParams.maxSum - calculatorParams.minSum) / 2
-        : DEFAULT_SUM;
-    const defaultMonths = calculatorParams.maxMonths && calculatorParams.minMonths
-        ? Math.round((calculatorParams.maxMonths - calculatorParams.minMonths) / 2)
-        : DEFAULT_MONTHS;
-    const minSum = calculatorParams?.minSum || DEFAULT_MIN_SUM;
-    const maxSum = calculatorParams?.maxSum || DEFAULT_MAX_SUM;
-    const minMonths = calculatorParams?.minMonths || DEFAULT_MIN_MONTHS;
-    const maxMonths = calculatorParams?.maxMonths || DEFAULT_MAX_MONTHS;
-    const rate = getCreditRate({ calculatorParams, isInsurance: isInsuranceChecked });
-    const montlyPayment = getMonthlyPayment({
-        calculatorParams,
-        paymentType: DEFAULT_PAYMENT_TYPE,
-        rate,
-        sum: moneyValue || defaultSum,
-        months: monthsValue || defaultMonths,
-    });
-    const creditTermYears = getCreditTermYears(minMonths, maxMonths);
-    function handleButtonClick(value) {
-        setMonthsValue(clamp(value * MONTHS_IN_YEAR, minMonths, maxMonths));
-    }
-    return (jsx("section", { className: `font-sans text-primary-text bg-white p-4 ${className}`, children: jsxs("div", { className: `box-border p-12 flex flex-col justify-between ${borderStyle}`, children: [jsxs("div", { className: "flex justify-between", children: [jsxs("div", { className: "grow mr-11", children: [jsx(InputRange, { title: "\u0416\u0435\u043B\u0430\u0435\u043C\u0430\u044F \u0441\u0443\u043C\u043C\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u20BD", items: [
-                                        `От ${addSpacesBetweenNumbers(minSum)} рублей`,
-                                        `До ${addSpacesBetweenNumbers(maxSum)} рублей`,
-                                    ], min: minSum, max: maxSum, step: STEP_MONEY, value: moneyValue || defaultSum, onChange: setMoneyValue }), jsx(InputRange, { title: "\u0421\u0440\u043E\u043A \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u043C\u0435\u0441\u044F\u0446\u0435\u0432", items: ['Или выберите из предложенных вариантов ниже'], min: minMonths, max: maxMonths, step: STEP_MONTHS, value: monthsValue || defaultMonths, onChange: setMonthsValue }), jsx("div", { className: "flex mb-7", children: creditTermYears.map((number, i) => CreditCalculator_renderButton(number, i, handleButtonClick)) }), jsx(Checkbox, { text: "\u041F\u043E\u043B\u0443\u0447\u0430\u044E \u043F\u0435\u043D\u0441\u0438\u044E \u043D\u0430 \u043A\u0430\u0440\u0442\u0443 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", checked: isAnnuityChecked, onChange: setIsAnnuityChecked }), jsx(Checkbox, { className: "mb-4", text: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u044F \u0437\u0430\u0449\u0438\u0442\u0430", checked: isInsuranceChecked, onChange: setIsInsuranceChecked })] }), jsxs("div", { className: "p-9 bg-primary-main rounded-md text-white", children: [jsx("div", { className: "text-base mb-5", children: "\u041D\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx("div", { className: "text-sm opacity-60", children: "\u0415\u0436\u0435\u043C\u0435\u0441\u044F\u0447\u043D\u044B\u0439 \u043F\u043B\u0430\u0442\u0451\u0436" }), jsxs("div", { className: "text-lg mb-3", children: [addSpacesBetweenNumbers(Math.round(montlyPayment)), " \u20BD"] }), jsx("div", { className: "text-sm opacity-60", children: "\u0421\u0442\u0430\u0432\u043A\u0430" }), jsxs("div", { className: "text-lg", children: [rate, " %"] })] })] }), jsxs("div", { className: "flex items-center", children: [jsx(Button, { className: "mr-3", text: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443", version: "primary", href: "#" }), jsx("div", { className: "w-80 text-xxs leading-4 text-secondary-text", "aria-label": "\u0421\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u0437\u0430\u044F\u0432\u043A\u0443, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0424\u0417\u00A0\u00AB\u041E\u00A0\u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\u00BB" })] })] }) }));
-});
-function CreditCalculator_renderButton(number, i, handleClick) {
-    return (jsx("button", { className: "bg-secondary-light rounded-3xl h-10 w-[75px] box-border mr-2 flex items-center justify-center cursor-pointer border-none", onClick: () => handleClick(number), children: jsxs("span", { className: "font-semibold text-sm", children: [number, " ", number === 1 ? 'год' : number > 4 ? 'лет' : 'года'] }) }, String(i)));
-}
-
 ;// CONCATENATED MODULE: ./src/components/Blocks.ts
 
 
@@ -32688,25 +32871,31 @@ function CreditCalculator_renderButton(number, i, handleClick) {
 
 
 
+
+
+
 const Blocks = {
-    Header: Header,
-    Footer: Footer,
-    Placeholder: Placeholder,
-    Tile: Tile,
-    PromoTile: PromoTile,
-    TextBlock: TextBlock,
-    ProductTile: ProductTile,
-    ProductBlock: ProductBlock,
-    StepsBlock: StepsBlock,
-    BenefitsBlock: BenefitsBlock,
-    ProductGallery: ProductGallery,
-    ExchangeRateTile: ExchangeRateTile,
-    MobileAppTile: MobileAppTile,
-    Gallery: Gallery,
-    MiniGallery: MiniGallery,
-    ComparisonTable: ComparisonTable,
     Accordion: Accordion,
+    BenefitsBlock: BenefitsBlock,
+    ComparisonTable: ComparisonTable,
     CreditCalculator: CreditCalculator,
+    ExchangeRateTile: ExchangeRateTile,
+    Footer: Footer,
+    Gallery: Gallery,
+    Header: Header,
+    Headline: Headline,
+    LinkDocs: LinkDocs,
+    MiniGallery: MiniGallery,
+    MobileAppTile: MobileAppTile,
+    PictureText: PictureText,
+    Placeholder: Placeholder,
+    ProductBlock: ProductBlock,
+    ProductGallery: ProductGallery,
+    ProductTile: ProductTile,
+    PromoTile: PromoTile,
+    StepsBlock: StepsBlock,
+    TextBlock: TextBlock,
+    Tile: Tile,
 };
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Button/LikeButton.tsx
@@ -32803,17 +32992,21 @@ const ProductBlock_mobile_ProductBlock = JSX(({ titleSize, image, benefits, ...p
 
 
 
+
+
 const MobileBlocks = {
-    Header: Header,
-    Footer: Footer_mobile_Footer,
-    Placeholder: Placeholder,
-    Tile: Tile,
-    ProductTile: ProductTile,
-    ProductBlock: ProductBlock_mobile_ProductBlock,
-    TextBlock: TextBlock,
     ExchangeRateTile: ExchangeRateTile,
-    MobileAppTile: MobileAppTile,
+    Footer: Footer_mobile_Footer,
     Gallery: Gallery_mobile_Gallery,
+    Header: Header,
+    Headline: Headline,
+    MobileAppTile: MobileAppTile,
+    PictureText: PictureText,
+    Placeholder: Placeholder,
+    ProductBlock: ProductBlock_mobile_ProductBlock,
+    ProductTile: ProductTile,
+    TextBlock: TextBlock,
+    Tile: Tile,
     // TODO StepsBlock,
     // TODO BenefitsBlock,
     // TODO ProductGallery
@@ -33348,6 +33541,17 @@ const onlyTitleProps = {
         },
     ] }));
 
+;// CONCATENATED MODULE: ./src/components/Headline/Headline.fixture.tsx
+
+
+
+/* harmony default export */ const Headline_fixture = ({
+    default: (jsx(Headline, { title: "\u0421\u0432\u043E\u044F \u043A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430", description: "\u041A\u0430\u0440\u0442\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432 180 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u043C\u0438\u0440\u0430. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0435 \u0441\u043D\u044F\u0442\u0438\u0435 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u043B\u044E\u0431\u044B\u0445 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u0430\u0445.", align: "left", bgColor: "bg-white", context: context })),
+    'center transparent': (jsx(Headline, { title: "\u0421\u0432\u043E\u044F \u043A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430", description: "\u041A\u0430\u0440\u0442\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432 180 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u043C\u0438\u0440\u0430. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0435 \u0441\u043D\u044F\u0442\u0438\u0435 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u043B\u044E\u0431\u044B\u0445 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u0430\u0445.", align: "center", bgColor: "transparent", context: context })),
+    'right transparent': (jsx(Headline, { title: "\u0421\u0432\u043E\u044F \u043A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430", description: "\u041A\u0430\u0440\u0442\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432 180 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u043C\u0438\u0440\u0430. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0435 \u0441\u043D\u044F\u0442\u0438\u0435 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u043B\u044E\u0431\u044B\u0445 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u0430\u0445.", align: "right", bgColor: "transparent", context: context })),
+    'right white': (jsx(Headline, { title: "\u0421\u0432\u043E\u044F \u043A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430", description: "\u041A\u0430\u0440\u0442\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432 180 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u043C\u0438\u0440\u0430. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0435 \u0441\u043D\u044F\u0442\u0438\u0435 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u043B\u044E\u0431\u044B\u0445 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u0430\u0445.", align: "right", bgColor: "bg-white", context: context })),
+});
+
 ;// CONCATENATED MODULE: ./src/components/LikeControl/LikeControl.fixture.tsx
 
 
@@ -33463,6 +33667,34 @@ const MiniGallery_fixture_onlyTitleProps = {
                     version: 'secondary',
                 },
             ] }) })),
+});
+
+;// CONCATENATED MODULE: ./src/components/PictureText/PictureText.fixture.tsx
+
+
+
+const PictureText_fixture_image = {
+    src: 'legal-support-business.png',
+    format: 'webp',
+    size: {
+        width: 200,
+        height: 200,
+    },
+    alt: 'Варианты потребительского кредита',
+};
+/* harmony default export */ const PictureText_fixture = ({
+    default: (jsx(PictureText, { context: context, title: 'Варианты потребительского кредита', benefits: [
+            {
+                label: 'Кредит по одному документу',
+                description: 'До 300 тыс ₽ по упрощённой процедуре получения кредита',
+                icon: 'DocumentText',
+            },
+            {
+                label: 'Кредит на общих условиях',
+                description: 'До 5 млн ₽ на общих условиях получения кредита',
+                icon: 'DiscountShape',
+            },
+        ], image: PictureText_fixture_image })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/Placeholder/Placeholder.fixture.tsx
@@ -33854,11 +34086,13 @@ const TariffsTableRow = JSX(({ row: { header, data }, activeCardIndex, isLastRow
 
 
 
-
-
-const TariffsTable = JSX(({ className, context, title, rowHeaders, columns, visibleRowLength = 0 }) => {
-    const { activeCardIndex, setActiveCardIndex, isShowAllRow } = useComparisonTableState(context, 0, visibleRowLength);
-    const { colData, rowData } = useComparisonTableData(isShowAllRow, columns, rowHeaders, visibleRowLength);
+const TariffsTable = JSX(({ className, context, title, rowHeaders, columns }) => {
+    const [activeCardIndex, setActiveCardIndex] = context.useState(0);
+    const colData = columns?.map(({ data }) => data) || [];
+    const rowData = rowHeaders?.map((header, i) => ({
+        header,
+        data: colData.map((col) => col?.[i] || [{}]),
+    }));
     const { nextClick, prevClick, isScrollAvailable, showNextButton, showPrevButton } = useComparisonTableScroll(colData, constants_COLS_LENGTH_FOR_SCROLL, activeCardIndex, setActiveCardIndex);
     return (jsxs("section", { className: `bg-white font-sans py-[50px] pl-[50px] overflow-hidden text-primary-text relative ${className || ''}`, children: [jsx(Title, { className: "font-medium m-0 max-w-[47rem] text-center mb-9 mx-auto", children: title }), rowData?.length ? (jsxs("div", { className: "relative", children: [rowData.map((row, i, { length }) => (jsx(TariffsTableRow, { row: row, isLastRow: i + 1 === length, activeCardIndex: activeCardIndex }, String(i)))), isScrollAvailable ? (jsx("div", { children: jsxs("div", { className: "absolute top-7 right-7 z-10", children: [jsx(ArrowButton, { onClick: nextClick, disabled: !showNextButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" }), jsx(ArrowButton, { className: "mt-4 rotate-180", onClick: prevClick, disabled: !showPrevButton, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })] }) })) : null] })) : null, isScrollAvailable ? (jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })) : null] }));
 });
@@ -34174,6 +34408,9 @@ const Tile_fixture_image4 = {
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Icon/IconProps.ts
+/**
+ * Icons sorted by name
+ */
 var IconMap;
 (function (IconMap) {
     IconMap[IconMap["ActualBalanceIcon"] = 0] = "ActualBalanceIcon";
@@ -34185,36 +34422,38 @@ var IconMap;
     IconMap[IconMap["CardTickIcon"] = 6] = "CardTickIcon";
     IconMap[IconMap["ClockIcon"] = 7] = "ClockIcon";
     IconMap[IconMap["ComfortableCompIcon"] = 8] = "ComfortableCompIcon";
-    IconMap[IconMap["DocIcon"] = 9] = "DocIcon";
-    IconMap[IconMap["DollarIcon"] = 10] = "DollarIcon";
-    IconMap[IconMap["EmptyWalletChangeIcon"] = 11] = "EmptyWalletChangeIcon";
-    IconMap[IconMap["EmptyWalletIcon"] = 12] = "EmptyWalletIcon";
-    IconMap[IconMap["EuroIcon"] = 13] = "EuroIcon";
-    IconMap[IconMap["GlassIcon"] = 14] = "GlassIcon";
-    IconMap[IconMap["GridIcon"] = 15] = "GridIcon";
-    IconMap[IconMap["JCBIcon"] = 16] = "JCBIcon";
-    IconMap[IconMap["LoupeIcon"] = 17] = "LoupeIcon";
-    IconMap[IconMap["MasterCardIcon"] = 18] = "MasterCardIcon";
-    IconMap[IconMap["MinusIcon"] = 19] = "MinusIcon";
-    IconMap[IconMap["MirIcon"] = 20] = "MirIcon";
-    IconMap[IconMap["MoneyIcon"] = 21] = "MoneyIcon";
-    IconMap[IconMap["MonitorMobileIcon"] = 22] = "MonitorMobileIcon";
-    IconMap[IconMap["NewDocIcon"] = 23] = "NewDocIcon";
-    IconMap[IconMap["OkIcon"] = 24] = "OkIcon";
-    IconMap[IconMap["PassSendIcon"] = 25] = "PassSendIcon";
-    IconMap[IconMap["PercentageSquareIcon"] = 26] = "PercentageSquareIcon";
-    IconMap[IconMap["PlayMarketIcon"] = 27] = "PlayMarketIcon";
-    IconMap[IconMap["PlusIcon"] = 28] = "PlusIcon";
-    IconMap[IconMap["Profile2UserIcon"] = 29] = "Profile2UserIcon";
-    IconMap[IconMap["ProfileIcon"] = 30] = "ProfileIcon";
-    IconMap[IconMap["ShieldTickIcon"] = 31] = "ShieldTickIcon";
-    IconMap[IconMap["SignDocsIcon"] = 32] = "SignDocsIcon";
-    IconMap[IconMap["TelegramIcon"] = 33] = "TelegramIcon";
-    IconMap[IconMap["UnionPayIcon"] = 34] = "UnionPayIcon";
-    IconMap[IconMap["UserIcon"] = 35] = "UserIcon";
-    IconMap[IconMap["VisaIcon"] = 36] = "VisaIcon";
-    IconMap[IconMap["VKIcon"] = 37] = "VKIcon";
-    IconMap[IconMap["WalletIcon"] = 38] = "WalletIcon";
+    IconMap[IconMap["DiscountShape"] = 9] = "DiscountShape";
+    IconMap[IconMap["DocIcon"] = 10] = "DocIcon";
+    IconMap[IconMap["DocumentText"] = 11] = "DocumentText";
+    IconMap[IconMap["DollarIcon"] = 12] = "DollarIcon";
+    IconMap[IconMap["EmptyWalletChangeIcon"] = 13] = "EmptyWalletChangeIcon";
+    IconMap[IconMap["EmptyWalletIcon"] = 14] = "EmptyWalletIcon";
+    IconMap[IconMap["EuroIcon"] = 15] = "EuroIcon";
+    IconMap[IconMap["GlassIcon"] = 16] = "GlassIcon";
+    IconMap[IconMap["GridIcon"] = 17] = "GridIcon";
+    IconMap[IconMap["JCBIcon"] = 18] = "JCBIcon";
+    IconMap[IconMap["LoupeIcon"] = 19] = "LoupeIcon";
+    IconMap[IconMap["MasterCardIcon"] = 20] = "MasterCardIcon";
+    IconMap[IconMap["MinusIcon"] = 21] = "MinusIcon";
+    IconMap[IconMap["MirIcon"] = 22] = "MirIcon";
+    IconMap[IconMap["MoneyIcon"] = 23] = "MoneyIcon";
+    IconMap[IconMap["MonitorMobileIcon"] = 24] = "MonitorMobileIcon";
+    IconMap[IconMap["NewDocIcon"] = 25] = "NewDocIcon";
+    IconMap[IconMap["OkIcon"] = 26] = "OkIcon";
+    IconMap[IconMap["PassSendIcon"] = 27] = "PassSendIcon";
+    IconMap[IconMap["PercentageSquareIcon"] = 28] = "PercentageSquareIcon";
+    IconMap[IconMap["PlayMarketIcon"] = 29] = "PlayMarketIcon";
+    IconMap[IconMap["PlusIcon"] = 30] = "PlusIcon";
+    IconMap[IconMap["Profile2UserIcon"] = 31] = "Profile2UserIcon";
+    IconMap[IconMap["ProfileIcon"] = 32] = "ProfileIcon";
+    IconMap[IconMap["ShieldTickIcon"] = 33] = "ShieldTickIcon";
+    IconMap[IconMap["SignDocsIcon"] = 34] = "SignDocsIcon";
+    IconMap[IconMap["TelegramIcon"] = 35] = "TelegramIcon";
+    IconMap[IconMap["UnionPayIcon"] = 36] = "UnionPayIcon";
+    IconMap[IconMap["UserIcon"] = 37] = "UserIcon";
+    IconMap[IconMap["VisaIcon"] = 38] = "VisaIcon";
+    IconMap[IconMap["VKIcon"] = 39] = "VKIcon";
+    IconMap[IconMap["WalletIcon"] = 40] = "WalletIcon";
 })(IconMap || (IconMap = {}));
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Icon/Icon.fixture.tsx
@@ -34302,6 +34541,9 @@ var IconMap;
 
 
 
+
+
+
 const rendererConfig = {
   "containerQuerySelector": null
 };
@@ -34316,9 +34558,12 @@ const fixtures = {
   'src/components/Footer/Footer.fixture.tsx': { module: { default: Footer_fixture } },
   'src/components/Gallery/Gallery.fixture.tsx': { module: { default: Gallery_fixture } },
   'src/components/Header/Header.fixture.tsx': { module: { default: Header_fixture } },
+  'src/components/Headline/Headline.fixture.tsx': { module: { default: Headline_fixture } },
   'src/components/LikeControl/LikeControl.fixture.tsx': { module: { default: LikeControl_fixture } },
+  'src/components/LinkDocs/LinkDocs.fixture.tsx': { module: { default: LinkDocs_fixture } },
   'src/components/MiniGallery/MiniGallery.fixture.tsx': { module: { default: MiniGallery_fixture } },
   'src/components/MobileAppTile/MobileAppTile.fixture.tsx': { module: { default: MobileAppTile_fixture } },
+  'src/components/PictureText/PictureText.fixture.tsx': { module: { default: PictureText_fixture } },
   'src/components/Placeholder/Placeholder.fixture.tsx': { module: { default: Placeholder_fixture } },
   'src/components/ProductBlock/ProductBlock.fixture.tsx': { module: { default: ProductBlock_fixture } },
   'src/components/ProductGallery/ProductGallery.fixture.tsx': { module: { default: ProductGallery_fixture } },
@@ -40159,7 +40404,7 @@ module.exports = __webpack_require__.p + "92c10e8d48ecdcd8ee10.woff2";
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"title":"Кредиты","slug":"credits","description":"Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.","keywords":["кредит","акция"],"robots":["index","follow"],"og":{"type":"article","url":"https://foo.com/bar/baz"},"date":"2022-04-08","style":["p-20","pt-0","gap-5","bg-secondary-light"],"likeControl":true,"blocks":[{"type":"Header","style":["col-span-12","-mx-20","mb-5","shadow-[0_8px_32px_0px_#00000014]"],"content":{"defaultLocation":"Москва","topItems":[{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank"},{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank"}]}},{"type":"ProductGallery","style":["col-span-12"],"content":{"slides":[{"nav":{"title":"Деньги на любые цели","desc":"Ставка от 12,5% годовых на срок до 5 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 5 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","alt":"Кредит наличными","size":{"width":280,"height":280}}}},{"nav":{"title":"Для людей в возрасте","desc":"Ставка от 12,5% годовых на срок до 3 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 3 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"worker.png","title":"Рабочий","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Выгодно покупать","desc":"Дополнительные бонусные баллы за покупки"},"productBlock":{"title":"Дополнительные бонусные баллы за покупки!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Карты Unionpay","desc":"Кэшбэк до 20% у партнеров"},"productBlock":{"title":"Карты Unionpay»","description":"Кэшбэк до 20% у партнеров","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}}]}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Кредиты","items":["Кредитный лимит до 10 млн ₽","Кредиты наличными на любые цели","Получите деньги без залога и поручителей"],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","version":"secondary","style":["col-span-4"],"content":{"title":"Ипотека","titleSize":"M","description":"Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"promo":true},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Банковские пластиковые карты","items":["Счета в разных валютах","Бесплатное обслуживание","Кэшбэк до 15% от покупок"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Премиальные продукты","description":"Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"column-1.png","alt":"Column","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Экосистема «СВОЕ», созданная для людей","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом","Подробная база вакансий для жителей сельской местности"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"globe-1.png","title":"Глобус","format":"webp","size":{"width":200,"height":200}}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Драгоценные металлы","items":["Счета в драгоценных металлах","Слитки  и монеты из драгоценных металлов"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Банковские ячейки","items":["Полная конфиденциальность","Разный размер ячеек","Оформление доверенностей"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Вклады и сбережения","items":["Доходность по вкладам  до 15% годовых","Минимальная сумма вклада  от 3000 Р","Минимальный срок вклада от 1 месяца"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"PromoTile","style":["col-span-4"],"content":{"title":"Акции и спецпредложения","version":"secondary","date":"2022-04-16","description":"Пенсионный кредит по специальной процентной ставке","buttons":[{"text":"Все акции","href":"/credits","version":"secondary"}]},"mobile":{"hidden":true}},{"type":"ExchangeRateTile","style":["col-span-4"],"mobile":{"style":["col-span-12"]}},{"type":"MobileAppTile","style":["col-span-4"],"content":{"qr":{"href":"https://rshbnaturaldbo.onelink.me/qhkF/f182074f?af_qr=true","src":"data:image/png;base64,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"},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"#","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarketIcon","href":"#","version":"secondary"}]},"mobile":{"style":["col-span-12"]},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"/credits","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarket","href":"/credits","version":"secondary"}]},{"type":"Unknown","style":["col-span-12"],"content":{"title":"Какой то новый блок"}},{"type":"ProductBlock","style":["col-span-12"],"content":{"title":"Потребительский кредит наличными","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","breadcrumbs":[{"text":"Главная","href":"/"},{"text":"Кредитные карты","href":"/credit"},{"text":"Кредитная карта Своя Union Pay"}],"benefits":[{"label":"До 5 млн ₽","description":"Кредитный лимит","icon":"EmptyWalletIcon"},{"label":"От 16,9%","description":"Ставка по кредиту","icon":"PercentageSquareIcon"},{"label":"До 5 лет","description":"Срок кредитования","icon":"CalendarIcon"}],"buttons":[{"href":"https://rshb.ru","text":"Оформить карту","target":"_blank","version":"primary"},{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"secondary"}],"image":{"src":"money-1.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":280,"height":280}}}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Кредит На все, что хочется!”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 5 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 5 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"card-with-diamond.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Пенсионный кредит”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 3 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"letter-with-money.png","alt":"Пенсионный кредит в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-8"],"content":{"title":"Кредит под залог недвижимости","description":"Без переоформления залогой недвижимости на банк","benefits":[{"label":"Кредитный лимит","description":"до 10 млн Р"},{"label":"Процентная ставка","description":"от 21,5%"},{"label":"Срок кредитования","description":"до 10 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"building.png","alt":"Кредит под залог недвижимости в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-4"],"version":"secondary","content":{"title":"Кредит пенсионный","titleSize":"M","description":"Для людей в возрасте до 75 лет","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 16,8%"},{"label":"Срок кредитования","description":"до 150 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Рефинансирование кредитов","items":["Без справок и документов из других банков","Погашение ранее взятых кредитов в любых банках","Рефинансировать можно  кредит физического лица, кредитную карту, микрозайм или ипотеку"],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":200,"height":200}}}},{"type":"StepsBlock","style":["col-span-12"],"content":{"title":"Рассчитайте условия на онлайн-калькуляторе и оставьте заявку на потребительский кредит","steps":[{"label":"Заявка на кредит","description":"Оставьте онлайн-заявку на потребительский кредит"},{"label":"В случае одобрения","description":"Менеджер свяжется с вами и согласует встречу"},{"label":"Получение наличных","description":"Получите наличные в отделении банка"}]}},{"type":"TextBlock","style":["col-span-12"],"content":{"title":"Все карты Россельхозбанка работают","description":"Если не планируете поездку за границу, продолжайте пользоваться картой Своя. Для поездок за границу можно заказать карту \'Кредитная карта Своя Union Pay\' на сайте и в приложении Россельхозбанка","blockVersion":"primary","iconVersion":"small"}},{"type":"Gallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"money-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"globe-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]}]}},{"type":"MiniGallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"}]}},{"type":"ComparisonTable","style":["col-span-12"],"content":{"title":"Другие вклады и сбережения","rowHeaders":[{"title":"Начисление процентов на остаток по счету"},{"title":"Снятие наличных"},{"title":"Оформление онлайн"},{"title":"Кэшбэк баллами"},{"title":"Стоимость обслуживания"},{"title":"Стоимость SMS-сервиса"},{"title":"Дополнительная информация"}],"columns":[{"header":{"title":"Россельхоз-Росснефть","image":{"alt":"card-1","src":"card-1.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"Бесплатно","description":"В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 7%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть"}]]},{"header":{"title":"Panasonic","image":{"alt":"card-2","src":"card-2.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"1%","description":"В сторонних банкоматах, минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic"}]]},{"header":{"title":"Профсоюзная","image":{"alt":"card-3","src":"card-3.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно"}],[{"label":"Есть"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Для членов профсоюзных организаций"}]]},{"header":{"title":"Россельхоз-Росснефть","image":{"alt":"card-1","src":"card-1.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"Бесплатно","description":"В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 7%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть"}]]},{"header":{"title":"Panasonic","image":{"alt":"card-2","src":"card-2.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"1%","description":"В сторонних банкоматах, минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic"}]]},{"header":{"title":"Профсоюзная","image":{"alt":"card-3","src":"card-3.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно"}],[{"label":"Есть"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Для членов профсоюзных организаций"}]]}]}},{"type":"Accordion","style":["col-span-12"],"content":{"title":"Accordion title","accordionItems":[{"label":"Accordion label 1","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]},{"label":"Accordion label 2","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]},{"label":"Accordion label 3","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]}]}},{"type":"CreditCalculator","style":["col-span-12"],"content":{"directoryName":"credit-calculator-data"}},{"type":"Footer","style":["col-span-12"],"content":{"topItems":[{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"Кредитные карты"},{"href":"https://rshb.ru/","text":"Дебетовые карты"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Ипотека"},{"href":"https://rshb.ru/","text":"Вклады и сбережения"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Премиальным клиентам"},{"href":"https://rshb.ru/","text":"Биометрическая регистрация"},{"href":"https://rshb.ru/","text":"Перевод денег"},{"href":"https://rshb.ru/","text":"Обмен денег"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]},{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"РКО"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Депозиты"},{"href":"https://rshb.ru/","text":"Эквайринг"},{"href":"https://rshb.ru/","text":"Банковские карты"},{"href":"https://rshb.ru/","text":"ВЭД"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Обмен валюты"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Партнёрские программы"},{"href":"https://rshb.ru/","text":"Онлайн-сервисы"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]}],"contacts":[{"text":"+7 (495) 787-7-787","description":"Для звонков из-за границы","type":"tel"},{"text":"example@example.com","description":"Для писем","type":"email"},{"text":"7787","description":"Абонентам МТС, Мегафон, Билайн и Tele2","type":"tel"}],"documents":[{"text":"Информация о процентных ставках по договорам банковского вклада с физическими лицами","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации профессиональным участником рынка ценных бумаг","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации","href":"https://rshb.ru/","target":"_blank"},{"text":"Удостоверяющий центр","href":"https://rshb.ru/","target":"_blank"},{"text":"Финансовая культура","href":"https://rshb.ru/","target":"_blank"}],"socialMedia":[{"href":"https://vk.com"},{"href":"https://ok.ru"},{"href":"https://t.me"}]}}]}');
+module.exports = JSON.parse('{"title":"Кредиты","slug":"credits","description":"Акционерное общество «Российский Сельскохозяйственный банк»* — один из крупнейших банков в России. Созданный в 2000 году в целях развития национальной кредитно-финансовой системы.","keywords":["кредит","акция"],"robots":["index","follow"],"og":{"type":"article","url":"https://foo.com/bar/baz"},"date":"2022-04-08","style":["p-20","pt-0","gap-5","bg-secondary-light"],"likeControl":true,"blocks":[{"type":"Header","style":["col-span-12","-mx-20","mb-5","shadow-[0_8px_32px_0px_#00000014]"],"content":{"defaultLocation":"Москва","topItems":[{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank"},{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank"}]}},{"type":"ProductGallery","style":["col-span-12"],"content":{"slides":[{"nav":{"title":"Деньги на любые цели","desc":"Ставка от 12,5% годовых на срок до 5 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 5 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","alt":"Кредит наличными","size":{"width":280,"height":280}}}},{"nav":{"title":"Для людей в возрасте","desc":"Ставка от 12,5% годовых на срок до 3 лет"},"productBlock":{"title":"Ставка от 12,5% годовых на срок до 3 лет!»","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"worker.png","title":"Рабочий","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Выгодно покупать","desc":"Дополнительные бонусные баллы за покупки"},"productBlock":{"title":"Дополнительные бонусные баллы за покупки!»","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}},{"nav":{"title":"Карты Unionpay","desc":"Кэшбэк до 20% у партнеров"},"productBlock":{"title":"Карты Unionpay»","description":"Кэшбэк до 20% у партнеров","items":["Потребительский кредит по специальной процентной ставке","Получите деньги без залога и поручительства","Кредитный лимит до 5 млн рублей"],"buttons":[{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"primary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":280,"height":280}}}}]}},{"type":"Tile","style":["col-span-8"],"content":{"title":"Кредиты","items":["Кредитный лимит до 10 млн ₽","Кредиты наличными на любые цели","Получите деньги без залога и поручителей"],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"money-1.png","title":"деньги","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","version":"secondary","style":["col-span-4"],"content":{"title":"Ипотека","titleSize":"M","description":"Широкий выбор ипотечных программ с государственной поддержкой. Специальный предложения от 12,2 %","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"promo":true},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Банковские пластиковые карты","items":["Счета в разных валютах","Бесплатное обслуживание","Кэшбэк до 15% от покупок"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"credit-card-1.png","title":"Кредитка","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-6"],"content":{"title":"Премиальные продукты","description":"Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус","buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"column-1.png","alt":"Column","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Экосистема «СВОЕ», созданная для людей","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом","Подробная база вакансий для жителей сельской местности"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}],"image":{"src":"globe-1.png","title":"Глобус","format":"webp","size":{"width":200,"height":200}}}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Драгоценные металлы","items":["Счета в драгоценных металлах","Слитки  и монеты из драгоценных металлов"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Банковские ячейки","items":["Полная конфиденциальность","Разный размер ячеек","Оформление доверенностей"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-4"],"content":{"title":"Вклады и сбережения","items":["Доходность по вкладам  до 15% годовых","Минимальная сумма вклада  от 3000 Р","Минимальный срок вклада от 1 месяца"],"buttons":[{"text":"Подробнее","href":"/credits","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"PromoTile","style":["col-span-4"],"content":{"title":"Акции и спецпредложения","version":"secondary","date":"2022-04-16","description":"Пенсионный кредит по специальной процентной ставке","buttons":[{"text":"Все акции","href":"/credits","version":"secondary"}]},"mobile":{"hidden":true}},{"type":"ExchangeRateTile","style":["col-span-4"],"mobile":{"style":["col-span-12"]}},{"type":"MobileAppTile","style":["col-span-4"],"content":{"qr":{"href":"https://rshbnaturaldbo.onelink.me/qhkF/f182074f?af_qr=true","src":"data:image/png;base64,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"},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"#","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarketIcon","href":"#","version":"secondary"}]},"mobile":{"style":["col-span-12"]},"buttons":[{"aboveText":"Загрузите в","text":"App Store","icon":"AppleIcon","href":"/credits","version":"secondary"},{"aboveText":"Доступно в","text":"Google Play","icon":"PlayMarket","href":"/credits","version":"secondary"}]},{"type":"Unknown","style":["col-span-12"],"content":{"title":"Какой то новый блок"}},{"type":"ProductBlock","style":["col-span-12"],"content":{"title":"Потребительский кредит наличными","description":"Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт.","breadcrumbs":[{"text":"Главная","href":"/"},{"text":"Кредитные карты","href":"/credit"},{"text":"Кредитная карта Своя Union Pay"}],"benefits":[{"label":"До 5 млн ₽","description":"Кредитный лимит","icon":"EmptyWalletIcon"},{"label":"От 16,9%","description":"Ставка по кредиту","icon":"PercentageSquareIcon"},{"label":"До 5 лет","description":"Срок кредитования","icon":"CalendarIcon"}],"buttons":[{"href":"https://rshb.ru","text":"Оформить карту","target":"_blank","version":"primary"},{"href":"https://rshb.ru","text":"Подробнее","target":"_blank","version":"secondary"}],"image":{"src":"money-1.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":280,"height":280}}}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Кредит На все, что хочется!”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 5 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 5 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","version":"secondary"}],"image":{"src":"card-with-diamond.png","alt":"Кредиты в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-6"],"content":{"title":"Акция! “Пенсионный кредит”","description":"Потребительский кредит на любые цели, без залога и поручительства","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 12,5%"},{"label":"Срок кредитования","description":"до 3 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"letter-with-money.png","alt":"Пенсионный кредит в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-8"],"content":{"title":"Кредит под залог недвижимости","description":"Без переоформления залогой недвижимости на банк","benefits":[{"label":"Кредитный лимит","description":"до 10 млн Р"},{"label":"Процентная ставка","description":"от 21,5%"},{"label":"Срок кредитования","description":"до 10 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"building.png","alt":"Кредит под залог недвижимости в РСХБ","format":"webp","size":{"width":180,"height":180}}},"mobile":{"style":["col-span-12"]}},{"type":"ProductTile","style":["col-span-4"],"version":"secondary","content":{"title":"Кредит пенсионный","titleSize":"M","description":"Для людей в возрасте до 75 лет","benefits":[{"label":"Кредитный лимит","description":"до 3 млн Р"},{"label":"Процентная ставка","description":"от 16,8%"},{"label":"Срок кредитования","description":"до 150 лет"}],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}]},"mobile":{"style":["col-span-12"]}},{"type":"Tile","style":["col-span-12"],"content":{"title":"Рефинансирование кредитов","items":["Без справок и документов из других банков","Погашение ранее взятых кредитов в любых банках","Рефинансировать можно  кредит физического лица, кредитную карту, микрозайм или ипотеку"],"buttons":[{"text":"Подробнее","href":"/credit-cards","target":"_blank","version":"secondary"}],"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":200,"height":200}}}},{"type":"StepsBlock","style":["col-span-12"],"content":{"title":"Рассчитайте условия на онлайн-калькуляторе и оставьте заявку на потребительский кредит","steps":[{"label":"Заявка на кредит","description":"Оставьте онлайн-заявку на потребительский кредит"},{"label":"В случае одобрения","description":"Менеджер свяжется с вами и согласует встречу"},{"label":"Получение наличных","description":"Получите наличные в отделении банка"}]}},{"type":"TextBlock","style":["col-span-12"],"content":{"title":"Все карты Россельхозбанка работают","description":"Если не планируете поездку за границу, продолжайте пользоваться картой Своя. Для поездок за границу можно заказать карту \'Кредитная карта Своя Union Pay\' на сайте и в приложении Россельхозбанка","blockVersion":"primary","iconVersion":"small"}},{"type":"Gallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"money-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"globe-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"money-2.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]},{"image":{"src":"credit-card-1.png","title":"Деньги","format":"webp","size":{"width":140,"height":140}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств","href":"/credit-cards","items":["Качественные фермерские продукты напрямую от производителей","Самая большая база сельских туров по России","Площадки для создания комфортной жизни за городом"]}]}},{"type":"MiniGallery","style":["col-span-12"],"content":{"title":"Вы можете оплатить бонусными баллами","description":"Удобный каталог с большим ассортиментом товаров и сервисов","cards":[{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 5000 товаров","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Более 1000 развлечений","description":"Порядок и условия предоставления в соответствии с 106 ФЗ"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"«Моя выгода»","description":"Время копить: ставка растет в зависимости от срока нахождения средств на Счете!"},{"image":{"src":"domovoj-kupon.png","title":"Деньги","format":"webp","size":{"width":120,"height":70}},"title":"Фермерские продукты","description":"Высокий процент даже при небольшой сумме денежных средств"}]}},{"type":"ComparisonTable","style":["col-span-12"],"content":{"title":"Другие вклады и сбережения","rowHeaders":[{"title":"Начисление процентов на остаток по счету"},{"title":"Снятие наличных"},{"title":"Оформление онлайн"},{"title":"Кэшбэк баллами"},{"title":"Стоимость обслуживания"},{"title":"Стоимость SMS-сервиса"},{"title":"Дополнительная информация"}],"columns":[{"header":{"title":"Россельхоз-Росснефть","image":{"alt":"card-1","src":"card-1.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"Бесплатно","description":"В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 7%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть"}]]},{"header":{"title":"Panasonic","image":{"alt":"card-2","src":"card-2.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"1%","description":"В сторонних банкоматах, минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic"}]]},{"header":{"title":"Профсоюзная","image":{"alt":"card-3","src":"card-3.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно"}],[{"label":"Есть"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Для членов профсоюзных организаций"}]]},{"header":{"title":"Россельхоз-Росснефть","image":{"alt":"card-1","src":"card-1.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"Бесплатно","description":"В сторонних банкоматах - 1 раз в месяц, далее 1% минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 7%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Оплачивайте покупки картой и заправляйтесь за баллы в сети АЗС Роснефть"}]]},{"header":{"title":"Panasonic","image":{"alt":"card-2","src":"card-2.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно","description":"В банкоматах и кассах Россельхозбанка и банков-партнеров"},{"label":"1%","description":"В сторонних банкоматах, минимум 150 руб"}],[{"label":"Нет"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Копите баллы каждый день и обменивайте их на скидки на электронику и бытовую технику Panasonic"}]]},{"header":{"title":"Профсоюзная","image":{"alt":"card-3","src":"card-3.png","format":"webp","size":{"width":100,"height":63}},"link":{"text":"Подробнее","href":"/credits"}},"data":[[{"label":"Нет"}],[{"label":"Бесплатно"}],[{"label":"Есть"}],[{"label":"До 20%"}],[{"label":"Бесплатно","description":"При обороте по карте от 10000 ₽ в месяц"}],[{"label":"69 рублей в месяц"}],[{"description":"Для членов профсоюзных организаций"}]]}]}},{"type":"Accordion","style":["col-span-12"],"content":{"title":"Accordion title","accordionItems":[{"label":"Accordion label 1","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]},{"label":"Accordion label 2","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]},{"label":"Accordion label 3","blocks":[{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}},{"type":"TextBlock","data":{"title":"Title","description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?","blockVersion":"secondary-light","iconVersion":"small"}}]}]}},{"type":"Headline","style":["col-span-12"],"content":{"title":"Своя кредитная карта","description":"Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.","align":"center","bgColor":"transparent"}},{"type":"LinkDocs","style":["col-span-12"],"content":{"title":"Дополнительные документы","icon":"DocIcon","documents":[{"text":"target self","href":"/abc1/cooldoc.doc","target":"_self"},{"text":"target blank","href":"/abc2/wtf.rtf","target":"_blank"},{"text":"GlassIcon","href":"/abc3/map.jpeg"},{"text":"no icon","href":"/abc4"},{"text":"документ 5","href":"/abc5"},{"text":"документ 6","href":"/abc6/abc.pdf"},{"text":"Text text text","href":"/abc7/yolo.png"},{"text":"Some more generic text, and even more, more text","href":"/abc8/archive.zip","fileSize":"2.3МБ"},{"text":"И ещё немного текста","href":"/abc9/rarniw.rar","fileSize":"666МБ"},{"text":"Форматируем, сортируем, смотрим как отображается...","href":"/abc10/","fileSize":"65ГБ"}]}},{"type":"PictureText","style":["col-span-12"],"content":{"title":"Варианты потребительского кредита","benefits":[{"label":"Кредит по одному документу","description":"До 300 тыс ₽ по упрощённой процедуре получения кредита","icon":"DocumentText"},{"label":"Кредит на общих условиях","description":"До 5 млн ₽ на общих условиях получения кредита","icon":"DiscountShape"}],"image":{"src":"legal-support-business.png","alt":"Варианты потребительского кредита","format":"webp","size":{"width":200,"height":200}}}},{"type":"Footer","style":["col-span-12"],"content":{"topItems":[{"href":"https://rshb.ru/","text":"Частным клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"Кредитные карты"},{"href":"https://rshb.ru/","text":"Дебетовые карты"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Ипотека"},{"href":"https://rshb.ru/","text":"Вклады и сбережения"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Премиальным клиентам"},{"href":"https://rshb.ru/","text":"Биометрическая регистрация"},{"href":"https://rshb.ru/","text":"Перевод денег"},{"href":"https://rshb.ru/","text":"Обмен денег"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]},{"href":"https://rshb.ru/","text":"Бизнес клиентам","target":"_blank","items":[{"href":"https://rshb.ru/","text":"РКО"},{"href":"https://rshb.ru/","text":"Кредиты"},{"href":"https://rshb.ru/","text":"Депозиты"},{"href":"https://rshb.ru/","text":"Эквайринг"},{"href":"https://rshb.ru/","text":"Банковские карты"},{"href":"https://rshb.ru/","text":"ВЭД"},{"href":"https://rshb.ru/","text":"Инвестиции"},{"href":"https://rshb.ru/","text":"Обмен валюты"},{"href":"https://rshb.ru/","text":"Страхование"},{"href":"https://rshb.ru/","text":"Партнёрские программы"},{"href":"https://rshb.ru/","text":"Онлайн-сервисы"},{"href":"https://rshb.ru/","text":"Акции"},{"href":"https://rshb.ru/","text":"Тарифы"},{"href":"https://rshb.ru/","text":"Архивная информация"}]}],"contacts":[{"text":"+7 (495) 787-7-787","description":"Для звонков из-за границы","type":"tel"},{"text":"example@example.com","description":"Для писем","type":"email"},{"text":"7787","description":"Абонентам МТС, Мегафон, Билайн и Tele2","type":"tel"}],"documents":[{"text":"Информация о процентных ставках по договорам банковского вклада с физическими лицами","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации профессиональным участником рынка ценных бумаг","href":"https://rshb.ru/","target":"_blank"},{"text":"Раскрытие информации","href":"https://rshb.ru/","target":"_blank"},{"text":"Удостоверяющий центр","href":"https://rshb.ru/","target":"_blank"},{"text":"Финансовая культура","href":"https://rshb.ru/","target":"_blank"}],"socialMedia":[{"href":"https://vk.com"},{"href":"https://ok.ru"},{"href":"https://t.me"}]}}]}');
 
 /***/ })
 
@@ -40336,7 +40581,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(6525),
+  var _require = __webpack_require__(2049),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

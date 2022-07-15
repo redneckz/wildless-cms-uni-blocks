@@ -9,8 +9,6 @@ import type { ComparisonTableContent } from './ComparisonTableContent';
 import { HeaderCell } from './HeaderCell';
 import { TableRow } from './TableRow';
 import { COLS_LENGTH_FOR_SCROLL, COLUMN_WIDTH, FIRST_CELL_CLASSES } from './constants';
-import { useComparisonTableState } from '../../hooks/useComparisonTableState';
-import { useComparisonTableData } from '../../hooks/useComparisonTableData';
 import { useComparisonTableScroll } from '../../hooks/useComparisonTableScroll';
 
 export interface ComparisonTableProps extends ComparisonTableContent, UniBlockProps {}
@@ -28,15 +26,17 @@ export const ComparisonTable = JSX<ComparisonTableProps>(
     const router = context.useRouter();
     const { handlerDecorator } = context;
 
-    const { activeCardIndex, setActiveCardIndex, isShowAllRow, setIsShowAllRow } =
-      useComparisonTableState(context, 0, visibleRowLength);
+    const [activeCardIndex, setActiveCardIndex] = context.useState(0);
+    const [isShowAllRow, setIsShowAllRow] = context.useState(!visibleRowLength);
 
-    const { colHeaders, colData, rowData } = useComparisonTableData(
-      isShowAllRow,
-      columns,
-      rowHeaders,
-      visibleRowLength,
-    );
+    const colHeaders = columns?.map(({ header }) => header || {});
+    const colData = columns?.map(({ data }) => data) || [];
+    const rowData = rowHeaders
+      ?.map((header, i) => ({
+        header,
+        data: colData.map((col) => col?.[i] || [{}]),
+      }))
+      .slice(0, isShowAllRow ? rowHeaders.length : visibleRowLength);
 
     const { nextClick, prevClick, isScrollAvailable, showNextButton, showPrevButton } =
       useComparisonTableScroll(

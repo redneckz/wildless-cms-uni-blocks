@@ -1,9 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ExchangeRateTileContent } from './ExchangeRateTileContent';
-import { Tile } from '../Tile/Tile';
 import type { UniBlockProps } from '../../types';
 import type { ButtonProps } from '../../ui-kit/Button/ButtonProps';
 import { Icon } from '../../ui-kit/Icon/Icon';
+import { Tile } from '../Tile/Tile';
+import type { ExchangeRateTileContent } from './ExchangeRateTileContent';
 
 export interface ExchangeRateTileProps extends ExchangeRateTileContent, UniBlockProps {}
 

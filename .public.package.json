@@ -1,6 +1,6 @@
 {
   "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.84",
+  "version": "0.2.87",
   "private": false,
   "peerDependenciesMeta": {
     "react": {

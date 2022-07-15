@@ -1,8 +1,8 @@
-export const useComparisonTableScroll = (
-  colData: any[],
-  colsLengthForScroll,
-  activeCardIndex,
-  setActiveCardIndex,
+export const useComparisonTableScroll = <COL_DATA>(
+  colData: COL_DATA[],
+  colsLengthForScroll: number,
+  activeCardIndex: number,
+  setActiveCardIndex: (_: number) => void,
 ) => {
   const nextClick = () => setActiveCardIndex(activeCardIndex + 1);
   const prevClick = () => setActiveCardIndex(activeCardIndex - 1);

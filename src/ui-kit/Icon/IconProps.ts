@@ -1,3 +1,6 @@
+/**
+ * Icons sorted by name
+ */
 export enum IconMap {
   'ActualBalanceIcon',
   'AppleIcon',
@@ -8,7 +11,9 @@ export enum IconMap {
   'CardTickIcon',
   'ClockIcon',
   'ComfortableCompIcon',
+  'DiscountShape',
   'DocIcon',
+  'DocumentText',
   'DollarIcon',
   'EmptyWalletChangeIcon',
   'EmptyWalletIcon',
@@ -40,6 +45,52 @@ export enum IconMap {
   'WalletIcon',
 }
 
+/**
+ * @title Иконка
+ * @enumNames [
+ *    "Деньги",
+ *    "Лого «Apple»",
+ *    "Скруглённый календарь"
+ *    "Календарь",
+ *    "Кред. карта"
+ *    "Кред. карта под наклоном"
+ *    "Кред. карта с галочкой"
+ *    "Часы",
+ *    "Кресло",
+ *    "Скидка",
+ *    "Документ",
+ *    "Документ с текстом",
+ *    "Доллар",
+ *    "Пустой кошелёк с возвратом",
+ *    "Пустой кошелёк",
+ *    "Евро",
+ *    "Зеркало",
+ *    "Сетка",
+ *    "JCB"
+ *    "Лупа",
+ *    "MasterCard"
+ *    "Минус",
+ *    "МИР"
+ *    "Деньги"
+ *    "Монитор и мобильный"
+ *    "Новый документ",
+ *    "Лого «Одноклассники»",
+ *    "Бизнес",
+ *    "Проценты",
+ *    "Лого «PlayMarket»",
+ *    "Плюс",
+ *    "Профиль, 2 персоны"
+ *    "Профиль",
+ *    "Безопасность"
+ *    "Подписанные документы",
+ *    "Лого «Telegram»",
+ *    "UnionPay"
+ *    "Пользователь"
+ *    "Visa"
+ *    "Лого «VK»"
+ *    "Кошелёк"
+ *  ]
+ */
 export type IconName = keyof typeof IconMap;
 
 export interface IconProps {

@@ -1,18 +1,50 @@
+import type { HeadlineContent } from '../Headline/HeadlineContent';
+import type { LinkDocsContent } from '../LinkDocs/LinkDocsContent';
+import type { PictureTextContent } from '../PictureText/PictureTextContent';
 import type { TextBlockContent } from '../TextBlock/TextBlockContent';
+import AccordionBlocks from './AccordionBlocks';
 
-export interface AccordionContent {
-  title?: string;
-  accordionItems?: AccordionItemContent[];
+/**
+ * @hidden
+ * @title Содержимое блока
+ */
+export type AccordionData =
+  | HeadlineContent
+  | LinkDocsContent
+  | TextBlockContent
+  | PictureTextContent;
+
+/**
+ * @hidden
+ * @title Тип блока
+ * @enumNames ["Заголовок", "Блок документов", Текстовый блок", "Картинка с текстом"]
+ */
+export type AccordionTypeBlock = keyof typeof AccordionBlocks;
+
+/**
+ * Блок
+ */
+export interface AccordionBlock {
+  type?: AccordionTypeBlock;
+  data?: AccordionData;
 }
 
-export interface AccordionItemContent {
+/**
+ * @title Элемент списка
+ */
+export interface AccordionItemCommonProps {
+  /** @title Название */
   label?: string;
-  blocks?: AccordionBlockContent[];
+  /** @title Блоки */
+  blocks?: AccordionBlock[];
 }
 
-export type AccordionBlockContent = {
-  type?: string;
-  data?: AccordionDataContent;
-};
-
-export type AccordionDataContent = TextBlockContent;
+/**
+ * @title Аккордеон
+ */
+export interface AccordionContent {
+  /** @title Заголовок */
+  title?: string;
+  /** @title Список */
+  accordionItems?: AccordionItemCommonProps[];
+}

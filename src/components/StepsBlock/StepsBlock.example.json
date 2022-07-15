@@ -1,0 +1,17 @@
+{
+  "title": "Шаги",
+  "steps": [
+    {
+      "label": "Шаг №1",
+      "icon": "NewDocIcon"
+    },
+    {
+      "label": "Шаг №2",
+      "icon": "PassSendIcon"
+    },
+    {
+      "label": "Шаг №3",
+      "icon": "ActualBalanceIcon"
+    }
+  ]
+}

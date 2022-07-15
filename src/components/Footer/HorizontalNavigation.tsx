@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { LinkContent } from '../../model/LinkContent';
 import { useLink } from '../../hooks/useLink';
+import { LinkProps } from '../../model/LinkProps';
 import type { FooterLink } from './FooterLink';
 
 export const HorizontalNavigation = JSX<FooterLink>(({ className, links, context }) => {
@@ -24,7 +24,7 @@ export const HorizontalNavigation = JSX<FooterLink>(({ className, links, context
   );
 });
 
-interface HorizontalNavigationLinkProps extends LinkContent {
+interface HorizontalNavigationLinkProps extends LinkProps {
   className: string;
   index: number;
   onClick: (ev: MouseEvent) => any;
