@@ -1,3 +1,6 @@
-import type { BaseTileContent } from '../BaseTile/BaseTileContent';
+import type { BaseTileCommonProps } from '../BaseTile/BaseTileProps';
 
-export type TileContent = BaseTileContent;
+/**
+ * @title Плитка
+ */
+export type TileContent = BaseTileCommonProps;

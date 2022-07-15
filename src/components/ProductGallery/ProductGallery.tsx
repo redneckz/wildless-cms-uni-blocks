@@ -1,8 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { ProductBlockInner } from '../ProductBlock/ProductBlockInner';
-import type { ProductBlockInnerContent } from '../ProductBlock/ProductBlockContent';
-import type { ProductGalleryContent } from './ProductGalleryContent';
 import type { UniBlockProps } from '../../types';
+import type { ProductBlockInnerCommonProps } from '../ProductBlock/ProductBlockContent';
+import { ProductBlockInner } from '../ProductBlock/ProductBlockInner';
+import type { ProductGalleryContent } from './ProductGalleryContent';
 
 export interface ProductGalleryProps extends ProductGalleryContent, UniBlockProps {}
 
@@ -38,7 +38,7 @@ export const ProductGallery = JSX<ProductGalleryProps>(
   },
 );
 
-function renderProductBlock(block: ProductBlockInnerContent, i: number, context) {
+function renderProductBlock(block: ProductBlockInnerCommonProps, i: number, context) {
   return (
     <section key={String(i)} className="flex grow-0 shrink-0 basis-full" role="listitem">
       <div className="p-10 flex grow">

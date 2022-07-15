@@ -1,5 +1,9 @@
-import type { BaseTileContent } from '../BaseTile/BaseTileContent';
+import type { BaseTileCommonProps } from '../BaseTile/BaseTileProps';
 
-export interface PromoTileContent extends BaseTileContent {
+/**
+ * @title Акции
+ */
+export interface PromoTileContent extends BaseTileCommonProps {
+  /** @title Дата публикации */
   date?: string;
 }

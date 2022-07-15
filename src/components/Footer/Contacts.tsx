@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { useLink } from '../../hooks/useLink';
 import type { UniBlockProps } from '../../types';
 import { Button } from '../../ui-kit/Button/Button';
-import { useLink } from '../../hooks/useLink';
 import type { ContactInfo } from './FooterContent';
 
 export interface ContactsProps extends UniBlockProps {
@@ -45,7 +45,7 @@ const renderContact = (item: ContactInfo, index: number) => {
   );
 };
 
-const renderText = (type: ContactInfo['type'], text: string) => {
+const renderText = (type: ContactInfo['type'], text = '') => {
   switch (type) {
     case 'tel':
       return (

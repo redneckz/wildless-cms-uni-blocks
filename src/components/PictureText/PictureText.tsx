@@ -5,7 +5,7 @@ import type { PictureTextContent } from './PictureTextContent';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import { Img } from '../../ui-kit/Img';
 import { Title } from '../../ui-kit/Title/Title';
-import { Benefit } from '../BenefitsBlock/BenefitsBlockContent';
+import type { Benefit } from '../BenefitsBlock/BenefitsBlockContent';
 
 export interface PictureTextProps extends PictureTextContent, UniBlockProps {}
 

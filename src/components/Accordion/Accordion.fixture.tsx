@@ -1,15 +1,12 @@
 import { context } from '../../setup-fixture';
-import type { AccordionProps } from './Accordion';
 import type { TextBlockContent } from '../TextBlock/TextBlockContent';
+import type { AccordionProps } from './Accordion';
 import type { PictureTextContent } from '../PictureText/PictureTextContent';
 import { Accordion } from './Accordion';
 
 const TEXT_BLOCK: TextBlockContent = {
-  title: 'Title',
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?',
-  blockVersion: 'secondary-light',
-  iconVersion: 'small',
 };
 
 const PICTURE_TEXT: PictureTextContent = {
@@ -48,10 +45,6 @@ const propsTextBlock: AccordionProps = {
           type: 'TextBlock',
           data: TEXT_BLOCK,
         },
-        {
-          type: 'TextBlock',
-          data: TEXT_BLOCK,
-        },
       ],
     },
     {
@@ -61,19 +54,11 @@ const propsTextBlock: AccordionProps = {
           type: 'TextBlock',
           data: TEXT_BLOCK,
         },
-        {
-          type: 'TextBlock',
-          data: TEXT_BLOCK,
-        },
       ],
     },
     {
       label: 'Accordion label 3',
       blocks: [
-        {
-          type: 'TextBlock',
-          data: TEXT_BLOCK,
-        },
         {
           type: 'TextBlock',
           data: TEXT_BLOCK,

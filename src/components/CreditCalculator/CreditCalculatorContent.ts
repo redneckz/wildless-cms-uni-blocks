@@ -12,6 +12,10 @@ export interface CreditCalculatorData {
   rows?: CalculatorParams[];
 }
 
+/**
+ * @title Кредитный калькулятор
+ */
 export interface CreditCalculatorContent {
+  /** @title Справочник */
   directoryName?: string;
 }

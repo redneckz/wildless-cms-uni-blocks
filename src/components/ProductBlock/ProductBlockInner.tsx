@@ -1,13 +1,13 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { BaseTile } from '../BaseTile/BaseTile';
-import type { Benefit } from '../BenefitsBlock/BenefitsBlockContent';
-import type { ProductBlockInnerContent } from './ProductBlockContent';
 import type { UniBlockProps } from '../../types';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import { Img } from '../../ui-kit/Img';
 import { Title } from '../../ui-kit/Title/Title';
+import { BaseTile } from '../BaseTile/BaseTile';
+import type { Benefit } from '../BenefitsBlock/BenefitsBlockContent';
+import type { ProductBlockInnerCommonProps } from './ProductBlockContent';
 
-export interface ProductBlockInnerProps extends ProductBlockInnerContent, UniBlockProps {}
+export interface ProductBlockInnerProps extends ProductBlockInnerCommonProps, UniBlockProps {}
 
 export const ProductBlockInner = JSX<ProductBlockInnerProps>(
   ({ className, context, title, titleSize, description, benefits, buttons, image, items }) => {
