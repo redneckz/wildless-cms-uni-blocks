@@ -13,8 +13,6 @@ export interface QRCode {
 /**
  * @title Мобильное приложение
  */
-export interface MobileAppTileContent extends BaseTileCommonProps {
-  /** @title Заголовок */
-  title?: string;
+export interface MobileAppTileContent extends Pick<BaseTileCommonProps, 'title' | 'buttons'> {
   qr?: QRCode;
 }
