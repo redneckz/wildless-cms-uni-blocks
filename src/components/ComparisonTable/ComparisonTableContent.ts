@@ -44,11 +44,9 @@ export interface CellData {
 export interface ColumnHeader {
   /** @title Заголовок */
   title?: string;
-  /** @hidden */
   icon?: IconName;
   /** @hidden */
   image?: Picture;
-  /** @hidden */
   link?: LinkProps;
 }
 
