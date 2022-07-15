@@ -1361,10 +1361,13 @@
       }
     },
     {
-      "type": "CreditCalculator",
+      "type": "Headline",
       "style": ["col-span-12"],
       "content": {
-        "directoryName": "credit-calculator-data"
+        "title": "Своя кредитная карта",
+        "description": "Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.",
+        "align": "left",
+        "bgColor": "bg-white"
       }
     },
     {

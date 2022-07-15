@@ -1,21 +1,20 @@
 import type { TextBlockContent } from '../TextBlock/TextBlockContent';
-import type { PictureTextContent } from '../PictureText/PictureTextContent';
 
 /** @title Содержимое блока */
-export type AccordionDataContent = TextBlockContent | PictureTextContent;
+export type AccordionData = TextBlockContent;
 
 /**
  * @title Тип блока
  * @enumNames ["Текстовый блок" | "текст с картинкой"]
  */
-export type AccordionDataBlocks = 'TextBlock' | 'PictureText';
+export type AccordionTypeBlock = 'TextBlock' | 'Headline' | 'PictureText';
 
 /**
  * Блок
  */
 export interface AccordionBlock {
-  type?: AccordionDataBlocks;
-  data?: AccordionDataContent;
+  type?: AccordionTypeBlock;
+  data?: AccordionData;
 }
 
 /**
@@ -45,5 +44,5 @@ export interface AccordionItemContent {
 
 export type AccordionBlockContent = {
   type?: string;
-  data?: AccordionDataContent;
+  data?: AccordionData;
 };

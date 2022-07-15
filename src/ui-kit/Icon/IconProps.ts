@@ -7,7 +7,9 @@ export enum IconMap {
   'CalendarIcon',
   'ClockIcon',
   'ComfortableCompIcon',
+  'DiscountShape',
   'DocIcon',
+  'DocumentText',
   'DollarIcon',
   'EmptyWalletIcon',
   'EuroIcon',
@@ -25,8 +27,6 @@ export enum IconMap {
   'SignDocsIcon',
   'TelegramIcon',
   'VKIcon',
-  'DiscountShape',
-  'DocumentText',
 }
 
 /**
@@ -37,7 +37,9 @@ export enum IconMap {
  *    "Календарь",
  *    "Часы",
  *    "Кресло",
+ *    "Скидка",
  *    "Документ",
+ *    "Документ с текстом"
  *    "Доллар",
  *    "Кошелек",
  *    "Евро",

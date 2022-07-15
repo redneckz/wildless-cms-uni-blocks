@@ -11,7 +11,7 @@ interface ProductGalleryNav {
 /**
  * @title Слайд
  */
-export interface ProductSlideContent {
+export interface ProductSlide {
   nav: ProductGalleryNav;
   /** @title Содержимое слайда */
   productBlock: ProductBlockInnerCommonProps;
@@ -27,5 +27,5 @@ export interface ProductGalleryContent {
    */
   duration?: number;
   /** @title Слайды */
-  slides?: ProductSlideContent[];
+  slides?: ProductSlide[];
 }

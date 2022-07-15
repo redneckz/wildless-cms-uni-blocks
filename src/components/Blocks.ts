@@ -14,6 +14,7 @@ import { StepsBlock } from './StepsBlock/StepsBlock';
 import { TextBlock } from './TextBlock/TextBlock';
 import { Tile } from './Tile/Tile';
 import { ComparisonTable } from './ComparisonTable/ComparisonTable';
+import { Headline } from './Headline/Headline';
 import { Accordion } from './Accordion/Accordion';
 import { CreditCalculator } from './CreditCalculator/CreditCalculator';
 import { PictureText } from './PictureText/PictureText';
@@ -35,6 +36,7 @@ export const Blocks = {
   Gallery,
   MiniGallery,
   ComparisonTable,
+  Headline,
   Accordion,
   CreditCalculator,
   PictureText,
