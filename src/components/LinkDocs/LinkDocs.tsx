@@ -31,7 +31,7 @@ export const LinkDocs = JSX<LinkDocsProps>(
       <section className={`font-sans p-[50px] bg-white ${className}`}>
         {title && (
           <Title
-            className={`font-medium m-0 ${titleMarginsStyleMap[columnsMode]} ${
+            className={`font-medium mt-0 ${titleMarginsStyleMap[columnsMode]} ${
               titleAlignStyleMap[align ?? 'center']
             }`}
           >
