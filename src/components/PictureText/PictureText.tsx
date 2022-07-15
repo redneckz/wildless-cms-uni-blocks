@@ -35,7 +35,9 @@ function renderBenefit(benefit: Benefit, i: number) {
         />
       )}
       <div className="flex gap-1 flex-col h-full ml-5 max-w-[490px]">
-        <div className="font-medium text-primary-text text-xl m-0">{benefit.label}</div>
+        {benefit.label && (
+          <div className="font-medium text-primary-text text-xl m-0">{benefit.label}</div>
+        )}
         {benefit.description && (
           <div className="font-normal text-sm text-secondary-text">{benefit.description}</div>
         )}
