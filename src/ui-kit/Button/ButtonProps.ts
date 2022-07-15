@@ -13,12 +13,13 @@ export interface ButtonAdditionalProps {
 }
 
 export interface ButtonProps extends ButtonAdditionalProps, LinkProps {
+  /** @title Текст */
   text?: string;
   version?: ButtonVersion;
 }
 
 export interface ButtonWithIconProps extends ButtonProps {
-  /** @hidden */
+  /** @title Верхний текст */
   aboveText?: string;
   /** @hidden */
   appendLeft?: any;

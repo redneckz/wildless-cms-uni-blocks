@@ -31481,9 +31481,7 @@ function renderItems(items = [], version) {
 function renderButton({ icon, ...button }, i) {
     if (!button?.text)
         return;
-    if (icon)
-        return (jsx(Button, { appendLeft: jsx(Icon, { name: icon, width: "24", height: "24" }), ...button }, String(i)));
-    return jsx(Button, { ...button }, String(i));
+    return icon ? (jsx(Button, { appendLeft: jsx(Icon, { name: icon, width: "24", height: "24" }), ...button }, String(i))) : (jsx(Button, { ...button }, String(i)));
 }
 
 ;// CONCATENATED MODULE: ./src/components/Headline/Headline.tsx
