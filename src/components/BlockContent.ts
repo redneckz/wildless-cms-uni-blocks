@@ -15,6 +15,7 @@ import type { PromoTileContent } from './PromoTile/PromoTileContent';
 import type { StepsBlockContent } from './StepsBlock/StepsBlockContent';
 import type { TextBlockContent } from './TextBlock/TextBlockContent';
 import type { TileContent } from './Tile/TileContent';
+import { TariffsTableContent } from './TariffsTable/TariffsTableContent';
 
 /**
  * @hidden
@@ -35,5 +36,6 @@ export type BlockContent =
   | ProductTileContent
   | PromoTileContent
   | StepsBlockContent
+  | TariffsTableContent
   | TextBlockContent
   | TileContent;
