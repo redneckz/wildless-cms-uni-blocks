@@ -1,8 +1,8 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { Picture } from '../../model/Picture';
-import type { TextBlockContent, TextBlockVersion } from './TextBlockContent';
 import type { UniBlockProps } from '../../types';
 import { Img } from '../../ui-kit/Img';
+import type { TextBlockContent, TextBlockVersion } from './TextBlockContent';
 
 export interface TextBlockProps extends TextBlockContent, UniBlockProps {}
 
@@ -54,7 +54,7 @@ export const TextBlock = JSX<TextBlockProps>(
 
 function renderIcon(className: string) {
   return (
-    <div className={`pt-1.5 pr-4`}>
+    <div className={`pt-1.5 pl-1 pr-4`}>
       <div className={`rounded-full h-4 w-4 text-center text-xs ${className}`}>i</div>
     </div>
   );
