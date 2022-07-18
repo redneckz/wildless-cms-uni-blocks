@@ -1,6 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { Row } from './ComparisonTableContent';
-import { DIVIDER_CLASSES, FIRST_CELL_CLASSES } from './constants';
+import { COLUMN_WIDTH, DIVIDER_CLASSES, FIRST_CELL_CLASSES } from './constants';
 import { TableCarouselContainer } from './TableCarouselContainer';
 import { TableCell } from './TableCell';
 import { TableRowContainer } from './TableRowContainer';
@@ -27,7 +27,7 @@ export const TableRow = JSX<TableRowProps>(
         </div>
       ) : null}
       {data?.length ? (
-        <TableCarouselContainer activeCardIndex={activeCardIndex}>
+        <TableCarouselContainer activeCardIndex={activeCardIndex} columnWidth={COLUMN_WIDTH}>
           {data.map((cell, i) => (
             <TableCell
               key={String(i)}
