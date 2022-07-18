@@ -4,7 +4,7 @@ import { Icon } from '../../ui-kit/Icon/Icon';
 import type { JSXBlock } from '../ContentPage/ContentPage';
 import { ContentPageContext } from '../ContentPage/ContentPageContext';
 import AccordionBlocks from './AccordionBlocks';
-import type { AccordionBlock, AccordionItemCommonProps } from './AccordionContent';
+import type { AccordionBlockProps, AccordionItemCommonProps } from './AccordionContent';
 
 export interface AccordionItemProps extends AccordionItemCommonProps, UniBlockProps {}
 
@@ -13,8 +13,11 @@ export const AccordionItem = JSX<AccordionItemProps>(({ label, blocks, context }
   const hasContent = blocks?.length;
   const icon = isActive ? 'MinusIcon' : 'PlusIcon';
 
-  const handleToggle = (e) => {
-    if (!hasContent) return null;
+  const handleToggle = (e: MouseEvent) => {
+    if (!hasContent) {
+      return;
+    }
+
     setIsActive(!isActive);
     const contentBlock = getContentBlock(e);
     contentBlock.style.maxHeight = contentBlock.style.maxHeight
@@ -51,18 +54,19 @@ export const AccordionItem = JSX<AccordionItemProps>(({ label, blocks, context }
   );
 });
 
-const renderBlock = (block: AccordionBlock, i: number, context: ContentPageContext) => {
-  if (!block.type || !block.data || !AccordionBlocks.hasOwnProperty(block.type)) {
+const renderBlock = (block: AccordionBlockProps, i: number, context: ContentPageContext) => {
+  const type = block?.accordionBlockType;
+  if (!type || !(type in AccordionBlocks)) {
     return null;
   }
 
-  const AccordionBlock: JSXBlock = AccordionBlocks[block.type];
+  const AccordionBlock: JSXBlock = AccordionBlocks[type];
   return (
     <div className="mb-5 last:mb-0" key={`block_${i}`}>
-      <AccordionBlock context={context} {...block.data} />
+      <AccordionBlock context={context} {...block} />
     </div>
   );
 };
 
-const getContentBlock = (e) =>
-  e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;
+const getContentBlock = ({ target }) =>
+  target.tagName === 'BUTTON' ? target.nextSibling : target.parentNode.nextSibling;

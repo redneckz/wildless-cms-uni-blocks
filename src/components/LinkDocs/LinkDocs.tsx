@@ -24,7 +24,7 @@ const linkColumnsModeStyleMap: Record<LinkColumnsMode, string> = {
 export interface LinkDocsProps extends LinkDocsContent, UniBlockProps {}
 
 export const LinkDocs = JSX<LinkDocsProps>(
-  ({ className, title, align, documents, icon, columnsMode = 'double' }) => {
+  ({ className, title, align, documents, icon, columnsMode = 'single' }) => {
     const containerClasses = linkColumnsModeStyleMap[columnsMode];
 
     return (
