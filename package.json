@@ -1,7 +1,10 @@
 {
-  "name": "@redneckz/wildless-cms-uni-blocks",
-  "version": "0.2.76",
+  "name": "@rshbintech.ctp/design",
+  "version": "0.0.0-local",
+  "private": true,
   "license": "MIT",
+  "author": "ЦК",
+  "description": "Инструмент для просмотра UI Kit",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./lib/index.d.ts",
@@ -15,26 +18,6 @@
       "import": "./lib/*.js",
       "require": "./dist/*.js",
       "types": "./lib/*.d.ts"
-    },
-    "./lib/Header": {
-      "import": "./lib/Header/index.js",
-      "require": "./dist/Header/index.js",
-      "types": "./lib/Header/index.d.ts"
-    },
-    "./lib/Header/*.js": {
-      "import": "./lib/Header/*.js",
-      "require": "./dist/Header/*.js",
-      "types": "./lib/Header/*.d.ts"
-    },
-    "./lib/Footer": {
-      "import": "./lib/Footer/index.js",
-      "require": "./dist/Footer/index.js",
-      "types": "./lib/Footer/index.d.ts"
-    },
-    "./lib/Footer/*.js": {
-      "import": "./lib/Footer/*.js",
-      "require": "./dist/Footer/*.js",
-      "types": "./lib/Footer/*.d.ts"
     },
     "./lib/common.css": "./lib/common.css",
     "./fonts/ubuntu/*": "./fonts/ubuntu/*",
@@ -66,10 +49,6 @@
     "fonts",
     "src"
   ],
-  "author": {
-    "name": "redneckz",
-    "email": "vasyaselsky@yandex.ru"
-  },
   "repository": {
     "url": "https://github.com/redneckz/wildless-cms-uni-blocks.git"
   },
@@ -78,14 +57,16 @@
   },
   "scripts": {
     "start": "npm run cosmos",
-    "build": "npm run build:lib && npm run build:commonjs && npm run bundle && npm run build:style && npm run build:icons",
+    "build": "npm run build:lib && npm run build:commonjs && npm run bundle && npm run build:style && npm run build:icons && npm run build:design",
     "postbuild": "npm run size",
+    "build:design": "npm run cosmos:export || exit 0",
+    "postbuild:design": "copyfiles --up 1 \"./docs/**/*\" ./build || exit 0",
     "build:lib": "rimraf ./lib && tsc --build --verbose",
     "postbuild:lib": "replace-in-file --configFile=replace-config.lib.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
     "bundle": "rimraf ./bundle && rollup -c && npm run build:schema",
-    "build:schema": "ts-json-schema-generator --path './src/**/*Content.ts' --no-type-check --type '*' -o ./bundle/blocks.schema.json",
-    "build:style": "postcss './src/**/*.css' --env production --dir ./lib",
+    "build:schema": "ts-json-schema-generator --path './src/**/*Content.ts' --additional-properties --validation-keywords enumNames --validation-keywords required --minify --no-type-check -o ./bundle/blocks.schema.json",
+    "build:style": "postcss ./src/**/*.css --env production --dir ./lib",
     "build:icons": "svgo -f ./src/icons -o ./cosmos-static/icons",
     "size": "size-limit",
     "test": "jest --coverage",
@@ -98,14 +79,6 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  },
-  "peerDependenciesMeta": {
-    "react": {
-      "optional": true
-    },
-    "react-dom": {
-      "optional": true
-    }
   },
   "dependencies": {
     "@redneckz/uni-jsx": "^0.1.6",
@@ -121,6 +94,7 @@
     "@size-limit/file": "^7.0.8",
     "@types/jest": "^28.1.1",
     "autoprefixer": "^10.4.7",
+    "copyfiles": "^2.4.1",
     "css-loader": "^6.7.1",
     "cssnano": "^5.1.11",
     "html-webpack-plugin": "^5.5.0",

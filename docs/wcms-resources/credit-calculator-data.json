@@ -1,0 +1,22 @@
+{
+  "rows": [
+    {
+      "isAnnuity": true,
+      "minSum": 15000,
+      "maxSum": 2000000,
+      "minMonths": 12,
+      "maxMonths": 84,
+      "rateWithInsurance": 6,
+      "rateWithoutInsurance": 8.5
+    },
+    {
+      "isAnnuity": false,
+      "minSum": 30000,
+      "maxSum": 4500000,
+      "minMonths": 1,
+      "maxMonths": 84,
+      "rateWithInsurance": 7,
+      "rateWithoutInsurance": 9.5
+    }
+  ]
+}

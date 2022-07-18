@@ -1,0 +1,85 @@
+{
+  "title": "Заголовок",
+  "rowHeaders": [
+    {
+      "title": "Параметр 1",
+      "icon": "MoneyIcon"
+    },
+    {
+      "title": "Параметр 2",
+      "icon": "DollarIcon"
+    },
+    {
+      "title": "Параметр 3"
+    },
+    {
+      "title": "Параметр 4"
+    }
+  ],
+  "columns": [
+    {
+      "data": [
+        [
+          {
+            "label": "Ячейка 1"
+          }
+        ],
+        [
+          {
+            "label": "Ячейка 2-1",
+            "description": "Описание для ячейки 2-1"
+          },
+          {
+            "label": "Ячейка 2-2",
+            "description": "Описание для ячейки 2-2"
+          }
+        ],
+        [
+          {
+            "label": "Ячейка 3-1",
+            "description": "Описание для ячейки 3-1"
+          },
+          {
+            "label": "Ячейка 3-2",
+            "buttons": [
+              {
+                "icon": "AppleIcon",
+                "rounded": true,
+                "version": "secondary",
+                "href": "/_blank",
+                "target": "_blank"
+              },
+              {
+                "icon": "PlayMarketIcon",
+                "rounded": true,
+                "version": "secondary",
+                "href": "/secondary"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "image": {
+              "src": "payment-systems.png",
+              "format": "webp",
+              "size": {
+                "width": 288,
+                "height": 56
+              }
+            }
+          },
+          {
+            "list": {
+              "items": [
+                "item 1",
+                "item 2",
+                "item 3"
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  ]
+}

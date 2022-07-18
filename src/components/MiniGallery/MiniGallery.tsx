@@ -1,9 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { GalleryContent } from '../Gallery/GalleryContent';
+import type { UniBlockProps } from '../../types';
 import { GalleryInner } from '../Gallery/GalleryInner';
-import { UniBlockProps } from '../../types';
+import type { MiniGalleryContent } from './MiniGalleryContent';
 
-export interface MiniGalleryProps extends GalleryContent, UniBlockProps {}
+export interface MiniGalleryProps extends MiniGalleryContent, UniBlockProps {}
 
 export const MiniGallery = JSX<MiniGalleryProps>((props) => (
   <GalleryInner {...props} version="mini" />

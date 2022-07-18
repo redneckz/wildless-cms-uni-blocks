@@ -15,7 +15,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - run: jq -s add ./package.json ./.public.package.json > ./temp.package.json && mv ./temp.package.json ./package.json
       - run: npm ci --ignore-scripts
+      - run: npm install react react-dom --no-save
       - run: npm run build
       - run: npm test
         env:
@@ -42,6 +44,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: dist
+      - run: jq -s add ./package.json ./.public.package.json > ./temp.package.json && mv ./temp.package.json ./package.json
       - run: |
           npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
           npm publish --access=public --ignore-scripts

@@ -2,13 +2,13 @@ import type { BlockContent } from './components/BlockContent';
 import type { ContentPageContext } from './components/ContentPage/ContentPageContext';
 import type { BlockVersion } from './model/BlockVersion';
 
-export type ColorPalette = 'pc' | 'bc' | 'eo';
+export type ColorPalette = 'pc' | 'bc' | 'eo' | 'eo2' | 'eo3' | 'eo4';
 
 export interface BlockDef {
   type: string;
   style?: string[];
-  version?: BlockVersion;
   content?: BlockContent;
+  version?: BlockVersion;
   blocks?: BlockDef[];
   mobile?: Pick<BlockDef, 'content' | 'style'> & {
     hidden?: boolean;

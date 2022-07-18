@@ -5,7 +5,7 @@ export function toMobilePage(contentPage: ContentPageDef): ContentPageDef {
 
   return {
     ...contentPage,
-    blocks: blocks?.filter(({ mobile }) => !mobile?.hidden).map(toMobileBlock),
+    blocks: getMobileBlocks(blocks),
     slots:
       slots &&
       Object.keys(slots).reduce(
@@ -13,12 +13,16 @@ export function toMobilePage(contentPage: ContentPageDef): ContentPageDef {
           ...res,
           [key]: {
             ...slots[key],
-            blocks: slots[key].blocks?.filter(({ mobile }) => !mobile?.hidden).map(toMobileBlock),
+            blocks: getMobileBlocks(slots[key].blocks),
           },
         }),
         {},
       ),
   };
+}
+
+function getMobileBlocks(blocks?: BlockDef[]) {
+  return blocks?.filter(({ mobile }) => !mobile?.hidden).map(toMobileBlock);
 }
 
 function toMobileBlock(block: BlockDef): BlockDef {

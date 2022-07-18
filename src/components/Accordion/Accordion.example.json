@@ -1,0 +1,50 @@
+{
+  "title": "Accordion title",
+  "accordionItems": [
+    {
+      "label": "Accordion label 1",
+      "blocks": [
+        {
+          "accordionBlockType": "TextBlock",
+          "title": "Текстовый блок",
+          "description": "Описание текстового блока"
+        },
+        {
+          "accordionBlockType": "TextBlock",
+          "title": "Текстовый блок №2",
+          "description": "Описание текстового блока №2"
+        }
+      ]
+    },
+    {
+      "label": "Accordion label 2",
+      "blocks": [
+        {
+          "accordionBlockType": "TextBlock",
+          "title": "Текстовый блок",
+          "description": "Описание текстового блока"
+        },
+        {
+          "accordionBlockType": "TextBlock",
+          "title": "Текстовый блок №2",
+          "description": "Описание текстового блока №2"
+        }
+      ]
+    },
+    {
+      "label": "Accordion label 3",
+      "blocks": [
+        {
+          "accordionBlockType": "TextBlock",
+          "title": "Текстовый блок",
+          "description": "Описание текстового блока"
+        },
+        {
+          "accordionBlockType": "TextBlock",
+          "title": "Текстовый блок №2",
+          "description": "Описание текстового блока №2"
+        }
+      ]
+    }
+  ]
+}
