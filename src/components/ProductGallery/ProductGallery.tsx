@@ -6,11 +6,29 @@ import type { ProductGalleryContent } from './ProductGalleryContent';
 
 export interface ProductGalleryProps extends ProductGalleryContent, UniBlockProps {}
 
+let interval: null | ReturnType<typeof setInterval> = null;
+let currentSlide = 0;
+
 export const ProductGallery = JSX<ProductGalleryProps>(
-  ({ className, context, duration = 0, slides = [] }) => {
+  ({ className, context, duration = 3, slides = [] }) => {
     const galleryNav = slides.map((s) => s.nav);
     const galleryBlocks = slides.map((s) => s.productBlock);
     const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
+
+    currentSlide = activeSlideIndex;
+    const initSlideInterval = () => {
+      return setInterval(() => {
+        currentSlide = currentSlide >= galleryNav.length - 1 ? 0 : currentSlide + 1;
+        setActiveSlideIndex(currentSlide);
+      }, duration * 1000);
+    };
+
+    if (!interval) {
+      interval = initSlideInterval();
+    } else {
+      clearInterval(interval);
+      interval = initSlideInterval();
+    }
 
     return (
       <section className={`font-sans bg-white overflow-hidden w-100 ${className || ''}`}>
@@ -22,7 +40,7 @@ export const ProductGallery = JSX<ProductGalleryProps>(
           {galleryBlocks.map((_, i) => renderProductBlock(_, i, context))}
         </div>
 
-        <div className={`border-t border-solid border-main-divider flex`}>
+        <div className={`flex`}>
           {galleryNav.map((slide, i) =>
             renderNavButton({
               slide,
@@ -61,17 +79,19 @@ function renderNavButton({ slide, i, activeSlideIndex, onClick, duration }) {
       type="button"
       key={String(i)}
       onClick={onClick}
-      className={`group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 py-4 grow basis-0`}
+      className={`font-sans group relative overflow-hidden border-0 bg-inherit cursor-pointer text-left px-0 pt-4 pb-5 grow basis-0`}
     >
       <div className="border-0 border-r border-solid border-main-divider px-6">
-        <div className={`text-sm font-medium group-hover:text-primary-text ${btnTitleClassName}`}>
+        <div
+          className={`text-sm font-medium pb-1 group-hover:text-primary-text ${btnTitleClassName}`}
+        >
           {slide?.title}
         </div>
-        <div className="text-xs text-secondary-text">{slide.desc}</div>
+        <div className="text-xs text-secondary-text pb-[2px]">{slide.desc}</div>
       </div>
       <div
         className={`absolute bottom-0 left-0 w-full h-[3px] bg-primary-main -translate-x-full ${progressBarClassName}`}
-        style={{ animationDuration: `${duration}s` }}
+        style={{ animationDuration: `${duration}s`, animationFillMode: 'forwards' }}
       ></div>
     </button>
   );

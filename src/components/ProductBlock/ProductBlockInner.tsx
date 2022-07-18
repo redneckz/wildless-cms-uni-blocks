@@ -2,7 +2,6 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../../types';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import { Img } from '../../ui-kit/Img';
-import { Title } from '../../ui-kit/Title/Title';
 import { BaseTile } from '../BaseTile/BaseTile';
 import type { Benefit } from '../BenefitsBlock/BenefitsBlockContent';
 import type { ProductBlockInnerCommonProps } from './ProductBlockContent';
@@ -14,16 +13,14 @@ export const ProductBlockInner = JSX<ProductBlockInnerProps>(
     return (
       <div className={`flex grow justify-between items-stretch ${className || ''}`}>
         <div className={'flex flex-col'}>
-          {title && (
-            /* TODO Why <Title> is duplicated here?  */
-            <Title
-              size={titleSize || 'XL'}
-              className="font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px] text-primary-text"
-            >
-              {title}
-            </Title>
-          )}
-          <BaseTile context={context} description={description} items={items} buttons={buttons}>
+          <BaseTile
+            context={context}
+            title={title}
+            titleSize={titleSize || 'XL'}
+            description={description}
+            items={items}
+            buttons={buttons}
+          >
             {benefits?.length ? (
               <div className="flex gap-6 mt-6 mb-3.5">{benefits.map(renderBenefit)}</div>
             ) : null}
