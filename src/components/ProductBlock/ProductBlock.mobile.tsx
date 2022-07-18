@@ -6,6 +6,7 @@ import { ProductBlockInner } from './ProductBlockInner';
 export interface ProductBlockProps extends ProductBlockInnerCommonProps, UniBlockProps {}
 
 export const ProductBlock = JSX<ProductBlockProps>(
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   ({ titleSize, image, benefits, ...props } /* Get rid of image and benefits */) => {
     const { className } = props;
     return (

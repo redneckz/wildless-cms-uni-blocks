@@ -70,4 +70,4 @@ const renderText = (type: ContactInfo['type'], text = '') => {
   }
 };
 
-const formatTel = (s: string) => s.replaceAll(/(\-|\s|\(|\)|\D+)/g, '');
+const formatTel = (s: string) => s.replaceAll(/\D/g, '');

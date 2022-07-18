@@ -24,7 +24,7 @@ export interface ContactInfo {
 /**
  * @required ["href"]
  */
-export interface SocialMedia extends Omit<LinkProps, 'text'> {}
+export type SocialMedia = Omit<LinkProps, 'text'>;
 
 /**
  * @title Подвал

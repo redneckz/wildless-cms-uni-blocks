@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { ContentPageMeta } from '../../types';
 
 export interface ContentPageHeadProps {
-  HeadComponent: Function;
+  HeadComponent: <Props, Context, VNode>(props: Props, context?: Context) => VNode;
   data: ContentPageMeta;
 }
 
