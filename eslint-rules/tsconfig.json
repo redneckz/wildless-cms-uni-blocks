@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
     "target": "ESNEXT",
-    "module": "ESNext",
-    "jsx": "react-jsx",
-    "jsxImportSource": "@redneckz/uni-jsx",
+    "module": "CommonJS",
     "allowJs": true,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "lib": ["ESNext"],
+    "types": ["node"],
     "declaration": true,
-    "sourceMap": true,
-    "outDir": "./lib",
+    "sourceMap": false,
+    "outDir": "./dist",
 
     /* Strict Type-Checking Options */
     "strict": true,
@@ -24,12 +23,5 @@
     /* Advanced Options */
     "skipLibCheck": true
   },
-  "include": ["./src/**/*.ts*"],
-  "exclude": [
-    "./src/**/*.spec.ts",
-    "./src/**/*.spec.tsx",
-    "./src/**/*fixture.ts",
-    "./src/**/*fixture.tsx",
-    "./src/cosmos.*"
-  ]
+  "include": ["./src/**/*.ts"]
 }

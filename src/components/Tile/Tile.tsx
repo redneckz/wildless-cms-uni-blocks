@@ -26,7 +26,7 @@ export const Tile = JSX<TileProps>((props) => {
   );
 });
 
-function getContainerPaddingRight(className: string = '') {
+function getContainerPaddingRight(className = '') {
   const colSpan = getColSpan(className);
   if (colSpan <= 6) {
     return 'pr-9';
