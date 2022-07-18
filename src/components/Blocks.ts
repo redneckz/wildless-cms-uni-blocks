@@ -19,6 +19,7 @@ import { PromoTile } from './PromoTile/PromoTile';
 import { StepsBlock } from './StepsBlock/StepsBlock';
 import { TextBlock } from './TextBlock/TextBlock';
 import { Tile } from './Tile/Tile';
+import { TariffsTable } from './TariffsTable/TariffsTable';
 
 export const Blocks = {
   Accordion,
@@ -40,6 +41,7 @@ export const Blocks = {
   ProductTile,
   PromoTile,
   StepsBlock,
+  TariffsTable,
   TextBlock,
   Tile,
 };

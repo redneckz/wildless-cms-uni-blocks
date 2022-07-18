@@ -1,6 +1,5 @@
 import type { LinkProps } from '../../model/LinkProps';
 import type { Picture } from '../../model/Picture';
-import type { ButtonProps } from '../../ui-kit/Button/ButtonProps';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
 
 /**
@@ -12,11 +11,6 @@ export type Row = {
 };
 
 /**
- * @hidden
- */
-export type RowData = Row[] | undefined;
-
-/**
  * @title Ячейка
  */
 export interface CellData {
@@ -24,18 +18,6 @@ export interface CellData {
   label?: string;
   /** @title Описание */
   description?: string;
-  /**
-   *  @title Иконки
-   *  @hidden
-   */
-  icons?: IconName[];
-  /** @hidden */
-  image?: Picture;
-  /**
-   * @title Кнопки
-   * @hidden
-   */
-  buttons?: ButtonProps[];
 }
 
 /**
@@ -65,7 +47,6 @@ export interface Column {
 export interface RowHeader {
   /** @title Заголовок */
   title?: string;
-  icon?: IconName;
 }
 /**
  * @title Сравнительная таблица
