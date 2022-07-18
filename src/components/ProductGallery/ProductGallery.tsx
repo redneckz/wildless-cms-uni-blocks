@@ -10,7 +10,7 @@ let interval: null | ReturnType<typeof setInterval> = null;
 let currentSlide = 0;
 
 export const ProductGallery = JSX<ProductGalleryProps>(
-  ({ className, context, duration = 3, slides = [] }) => {
+  ({ className, context, duration = 0, slides = [] }) => {
     const galleryNav = slides.map((s) => s.nav);
     const galleryBlocks = slides.map((s) => s.productBlock);
     const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
@@ -23,11 +23,13 @@ export const ProductGallery = JSX<ProductGalleryProps>(
       }, duration * 1000);
     };
 
-    if (!interval) {
-      interval = initSlideInterval();
-    } else {
-      clearInterval(interval);
-      interval = initSlideInterval();
+    if (duration > 0) {
+      if (!interval) {
+        interval = initSlideInterval();
+      } else {
+        clearInterval(interval);
+        interval = initSlideInterval();
+      }
     }
 
     return (
@@ -40,7 +42,7 @@ export const ProductGallery = JSX<ProductGalleryProps>(
           {galleryBlocks.map((_, i) => renderProductBlock(_, i, context))}
         </div>
 
-        <div className={`flex`}>
+        <div className="flex">
           {galleryNav.map((slide, i) =>
             renderNavButton({
               slide,

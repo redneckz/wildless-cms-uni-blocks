@@ -10,6 +10,7 @@ const moneyImage: Picture = {
     width: 280,
     height: 280,
   },
+  alt: 'Варианты потребительского кредита',
 };
 
 const worker: Picture = {
