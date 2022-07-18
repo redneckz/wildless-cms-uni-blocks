@@ -4,11 +4,11 @@ import { Icon } from '../../ui-kit/Icon/Icon';
 import { TariffsTableCell } from './TariffsTableCell';
 import { TableRowContainer } from '../ComparisonTable/TableRowContainer';
 import { TableCarouselContainer } from '../ComparisonTable/TableCarouselContainer';
-import type { ITariffsTableRow } from './TariffsTableContent';
+import type { TariffsTableRowData } from './TariffsTableContent';
 
 export interface TariffsTableRowProps {
   className?: string;
-  row: ITariffsTableRow;
+  row: TariffsTableRowData;
   activeCardIndex: number;
   isLastRow: boolean;
 }

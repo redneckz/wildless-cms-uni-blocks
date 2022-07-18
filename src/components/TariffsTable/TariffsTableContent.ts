@@ -1,55 +1,60 @@
 import type { CellData, RowHeader } from '../ComparisonTable/ComparisonTableContent';
 import type { IconName } from '../../ui-kit/Icon/IconProps';
 import type { Picture } from '../../model/Picture';
-import type { ButtonWithIconProps } from '../../ui-kit/Button/ButtonProps';
 import type { BlockItemVersion } from '../../ui-kit/BlockItem/BlockItemProps';
+import type { BaseTileIconButton } from '../BaseTile/BaseTileProps';
 
-/** @hidden */
-export type ITariffsTableRow = {
+/**
+ * @title Ряд
+ */
+export type TariffsTableRowData = {
   header: TariffsTableRowHeader;
   data: TariffsTableCellData[][];
 };
 
-/** @title Колонка */
+/**
+ * @title Колонка
+ */
 export interface TariffsTableColumn {
   /** @title Данные */
   data?: TariffsTableCellData[][];
 }
 
-/** @title Список */
+/**
+ * @title Список
+ */
 export interface TariffsTableList {
-  /** @title Версия списка */
   version?: BlockItemVersion;
-  /** @Title Маркеры */
+  /** @title Маркеры */
   isDotted?: boolean;
   /** @title Элементы списка */
   items?: string[];
 }
 
-/** @title Ячейка */
+/**
+ * @title Ячейка
+ */
 export interface TariffsTableCellData extends CellData {
-  /** @title Список */
   list?: TariffsTableList;
-  /** @title Изображение */
   image?: Picture;
-  /**
-   * @hidden
-   * @title Кнопки
-   */
-  buttons?: (ButtonWithIconProps & { icon?: IconName })[];
+  /** @title Кнопки */
+  buttons?: BaseTileIconButton[];
 }
 
-/** @title Параметр */
+/**
+ * @title Параметр
+ */
 export interface TariffsTableRowHeader extends RowHeader {
-  /** Название иконки */
   icon?: IconName;
 }
 
-/** Таблица тарифов */
+/**
+ * @title Таблица тарифов
+ */
 export interface TariffsTableContent {
   /** @title Заголовок */
   title?: string;
-  /** @title Описание параметров */
+  /** @title Колонки */
   columns?: TariffsTableColumn[];
   /** @title Параметры */
   rowHeaders?: TariffsTableRowHeader[];
