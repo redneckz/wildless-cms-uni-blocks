@@ -1,0 +1,1 @@
+export { consistentBlocksRegistryRule } from './consistentBlocksRegistryRule';

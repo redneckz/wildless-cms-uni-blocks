@@ -1,0 +1,11 @@
+{
+  "name": "eslint-plugin-local-eslint-rules",
+  "version": "0.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rimraf ./dist && tsc"
+  },
+  "license": "MIT"
+}

@@ -74,7 +74,7 @@ export const BaseTile = JSX<BaseTileProps>(
   },
 );
 
-function getTitleSizeByClassName(className: string = '') {
+function getTitleSizeByClassName(className = '') {
   const colSpan = getColSpan(className);
   if (colSpan <= 4) {
     return 'S';

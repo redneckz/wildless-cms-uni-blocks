@@ -1,12 +1,12 @@
 import { context, mobileContext } from '../../setup-fixture';
 
-import { Blocks } from '../Blocks';
-import { BlockDecorator, ContentPage } from './ContentPage';
-import { MobileBlocks } from '../MobileBlocks';
-import { toMobilePage } from './toMobilePage';
 import type { ContentPageDef } from '../../types';
+import { Blocks } from '../Blocks';
+import { MobileBlocks } from '../MobileBlocks';
+import { BlockDecorator, ContentPage } from './ContentPage';
+import { toMobilePage } from './toMobilePage';
 
-const data = require('./ContentPage.page.json');
+import data from './ContentPage.page.json';
 
 const blockDecorator: BlockDecorator = ({ blockClassName, block, render }, i) => (
   <div
