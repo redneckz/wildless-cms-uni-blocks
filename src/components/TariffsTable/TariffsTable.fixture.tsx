@@ -3,34 +3,7 @@ import { TariffsTable } from './TariffsTable';
 import type { Picture } from '../../model/Picture';
 import type { TariffsTableColumn, TariffsTableRowHeader } from './TariffsTableContent';
 
-const image1: Picture = {
-  src: 'card-1.png',
-  format: 'webp',
-  size: {
-    width: 100,
-    height: 63,
-  },
-};
-
-const image2: Picture = {
-  src: 'card-2.png',
-  format: 'webp',
-  size: {
-    width: 100,
-    height: 63,
-  },
-};
-
-const image3: Picture = {
-  src: 'card-3.png',
-  format: 'webp',
-  size: {
-    width: 100,
-    height: 63,
-  },
-};
-
-const image4: Picture = {
+const image: Picture = {
   src: 'payment-systems.png',
   format: 'webp',
   size: {
@@ -48,12 +21,7 @@ const rowHeaders: TariffsTableRowHeader[] = [
   { title: 'Стоимость SMS-сервиса' },
   { title: 'Дополнительная информация' },
 ];
-const rowHeaders2: TariffsTableRowHeader[] = [
-  { title: 'Срок вклада (дней)' },
-  { title: 'Ставка по вкладу' },
-  { title: 'Минимальная сумма' },
-  { title: 'Максимальная сумма' },
-];
+
 const columns: TariffsTableColumn[] = [
   {
     data: [
@@ -69,7 +37,7 @@ const columns: TariffsTableColumn[] = [
         },
       ],
       [{ label: 'Нет' }],
-      [{ label: 'Платёжные системы картинкой' }, { image: image4 }],
+      [{ label: 'Платёжные системы картинкой' }, { image: image }],
       [
         { label: 'Кнопки-иконки' },
         {

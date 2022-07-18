@@ -34101,31 +34101,7 @@ const building = {
 
 
 
-const TariffsTable_fixture_image1 = {
-    src: 'card-1.png',
-    format: 'webp',
-    size: {
-        width: 100,
-        height: 63,
-    },
-};
-const TariffsTable_fixture_image2 = {
-    src: 'card-2.png',
-    format: 'webp',
-    size: {
-        width: 100,
-        height: 63,
-    },
-};
-const TariffsTable_fixture_image3 = {
-    src: 'card-3.png',
-    format: 'webp',
-    size: {
-        width: 100,
-        height: 63,
-    },
-};
-const image4 = {
+const TariffsTable_fixture_image = {
     src: 'payment-systems.png',
     format: 'webp',
     size: {
@@ -34142,12 +34118,6 @@ const TariffsTable_fixture_rowHeaders = [
     { title: 'Стоимость SMS-сервиса' },
     { title: 'Дополнительная информация' },
 ];
-const TariffsTable_fixture_rowHeaders2 = [
-    { title: 'Срок вклада (дней)' },
-    { title: 'Ставка по вкладу' },
-    { title: 'Минимальная сумма' },
-    { title: 'Максимальная сумма' },
-];
 const TariffsTable_fixture_columns = [
     {
         data: [
@@ -34163,7 +34133,7 @@ const TariffsTable_fixture_columns = [
                 },
             ],
             [{ label: 'Нет' }],
-            [{ label: 'Платёжные системы картинкой' }, { image: image4 }],
+            [{ label: 'Платёжные системы картинкой' }, { image: TariffsTable_fixture_image }],
             [
                 { label: 'Кнопки-иконки' },
                 {
@@ -34305,7 +34275,7 @@ const Tile_fixture_image3 = {
     src: 'column-1.png',
     format: 'webp',
 };
-const Tile_fixture_image4 = {
+const image4 = {
     src: 'globe-1.png',
     format: 'webp',
 };
@@ -34357,7 +34327,7 @@ const Tile_fixture_image4 = {
                     target: '_blank',
                     version: 'secondary',
                 },
-            ], image: Tile_fixture_image4 }) })),
+            ], image: image4 }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/BlockItem/BlockItem.fixture.tsx
