@@ -1,52 +1,35 @@
 import { context } from '../../setup-fixture';
+import { HEADLINE } from '../Headline/Headline.fixture';
+import { LINK_DOCS } from '../LinkDocs/LinkDocs.fixture';
+import { PICTURE_TEXT } from '../PictureText/PictureText.fixture';
+import { TEXT_BLOCK } from '../TextBlock/TextBlock.fixture';
 import type { AccordionProps } from './Accordion';
-import type { HeadlineProps } from '../Headline/Headline';
-import type { PictureTextContent } from '../PictureText/PictureTextContent';
-import type { TextBlockContent } from '../TextBlock/TextBlockContent';
-
 import { Accordion } from './Accordion';
-import {
-  LinkDocsFixtureSetOne,
-  LinkDocsFixtureSetThree,
-  LinkDocsFixtureSetTwo,
-} from '../LinkDocs/LinkDocs.fixture';
+import type {
+  HeadlineAccordionBlock,
+  LinkDocsAccordionBlock,
+  PictureTextAccordionBlock,
+  TextBlockAccordionBlock,
+} from './AccordionContent';
 
-const TEXT_BLOCK: TextBlockContent = {
-  description:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?',
+const TEXT_BLOCK_ACCORDION_BLOCK: TextBlockAccordionBlock = {
+  accordionBlockType: 'TextBlock',
+  ...TEXT_BLOCK,
 };
 
-const HEADLINE: HeadlineProps = {
-  context,
-  title: 'Своя кредитная карта',
-  description: 'Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.',
-  align: 'left',
-  bgColor: 'bg-white',
+const HEADLINE_ACCORDION_BLOCK: HeadlineAccordionBlock = {
+  accordionBlockType: 'Headline',
+  ...HEADLINE,
 };
 
-const PICTURE_TEXT: PictureTextContent = {
-  title: 'Варианты потребительского кредита',
-  benefits: [
-    {
-      label: 'Кредит по одному документу',
-      description: 'До 300 тыс ₽ по упрощённой процедуре получения кредита',
-      icon: 'DocumentText',
-    },
-    {
-      label: 'Кредит на общих условиях',
-      description: 'До 5 млн ₽ на общих условиях получения кредита',
-      icon: 'DiscountShape',
-    },
-  ],
-  image: {
-    src: 'legal-support-business.png',
-    alt: 'Варианты потребительского кредита',
-    format: 'webp',
-    size: {
-      width: 200,
-      height: 200,
-    },
-  },
+const PICTURE_TEXT_ACCORDION_BLOCK: PictureTextAccordionBlock = {
+  accordionBlockType: 'PictureText',
+  ...PICTURE_TEXT,
+};
+
+const LINK_DOCS_ACCORDION_BLOCK: LinkDocsAccordionBlock = {
+  accordionBlockType: 'LinkDocs',
+  ...LINK_DOCS,
 };
 
 const propsTextBlock: AccordionProps = {
@@ -55,94 +38,21 @@ const propsTextBlock: AccordionProps = {
   accordionItems: [
     {
       label: 'Accordion label 1',
-      blocks: [
-        {
-          type: 'TextBlock',
-          data: TEXT_BLOCK,
-        },
-        {
-          type: 'TextBlock',
-          data: TEXT_BLOCK,
-        },
-      ],
+      blocks: [TEXT_BLOCK_ACCORDION_BLOCK, TEXT_BLOCK_ACCORDION_BLOCK],
     },
     {
       label: 'Accordion label 2',
-      blocks: [
-        {
-          type: 'TextBlock',
-          data: TEXT_BLOCK,
-        },
-        {
-          type: 'TextBlock',
-          data: TEXT_BLOCK,
-        },
-      ],
+      blocks: [PICTURE_TEXT_ACCORDION_BLOCK],
     },
     {
       label: 'Accordion label 3',
-      blocks: [
-        {
-          type: 'PictureText',
-          data: PICTURE_TEXT,
-        },
-        {
-          type: 'PictureText',
-          data: PICTURE_TEXT,
-        },
-      ],
+      blocks: [HEADLINE_ACCORDION_BLOCK],
     },
     {
       label: 'Accordion label 4',
-      blocks: [
-        {
-          type: 'Headline',
-          data: HEADLINE,
-        },
-        {
-          type: 'Headline',
-          data: HEADLINE,
-        },
-      ],
+      blocks: [LINK_DOCS_ACCORDION_BLOCK],
     },
   ],
 };
 
-const propsLinkDocs: AccordionProps = {
-  title: 'Accordion title',
-  context,
-  accordionItems: [
-    {
-      label: 'Список документов в 2 колонки',
-      blocks: [
-        {
-          type: 'LinkDocs',
-          data: { ...LinkDocsFixtureSetOne, title: '' },
-        },
-      ],
-    },
-    {
-      label: 'Список документов в одну колонку',
-      blocks: [
-        {
-          type: 'LinkDocs',
-          data: { ...LinkDocsFixtureSetTwo, title: '' },
-        },
-      ],
-    },
-    {
-      label: 'Немного кастомизированный список',
-      blocks: [
-        {
-          type: 'LinkDocs',
-          data: LinkDocsFixtureSetThree,
-        },
-      ],
-    },
-  ],
-};
-
-export default {
-  'with text block': <Accordion {...propsTextBlock} />,
-  'with link docs block': <Accordion {...propsLinkDocs} />,
-};
+export default <Accordion {...propsTextBlock} />;

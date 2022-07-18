@@ -24,14 +24,14 @@ const linkColumnsModeStyleMap: Record<LinkColumnsMode, string> = {
 export interface LinkDocsProps extends LinkDocsContent, UniBlockProps {}
 
 export const LinkDocs = JSX<LinkDocsProps>(
-  ({ className, title, align, documents, icon, columnsMode = 'double' }) => {
+  ({ className, title, align, documents, icon, columnsMode = 'single' }) => {
     const containerClasses = linkColumnsModeStyleMap[columnsMode];
 
     return (
       <section className={`font-sans p-[50px] bg-white ${className}`}>
         {title && (
           <Title
-            className={`font-medium m-0 ${titleMarginsStyleMap[columnsMode]} ${
+            className={`font-medium mt-0 ${titleMarginsStyleMap[columnsMode]} ${
               titleAlignStyleMap[align ?? 'center']
             }`}
           >
@@ -42,14 +42,14 @@ export const LinkDocs = JSX<LinkDocsProps>(
           {documents?.length
             ? documents.map(({ text, fileSize, ...linkProps }) => (
                 <a
-                  className={`group flex items-center text-sm
-              text-sm font-sans align-middle items-center text-primary-text no-underline group hover:text-primary-main
-              ${columnsMode === 'double' ? 'basis-[calc(50%-20px)]' : ''}`}
+                  className={`group flex text-sm align-middle h-fit
+                   text-primary-text no-underline hover:text-primary-main
+                   ${columnsMode === 'double' ? 'basis-[calc(50%-20px)]' : ''}`}
                   role="listitem"
                   {...linkProps}
                 >
                   {icon && <Icon className="mr-3.5" name={icon} width="24px" height="24px" />}
-                  <span>
+                  <span className="self-center">
                     {text}
                     <span className="text-secondary-text group-hover:text-primary-main">
                       {linkProps?.href && formatSuffix(getExtFromHref(linkProps.href), fileSize)}
