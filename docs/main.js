@@ -5134,7 +5134,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@font-face{font-display:swap;font-fami
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_postcss_loader_dist_cjs_js_fonts_ubuntu_ubuntu_css__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo2]{--color-primary-main:255,204,0;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo3]{--color-primary-main:225,186,30;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo4]{--color-primary-main:233,191,23;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.inset-x-0{left:0;right:0}.top-1{top:.25rem}.right-1{right:.25rem}.top-7{top:1.75rem}.right-7{right:1.75rem}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.top-4{top:1rem}.right-4{right:1rem}.top-1\\/2{top:50%}.left-8{left:2rem}.left-0{left:0}.left-2{left:.5rem}.-bottom-2{bottom:-.5rem}.top-8{top:2rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.mb-2\\.5{margin-bottom:.625rem}.mb-2{margin-bottom:.5rem}.mb-5{margin-bottom:1.25rem}.mb-4{margin-bottom:1rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-5{margin-top:1.25rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.mb-9{margin-bottom:2.25rem}.mt-4{margin-top:1rem}.mr-6{margin-right:1.5rem}.mr-11{margin-right:2.75rem}.mb-7{margin-bottom:1.75rem}.mb-3{margin-bottom:.75rem}.mr-3{margin-right:.75rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mt-3{margin-top:.75rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.mt-0{margin-top:0}.mr-3\\.5{margin-right:.875rem}.ml-4{margin-left:1rem}.ml-5{margin-left:1.25rem}.mb-3\\.5{margin-bottom:.875rem}.mb-1{margin-bottom:.25rem}.ml-px{margin-left:1px}.mt-0\\.5{margin-top:.125rem}.ml-0\\.5{margin-left:.125rem}.ml-0{margin-left:0}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.\\!block{display:block!important}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[24px\\]{height:24px}.h-\\[70px\\]{height:70px}.h-\\[63px\\]{height:63px}.h-8{height:2rem}.h-10{height:2.5rem}.h-9{height:2.25rem}.h-\\[1px\\]{height:1px}.h-fit{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.h-\\[90px\\]{height:90px}.h-\\[48px\\]{height:48px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-\\[8px\\]{height:8px}.h-12{height:3rem}.h-5{height:1.25rem}.h-\\[2px\\]{height:2px}.max-h-0{max-height:0}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[8px\\]{min-height:8px}.min-h-12{min-height:3rem}.w-\\[24px\\]{width:24px}.w-full{width:100%}.w-\\[70px\\]{width:70px}.w-\\[1280px\\]{width:1280px}.w-\\[84px\\]{width:84px}.w-\\[200px\\]{width:200px}.w-80{width:20rem}.w-\\[63px\\]{width:63px}.w-8{width:2rem}.w-\\[75px\\]{width:75px}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-9{width:2.25rem}.w-\\[364px\\]{width:364px}.w-\\[260px\\]{width:260px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[48px\\]{width:48px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-4{width:1rem}.w-\\[8px\\]{width:8px}.w-12{width:3rem}.w-\\[36px\\]{width:36px}.w-5{width:1.25rem}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[260px\\]{min-width:260px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[8px\\]{min-width:8px}.min-w-12{min-width:3rem}.max-w-\\[170px\\]{max-width:170px}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[308px\\]{max-width:308px}.max-w-\\[490px\\]{max-width:490px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-\\[calc\\(50\\%-20px\\)\\]{flex-basis:calc(50% - 20px)}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.list-none{list-style-type:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3\\.5{gap:.875rem}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem}.gap-y-\\[26px\\]{row-gap:26px}.gap-x-24{-moz-column-gap:6rem;column-gap:6rem}.self-start{align-self:flex-start}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-x-0{border-left-width:0;border-right-width:0}.border-y-0{border-bottom-width:0;border-top-width:0}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-t-0{border-top-width:0}.border-b-0{border-bottom-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.fill-secondary-light{fill:#f5f7f9}.p-\\[50px\\]{padding:50px}.p-0{padding:0}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-9{padding:2.25rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-14{padding:3.5rem}.p-\\[12px\\]{padding:12px}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.px-0{padding-left:0;padding-right:0}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.px-20{padding-left:5rem;padding-right:5rem}.py-4{padding-bottom:1rem;padding-top:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.px-3{padding-left:.75rem;padding-right:.75rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-4{padding-right:1rem}.pl-4,.px-4{padding-left:1rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.pr-2\\.5{padding-right:.625rem}.pr-2{padding-right:.5rem}.pb-5{padding-bottom:1.25rem}.pb-2{padding-bottom:.5rem}.pl-\\[50px\\]{padding-left:50px}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-12{padding-bottom:3rem}.pt-6{padding-top:1.5rem}.pt-0{padding-top:0}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pt-10{padding-top:2.5rem}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pt-1{padding-top:.25rem}.pt-1\\.5{padding-top:.375rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.align-middle{vertical-align:middle}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-lg{font-size:2.188rem;line-height:3rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title{font-size:2rem;line-height:2.5rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-normal{font-weight:400}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-4{line-height:1rem}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.opacity-60{opacity:.6}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}input[type=range].slider{-webkit-appearance:none;background:transparent;background-image:linear-gradient(#42ab44,#42ab44);background-repeat:no-repeat;border-radius:5px;height:4px}input[type=range].slider::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}input[type=range].slider::-moz-range-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:12px;width:12px}input[type=range].slider::-ms-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}.first\\:pt-7:first-child{padding-top:1.75rem}.last\\:mb-0:last-child{margin-bottom:0}.last\\:border-b-0:last-child{border-bottom-width:0}.last\\:pb-7:last-child{padding-bottom:1.75rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.checked\\:border-primary-main:checked{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.checked\\:bg-primary-main:checked{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:fill-primary-main:hover{fill:rgba(var(--color-primary-main),1)}.hover\\:fill-secondary-hover:hover{fill:rgba(var(--color-secondary-hover),1)}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.group:last-child .group-last\\:last\\:pb-0:last-child{padding-bottom:0}.group:hover .group-hover\\:text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.peer:checked~.peer-checked\\:block{display:block}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo2'] {\n  --color-primary-main: 255, 204, 0;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo3'] {\n  --color-primary-main: 225, 186, 30;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo4'] {\n  --color-primary-main: 233, 191, 23;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n\n  input[type='range'].slider {\n    -webkit-appearance: none;\n    height: 4px;\n    background: transparent;\n    border-radius: 5px;\n    background-image: linear-gradient(#42ab44, #42ab44);\n    background-repeat: no-repeat;\n  }\n\n  input[type='range'].slider::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-moz-range-thumb {\n    height: 12px;\n    width: 12px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-ms-thumb {\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n}\n",null],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo2]{--color-primary-main:255,204,0;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo3]{--color-primary-main:225,186,30;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo4]{--color-primary-main:233,191,23;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.inset-x-0{left:0;right:0}.top-1{top:.25rem}.right-1{right:.25rem}.top-7{top:1.75rem}.right-7{right:1.75rem}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.top-4{top:1rem}.right-4{right:1rem}.top-1\\/2{top:50%}.left-8{left:2rem}.left-0{left:0}.left-2{left:.5rem}.-bottom-2{bottom:-.5rem}.top-8{top:2rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.mx-3{margin-left:.75rem;margin-right:.75rem}.mb-2\\.5{margin-bottom:.625rem}.mb-2{margin-bottom:.5rem}.mb-5{margin-bottom:1.25rem}.mb-4{margin-bottom:1rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-5{margin-top:1.25rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.mb-9{margin-bottom:2.25rem}.mt-4{margin-top:1rem}.mr-6{margin-right:1.5rem}.mr-11{margin-right:2.75rem}.mb-7{margin-bottom:1.75rem}.mb-3{margin-bottom:.75rem}.mr-3{margin-right:.75rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mt-3{margin-top:.75rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.mt-0{margin-top:0}.mr-3\\.5{margin-right:.875rem}.ml-4{margin-left:1rem}.ml-5{margin-left:1.25rem}.mb-3\\.5{margin-bottom:.875rem}.mb-1{margin-bottom:.25rem}.ml-px{margin-left:1px}.mt-0\\.5{margin-top:.125rem}.ml-0\\.5{margin-left:.125rem}.ml-0{margin-left:0}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[24px\\]{height:24px}.h-\\[70px\\]{height:70px}.h-\\[63px\\]{height:63px}.h-8{height:2rem}.h-10{height:2.5rem}.h-9{height:2.25rem}.h-\\[1px\\]{height:1px}.h-fit{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.h-\\[90px\\]{height:90px}.h-\\[48px\\]{height:48px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-\\[8px\\]{height:8px}.h-12{height:3rem}.h-5{height:1.25rem}.h-\\[2px\\]{height:2px}.max-h-0{max-height:0}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[8px\\]{min-height:8px}.min-h-12{min-height:3rem}.w-\\[24px\\]{width:24px}.w-full{width:100%}.w-\\[70px\\]{width:70px}.w-\\[1280px\\]{width:1280px}.w-\\[84px\\]{width:84px}.w-\\[200px\\]{width:200px}.w-80{width:20rem}.w-\\[63px\\]{width:63px}.w-8{width:2rem}.w-\\[75px\\]{width:75px}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-9{width:2.25rem}.w-\\[364px\\]{width:364px}.w-\\[260px\\]{width:260px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[48px\\]{width:48px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-4{width:1rem}.w-\\[8px\\]{width:8px}.w-12{width:3rem}.w-\\[36px\\]{width:36px}.w-5{width:1.25rem}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[260px\\]{min-width:260px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[8px\\]{min-width:8px}.min-w-12{min-width:3rem}.max-w-\\[170px\\]{max-width:170px}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[308px\\]{max-width:308px}.max-w-\\[490px\\]{max-width:490px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-\\[calc\\(50\\%-20px\\)\\]{flex-basis:calc(50% - 20px)}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.list-none{list-style-type:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3\\.5{gap:.875rem}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem}.gap-y-\\[26px\\]{row-gap:26px}.gap-x-24{-moz-column-gap:6rem;column-gap:6rem}.self-start{align-self:flex-start}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-x-0{border-left-width:0;border-right-width:0}.border-y-0{border-bottom-width:0;border-top-width:0}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-t-0{border-top-width:0}.border-b-0{border-bottom-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.fill-secondary-light{fill:#f5f7f9}.p-\\[50px\\]{padding:50px}.p-0{padding:0}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-9{padding:2.25rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-14{padding:3.5rem}.p-\\[12px\\]{padding:12px}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.px-0{padding-left:0;padding-right:0}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.px-20{padding-left:5rem;padding-right:5rem}.py-4{padding-bottom:1rem;padding-top:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.px-3{padding-left:.75rem;padding-right:.75rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-4{padding-right:1rem}.pl-4,.px-4{padding-left:1rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.pr-2\\.5{padding-right:.625rem}.pr-2{padding-right:.5rem}.pb-5{padding-bottom:1.25rem}.pb-2{padding-bottom:.5rem}.pl-\\[50px\\]{padding-left:50px}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-12{padding-bottom:3rem}.pt-6{padding-top:1.5rem}.pt-0{padding-top:0}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pt-10{padding-top:2.5rem}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pt-1{padding-top:.25rem}.pt-1\\.5{padding-top:.375rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.align-middle{vertical-align:middle}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-lg{font-size:2.188rem;line-height:3rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title{font-size:2rem;line-height:2.5rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-normal{font-weight:400}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-4{line-height:1rem}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.opacity-60{opacity:.6}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}input[type=range].slider{-webkit-appearance:none;background:transparent;background-image:linear-gradient(#42ab44,#42ab44);background-repeat:no-repeat;border-radius:5px;height:4px}input[type=range].slider::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}input[type=range].slider::-moz-range-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:12px;width:12px}input[type=range].slider::-ms-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}.first\\:pt-7:first-child{padding-top:1.75rem}.last\\:mb-0:last-child{margin-bottom:0}.last\\:border-b-0:last-child{border-bottom-width:0}.last\\:pb-7:last-child{padding-bottom:1.75rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.checked\\:border-primary-main:checked{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.checked\\:bg-primary-main:checked{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:fill-primary-main:hover{fill:rgba(var(--color-primary-main),1)}.hover\\:fill-secondary-hover:hover{fill:rgba(var(--color-secondary-hover),1)}.hover\\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.group:last-child .group-last\\:last\\:pb-0:last-child{padding-bottom:0}.group:hover .group-hover\\:text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.peer:checked~.peer-checked\\:block{display:block}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo2'] {\n  --color-primary-main: 255, 204, 0;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo3'] {\n  --color-primary-main: 225, 186, 30;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo4'] {\n  --color-primary-main: 233, 191, 23;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n\n  input[type='range'].slider {\n    -webkit-appearance: none;\n    height: 4px;\n    background: transparent;\n    border-radius: 5px;\n    background-image: linear-gradient(#42ab44, #42ab44);\n    background-repeat: no-repeat;\n  }\n\n  input[type='range'].slider::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-moz-range-thumb {\n    height: 12px;\n    width: 12px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-ms-thumb {\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n}\n",null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31263,69 +31263,6 @@ const mobileContext = {
     }),
 };
 
-;// CONCATENATED MODULE: ./src/ui-kit/Title/TitleProps.ts
-var SizeTableClass;
-(function (SizeTableClass) {
-    SizeTableClass["XL"] = "text-title-lg";
-    SizeTableClass["L"] = "text-title";
-    SizeTableClass["M"] = "text-title-sm";
-    SizeTableClass["S"] = "text-title-xs";
-})(SizeTableClass || (SizeTableClass = {}));
-
-;// CONCATENATED MODULE: ./src/ui-kit/Title/Title.tsx
-
-
-
-const Title = JSX(({ size = 'L', className, children, ...rest }) => {
-    const Tag = size === 'XL' ? 'h1' : 'h2';
-    return (jsx(Tag, { className: getClasses(SizeTableClass[size], className), ...rest, children: children }));
-});
-const getClasses = (...classes) => classes.filter(Boolean).join(' ');
-
-;// CONCATENATED MODULE: ./src/ProjectSettings.ts
-const projectSettings = new (class {
-    _ = {
-        PROD_BRANCH: 'master',
-        FORCED_DRAFT_FLOW: false,
-    };
-    setup(_) {
-        this._ = _;
-    }
-    get TEST_BRANCH() {
-        return this._.TEST_BRANCH;
-    }
-    get RC_BRANCH() {
-        return this._.RC_BRANCH;
-    }
-    get PROD_BRANCH() {
-        return this._.PROD_BRANCH;
-    }
-    get FORCED_DRAFT_FLOW() {
-        return this._.FORCED_DRAFT_FLOW;
-    }
-    get ENABLE_ASSIST() {
-        return this._.ENABLE_ASSIST;
-    }
-    get SITEMAP() {
-        return this._.SITEMAP;
-    }
-    get CDN() {
-        return this._.CDN;
-    }
-})();
-
-;// CONCATENATED MODULE: ./src/ui-kit/Icon/Icon.tsx
-
-
-
-const Icon = JSX(({ className, name, alt = `Icon ${name}`, title = alt, asSVG, ...imgProps }) => {
-    const href = `${projectSettings.CDN || ''}icons/${name}.svg`;
-    if (asSVG) {
-        return (jsxs("svg", { className: className, ...imgProps, "aria-hidden": "true", children: [title ? jsx("title", { children: title }) : null, alt ? jsx("desc", { children: alt }) : null, jsx("use", { href: `${href}#icon`, xlinkHref: `${href}#icon` })] }));
-    }
-    return (jsx("img", { className: className, src: href, alt: alt, title: title, ...imgProps, "aria-hidden": "true" }));
-});
-
 ;// CONCATENATED MODULE: ./src/utils/url.ts
 const MOBILE_URL_PATH = '/mobile';
 const isURL = (href) => href?.includes('//');
@@ -31420,6 +31357,50 @@ const ButtonInner = JSX(({ text, aboveText, appendLeft, rounded }) => {
     return (jsxs("div", { className: buttonInnerClasses, children: [appendLeft ? appendLeft : null, !withoutText ? (jsxs("div", { children: [jsx("div", { className: "text-xxs text-left", children: aboveText }), jsx("div", { className: "text-sm font-medium text-left", children: text })] })) : null] }));
 });
 
+;// CONCATENATED MODULE: ./src/ProjectSettings.ts
+const projectSettings = new (class {
+    _ = {
+        PROD_BRANCH: 'master',
+        FORCED_DRAFT_FLOW: false,
+    };
+    setup(_) {
+        this._ = _;
+    }
+    get TEST_BRANCH() {
+        return this._.TEST_BRANCH;
+    }
+    get RC_BRANCH() {
+        return this._.RC_BRANCH;
+    }
+    get PROD_BRANCH() {
+        return this._.PROD_BRANCH;
+    }
+    get FORCED_DRAFT_FLOW() {
+        return this._.FORCED_DRAFT_FLOW;
+    }
+    get ENABLE_ASSIST() {
+        return this._.ENABLE_ASSIST;
+    }
+    get SITEMAP() {
+        return this._.SITEMAP;
+    }
+    get CDN() {
+        return this._.CDN;
+    }
+})();
+
+;// CONCATENATED MODULE: ./src/ui-kit/Icon/Icon.tsx
+
+
+
+const Icon = JSX(({ className, name, alt = `Icon ${name}`, title = alt, asSVG, ...imgProps }) => {
+    const href = `${projectSettings.CDN || ''}icons/${name}.svg`;
+    if (asSVG) {
+        return (jsxs("svg", { className: className, ...imgProps, "aria-hidden": "true", children: [title ? jsx("title", { children: title }) : null, alt ? jsx("desc", { children: alt }) : null, jsx("use", { href: `${href}#icon`, xlinkHref: `${href}#icon` })] }));
+    }
+    return (jsx("img", { className: className, src: href, alt: alt, title: title, ...imgProps, "aria-hidden": "true" }));
+});
+
 ;// CONCATENATED MODULE: ./src/ui-kit/Img.tsx
 
 
@@ -31429,6 +31410,25 @@ const Img = JSX(({ className, image }) => (jsxs("picture", { className: `${class
 function formatToMimeType(format) {
     return format ? `image/${String(format)}` : undefined;
 }
+
+;// CONCATENATED MODULE: ./src/ui-kit/Title/TitleProps.ts
+var SizeTableClass;
+(function (SizeTableClass) {
+    SizeTableClass["XL"] = "text-title-lg";
+    SizeTableClass["L"] = "text-title";
+    SizeTableClass["M"] = "text-title-sm";
+    SizeTableClass["S"] = "text-title-xs";
+})(SizeTableClass || (SizeTableClass = {}));
+
+;// CONCATENATED MODULE: ./src/ui-kit/Title/Title.tsx
+
+
+
+const Title = JSX(({ size = 'L', className, children, ...rest }) => {
+    const Tag = size === 'XL' ? 'h1' : 'h2';
+    return (jsx(Tag, { className: getClasses(SizeTableClass[size], className), ...rest, children: children }));
+});
+const getClasses = (...classes) => classes.filter(Boolean).join(' ');
 
 ;// CONCATENATED MODULE: ./src/utils/getColSpan.ts
 const getColSpan = (className) => {
@@ -31492,6 +31492,22 @@ const Headline = JSX(({ bgColor = 'bg-white', className, ...props }) => {
     return (jsx("section", { className: `p-10 ${bgColor} ${className || ''} `, children: jsx(BaseTile, { ...props }) }));
 });
 
+;// CONCATENATED MODULE: ./src/components/Headline/Headline.fixture.tsx
+
+
+
+const HEADLINE = {
+    title: 'Своя кредитная карта',
+    description: 'Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.',
+    align: 'center',
+    bgColor: 'transparent',
+};
+/* harmony default export */ const Headline_fixture = ({
+    default: jsx(Headline, { context: context, ...HEADLINE }),
+    'left white': jsx(Headline, { context: context, ...HEADLINE, align: "left", bgColor: "bg-white" }),
+    'right transparent': (jsx(Headline, { context: context, ...HEADLINE, align: "right", bgColor: "transparent" })),
+});
+
 ;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.tsx
 
 
@@ -31510,7 +31526,7 @@ const linkColumnsModeStyleMap = {
     double: 'gap-x-5 gap-y-[26px] flex-wrap',
     single: 'gap-3.5 flex-col',
 };
-const LinkDocs = JSX(({ className, title, align, documents, icon, columnsMode = 'double' }) => {
+const LinkDocs = JSX(({ className, title, align, documents, icon, columnsMode = 'single' }) => {
     const containerClasses = linkColumnsModeStyleMap[columnsMode];
     return (jsxs("section", { className: `font-sans p-[50px] bg-white ${className}`, children: [title && (jsx(Title, { className: `font-medium mt-0 ${titleMarginsStyleMap[columnsMode]} ${titleAlignStyleMap[align ?? 'center']}`, children: title })), jsx("div", { className: `flex ${containerClasses}`, role: "list", children: documents?.length
                     ? documents.map(({ text, fileSize, ...linkProps }) => (jsxs("a", { className: `group flex text-sm font-sans align-middle h-fit
@@ -31533,6 +31549,54 @@ const formatSuffix = (ext, fileSize) => {
     return prefix + extension + size;
 };
 
+;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.fixture.tsx
+
+
+
+const LINK_DOCS = {
+    title: 'Дополнительные документы',
+    icon: 'DocIcon',
+    documents: [
+        { text: 'target self', href: '/abc1/cooldoc.doc', target: '_self' },
+        { text: 'target blank', href: '/abc2/wtf.rtf', target: '_blank' },
+        { text: 'GlassIcon', href: '/abc3/map.jpeg' },
+        { text: 'no icon', href: '/abc4' },
+        { text: 'документ 5', href: '/abc5' },
+        { text: 'документ 6', href: '/abc6/abc.pdf' },
+        { text: 'Text text text', href: '/abc7/yolo.png' },
+        {
+            text: 'Some more generic text to stretch item, and even more, more text, and more generic text, and even more, more text, and even more',
+            href: '/abc8/archive.zip',
+            fileSize: '2.3МБ',
+        },
+        { text: 'И ещё немного текста', href: '/abc9/rarniw.rar', fileSize: '666МБ' },
+        {
+            text: 'Форматируем, сортируем, смотрим как отображается...',
+            href: '/abc10/',
+            fileSize: '65ГБ',
+        },
+    ],
+};
+const LINK_DOCS_TWO_COLUMNS = {
+    ...LINK_DOCS,
+    columnsMode: 'double',
+};
+const LINK_DOCS_ANOTHER_ICON = {
+    ...LINK_DOCS,
+    icon: 'GlassIcon',
+    title: '',
+};
+const LINK_DOCS_NO_ICON = {
+    ...LINK_DOCS,
+    icon: undefined,
+};
+/* harmony default export */ const LinkDocs_fixture = ({
+    'one column': jsx(LinkDocs, { context: context, ...LINK_DOCS }),
+    'two column': jsx(LinkDocs, { context: context, ...LINK_DOCS_TWO_COLUMNS }),
+    'another icon': jsx(LinkDocs, { context: context, ...LINK_DOCS_ANOTHER_ICON }),
+    'no icon': jsx(LinkDocs, { context: context, ...LINK_DOCS_NO_ICON }),
+});
+
 ;// CONCATENATED MODULE: ./src/components/PictureText/PictureText.tsx
 
 
@@ -31545,6 +31609,39 @@ const PictureText = JSX(({ className, title, image, benefits }) => {
 function renderBenefit(benefit, i) {
     return (jsxs("div", { className: "flex flex-row mb-8", children: [benefit.icon && (jsx(Icon, { className: "w-[48px] h-[48px] bg-main rounded-full box-border p-[12px]", name: benefit.icon, width: "48", height: "48" })), jsxs("div", { className: "flex gap-1 flex-col h-full ml-5 max-w-[490px]", children: [benefit.label && (jsx("div", { className: "font-medium text-primary-text text-xl m-0", children: benefit.label })), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary-text", children: benefit.description }))] })] }, String(i)));
 }
+
+;// CONCATENATED MODULE: ./src/components/PictureText/PictureText.fixture.tsx
+
+
+
+const PictureText_fixture_image = {
+    src: 'legal-support-business.png',
+    format: 'webp',
+    size: {
+        width: 200,
+        height: 200,
+    },
+    alt: 'Варианты потребительского кредита',
+};
+const PICTURE_TEXT = {
+    title: 'Варианты потребительского кредита',
+    benefits: [
+        {
+            label: 'Кредит по одному документу',
+            description: 'До 300 тыс ₽ по упрощённой процедуре получения кредита',
+            icon: 'DocumentText',
+        },
+        {
+            label: 'Кредит на общих условиях',
+            description: 'До 5 млн ₽ на общих условиях получения кредита',
+            icon: 'DiscountShape',
+        },
+    ],
+    image: PictureText_fixture_image,
+};
+/* harmony default export */ const PictureText_fixture = ({
+    default: jsx(PictureText, { context: context, ...PICTURE_TEXT }),
+});
 
 ;// CONCATENATED MODULE: ./src/components/TextBlock/TextBlock.tsx
 
@@ -31581,6 +31678,24 @@ function renderImage(image) {
     return image?.src ? jsx(Img, { className: "pt-0.5 pr-3", image: image }) : null;
 }
 
+;// CONCATENATED MODULE: ./src/components/TextBlock/TextBlock.fixture.tsx
+
+
+
+const TextBlock_fixture_image = {
+    src: 'bank-card.png',
+    format: 'webp',
+    size: {
+        width: 48,
+        height: 48,
+    },
+};
+const TEXT_BLOCK = {
+    title: 'Все карты Россельхозбанка работают',
+    description: "Если не планируете поездку за границу, продолжайте пользоваться картой Своя. Для поездок за границу можно заказать карту 'Кредитная карта Своя Union Pay' на сайте и в приложении Россельхозбанка",
+};
+/* harmony default export */ const TextBlock_fixture = (jsxs("div", { className: "font-sans overflow-hidden", children: [jsxs("div", { children: [jsx("p", { children: "Private clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "pc", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "big", image: TextBlock_fixture_image }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "none" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Business clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "bc", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Ecosystem own" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "eo", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] })] }));
+
 ;// CONCATENATED MODULE: ./src/components/Accordion/AccordionBlocks.tsx
 
 
@@ -31604,8 +31719,9 @@ const AccordionItem = JSX(({ label, blocks, context }) => {
     const hasContent = blocks?.length;
     const icon = isActive ? 'MinusIcon' : 'PlusIcon';
     const handleToggle = (e) => {
-        if (!hasContent)
-            return null;
+        if (!hasContent) {
+            return;
+        }
         setIsActive(!isActive);
         const contentBlock = getContentBlock(e);
         contentBlock.style.maxHeight = contentBlock.style.maxHeight
@@ -31616,13 +31732,14 @@ const AccordionItem = JSX(({ label, blocks, context }) => {
         ${hasContent ? 'group cursor-pointer' : ''}`, onClick: handleToggle, children: [jsx("span", { className: `m-0 text-xl pr-2.5 font-medium ${hasContent ? 'group-hover:text-primary-main' : ''}`, children: label }), hasContent ? jsx(Icon, { name: icon, width: "24", height: "24" }) : null] }), hasContent ? (jsx("div", { className: `${isActive ? 'pb-5' : ''} text-sm transition-all duration-300 max-h-0 overflow-hidden group-last:last:pb-0 `, children: blocks?.length ? blocks.map((block, i) => renderBlock(block, i, context)) : null })) : null] }));
 });
 const renderBlock = (block, i, context) => {
-    if (!block.type || !block.data || !Accordion_AccordionBlocks.hasOwnProperty(block.type)) {
+    const type = block?.accordionBlockType;
+    if (!type || !(type in Accordion_AccordionBlocks)) {
         return null;
     }
-    const AccordionBlock = Accordion_AccordionBlocks[block.type];
-    return (jsx("div", { className: "mb-5 last:mb-0", children: jsx(AccordionBlock, { context: context, ...block.data }) }, `block_${i}`));
+    const AccordionBlock = Accordion_AccordionBlocks[type];
+    return (jsx("div", { className: "mb-5 last:mb-0", children: jsx(AccordionBlock, { context: context, ...block }) }, `block_${i}`));
 };
-const getContentBlock = (e) => e.target.tagName === 'BUTTON' ? e.target.nextSibling : e.target.parentNode.nextSibling;
+const getContentBlock = ({ target }) => target.tagName === 'BUTTON' ? target.nextSibling : target.parentNode.nextSibling;
 
 ;// CONCATENATED MODULE: ./src/components/Accordion/Accordion.tsx
 
@@ -31633,92 +31750,29 @@ const Accordion = JSX(({ title, accordionItems, context, className }) => {
     return (jsxs("section", { className: `p-[50px] font-sans bg-white text-primary-text ${className || ''}`, children: [title ? jsx(Title, { className: "m-0 mb-2.5", children: title }) : null, accordionItems?.length ? (jsx("ul", { className: "list-none m-0 p-0", children: accordionItems.map((item, i) => (jsx(AccordionItem, { ...item, context: context }, `AccordionItem${i}`))) })) : null] }));
 });
 
-;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.fixture.tsx
-
-
-
-const LinkDocsFixtureSetOne = {
-    title: 'Дополнительные документы',
-    icon: 'DocIcon',
-    documents: [
-        { text: 'target self', href: '/abc1/cooldoc.doc', target: '_self' },
-        { text: 'target blank', href: '/abc2/wtf.rtf', target: '_blank' },
-        { text: 'GlassIcon', href: '/abc3/map.jpeg' },
-        { text: 'no icon', href: '/abc4' },
-        { text: 'документ 5', href: '/abc5' },
-        { text: 'документ 6', href: '/abc6/abc.pdf' },
-        { text: 'Text text text', href: '/abc7/yolo.png' },
-        {
-            text: 'Some more generic text to stretch item, and even more, more text, and more generic text, and even more, more text, and even more',
-            href: '/abc8/archive.zip',
-            fileSize: '2.3МБ',
-        },
-        { text: 'И ещё немного текста', href: '/abc9/rarniw.rar', fileSize: '666МБ' },
-        {
-            text: 'Форматируем, сортируем, смотрим как отображается...',
-            href: '/abc10/',
-            fileSize: '65ГБ',
-        },
-    ],
-};
-const LinkDocsFixtureSetTwo = {
-    ...LinkDocsFixtureSetOne,
-    columnsMode: 'single',
-};
-const LinkDocsFixtureSetThree = {
-    ...LinkDocsFixtureSetOne,
-    icon: 'GlassIcon',
-    title: '',
-};
-const LinkDocsFixtureSetFour = {
-    ...LinkDocsFixtureSetOne,
-    icon: undefined,
-};
-/* harmony default export */ const LinkDocs_fixture = ({
-    'default, 2 columns': jsx(LinkDocs, { context: context, ...LinkDocsFixtureSetOne }),
-    'one column': jsx(LinkDocs, { context: context, ...LinkDocsFixtureSetTwo }),
-    'another icon, no extensions': jsx(LinkDocs, { context: context, ...LinkDocsFixtureSetThree }),
-    'no icon': jsx(LinkDocs, { context: context, ...LinkDocsFixtureSetFour }),
-});
-
 ;// CONCATENATED MODULE: ./src/components/Accordion/Accordion.fixture.tsx
 
 
 
 
-const TEXT_BLOCK = {
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque minima odio soluta cupiditate pariatur, labore molestias quas necessitatibus nesciunt in praesentium accusamus provident sequi maiores autem. Voluptas quam neque iste?',
+
+
+
+const TEXT_BLOCK_ACCORDION_BLOCK = {
+    accordionBlockType: 'TextBlock',
+    ...TEXT_BLOCK,
 };
-const HEADLINE = {
-    context: context,
-    title: 'Своя кредитная карта',
-    description: 'Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.',
-    align: 'left',
-    bgColor: 'bg-white',
+const HEADLINE_ACCORDION_BLOCK = {
+    accordionBlockType: 'Headline',
+    ...HEADLINE,
 };
-const PICTURE_TEXT = {
-    title: 'Варианты потребительского кредита',
-    benefits: [
-        {
-            label: 'Кредит по одному документу',
-            description: 'До 300 тыс ₽ по упрощённой процедуре получения кредита',
-            icon: 'DocumentText',
-        },
-        {
-            label: 'Кредит на общих условиях',
-            description: 'До 5 млн ₽ на общих условиях получения кредита',
-            icon: 'DiscountShape',
-        },
-    ],
-    image: {
-        src: 'legal-support-business.png',
-        alt: 'Варианты потребительского кредита',
-        format: 'webp',
-        size: {
-            width: 200,
-            height: 200,
-        },
-    },
+const PICTURE_TEXT_ACCORDION_BLOCK = {
+    accordionBlockType: 'PictureText',
+    ...PICTURE_TEXT,
+};
+const LINK_DOCS_ACCORDION_BLOCK = {
+    accordionBlockType: 'LinkDocs',
+    ...LINK_DOCS,
 };
 const propsTextBlock = {
     title: 'Accordion title',
@@ -31726,95 +31780,23 @@ const propsTextBlock = {
     accordionItems: [
         {
             label: 'Accordion label 1',
-            blocks: [
-                {
-                    type: 'TextBlock',
-                    data: TEXT_BLOCK,
-                },
-                {
-                    type: 'TextBlock',
-                    data: TEXT_BLOCK,
-                },
-            ],
+            blocks: [TEXT_BLOCK_ACCORDION_BLOCK, TEXT_BLOCK_ACCORDION_BLOCK],
         },
         {
             label: 'Accordion label 2',
-            blocks: [
-                {
-                    type: 'TextBlock',
-                    data: TEXT_BLOCK,
-                },
-                {
-                    type: 'TextBlock',
-                    data: TEXT_BLOCK,
-                },
-            ],
+            blocks: [PICTURE_TEXT_ACCORDION_BLOCK],
         },
         {
             label: 'Accordion label 3',
-            blocks: [
-                {
-                    type: 'PictureText',
-                    data: PICTURE_TEXT,
-                },
-                {
-                    type: 'PictureText',
-                    data: PICTURE_TEXT,
-                },
-            ],
+            blocks: [HEADLINE_ACCORDION_BLOCK],
         },
         {
             label: 'Accordion label 4',
-            blocks: [
-                {
-                    type: 'Headline',
-                    data: HEADLINE,
-                },
-                {
-                    type: 'Headline',
-                    data: HEADLINE,
-                },
-            ],
+            blocks: [LINK_DOCS_ACCORDION_BLOCK],
         },
     ],
 };
-const propsLinkDocs = {
-    title: 'Accordion title',
-    context: context,
-    accordionItems: [
-        {
-            label: 'Список документов в 2 колонки',
-            blocks: [
-                {
-                    type: 'LinkDocs',
-                    data: { ...LinkDocsFixtureSetOne, title: '' },
-                },
-            ],
-        },
-        {
-            label: 'Список документов в одну колонку',
-            blocks: [
-                {
-                    type: 'LinkDocs',
-                    data: { ...LinkDocsFixtureSetTwo, title: '' },
-                },
-            ],
-        },
-        {
-            label: 'Немного кастомизированный список',
-            blocks: [
-                {
-                    type: 'LinkDocs',
-                    data: LinkDocsFixtureSetThree,
-                },
-            ],
-        },
-    ],
-};
-/* harmony default export */ const Accordion_fixture = ({
-    'with text block': jsx(Accordion, { ...propsTextBlock }),
-    'with link docs block': jsx(Accordion, { ...propsLinkDocs }),
-});
+/* harmony default export */ const Accordion_fixture = (jsx(Accordion, { ...propsTextBlock }));
 
 ;// CONCATENATED MODULE: ./src/components/BenefitsBlock/BenefitsBlock.tsx
 
@@ -33529,17 +33511,6 @@ const onlyTitleProps = {
         },
     ] }));
 
-;// CONCATENATED MODULE: ./src/components/Headline/Headline.fixture.tsx
-
-
-
-/* harmony default export */ const Headline_fixture = ({
-    default: (jsx(Headline, { title: "\u0421\u0432\u043E\u044F \u043A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430", description: "\u041A\u0430\u0440\u0442\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432 180 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u043C\u0438\u0440\u0430. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0435 \u0441\u043D\u044F\u0442\u0438\u0435 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u043B\u044E\u0431\u044B\u0445 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u0430\u0445.", align: "left", bgColor: "bg-white", context: context })),
-    'center transparent': (jsx(Headline, { title: "\u0421\u0432\u043E\u044F \u043A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430", description: "\u041A\u0430\u0440\u0442\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432 180 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u043C\u0438\u0440\u0430. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0435 \u0441\u043D\u044F\u0442\u0438\u0435 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u043B\u044E\u0431\u044B\u0445 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u0430\u0445.", align: "center", bgColor: "transparent", context: context })),
-    'right transparent': (jsx(Headline, { title: "\u0421\u0432\u043E\u044F \u043A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430", description: "\u041A\u0430\u0440\u0442\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432 180 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u043C\u0438\u0440\u0430. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0435 \u0441\u043D\u044F\u0442\u0438\u0435 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u043B\u044E\u0431\u044B\u0445 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u0430\u0445.", align: "right", bgColor: "transparent", context: context })),
-    'right white': (jsx(Headline, { title: "\u0421\u0432\u043E\u044F \u043A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430", description: "\u041A\u0430\u0440\u0442\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442 \u0432 180 \u0441\u0442\u0440\u0430\u043D\u0430\u0445 \u043C\u0438\u0440\u0430. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E\u0435 \u0441\u043D\u044F\u0442\u0438\u0435 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u0445 \u0432 \u043B\u044E\u0431\u044B\u0445 \u0431\u0430\u043D\u043A\u043E\u043C\u0430\u0442\u0430\u0445.", align: "right", bgColor: "bg-white", context: context })),
-});
-
 ;// CONCATENATED MODULE: ./src/components/LikeControl/LikeControl.fixture.tsx
 
 
@@ -33655,34 +33626,6 @@ const MiniGallery_fixture_onlyTitleProps = {
                     version: 'secondary',
                 },
             ] }) })),
-});
-
-;// CONCATENATED MODULE: ./src/components/PictureText/PictureText.fixture.tsx
-
-
-
-const PictureText_fixture_image = {
-    src: 'legal-support-business.png',
-    format: 'webp',
-    size: {
-        width: 200,
-        height: 200,
-    },
-    alt: 'Варианты потребительского кредита',
-};
-/* harmony default export */ const PictureText_fixture = ({
-    default: (jsx(PictureText, { context: context, title: 'Варианты потребительского кредита', benefits: [
-            {
-                label: 'Кредит по одному документу',
-                description: 'До 300 тыс ₽ по упрощённой процедуре получения кредита',
-                icon: 'DocumentText',
-            },
-            {
-                label: 'Кредит на общих условиях',
-                description: 'До 5 млн ₽ на общих условиях получения кредита',
-                icon: 'DiscountShape',
-            },
-        ], image: PictureText_fixture_image })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/Placeholder/Placeholder.fixture.tsx
@@ -34030,20 +33973,6 @@ const building = {
             description: 'Получите наличные в отделении банка',
         },
     ] }));
-
-;// CONCATENATED MODULE: ./src/components/TextBlock/TextBlock.fixture.tsx
-
-
-
-const TextBlock_fixture_image = {
-    src: 'bank-card.png',
-    format: 'webp',
-    size: {
-        width: 48,
-        height: 48,
-    },
-};
-/* harmony default export */ const TextBlock_fixture = (jsxs("div", { className: "font-sans overflow-hidden", children: [jsxs("div", { children: [jsx("p", { children: "Private clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "pc", children: [jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "primary", iconVersion: "big", image: TextBlock_fixture_image }), jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "primary", iconVersion: "none" }), jsx(TextBlock, { context: context, description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Business clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "bc", children: [jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Ecosystem own" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "eo", children: [jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, title: "\u0412\u0441\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430 \u0440\u0430\u0431\u043E\u0442\u0430\u044E\u0442", description: "\u0415\u0441\u043B\u0438 \u043D\u0435 \u043F\u043B\u0430\u043D\u0438\u0440\u0443\u0435\u0442\u0435 \u043F\u043E\u0435\u0437\u0434\u043A\u0443 \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443, \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0430\u0439\u0442\u0435 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u043A\u0430\u0440\u0442\u043E\u0439 \u0421\u0432\u043E\u044F. \u0414\u043B\u044F \u043F\u043E\u0435\u0437\u0434\u043E\u043A \u0437\u0430 \u0433\u0440\u0430\u043D\u0438\u0446\u0443 \u043C\u043E\u0436\u043D\u043E \u0437\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043A\u0430\u0440\u0442\u0443 '\u041A\u0440\u0435\u0434\u0438\u0442\u043D\u0430\u044F \u043A\u0430\u0440\u0442\u0430 \u0421\u0432\u043E\u044F Union Pay' \u043D\u0430 \u0441\u0430\u0439\u0442\u0435 \u0438 \u0432 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0438 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", blockVersion: "secondary-light", iconVersion: "small" })] })] })] }));
 
 ;// CONCATENATED MODULE: ./src/components/Tile/Tile.fixture.tsx
 
