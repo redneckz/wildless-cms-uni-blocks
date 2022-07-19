@@ -6,7 +6,9 @@
     "format": "webp",
     "size": {
       "width": 300
-    }
+    },
+    "alt": "Описание картинки",
+    "title": "Подсказка"
   },
   "items": ["Пункт 1", "Пункт 2", "Пункт 3"],
   "buttons": [
@@ -14,5 +16,6 @@
       "text": "Подробнее",
       "version": "primary"
     }
-  ]
+  ],
+  "version": "primary"
 }
