@@ -6,31 +6,11 @@ import type { ProductGalleryContent } from './ProductGalleryContent';
 
 export interface ProductGalleryProps extends ProductGalleryContent, UniBlockProps {}
 
-let interval: null | ReturnType<typeof setInterval> = null;
-let currentSlide = 0;
-
 export const ProductGallery = JSX<ProductGalleryProps>(
   ({ className, context, duration = 0, slides = [] }) => {
     const galleryNav = slides.map((s) => s.nav);
     const galleryBlocks = slides.map((s) => s.productBlock);
     const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
-
-    currentSlide = activeSlideIndex;
-    const initSlideInterval = () => {
-      return setInterval(() => {
-        currentSlide = currentSlide >= galleryNav.length - 1 ? 0 : currentSlide + 1;
-        setActiveSlideIndex(currentSlide);
-      }, duration * 1000);
-    };
-
-    if (duration > 0) {
-      if (!interval) {
-        interval = initSlideInterval();
-      } else {
-        clearInterval(interval);
-        interval = initSlideInterval();
-      }
-    }
 
     return (
       <section className={`font-sans bg-white overflow-hidden w-100 ${className || ''}`}>

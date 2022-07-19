@@ -32755,28 +32755,10 @@ const ProductBlock = JSX((props) => {
 
 
 
-let interval = null;
-let currentSlide = 0;
 const ProductGallery = JSX(({ className, context, duration = 0, slides = [] }) => {
     const galleryNav = slides.map((s) => s.nav);
     const galleryBlocks = slides.map((s) => s.productBlock);
     const [activeSlideIndex, setActiveSlideIndex] = context.useState(0);
-    currentSlide = activeSlideIndex;
-    const initSlideInterval = () => {
-        return setInterval(() => {
-            currentSlide = currentSlide >= galleryNav.length - 1 ? 0 : currentSlide + 1;
-            setActiveSlideIndex(currentSlide);
-        }, duration * 1000);
-    };
-    if (duration > 0) {
-        if (!interval) {
-            interval = initSlideInterval();
-        }
-        else {
-            clearInterval(interval);
-            interval = initSlideInterval();
-        }
-    }
     return (jsxs("section", { className: `font-sans bg-white overflow-hidden w-100 ${className || ''}`, children: [jsx("div", { className: `flex duration-1000`, style: { transform: `translateX(-${activeSlideIndex}00%)` }, role: "list", children: galleryBlocks.map((_, i) => renderProductBlock(_, i, context)) }), jsx("div", { className: "flex", children: galleryNav.map((slide, i) => renderNavButton({
                     slide,
                     i,
