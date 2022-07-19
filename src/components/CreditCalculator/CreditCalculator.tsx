@@ -73,10 +73,10 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
 
     return (
       <section className={`font-sans text-primary-text bg-white p-4 w-[847px] ${className}`}>
-        <div className={`box-border p-[52px] pr-14 flex flex-col justify-between ${borderStyle}`}>
+        <div
+          className={`box-border p-[49px] pr-[53px] flex flex-col justify-between ${borderStyle}`}
+        >
           <div className="flex justify-between ">
-            // 465px = 847 (container) - 6 (border-3) - 42 (margin-[42px] - 52 (p-[52px]) - 56
-            (pr-14) - 226 (w-[226px])
             <div className="grow mr-[42px] w-[465px]">
               <InputRange
                 title="Желаемая сумма кредита, ₽"

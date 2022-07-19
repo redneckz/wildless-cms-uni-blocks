@@ -31,7 +31,9 @@ export const Checkbox = JSX<CheckboxProps>(({ text, checked, onChange, className
         fill="white"
         viewBox="0 0 11 9"
       />
-      {text ? <span className="font-sans ml-3 text-sm cursor-pointer">{text}</span> : null}
+      {text ? (
+        <span className="font-sans ml-3 text-sm leading-5 cursor-pointer">{text}</span>
+      ) : null}
     </label>
   </div>
 ));
