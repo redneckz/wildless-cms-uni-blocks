@@ -51,14 +51,13 @@ const MediaButton = JSX<MediaButtonProps>(({ href }) => {
   if (!icon) return null;
 
   return (
-    <Button
-      rounded
+    <a
+      className="flex items-center justify-center border border-solid border-main-divider rounded-full no-underline outline-none w-[38px] h-[38px] hover:fill-primary-main"
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={label}
-      className="border-solid border border-main-divider w-9 h-9 flex items-center justify-center hover:fill-primary-main"
-      appendLeft={<Icon name={icon} width={width} height={height} asSVG />}
-    />
+    >
+      {Icon && <Icon name={icon} width={width} height={height} asSVG className="block" />}
+    </a>
   );
 });
