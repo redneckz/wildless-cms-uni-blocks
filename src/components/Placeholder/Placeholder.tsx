@@ -17,12 +17,12 @@ export const Placeholder = JSX<PlaceholderProps>(({ className, context, title })
   );
 });
 
-const renderShimmer = (size: number = 3) =>
+const renderShimmer = (size = 3) =>
   goldenSequence(100, size)
     .map((_) => Math.floor(_))
     .map(renderShimmerItem);
 
-const renderShimmerItem = (width: number = 100, index: number) => (
+const renderShimmerItem = (width = 100, index: number) => (
   <div key={String(index)} style={{ width: `${width}%` }} className="h-4 mt-2 bg-secondary-light" />
 );
 

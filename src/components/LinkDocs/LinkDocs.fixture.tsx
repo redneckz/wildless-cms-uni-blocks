@@ -1,8 +1,8 @@
-import { LinkDocs } from './LinkDocs';
 import { context } from '../../setup-fixture';
+import { LinkDocs } from './LinkDocs';
 import type { LinkDocsContent } from './LinkDocsContent';
 
-export const LinkDocsFixtureSetOne: LinkDocsContent = {
+export const LINK_DOCS: LinkDocsContent = {
   title: 'Дополнительные документы',
   icon: 'DocIcon',
   documents: [
@@ -14,7 +14,7 @@ export const LinkDocsFixtureSetOne: LinkDocsContent = {
     { text: 'документ 6', href: '/abc6/abc.pdf' },
     { text: 'Text text text', href: '/abc7/yolo.png' },
     {
-      text: 'Some more generic text, and even more, more text',
+      text: 'Some more generic text to stretch item, and even more, more text, and more generic text, and even more, more text, and even more',
       href: '/abc8/archive.zip',
       fileSize: '2.3МБ',
     },
@@ -27,25 +27,25 @@ export const LinkDocsFixtureSetOne: LinkDocsContent = {
   ],
 };
 
-export const LinkDocsFixtureSetTwo: LinkDocsContent = {
-  ...LinkDocsFixtureSetOne,
-  columnsMode: 'single',
+export const LINK_DOCS_TWO_COLUMNS: LinkDocsContent = {
+  ...LINK_DOCS,
+  columnsMode: 'double',
 };
 
-export const LinkDocsFixtureSetThree: LinkDocsContent = {
-  ...LinkDocsFixtureSetOne,
+export const LINK_DOCS_ANOTHER_ICON: LinkDocsContent = {
+  ...LINK_DOCS,
   icon: 'GlassIcon',
   title: '',
 };
 
-export const LinkDocsFixtureSetFour: LinkDocsContent = {
-  ...LinkDocsFixtureSetOne,
+export const LINK_DOCS_NO_ICON: LinkDocsContent = {
+  ...LINK_DOCS,
   icon: undefined,
 };
 
 export default {
-  'default, 2 columns': <LinkDocs context={context} {...LinkDocsFixtureSetOne} />,
-  'one column': <LinkDocs context={context} {...LinkDocsFixtureSetTwo} />,
-  'another icon, no extensions': <LinkDocs context={context} {...LinkDocsFixtureSetThree} />,
-  'no icon': <LinkDocs context={context} {...LinkDocsFixtureSetFour} />,
+  'one column': <LinkDocs context={context} {...LINK_DOCS} />,
+  'two column': <LinkDocs context={context} {...LINK_DOCS_TWO_COLUMNS} />,
+  'another icon': <LinkDocs context={context} {...LINK_DOCS_ANOTHER_ICON} />,
+  'no icon': <LinkDocs context={context} {...LINK_DOCS_NO_ICON} />,
 };

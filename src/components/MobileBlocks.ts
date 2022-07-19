@@ -24,7 +24,4 @@ export const MobileBlocks = {
   ProductTile,
   TextBlock,
   Tile,
-  // TODO StepsBlock,
-  // TODO BenefitsBlock,
-  // TODO ProductGallery
 };
