@@ -1,8 +1,10 @@
 {
   "title": "Шаги",
+  "showLines": true,
   "steps": [
     {
       "label": "Шаг №1",
+      "description": "Описание шага №1",
       "icon": "NewDocIcon"
     },
     {
@@ -10,7 +12,7 @@
       "icon": "PassSendIcon"
     },
     {
-      "label": "Шаг №3",
+      "description": "Шаг №3 без заголовка",
       "icon": "ActualBalanceIcon"
     }
   ]
