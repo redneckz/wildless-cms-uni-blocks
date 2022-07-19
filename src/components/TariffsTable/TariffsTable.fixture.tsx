@@ -10,6 +10,8 @@ const image: Picture = {
     width: 288,
     height: 56,
   },
+  alt: 'Платёжные системы',
+  title: 'Платёжные системы',
 };
 
 const rowHeaders: TariffsTableRowHeader[] = [
@@ -75,6 +77,7 @@ const columns: TariffsTableColumn[] = [
               width: 140,
               height: 140,
             },
+            alt: 'Деньги',
           },
         },
       ],
