@@ -17,7 +17,7 @@ export interface HeaderCellProps {
 
 export const HeaderCell = JSX<HeaderCellProps>(({ icon, image, title, link }) => (
   <div
-    className={`w-80 box-border flex flex-col items-center rounded-t-md border-b-0 px-7 pt-7 pb-12 ${BORDER_CLASSES} ${GRADIENT}`}
+    className={`w-80 box-border flex flex-col items-center rounded-t-md border-b-0 px-7 pt-7 pb-[46px] ${BORDER_CLASSES} ${GRADIENT}`}
     role="columnheader"
     scope="col"
   >
@@ -29,7 +29,7 @@ export const HeaderCell = JSX<HeaderCellProps>(({ icon, image, title, link }) =>
         height="63"
       />
     )}
-    {image?.src && <Img className="mb-4" image={image} />}
+    {image?.src && <Img className="mb-[18px]" image={image} />}
     {title && (
       <Title size="S" className="font-medium m-0 text-center text-white">
         {title}
@@ -42,7 +42,7 @@ export const HeaderCell = JSX<HeaderCellProps>(({ icon, image, title, link }) =>
           target={link.target}
           className="mt-4 w-full text-primary-main bg-white hover:bg-secondary-hover active:bg-secondary-active"
         >
-          <div className="text-xs py-[11px]">{link.text}</div>
+          <div className="font-medium text-xs py-[11px]">{link.text}</div>
         </Button>
       </div>
     )}

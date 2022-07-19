@@ -23,7 +23,7 @@ export const PromoTile = JSX<PromoTileProps>(
         buttons={buttons}
         version={version}
       >
-        <div>
+        <div className="mt-1.5">
           {date && <div className="text-sm mb-2">{formatDate(date)}</div>}
           <div className="text-base">{description}</div>
         </div>
