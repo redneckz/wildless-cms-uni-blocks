@@ -6,6 +6,7 @@ import type { Picture } from '../../model/Picture';
 const image: Picture = {
   src: 'money-1.png',
   format: 'webp',
+  alt: 'Потребительский кредит наличными',
   size: {
     width: 280,
     height: 280,

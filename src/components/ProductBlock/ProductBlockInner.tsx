@@ -43,7 +43,7 @@ function renderBenefit(benefit: Benefit, i: number) {
           height="24"
         />
       )}
-      <div className="flex gap-1 flex-col h-full">
+      <div className="flex gap-1 flex-col h-full max-w-[149px]">
         <h4 className="font-medium text-primary-text text-xl m-0">{benefit.label}</h4>
         {benefit.description && (
           <div className="font-normal text-sm text-secondary-text">{benefit.description}</div>
