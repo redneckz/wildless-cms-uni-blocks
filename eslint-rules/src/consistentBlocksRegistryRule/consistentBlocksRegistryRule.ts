@@ -1,22 +1,15 @@
 import { ESLintUtils } from '@typescript-eslint/utils';
 import { getObjectExpression } from '../utils/getObjectExpression';
+import { jsBasename } from '../utils/jsBasename';
 import { defaultOptions } from './consistentBlocksRegistryRule.defaultOptions';
-import { meta } from './consistentBlocksRegistryRule.meta';
+import { ConsistentBlocksRegistryRuleOptions, meta } from './consistentBlocksRegistryRule.meta';
 import { diff } from './diff';
 import { findBlocks } from './findBlocks';
-import { jsBasename } from './jsBasename';
 
-type Options = Array<{
-  blocksRegistry: string;
-  blocksDir: string;
-  include: RegExp[];
-  exclude: RegExp[];
-}>;
-
-type MessageIds = 'default' | 'blocksToRegister' | 'blocksRegistryNotFound';
+type MessageIds = 'blocksToRegister' | 'blocksRegistryNotFound';
 
 export const consistentBlocksRegistryRule = ESLintUtils.RuleCreator.withoutDocs<
-  Options,
+  ConsistentBlocksRegistryRuleOptions,
   MessageIds
 >({
   create(context) {

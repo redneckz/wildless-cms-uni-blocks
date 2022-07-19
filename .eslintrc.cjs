@@ -1,3 +1,6 @@
+const BLOCKS_DIR = 'src/components';
+const BLOCKS_DIR_EXCLUSIONS = [/^.*Page$/, /^.*Control$/, /^Base.*$/, /^.*Content$/, /^.*Blocks$/];
+
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
@@ -25,13 +28,20 @@ module.exports = {
           'warn',
           {
             blocksRegistry: 'src/components/Blocks.ts',
-            blocksDir: 'src/components',
-            exclude: [/^.*Page$/, /^.*Control$/, /^Base.*$/, /^.*Content$/, /^.*Blocks$/],
+            blocksDir: BLOCKS_DIR,
+            exclude: BLOCKS_DIR_EXCLUSIONS,
           },
           {
             blocksRegistry: 'src/components/MobileBlocks.ts',
-            blocksDir: 'src/components',
+            blocksDir: BLOCKS_DIR,
             include: [/^.*\.mobile$/],
+          },
+        ],
+        'local-eslint-rules/block-structure': [
+          'error',
+          {
+            blocksDir: BLOCKS_DIR,
+            exclude: BLOCKS_DIR_EXCLUSIONS,
           },
         ],
       },
