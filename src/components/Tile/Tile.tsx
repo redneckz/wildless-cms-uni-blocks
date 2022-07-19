@@ -37,7 +37,7 @@ function getContainerPaddingRight(className = '') {
   }
 }
 
-function getContainerMinHeight(className: string = '') {
+function getContainerMinHeight(className = '') {
   const colSpan = getColSpan(className);
   if (colSpan <= 6) {
     return 'min-h-[300px]';
