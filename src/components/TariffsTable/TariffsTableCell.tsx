@@ -19,7 +19,7 @@ export const TariffsTableCell = JSX<TariffsTableCellProps>(({ cell, isLastRow })
   const cellClasses = `h-full ${DIVIDER_CLASSES}`;
 
   return (
-    <div className={cellWrapperClasses}>
+    <div className={cellWrapperClasses} role="cell">
       <div className={cellClasses}>{cell.map((item, i) => renderCellInner(item, i))}</div>
     </div>
   );
@@ -29,15 +29,15 @@ const renderCellInner = (
   { label, description, list, image, buttons }: TariffsTableCellData,
   i: number,
 ) => (
-  <div className="first:pt-5 last:pb-5">
+  <div key={String(i)} className="first:pt-5 last:pb-5">
     {i > 0 && (
       <div className="border-main-divider border border-solid border-t-0 border-x-0 my-4" />
     )}
-    {label && <h5 className="text-xl font-medium m-0">{label}</h5>}
+    {label && <div className="text-xl font-medium m-0">{label}</div>}
     {description && <div className="text-sm text-secondary-text">{description}</div>}
     {list?.items?.length ? (
       <div className="flex flex-col justify-between items-start">
-        <div>
+        <div role="list">
           {list.items.map((text, idx) => (
             <BlockItem
               key={String(idx)}

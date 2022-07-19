@@ -8,6 +8,7 @@ import { transformContentPage } from './transformContentPage';
 const INDEX_PAGE_SLUG = 'index';
 const find = util.promisify(glob);
 
+// eslint-disable-next-line max-lines-per-function
 export function ContentPageRepository({
   contentDir = 'content',
   publicDir = 'public',

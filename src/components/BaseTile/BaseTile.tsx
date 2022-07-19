@@ -44,11 +44,14 @@ export const BaseTile = JSX<BaseTileProps>(
     return (
       <div className={`font-sans flex flex-col grow h-full ${alignBlock[align]}`}>
         {title && (
-          <Title size={titleSize || getTitleSizeByClassName(className)} className={TITLE_CLASSES}>
+          <Title
+            size={titleSize || getTitleSizeByClassName(className)}
+            className={`${TITLE_CLASSES} ${version === 'primary' ? 'text-primary-text' : ''}`}
+          >
             {title}
           </Title>
         )}
-        <div className="flex grow justify-between">
+        <div className="flex grow justify-between w-full">
           <div className={`flex flex-col justify-between ${alignBlock[align]}`}>
             <div>
               {description ? (

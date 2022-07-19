@@ -1,6 +1,13 @@
 {
-  "title": "Заголовок",
+  "title": "Текстовый блок",
   "description": "Описание",
   "blockVersion": "primary",
-  "iconVersion": "small"
+  "iconVersion": "small",
+  "image": {
+    "format": "webp",
+    "size": {
+      "width": 48,
+      "height": 48
+    }
+  }
 }

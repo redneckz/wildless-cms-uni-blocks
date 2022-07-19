@@ -49,7 +49,7 @@ export const GalleryInner = JSX<GalleryInnerProps>(
 
     return (
       <section
-        className={`relative font-sans text-primary-text bg-white p-12 overflow-hidden ${className}`}
+        className={`relative font-sans text-primary-text bg-white p-12 py-[50px] overflow-hidden ${className}`}
       >
         <div className="flex flex-col items-center mb-8">
           {title ? <Title className="font-medium m-0 text-center">{title}</Title> : null}
@@ -68,6 +68,7 @@ export const GalleryInner = JSX<GalleryInnerProps>(
         >
           {cards?.map((card, i) => renderCard(card, i, version))}
         </div>
+        <div className="absolute top-0 left-0 bottom-0 w-[84px] bg-gradient-to-r from-white to-transparent"></div>
         {showPrevButton && (
           <ArrowButton
             className="absolute top-1/2 left-8 rotate-180"
