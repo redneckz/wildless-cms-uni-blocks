@@ -14,7 +14,9 @@ export const ProductBlock = JSX<ProductBlockProps>((props) => {
   const { handlerDecorator } = context;
   return (
     <section
-      className={`font-sans bg-white pt-10 pl-[50px] pb-[50px] pr-[7.5rem] ${className || ''}`}
+      className={`font-sans bg-white pt-10 pl-[50px] pb-[50px] pr-[7.5rem] box-border min-h-[420px] ${
+        className || ''
+      }`}
     >
       {breadcrumbs?.length ? (
         <div className="text-xs mb-6">
