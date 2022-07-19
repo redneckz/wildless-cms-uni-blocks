@@ -9,10 +9,16 @@ import { Img } from '../../ui-kit/Img';
 import { Title } from '../../ui-kit/Title/Title';
 import { Tile } from '../Tile/Tile';
 import { context } from '../../setup-fixture';
+import type { BlockVersion } from '../../model/BlockVersion';
 
 export interface GalleryInnerProps extends GalleryContent, UniBlockProps {
   version?: GalleryVersion;
 }
+
+const cardVersionMap: Record<BlockVersion, string> = {
+  primary: 'text-secondary-text',
+  secondary: '',
+};
 
 const cardStyleMap: Record<GalleryVersion, string> = {
   normal: 'min-w-[364px] w-[364px]',
@@ -116,11 +122,16 @@ function renderCard(card: GalleryCard, i: number, version: GalleryVersion) {
           </h4>
         ) : null}
         {card.description ? (
-          <div className="font-normal text-sm text-secondary-text mt-2">{card.description}</div>
+          <div className={`font-normal text-sm mt-2 ${cardVersionMap[card.version ?? 'primary']}`}>
+            {card.description}
+          </div>
         ) : null}
         {card.items?.length ? (
-          <section className="max-w-[308px] mt-2" role="list">
-            {card.items.map(renderItem)}
+          <section
+            className={`max-w-[308px] mt-2 ${cardVersionMap[card.version ?? 'primary']}`}
+            role="list"
+          >
+            {card.items.map((item, i) => renderItem(item, i, card.version))}
           </section>
         ) : null}
       </div>
@@ -131,10 +142,10 @@ function renderCard(card: GalleryCard, i: number, version: GalleryVersion) {
   );
 }
 
-function renderItem(item: string, i: number) {
+function renderItem(item: string, i: number, version?: BlockVersion) {
   return (
-    <BlockItem key={String(i)}>
-      <span className="text-sm text-secondary-text">{item}</span>
+    <BlockItem key={String(i)} version={version ?? 'primary'}>
+      <span className="text-sm">{item}</span>
     </BlockItem>
   );
 }
