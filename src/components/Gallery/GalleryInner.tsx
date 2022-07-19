@@ -7,6 +7,8 @@ import { BlockItem } from '../../ui-kit/BlockItem/BlockItem';
 import { Button } from '../../ui-kit/Button/Button';
 import { Img } from '../../ui-kit/Img';
 import { Title } from '../../ui-kit/Title/Title';
+import { Tile } from '../Tile/Tile';
+import { context } from '../../setup-fixture';
 
 export interface GalleryInnerProps extends GalleryContent, UniBlockProps {
   version?: GalleryVersion;
@@ -91,9 +93,11 @@ export const GalleryInner = JSX<GalleryInnerProps>(
 
 function renderCard(card: GalleryCard, i: number, version: GalleryVersion) {
   return (
-    <div
-      className={`box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch ${cardStyleMap[version]} w-full`}
-      role="listitem"
+    <Tile
+      context={context}
+      className={`box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between
+      items-stretch ${cardStyleMap[version]} w-full col-span-4`}
+      version={card.version}
       key={String(i)}
     >
       <div>
@@ -120,10 +124,10 @@ function renderCard(card: GalleryCard, i: number, version: GalleryVersion) {
           </section>
         ) : null}
       </div>
-      {card.href ? (
-        <Button className="mt-6" text="Подробнее" version="secondary" href={card.href} />
+      {card.button ? (
+        <Button className="mt-6" text="Подробнее" version="secondary" href={card.button.href} />
       ) : null}
-    </div>
+    </Tile>
   );
 }
 
