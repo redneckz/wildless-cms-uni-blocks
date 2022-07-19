@@ -1,9 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
-import { BaseTile } from '../BaseTile/BaseTile';
 import type { BlockVersion } from '../../model/BlockVersion';
-import type { TileContent } from '../Tile/TileContent';
 import type { UniBlockProps } from '../../types';
 import { getColSpan } from '../../utils/getColSpan';
+import { BaseTile } from '../BaseTile/BaseTile';
+import type { TileContent } from '../Tile/TileContent';
 
 export interface TileProps extends TileContent, UniBlockProps {}
 
@@ -17,9 +17,9 @@ export const Tile = JSX<TileProps>((props) => {
 
   return (
     <section
-      className={`font-sans p-9 min-h-[320px] box-border ${className || ''} ${
+      className={`font-sans p-9 box-border ${className || ''} ${
         tileStyleMap[version]
-      } ${getContainerPaddingRight(className)} `}
+      } ${getContainerPaddingRight(className)} ${getContainerMinHeight(className)} `}
     >
       <BaseTile {...props}>{children}</BaseTile>
     </section>
@@ -34,5 +34,16 @@ function getContainerPaddingRight(className = '') {
     return 'pr-[4.75rem]';
   } else {
     return 'pr-[9.4rem]';
+  }
+}
+
+function getContainerMinHeight(className = '') {
+  const colSpan = getColSpan(className);
+  if (colSpan <= 6) {
+    return 'min-h-[300px]';
+  } else if (colSpan <= 8) {
+    return 'min-h-[320px]';
+  } else {
+    return 'min-h-[360px]';
   }
 }

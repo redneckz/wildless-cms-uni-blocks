@@ -51,7 +51,7 @@ export const BaseTile = JSX<BaseTileProps>(
             {title}
           </Title>
         )}
-        <div className="flex grow justify-between">
+        <div className="flex grow justify-between w-full">
           <div className={`flex flex-col justify-between ${alignBlock[align]}`}>
             <div>
               {description ? (
