@@ -1,15 +1,15 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { useComparisonTableScroll } from '../../hooks/useComparisonTableScroll';
+import { useLink } from '../../hooks/useLink';
 import type { UniBlockProps } from '../../types';
 import { ArrowButton } from '../../ui-kit/Button/ArrowButton';
 import { Title } from '../../ui-kit/Title/Title';
-import { TableRowContainer } from './TableRowContainer';
-import { TableCarouselContainer } from './TableCarouselContainer';
-import { useLink } from '../../hooks/useLink';
 import type { ComparisonTableContent } from './ComparisonTableContent';
-import { HeaderCell } from './HeaderCell';
-import { TableRow } from './TableRow';
 import { COLS_LENGTH_FOR_SCROLL, COLUMN_WIDTH, FIRST_CELL_CLASSES } from './constants';
-import { useComparisonTableScroll } from '../../hooks/useComparisonTableScroll';
+import { HeaderCell } from './HeaderCell';
+import { TableCarouselContainer } from './TableCarouselContainer';
+import { TableRow } from './TableRow';
+import { TableRowContainer } from './TableRowContainer';
 
 export interface ComparisonTableProps extends ComparisonTableContent, UniBlockProps {}
 
@@ -39,12 +39,12 @@ export const ComparisonTable = JSX<ComparisonTableProps>(
       .slice(0, isShowAllRow ? rowHeaders.length : visibleRowLength);
 
     const { nextClick, prevClick, isScrollAvailable, showNextButton, showPrevButton } =
-      useComparisonTableScroll(
+      useComparisonTableScroll({
         colData,
-        COLS_LENGTH_FOR_SCROLL,
+        colsLengthForScroll: COLS_LENGTH_FOR_SCROLL,
         activeCardIndex,
         setActiveCardIndex,
-      );
+      });
 
     const showToggle = () => setIsShowAllRow(!isShowAllRow);
 
