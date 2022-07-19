@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { PromoTileContent } from './PromoTileContent';
-import { Tile } from '../Tile/Tile';
 import type { UniBlockProps } from '../../types';
+import { Tile } from '../Tile/Tile';
+import type { PromoTileContent } from './PromoTileContent';
 
 export interface PromoTileProps extends PromoTileContent, UniBlockProps {}
 
