@@ -44,7 +44,10 @@ export const BaseTile = JSX<BaseTileProps>(
     return (
       <div className={`font-sans flex flex-col grow h-full ${alignBlock[align]}`}>
         {title && (
-          <Title size={titleSize || getTitleSizeByClassName(className)} className={TITLE_CLASSES}>
+          <Title
+            size={titleSize || getTitleSizeByClassName(className)}
+            className={`${TITLE_CLASSES} ${version === 'primary' ? 'text-primary-text' : ''}`}
+          >
             {title}
           </Title>
         )}
