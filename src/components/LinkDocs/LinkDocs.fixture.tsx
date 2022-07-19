@@ -14,7 +14,7 @@ export const LINK_DOCS: LinkDocsContent = {
     { text: 'документ 6', href: '/abc6/abc.pdf' },
     { text: 'Text text text', href: '/abc7/yolo.png' },
     {
-      text: 'Some more generic text, and even more, more text',
+      text: 'Some more generic text to stretch item, and even more, more text, and more generic text, and even more, more text, and even more',
       href: '/abc8/archive.zip',
       fileSize: '2.3МБ',
     },

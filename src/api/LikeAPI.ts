@@ -10,6 +10,7 @@ export interface LikeData {
 const AUTH_PREFIX = 'guest';
 const STORAGE_KEY = 'likesToken';
 
+// eslint-disable-next-line max-lines-per-function
 export function LikeAPI(projectId: string, baseURL = '') {
   async function getLikeCount(...nodeIds: string[]): Promise<LikeData[]> {
     if (!nodeIds.length) {

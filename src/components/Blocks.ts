@@ -17,9 +17,9 @@ import { ProductGallery } from './ProductGallery/ProductGallery';
 import { ProductTile } from './ProductTile/ProductTile';
 import { PromoTile } from './PromoTile/PromoTile';
 import { StepsBlock } from './StepsBlock/StepsBlock';
+import { TariffsTable } from './TariffsTable/TariffsTable';
 import { TextBlock } from './TextBlock/TextBlock';
 import { Tile } from './Tile/Tile';
-import { TariffsTable } from './TariffsTable/TariffsTable';
 
 export const Blocks = {
   Accordion,
