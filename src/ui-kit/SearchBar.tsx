@@ -11,12 +11,16 @@ export const SearchBar = JSX<UniBlockProps>(({ className, context }) => {
           <Icon name="LoupeIcon" width="24" height="24" />
         </div>
         {!term && (
-          <span className="font-sans font-normal text-base text-secondary-text">
+          <label
+            for="search-bar-input"
+            className="font-sans font-normal text-base text-secondary-text"
+          >
             Поиск по сайту
-          </span>
+          </label>
         )}
       </div>
       <input
+        id="search-bar-input"
         className="pl-12 w-full font-sans font-normal text-base text-black border border-solid border-main-divider rounded h-full box-border outline-none pr-[6%]"
         value={term}
         onChange={(e) => setTerm(e.target.value)}
