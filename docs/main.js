@@ -33046,23 +33046,27 @@ const LikeControl = JSX(({ className, context }) => {
 const defaultBlockDecorator = ({ blockClassName, block, render }) => render({ blockClassName, block });
 const ContentPage = JSX(({ className, context, blocksRegistry, data: { style: pageStyle, blocks, slots = {}, likeControl, colorPalette = 'pc' }, blockDecorator = defaultBlockDecorator, }) => {
     const { header } = slots;
-    return (jsxs("section", { className: `relative ${style2className(pageStyle)} ${className || ''}`, "data-theme": colorPalette, children: [header?.blocks?.length ? (jsx("div", { className: `grid grid-cols-12 gap-1 ${style2className(header?.style)}`, children: header.blocks.map(renderBlock) })) : null, blocks?.length ? blocks.map(renderBlock) : null, likeControl && (jsx("div", { className: "flex items-end absolute bottom-0 right-0 h-full pointer-events-none", children: jsx(LikeControl, { className: "rounded-tl-lg sticky bottom-0 pointer-events-auto", context: context }) }))] }));
-    function renderBlock(block, i) {
-        const { type } = block;
-        if (!(type in blocksRegistry)) {
-            console.warn(`No block with "${type}" is registered`);
-        }
-        const BlockComponent = blocksRegistry[type] || Placeholder;
-        return blockDecorator({
-            blockClassName: style2className(block.style),
-            block,
-            render: (props) => {
-                const { version, content, blocks } = props.block;
-                return (jsx(BlockComponent, { className: props.blockClassName, version: version, context: context, ...content, children: blocks?.length ? blocks.map(renderBlock) : null }, `${type}-${i}`));
-            },
-        }, `block-${i}`);
-    }
+    return (jsxs("section", { className: `relative ${style2className(pageStyle)} ${className || ''}`, "data-theme": colorPalette, children: [header?.blocks?.length ? (jsx("div", { className: `grid grid-cols-12 gap-1 ${style2className(header?.style)}`, children: header.blocks.map((block, i) => ContentPage_renderBlock({ block, blockDecorator, blocksRegistry, context }, i)) })) : null, blocks?.length
+                ? blocks.map((block, i) => ContentPage_renderBlock({ block, blockDecorator, blocksRegistry, context }, i))
+                : null, likeControl && (jsx("div", { className: "flex items-end absolute bottom-0 right-0 h-full pointer-events-none", children: jsx(LikeControl, { className: "rounded-tl-lg sticky bottom-0 pointer-events-auto", context: context }) }))] }));
 });
+function ContentPage_renderBlock({ block, blockDecorator, blocksRegistry, context }, i) {
+    const { type } = block;
+    if (!(type in blocksRegistry)) {
+        console.warn(`No block with "${type}" is registered`);
+    }
+    const BlockComponent = blocksRegistry[type] || Placeholder;
+    return blockDecorator({
+        blockClassName: style2className(block.style),
+        block,
+        render: (props) => {
+            const { version, content, blocks } = props.block;
+            return (jsx(BlockComponent, { className: props.blockClassName, version: version, context: context, ...content, children: blocks?.length
+                    ? blocks.map((block, i) => ContentPage_renderBlock({ block, blockDecorator, blocksRegistry, context }, i))
+                    : null }, `${type}-${i}`));
+        },
+    }, `block-${i}`);
+}
 function style2className(style) {
     return style ? style.join(' ') : '';
 }

@@ -22,7 +22,6 @@ export interface Slot {
 
 export interface Slots {
   header?: Slot;
-  body?: Slot;
 }
 
 export interface ContentPageMeta {
