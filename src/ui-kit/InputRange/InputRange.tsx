@@ -24,7 +24,7 @@ export const InputRange = JSX<InputRangeProps>(
 
     return (
       <div className={className}>
-        <div className="relative">
+        <label className="block relative">
           {title ? (
             <span className="absolute text-xs text-secondary-text top-1 mt-0.5 pl-4 ml-0.5">
               {title}
@@ -51,7 +51,7 @@ export const InputRange = JSX<InputRangeProps>(
               style={inputStyle}
             />
           </div>
-        </div>
+        </label>
         <div className="flex justify-between my-3">
           {items.map((item, i) => (
             <span key={String(i)} className="text-xs leading-[14px] text-secondary-text pl-4">
