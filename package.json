@@ -65,7 +65,7 @@
     "postbuild:lib": "replace-in-file --configFile=replace-config.lib.cjs --verbose",
     "build:commonjs": "rimraf ./dist && tsc --module commonjs --noImplicitUseStrict --outDir dist",
     "bundle": "rimraf ./bundle && rollup -c && npm run build:schema",
-    "build:schema": "ts-json-schema-generator --path './src/**/*Content.ts' --additional-properties --validation-keywords enumNames --validation-keywords required --minify --no-type-check -o ./bundle/blocks.schema.json",
+    "build:schema": "ts-json-schema-generator --path './src/**/*Content.ts' --additional-properties --unstable --validation-keywords enumNames --validation-keywords required --minify --no-type-check -o ./bundle/blocks.schema.json",
     "build:style": "postcss ./src/**/*.css --env production --dir ./lib",
     "build:icons": "svgo -f ./src/icons -o ./cosmos-static/icons",
     "size": "size-limit",
@@ -139,7 +139,7 @@
     }
   ],
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,css}": "prettier --write",
+    "src/**/*.{js,jsx,ts,tsx,css}": ["prettier --write", "eslint"],
     "*.{js,jsx,ts,tsx,css,json}": [
       "npm run cosmos:export",
       "git add ./docs"

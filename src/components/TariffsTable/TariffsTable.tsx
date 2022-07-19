@@ -1,11 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { useComparisonTableScroll } from '../../hooks/useComparisonTableScroll';
+import type { UniBlockProps } from '../../types';
 import { ArrowButton } from '../../ui-kit/Button/ArrowButton';
 import { Title } from '../../ui-kit/Title/Title';
 import { COLS_LENGTH_FOR_SCROLL } from './constants';
-import { TariffsTableRow } from './TariffsTableRow';
-import type { UniBlockProps } from '../../types';
 import type { TariffsTableContent } from './TariffsTableContent';
-import { useComparisonTableScroll } from '../../hooks/useComparisonTableScroll';
+import { TariffsTableRow } from './TariffsTableRow';
 
 export interface TariffsTableProps extends TariffsTableContent, UniBlockProps {}
 
@@ -20,12 +20,12 @@ export const TariffsTable = JSX<TariffsTableProps>(
     }));
 
     const { nextClick, prevClick, isScrollAvailable, showNextButton, showPrevButton } =
-      useComparisonTableScroll(
+      useComparisonTableScroll({
         colData,
-        COLS_LENGTH_FOR_SCROLL,
+        colsLengthForScroll: COLS_LENGTH_FOR_SCROLL,
         activeCardIndex,
         setActiveCardIndex,
-      );
+      });
 
     return (
       <section

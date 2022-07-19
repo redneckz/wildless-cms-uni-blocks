@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { PromoTileContent } from './PromoTileContent';
-import { Tile } from '../Tile/Tile';
 import type { UniBlockProps } from '../../types';
+import { Tile } from '../Tile/Tile';
+import type { PromoTileContent } from './PromoTileContent';
 
 export interface PromoTileProps extends PromoTileContent, UniBlockProps {}
 
@@ -23,7 +23,7 @@ export const PromoTile = JSX<PromoTileProps>(
         buttons={buttons}
         version={version}
       >
-        <div>
+        <div className="mt-1.5">
           {date && <div className="text-sm mb-2">{formatDate(date)}</div>}
           <div className="text-base">{description}</div>
         </div>

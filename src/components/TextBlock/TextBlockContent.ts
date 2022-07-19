@@ -18,9 +18,8 @@ export type TextBlockIconVersion = 'none' | 'small' | 'big';
 export interface TextBlockContent {
   /** @title Заголовок */
   title?: string;
-  /** @title Описание */
   description?: string;
-  blockVersion?: TextBlockVersion;
   iconVersion?: TextBlockIconVersion;
   image?: Picture;
+  blockVersion?: TextBlockVersion;
 }
