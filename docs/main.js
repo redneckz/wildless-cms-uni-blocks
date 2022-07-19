@@ -32582,6 +32582,8 @@ const Footer = JSX(({ className, documents, relatedEnterprises, contacts, social
 
 
 
+
+
 const cardStyleMap = {
     normal: 'min-w-[364px] w-[364px]',
     mini: 'min-w-[260px] w-[260px]',
@@ -32613,7 +32615,8 @@ const GalleryInner = JSX(({ title, description, context, cards = [], className, 
                 style: { transform: `translateX(-${activeCardIndex * cardWidthMap[version]}px)` }, role: "list", children: cards?.map((card, i) => renderCard(card, i, version)) }), jsx("div", { className: "absolute top-0 left-0 bottom-0 w-[84px] bg-gradient-to-r from-white to-transparent" }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8 rotate-180", onClick: handlePrevClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-10", onClick: handleNextClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" })), jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })] }));
 });
 function renderCard(card, i, version) {
-    return (jsxs("div", { className: `box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch ${cardStyleMap[version]} w-full`, role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? (jsx("section", { className: "max-w-[308px] mt-2", role: "list", children: card.items.map(renderItem) })) : null] }), card.href ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.href })) : null] }, String(i)));
+    return (jsxs(Tile, { context: context, className: `box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between
+      items-stretch ${cardStyleMap[version]} w-full col-span-4`, version: card.version, children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? (jsx("section", { className: "max-w-[308px] mt-2", role: "list", children: card.items.map(renderItem) })) : null] }), card.button ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.button.href })) : null] }, String(i)));
 }
 function renderItem(item, i) {
     return (jsx(BlockItem, { children: jsx("span", { className: "text-sm text-secondary-text", children: item }) }, String(i)));
@@ -32971,7 +32974,7 @@ const Gallery_mobile_Gallery = JSX(({ title, description, cards = [], className 
     return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-4 overflow-hidden ${className}`, children: [jsxs("div", { className: "flex flex-col items-center mb-8", children: [jsx(Title, { className: "font-medium m-0 text-centers", children: title }), description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { className: "horizontal-list no-scrollbar", role: "list", children: cards?.map(Gallery_mobile_renderCard) })] }));
 });
 function Gallery_mobile_renderCard(card, key) {
-    return (jsxs("div", { className: "box-border horizontal-list-item border-solid border rounded-md border-main-divider p-4 mx-1 flex flex-col justify-between items-stretch", role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? Gallery_mobile_renderItems(card.items) : null] }), card.href ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.href })) : null] }, key));
+    return (jsxs("div", { className: "box-border horizontal-list-item border-solid border rounded-md border-main-divider p-4 mx-1 flex flex-col justify-between items-stretch", role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? Gallery_mobile_renderItems(card.items) : null] }), card.button ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.button.href })) : null] }, key));
 }
 function Gallery_mobile_renderItems(items = []) {
     return (jsx("section", { className: "max-w-[308px] mt-2", role: "list", children: items.map((item, i) => (jsx(BlockItem, { children: jsx("span", { className: "text-sm text-secondary-text", children: item }) }, String(i)))) }));
@@ -33405,6 +33408,19 @@ const Gallery_fixture_image = {
         width: 140,
         height: 140,
     },
+    title: 'money',
+};
+const buttonPrimary = {
+    href: '/credit-cards',
+    text: 'Подробнее',
+    target: '_blank',
+    version: 'secondary',
+};
+const buttonSecondary = {
+    href: '/credit-cards',
+    text: 'Подробнее',
+    target: '_blank',
+    version: 'secondary',
 };
 const defaultItems = [
     'Качественные фермерские продукты напрямую от производителей',
@@ -33420,35 +33436,28 @@ const defaultProps = {
             title: 'Более 5000 товаров',
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: 'Более 1000 развлечений',
             description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: 'Фермерские продукты',
             description: 'Высокий процент даже при небольшой сумме денежных средств',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: '«Моя выгода»',
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
-            items: defaultItems,
-        },
-        {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
-            image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
     ],
@@ -33462,31 +33471,25 @@ const textAndButtonProps = {
             title: 'Более 5000 товаров',
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
         },
         {
             title: 'Более 1000 развлечений',
             description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
         },
         {
             title: 'Фермерские продукты',
             description: 'Высокий процент даже при небольшой сумме денежных средств',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
         },
         {
             title: '«Моя выгода»',
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
-        },
-        {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
-            image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
         },
     ],
 };
@@ -33498,31 +33501,25 @@ const listAndButtonProps = {
         {
             title: 'Более 5000 товаров',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: 'Более 1000 развлечений',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: 'Фермерские продукты',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: '«Моя выгода»',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
-            items: defaultItems,
-        },
-        {
-            title: 'Фермерские продукты',
-            image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
     ],
@@ -33552,11 +33549,6 @@ const textAndNoButtonProps = {
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
         },
-        {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
-            image: Gallery_fixture_image,
-        },
     ],
 };
 const onlyTitleProps = {
@@ -33580,9 +33572,44 @@ const onlyTitleProps = {
             title: '«Моя выгода»',
             image: Gallery_fixture_image,
         },
+    ],
+};
+const secondaryColorProps = {
+    title: 'Вы можете оплатить бонусными баллами',
+    description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
+    context: context,
+    cards: [
+        {
+            title: 'Более 5000 товаров',
+            description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
+            image: Gallery_fixture_image,
+            button: buttonSecondary,
+            items: defaultItems,
+            version: 'secondary',
+        },
+        {
+            title: 'Более 1000 развлечений',
+            description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
+            image: Gallery_fixture_image,
+            button: buttonSecondary,
+            items: defaultItems,
+            version: 'secondary',
+        },
         {
             title: 'Фермерские продукты',
+            description: 'Высокий процент даже при небольшой сумме денежных средств',
             image: Gallery_fixture_image,
+            button: buttonSecondary,
+            items: defaultItems,
+            version: 'secondary',
+        },
+        {
+            title: '«Моя выгода»',
+            description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
+            image: Gallery_fixture_image,
+            button: buttonSecondary,
+            items: defaultItems,
+            version: 'secondary',
         },
     ],
 };
@@ -33592,6 +33619,7 @@ const onlyTitleProps = {
     'list and button': jsx(Gallery, { ...listAndButtonProps }),
     'text and no button': jsx(Gallery, { ...textAndNoButtonProps }),
     'only title': jsx(Gallery, { ...onlyTitleProps }),
+    'secondary color': jsx(Gallery, { ...secondaryColorProps }),
     mobile: jsx(Gallery_mobile_Gallery, { ...defaultProps }),
 });
 
@@ -33629,6 +33657,7 @@ const MiniGallery_fixture_image = {
         width: 120,
         height: 70,
     },
+    title: 'domovoj-kupon',
 };
 const MiniGallery_fixture_defaultProps = {
     title: 'Вы можете оплатить бонусными баллами',
@@ -33655,15 +33684,36 @@ const MiniGallery_fixture_defaultProps = {
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: MiniGallery_fixture_image,
         },
+    ],
+};
+const MiniGallery_fixture_secondaryColorProps = {
+    title: 'Вы можете оплатить бонусными баллами',
+    description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
+    context: context,
+    cards: [
         {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
+            title: 'Более 5000 товаров',
+            description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: MiniGallery_fixture_image,
+            version: 'secondary',
+        },
+        {
+            title: 'Более 1000 развлечений',
+            description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
+            image: MiniGallery_fixture_image,
+            version: 'secondary',
         },
         {
             title: 'Фермерские продукты',
             description: 'Высокий процент даже при небольшой сумме денежных средств',
             image: MiniGallery_fixture_image,
+            version: 'secondary',
+        },
+        {
+            title: '«Моя выгода»',
+            description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
+            image: MiniGallery_fixture_image,
+            version: 'secondary',
         },
     ],
 };
@@ -33688,18 +33738,11 @@ const MiniGallery_fixture_onlyTitleProps = {
             title: '«Моя выгода»',
             image: MiniGallery_fixture_image,
         },
-        {
-            title: 'Фермерские продукты',
-            image: MiniGallery_fixture_image,
-        },
-        {
-            title: 'Фермерские продукты',
-            image: MiniGallery_fixture_image,
-        },
     ],
 };
 /* harmony default export */ const MiniGallery_fixture = ({
     default: jsx(MiniGallery, { ...MiniGallery_fixture_defaultProps }),
+    'secondary color': jsx(MiniGallery, { ...MiniGallery_fixture_secondaryColorProps }),
     'only title': jsx(MiniGallery, { ...MiniGallery_fixture_onlyTitleProps }),
 });
 
