@@ -1,8 +1,8 @@
+import type { Picture } from '../../model/Picture';
 import { context } from '../../setup-fixture';
-
+import type { ButtonCommonProps } from '../../ui-kit/Button/Button';
 import { Gallery, GalleryProps } from './Gallery';
 import { Gallery as MobileGallery } from './Gallery.mobile';
-import type { Picture } from '../../model/Picture';
 
 const image: Picture = {
   src: 'money-1.png',
@@ -11,6 +11,14 @@ const image: Picture = {
     width: 140,
     height: 140,
   },
+  title: 'money',
+};
+
+const buttonPrimary: ButtonCommonProps = {
+  href: '/credit-cards',
+  text: 'Подробнее',
+  target: '_blank',
+  version: 'secondary',
 };
 
 const defaultItems = [
@@ -29,21 +37,21 @@ const defaultProps: GalleryProps = {
       description:
         'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
       image,
-      href: '/credit-cards',
+      button: buttonPrimary,
       items: defaultItems,
     },
     {
       title: 'Более 1000 развлечений',
       description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
       image,
-      href: '/credit-cards',
+      button: buttonPrimary,
       items: defaultItems,
     },
     {
       title: 'Фермерские продукты',
       description: 'Высокий процент даже при небольшой сумме денежных средств',
       image,
-      href: '/credit-cards',
+      button: buttonPrimary,
       items: defaultItems,
     },
     {
@@ -51,14 +59,7 @@ const defaultProps: GalleryProps = {
       description:
         'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
       image,
-      href: '/credit-cards',
-      items: defaultItems,
-    },
-    {
-      title: 'Фермерские продукты',
-      description: 'Высокий процент даже при небольшой сумме денежных средств',
-      image,
-      href: '/credit-cards',
+      button: buttonPrimary,
       items: defaultItems,
     },
   ],
@@ -74,32 +75,26 @@ const textAndButtonProps: GalleryProps = {
       description:
         'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
       image,
-      href: '/credit-cards',
+      button: buttonPrimary,
     },
     {
       title: 'Более 1000 развлечений',
       description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
       image,
-      href: '/credit-cards',
+      button: buttonPrimary,
     },
     {
       title: 'Фермерские продукты',
       description: 'Высокий процент даже при небольшой сумме денежных средств',
       image,
-      href: '/credit-cards',
+      button: buttonPrimary,
     },
     {
       title: '«Моя выгода»',
       description:
         'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
       image,
-      href: '/credit-cards',
-    },
-    {
-      title: 'Фермерские продукты',
-      description: 'Высокий процент даже при небольшой сумме денежных средств',
-      image,
-      href: '/credit-cards',
+      button: buttonPrimary,
     },
   ],
 };
@@ -112,31 +107,25 @@ const listAndButtonProps: GalleryProps = {
     {
       title: 'Более 5000 товаров',
       image,
-      href: '/credit-cards',
+      button: buttonPrimary,
       items: defaultItems,
     },
     {
       title: 'Более 1000 развлечений',
       image,
-      href: '/credit-cards',
+      button: buttonPrimary,
       items: defaultItems,
     },
     {
       title: 'Фермерские продукты',
       image,
-      href: '/credit-cards',
+      button: buttonPrimary,
       items: defaultItems,
     },
     {
       title: '«Моя выгода»',
       image,
-      href: '/credit-cards',
-      items: defaultItems,
-    },
-    {
-      title: 'Фермерские продукты',
-      image,
-      href: '/credit-cards',
+      button: buttonPrimary,
       items: defaultItems,
     },
   ],
@@ -169,11 +158,6 @@ const textAndNoButtonProps: GalleryProps = {
         'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
       image,
     },
-    {
-      title: 'Фермерские продукты',
-      description: 'Высокий процент даже при небольшой сумме денежных средств',
-      image,
-    },
   ],
 };
 
@@ -196,10 +180,6 @@ const onlyTitleProps: GalleryProps = {
     },
     {
       title: '«Моя выгода»',
-      image,
-    },
-    {
-      title: 'Фермерские продукты',
       image,
     },
   ],

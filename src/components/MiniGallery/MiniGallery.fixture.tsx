@@ -1,7 +1,6 @@
+import type { Picture } from '../../model/Picture';
 import { context } from '../../setup-fixture';
-
 import { MiniGallery, MiniGalleryProps } from './MiniGallery';
-import { Picture } from '../../model/Picture';
 
 const image: Picture = {
   src: 'domovoj-kupon.png',
@@ -10,6 +9,7 @@ const image: Picture = {
     width: 120,
     height: 70,
   },
+  title: 'domovoj-kupon',
 };
 
 const defaultProps: MiniGalleryProps = {
@@ -39,16 +39,6 @@ const defaultProps: MiniGalleryProps = {
         'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
       image,
     },
-    {
-      title: 'Фермерские продукты',
-      description: 'Высокий процент даже при небольшой сумме денежных средств',
-      image,
-    },
-    {
-      title: 'Фермерские продукты',
-      description: 'Высокий процент даже при небольшой сумме денежных средств',
-      image,
-    },
   ],
 };
 
@@ -71,14 +61,6 @@ const onlyTitleProps: MiniGalleryProps = {
     },
     {
       title: '«Моя выгода»',
-      image,
-    },
-    {
-      title: 'Фермерские продукты',
-      image,
-    },
-    {
-      title: 'Фермерские продукты',
       image,
     },
   ],

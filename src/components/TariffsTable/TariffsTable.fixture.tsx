@@ -63,9 +63,6 @@ const columns: TariffsTableColumn[] = [
       [
         {
           label: 'Бесплатно',
-          list: {
-            items: ['item 1', 'item 2', 'item 3'],
-          },
         },
       ],
       [
@@ -97,15 +94,7 @@ const columns: TariffsTableColumn[] = [
         },
       ],
       [{ label: 'Нет' }],
-      [
-        { label: 'До 20%' },
-        {
-          list: {
-            isDotted: false,
-            items: ['item 1', 'item 2', 'item 3'],
-          },
-        },
-      ],
+      [{ label: 'До 20%' }],
       [
         {
           label: 'Бесплатно',
