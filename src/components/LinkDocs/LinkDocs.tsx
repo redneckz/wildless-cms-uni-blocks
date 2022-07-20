@@ -13,7 +13,7 @@ const titleAlignStyleMap: Record<AlignType, string> = {
 
 const titleMarginsStyleMap: Record<LinkColumnsMode, string> = {
   double: 'mb-8',
-  single: '',
+  single: 'mb-[26px]',
 };
 
 const linkColumnsModeStyleMap: Record<LinkColumnsMode, string> = {
@@ -24,7 +24,7 @@ const linkColumnsModeStyleMap: Record<LinkColumnsMode, string> = {
 export interface LinkDocsProps extends LinkDocsContent, UniBlockProps {}
 
 export const LinkDocs = JSX<LinkDocsProps>(
-  ({ className, title, align, documents, icon, columnsMode = 'single' }) => {
+  ({ className, title, align, documents, icon, columnsMode = 'double' }) => {
     const containerClasses = linkColumnsModeStyleMap[columnsMode];
 
     return (
@@ -49,7 +49,7 @@ export const LinkDocs = JSX<LinkDocsProps>(
                   role="listitem"
                   {...linkProps}
                 >
-                  {icon && <Icon className="mr-3.5" name={icon} width="24px" height="24px" />}
+                  {icon && <Icon className="mr-2.5" name={icon} width="24px" height="24px" />}
                   <span className="self-center">
                     {text}
                     <span className="text-secondary-text group-hover:text-primary-main">
