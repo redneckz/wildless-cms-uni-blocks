@@ -15,13 +15,13 @@ export interface BlockDef {
   };
 }
 
-export interface Slot {
+export interface SlotsMap {
   style?: string[];
   blocks?: BlockDef[];
 }
 
 export interface Slots {
-  header?: Slot;
+  header?: SlotsMap;
 }
 
 export interface ContentPageMeta {
