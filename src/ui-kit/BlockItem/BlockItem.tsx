@@ -2,13 +2,13 @@ import { JSX } from '@redneckz/uni-jsx';
 import { BlockItemProps, BlockItemVersion } from './BlockItemProps';
 
 const listStyleMap: Record<BlockItemVersion, string> = {
-  primary: 'bg-primary-main w-[8px] h-[8px] min-w-[8px] min-h-[8px] mt-2 rounded-full',
-  secondary: 'bg-secondary-text w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
+  primary: 'bg-secondary-text w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
+  secondary: 'bg-white w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
 };
 
 const textStyleMap: Record<BlockItemVersion, string> = {
-  primary: 'text-primary-text',
-  secondary: 'text-secondary-text',
+  primary: 'text-secondary-text',
+  secondary: '',
 };
 
 export const BlockItem = JSX<BlockItemProps>(
