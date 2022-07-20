@@ -72,10 +72,12 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
     }
 
     return (
-      <section className={`font-sans text-primary-text bg-white p-4 ${className}`}>
-        <div className={`box-border p-12 flex flex-col justify-between ${borderStyle}`}>
-          <div className="flex justify-between">
-            <div className="grow mr-11">
+      <section className={`font-sans text-primary-text bg-white p-4 w-[847px] ${className}`}>
+        <div
+          className={`box-border p-[49px] pr-[53px] flex flex-col justify-between ${borderStyle}`}
+        >
+          <div className="flex justify-between ">
+            <div className="grow mr-[42px] w-[465px]">
               <InputRange
                 title="Желаемая сумма кредита, ₽"
                 items={[
@@ -89,6 +91,7 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
                 onChange={setMoneyValue}
               />
               <InputRange
+                className="mt-[23px]"
                 title="Срок кредита, месяцев"
                 items={['Или выберите из предложенных вариантов ниже']}
                 min={minMonths}
@@ -106,14 +109,14 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
                 onChange={setIsAnnuityChecked}
               />
               <Checkbox
-                className="mb-4"
+                className="mt-3 mb-7"
                 text="Комплексная страховая защита"
                 checked={isInsuranceChecked}
                 onChange={setIsInsuranceChecked}
               />
             </div>
-            <div className="p-9 bg-primary-main rounded-md text-white">
-              <div className="text-base mb-5">Наше предложение</div>
+            <div className="basis-[226px] shrink-0 box-border h-fit p-9 bg-primary-main rounded-md text-white">
+              <div className="text-base mb-[18px]">Наше предложение</div>
               <div className="text-sm opacity-60">Ежемесячный платёж</div>
               <div className="text-lg mb-3">
                 {addSpacesBetweenNumbers(Math.round(montlyPayment))} ₽

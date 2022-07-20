@@ -1,0 +1,1 @@
+export { blockStructureRule } from './blockStructureRule';
