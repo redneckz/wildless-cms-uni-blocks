@@ -55,18 +55,20 @@ export const ContentPage = JSX<ContentPageProps>(
         data-theme={colorPalette}
       >
         {header?.blocks?.length ? (
-          <div className={`grid grid-cols-12 gap-1 ${style2className(header?.style)}`}>
+          <div className={`${style2className(header?.style)}`}>
             {header.blocks.map((block, i) =>
               renderBlock({ block, blockDecorator, blocksRegistry, context }, i),
             )}
           </div>
         ) : null}
 
-        {blocks?.length
-          ? blocks.map((block, i) =>
+        {blocks?.length ? (
+          <div className="container grid grid-cols-12 gap-1">
+            {blocks.map((block, i) =>
               renderBlock({ block, blockDecorator, blocksRegistry, context }, i),
-            )
-          : null}
+            )}
+          </div>
+        ) : null}
 
         {likeControl && (
           <div className="flex items-end absolute bottom-0 right-0 h-full pointer-events-none">
