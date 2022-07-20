@@ -31,9 +31,10 @@ export const InputRange = JSX<InputRangeProps>(
             </span>
           ) : null}
           <input
-            className={`m-0 font-sans text-sm w-full h-12 border-2 border-solid border-main-divider rounded-md outline-none p-0 pl-4 m-0 box-border text-primary-text ${
-              title ? 'pt-4' : ''
-            }`}
+            className={`m-0 font-sans text-sm w-full h-12 border border-solid border-main-stroke rounded-md
+                        outline-none p-0 pl-4 m-0 box-border text-primary-text ${
+                          title ? 'pt-4' : ''
+                        }`}
             value={addSpacesBetweenNumbers(value)}
             onChange={(e) => handleChange(e.target.value)}
             onBlur={handleBlur}
@@ -51,9 +52,9 @@ export const InputRange = JSX<InputRangeProps>(
             />
           </div>
         </label>
-        <div className="flex justify-between mt-3 mb-4">
+        <div className="flex justify-between my-3">
           {items.map((item, i) => (
-            <span key={String(i)} className="text-xs text-secondary-text pl-4">
+            <span key={String(i)} className="text-xs leading-[14px] text-secondary-text pl-4">
               {item}
             </span>
           ))}
