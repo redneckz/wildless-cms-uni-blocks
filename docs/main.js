@@ -31050,7 +31050,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 9883:
+/***/ 8190:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31153,10 +31153,10 @@ const JSX = Component => {
 
 
 
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(5893);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(5893);
 ;// CONCATENATED MODULE: ./src/utils/getGeolocation.ts
 const getGeolocation = async () => new Promise((resolve) => navigator.geolocation.getCurrentPosition(({ coords }) => resolve(coords)));
 
@@ -31196,8 +31196,7 @@ function DaDataAPI(baseURL = '') {
 
 
 
-const { jsx: setup_fixture_jsx, jsxs: setup_fixture_jsxs } = jsx_runtime;
-setup(setup_fixture_jsx, setup_fixture_jsxs);
+setup(jsx_runtime.jsx, jsx_runtime.jsxs);
 const TEST_ORIGIN = 'http://localhost:5001';
 const DaData = DaDataAPI('https://10.80.4.9');
 const context = {
@@ -32574,19 +32573,14 @@ const Footer = JSX(({ className, documents, relatedEnterprises, contacts, social
     return (jsxs("footer", { className: `${className} px-9 py-10 bg-white`, children: [jsxs("div", { className: "flex items-stretch gap-32 pb-8 xl:gap-8", children: [jsx(Logo, { className: `${LEFT_COL_WIDTH_FULL_HD} ${LEFT_COL_WIDTH_SMALL_DESKTOP}` }), jsx(SearchBar, { context: context, className: "grow" })] }), jsxs("div", { className: "flex items-stretch gap-32 xl:gap-8", children: [jsx(Contacts, { className: `${LEFT_COL_WIDTH_FULL_HD} shrink-0 overflow-hidden ${LEFT_COL_WIDTH_SMALL_DESKTOP}`, items: contacts, context: context, hasButton: true }), jsx(Sitemap, { className: "pt-[3px]", context: context, items: topItems })] }), jsx(SocialMedia, { media: socialMedia, context: context }), jsx(HorizontalNavigation, { links: relatedEnterprises, context: context }), jsx(TextInformation, { links: documents, context: context })] }));
 });
 
-;// CONCATENATED MODULE: ./src/components/Gallery/GalleryInner.tsx
-
-
-
-
-
-
-
-
-
+;// CONCATENATED MODULE: ./src/components/Gallery/constants.ts
 const cardVersionMap = {
     primary: 'text-secondary-text',
     secondary: '',
+};
+const galleryLengthForScrollMap = {
+    normal: 3,
+    mini: 4,
 };
 const cardStyleMap = {
     normal: 'min-w-[364px] w-[364px]',
@@ -32596,11 +32590,47 @@ const cardWidthMap = {
     normal: 380,
     mini: 276,
 };
-const galleryLengthForScrollMap = {
-    normal: 3,
-    mini: 4,
-};
-const GalleryInner = JSX(({ title, description, context, cards = [], className, version = 'normal' }) => {
+
+;// CONCATENATED MODULE: ./src/components/Gallery/GalleryCardInner.tsx
+
+
+
+
+
+
+const GalleryCardInner = JSX(({ title, description, image, items, button, version }) => {
+    const cardVersionClasses = cardVersionMap[version ?? 'primary'];
+    return (jsxs("div", { children: [jsxs("div", { children: [image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: image }) })) : null, title && renderCardTitle(title, description, items), description && (jsx("div", { className: `font-normal text-sm mt-2 ${cardVersionClasses}`, children: description })), items?.length ? (jsx("section", { className: `max-w-[308px] mt-2 ${cardVersionClasses}`, role: "list", children: items.map((item, i) => renderItem(item, i, version)) })) : null] }), button?.href && jsx(Button, { className: "mt-6", ...button })] }));
+});
+function renderCardTitle(title, description, items) {
+    return (jsx("div", { className: `font-medium text-xl m-0 ${!description && !items?.length ? 'text-center' : ''}`, children: title }));
+}
+function renderItem(item, i, version) {
+    return (jsx(BlockItem, { version: version ?? 'primary', children: jsx("span", { className: "text-sm", children: item }) }, String(i)));
+}
+
+;// CONCATENATED MODULE: ./src/components/Gallery/GalleryContainer.tsx
+
+
+
+
+
+
+const GalleryContainer = JSX(({ context, title, description, cards = [], version = 'normal', activeCardIndex }) => {
+    return (jsxs("div", { children: [jsx("div", { className: "absolute top-0 left-0 bottom-0 w-[84px] bg-gradient-to-r from-white to-transparent" }), jsxs("div", { className: "flex flex-col items-center mb-8", children: [title ? jsx(Title, { className: "font-medium m-0 text-center", children: title }) : null, description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { className: `flex ${cards?.length <= galleryLengthForScrollMap[version] ? 'justify-center' : ''} duration-1000`, style: { transform: `translateX(-${activeCardIndex * cardWidthMap[version]}px)` }, role: "list", children: cards?.map((card, i) => renderCard({ card, version, context }, i)) })] }));
+});
+function renderCard({ card, version, context }, i) {
+    return (jsx(Tile, { context: context, className: `box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between
+        items-stretch ${cardStyleMap[version]} w-full col-span-4`, version: card.version, children: jsx(GalleryCardInner, { ...card }) }, String(i)));
+}
+
+;// CONCATENATED MODULE: ./src/components/Gallery/GalleryInner.tsx
+
+
+
+
+
+const GalleryInner = JSX(({ context, cards = [], className, version = 'normal', ...rest }) => {
     const [activeCardIndex, setActiveCardIndex] = context.useState(0);
     function handleNextClick() {
         setActiveCardIndex(activeCardIndex + 1);
@@ -32612,19 +32642,8 @@ const GalleryInner = JSX(({ title, description, context, cards = [], className, 
     const showNextButton = isGalleryScrollAvailable &&
         cards?.length - activeCardIndex > galleryLengthForScrollMap[version];
     const showPrevButton = isGalleryScrollAvailable && activeCardIndex > 0;
-    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-12 py-[50px] overflow-hidden ${className}`, children: [jsxs("div", { className: "flex flex-col items-center mb-8", children: [title ? jsx(Title, { className: "font-medium m-0 text-center", children: title }) : null, description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { 
-                // Need to place all cards at the center if count of cards less than 4
-                className: `flex ${cards?.length <= galleryLengthForScrollMap[version] ? 'justify-center' : ''} duration-1000`, 
-                // All cards has same width
-                style: { transform: `translateX(-${activeCardIndex * cardWidthMap[version]}px)` }, role: "list", children: cards?.map((card, i) => renderCard(card, i, version)) }), jsx("div", { className: "absolute top-0 left-0 bottom-0 w-[84px] bg-gradient-to-r from-white to-transparent" }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8 rotate-180", onClick: handlePrevClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-10", onClick: handleNextClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" })), jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })] }));
+    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-12 py-[50px] overflow-hidden ${className}`, children: [jsx(GalleryContainer, { context: context, cards: cards, version: version, activeCardIndex: activeCardIndex, ...rest }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8 rotate-180", onClick: handlePrevClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-10", onClick: handleNextClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" })), jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })] }));
 });
-function renderCard(card, i, version) {
-    return (jsxs(Tile, { context: context, className: `box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between
-      items-stretch ${cardStyleMap[version]} w-full col-span-4`, version: card.version, children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: `font-normal text-sm mt-2 ${cardVersionMap[card.version ?? 'primary']}`, children: card.description })) : null, card.items?.length ? (jsx("section", { className: `max-w-[308px] mt-2 ${cardVersionMap[card.version ?? 'primary']}`, role: "list", children: card.items.map((item, i) => renderItem(item, i, card.version)) })) : null] }), card?.button?.href ? jsx(Button, { className: "mt-6", ...card.button }) : null] }, String(i)));
-}
-function renderItem(item, i, version) {
-    return (jsx(BlockItem, { version: version ?? 'primary', children: jsx("span", { className: "text-sm", children: item }) }, String(i)));
-}
 
 ;// CONCATENATED MODULE: ./src/components/Gallery/Gallery.tsx
 
@@ -35699,6 +35718,7 @@ if (true) {
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
+var __webpack_unused_export__;
 /** @license React v17.0.2
  * react-jsx-runtime.production.min.js
  *
@@ -35707,7 +35727,7 @@ if (true) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-__webpack_require__(7418);var f=__webpack_require__(7294),g=60103;exports.Fragment=60107;if("function"===typeof Symbol&&Symbol.for){var h=Symbol.for;g=h("react.element");exports.Fragment=h("react.fragment")}var m=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,n=Object.prototype.hasOwnProperty,p={key:!0,ref:!0,__self:!0,__source:!0};
+__webpack_require__(7418);var f=__webpack_require__(7294),g=60103;__webpack_unused_export__=60107;if("function"===typeof Symbol&&Symbol.for){var h=Symbol.for;g=h("react.element");__webpack_unused_export__=h("react.fragment")}var m=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,n=Object.prototype.hasOwnProperty,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,k){var b,d={},e=null,l=null;void 0!==k&&(e=""+k);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(l=a.ref);for(b in a)n.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:g,type:c,key:e,ref:l,props:d,_owner:m.current}}exports.jsx=q;exports.jsxs=q;
 
 
@@ -40549,7 +40569,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(9883),
+  var _require = __webpack_require__(8190),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;
