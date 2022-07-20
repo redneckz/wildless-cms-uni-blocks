@@ -3,7 +3,7 @@ import type { UniBlockProps } from '../../types';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import type { JSXBlock } from '../ContentPage/ContentPage';
 import { ContentPageContext } from '../ContentPage/ContentPageContext';
-import AccordionBlocks from './AccordionBlocks';
+import { AccordionBlocks } from './AccordionBlocks';
 import type { AccordionBlockProps, AccordionItemCommonProps } from './AccordionContent';
 
 export interface AccordionItemProps extends AccordionItemCommonProps, UniBlockProps {}

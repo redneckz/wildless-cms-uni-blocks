@@ -1,6 +1,11 @@
-import { ESLintUtils } from '@typescript-eslint/utils';
+import type { RuleMetaData } from '../RuleMetaData';
 
-type RuleMetaData = Parameters<typeof ESLintUtils.RuleCreator.withoutDocs>[0]['meta'];
+export type ConsistentBlocksRegistryRuleOptions = Array<{
+  blocksRegistry: string;
+  blocksDir: string;
+  include: RegExp[];
+  exclude: RegExp[];
+}>;
 
 const schema = {
   type: 'object',
@@ -11,6 +16,12 @@ const schema = {
     },
     blocksDir: {
       type: 'string',
+    },
+    include: {
+      type: 'array',
+      items: {
+        type: 'object',
+      },
     },
     exclude: {
       type: 'array',
@@ -27,7 +38,6 @@ export const meta: RuleMetaData = {
     recommended: 'error',
   },
   messages: {
-    default: 'Все блоки должны быть зарегистрированы в реестре Blocks',
     blocksToRegister: 'Следующие блоки должны быть зарегистрированы: {{blocksToRegister}}',
     blocksRegistryNotFound:
       'Реестр блоков должен иметь название в соответствии с именем модуля: {{blocksRegistryName}}',

@@ -31707,7 +31707,6 @@ const AccordionBlocks = {
     TextBlock: TextBlock,
     PictureText: PictureText,
 };
-/* harmony default export */ const Accordion_AccordionBlocks = (AccordionBlocks);
 
 ;// CONCATENATED MODULE: ./src/components/Accordion/AccordionItem.tsx
 
@@ -31733,10 +31732,10 @@ const AccordionItem = JSX(({ label, blocks, context }) => {
 });
 const renderBlock = (block, i, context) => {
     const type = block?.accordionBlockType;
-    if (!type || !(type in Accordion_AccordionBlocks)) {
+    if (!type || !(type in AccordionBlocks)) {
         return null;
     }
-    const AccordionBlock = Accordion_AccordionBlocks[type];
+    const AccordionBlock = AccordionBlocks[type];
     return (jsx("div", { className: "mb-5 last:mb-0", children: jsx(AccordionBlock, { context: context, ...block }) }, `block_${i}`));
 };
 const getContentBlock = ({ target }) => target.tagName === 'BUTTON' ? target.nextSibling : target.parentNode.nextSibling;
