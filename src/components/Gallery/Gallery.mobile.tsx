@@ -51,9 +51,7 @@ function renderCard(card: GalleryCard, key: number) {
         ) : null}
         {card.items?.length ? renderItems(card.items) : null}
       </div>
-      {card.button ? (
-        <Button className="mt-6" text="Подробнее" version="secondary" href={card.button.href} />
-      ) : null}
+      {card?.button?.href ? <Button className="mt-6" {...card.button} /> : null}
     </div>
   );
 }

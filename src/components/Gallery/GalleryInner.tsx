@@ -135,9 +135,7 @@ function renderCard(card: GalleryCard, i: number, version: GalleryVersion) {
           </section>
         ) : null}
       </div>
-      {card.button ? (
-        <Button className="mt-6" text="Подробнее" version="secondary" href={card.button.href} />
-      ) : null}
+      {card?.button?.href ? <Button className="mt-6" {...card.button} /> : null}
     </Tile>
   );
 }
