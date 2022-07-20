@@ -25,7 +25,7 @@ const image4: Picture = {
 
 export default {
   credit: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <Tile
         context={context}
         className="col-span-8"
@@ -47,7 +47,7 @@ export default {
     </div>
   ),
   mortgage: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <Tile
         context={context}
         version="secondary"
@@ -68,7 +68,7 @@ export default {
     </div>
   ),
   'credit-card': (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <Tile
         context={context}
         className="col-span-6"
@@ -87,7 +87,7 @@ export default {
     </div>
   ),
   premium: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <Tile
         context={context}
         className="col-span-6"
@@ -108,7 +108,7 @@ export default {
     </div>
   ),
   ecosystem: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <Tile
         context={context}
         className="col-span-12 pr-28"

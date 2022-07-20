@@ -85,6 +85,14 @@ const onlyTitleProps: MiniGalleryProps = {
 };
 
 export default {
-  default: <MiniGallery {...defaultProps} />,
-  'only title': <MiniGallery {...onlyTitleProps} />,
+  default: (
+    <div className="container grid grid-cols-12">
+      <MiniGallery className="col-span-12" {...defaultProps} />
+    </div>
+  ),
+  'only title': (
+    <div className="container grid grid-cols-12">
+      <MiniGallery className="col-span-12" {...onlyTitleProps} />
+    </div>
+  ),
 };

@@ -149,7 +149,7 @@ const columns: TariffsTableColumn[] = [
 
 export default {
   default: (
-    <div className="w-[1280px]">
+    <div className="container grid grid-cols-12">
       <TariffsTable
         className="col-span-12"
         title="Другие дебетовые карты Россельхозбанка"
@@ -160,7 +160,7 @@ export default {
     </div>
   ),
   '1 column': (
-    <div className="w-[1280px]">
+    <div className="container grid grid-cols-12">
       <TariffsTable
         className="col-span-12"
         title="Другие дебетовые карты Россельхозбанка"
@@ -171,7 +171,7 @@ export default {
     </div>
   ),
   '2 columns': (
-    <div className="w-[1280px]">
+    <div className="container grid grid-cols-12">
       <TariffsTable
         className="col-span-12"
         title="Другие дебетовые карты Россельхозбанка"
@@ -182,7 +182,7 @@ export default {
     </div>
   ),
   '3 columns': (
-    <div className="w-[1280px]">
+    <div className="container grid grid-cols-12">
       <TariffsTable
         className="col-span-12"
         title="Другие дебетовые карты Россельхозбанка"

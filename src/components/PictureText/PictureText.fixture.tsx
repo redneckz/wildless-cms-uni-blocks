@@ -32,5 +32,9 @@ export const PICTURE_TEXT: PictureTextContent = {
 };
 
 export default {
-  default: <PictureText context={context} {...PICTURE_TEXT} />,
+  default: (
+    <div className="container grid grid-cols-12">
+      <PictureText className="col-span-12" context={context} {...PICTURE_TEXT} />
+    </div>
+  ),
 };

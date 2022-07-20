@@ -31452,11 +31452,6 @@ const alignBlock = {
     center: 'items-center',
     right: 'items-end',
 };
-const alignFlex = {
-    left: 'items-start',
-    center: 'items-center',
-    right: 'justify-end',
-};
 const alignText = {
     left: 'text-left',
     center: 'text-center',
@@ -31508,9 +31503,9 @@ const HEADLINE = {
     bgColor: 'transparent',
 };
 /* harmony default export */ const Headline_fixture = ({
-    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: 'col-span-12', context: context, ...HEADLINE }) })),
-    'left white': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: 'col-span-12', context: context, ...HEADLINE, align: "left", bgColor: "bg-white" }) })),
-    'right transparent': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: 'col-span-12', context: context, ...HEADLINE, align: "right", bgColor: "transparent" }) })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: "col-span-12", context: context, ...HEADLINE }) })),
+    'left white': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: "col-span-12", context: context, ...HEADLINE, align: "left", bgColor: "bg-white" }) })),
+    'right transparent': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: "col-span-12", context: context, ...HEADLINE, align: "right", bgColor: "transparent" }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.tsx
@@ -31596,10 +31591,10 @@ const LINK_DOCS_NO_ICON = {
     icon: undefined,
 };
 /* harmony default export */ const LinkDocs_fixture = ({
-    'two columns (default)': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: 'col-span-12', context: context, ...LINK_DOCS }) })),
-    'one column': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: 'col-span-12', context: context, ...LINK_DOCS_ONE_COLUMN }) })),
-    'another icon': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: 'col-span-12', context: context, ...LINK_DOCS_ANOTHER_ICON }) })),
-    'no icon and title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: 'col-span-12', context: context, ...LINK_DOCS_NO_ICON }) })),
+    'two columns (default)': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS }) })),
+    'one column': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS_ONE_COLUMN }) })),
+    'another icon': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS_ANOTHER_ICON }) })),
+    'no icon and title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS_NO_ICON }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/PictureText/PictureText.tsx
@@ -31645,7 +31640,7 @@ const PICTURE_TEXT = {
     image: PictureText_fixture_image,
 };
 /* harmony default export */ const PictureText_fixture = ({
-    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(PictureText, { className: 'col-span-12', context: context, ...PICTURE_TEXT }) })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(PictureText, { className: "col-span-12", context: context, ...PICTURE_TEXT }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/TextBlock/TextBlock.tsx
@@ -31800,7 +31795,7 @@ const propsTextBlock = {
         },
     ],
 };
-/* harmony default export */ const Accordion_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Accordion, { className: 'col-span-12', ...propsTextBlock }) }));
+/* harmony default export */ const Accordion_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Accordion, { className: "col-span-12", ...propsTextBlock }) }));
 
 ;// CONCATENATED MODULE: ./src/components/BenefitsBlock/BenefitsBlock.tsx
 
@@ -31818,7 +31813,7 @@ const renderStep = (benefit, i) => {
 
 
 
-/* harmony default export */ const BenefitsBlock_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(BenefitsBlock, { context: context, className: 'col-span-12', title: "\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430", benefits: [
+/* harmony default export */ const BenefitsBlock_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(BenefitsBlock, { context: context, className: "col-span-12", title: "\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430", benefits: [
             {
                 label: 'Без комиссии',
                 description: 'Комиссия за выдачу кредита не взимается. Допускается полное или частичное погашение кредита',
@@ -33131,14 +33126,14 @@ const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { 
 
 
 
-/* harmony default export */ const CreditCalculator_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(CreditCalculator, { className: 'col-span-12', context: context, directoryName: "credit-calculator-data" }) }));
+/* harmony default export */ const CreditCalculator_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(CreditCalculator, { className: "col-span-12", context: context, directoryName: "credit-calculator-data" }) }));
 
 ;// CONCATENATED MODULE: ./src/components/ExchangeRateTile/ExchangeRateTile.fixture.tsx
 
 
 
 /* harmony default export */ const ExchangeRateTile_fixture = ({
-    default: (jsx("div", { className: "grid grid-cols-12", children: jsx(ExchangeRateTile, { context: context, className: "col-span-4" }) })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ExchangeRateTile, { context: context, className: "col-span-4" }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/Footer/Footer.fixture.tsx
@@ -33146,7 +33141,7 @@ const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { 
 
 
 const DEFAULT_ORIGIN = 'https://rshb.ru/';
-/* harmony default export */ const Footer_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Footer, { className: 'col-span-12', topItems: [
+/* harmony default export */ const Footer_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Footer, { className: "col-span-12", topItems: [
             {
                 href: DEFAULT_ORIGIN,
                 text: 'Частным клиентам',
@@ -33328,7 +33323,11 @@ const DEFAULT_ORIGIN = 'https://rshb.ru/';
                     },
                 ],
             },
-        ], socialMedia: [{ href: 'https://t.me' }, { href: 'https://vk.com' }, { href: 'https://ok.ru' }], contacts: [
+        ], socialMedia: [
+            { href: 'https://t.me' },
+            { href: 'https://vk.com' },
+            { href: 'https://ok.ru' },
+        ], contacts: [
             {
                 text: '+7 (495) 787-7-787',
                 description: 'Для звонков из-за границы',
@@ -33592,12 +33591,12 @@ const onlyTitleProps = {
     ],
 };
 /* harmony default export */ const Gallery_fixture = ({
-    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: 'col-span-12', ...defaultProps }) })),
-    'text and button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: 'col-span-12', ...textAndButtonProps }) })),
-    'list and button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: 'col-span-12', ...listAndButtonProps }) })),
-    'text and no button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: 'col-span-12', ...textAndNoButtonProps }) })),
-    'only title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: 'col-span-12', ...onlyTitleProps }) })),
-    mobile: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery_mobile_Gallery, { className: 'col-span-12', ...defaultProps }) })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...defaultProps }) })),
+    'text and button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...textAndButtonProps }) })),
+    'list and button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...listAndButtonProps }) })),
+    'text and no button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...textAndNoButtonProps }) })),
+    'only title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...onlyTitleProps }) })),
+    mobile: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery_mobile_Gallery, { className: "col-span-12", ...defaultProps }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/Header/Header.fixture.tsx
@@ -33621,7 +33620,7 @@ const onlyTitleProps = {
 
 
 
-/* harmony default export */ const LikeControl_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(LikeControl, { className: 'col-span-12', context: context }) }));
+/* harmony default export */ const LikeControl_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(LikeControl, { className: "col-span-12", context: context }) }));
 
 ;// CONCATENATED MODULE: ./src/components/MiniGallery/MiniGallery.fixture.tsx
 
@@ -33704,8 +33703,8 @@ const MiniGallery_fixture_onlyTitleProps = {
     ],
 };
 /* harmony default export */ const MiniGallery_fixture = ({
-    default: jsx("div", { className: "container grid grid-cols-12", children: jsx(MiniGallery, { className: 'col-span-12', ...MiniGallery_fixture_defaultProps }) }),
-    'only title': jsx("div", { className: "container grid grid-cols-12", children: jsx(MiniGallery, { className: 'col-span-12', ...MiniGallery_fixture_onlyTitleProps }) }),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(MiniGallery, { className: "col-span-12", ...MiniGallery_fixture_defaultProps }) })),
+    'only title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(MiniGallery, { className: "col-span-12", ...MiniGallery_fixture_onlyTitleProps }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/MobileAppTile/MobileAppTile.fixture.tsx
@@ -33738,7 +33737,7 @@ const MiniGallery_fixture_onlyTitleProps = {
 
 
 
-/* harmony default export */ const Placeholder_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Placeholder, { className: 'col-span-12', context: context, title: "\u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0439 \u0431\u043B\u043E\u043A" }) }));
+/* harmony default export */ const Placeholder_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Placeholder, { className: "col-span-12", context: context, title: "\u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0439 \u0431\u043B\u043E\u043A" }) }));
 
 ;// CONCATENATED MODULE: ./src/components/ProductBlock/ProductBlock.fixture.tsx
 
@@ -33754,7 +33753,7 @@ const ProductBlock_fixture_image = {
     },
 };
 /* harmony default export */ const ProductBlock_fixture = ({
-    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductBlock, { className: 'col-span-12', context: context, title: 'Потребительский кредит наличными', description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", breadcrumbs: [
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductBlock, { className: "col-span-12", context: context, title: 'Потребительский кредит наличными', description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", breadcrumbs: [
                 {
                     text: 'Главная',
                     href: '/',
@@ -33796,7 +33795,7 @@ const ProductBlock_fixture_image = {
                     version: 'secondary',
                 },
             ], image: ProductBlock_fixture_image }) })),
-    'with items': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductBlock, { className: 'col-span-12', context: context, title: 'Оплата проходит \nв 180 странах мира', breadcrumbs: [], description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", items: [
+    'with items': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductBlock, { className: "col-span-12", context: context, title: 'Оплата проходит \nв 180 странах мира', breadcrumbs: [], description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", items: [
                 'Совершайте любые личные покупки',
                 'Используйте корпоративную карту как обычную дебетовую, если вы ИП',
                 'Расходы для бизнеса на УСН 15% позволят снизить налоговую базу',
@@ -33845,7 +33844,7 @@ const creditCard = {
         height: 280,
     },
 };
-/* harmony default export */ const ProductGallery_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductGallery, { className: 'col-span-12', context: context, slides: [
+/* harmony default export */ const ProductGallery_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductGallery, { className: "col-span-12", context: context, slides: [
             {
                 nav: {
                     title: 'Деньги на любые цели',
@@ -34063,7 +34062,7 @@ const building = {
 
 
 
-/* harmony default export */ const StepsBlock_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(StepsBlock, { className: 'col-span-12', context: context, title: "\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0439\u0442\u0435 \u0443\u0441\u043B\u043E\u0432\u0438\u044F \u043D\u0430 \u043E\u043D\u043B\u0430\u0439\u043D-\u043A\u0430\u043B\u044C\u043A\u0443\u043B\u044F\u0442\u043E\u0440\u0435 \u0438 \u043E\u0441\u0442\u0430\u0432\u044C\u0442\u0435 \u0437\u0430\u044F\u0432\u043A\u0443 \u043D\u0430 \u043F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442", steps: [
+/* harmony default export */ const StepsBlock_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(StepsBlock, { className: "col-span-12", context: context, title: "\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0439\u0442\u0435 \u0443\u0441\u043B\u043E\u0432\u0438\u044F \u043D\u0430 \u043E\u043D\u043B\u0430\u0439\u043D-\u043A\u0430\u043B\u044C\u043A\u0443\u043B\u044F\u0442\u043E\u0440\u0435 \u0438 \u043E\u0441\u0442\u0430\u0432\u044C\u0442\u0435 \u0437\u0430\u044F\u0432\u043A\u0443 \u043D\u0430 \u043F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442", steps: [
             {
                 label: 'Заявка на кредит',
                 description: 'Оставьте онлайн-заявку на потребительский кредит',

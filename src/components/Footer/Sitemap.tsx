@@ -28,7 +28,7 @@ const renderColumn = (c: TopMenuItem, index: number, { router, handlerDecorator 
   const { text, href, items, target } = c;
 
   return (
-    <div key={String(index)} className="flex flex-col w-[235px] gap-[14px]">
+    <div key={String(index)} className="flex flex-col gap-[14px]">
       <a
         className="block font-sans font-medium text-base text-primary-text no-underline"
         href={href}

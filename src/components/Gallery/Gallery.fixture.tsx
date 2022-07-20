@@ -206,10 +206,34 @@ const onlyTitleProps: GalleryProps = {
 };
 
 export default {
-  default: <Gallery {...defaultProps} />,
-  'text and button': <Gallery {...textAndButtonProps} />,
-  'list and button': <Gallery {...listAndButtonProps} />,
-  'text and no button': <Gallery {...textAndNoButtonProps} />,
-  'only title': <Gallery {...onlyTitleProps} />,
-  mobile: <MobileGallery {...defaultProps} />,
+  default: (
+    <div className="container grid grid-cols-12">
+      <Gallery className="col-span-12" {...defaultProps} />
+    </div>
+  ),
+  'text and button': (
+    <div className="container grid grid-cols-12">
+      <Gallery className="col-span-12" {...textAndButtonProps} />
+    </div>
+  ),
+  'list and button': (
+    <div className="container grid grid-cols-12">
+      <Gallery className="col-span-12" {...listAndButtonProps} />
+    </div>
+  ),
+  'text and no button': (
+    <div className="container grid grid-cols-12">
+      <Gallery className="col-span-12" {...textAndNoButtonProps} />
+    </div>
+  ),
+  'only title': (
+    <div className="container grid grid-cols-12">
+      <Gallery className="col-span-12" {...onlyTitleProps} />
+    </div>
+  ),
+  mobile: (
+    <div className="container grid grid-cols-12">
+      <MobileGallery className="col-span-12" {...defaultProps} />
+    </div>
+  ),
 };
