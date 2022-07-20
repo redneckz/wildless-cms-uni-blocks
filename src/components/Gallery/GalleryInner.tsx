@@ -49,12 +49,12 @@ export const GalleryInner = JSX<GalleryInnerProps>(
 
     return (
       <section
-        className={`relative font-sans text-primary-text bg-white p-12 py-[50px] overflow-hidden ${className}`}
+        className={`relative font-sans text-primary-text bg-white p-[50px] overflow-hidden ${className}`}
       >
         <div className="flex flex-col items-center mb-8">
           {title ? <Title className="font-medium m-0 text-center">{title}</Title> : null}
           {description ? (
-            <div className="font-normal text-base max-w-[600px] mt-3">{description}</div>
+            <div className="font-normal text-base max-w-[600px] mt-2.5">{description}</div>
           ) : null}
         </div>
         <div
