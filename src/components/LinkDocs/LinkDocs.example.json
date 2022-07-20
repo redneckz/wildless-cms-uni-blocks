@@ -1,0 +1,26 @@
+{
+  "title": "Дополнительные документы",
+  "icon": "DocIcon",
+  "documents": [
+    {
+      "text": "Документ №1",
+      "href": "/documents/document1.doc",
+      "fileSize": "123КБ"
+    },
+    {
+      "text": "Документ №2",
+      "href": "/documents/document2.rtf",
+      "target": "_blank"
+    },
+    {
+      "text": "Документ №3",
+      "href": "/abc3/map.jpeg",
+      "fileSize": "2МБ"
+    },
+    {
+      "text": "Документ №4",
+      "href": "/abc/map.rar"
+    }
+  ],
+  "columnsMode": "double"
+}
