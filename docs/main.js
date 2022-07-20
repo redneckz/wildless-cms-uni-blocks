@@ -5134,7 +5134,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@font-face{font-display:swap;font-fami
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_postcss_loader_dist_cjs_js_fonts_ubuntu_ubuntu_css__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo2]{--color-primary-main:255,204,0;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo3]{--color-primary-main:225,186,30;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo4]{--color-primary-main:233,191,23;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.container{margin-left:auto;margin-right:auto;width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.inset-x-0{left:0;right:0}.top-1{top:.25rem}.right-1{right:.25rem}.top-7{top:1.75rem}.right-7{right:1.75rem}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.top-4{top:1rem}.right-4{right:1rem}.left-0{left:0}.top-1\\/2{top:50%}.left-8{left:2rem}.left-1{left:.25rem}.-bottom-2{bottom:-.5rem}.top-8{top:2rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-3{margin-bottom:.75rem;margin-top:.75rem}.mb-2\\.5{margin-bottom:.625rem}.mb-2{margin-bottom:.5rem}.mb-5{margin-bottom:1.25rem}.mb-4{margin-bottom:1rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-5{margin-top:1.25rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.mb-9{margin-bottom:2.25rem}.mt-4{margin-top:1rem}.mb-\\[18px\\]{margin-bottom:18px}.mr-6{margin-right:1.5rem}.mr-\\[42px\\]{margin-right:42px}.mt-\\[23px\\]{margin-top:23px}.mb-7{margin-bottom:1.75rem}.mt-3{margin-top:.75rem}.mb-3{margin-bottom:.75rem}.mr-3{margin-right:.75rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.mb-\\[26px\\]{margin-bottom:26px}.mt-0{margin-top:0}.mr-2\\.5{margin-right:.625rem}.ml-4{margin-left:1rem}.ml-5{margin-left:1.25rem}.mb-3\\.5{margin-bottom:.875rem}.mb-1{margin-bottom:.25rem}.mt-1\\.5{margin-top:.375rem}.mt-1{margin-top:.25rem}.ml-3{margin-left:.75rem}.ml-px{margin-left:1px}.mt-0\\.5{margin-top:.125rem}.ml-0\\.5{margin-left:.125rem}.ml-0{margin-left:0}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[24px\\]{height:24px}.h-12{height:3rem}.h-\\[70px\\]{height:70px}.h-\\[63px\\]{height:63px}.h-8{height:2rem}.h-fit{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.h-10{height:2.5rem}.h-\\[38px\\]{height:38px}.h-\\[1px\\]{height:1px}.h-\\[90px\\]{height:90px}.h-\\[48px\\]{height:48px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-\\[6px\\]{height:6px}.h-5{height:1.25rem}.h-\\[2px\\]{height:2px}.max-h-0{max-height:0}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[420px\\]{min-height:420px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[300px\\]{min-height:300px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[360px\\]{min-height:360px}.min-h-\\[6px\\]{min-height:6px}.min-h-12{min-height:3rem}.w-\\[24px\\]{width:24px}.w-full{width:100%}.w-\\[70px\\]{width:70px}.w-\\[1280px\\]{width:1280px}.w-\\[84px\\]{width:84px}.w-80{width:20rem}.w-\\[63px\\]{width:63px}.w-\\[200px\\]{width:200px}.w-8{width:2rem}.w-\\[847px\\]{width:847px}.w-\\[465px\\]{width:465px}.w-\\[75px\\]{width:75px}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-\\[38px\\]{width:38px}.w-\\[364px\\]{width:364px}.w-\\[260px\\]{width:260px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[48px\\]{width:48px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-12{width:3rem}.w-\\[354px\\]{width:354px}.w-4{width:1rem}.w-\\[6px\\]{width:6px}.w-\\[36px\\]{width:36px}.w-5{width:1.25rem}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[260px\\]{min-width:260px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[6px\\]{min-width:6px}.min-w-12{min-width:3rem}.max-w-\\[170px\\]{max-width:170px}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[308px\\]{max-width:308px}.max-w-\\[490px\\]{max-width:490px}.max-w-\\[149px\\]{max-width:149px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.flex-1{flex:1 1 0%}.flex-shrink-0,.shrink-0{flex-shrink:0}.flex-grow,.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-\\[226px\\]{flex-basis:226px}.basis-\\[calc\\(50\\%-20px\\)\\]{flex-basis:calc(50% - 20px)}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.list-none{list-style-type:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3\\.5{gap:.875rem}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem}.gap-y-\\[26px\\]{row-gap:26px}.gap-x-24{-moz-column-gap:6rem;column-gap:6rem}.self-start{align-self:flex-start}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-y-0{border-bottom-width:0;border-top-width:0}.border-x-0{border-left-width:0;border-right-width:0}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-b-0{border-bottom-width:0}.border-t-0{border-top-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-primary-text{--tw-border-opacity:1;border-color:rgba(28,28,28,var(--tw-border-opacity))}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff;--tw-gradient-to:hsla(0,0%,100%,0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.to-transparent{--tw-gradient-to:transparent}.fill-secondary-light{fill:#f5f7f9}.p-\\[50px\\]{padding:50px}.p-0{padding:0}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-\\[49px\\]{padding:49px}.p-9{padding:2.25rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-14{padding:3.5rem}.p-\\[12px\\]{padding:12px}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-\\[9px\\]{padding-bottom:9px;padding-top:9px}.px-0{padding-left:0;padding-right:0}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.px-20{padding-left:5rem;padding-right:5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.px-3{padding-left:.75rem;padding-right:.75rem}.py-4{padding-bottom:1rem;padding-top:1rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-4{padding-right:1rem}.pl-4,.px-4{padding-left:1rem}.pr-32{padding-right:8rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.pr-2\\.5{padding-right:.625rem}.pr-2{padding-right:.5rem}.pb-5{padding-bottom:1.25rem}.pb-2{padding-bottom:.5rem}.pl-\\[50px\\]{padding-left:50px}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-\\[46px\\]{padding-bottom:46px}.pt-6{padding-top:1.5rem}.pt-0{padding-top:0}.pr-\\[53px\\]{padding-right:53px}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pt-10{padding-top:2.5rem}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pb-\\[2px\\]{padding-bottom:2px}.pt-1{padding-top:.25rem}.pl-10{padding-left:2.5rem}.pr-\\[14px\\]{padding-right:14px}.pt-1\\.5{padding-top:.375rem}.pl-1{padding-left:.25rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.align-middle{vertical-align:middle}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-lg{font-size:2.188rem;line-height:3rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title{font-size:2rem;line-height:2.5rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-normal{font-weight:400}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-4{line-height:1rem}.leading-5{line-height:1.25rem}.leading-\\[14px\\]{line-height:14px}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.opacity-60{opacity:.6}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}input[type=range].slider{-webkit-appearance:none;background:transparent;background-image:linear-gradient(#42ab44,#42ab44);background-repeat:no-repeat;border-radius:5px;height:4px}input[type=range].slider::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}input[type=range].slider::-moz-range-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:12px;width:12px}input[type=range].slider::-ms-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}.first\\:pt-7:first-child{padding-top:1.75rem}.first\\:pl-0:first-child{padding-left:0}.first\\:pt-5:first-child{padding-top:1.25rem}.last\\:mb-0:last-child{margin-bottom:0}.last\\:border-b-0:last-child{border-bottom-width:0}.last\\:pb-7:last-child{padding-bottom:1.75rem}.last\\:pb-5:last-child{padding-bottom:1.25rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.checked\\:border-primary-main:checked{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.checked\\:bg-primary-main:checked{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:fill-primary-main:hover{fill:rgba(var(--color-primary-main),1)}.hover\\:fill-secondary-hover:hover{fill:rgba(var(--color-secondary-hover),1)}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.group:last-child .group-last\\:last\\:pb-0:last-child{padding-bottom:0}.group:hover .group-hover\\:text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.peer:checked~.peer-checked\\:block{display:block}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo2'] {\n  --color-primary-main: 255, 204, 0;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo3'] {\n  --color-primary-main: 225, 186, 30;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo4'] {\n  --color-primary-main: 233, 191, 23;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n\n  input[type='range'].slider {\n    -webkit-appearance: none;\n    height: 4px;\n    background: transparent;\n    border-radius: 5px;\n    background-image: linear-gradient(#42ab44, #42ab44);\n    background-repeat: no-repeat;\n  }\n\n  input[type='range'].slider::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-moz-range-thumb {\n    height: 12px;\n    width: 12px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-ms-thumb {\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n}\n",null],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo2]{--color-primary-main:255,204,0;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo3]{--color-primary-main:225,186,30;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo4]{--color-primary-main:233,191,23;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.container{margin-left:auto;margin-right:auto;width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.inset-x-0{left:0;right:0}.top-1{top:.25rem}.right-1{right:.25rem}.top-7{top:1.75rem}.right-7{right:1.75rem}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.top-4{top:1rem}.right-4{right:1rem}.left-0{left:0}.top-1\\/2{top:50%}.left-8{left:2rem}.left-1{left:.25rem}.-bottom-2{bottom:-.5rem}.top-8{top:2rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-3{margin-bottom:.75rem;margin-top:.75rem}.mb-2\\.5{margin-bottom:.625rem}.mb-2{margin-bottom:.5rem}.mb-5{margin-bottom:1.25rem}.mb-4{margin-bottom:1rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-5{margin-top:1.25rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.mb-9{margin-bottom:2.25rem}.mt-4{margin-top:1rem}.mb-\\[18px\\]{margin-bottom:18px}.mr-6{margin-right:1.5rem}.mr-\\[42px\\]{margin-right:42px}.mt-\\[23px\\]{margin-top:23px}.mb-7{margin-bottom:1.75rem}.mt-3{margin-top:.75rem}.mb-3{margin-bottom:.75rem}.mr-3{margin-right:.75rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.mb-\\[26px\\]{margin-bottom:26px}.mt-0{margin-top:0}.mr-2\\.5{margin-right:.625rem}.ml-4{margin-left:1rem}.ml-5{margin-left:1.25rem}.mb-3\\.5{margin-bottom:.875rem}.mb-1{margin-bottom:.25rem}.mt-1\\.5{margin-top:.375rem}.mt-1{margin-top:.25rem}.ml-3{margin-left:.75rem}.ml-px{margin-left:1px}.mt-0\\.5{margin-top:.125rem}.ml-0\\.5{margin-left:.125rem}.ml-0{margin-left:0}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[24px\\]{height:24px}.h-12{height:3rem}.h-\\[70px\\]{height:70px}.h-\\[63px\\]{height:63px}.h-8{height:2rem}.h-fit{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.h-10{height:2.5rem}.h-\\[38px\\]{height:38px}.h-\\[1px\\]{height:1px}.h-\\[90px\\]{height:90px}.h-\\[48px\\]{height:48px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-\\[6px\\]{height:6px}.h-5{height:1.25rem}.h-\\[2px\\]{height:2px}.max-h-0{max-height:0}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[420px\\]{min-height:420px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[300px\\]{min-height:300px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[360px\\]{min-height:360px}.min-h-\\[6px\\]{min-height:6px}.min-h-12{min-height:3rem}.w-\\[24px\\]{width:24px}.w-full{width:100%}.w-\\[70px\\]{width:70px}.w-\\[84px\\]{width:84px}.w-80{width:20rem}.w-\\[63px\\]{width:63px}.w-\\[200px\\]{width:200px}.w-8{width:2rem}.w-\\[847px\\]{width:847px}.w-\\[465px\\]{width:465px}.w-\\[75px\\]{width:75px}.w-\\[280px\\]{width:280px}.w-\\[38px\\]{width:38px}.w-\\[364px\\]{width:364px}.w-\\[260px\\]{width:260px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[48px\\]{width:48px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-12{width:3rem}.w-\\[354px\\]{width:354px}.w-4{width:1rem}.w-\\[6px\\]{width:6px}.w-\\[36px\\]{width:36px}.w-5{width:1.25rem}.w-\\[1280px\\]{width:1280px}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[260px\\]{min-width:260px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[6px\\]{min-width:6px}.min-w-12{min-width:3rem}.max-w-\\[170px\\]{max-width:170px}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[308px\\]{max-width:308px}.max-w-\\[490px\\]{max-width:490px}.max-w-\\[149px\\]{max-width:149px}.max-w-min{max-width:-webkit-min-content;max-width:-moz-min-content;max-width:min-content}.flex-1{flex:1 1 0%}.flex-shrink-0,.shrink-0{flex-shrink:0}.flex-grow,.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-\\[226px\\]{flex-basis:226px}.basis-\\[calc\\(50\\%-20px\\)\\]{flex-basis:calc(50% - 20px)}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.list-none{list-style-type:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3\\.5{gap:.875rem}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.gap-\\[54px\\]{gap:54px}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem}.gap-y-\\[26px\\]{row-gap:26px}.gap-x-24{-moz-column-gap:6rem;column-gap:6rem}.self-start{align-self:flex-start}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-y-0{border-bottom-width:0;border-top-width:0}.border-x-0{border-left-width:0;border-right-width:0}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-b-0{border-bottom-width:0}.border-t-0{border-top-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-primary-text{--tw-border-opacity:1;border-color:rgba(28,28,28,var(--tw-border-opacity))}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff;--tw-gradient-to:hsla(0,0%,100%,0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.to-transparent{--tw-gradient-to:transparent}.fill-secondary-light{fill:#f5f7f9}.p-\\[50px\\]{padding:50px}.p-0{padding:0}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-\\[49px\\]{padding:49px}.p-9{padding:2.25rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-14{padding:3.5rem}.p-\\[12px\\]{padding:12px}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-\\[9px\\]{padding-bottom:9px;padding-top:9px}.px-0{padding-left:0;padding-right:0}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.px-20{padding-left:5rem;padding-right:5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-12{padding-left:3rem;padding-right:3rem}.py-12{padding-bottom:3rem;padding-top:3rem}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.px-3{padding-left:.75rem;padding-right:.75rem}.py-4{padding-bottom:1rem;padding-top:1rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-4{padding-right:1rem}.pl-4,.px-4{padding-left:1rem}.pr-32{padding-right:8rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.pr-2\\.5{padding-right:.625rem}.pr-2{padding-right:.5rem}.pb-5{padding-bottom:1.25rem}.pb-2{padding-bottom:.5rem}.pl-\\[50px\\]{padding-left:50px}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-\\[46px\\]{padding-bottom:46px}.pt-6{padding-top:1.5rem}.pt-0{padding-top:0}.pr-\\[53px\\]{padding-right:53px}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pt-10{padding-top:2.5rem}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pb-\\[2px\\]{padding-bottom:2px}.pt-1{padding-top:.25rem}.pl-10{padding-left:2.5rem}.pr-\\[14px\\]{padding-right:14px}.pt-1\\.5{padding-top:.375rem}.pl-1{padding-left:.25rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.align-middle{vertical-align:middle}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-lg{font-size:2.188rem;line-height:3rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title{font-size:2rem;line-height:2.5rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-normal{font-weight:400}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-4{line-height:1rem}.leading-5{line-height:1.25rem}.leading-\\[14px\\]{line-height:14px}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.opacity-60{opacity:.6}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}input[type=range].slider{-webkit-appearance:none;background:transparent;background-image:linear-gradient(#42ab44,#42ab44);background-repeat:no-repeat;border-radius:5px;height:4px}input[type=range].slider::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}input[type=range].slider::-moz-range-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:12px;width:12px}input[type=range].slider::-ms-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}.first\\:pt-7:first-child{padding-top:1.75rem}.first\\:pl-0:first-child{padding-left:0}.first\\:pt-5:first-child{padding-top:1.25rem}.last\\:mb-0:last-child{margin-bottom:0}.last\\:border-b-0:last-child{border-bottom-width:0}.last\\:pb-7:last-child{padding-bottom:1.75rem}.last\\:pb-5:last-child{padding-bottom:1.25rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.checked\\:border-primary-main:checked{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.checked\\:bg-primary-main:checked{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:fill-primary-main:hover{fill:rgba(var(--color-primary-main),1)}.hover\\:fill-secondary-hover:hover{fill:rgba(var(--color-secondary-hover),1)}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.group:last-child .group-last\\:last\\:pb-0:last-child{padding-bottom:0}.group:hover .group-hover\\:text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.peer:checked~.peer-checked\\:block{display:block}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo2'] {\n  --color-primary-main: 255, 204, 0;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo3'] {\n  --color-primary-main: 225, 186, 30;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo4'] {\n  --color-primary-main: 233, 191, 23;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n\n  input[type='range'].slider {\n    -webkit-appearance: none;\n    height: 4px;\n    background: transparent;\n    border-radius: 5px;\n    background-image: linear-gradient(#42ab44, #42ab44);\n    background-repeat: no-repeat;\n  }\n\n  input[type='range'].slider::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-moz-range-thumb {\n    height: 12px;\n    width: 12px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-ms-thumb {\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n}\n",null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31446,6 +31446,11 @@ const getColSpan = (className) => {
 
 
 
+const alignFlex = {
+    left: 'justify-between',
+    center: 'justify-center',
+    right: 'justify-end',
+};
 const alignBlock = {
     left: 'items-start',
     center: 'items-center',
@@ -31460,7 +31465,7 @@ const TITLE_CLASSES = 'font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]';
 const BaseTile = JSX(({ className, context, title, titleSize, description, children, buttons, image, items, version = 'primary', align = 'left', }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
-    return (jsxs("div", { className: `font-sans flex flex-col grow h-full ${alignBlock[align]}`, children: [title && (jsx(Title, { size: titleSize || getTitleSizeByClassName(className), className: `${TITLE_CLASSES} ${version === 'primary' ? 'text-primary-text' : ''}`, children: title })), jsxs("div", { className: "flex grow justify-between w-full", children: [jsxs("div", { className: `flex flex-col justify-between ${alignBlock[align]}`, children: [jsxs("div", { children: [description ? (jsx("div", { className: `font-normal text-base max-w-[600px] ${alignText[align]}`, children: description })) : null, children, items?.length ? renderItems(items, version) : null] }), buttons?.length ? (jsx("div", { className: "flex mt-9 gap-3", children: buttons.map((button, index) => renderButton(useLink({ router, handlerDecorator }, button), index)) })) : null] }), image?.src && jsx(Img, { className: "mt-auto ml-7", image: image })] })] }));
+    return (jsxs("div", { className: `font-sans flex flex-col grow h-full ${alignBlock[align]}`, children: [title && (jsx(Title, { size: titleSize || getTitleSizeByClassName(className), className: `${TITLE_CLASSES} ${version === 'primary' ? 'text-primary-text' : ''}`, children: title })), jsxs("div", { className: `flex grow w-full ${alignFlex[align]}`, children: [jsxs("div", { className: `flex flex-col justify-between ${alignBlock[align]}`, children: [jsxs("div", { children: [description ? (jsx("div", { className: `font-normal text-base max-w-[600px] ${alignText[align]}`, children: description })) : null, children, items?.length ? renderItems(items, version) : null] }), buttons?.length ? (jsx("div", { className: "flex mt-9 gap-3", children: buttons.map((button, index) => renderButton(useLink({ router, handlerDecorator }, button), index)) })) : null] }), image?.src && jsx(Img, { className: "mt-auto ml-7", image: image })] })] }));
 });
 function getTitleSizeByClassName(className = '') {
     const colSpan = getColSpan(className);
@@ -31502,9 +31507,9 @@ const HEADLINE = {
     bgColor: 'transparent',
 };
 /* harmony default export */ const Headline_fixture = ({
-    default: jsx(Headline, { context: context, ...HEADLINE }),
-    'left white': jsx(Headline, { context: context, ...HEADLINE, align: "left", bgColor: "bg-white" }),
-    'right transparent': (jsx(Headline, { context: context, ...HEADLINE, align: "right", bgColor: "transparent" })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: "col-span-12", context: context, ...HEADLINE }) })),
+    'left white': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: "col-span-12", context: context, ...HEADLINE, align: "left", bgColor: "bg-white" }) })),
+    'right transparent': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: "col-span-12", context: context, ...HEADLINE, align: "right", bgColor: "transparent" }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.tsx
@@ -31590,10 +31595,10 @@ const LINK_DOCS_NO_ICON = {
     icon: undefined,
 };
 /* harmony default export */ const LinkDocs_fixture = ({
-    'two columns (default)': jsx(LinkDocs, { context: context, ...LINK_DOCS }),
-    'one column': jsx(LinkDocs, { context: context, ...LINK_DOCS_ONE_COLUMN }),
-    'another icon': jsx(LinkDocs, { context: context, ...LINK_DOCS_ANOTHER_ICON }),
-    'no icon and title': jsx(LinkDocs, { context: context, ...LINK_DOCS_NO_ICON }),
+    'two columns (default)': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS }) })),
+    'one column': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS_ONE_COLUMN }) })),
+    'another icon': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS_ANOTHER_ICON }) })),
+    'no icon and title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS_NO_ICON }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/PictureText/PictureText.tsx
@@ -31639,7 +31644,7 @@ const PICTURE_TEXT = {
     image: PictureText_fixture_image,
 };
 /* harmony default export */ const PictureText_fixture = ({
-    default: jsx(PictureText, { context: context, ...PICTURE_TEXT }),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(PictureText, { className: "col-span-12", context: context, ...PICTURE_TEXT }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/TextBlock/TextBlock.tsx
@@ -31693,7 +31698,7 @@ const TEXT_BLOCK = {
     title: 'Все карты Россельхозбанка работают',
     description: "Если не планируете поездку за границу, продолжайте пользоваться картой Своя. Для поездок за границу можно заказать карту 'Кредитная карта Своя Union Pay' на сайте и в приложении Россельхозбанка",
 };
-/* harmony default export */ const TextBlock_fixture = (jsxs("div", { className: "font-sans overflow-hidden", children: [jsxs("div", { children: [jsx("p", { children: "Private clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "pc", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "big", image: TextBlock_fixture_image }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "none" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Business clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "bc", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Ecosystem own" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "eo", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] })] }));
+/* harmony default export */ const TextBlock_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsxs("div", { className: "font-sans overflow-hidden col-span-12", children: [jsxs("div", { children: [jsx("p", { children: "Private clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "pc", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "big", image: TextBlock_fixture_image }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "none" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Business clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "bc", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Ecosystem own" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "eo", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] })] }) }));
 
 ;// CONCATENATED MODULE: ./src/components/Accordion/AccordionBlocks.tsx
 
@@ -31794,7 +31799,7 @@ const propsTextBlock = {
         },
     ],
 };
-/* harmony default export */ const Accordion_fixture = (jsx(Accordion, { ...propsTextBlock }));
+/* harmony default export */ const Accordion_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Accordion, { className: "col-span-12", ...propsTextBlock }) }));
 
 ;// CONCATENATED MODULE: ./src/components/BenefitsBlock/BenefitsBlock.tsx
 
@@ -31812,28 +31817,28 @@ const renderStep = (benefit, i) => {
 
 
 
-/* harmony default export */ const BenefitsBlock_fixture = (jsx(BenefitsBlock, { context: context, title: "\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430", benefits: [
-        {
-            label: 'Без комиссии',
-            description: 'Комиссия за выдачу кредита не взимается. Допускается полное или частичное погашение кредита',
-            icon: 'ClockIcon',
-        },
-        {
-            label: 'Оформление по паспорту',
-            description: 'Обеспечение не требуется. Кредит можно получить на любые цели',
-            icon: 'SignDocsIcon',
-        },
-        {
-            label: 'Без залога и поручительства',
-            description: 'Единовременное перечисление суммы кредита в полном объёме на текущий счет в Банке',
-            icon: 'ComfortableCompIcon',
-        },
-        {
-            label: 'Деньги за 3 дня',
-            description: 'Рассмотрение заявки с момента предоставления полного комплекта документов',
-            icon: 'ActualBalanceIcon',
-        },
-    ] }));
+/* harmony default export */ const BenefitsBlock_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(BenefitsBlock, { context: context, className: "col-span-12", title: "\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430", benefits: [
+            {
+                label: 'Без комиссии',
+                description: 'Комиссия за выдачу кредита не взимается. Допускается полное или частичное погашение кредита',
+                icon: 'ClockIcon',
+            },
+            {
+                label: 'Оформление по паспорту',
+                description: 'Обеспечение не требуется. Кредит можно получить на любые цели',
+                icon: 'SignDocsIcon',
+            },
+            {
+                label: 'Без залога и поручительства',
+                description: 'Единовременное перечисление суммы кредита в полном объёме на текущий счет в Банке',
+                icon: 'ComfortableCompIcon',
+            },
+            {
+                label: 'Деньги за 3 дня',
+                description: 'Рассмотрение заявки с момента предоставления полного комплекта документов',
+                icon: 'ActualBalanceIcon',
+            },
+        ] }) }));
 
 ;// CONCATENATED MODULE: ./src/hooks/useComparisonTableScroll.ts
 const useComparisonTableScroll = ({ colData, colsLengthForScroll, activeCardIndex, setActiveCardIndex, }) => {
@@ -32150,11 +32155,11 @@ const columns2 = [
     },
 ];
 /* harmony default export */ const ComparisonTable_fixture = ({
-    'with images': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) }) })),
-    'with images and hidden rows': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", visibleRowLength: 3, context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) }) })),
-    'with images and colored first column': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", visibleRowLength: 3, isColoredFirstColumn: true, context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) }) })),
-    'with icons': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: Array(2).fill(columns2).flat() }) }) })),
-    'with icons and two cols': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: columns2.slice(0, 2) }) }) })),
+    'with images': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) })),
+    'with images and hidden rows': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", visibleRowLength: 3, context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) })),
+    'with images and colored first column': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", visibleRowLength: 3, isColoredFirstColumn: true, context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) })),
+    'with icons': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: Array(2).fill(columns2).flat() }) })),
+    'with icons and two cols': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: columns2.slice(0, 2) }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/hooks/useCreditCalculatorData.ts
@@ -32514,7 +32519,7 @@ const Sitemap = JSX(({ className, items, context }) => {
 });
 const renderColumn = (c, index, { router, handlerDecorator }) => {
     const { text, href, items, target } = c;
-    return (jsxs("div", { className: "flex flex-col w-[235px] gap-[14px]", children: [jsx("a", { className: "block font-sans font-medium text-base text-primary-text no-underline", href: href, target: target || '_self', children: text || `Раздел ${index}` }), items?.map((_, i) => (jsx(ColumnItem, { ...useLink({ router, handlerDecorator }, _) }, String(i))))] }, String(index)));
+    return (jsxs("div", { className: "flex flex-col gap-[14px]", children: [jsx("a", { className: "block font-sans font-medium text-base text-primary-text no-underline", href: href, target: target || '_self', children: text || `Раздел ${index}` }), items?.map((_, i) => (jsx(ColumnItem, { ...useLink({ router, handlerDecorator }, _) }, String(i))))] }, String(index)));
 };
 const ColumnItem = JSX(({ text, href, target, index }) => (jsx("a", { className: "block font-sans font-normal text-base text-secondary-text hover:text-primary-main no-underline", href: href, target: target || '_self', children: text || `Раздел ${index}` })));
 
@@ -32570,7 +32575,7 @@ const TextInformationLink = JSX(({ className, index, text, href, target, onClick
 const LEFT_COL_WIDTH_FULL_HD = 'w-[280px]';
 const LEFT_COL_WIDTH_SMALL_DESKTOP = 'xl:w-[220px]';
 const Footer = JSX(({ className, documents, relatedEnterprises, contacts, socialMedia, topItems, context }) => {
-    return (jsxs("footer", { className: `${className} px-9 py-10 bg-white`, children: [jsxs("div", { className: "flex items-stretch gap-32 pb-8 xl:gap-8", children: [jsx(Logo, { className: `${LEFT_COL_WIDTH_FULL_HD} ${LEFT_COL_WIDTH_SMALL_DESKTOP}` }), jsx(SearchBar, { context: context, className: "grow" })] }), jsxs("div", { className: "flex items-stretch gap-32 xl:gap-8", children: [jsx(Contacts, { className: `${LEFT_COL_WIDTH_FULL_HD} shrink-0 overflow-hidden ${LEFT_COL_WIDTH_SMALL_DESKTOP}`, items: contacts, context: context, hasButton: true }), jsx(Sitemap, { className: "pt-[3px]", context: context, items: topItems })] }), jsx(SocialMedia, { media: socialMedia, context: context }), jsx(HorizontalNavigation, { links: relatedEnterprises, context: context }), jsx(TextInformation, { links: documents, context: context })] }));
+    return (jsxs("footer", { className: `px-9 py-10 bg-white ${className || ''}`, children: [jsxs("div", { className: "flex items-stretch gap-[54px] pb-8 xl:gap-8", children: [jsx(Logo, { className: `${LEFT_COL_WIDTH_FULL_HD} ${LEFT_COL_WIDTH_SMALL_DESKTOP}` }), jsx(SearchBar, { context: context, className: "grow" })] }), jsxs("div", { className: "flex items-stretch gap-[54px] xl:gap-8", children: [jsx(Contacts, { className: `${LEFT_COL_WIDTH_FULL_HD} shrink-0 overflow-hidden ${LEFT_COL_WIDTH_SMALL_DESKTOP}`, items: contacts, context: context, hasButton: true }), jsx(Sitemap, { className: "pt-[3px]", context: context, items: topItems })] }), jsx(SocialMedia, { media: socialMedia, context: context }), jsx(HorizontalNavigation, { links: relatedEnterprises, context: context }), jsx(TextInformation, { links: documents, context: context })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/components/Gallery/constants.ts
@@ -32617,7 +32622,7 @@ function renderItem(item, i, version) {
 
 
 const GalleryContainer = JSX(({ context, title, description, cards = [], version = 'normal', activeCardIndex }) => {
-    return (jsxs("div", { children: [jsx("div", { className: "absolute top-0 left-0 bottom-0 w-[84px] bg-gradient-to-r from-white to-transparent" }), jsxs("div", { className: "flex flex-col items-center mb-8", children: [title ? jsx(Title, { className: "font-medium m-0 text-center", children: title }) : null, description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { className: `flex ${cards?.length <= galleryLengthForScrollMap[version] ? 'justify-center' : ''} duration-1000`, style: { transform: `translateX(-${activeCardIndex * cardWidthMap[version]}px)` }, role: "list", children: cards?.map((card, i) => renderCard({ card, version, context }, i)) })] }));
+    return (jsxs("div", { children: [jsx("div", { className: "absolute top-0 left-0 bottom-0 w-[84px] bg-gradient-to-r from-white to-transparent" }), jsxs("div", { className: "flex flex-col items-center mb-8", children: [title ? jsx(Title, { className: "font-medium m-0 text-center", children: title }) : null, description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-2.5", children: description })) : null] }), jsx("div", { className: `flex ${cards?.length <= galleryLengthForScrollMap[version] ? 'justify-center' : ''} duration-1000`, style: { transform: `translateX(-${activeCardIndex * cardWidthMap[version]}px)` }, role: "list", children: cards?.map((card, i) => renderCard({ card, version, context }, i)) })] }));
 });
 function renderCard({ card, version, context }, i) {
     return (jsx(Tile, { context: context, className: `box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between
@@ -32638,7 +32643,7 @@ const GalleryInner = JSX(({ context, cards = [], className, version = 'normal', 
     const showNextButton = isGalleryScrollAvailable &&
         cards?.length - activeCardIndex > galleryLengthForScrollMap[version];
     const showPrevButton = isGalleryScrollAvailable && activeCardIndex > 0;
-    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-12 py-[50px] overflow-hidden ${className}`, children: [jsx(GalleryContainer, { context: context, cards: cards, version: version, activeCardIndex: activeCardIndex, ...rest }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8 rotate-180", onClick: handlePrevClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-10", onClick: handleNextClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" })), jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })] }));
+    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-[50px] overflow-hidden ${className}`, children: [jsx(GalleryContainer, { context: context, cards: cards, version: version, activeCardIndex: activeCardIndex, ...rest }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8 rotate-180", onClick: handlePrevClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-10", onClick: handleNextClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" })), jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/components/Gallery/Gallery.tsx
@@ -33148,14 +33153,14 @@ const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { 
 
 
 
-/* harmony default export */ const CreditCalculator_fixture = (jsx(CreditCalculator, { context: context, directoryName: "credit-calculator-data" }));
+/* harmony default export */ const CreditCalculator_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(CreditCalculator, { className: "col-span-12", context: context, directoryName: "credit-calculator-data" }) }));
 
 ;// CONCATENATED MODULE: ./src/components/ExchangeRateTile/ExchangeRateTile.fixture.tsx
 
 
 
 /* harmony default export */ const ExchangeRateTile_fixture = ({
-    default: (jsx("div", { className: "grid grid-cols-12", children: jsx(ExchangeRateTile, { context: context, className: "col-span-4" }) })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ExchangeRateTile, { context: context, className: "col-span-4" }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/Footer/Footer.fixture.tsx
@@ -33163,257 +33168,261 @@ const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { 
 
 
 const DEFAULT_ORIGIN = 'https://rshb.ru/';
-/* harmony default export */ const Footer_fixture = (jsx(Footer, { topItems: [
-        {
-            href: DEFAULT_ORIGIN,
-            text: 'Частным клиентам',
-            target: '_blank',
-            items: [
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Кредитные карты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Дебетовые карты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Кредиты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Ипотека',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Вклады и сбережения',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Инвестиции',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Страхование',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Премиальным клиентам',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Биометрическая регистрация',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Перевод денег',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Обмен денег',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Акции',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Тарифы',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Архивная информация',
-                },
-            ],
-        },
-        {
-            href: DEFAULT_ORIGIN,
-            text: 'Бизнес клиентам',
-            target: '_blank',
-            items: [
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'РКО',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Кредиты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Депозиты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Эквайринг',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Банковские карты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'ВЭД',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Инвестиции',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Обмен валюты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Страхование',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Партнёрские программы',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Онлайн-сервисы',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Акции',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Тарифы',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Архивная информация',
-                },
-            ],
-        },
-        {
-            href: DEFAULT_ORIGIN,
-            text: 'О банке',
-            target: '_blank',
-            items: [
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'О банке',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Новости',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Офисы и отделения',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Карьера в банке',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Пресс-центр',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Кредитным организациям',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Закупки',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Непрофильные/Профильные нецелевые активы',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Инсайдерам',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Противодействие коррупции',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Меры безопасности',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Залоговое имущество',
-                },
-            ],
-        },
-    ], socialMedia: [{ href: 'https://t.me' }, { href: 'https://vk.com' }, { href: 'https://ok.ru' }], contacts: [
-        {
-            text: '+7 (495) 787-7-787',
-            description: 'Для звонков из-за границы',
-            type: 'tel',
-        },
-        {
-            text: 'example@example.com',
-            description: 'Для писем',
-            type: 'email',
-        },
-        {
-            text: '7787',
-            description: 'Абонентам МТС, Мегафон, Билайн и Tele2',
-            type: 'tel',
-        },
-    ], relatedEnterprises: [
-        {
-            text: 'РСХБ Страхование',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'РСХБ Страхование жизни',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'РСХБ Управление активами',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'РСХБ Лизинг',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'РСХБ Факторинг',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-    ], documents: [
-        {
-            text: 'Информация о процентных ставках по договорам банковского вклада с физическими лицами',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'Раскрытие информации профессиональным участником рынка ценных бумаг',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'Раскрытие информации',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'Удостоверяющий центр',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'Финансовая культура',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-    ], context: context }));
+/* harmony default export */ const Footer_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Footer, { className: "col-span-12", topItems: [
+            {
+                href: DEFAULT_ORIGIN,
+                text: 'Частным клиентам',
+                target: '_blank',
+                items: [
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Кредитные карты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Дебетовые карты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Кредиты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Ипотека',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Вклады и сбережения',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Инвестиции',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Страхование',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Премиальным клиентам',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Биометрическая регистрация',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Перевод денег',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Обмен денег',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Акции',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Тарифы',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Архивная информация',
+                    },
+                ],
+            },
+            {
+                href: DEFAULT_ORIGIN,
+                text: 'Бизнес клиентам',
+                target: '_blank',
+                items: [
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'РКО',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Кредиты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Депозиты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Эквайринг',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Банковские карты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'ВЭД',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Инвестиции',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Обмен валюты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Страхование',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Партнёрские программы',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Онлайн-сервисы',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Акции',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Тарифы',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Архивная информация',
+                    },
+                ],
+            },
+            {
+                href: DEFAULT_ORIGIN,
+                text: 'О банке',
+                target: '_blank',
+                items: [
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'О банке',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Новости',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Офисы и отделения',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Карьера в банке',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Пресс-центр',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Кредитным организациям',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Закупки',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Непрофильные/Профильные нецелевые активы',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Инсайдерам',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Противодействие коррупции',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Меры безопасности',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Залоговое имущество',
+                    },
+                ],
+            },
+        ], socialMedia: [
+            { href: 'https://t.me' },
+            { href: 'https://vk.com' },
+            { href: 'https://ok.ru' },
+        ], contacts: [
+            {
+                text: '+7 (495) 787-7-787',
+                description: 'Для звонков из-за границы',
+                type: 'tel',
+            },
+            {
+                text: 'example@example.com',
+                description: 'Для писем',
+                type: 'email',
+            },
+            {
+                text: '7787',
+                description: 'Абонентам МТС, Мегафон, Билайн и Tele2',
+                type: 'tel',
+            },
+        ], relatedEnterprises: [
+            {
+                text: 'РСХБ Страхование',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'РСХБ Страхование жизни',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'РСХБ Управление активами',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'РСХБ Лизинг',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'РСХБ Факторинг',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+        ], documents: [
+            {
+                text: 'Информация о процентных ставках по договорам банковского вклада с физическими лицами',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'Раскрытие информации профессиональным участником рынка ценных бумаг',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'Раскрытие информации',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'Удостоверяющий центр',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'Финансовая культура',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+        ], context: context }) }));
 
 ;// CONCATENATED MODULE: ./src/components/Gallery/Gallery.fixture.tsx
 
@@ -33430,12 +33439,6 @@ const Gallery_fixture_image = {
     title: 'money',
 };
 const buttonPrimary = {
-    href: '/credit-cards',
-    text: 'Подробнее',
-    target: '_blank',
-    version: 'secondary',
-};
-const buttonSecondary = {
     href: '/credit-cards',
     text: 'Подробнее',
     target: '_blank',
@@ -33593,53 +33596,13 @@ const onlyTitleProps = {
         },
     ],
 };
-const secondaryColorProps = {
-    title: 'Вы можете оплатить бонусными баллами',
-    description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
-    context: context,
-    cards: [
-        {
-            title: 'Более 5000 товаров',
-            description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
-            image: Gallery_fixture_image,
-            button: buttonSecondary,
-            items: defaultItems,
-            version: 'secondary',
-        },
-        {
-            title: 'Более 1000 развлечений',
-            description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
-            image: Gallery_fixture_image,
-            button: buttonSecondary,
-            items: defaultItems,
-            version: 'secondary',
-        },
-        {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
-            image: Gallery_fixture_image,
-            button: buttonSecondary,
-            items: defaultItems,
-            version: 'secondary',
-        },
-        {
-            title: '«Моя выгода»',
-            description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
-            image: Gallery_fixture_image,
-            button: buttonSecondary,
-            items: defaultItems,
-            version: 'secondary',
-        },
-    ],
-};
 /* harmony default export */ const Gallery_fixture = ({
-    default: jsx(Gallery, { ...defaultProps }),
-    'text and button': jsx(Gallery, { ...textAndButtonProps }),
-    'list and button': jsx(Gallery, { ...listAndButtonProps }),
-    'text and no button': jsx(Gallery, { ...textAndNoButtonProps }),
-    'only title': jsx(Gallery, { ...onlyTitleProps }),
-    'secondary color': jsx(Gallery, { ...secondaryColorProps }),
-    mobile: jsx(Gallery_mobile_Gallery, { ...defaultProps }),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...defaultProps }) })),
+    'text and button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...textAndButtonProps }) })),
+    'list and button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...listAndButtonProps }) })),
+    'text and no button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...textAndNoButtonProps }) })),
+    'only title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...onlyTitleProps }) })),
+    mobile: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery_mobile_Gallery, { className: "col-span-12", ...defaultProps }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/Header/Header.fixture.tsx
@@ -33663,7 +33626,7 @@ const secondaryColorProps = {
 
 
 
-/* harmony default export */ const LikeControl_fixture = (jsx(LikeControl, { context: context }));
+/* harmony default export */ const LikeControl_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(LikeControl, { className: "col-span-12", context: context }) }));
 
 ;// CONCATENATED MODULE: ./src/components/MiniGallery/MiniGallery.fixture.tsx
 
@@ -33705,37 +33668,6 @@ const MiniGallery_fixture_defaultProps = {
         },
     ],
 };
-const MiniGallery_fixture_secondaryColorProps = {
-    title: 'Вы можете оплатить бонусными баллами',
-    description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
-    context: context,
-    cards: [
-        {
-            title: 'Более 5000 товаров',
-            description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
-            image: MiniGallery_fixture_image,
-            version: 'secondary',
-        },
-        {
-            title: 'Более 1000 развлечений',
-            description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
-            image: MiniGallery_fixture_image,
-            version: 'secondary',
-        },
-        {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
-            image: MiniGallery_fixture_image,
-            version: 'secondary',
-        },
-        {
-            title: '«Моя выгода»',
-            description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
-            image: MiniGallery_fixture_image,
-            version: 'secondary',
-        },
-    ],
-};
 const MiniGallery_fixture_onlyTitleProps = {
     title: 'Вы можете оплатить бонусными баллами',
     description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
@@ -33760,9 +33692,8 @@ const MiniGallery_fixture_onlyTitleProps = {
     ],
 };
 /* harmony default export */ const MiniGallery_fixture = ({
-    default: jsx(MiniGallery, { ...MiniGallery_fixture_defaultProps }),
-    'secondary color': jsx(MiniGallery, { ...MiniGallery_fixture_secondaryColorProps }),
-    'only title': jsx(MiniGallery, { ...MiniGallery_fixture_onlyTitleProps }),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(MiniGallery, { className: "col-span-12", ...MiniGallery_fixture_defaultProps }) })),
+    'only title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(MiniGallery, { className: "col-span-12", ...MiniGallery_fixture_onlyTitleProps }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/MobileAppTile/MobileAppTile.fixture.tsx
@@ -33770,7 +33701,7 @@ const MiniGallery_fixture_onlyTitleProps = {
 
 
 /* harmony default export */ const MobileAppTile_fixture = ({
-    default: (jsx("div", { className: "grid grid-cols-12", children: jsx(MobileAppTile, { context: context, className: "col-span-4", qr: {
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(MobileAppTile, { context: context, className: "col-span-4", qr: {
                 href: 'https://rshbnaturaldbo.onelink.me/qhkF/f182074f?af_qr=true',
                 src: 'data:image/png;base64,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',
             }, buttons: [
@@ -33795,7 +33726,7 @@ const MiniGallery_fixture_onlyTitleProps = {
 
 
 
-/* harmony default export */ const Placeholder_fixture = (jsx(Placeholder, { context: context, title: "\u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0439 \u0431\u043B\u043E\u043A" }));
+/* harmony default export */ const Placeholder_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Placeholder, { className: "col-span-12", context: context, title: "\u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0439 \u0431\u043B\u043E\u043A" }) }));
 
 ;// CONCATENATED MODULE: ./src/components/ProductBlock/ProductBlock.fixture.tsx
 
@@ -33811,66 +33742,66 @@ const ProductBlock_fixture_image = {
     },
 };
 /* harmony default export */ const ProductBlock_fixture = ({
-    default: (jsx(ProductBlock, { context: context, title: 'Потребительский кредит наличными', description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", breadcrumbs: [
-            {
-                text: 'Главная',
-                href: '/',
-            },
-            {
-                text: 'Кредитные карты',
-                href: '/credit',
-            },
-            {
-                text: 'Кредитная карта Своя Union Pay',
-            },
-        ], benefits: [
-            {
-                label: 'До 5 млн ₽',
-                description: 'Кредитный лимит',
-                icon: 'EmptyWalletIcon',
-            },
-            {
-                label: 'От 16,9%',
-                description: 'Ставка по кредиту',
-                icon: 'PercentageSquareIcon',
-            },
-            {
-                label: 'До 5 лет',
-                description: 'Срок кредитования',
-                icon: 'CalendarIcon',
-            },
-        ], buttons: [
-            {
-                href: 'https://rshb.ru',
-                text: 'Оформить карту',
-                target: '_blank',
-                version: 'primary',
-            },
-            {
-                href: 'https://rshb.ru',
-                text: 'Подробнее',
-                target: '_blank',
-                version: 'secondary',
-            },
-        ], image: ProductBlock_fixture_image })),
-    'with items': (jsx(ProductBlock, { context: context, title: 'Оплата проходит \nв 180 странах мира', breadcrumbs: [], description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", items: [
-            'Совершайте любые личные покупки',
-            'Используйте корпоративную карту как обычную дебетовую, если вы ИП',
-            'Расходы для бизнеса на УСН 15% позволят снизить налоговую базу',
-        ], buttons: [
-            {
-                href: 'https://rshb.ru',
-                text: 'Оформить карту',
-                target: '_blank',
-                version: 'primary',
-            },
-            {
-                href: 'https://rshb.ru',
-                text: 'Подробнее',
-                target: '_blank',
-                version: 'secondary',
-            },
-        ], image: ProductBlock_fixture_image })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductBlock, { className: "col-span-12", context: context, title: 'Потребительский кредит наличными', description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", breadcrumbs: [
+                {
+                    text: 'Главная',
+                    href: '/',
+                },
+                {
+                    text: 'Кредитные карты',
+                    href: '/credit',
+                },
+                {
+                    text: 'Кредитная карта Своя Union Pay',
+                },
+            ], benefits: [
+                {
+                    label: 'До 5 млн ₽',
+                    description: 'Кредитный лимит',
+                    icon: 'EmptyWalletIcon',
+                },
+                {
+                    label: 'От 16,9%',
+                    description: 'Ставка по кредиту',
+                    icon: 'PercentageSquareIcon',
+                },
+                {
+                    label: 'До 5 лет',
+                    description: 'Срок кредитования',
+                    icon: 'CalendarIcon',
+                },
+            ], buttons: [
+                {
+                    href: 'https://rshb.ru',
+                    text: 'Оформить карту',
+                    target: '_blank',
+                    version: 'primary',
+                },
+                {
+                    href: 'https://rshb.ru',
+                    text: 'Подробнее',
+                    target: '_blank',
+                    version: 'secondary',
+                },
+            ], image: ProductBlock_fixture_image }) })),
+    'with items': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductBlock, { className: "col-span-12", context: context, title: 'Оплата проходит \nв 180 странах мира', breadcrumbs: [], description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", items: [
+                'Совершайте любые личные покупки',
+                'Используйте корпоративную карту как обычную дебетовую, если вы ИП',
+                'Расходы для бизнеса на УСН 15% позволят снизить налоговую базу',
+            ], buttons: [
+                {
+                    href: 'https://rshb.ru',
+                    text: 'Оформить карту',
+                    target: '_blank',
+                    version: 'primary',
+                },
+                {
+                    href: 'https://rshb.ru',
+                    text: 'Подробнее',
+                    target: '_blank',
+                    version: 'secondary',
+                },
+            ], image: ProductBlock_fixture_image }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/ProductGallery/ProductGallery.fixture.tsx
@@ -33902,100 +33833,100 @@ const creditCard = {
         height: 280,
     },
 };
-/* harmony default export */ const ProductGallery_fixture = (jsx(ProductGallery, { context: context, slides: [
-        {
-            nav: {
-                title: 'Деньги на любые цели',
-                desc: 'Ставка от 12,5% годовых на срок до 5 лет',
+/* harmony default export */ const ProductGallery_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductGallery, { className: "col-span-12", context: context, slides: [
+            {
+                nav: {
+                    title: 'Деньги на любые цели',
+                    desc: 'Ставка от 12,5% годовых на срок до 5 лет',
+                },
+                productBlock: {
+                    title: 'Ставка от 12,5% годовых на срок до 5 лет!»',
+                    items: [
+                        'Потребительский кредит по специальной процентной ставке',
+                        'Получите деньги без залога и поручительства',
+                        'Кредитный лимит до 5 млн рублей',
+                    ],
+                    buttons: [
+                        {
+                            href: 'https://rshb.ru',
+                            text: 'Подробнее',
+                            target: '_blank',
+                            version: 'primary',
+                        },
+                    ],
+                    image: moneyImage,
+                },
             },
-            productBlock: {
-                title: 'Ставка от 12,5% годовых на срок до 5 лет!»',
-                items: [
-                    'Потребительский кредит по специальной процентной ставке',
-                    'Получите деньги без залога и поручительства',
-                    'Кредитный лимит до 5 млн рублей',
-                ],
-                buttons: [
-                    {
-                        href: 'https://rshb.ru',
-                        text: 'Подробнее',
-                        target: '_blank',
-                        version: 'primary',
-                    },
-                ],
-                image: moneyImage,
+            {
+                nav: {
+                    title: 'Для людей в возрасте',
+                    desc: 'Ставка от 12,5% годовых на срок до 3 лет',
+                },
+                productBlock: {
+                    title: 'Ставка от 12,5% годовых на срок до 3 лет!»',
+                    items: [
+                        'Потребительский кредит по специальной процентной ставке',
+                        'Получите деньги без залога и поручительства',
+                        'Кредитный лимит до 5 млн рублей',
+                    ],
+                    buttons: [
+                        {
+                            href: 'https://rshb.ru',
+                            text: 'Подробнее',
+                            target: '_blank',
+                            version: 'primary',
+                        },
+                    ],
+                    image: worker,
+                },
             },
-        },
-        {
-            nav: {
-                title: 'Для людей в возрасте',
-                desc: 'Ставка от 12,5% годовых на срок до 3 лет',
+            {
+                nav: {
+                    title: 'Выгодно покупать',
+                    desc: 'Дополнительные бонусные баллы за покупки',
+                },
+                productBlock: {
+                    title: 'Дополнительные бонусные баллы за покупки!»',
+                    items: [
+                        'Потребительский кредит по специальной процентной ставке',
+                        'Получите деньги без залога и поручительства',
+                        'Кредитный лимит до 5 млн рублей',
+                    ],
+                    buttons: [
+                        {
+                            href: 'https://rshb.ru',
+                            text: 'Подробнее',
+                            target: '_blank',
+                            version: 'primary',
+                        },
+                    ],
+                    image: creditCard,
+                },
             },
-            productBlock: {
-                title: 'Ставка от 12,5% годовых на срок до 3 лет!»',
-                items: [
-                    'Потребительский кредит по специальной процентной ставке',
-                    'Получите деньги без залога и поручительства',
-                    'Кредитный лимит до 5 млн рублей',
-                ],
-                buttons: [
-                    {
-                        href: 'https://rshb.ru',
-                        text: 'Подробнее',
-                        target: '_blank',
-                        version: 'primary',
-                    },
-                ],
-                image: worker,
+            {
+                nav: {
+                    title: 'Карты Unionpay',
+                    desc: 'Кэшбэк до 20% у партнеров',
+                },
+                productBlock: {
+                    title: 'Карты Unionpay»',
+                    items: [
+                        'Потребительский кредит по специальной процентной ставке',
+                        'Получите деньги без залога и поручительства',
+                        'Кредитный лимит до 5 млн рублей',
+                    ],
+                    buttons: [
+                        {
+                            href: 'https://rshb.ru',
+                            text: 'Подробнее',
+                            target: '_blank',
+                            version: 'primary',
+                        },
+                    ],
+                    image: creditCard,
+                },
             },
-        },
-        {
-            nav: {
-                title: 'Выгодно покупать',
-                desc: 'Дополнительные бонусные баллы за покупки',
-            },
-            productBlock: {
-                title: 'Дополнительные бонусные баллы за покупки!»',
-                items: [
-                    'Потребительский кредит по специальной процентной ставке',
-                    'Получите деньги без залога и поручительства',
-                    'Кредитный лимит до 5 млн рублей',
-                ],
-                buttons: [
-                    {
-                        href: 'https://rshb.ru',
-                        text: 'Подробнее',
-                        target: '_blank',
-                        version: 'primary',
-                    },
-                ],
-                image: creditCard,
-            },
-        },
-        {
-            nav: {
-                title: 'Карты Unionpay',
-                desc: 'Кэшбэк до 20% у партнеров',
-            },
-            productBlock: {
-                title: 'Карты Unionpay»',
-                items: [
-                    'Потребительский кредит по специальной процентной ставке',
-                    'Получите деньги без залога и поручительства',
-                    'Кредитный лимит до 5 млн рублей',
-                ],
-                buttons: [
-                    {
-                        href: 'https://rshb.ru',
-                        text: 'Подробнее',
-                        target: '_blank',
-                        version: 'primary',
-                    },
-                ],
-                image: creditCard,
-            },
-        },
-    ] }));
+        ] }) }));
 
 ;// CONCATENATED MODULE: ./src/components/ProductTile/ProductTile.fixture.tsx
 
@@ -34017,7 +33948,7 @@ const building = {
     format: 'webp',
 };
 /* harmony default export */ const ProductTile_fixture = ({
-    credit: (jsx("div", { className: "grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-6", title: "\u0410\u043A\u0446\u0438\u044F! \u201C\u041A\u0440\u0435\u0434\u0438\u0442 \u041D\u0430 \u0432\u0441\u0435, \u0447\u0442\u043E \u0445\u043E\u0447\u0435\u0442\u0441\u044F!\u201D", description: "\u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438, \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430", benefits: [
+    credit: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-6", title: "\u0410\u043A\u0446\u0438\u044F! \u201C\u041A\u0440\u0435\u0434\u0438\u0442 \u041D\u0430 \u0432\u0441\u0435, \u0447\u0442\u043E \u0445\u043E\u0447\u0435\u0442\u0441\u044F!\u201D", description: "\u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438, \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430", benefits: [
                 {
                     label: 'Кредитный лимит',
                     description: 'до 5 млн Р',
@@ -34037,7 +33968,7 @@ const building = {
                     version: 'secondary',
                 },
             ], image: cardWithMoney }) })),
-    pension: (jsx("div", { className: "grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-6", title: "\u0410\u043A\u0446\u0438\u044F! \u201C\u041F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439 \u043A\u0440\u0435\u0434\u0438\u0442\u201D", description: 'Потребительский кредит на любые цели, без залога и поручительства', benefits: [
+    pension: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-6", title: "\u0410\u043A\u0446\u0438\u044F! \u201C\u041F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439 \u043A\u0440\u0435\u0434\u0438\u0442\u201D", description: 'Потребительский кредит на любые цели, без залога и поручительства', benefits: [
                 {
                     label: 'Кредитный лимит',
                     description: 'до 3 млн Р',
@@ -34058,7 +33989,7 @@ const building = {
                     version: 'secondary',
                 },
             ], image: letterWithMoney }) })),
-    'credit-card': (jsx("div", { className: "grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-8", title: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043F\u043E\u0434 \u0437\u0430\u043B\u043E\u0433 \u043D\u0435\u0434\u0432\u0438\u0436\u0438\u043C\u043E\u0441\u0442\u0438", description: 'Без переоформления залогой недвижимости на банк', benefits: [
+    'credit-card': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-8", title: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043F\u043E\u0434 \u0437\u0430\u043B\u043E\u0433 \u043D\u0435\u0434\u0432\u0438\u0436\u0438\u043C\u043E\u0441\u0442\u0438", description: 'Без переоформления залогой недвижимости на банк', benefits: [
                 {
                     label: 'Кредитный лимит',
                     description: 'до 10 млн Р',
@@ -34079,7 +34010,7 @@ const building = {
                     version: 'secondary',
                 },
             ], image: building }) })),
-    'pension-credit': (jsx("div", { className: "grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-4", title: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439", description: 'Для людей в возрасте до 75 лет', benefits: [
+    'pension-credit': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-4", title: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439", description: 'Для людей в возрасте до 75 лет', benefits: [
                 {
                     label: 'Кредитный лимит',
                     description: 'до 3 млн Р',
@@ -34107,7 +34038,7 @@ const building = {
 
 
 /* harmony default export */ const PromoTile_fixture = ({
-    default: (jsx("div", { className: "grid grid-cols-12", children: jsx(PromoTile, { context: context, className: "col-span-4", title: "\u0410\u043A\u0446\u0438\u0438 \u0438 \u0441\u043F\u0435\u0446\u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u044F", description: "\u041F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043F\u043E \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043D\u043E\u0439 \u0441\u0442\u0430\u0432\u043A\u0435", version: "secondary", date: "2022-04-16", buttons: [
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(PromoTile, { context: context, className: "col-span-4", title: "\u0410\u043A\u0446\u0438\u0438 \u0438 \u0441\u043F\u0435\u0446\u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u044F", description: "\u041F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043F\u043E \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043D\u043E\u0439 \u0441\u0442\u0430\u0432\u043A\u0435", version: "secondary", date: "2022-04-16", buttons: [
                 {
                     text: 'Все акции',
                     href: '/credits',
@@ -34120,20 +34051,20 @@ const building = {
 
 
 
-/* harmony default export */ const StepsBlock_fixture = (jsx(StepsBlock, { context: context, title: "\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0439\u0442\u0435 \u0443\u0441\u043B\u043E\u0432\u0438\u044F \u043D\u0430 \u043E\u043D\u043B\u0430\u0439\u043D-\u043A\u0430\u043B\u044C\u043A\u0443\u043B\u044F\u0442\u043E\u0440\u0435 \u0438 \u043E\u0441\u0442\u0430\u0432\u044C\u0442\u0435 \u0437\u0430\u044F\u0432\u043A\u0443 \u043D\u0430 \u043F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442", steps: [
-        {
-            label: 'Заявка на кредит',
-            description: 'Оставьте онлайн-заявку на потребительский кредит',
-        },
-        {
-            label: 'В случае одобрения',
-            description: 'Менеджер свяжется с вами и согласует встречу',
-        },
-        {
-            label: 'Получение наличных',
-            description: 'Получите наличные в отделении банка',
-        },
-    ] }));
+/* harmony default export */ const StepsBlock_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(StepsBlock, { className: "col-span-12", context: context, title: "\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0439\u0442\u0435 \u0443\u0441\u043B\u043E\u0432\u0438\u044F \u043D\u0430 \u043E\u043D\u043B\u0430\u0439\u043D-\u043A\u0430\u043B\u044C\u043A\u0443\u043B\u044F\u0442\u043E\u0440\u0435 \u0438 \u043E\u0441\u0442\u0430\u0432\u044C\u0442\u0435 \u0437\u0430\u044F\u0432\u043A\u0443 \u043D\u0430 \u043F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442", steps: [
+            {
+                label: 'Заявка на кредит',
+                description: 'Оставьте онлайн-заявку на потребительский кредит',
+            },
+            {
+                label: 'В случае одобрения',
+                description: 'Менеджер свяжется с вами и согласует встречу',
+            },
+            {
+                label: 'Получение наличных',
+                description: 'Получите наличные в отделении банка',
+            },
+        ] }) }));
 
 ;// CONCATENATED MODULE: ./src/components/TariffsTable/TariffsTable.fixture.tsx
 
@@ -34269,10 +34200,10 @@ const TariffsTable_fixture_columns = [
     },
 ];
 /* harmony default export */ const TariffsTable_fixture = ({
-    default: (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: Array(2).fill(TariffsTable_fixture_columns).flat() }) })),
-    '1 column': (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 1) }) })),
-    '2 columns': (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 2) }) })),
-    '3 columns': (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 3) }) })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: Array(2).fill(TariffsTable_fixture_columns).flat() }) })),
+    '1 column': (jsx("div", { className: "container grid grid-cols-12", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 1) }) })),
+    '2 columns': (jsx("div", { className: "container grid grid-cols-12", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 2) }) })),
+    '3 columns': (jsx("div", { className: "container grid grid-cols-12", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 3) }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/Tile/Tile.fixture.tsx
@@ -34296,7 +34227,7 @@ const image4 = {
     format: 'webp',
 };
 /* harmony default export */ const Tile_fixture = ({
-    credit: (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-8", title: "\u041A\u0440\u0435\u0434\u0438\u0442\u044B", items: [
+    credit: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-8", title: "\u041A\u0440\u0435\u0434\u0438\u0442\u044B", items: [
                 'Кредитный лимит до 10 млн ₽',
                 'Кредиты наличными на любые цели',
                 'Получите деньги без залога и поручителей',
@@ -34307,7 +34238,7 @@ const image4 = {
                     version: 'secondary',
                 },
             ], image: Tile_fixture_image }) })),
-    mortgage: (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, version: "secondary", className: "col-span-4", title: "\u0418\u043F\u043E\u0442\u0435\u043A\u0430", items: [
+    mortgage: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Tile, { context: context, version: "secondary", className: "col-span-4", title: "\u0418\u043F\u043E\u0442\u0435\u043A\u0430", items: [
                 'Качественные фермерские продукты напрямую от производителей',
                 'Самая большая база сельских туров по России',
                 'Площадки для создания комфортной жизни за городом',
@@ -34320,7 +34251,7 @@ const image4 = {
                     version: 'secondary',
                 },
             ] }) })),
-    'credit-card': (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-6", title: "\u0411\u0430\u043D\u043A\u043E\u0432\u0441\u043A\u0438\u0435 \u043F\u043B\u0430\u0441\u0442\u0438\u043A\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B", items: ['Счета в разных валютах', 'Бесплатное обслуживание', 'Кэшбэк до 15% от покупок'], buttons: [
+    'credit-card': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-6", title: "\u0411\u0430\u043D\u043A\u043E\u0432\u0441\u043A\u0438\u0435 \u043F\u043B\u0430\u0441\u0442\u0438\u043A\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B", items: ['Счета в разных валютах', 'Бесплатное обслуживание', 'Кэшбэк до 15% от покупок'], buttons: [
                 {
                     href: 'https://rshb.ru',
                     text: 'Подробнее',
@@ -34328,7 +34259,7 @@ const image4 = {
                     version: 'secondary',
                 },
             ], image: Tile_fixture_image2 }) })),
-    premium: (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-6", title: "\u041F\u0440\u0435\u043C\u0438\u0430\u043B\u044C\u043D\u044B\u0435 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B", description: 'Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус', buttons: [
+    premium: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-6", title: "\u041F\u0440\u0435\u043C\u0438\u0430\u043B\u044C\u043D\u044B\u0435 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B", description: 'Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус', buttons: [
                 {
                     href: 'https://rshb.ru',
                     text: 'Подробнее',
@@ -34336,7 +34267,7 @@ const image4 = {
                     version: 'secondary',
                 },
             ], image: Tile_fixture_image3 }) })),
-    ecosystem: (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-12 pr-28", title: "\u042D\u043A\u043E\u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u00AB\u0421\u0412\u041E\u0415\u00BB, \u0441\u043E\u0437\u0434\u0430\u043D\u043D\u0430\u044F \u0434\u043B\u044F \u043B\u044E\u0434\u0435\u0439", items: [
+    ecosystem: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-12 pr-28", title: "\u042D\u043A\u043E\u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u00AB\u0421\u0412\u041E\u0415\u00BB, \u0441\u043E\u0437\u0434\u0430\u043D\u043D\u0430\u044F \u0434\u043B\u044F \u043B\u044E\u0434\u0435\u0439", items: [
                 'Качественные фермерские продукты напрямую от производителей',
                 'Самая большая база сельских туров по России',
                 'Площадки для создания комфортной жизни за городом',

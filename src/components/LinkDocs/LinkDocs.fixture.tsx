@@ -1,6 +1,7 @@
 import { context } from '../../setup-fixture';
 import { LinkDocs } from './LinkDocs';
 import type { LinkDocsContent } from './LinkDocsContent';
+import { Accordion } from '../Accordion/Accordion';
 
 export const LINK_DOCS: LinkDocsContent = {
   title: 'Дополнительные документы',
@@ -44,8 +45,24 @@ export const LINK_DOCS_NO_ICON: LinkDocsContent = {
 };
 
 export default {
-  'two columns (default)': <LinkDocs context={context} {...LINK_DOCS} />,
-  'one column': <LinkDocs context={context} {...LINK_DOCS_ONE_COLUMN} />,
-  'another icon': <LinkDocs context={context} {...LINK_DOCS_ANOTHER_ICON} />,
-  'no icon and title': <LinkDocs context={context} {...LINK_DOCS_NO_ICON} />,
+  'two columns (default)': (
+    <div className="container grid grid-cols-12">
+      <LinkDocs className="col-span-12" context={context} {...LINK_DOCS} />
+    </div>
+  ),
+  'one column': (
+    <div className="container grid grid-cols-12">
+      <LinkDocs className="col-span-12" context={context} {...LINK_DOCS_ONE_COLUMN} />
+    </div>
+  ),
+  'another icon': (
+    <div className="container grid grid-cols-12">
+      <LinkDocs className="col-span-12" context={context} {...LINK_DOCS_ANOTHER_ICON} />
+    </div>
+  ),
+  'no icon and title': (
+    <div className="container grid grid-cols-12">
+      <LinkDocs className="col-span-12" context={context} {...LINK_DOCS_NO_ICON} />
+    </div>
+  ),
 };

@@ -55,4 +55,8 @@ const propsTextBlock: AccordionProps = {
   ],
 };
 
-export default <Accordion {...propsTextBlock} />;
+export default (
+  <div className="container grid grid-cols-12">
+    <Accordion className="col-span-12" {...propsTextBlock} />
+  </div>
+);

@@ -195,71 +195,61 @@ const columns2: Column[] = [
 
 export default {
   'with images': (
-    <div className="w-[1280px]">
-      <div className="grid grid-cols-12">
-        <ComparisonTable
-          className="col-span-12"
-          title="Другие дебетовые карты Россельхозбанка"
-          context={context}
-          rowHeaders={rowHeaders}
-          columns={Array(2).fill(columns).flat()}
-        />
-      </div>
+    <div className="container grid grid-cols-12">
+      <ComparisonTable
+        className="col-span-12"
+        title="Другие дебетовые карты Россельхозбанка"
+        context={context}
+        rowHeaders={rowHeaders}
+        columns={Array(2).fill(columns).flat()}
+      />
     </div>
   ),
   'with images and hidden rows': (
-    <div className="w-[1280px]">
-      <div className="grid grid-cols-12">
-        <ComparisonTable
-          className="col-span-12"
-          title="Другие дебетовые карты Россельхозбанка"
-          visibleRowLength={3}
-          context={context}
-          rowHeaders={rowHeaders}
-          columns={Array(2).fill(columns).flat()}
-        />
-      </div>
+    <div className="container grid grid-cols-12">
+      <ComparisonTable
+        className="col-span-12"
+        title="Другие дебетовые карты Россельхозбанка"
+        visibleRowLength={3}
+        context={context}
+        rowHeaders={rowHeaders}
+        columns={Array(2).fill(columns).flat()}
+      />
     </div>
   ),
   'with images and colored first column': (
-    <div className="w-[1280px]">
-      <div className="grid grid-cols-12">
-        <ComparisonTable
-          className="col-span-12"
-          title="Другие дебетовые карты Россельхозбанка"
-          visibleRowLength={3}
-          isColoredFirstColumn={true}
-          context={context}
-          rowHeaders={rowHeaders}
-          columns={Array(2).fill(columns).flat()}
-        />
-      </div>
+    <div className="container grid grid-cols-12">
+      <ComparisonTable
+        className="col-span-12"
+        title="Другие дебетовые карты Россельхозбанка"
+        visibleRowLength={3}
+        isColoredFirstColumn={true}
+        context={context}
+        rowHeaders={rowHeaders}
+        columns={Array(2).fill(columns).flat()}
+      />
     </div>
   ),
   'with icons': (
-    <div className="w-[1280px]">
-      <div className="grid grid-cols-12">
-        <ComparisonTable
-          className="col-span-12"
-          title="Другие вклады и сбережения"
-          context={context}
-          rowHeaders={rowHeaders2}
-          columns={Array(2).fill(columns2).flat()}
-        />
-      </div>
+    <div className="container grid grid-cols-12">
+      <ComparisonTable
+        className="col-span-12"
+        title="Другие вклады и сбережения"
+        context={context}
+        rowHeaders={rowHeaders2}
+        columns={Array(2).fill(columns2).flat()}
+      />
     </div>
   ),
   'with icons and two cols': (
-    <div className="w-[1280px]">
-      <div className="grid grid-cols-12">
-        <ComparisonTable
-          className="col-span-12"
-          title="Другие вклады и сбережения"
-          context={context}
-          rowHeaders={rowHeaders2}
-          columns={columns2.slice(0, 2)}
-        />
-      </div>
+    <div className="container grid grid-cols-12">
+      <ComparisonTable
+        className="col-span-12"
+        title="Другие вклады и сбережения"
+        context={context}
+        rowHeaders={rowHeaders2}
+        columns={columns2.slice(0, 2)}
+      />
     </div>
   ),
 };

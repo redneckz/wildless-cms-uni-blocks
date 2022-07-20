@@ -27,7 +27,7 @@ export const GalleryInner = JSX<GalleryInnerProps>(
 
     return (
       <section
-        className={`relative font-sans text-primary-text bg-white p-12 py-[50px] overflow-hidden ${className}`}
+        className={`relative font-sans text-primary-text bg-white p-[50px] overflow-hidden ${className}`}
       >
         <GalleryContainer
           context={context}
@@ -36,7 +36,6 @@ export const GalleryInner = JSX<GalleryInnerProps>(
           activeCardIndex={activeCardIndex}
           {...rest}
         />
-
         {showPrevButton && (
           <ArrowButton
             className="absolute top-1/2 left-8 rotate-180"

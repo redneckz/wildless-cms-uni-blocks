@@ -1,9 +1,8 @@
+import type { Picture } from '../../model/Picture';
 import { context } from '../../setup-fixture';
-
+import type { ButtonCommonProps } from '../../ui-kit/Button/Button';
 import { Gallery, GalleryProps } from './Gallery';
 import { Gallery as MobileGallery } from './Gallery.mobile';
-import type { Picture } from '../../model/Picture';
-import { ButtonCommonProps } from '../../ui-kit/Button/Button';
 
 const image: Picture = {
   src: 'money-1.png',
@@ -16,13 +15,6 @@ const image: Picture = {
 };
 
 const buttonPrimary: ButtonCommonProps = {
-  href: '/credit-cards',
-  text: 'Подробнее',
-  target: '_blank',
-  version: 'secondary',
-};
-
-const buttonSecondary: ButtonCommonProps = {
   href: '/credit-cards',
   text: 'Подробнее',
   target: '_blank',
@@ -193,54 +185,35 @@ const onlyTitleProps: GalleryProps = {
   ],
 };
 
-const secondaryColorProps: GalleryProps = {
-  title: 'Вы можете оплатить бонусными баллами',
-  description: 'Удобный каталог с большим ассортиментом товаров и сервисов',
-  context,
-  cards: [
-    {
-      title: 'Более 5000 товаров',
-      description:
-        'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
-      image,
-      button: buttonSecondary,
-      items: defaultItems,
-      version: 'secondary',
-    },
-    {
-      title: 'Более 1000 развлечений',
-      description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
-      image,
-      button: buttonSecondary,
-      items: defaultItems,
-      version: 'secondary',
-    },
-    {
-      title: 'Фермерские продукты',
-      description: 'Высокий процент даже при небольшой сумме денежных средств',
-      image,
-      button: buttonSecondary,
-      items: defaultItems,
-      version: 'secondary',
-    },
-    {
-      title: '«Моя выгода»',
-      description:
-        'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
-      image,
-      button: buttonSecondary,
-      items: defaultItems,
-      version: 'secondary',
-    },
-  ],
-};
-
 export default {
-  default: <Gallery {...defaultProps} />,
-  'text and button': <Gallery {...textAndButtonProps} />,
-  'list and button': <Gallery {...listAndButtonProps} />,
-  'text and no button': <Gallery {...textAndNoButtonProps} />,
-  'only title': <Gallery {...onlyTitleProps} />,
-  'secondary color': <Gallery {...secondaryColorProps} />,
-  mobile: <MobileGallery {...defaultProps} />,
+  default: (
+    <div className="container grid grid-cols-12">
+      <Gallery className="col-span-12" {...defaultProps} />
+    </div>
+  ),
+  'text and button': (
+    <div className="container grid grid-cols-12">
+      <Gallery className="col-span-12" {...textAndButtonProps} />
+    </div>
+  ),
+  'list and button': (
+    <div className="container grid grid-cols-12">
+      <Gallery className="col-span-12" {...listAndButtonProps} />
+    </div>
+  ),
+  'text and no button': (
+    <div className="container grid grid-cols-12">
+      <Gallery className="col-span-12" {...textAndNoButtonProps} />
+    </div>
+  ),
+  'only title': (
+    <div className="container grid grid-cols-12">
+      <Gallery className="col-span-12" {...onlyTitleProps} />
+    </div>
+  ),
+  mobile: (
+    <div className="container grid grid-cols-12">
+      <MobileGallery className="col-span-12" {...defaultProps} />
+    </div>
+  ),
 };

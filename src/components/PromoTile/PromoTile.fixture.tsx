@@ -4,7 +4,7 @@ import { PromoTile } from './PromoTile';
 
 export default {
   default: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <PromoTile
         context={context}
         className="col-span-4"
