@@ -10,6 +10,11 @@ import { Title } from '../../ui-kit/Title/Title';
 import { getColSpan } from '../../utils/getColSpan';
 import type { AlignType, BaseTileCommonProps, BaseTileIconButton } from './BaseTileProps';
 
+const alignFlex: Record<AlignType, string> = {
+  left: 'justify-between',
+  center: 'justify-center',
+  right: 'justify-end',
+};
 const alignBlock: Record<AlignType, string> = {
   left: 'items-start',
   center: 'items-center',
@@ -51,7 +56,7 @@ export const BaseTile = JSX<BaseTileProps>(
             {title}
           </Title>
         )}
-        <div className="w-full">
+        <div className={`flex grow w-full ${alignFlex[align]}`}>
           <div className={`flex flex-col justify-between ${alignBlock[align]}`}>
             <div>
               {description ? (
