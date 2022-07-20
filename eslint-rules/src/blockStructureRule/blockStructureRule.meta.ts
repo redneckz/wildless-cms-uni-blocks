@@ -31,6 +31,10 @@ export const meta: RuleMetaData = {
   messages: {
     noBlockMainFile:
       'Не найден главный модуль блока: {{blocksDir}}/{{blockName}}/{{blockName}}.tsx',
+    noBlockFixtureFile:
+      'Не найден файл с примерами для блока: {{blocksDir}}/{{blockName}}/{{blockName}}.fixture.tsx',
+    noBlockContentFile:
+      'Не найден файл типизации контента блока: {{blocksDir}}/{{blockName}}/{{blockName}}Content.ts',
     invalidBlockExport:
       'Блок должен экспортировать стрелочную функцию под именем "{{blockName}}" (других экспортов не продполагается)',
   },

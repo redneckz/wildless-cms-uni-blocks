@@ -2,12 +2,22 @@ import { ESLintUtils, TSESTree } from '@typescript-eslint/utils';
 import { jsBasename } from '../utils/jsBasename';
 import { defaultOptions } from './blockStructureRule.defaultOptions';
 import { BlockStructureRuleOptions, meta } from './blockStructureRule.meta';
+import { composeAssertions } from './composeAssertions';
 import { getBlockSubDir } from './getBlockSubDir';
-import { hasBlockMainFile } from './hasBlockMainFile';
+import { getExportedConstName } from './getExportedConstName';
+import {
+  hasBlockContentFile,
+  hasBlockFixtureFile,
+  hasBlockMainFile,
+} from './hasBlockFileWithSuffix';
 import { isBlockMainFile } from './isBlockMainFile';
 import { isExcluded } from './isExcluded';
 
-type MessageIds = 'noBlockMainFile' | 'invalidBlockExport';
+type MessageIds =
+  | 'noBlockMainFile'
+  | 'noBlockFixtureFile'
+  | 'noBlockContentFile'
+  | 'invalidBlockExport';
 
 export const blockStructureRule = ESLintUtils.RuleCreator.withoutDocs<
   BlockStructureRuleOptions,
@@ -23,18 +33,25 @@ export const blockStructureRule = ESLintUtils.RuleCreator.withoutDocs<
 
     const blockName = jsBasename(filename);
 
-    const assertBlockMainFilePresence = (node: TSESTree.Node): boolean => {
-      if (hasBlockMainFile(filename)) {
-        return true;
-      }
+    const assertBlockFilePresence =
+      (messageId: MessageIds, predicate: (filename: string) => boolean) =>
+      (node: TSESTree.Node): boolean => {
+        if (predicate(filename)) {
+          return true;
+        }
 
-      context.report({
-        messageId: 'noBlockMainFile',
-        node,
-        data: { blocksDir, blockName: getBlockSubDir(filename) },
-      });
-      return false;
-    };
+        context.report({
+          messageId,
+          node,
+          data: { blocksDir, blockName: getBlockSubDir(filename) },
+        });
+        return false;
+      };
+    const assertBlockFileStructure = composeAssertions(
+      assertBlockFilePresence('noBlockMainFile', hasBlockMainFile),
+      assertBlockFilePresence('noBlockFixtureFile', hasBlockFixtureFile),
+      assertBlockFilePresence('noBlockContentFile', hasBlockContentFile),
+    );
 
     const assertExportedBlockName = (node: TSESTree.ExportNamedDeclaration): boolean => {
       if (node.declaration?.type !== 'VariableDeclaration') {
@@ -55,11 +72,10 @@ export const blockStructureRule = ESLintUtils.RuleCreator.withoutDocs<
     };
 
     return {
-      ExportDefaultDeclaration: assertBlockMainFilePresence,
-      ExportAllDeclaration: assertBlockMainFilePresence,
-      ExportSpecifier: assertBlockMainFilePresence,
+      ExportAllDeclaration: assertBlockFileStructure,
+      ExportDefaultDeclaration: assertBlockFileStructure,
       ExportNamedDeclaration(node) {
-        if (!assertBlockMainFilePresence(node) || !isBlockMainFile(filename)) {
+        if (!assertBlockFileStructure(node) || !isBlockMainFile(filename)) {
           return;
         }
 
@@ -72,7 +88,3 @@ export const blockStructureRule = ESLintUtils.RuleCreator.withoutDocs<
   meta,
   defaultOptions: [defaultOptions],
 });
-
-const getExportedConstName = ({ declarations }: TSESTree.VariableDeclaration): string | null => {
-  return declarations.length === 1 && 'name' in declarations[0].id ? declarations[0].id.name : null;
-};

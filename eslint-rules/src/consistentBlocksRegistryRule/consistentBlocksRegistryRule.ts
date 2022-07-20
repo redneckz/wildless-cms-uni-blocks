@@ -1,10 +1,10 @@
 import { ESLintUtils } from '@typescript-eslint/utils';
-import { getObjectExpression } from '../utils/getObjectExpression';
 import { jsBasename } from '../utils/jsBasename';
 import { defaultOptions } from './consistentBlocksRegistryRule.defaultOptions';
 import { ConsistentBlocksRegistryRuleOptions, meta } from './consistentBlocksRegistryRule.meta';
 import { diff } from './diff';
 import { findBlocks } from './findBlocks';
+import { getObjectExpression } from './getObjectExpression';
 
 type MessageIds = 'blocksToRegister' | 'blocksRegistryNotFound';
 
