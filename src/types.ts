@@ -15,6 +15,15 @@ export interface BlockDef {
   };
 }
 
+export interface Slot {
+  style?: string[];
+  blocks?: BlockDef[];
+}
+
+export interface SlotsMap {
+  header?: Slot;
+}
+
 export interface ContentPageMeta {
   title: string;
   slug: string;
@@ -26,7 +35,8 @@ export interface ContentPageMeta {
 
 export interface ContentPageDef extends ContentPageMeta {
   style?: string[];
-  blocks?: BlockDef[];
+  blocks?: BlockDef[]; //! for compatibility
+  slots?: SlotsMap;
   likeControl?: boolean;
   colorPalette?: ColorPalette;
 }

@@ -1,11 +1,11 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { useLink } from '../../hooks/useLink';
+import { useSitemap } from '../../hooks/useSitemap';
 import { mergeTopItems } from '../../mergeTopItems';
 import type { UniBlockProps } from '../../types';
 import { HeaderItem } from '../../ui-kit/HeaderItem/HeaderItem';
 import { Logo } from '../../ui-kit/Logo/Logo';
 import { TopItem } from '../../ui-kit/TopItem/TopItem';
-import { useLink } from '../../hooks/useLink';
-import { useSitemap } from '../../hooks/useSitemap';
 import type { HeaderContent } from './HeaderContent';
 import { HeaderSecondaryMenu } from './HeaderSecondaryMenu';
 import { isSubItemActive } from './isSubItemActive';
@@ -43,17 +43,19 @@ export const Header = JSX<HeaderProps>(({ className, defaultLocation, context, t
 
   return (
     <header className={`pt-5 pb-8 px-20 bg-white ${className || ''}`}>
-      <div className="flex items-center">
-        <Logo className="mr-8" />
-        {topMenu}
-        <HeaderSecondaryMenu
-          context={context}
-          className="ml-auto"
-          defaultLocation={defaultLocation}
-        />
+      <div className="container">
+        <div className="flex items-center">
+          <Logo className="mr-8" />
+          {topMenu}
+          <HeaderSecondaryMenu
+            context={context}
+            className="ml-auto"
+            defaultLocation={defaultLocation}
+          />
+        </div>
+        <div className="mt-5 h-[1px] bg-main-divider" />
+        <nav className="mt-5">{subMenu}</nav>
       </div>
-      <div className="mt-5 h-[1px] bg-main-divider" />
-      <nav className="mt-5">{subMenu}</nav>
     </header>
   );
 });
