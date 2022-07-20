@@ -1,6 +1,6 @@
-import type { Picture } from '../../model/Picture';
-import type { ButtonCommonProps } from '../../ui-kit/Button/Button';
 import type { BlockVersion } from '../../model/BlockVersion';
+import type { Picture } from '../../model/Picture';
+import type { BaseTileIconButton } from '../BaseTile/BaseTileProps';
 
 /**
  * @title Карточка
@@ -12,7 +12,7 @@ export interface GalleryCard {
   description?: string;
   image?: Picture;
   /** @title Ссылка */
-  button?: ButtonCommonProps;
+  button?: BaseTileIconButton;
   /**
    * @title Список
    * @minItems 4

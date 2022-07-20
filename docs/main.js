@@ -32632,12 +32632,8 @@ function renderCard({ card, version, context }, i) {
 
 const GalleryInner = JSX(({ context, cards = [], className, version = 'normal', ...rest }) => {
     const [activeCardIndex, setActiveCardIndex] = context.useState(0);
-    function handleNextClick() {
-        setActiveCardIndex(activeCardIndex + 1);
-    }
-    function handlePrevClick() {
-        setActiveCardIndex(activeCardIndex - 1);
-    }
+    const handleNextClick = () => setActiveCardIndex(activeCardIndex + 1);
+    const handlePrevClick = () => setActiveCardIndex(activeCardIndex - 1);
     const isGalleryScrollAvailable = cards?.length > galleryLengthForScrollMap[version];
     const showNextButton = isGalleryScrollAvailable &&
         cards?.length - activeCardIndex > galleryLengthForScrollMap[version];
