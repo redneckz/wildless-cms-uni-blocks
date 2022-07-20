@@ -15,13 +15,13 @@ export interface BlockDef {
   };
 }
 
-export interface SlotsMap {
+export interface Slot {
   style?: string[];
   blocks?: BlockDef[];
 }
 
-export interface Slots {
-  header?: SlotsMap;
+export interface SlotsMap {
+  header?: Slot;
 }
 
 export interface ContentPageMeta {
@@ -36,7 +36,7 @@ export interface ContentPageMeta {
 export interface ContentPageDef extends ContentPageMeta {
   style?: string[];
   blocks?: BlockDef[]; //! for compatibility
-  slots?: Slots;
+  slots?: SlotsMap;
   likeControl?: boolean;
   colorPalette?: ColorPalette;
 }
