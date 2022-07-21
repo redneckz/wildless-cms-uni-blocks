@@ -1,11 +1,10 @@
 import type { LinkProps } from './LinkProps';
 
 /**
- * @title Ссылка
+ * @title Меню
  * @required ["text", "href"]
  */
 export interface TopMenuItem extends LinkProps {
-  /** @hidden */
   items?: LinkProps[];
 }
 
