@@ -31449,9 +31449,9 @@ const projectSettings = new (class {
 const Icon = JSX(({ className = '', name, alt = `Icon ${name}`, title = alt, asSVG, ...imgProps }) => {
     const href = `${projectSettings.CDN || ''}icons/${name}.svg`;
     if (asSVG) {
-        return (jsxs("svg", { className: `flex-none ${className}`, ...imgProps, "aria-hidden": "true", children: [title ? jsx("title", { children: title }) : null, alt ? jsx("desc", { children: alt }) : null, jsx("use", { href: `${href}#icon`, xlinkHref: `${href}#icon` })] }));
+        return (jsxs("svg", { className: className, ...imgProps, "aria-hidden": "true", children: [title ? jsx("title", { children: title }) : null, alt ? jsx("desc", { children: alt }) : null, jsx("use", { href: `${href}#icon`, xlinkHref: `${href}#icon` })] }));
     }
-    return (jsx("img", { className: `flex-none ${className}`, src: href, alt: alt, title: title, ...imgProps, "aria-hidden": "true" }));
+    return (jsx("img", { className: className, src: href, alt: alt, title: title, ...imgProps, "aria-hidden": "true" }));
 });
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Img.tsx

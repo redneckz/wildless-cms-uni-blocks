@@ -8,7 +8,7 @@ export const Icon = JSX<IconProps>(
 
     if (asSVG) {
       return (
-        <svg className={`flex-none ${className}`} {...imgProps} aria-hidden="true">
+        <svg className={className} {...imgProps} aria-hidden="true">
           {title ? <title>{title}</title> : null}
           {alt ? <desc>{alt}</desc> : null}
           <use href={`${href}#icon`} xlinkHref={`${href}#icon`} />
@@ -18,7 +18,7 @@ export const Icon = JSX<IconProps>(
 
     return (
       <img
-        className={`flex-none ${className}`}
+        className={className}
         src={href}
         alt={alt}
         title={title}
