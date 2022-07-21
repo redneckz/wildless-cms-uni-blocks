@@ -1,17 +1,42 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { LinkProps } from '../../model/LinkProps';
+import { BlockVersion } from '../../model/BlockVersion';
+import { SitemapProps } from '../../model/SitemapProps';
 
 export interface TopItemContent extends LinkProps {
   active?: boolean;
 }
+
+// export type BgColorScheme = {
+//   white: {
+//     active:string,
+//     default:string,
+//   },
+//   transparent: {
+//     active:string,
+//     default:string,
+//   },
+// }
+export type BgColorScheme = 'white' | 'transparent';
 
 export interface TopItemProps extends TopItemContent {
   className?: string;
   flat?: boolean;
   ariaLabel?: string;
   onClick?: (ev: MouseEvent) => any;
-  bgColorScheme?: string;
+  bgColor?: string;
 }
+
+const LINK_STYLE_COLORS_SCHEME = {
+  white: {
+    active: 'border-primary-main rounded-md',
+    default: 'border-transparent',
+  },
+  transparent: {
+    active: 'border-white rounded-md',
+    default: 'border-transparent',
+  },
+};
 
 export const TopItem = JSX<TopItemProps>(
   ({
@@ -24,18 +49,8 @@ export const TopItem = JSX<TopItemProps>(
     onClick,
     children,
     ariaLabel,
-    bgColorScheme = 'white',
+    bgColor = 'white',
   }) => {
-    const LINK_STYLE_COLORS_SCHEME = {
-      white: {
-        active: 'border-primary-main rounded-md',
-        default: 'border-transparent',
-      },
-      transparent: {
-        active: 'border-white rounded-md',
-        default: 'border-transparent',
-      },
-    };
     const TEXT_STYLE_COLORS_SCHEME = {
       white: {
         active: 'text-primary-main',
@@ -47,12 +62,8 @@ export const TopItem = JSX<TopItemProps>(
       },
     };
 
-    let linkStyle = LINK_STYLE_COLORS_SCHEME[bgColorScheme]['default'];
-    let textStyle = TEXT_STYLE_COLORS_SCHEME[bgColorScheme]['default'];
-    if (active) {
-      linkStyle = LINK_STYLE_COLORS_SCHEME[bgColorScheme]['active'];
-      textStyle = TEXT_STYLE_COLORS_SCHEME[bgColorScheme]['active'];
-    }
+    const linkStyle = LINK_STYLE_COLORS_SCHEME[bgColor][active ? 'active' : 'default'];
+    const textStyle = TEXT_STYLE_COLORS_SCHEME[bgColor][active ? 'active' : 'default'];
 
     return (
       <a

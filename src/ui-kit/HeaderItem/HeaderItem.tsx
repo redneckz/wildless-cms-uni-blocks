@@ -3,33 +3,34 @@ import type { TopItemProps } from '../TopItem/TopItem';
 
 export type HeaderItemProps = TopItemProps;
 
+const TEXT_STYLE_COLORS_SCHEME = {
+  white: {
+    active: 'text-primary-main',
+    default: 'text-primary-text hover:text-primary-main',
+  },
+  transparent: {
+    active: 'text-white',
+    default: 'text-white',
+  },
+};
+const BORDER_STYLE_COLORS_SCHEME = {
+  white: {
+    active: 'bg-primary-main',
+    default: '',
+  },
+  transparent: {
+    active: 'bg-white',
+    default: '',
+  },
+};
+
 export const HeaderItem = JSX<HeaderItemProps>(
-  ({ className, text, href, target, active, onClick, children, bgColorScheme = 'white' }) => {
-    const TEXT_STYLE_COLORS_SCHEME = {
-      white: {
-        active: 'text-primary-main',
-        default: 'text-primary-text hover:text-primary-main',
-      },
-      transparent: {
-        active: 'text-white',
-        default: 'text-white',
-      },
-    };
-    const BORDER_STYLE_COLORS_SCHEME = {
-      white: {
-        active: 'bg-primary-main',
-        default: '',
-      },
-      transparent: {
-        active: 'bg-white',
-        default: '',
-      },
-    };
-    let textStyle = TEXT_STYLE_COLORS_SCHEME[bgColorScheme]['default'];
-    let activeBorderStyle = BORDER_STYLE_COLORS_SCHEME[bgColorScheme]['default'];
+  ({ className, text, href, target, active, onClick, children, bgColor = 'white' }) => {
+    let textStyle = TEXT_STYLE_COLORS_SCHEME[bgColor]['default'];
+    let activeBorderStyle = BORDER_STYLE_COLORS_SCHEME[bgColor]['default'];
     if (active) {
-      textStyle = TEXT_STYLE_COLORS_SCHEME[bgColorScheme]['active'];
-      activeBorderStyle = BORDER_STYLE_COLORS_SCHEME[bgColorScheme]['active'];
+      textStyle = TEXT_STYLE_COLORS_SCHEME[bgColor]['active'];
+      activeBorderStyle = BORDER_STYLE_COLORS_SCHEME[bgColor]['active'];
     }
     return (
       <a

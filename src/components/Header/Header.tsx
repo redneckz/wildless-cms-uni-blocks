@@ -13,6 +13,15 @@ import { isTopItemActive } from './isTopItemActive';
 
 export interface HeaderProps extends HeaderContent, UniBlockProps {}
 
+const COLORS_SCHEME = {
+  white: 'bg-white',
+  transparent: 'bg-transparent',
+};
+const BORDER_COLORS_SCHEME = {
+  white: 'bg-main-divider',
+  transparent: 'bg-main-divider opacity-30',
+};
+
 export const Header = JSX<HeaderProps>(
   ({ className, defaultLocation, bgColorScheme = 'white', context, topItems }) => {
     const router = context.useRouter();
@@ -30,7 +39,7 @@ export const Header = JSX<HeaderProps>(
         active={_ === activeTopItem}
         {...useLink({ router, handlerDecorator }, _)}
         ariaLabel={_.text}
-        bgColorScheme={bgColorScheme}
+        bgColor={bgColorScheme}
       />
     ));
 
@@ -40,18 +49,9 @@ export const Header = JSX<HeaderProps>(
         className="mr-8"
         active={_ === activeSubItem}
         {...useLink({ router, handlerDecorator }, _)}
-        bgColorScheme={bgColorScheme}
+        bgColor={bgColorScheme}
       />
     ));
-
-    const COLORS_SCHEME = {
-      white: 'bg-white',
-      transparent: 'bg-transparent',
-    };
-    const BORDER_COLORS_SCHEME = {
-      white: 'bg-main-divider',
-      transparent: 'bg-main-divider opacity-30',
-    };
 
     return (
       <header className={`pt-5 pb-8 px-20 ${COLORS_SCHEME[bgColorScheme]} ${className || ''}`}>

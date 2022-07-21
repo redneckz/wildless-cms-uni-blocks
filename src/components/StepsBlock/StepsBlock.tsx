@@ -1,28 +1,30 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { Step, StepsBlockContent } from './StepsBlockContent';
 import type { UniBlockProps } from '../../types';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import { Title } from '../../ui-kit/Title/Title';
 import { joinList } from '../../utils/joinList';
+import type { Step, StepsBlockContent } from './StepsBlockContent';
 
 export interface StepsBlockProps extends StepsBlockContent, UniBlockProps {}
 
-export const StepsBlock = JSX<StepsBlockProps>(({ className, title, steps }) => {
+export const StepsBlock = JSX<StepsBlockProps>(({ className, title, showLines = true, steps }) => {
   return (
     <section
-      className={`font-sans text-primary-text bg-white px-12 py-12 flex flex-col items-center ${
+      className={`box-border font-sans text-primary-text bg-white px-20 py-[50px] flex flex-col items-center ${
         className || ''
       }`}
     >
       <Title className="font-medium m-0 max-w-[47rem] text-center">{title}</Title>
       {steps?.length ? (
-        <div>
-          <div className="flex mt-9 items-center px-[88px]">
-            {joinList(<div className="h-0.5 w-full bg-secondary-light"></div>)(
-              steps.map((step, i) => renderStepIcon(step, i)),
-            )}
+        <div className={`box-border py-0.5 mb-0.5 ${title ? 'mt-9' : ''}`}>
+          <div className="flex items-center px-[88px]">
+            {joinList(
+              <div
+                className={`h-0.5 w-full bg-secondary-light ${!showLines ? 'opacity-0' : ''}`}
+              />,
+            )(steps.map((step, i) => renderStepIcon(step, i)))}
           </div>
-          <div className="flex mt-9 justify-between gap-x-24">{steps.map(renderStepTitle)}</div>
+          <div className="flex justify-between gap-x-[101px]">{steps.map(renderStepTitle)}</div>
         </div>
       ) : null}
     </section>
@@ -43,13 +45,16 @@ const renderStepIcon = (step: Step, i: number) => {
 
 const renderStepTitle = (step: Step, i: number) => {
   return (
-    <div key={String(i)} className="flex flex-col items-center text-center relative w-[276px]">
-      <div className="max-w-min">
-        <h5 className="font-medium text-xl m-0 mt-4 whitespace-nowrap px-3">{step.label}</h5>
-        {step.description && (
-          <div className="font-normal text-sm text-secondary-text mt-2">{step.description}</div>
-        )}
-      </div>
+    <div
+      key={String(i)}
+      className="flex flex-col items-center text-center relative w-[276px] whitespace-pre-line overflow-hidden"
+    >
+      {step.label && <div className="font-medium text-xl m-0 mt-4">{step.label}</div>}
+      {step.description && (
+        <div className={`font-normal text-sm text-secondary-text ${step.label ? 'mt-2' : 'mt-4'}`}>
+          {step.description}
+        </div>
+      )}
     </div>
   );
 };

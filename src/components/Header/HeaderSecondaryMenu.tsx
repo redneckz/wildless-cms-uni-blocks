@@ -12,23 +12,22 @@ interface HeaderSecondaryMenuContent {
 
 export interface HeaderSecondaryMenuProps extends HeaderSecondaryMenuContent, UniBlockProps {}
 
+const COLORS_SCHEME = {
+  white: 'text-primary-text hover:text-primary-main',
+  transparent: 'text-white',
+};
+const DOP_LINKS_COLORS_SCHEME = {
+  white: 'fill-secondary-light hover:fill-secondary-hover',
+  transparent: 'fill-white',
+};
+const DOP_LINKS_ICON_NAME = {
+  white: 'GridIcon',
+  transparent: 'GridIconWhite',
+};
+
 export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
   ({ context, className, defaultLocation = '', bgColorScheme = 'white' }) => {
     const [city, getCity] = context.useGeolocation(defaultLocation);
-
-    const COLORS_SCHEME = {
-      white: 'text-primary-text hover:text-primary-main',
-      transparent: 'text-white',
-    };
-    const DOP_LINKS_COLORS_SCHEME = {
-      white: 'fill-secondary-light hover:fill-secondary-hover',
-      transparent: 'fill-white',
-    };
-    const DOP_LINKS_ICON_NAME = {
-      white: 'GridIcon',
-      transparent: 'GridIconWhite',
-    };
-
     return (
       <div className={`flex items-center ${className || ''}`}>
         <TopItem
@@ -38,7 +37,7 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
           text={city}
           ariaLabel="Местоположение"
           onClick={getCity}
-          bgColorScheme={bgColorScheme}
+          bgColor={bgColorScheme}
         />
         <TopItem
           className="mr-7"
@@ -46,7 +45,7 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
           href="#"
           text="Офисы и банкоматы"
           ariaLabel="Список всех доступных офисов и банкоматов"
-          bgColorScheme={bgColorScheme}
+          bgColor={bgColorScheme}
         />
         <HeaderSecondaryMenuButton
           className={`mr-5 ${COLORS_SCHEME[bgColorScheme]}`}

@@ -20,12 +20,12 @@ export const PICTURE_TEXT: PictureTextContent = {
     {
       label: 'Кредит по одному документу',
       description: 'До 300 тыс ₽ по упрощённой процедуре получения кредита',
-      icon: 'DocumentText',
+      icon: 'DocumentTextIcon',
     },
     {
       label: 'Кредит на общих условиях',
       description: 'До 5 млн ₽ на общих условиях получения кредита',
-      icon: 'DiscountShape',
+      icon: 'DiscountShapeIcon',
     },
   ],
   image,

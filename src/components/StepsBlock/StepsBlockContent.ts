@@ -5,7 +5,7 @@ import type { IconName } from '../../ui-kit/Icon/IconProps';
  */
 export interface Step {
   /** @title Название */
-  label: string;
+  label?: string;
   /** @title Описание */
   description?: string;
   icon?: IconName;
@@ -17,9 +17,12 @@ export interface Step {
 export interface StepsBlockContent {
   /** @title Заголовок */
   title?: string;
+  /** @title Линии */
+  showLines?: boolean;
   /**
    * @title Шаги
-   * @maxItems 6
+   * @minItems 2
+   * @maxItems 3
    */
   steps?: Step[];
 }
