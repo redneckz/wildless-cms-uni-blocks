@@ -1,4 +1,4 @@
-import type { SitemapProps } from '../../model/SitemapProps';
+import type { SitemapProps } from '../../services/sitemap/SitemapProps';
 
 /**
  * @title Шапка

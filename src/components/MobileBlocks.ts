@@ -4,6 +4,7 @@ import { Gallery } from './Gallery/Gallery.mobile';
 import { Header } from './Header/Header';
 import { Headline } from './Headline/Headline';
 import { MobileAppTile } from './MobileAppTile/MobileAppTile';
+import { Navigation } from './Navigation/Navigation';
 import { PictureText } from './PictureText/PictureText';
 import { Placeholder } from './Placeholder/Placeholder';
 import { ProductBlock } from './ProductBlock/ProductBlock.mobile';
@@ -24,4 +25,5 @@ export const MobileBlocks = {
   ProductTile,
   TextBlock,
   Tile,
+  Navigation,
 };
