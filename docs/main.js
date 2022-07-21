@@ -32386,7 +32386,7 @@ function renderItems(items = [], version) {
 function BaseTile_renderButton({ icon, asSVG, ...button }, i) {
     if (!button?.text)
         return;
-    return icon ? (jsx(Button, { appendLeft: jsx(Icon, { name: icon, width: "24", height: "24" }), ...button }, String(i))) : (jsx(Button, { ...button }, String(i)));
+    return icon ? (jsx(Button, { appendLeft: jsx(Icon, { name: icon, asSVG: true, width: "24", height: "24" }), ...button }, String(i))) : (jsx(Button, { ...button }, String(i)));
 }
 
 ;// CONCATENATED MODULE: ./src/components/Tile/Tile.tsx
