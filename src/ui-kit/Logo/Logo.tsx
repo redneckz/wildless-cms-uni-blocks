@@ -1,11 +1,12 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { BgColorVersion } from '../../model/BgColorVersion';
 import { SVG } from '../SVG';
 
 export interface LogoProps {
   className: string;
   href: string;
   targetBlank: boolean;
-  bgColorScheme?: string;
+  bgColor?: string;
 }
 
 const LOGO_PATHS = [
@@ -15,17 +16,17 @@ const LOGO_PATHS = [
   'M14.7 27.83h2.58c.67 0 1.14.14 1.4.4.27.25.4.72.4 1.38v7.4c0 .66-.12 1.12-.4 1.38-.4.41-1.16.41-1.78.41l-.4-.01v3.5l.78.14v-2.88c1.2 0 1.97-.4 2.34-1.22v4.29h.26l.5-.01V29.74c0-.68.13-1.16.4-1.43.25-.27.72-.4 1.37-.4.67 0 1.65-.1 2.16.4.26.27.38.76.38 1.43v3.8h-1.77v-4.06h-.77v12.99c.26-.03.5-.07.77-.12V34.3h1.77v7.64c.36-.1.72-.21 1.08-.34v-7c0-.8.19-1.4 1-1.67l-.9-4.87h1.8l.3 5.31h.22l.3-5.31h1.88l-1.01 4.87c.84.3 1.01.81 1.01 1.66v4.53a16.63 16.63 0 0 0 1.5-1.27v-9.83h5.25l.1-.72H24.93l.17.89c-.38-.72-1.12-1.08-2.2-1.08h-.77c-1.3 0-2.1.52-2.4 1.55-.27-1.08-1.1-1.62-2.46-1.62h-3.36v14.52c.26.09.52.18.78.25V27.84Zm16.29 5.58-.85-.8.85-4.37v5.17Z',
   'M27.66 40.79c.27-.14.55-.28.8-.43v-5.98h-.8v6.4Z',
 ];
-const SVG_COLORS_SCHEME = {
-  white: 'text-primary-main',
+const SVG_COLOR: Record<BgColorVersion, string> = {
+  'bg-white': 'text-primary-main',
   transparent: 'text-white',
 };
-const TEXT_COLORS_SCHEME = {
-  white: 'text-black',
+const TEXT_COLOR: Record<BgColorVersion, string> = {
+  'bg-white': 'text-black',
   transparent: 'text-white',
 };
 
 export const Logo = JSX<Partial<LogoProps>>(
-  ({ className, href, children, targetBlank, bgColorScheme = 'white' }) => {
+  ({ className, href, children, targetBlank, bgColor = 'bg-white' }) => {
     return (
       <a
         className={`inline-flex items-center font-sans no-underline ${className || ''}`}
@@ -33,11 +34,11 @@ export const Logo = JSX<Partial<LogoProps>>(
         target={targetBlank ? '_blank' : '_self'}
       >
         <SVG
-          className={`${SVG_COLORS_SCHEME[bgColorScheme]} w-10`}
+          className={`${SVG_COLOR[bgColor]} w-10`}
           viewBox="0 0 40 45"
           paths={LOGO_PATHS.map((d) => ({ d }))}
         />
-        <span className={`${TEXT_COLORS_SCHEME[bgColorScheme]} text-base font-medium ml-2.5`}>
+        <span className={`${TEXT_COLOR[bgColor]} text-base font-medium ml-2.5`}>
           {children || 'Россельхозбанк'}
         </span>
       </a>

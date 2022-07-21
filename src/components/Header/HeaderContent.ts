@@ -1,13 +1,5 @@
+import type { BgColorVersion } from '../../model/BgColorVersion';
 import type { SitemapProps } from '../../model/SitemapProps';
-
-/**
- * @title Цвет фона
- * @enumNames [
- *    "Белый",
- *    "Прозрачный"
- * ]
- */
-export type HeaderBgColor = 'white' | 'transparent';
 
 /**
  * @title Шапка
@@ -21,7 +13,8 @@ export interface HeaderContent extends SitemapProps {
   defaultLocation?: string;
   /**
    * @title Фон элемента
+   * @hidden
    * @default white
    */
-  bgColorScheme?: HeaderBgColor;
+  bgColor?: BgColorVersion;
 }

@@ -1,51 +1,39 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { BgColorVersion } from '../../model/BgColorVersion';
 import type { TopItemProps } from '../TopItem/TopItem';
 
 export type HeaderItemProps = TopItemProps;
 
-const TEXT_STYLE_COLORS_SCHEME = {
-  white: {
-    active: 'text-primary-main',
-    default: 'text-primary-text hover:text-primary-main',
-  },
-  transparent: {
-    active: 'text-white',
-    default: 'text-white',
-  },
-};
-const BORDER_STYLE_COLORS_SCHEME = {
-  white: {
-    active: 'bg-primary-main',
-    default: '',
-  },
-  transparent: {
-    active: 'bg-white',
-    default: '',
-  },
-};
+const TEXT_CLASSES = 'font-sans font-normal text-base';
+const BORDER_CLASSES = 'absolute left-0 -bottom-2 w-full h-[2px]';
 
 export const HeaderItem = JSX<HeaderItemProps>(
-  ({ className, text, href, target, active, onClick, children, bgColor = 'white' }) => {
-    let textStyle = TEXT_STYLE_COLORS_SCHEME[bgColor]['default'];
-    let activeBorderStyle = BORDER_STYLE_COLORS_SCHEME[bgColor]['default'];
-    if (active) {
-      textStyle = TEXT_STYLE_COLORS_SCHEME[bgColor]['active'];
-      activeBorderStyle = BORDER_STYLE_COLORS_SCHEME[bgColor]['active'];
-    }
-    return (
-      <a
-        className={`relative inline-block bg-transparent text-center no-underline ${
-          className || ''
-        }`}
-        href={href}
-        target={target}
-        onClick={onClick}
-      >
-        <span className={`font-sans font-normal text-base ${textStyle}`}>{text || children}</span>
-        {active ? (
-          <div className={`${activeBorderStyle} absolute left-0 -bottom-2 w-full h-[2px]`} />
-        ) : null}
-      </a>
-    );
-  },
+  ({ className, text, href, target, active, onClick, children, bgColor = 'bg-white' }) => (
+    <a
+      className={`relative inline-block bg-transparent text-center no-underline ${className || ''}`}
+      href={href}
+      target={target}
+      onClick={onClick}
+    >
+      <span className={getTextClasses(bgColor, active)}>{text || children}</span>
+      {active ? <div className={getBorderClasses(bgColor, active)} /> : null}
+    </a>
+  ),
 );
+
+const getTextClasses = (bgColor: BgColorVersion, active?: boolean) => {
+  let classes = 'text-white';
+  if (bgColor === 'bg-white') {
+    classes = active ? 'text-primary-main' : 'text-primary-text hover:text-primary-main';
+  }
+
+  return `${classes} ${TEXT_CLASSES}`;
+};
+
+const getBorderClasses = (bgColor: BgColorVersion, active?: boolean) => {
+  if (!active) {
+    return BORDER_CLASSES;
+  }
+
+  return `${bgColor === 'bg-white' ? bgColor : 'bg-primary-main'} ${BORDER_CLASSES}`;
+};
