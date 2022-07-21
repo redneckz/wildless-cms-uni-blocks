@@ -2,7 +2,7 @@ import { JSX } from '@redneckz/uni-jsx';
 import type { BgColorVersion } from '../../model/BgColorVersion';
 import type { UniBlockProps } from '../../types';
 import { Icon } from '../../ui-kit/Icon/Icon';
-import { IconName } from '../../ui-kit/Icon/IconProps';
+import type { IconName } from '../../ui-kit/Icon/IconProps';
 import { TopItem } from '../../ui-kit/TopItem/TopItem';
 import { HeaderSecondaryMenuButton } from './HeaderSecondaryMenuButton';
 
