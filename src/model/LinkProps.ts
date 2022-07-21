@@ -1,13 +1,14 @@
 /**
  * @title Таргет (target)
  * @enumNames [
+ *    "",
  *    "self (текущее окно или фрейм)",
  *    "blank (новое окно)",
  *    "parent (фрейм-родитель)",
  *    "top (текущее окно)"
  *  ]
  */
-export type Target = '_blank' | '_self' | '_parent' | '_top';
+export type Target = '' | '_self' | '_blank' | '_parent' | '_top';
 
 /**
  * @title Ссылка
