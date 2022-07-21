@@ -1,4 +1,5 @@
 import { JSX } from '@redneckz/uni-jsx';
+import { BgColorVersion } from '../../model/BgColorVersion';
 import type { LinkProps } from '../../model/LinkProps';
 
 export interface TopItemContent extends LinkProps {
@@ -10,28 +11,54 @@ export interface TopItemProps extends TopItemContent {
   flat?: boolean;
   ariaLabel?: string;
   onClick?: (ev: MouseEvent) => any;
+  bgColor?: BgColorVersion;
 }
 
+const TEXT_CLASSES = 'font-sans font-normal text-sm';
+const LINK_CLASSES = 'inline-block border border-solid bg-transparent text-center no-underline';
+
 export const TopItem = JSX<TopItemProps>(
-  ({ className, text, href, target, active, flat, onClick, children, ariaLabel }) => {
-    const linkStyle = active ? 'border-primary-main rounded-md' : 'border-transparent';
-    const textStyle = active
+  ({
+    className = '',
+    text,
+    href,
+    target,
+    active,
+    flat,
+    onClick,
+    children,
+    ariaLabel,
+    bgColor = 'bg-white',
+  }) => (
+    <a
+      className={`${getLinkClasses(bgColor, active, flat)} ${className}`}
+      href={href}
+      target={target}
+      onClick={onClick}
+      rel="noopener noreferrer"
+      aria-label={ariaLabel}
+    >
+      <span className={getTextClasses(bgColor, active, flat)}>{text || children}</span>
+    </a>
+  ),
+);
+
+const getLinkClasses = (bgColor: BgColorVersion, active?: boolean, flat?: boolean) => {
+  let classes = 'border-transparent';
+  if (active) {
+    classes = `rounded-md ${bgColor === 'bg-white' ? 'border-primary-main' : 'border-white'}`;
+  }
+
+  return `${classes} ${LINK_CLASSES} ${flat ? '' : 'px-4 py-2'}`;
+};
+
+const getTextClasses = (bgColor: BgColorVersion, active?: boolean, flat?: boolean) => {
+  let classes = 'text-white';
+  if (bgColor === 'bg-white') {
+    classes = active
       ? 'text-primary-main'
       : `${flat ? 'text-primary-text' : 'text-secondary-text'} hover:text-primary-main`;
+  }
 
-    return (
-      <a
-        className={`inline-block border border-solid bg-transparent text-center no-underline ${
-          flat ? '' : 'px-4 py-2'
-        } ${linkStyle} ${className || ''}`}
-        href={href}
-        target={target}
-        onClick={onClick}
-        rel="noopener noreferrer"
-        aria-label={ariaLabel}
-      >
-        <span className={`font-sans font-normal text-sm ${textStyle}`}>{text || children}</span>
-      </a>
-    );
-  },
-);
+  return `${classes} ${TEXT_CLASSES}`;
+};
