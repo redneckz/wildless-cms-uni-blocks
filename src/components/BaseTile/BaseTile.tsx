@@ -28,7 +28,7 @@ const alignText: Record<AlignType, string> = {
 
 export interface BaseTileProps extends BaseTileCommonProps, UniBlockProps {}
 
-const TITLE_CLASSES = 'font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]';
+const TITLE_CLASSES = 'font-medium m-0 whitespace-pre-wrap max-w-[600px]';
 
 export const BaseTile = JSX<BaseTileProps>(
   ({
@@ -60,7 +60,7 @@ export const BaseTile = JSX<BaseTileProps>(
           <div className={`flex flex-col justify-between ${alignBlock[align]}`}>
             <div>
               {description ? (
-                <div className={`font-normal text-base max-w-[600px] ${alignText[align]}`}>
+                <div className={`font-normal text-base mt-4 max-w-[600px] ${alignText[align]}`}>
                   {description}
                 </div>
               ) : null}
@@ -103,11 +103,15 @@ function renderItems(items: string[] = [], version?: BlockVersion) {
   );
 }
 
-function renderButton({ icon, ...button }: BaseTileIconButton, i: number) {
+function renderButton({ icon, asSVG, ...button }: BaseTileIconButton, i: number) {
   if (!button?.text) return;
 
   return icon ? (
-    <Button key={String(i)} appendLeft={<Icon name={icon} width="24" height="24" />} {...button} />
+    <Button
+      key={String(i)}
+      appendLeft={<Icon name={icon} asSVG width="24" height="24" />}
+      {...button}
+    />
   ) : (
     <Button key={String(i)} {...button} />
   );

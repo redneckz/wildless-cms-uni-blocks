@@ -8,4 +8,5 @@ coverage/
 cosmos-static/icons/
 temp/
 .idea
+.nvmrc
 .DS_Store

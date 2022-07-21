@@ -1,8 +1,8 @@
 {
-  "title": "Accordion title",
+  "title": "Аккордеон",
   "accordionItems": [
     {
-      "label": "Accordion label 1",
+      "label": "Аккордеон 1",
       "blocks": [
         {
           "accordionBlockType": "TextBlock",
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "label": "Accordion label 2",
+      "label": "Аккордеон 2",
       "blocks": [
         {
           "accordionBlockType": "TextBlock",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "label": "Accordion label 3",
+      "label": "Аккордеон 3",
       "blocks": [
         {
           "accordionBlockType": "TextBlock",

@@ -2,10 +2,12 @@
  * Icons sorted by name
  */
 export enum IconMap {
+  '',
   'ActualBalanceIcon',
   'AppleIcon',
   'CalendarCircleIcon',
   'CalendarIcon',
+  'CalendarWhiteIcon',
   'CardIcon',
   'CardPosIcon',
   'CardTickIcon',
@@ -17,6 +19,7 @@ export enum IconMap {
   'DollarIcon',
   'EmptyWalletChangeIcon',
   'EmptyWalletIcon',
+  'EmptyWalletWhiteIcon',
   'EuroIcon',
   'GlassIcon',
   'GridIcon',
@@ -31,6 +34,7 @@ export enum IconMap {
   'OkIcon',
   'PassSendIcon',
   'PercentageSquareIcon',
+  'PercentageSquareWhiteIcon',
   'PlayMarketIcon',
   'PlusIcon',
   'Profile2UserIcon',
@@ -48,10 +52,12 @@ export enum IconMap {
 /**
  * @title Иконка
  * @enumNames [
+ *    "",
  *    "Деньги",
  *    "Лого «Apple»",
  *    "Скруглённый календарь",
  *    "Календарь",
+ *    "Календарь белый",
  *    "Кред. карта",
  *    "Кред. карта под наклоном",
  *    "Кред. карта с галочкой",
@@ -63,6 +69,7 @@ export enum IconMap {
  *    "Доллар",
  *    "Пустой кошелёк с возвратом",
  *    "Пустой кошелёк",
+ *    "Пустой кошелёк белый",
  *    "Евро",
  *    "Зеркало",
  *    "Сетка",
@@ -77,6 +84,7 @@ export enum IconMap {
  *    "Лого «Одноклассники»",
  *    "Бизнес",
  *    "Проценты",
+ *    "Проценты белые",
  *    "Лого «PlayMarket»",
  *    "Плюс",
  *    "Профиль, 2 персоны",
