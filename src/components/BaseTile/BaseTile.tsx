@@ -84,7 +84,7 @@ function renderItems(items: string[] = [], version?: BlockVersion) {
   );
 }
 
-function renderButton({ icon, ...button }: BaseTileIconButton, i: number) {
+function renderButton({ icon, asSVG, ...button }: BaseTileIconButton, i: number) {
   if (!button?.text) return;
 
   return icon ? (

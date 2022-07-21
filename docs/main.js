@@ -32383,7 +32383,7 @@ function getTitleSizeByClassName(className = '') {
 function renderItems(items = [], version) {
     return (jsx("section", { className: "max-w-[600px] mt-5", role: "list", children: items.map((_, i) => (jsx(BlockItem, { className: i ? 'mt-2.5' : '', text: _, version: version }, String(i)))) }));
 }
-function BaseTile_renderButton({ icon, ...button }, i) {
+function BaseTile_renderButton({ icon, asSVG, ...button }, i) {
     if (!button?.text)
         return;
     return icon ? (jsx(Button, { appendLeft: jsx(Icon, { name: icon, width: "24", height: "24" }), ...button }, String(i))) : (jsx(Button, { ...button }, String(i)));
