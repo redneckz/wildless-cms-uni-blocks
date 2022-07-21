@@ -5,6 +5,7 @@ export interface LogoProps {
   className: string;
   href: string;
   targetBlank: boolean;
+  bgColorScheme?: string;
 }
 
 const LOGO_PATHS = [
@@ -15,21 +16,32 @@ const LOGO_PATHS = [
   'M27.66 40.79c.27-.14.55-.28.8-.43v-5.98h-.8v6.4Z',
 ];
 
-export const Logo = JSX<Partial<LogoProps>>(({ className, href, children, targetBlank }) => {
-  return (
-    <a
-      className={`inline-flex items-center font-sans no-underline ${className || ''}`}
-      href={href || 'https://rshb.ru/'}
-      target={targetBlank ? '_blank' : '_self'}
-    >
-      <SVG
-        className="text-primary-main w-10"
-        viewBox="0 0 40 45"
-        paths={LOGO_PATHS.map((d) => ({ d }))}
-      />
-      <span className="text-black text-base font-medium ml-2.5">
-        {children || 'Россельхозбанк'}
-      </span>
-    </a>
-  );
-});
+export const Logo = JSX<Partial<LogoProps>>(
+  ({ className, href, children, targetBlank, bgColorScheme = 'white' }) => {
+    const SVG_COLORS_SCHEME = {
+      white: 'text-primary-main',
+      transparent: 'text-white',
+    };
+    const TEXT_COLORS_SCHEME = {
+      white: 'text-black',
+      transparent: 'text-white',
+    };
+
+    return (
+      <a
+        className={`inline-flex items-center font-sans no-underline ${className || ''}`}
+        href={href || 'https://rshb.ru/'}
+        target={targetBlank ? '_blank' : '_self'}
+      >
+        <SVG
+          className={`${SVG_COLORS_SCHEME[bgColorScheme]} w-10`}
+          viewBox="0 0 40 45"
+          paths={LOGO_PATHS.map((d) => ({ d }))}
+        />
+        <span className={`${TEXT_COLORS_SCHEME[bgColorScheme]} text-base font-medium ml-2.5`}>
+          {children || 'Россельхозбанк'}
+        </span>
+      </a>
+    );
+  },
+);

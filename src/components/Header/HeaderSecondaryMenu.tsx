@@ -6,14 +6,24 @@ import { HeaderSecondaryMenuButton } from './HeaderSecondaryMenuButton';
 
 interface HeaderSecondaryMenuContent {
   defaultLocation?: string;
+  bgColorScheme?: string;
   className?: string;
 }
 
 export interface HeaderSecondaryMenuProps extends HeaderSecondaryMenuContent, UniBlockProps {}
 
 export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
-  ({ context, className, defaultLocation = '' }) => {
+  ({ context, className, defaultLocation = '', bgColorScheme = 'white' }) => {
     const [city, getCity] = context.useGeolocation(defaultLocation);
+
+    const COLORS_SCHEME = {
+      white: 'text-primary-text hover:text-primary-main',
+      transparent: 'text-white',
+    };
+    const DOP_LINKS_COLORS_SCHEME = {
+      white: 'fill-secondary-light hover:fill-secondary-hover',
+      transparent: 'fill-white',
+    };
 
     return (
       <div className={`flex items-center ${className || ''}`}>
@@ -24,6 +34,7 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
           text={city}
           ariaLabel="Местоположение"
           onClick={getCity}
+          bgColorScheme={bgColorScheme}
         />
         <TopItem
           className="mr-7"
@@ -31,24 +42,25 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
           href="#"
           text="Офисы и банкоматы"
           ariaLabel="Список всех доступных офисов и банкоматов"
+          bgColorScheme={bgColorScheme}
         />
         <HeaderSecondaryMenuButton
-          className="mr-5 text-primary-text hover:text-primary-main"
+          className={`mr-5 ${COLORS_SCHEME[bgColorScheme]}`}
           ariaLabel="Поиск по сайту"
         >
           <Icon name="LoupeIcon" aria-hidden="true" className="h-full" asSVG />
         </HeaderSecondaryMenuButton>
         <HeaderSecondaryMenuButton
-          className="mr-5 text-primary-text hover:text-primary-main"
+          className={`mr-5 ${COLORS_SCHEME[bgColorScheme]}`}
           ariaLabel="Профиль"
         >
           <Icon name="ProfileIcon" aria-hidden="true" className="h-full" asSVG />
         </HeaderSecondaryMenuButton>
         <HeaderSecondaryMenuButton
-          className="min-w-[32px] min-h-[32px] fill-secondary-light hover:fill-secondary-hover"
+          className={`${DOP_LINKS_COLORS_SCHEME[bgColorScheme]} min-w-[32px] min-h-[32px]`}
           ariaLabel="Дополнительные ссылки"
         >
-          <Icon name="GridIcon" aria-hidden="true" className="h-full" asSVG />
+          <Icon name="GridIcon" aria-hidden="true" className="h-full fill-white" asSVG />
         </HeaderSecondaryMenuButton>
       </div>
     );

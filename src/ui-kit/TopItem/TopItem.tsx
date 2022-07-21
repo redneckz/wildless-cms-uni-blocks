@@ -10,14 +10,49 @@ export interface TopItemProps extends TopItemContent {
   flat?: boolean;
   ariaLabel?: string;
   onClick?: (ev: MouseEvent) => any;
+  bgColorScheme?: string;
 }
 
 export const TopItem = JSX<TopItemProps>(
-  ({ className, text, href, target, active, flat, onClick, children, ariaLabel }) => {
-    const linkStyle = active ? 'border-primary-main rounded-md' : 'border-transparent';
-    const textStyle = active
-      ? 'text-primary-main'
-      : `${flat ? 'text-primary-text' : 'text-secondary-text'} hover:text-primary-main`;
+  ({
+    className,
+    text,
+    href,
+    target,
+    active,
+    flat,
+    onClick,
+    children,
+    ariaLabel,
+    bgColorScheme = 'white',
+  }) => {
+    const LINK_STYLE_COLORS_SCHEME = {
+      white: {
+        active: 'border-primary-main rounded-md',
+        default: 'border-transparent',
+      },
+      transparent: {
+        active: 'border-white rounded-md',
+        default: 'border-transparent',
+      },
+    };
+    const TEXT_STYLE_COLORS_SCHEME = {
+      white: {
+        active: 'text-primary-main',
+        default: `${flat ? 'text-primary-text' : 'text-secondary-text'} hover:text-primary-main`,
+      },
+      transparent: {
+        active: 'text-white',
+        default: 'text-white',
+      },
+    };
+
+    let linkStyle = LINK_STYLE_COLORS_SCHEME[bgColorScheme]['default'];
+    let textStyle = TEXT_STYLE_COLORS_SCHEME[bgColorScheme]['default'];
+    if (active) {
+      linkStyle = LINK_STYLE_COLORS_SCHEME[bgColorScheme]['active'];
+      textStyle = TEXT_STYLE_COLORS_SCHEME[bgColorScheme]['active'];
+    }
 
     return (
       <a
