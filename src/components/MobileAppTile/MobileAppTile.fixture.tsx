@@ -18,6 +18,7 @@ export default {
             text: 'App Store',
             icon: 'AppleIcon',
             href: '#',
+            asSVG: true,
             version: 'secondary',
           },
           {
@@ -25,6 +26,7 @@ export default {
             text: 'Google Play',
             icon: 'PlayMarketIcon',
             href: '#',
+            asSVG: true,
             version: 'secondary',
           },
         ]}

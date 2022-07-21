@@ -27,7 +27,6 @@ export interface ColumnHeader {
   /** @title Заголовок */
   title?: string;
   icon?: IconName;
-  /** @hidden */
   image?: Picture;
   link?: LinkProps;
 }
@@ -58,8 +57,8 @@ export interface ComparisonTableContent {
   rowHeaders?: RowHeader[];
   /** @title Продукты */
   columns?: Column[];
-  /** @title Отображать заданное количество строк */
-  visibleRowLength?: number;
   /** @title Закрасить первую колонку */
   isColoredFirstColumn?: boolean;
+  /** @title Отображать заданное количество строк */
+  visibleRowLength?: number;
 }

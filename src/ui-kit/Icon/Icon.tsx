@@ -3,7 +3,7 @@ import { projectSettings } from '../../ProjectSettings';
 import type { IconProps } from './IconProps';
 
 export const Icon = JSX<IconProps>(
-  ({ className, name, alt = `Icon ${name}`, title = alt, asSVG, ...imgProps }) => {
+  ({ className = '', name, alt = `Icon ${name}`, title = alt, asSVG, ...imgProps }) => {
     const href = `${projectSettings.CDN || ''}icons/${name}.svg`;
 
     if (asSVG) {

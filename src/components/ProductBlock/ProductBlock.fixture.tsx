@@ -1,7 +1,7 @@
 import { context } from '../../setup-fixture';
 
-import { ProductBlock } from './ProductBlock';
 import type { Picture } from '../../model/Picture';
+import { ProductBlock } from './ProductBlock';
 
 const image: Picture = {
   src: 'money-1.png',
@@ -63,6 +63,63 @@ export default {
             text: 'Подробнее',
             target: '_blank',
             version: 'secondary',
+          },
+        ]}
+        image={image}
+      />
+    </div>
+  ),
+  secondary: (
+    <div className="container grid grid-cols-12">
+      <ProductBlock
+        context={context}
+        className="col-span-12"
+        title={'Потребительский кредит наличными'}
+        version={'secondary'}
+        description="Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт."
+        breadcrumbs={[
+          {
+            text: 'Главная',
+            href: '/',
+          },
+          {
+            text: 'Кредитные карты',
+            href: '/credit',
+          },
+          {
+            text: 'Кредитная карта Своя Union Pay',
+            href: '#',
+          },
+        ]}
+        benefits={[
+          {
+            label: 'До 5 млн ₽',
+            description: 'Кредитный лимит',
+            icon: 'EmptyWalletWhiteIcon',
+          },
+          {
+            label: 'От 16,9%',
+            description: 'Ставка по кредиту',
+            icon: 'PercentageSquareWhiteIcon',
+          },
+          {
+            label: 'До 5 лет',
+            description: 'Срок кредитования',
+            icon: 'CalendarWhiteIcon',
+          },
+        ]}
+        buttons={[
+          {
+            href: 'https://rshb.ru',
+            text: 'Оформить карту',
+            target: '_blank',
+            version: 'secondary',
+          },
+          {
+            href: 'https://rshb.ru',
+            text: 'Подробнее',
+            target: '_blank',
+            version: 'primary',
           },
         ]}
         image={image}
