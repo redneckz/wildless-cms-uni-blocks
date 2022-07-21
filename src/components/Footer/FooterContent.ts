@@ -1,5 +1,5 @@
 import type { LinkProps } from '../../model/LinkProps';
-import type { SitemapProps } from '../../model/SitemapProps';
+import type { SitemapProps } from '../../services/sitemap/SitemapProps';
 
 /**
  * @title Тип контакта

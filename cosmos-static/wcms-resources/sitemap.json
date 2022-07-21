@@ -1,15 +1,14 @@
 {
+  "_schemaPath": "content/schemas/Карта Сайта.schema.json",
   "topItems": [
     {
-      "href": "http://localhost:5001",
-      "text": "Экосистема Своё",
       "items": [
         {
-          "href": "/credit-cards",
+          "href": "/cards-credit",
           "text": "Кредитные карты"
         },
         {
-          "href": "/debit-cards",
+          "href": "/cards-debit",
           "text": "Дебетовые карты"
         },
         {
@@ -31,8 +30,97 @@
         {
           "href": "/insurance",
           "text": "Страхование"
+        },
+        {
+          "href": "/transfers",
+          "text": "Переводы"
+        },
+        {
+          "href": "/premium",
+          "text": "Премиум"
         }
-      ]
+      ],
+      "href": "http://localhost:5001/natural",
+      "text": "Частным клиентам"
+    },
+    {
+      "items": [
+        {
+          "text": "РКО",
+          "href": "/business"
+        },
+        {
+          "text": "Кредиты",
+
+          "href": "/business"
+        },
+        {
+          "text": "Депозиты",
+
+          "href": "/business"
+        },
+        {
+          "text": "Эквайринг",
+
+          "href": "/business"
+        },
+        {
+          "text": "Банковские карты",
+
+          "href": "/business"
+        },
+        {
+          "text": "ВЭД",
+
+          "href": "/business"
+        },
+        {
+          "text": "Инвестиции",
+
+          "href": "/business"
+        },
+        {
+          "text": "Обмен валюты",
+
+          "href": "/business"
+        }
+      ],
+      "text": "Бизнес клиентам",
+      "href": "http://localhost:5001/business"
+    },
+    {
+      "items": [
+        {
+          "text": "Свое Родное",
+          "href": "https://svoe-rodnoe.ru/"
+        },
+        {
+          "text": "Свое Фермерство",
+          "href": "/svoe"
+        },
+        {
+          "text": "Свое Жилье",
+          "href": "/svoe"
+        },
+        {
+          "text": "Свое Село",
+          "href": "/svoe"
+        },
+        {
+          "text": "Свое за Городом",
+          "href": "/svoe"
+        },
+        {
+          "text": "Свое Объявления",
+          "href": "/svoe"
+        }
+      ],
+      "text": "Экосистема Своё",
+
+      "href": "http://localhost:5001/svoe"
     }
-  ]
+  ],
+  "id": "6XGlupwIMfAfAca1Zm1X0",
+  "title": "Сайт РСХБ",
+  "slug": "sitemap"
 }

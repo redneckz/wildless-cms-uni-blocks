@@ -1,5 +1,5 @@
-import type { BgColorVersion } from '../../model/BgColorVersion';
-import type { SitemapProps } from '../../model/SitemapProps';
+import { BgColorVersion } from '../../model/BgColorVersion';
+import type { SitemapProps } from '../../services/sitemap/SitemapProps';
 
 /**
  * @title Шапка

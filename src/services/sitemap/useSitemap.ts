@@ -1,6 +1,6 @@
-import type { AsyncDataHook } from '../components/ContentPage/ContentPageContext';
-import type { HeaderContent } from '../components/Header/HeaderContent';
-import { projectSettings } from '../ProjectSettings';
+import type { AsyncDataHook } from '../../components/ContentPage/ContentPageContext';
+import type { HeaderContent } from '../../components/Header/HeaderContent';
+import { projectSettings } from '../../ProjectSettings';
 
 export function useSitemap(useAsyncData: AsyncDataHook): HeaderContent {
   const { data } = useAsyncData(sitemapURL(), fetchSitemap);
