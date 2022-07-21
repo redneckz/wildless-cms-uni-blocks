@@ -2,7 +2,7 @@ import { ExchangeRateTile } from './ExchangeRateTile/ExchangeRateTile';
 import { Footer } from './Footer/Footer.mobile';
 import { Gallery } from './Gallery/Gallery.mobile';
 import { Header } from './Header/Header';
-import { Headline } from './Headline/Headline';
+import { Headline } from './Headline/Headline.mobile';
 import { MobileAppTile } from './MobileAppTile/MobileAppTile';
 import { PictureText } from './PictureText/PictureText';
 import { Placeholder } from './Placeholder/Placeholder';
