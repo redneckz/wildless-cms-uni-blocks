@@ -1,4 +1,6 @@
+import type { BlockVersion } from '../../model/BlockVersion';
 import type { Picture } from '../../model/Picture';
+import type { BaseTileIconButton } from '../BaseTile/BaseTileProps';
 
 /**
  * @title Карточка
@@ -10,9 +12,13 @@ export interface GalleryCard {
   description?: string;
   image?: Picture;
   /** @title Ссылка */
-  href?: string;
-  /** @title Список */
+  button?: BaseTileIconButton;
+  /**
+   * @title Список
+   * @minItems 4
+   */
   items?: string[];
+  version?: BlockVersion;
 }
 
 /**

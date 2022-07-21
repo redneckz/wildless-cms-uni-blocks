@@ -23,7 +23,7 @@ const building: Picture = {
 
 export default {
   credit: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <ProductTile
         context={context}
         className="col-span-6"
@@ -55,7 +55,7 @@ export default {
     </div>
   ),
   pension: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <ProductTile
         context={context}
         className="col-span-6"
@@ -88,7 +88,7 @@ export default {
     </div>
   ),
   'credit-card': (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <ProductTile
         context={context}
         className="col-span-8"
@@ -121,7 +121,7 @@ export default {
     </div>
   ),
   'pension-credit': (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <ProductTile
         context={context}
         className="col-span-4"

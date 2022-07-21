@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
 // rollup.config.js
 /**
  * @type {import('rollup').RollupOptions}

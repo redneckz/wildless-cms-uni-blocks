@@ -24,8 +24,12 @@ export interface TariffsTableColumn {
  * @title Список
  */
 export interface TariffsTableList {
+  /** @hidden */
   version?: BlockItemVersion;
-  /** @title Маркеры */
+  /**
+   * @title Маркеры
+   * @hidden
+   */
   isDotted?: boolean;
   /** @title Элементы списка */
   items?: string[];
