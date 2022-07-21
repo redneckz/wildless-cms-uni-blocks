@@ -3,12 +3,12 @@ import { projectSettings } from '../../ProjectSettings';
 import type { IconProps } from './IconProps';
 
 export const Icon = JSX<IconProps>(
-  ({ className, name, alt = `Icon ${name}`, title = alt, asSVG, ...imgProps }) => {
+  ({ className = '', name, alt = `Icon ${name}`, title = alt, asSVG, ...imgProps }) => {
     const href = `${projectSettings.CDN || ''}icons/${name}.svg`;
 
     if (asSVG) {
       return (
-        <svg className={className} {...imgProps} aria-hidden="true">
+        <svg className={`flex-none ${className}`} {...imgProps} aria-hidden="true">
           {title ? <title>{title}</title> : null}
           {alt ? <desc>{alt}</desc> : null}
           <use href={`${href}#icon`} xlinkHref={`${href}#icon`} />
@@ -18,7 +18,7 @@ export const Icon = JSX<IconProps>(
 
     return (
       <img
-        className={className}
+        className={`flex-none ${className}`}
         src={href}
         alt={alt}
         title={title}
