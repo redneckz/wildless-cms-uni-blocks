@@ -18,25 +18,38 @@
           "type": "Header",
           "style": ["-mx-20", "mb-5", "shadow-[0_8px_32px_0px_#00000014]"],
           "content": {
-            "defaultLocation": "Москва",
-            "topItems": [
-              {
-                "href": "https://rshb.ru/",
-                "text": "Бизнес клиентам",
-                "target": "_blank"
-              },
-              {
-                "href": "https://rshb.ru/",
-                "text": "Частным клиентам",
-                "target": "_blank"
-              }
-            ]
+            "defaultLocation": "Москва"
           }
         }
       ]
     }
   },
   "blocks": [
+    {
+      "type": "Navigation",
+      "style": ["col-span-12"],
+      "content": {
+        "title": "Потребительский кредит наличными",
+        "buttons": [
+          {
+            "href": "/credits",
+            "text": "Оформить"
+          },
+          {
+            "href": "/tariffs",
+            "text": "Тарифы"
+          },
+          {
+            "href": "/harvest",
+            "text": "Урожай"
+          },
+          {
+            "href": "/faq",
+            "text": "Частые вопросы"
+          }
+        ]
+      }
+    },
     {
       "type": "ProductGallery",
       "style": ["col-span-12"],

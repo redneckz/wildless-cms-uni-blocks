@@ -10,6 +10,7 @@ import { Headline } from './Headline/Headline';
 import { LinkDocs } from './LinkDocs/LinkDocs';
 import { MiniGallery } from './MiniGallery/MiniGallery';
 import { MobileAppTile } from './MobileAppTile/MobileAppTile';
+import { Navigation } from './Navigation/Navigation';
 import { PictureText } from './PictureText/PictureText';
 import { Placeholder } from './Placeholder/Placeholder';
 import { ProductBlock } from './ProductBlock/ProductBlock';
@@ -44,4 +45,5 @@ export const Blocks = {
   TariffsTable,
   TextBlock,
   Tile,
+  Navigation,
 };

@@ -1,15 +1,15 @@
 import { JSX } from '@redneckz/uni-jsx';
 import { useLink } from '../../hooks/useLink';
-import { useSitemap } from '../../hooks/useSitemap';
-import { mergeTopItems } from '../../mergeTopItems';
+import { findActiveSubItem } from '../../services/sitemap/findActiveSubItem';
+import { isTopItemActive } from '../../services/sitemap/isTopItemActive';
+import { mergeTopItems } from '../../services/sitemap/mergeTopItems';
+import { useSitemap } from '../../services/sitemap/useSitemap';
 import type { UniBlockProps } from '../../types';
 import { HeaderItem } from '../../ui-kit/HeaderItem/HeaderItem';
 import { Logo } from '../../ui-kit/Logo/Logo';
 import { TopItem } from '../../ui-kit/TopItem/TopItem';
 import type { HeaderContent } from './HeaderContent';
 import { HeaderSecondaryMenu } from './HeaderSecondaryMenu';
-import { isSubItemActive } from './isSubItemActive';
-import { isTopItemActive } from './isTopItemActive';
 
 export interface HeaderProps extends HeaderContent, UniBlockProps {}
 
@@ -21,7 +21,7 @@ export const Header = JSX<HeaderProps>(({ className, defaultLocation, context, t
   const mergedItems = mergeTopItems(sitemap.topItems, topItems);
   const activeTopItem = mergedItems.find(isTopItemActive(router));
   const subItems = activeTopItem?.items;
-  const activeSubItem = subItems?.find(isSubItemActive(router));
+  const activeSubItem = findActiveSubItem(router)(subItems);
 
   const topMenu = mergedItems.map((_, i) => (
     <TopItem
