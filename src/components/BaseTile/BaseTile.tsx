@@ -8,23 +8,7 @@ import { Icon } from '../../ui-kit/Icon/Icon';
 import { Img } from '../../ui-kit/Img';
 import { Title } from '../../ui-kit/Title/Title';
 import { getColSpan } from '../../utils/getColSpan';
-import type { AlignType, BaseTileCommonProps, BaseTileIconButton } from './BaseTileProps';
-
-const alignFlex: Record<AlignType, string> = {
-  left: 'justify-between',
-  center: 'justify-center',
-  right: 'justify-end',
-};
-const alignBlock: Record<AlignType, string> = {
-  left: 'items-start',
-  center: 'items-center',
-  right: 'items-end',
-};
-const alignText: Record<AlignType, string> = {
-  left: 'text-left',
-  center: 'text-center',
-  right: 'text-right',
-};
+import type { BaseTileCommonProps, BaseTileIconButton } from './BaseTileProps';
 
 export interface BaseTileProps extends BaseTileCommonProps, UniBlockProps {}
 
@@ -42,12 +26,11 @@ export const BaseTile = JSX<BaseTileProps>(
     image,
     items,
     version = 'primary',
-    align = 'left',
   }) => {
     const router = context.useRouter();
     const { handlerDecorator } = context;
     return (
-      <div className={`font-sans flex flex-col grow h-full ${alignBlock[align]}`}>
+      <div className={`font-sans flex flex-col grow h-full items-start`}>
         {title && (
           <Title
             size={titleSize || getTitleSizeByClassName(className)}
@@ -56,13 +39,11 @@ export const BaseTile = JSX<BaseTileProps>(
             {title}
           </Title>
         )}
-        <div className={`flex grow w-full ${alignFlex[align]}`}>
-          <div className={`flex flex-col justify-between ${alignBlock[align]}`}>
+        <div className={`flex grow w-full justify-between`}>
+          <div className={`flex flex-col justify-between items-start`}>
             <div>
               {description ? (
-                <div className={`font-normal text-base mt-4 max-w-[600px] ${alignText[align]}`}>
-                  {description}
-                </div>
+                <div className={`font-normal text-base mt-4 max-w-[600px]`}>{description}</div>
               ) : null}
               {children}
               {items?.length ? renderItems(items, version) : null}
@@ -103,15 +84,11 @@ function renderItems(items: string[] = [], version?: BlockVersion) {
   );
 }
 
-function renderButton({ icon, asSVG, ...button }: BaseTileIconButton, i: number) {
+function renderButton({ icon, ...button }: BaseTileIconButton, i: number) {
   if (!button?.text) return;
 
   return icon ? (
-    <Button
-      key={String(i)}
-      appendLeft={<Icon name={icon} asSVG width="24" height="24" />}
-      {...button}
-    />
+    <Button key={String(i)} appendLeft={<Icon name={icon} width="24" height="24" />} {...button} />
   ) : (
     <Button key={String(i)} {...button} />
   );
