@@ -24,6 +24,10 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
       white: 'fill-secondary-light hover:fill-secondary-hover',
       transparent: 'fill-white',
     };
+    const DOP_LINKS_ICON_NAME = {
+      white: 'GridIcon',
+      transparent: 'GridIconWhite',
+    };
 
     return (
       <div className={`flex items-center ${className || ''}`}>
@@ -60,7 +64,12 @@ export const HeaderSecondaryMenu = JSX<HeaderSecondaryMenuProps>(
           className={`${DOP_LINKS_COLORS_SCHEME[bgColorScheme]} min-w-[32px] min-h-[32px]`}
           ariaLabel="Дополнительные ссылки"
         >
-          <Icon name="GridIcon" aria-hidden="true" className="h-full fill-white" asSVG />
+          <Icon
+            name={DOP_LINKS_ICON_NAME[bgColorScheme]}
+            aria-hidden="true"
+            className="h-full"
+            asSVG
+          />
         </HeaderSecondaryMenuButton>
       </div>
     );

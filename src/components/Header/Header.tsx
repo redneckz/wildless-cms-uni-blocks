@@ -15,7 +15,6 @@ export interface HeaderProps extends HeaderContent, UniBlockProps {}
 
 export const Header = JSX<HeaderProps>(
   ({ className, defaultLocation, bgColorScheme = 'white', context, topItems }) => {
-    console.log('------Header----- bgColorScheme ', bgColorScheme);
     const router = context.useRouter();
     const sitemap = useSitemap(context.useAsyncData);
     const { handlerDecorator } = context;
@@ -49,6 +48,10 @@ export const Header = JSX<HeaderProps>(
       white: 'bg-white',
       transparent: 'bg-transparent',
     };
+    const BORDER_COLORS_SCHEME = {
+      white: 'bg-main-divider',
+      transparent: 'bg-main-divider opacity-30',
+    };
 
     return (
       <header className={`pt-5 pb-8 px-20 ${COLORS_SCHEME[bgColorScheme]} ${className || ''}`}>
@@ -63,7 +66,7 @@ export const Header = JSX<HeaderProps>(
               bgColorScheme={bgColorScheme}
             />
           </div>
-          <div className="mt-5 h-[1px] bg-main-divider" />
+          <div className={`mt-5 h-[1px] ${BORDER_COLORS_SCHEME[bgColorScheme]}`} />
           <nav className="mt-5">{subMenu}</nav>
         </div>
       </header>

@@ -19,7 +19,6 @@
           "style": ["-mx-20", "mb-5", "shadow-[0_8px_32px_0px_#00000014]"],
           "content": {
             "defaultLocation": "Москва",
-            "bgColorScheme": "transparent",
             "topItems": [
               {
                 "href": "https://rshb.ru/",

@@ -47,6 +47,7 @@ export enum IconMap {
   'VisaIcon',
   'VKIcon',
   'WalletIcon',
+  'GridIconWhite',
 }
 
 /**
@@ -97,6 +98,7 @@ export enum IconMap {
  *    "Visa",
  *    "Лого «VK»",
  *    "Кошелёк",
+ *    "Сетка белая",
  *  ]
  */
 export type IconName = keyof typeof IconMap;
