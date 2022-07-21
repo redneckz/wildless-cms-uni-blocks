@@ -31345,7 +31345,8 @@ const alignText = {
     right: 'text-right',
 };
 const Headline = JSX(({ bgColor = 'transparent', align = 'left', className, title, description }) => {
-    return (jsxs("section", { className: `p-[50px]  ${bgColor} ${className || ''} `, children: [title && (jsx(Title, { size: "L", className: `text-primary-text mt-0 font-medium ${alignText[align]}`, children: title })), jsx("p", { className: `font-normal text-base mt-4 ${alignText[align]}`, children: description })] }));
+    const textClasses = alignText[align];
+    return (jsxs("section", { className: `p-[50px] ${bgColor} ${className || ''} `, children: [title && (jsx(Title, { size: "L", className: `text-primary-text mt-0 font-medium ${textClasses}`, children: title })), description && (jsx("p", { className: `font-normal text-base mt-4 ${textClasses}`, children: description }))] }));
 });
 
 ;// CONCATENATED MODULE: ./src/components/Headline/Headline.fixture.tsx
