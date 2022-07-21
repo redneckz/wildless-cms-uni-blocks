@@ -10,7 +10,7 @@ export interface StepsBlockProps extends StepsBlockContent, UniBlockProps {}
 export const StepsBlock = JSX<StepsBlockProps>(({ className, title, showLines = true, steps }) => {
   return (
     <section
-      className={`w-[1280px] box-border font-sans text-primary-text bg-white px-20 py-[50px] flex flex-col items-center ${
+      className={`box-border font-sans text-primary-text bg-white px-20 py-[50px] flex flex-col items-center ${
         className || ''
       }`}
     >
