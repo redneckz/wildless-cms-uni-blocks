@@ -37,7 +37,7 @@ const renderColumn = (c: TopMenuItem, index: number, { router, handlerDecorator 
         {text || `Раздел ${index}`}
       </a>
       {items?.map((_, i) => (
-        <ColumnItem key={String(i)} {...useLink({ router, handlerDecorator }, _)} />
+        <ColumnItem key={String(i)} {...useLink({ router, handlerDecorator }, _)} index={i} />
       ))}
     </div>
   );
