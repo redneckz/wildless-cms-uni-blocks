@@ -1,23 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { LinkProps } from '../../model/LinkProps';
-import { BlockVersion } from '../../model/BlockVersion';
-import { SitemapProps } from '../../model/SitemapProps';
 
 export interface TopItemContent extends LinkProps {
   active?: boolean;
 }
-
-// export type BgColorScheme = {
-//   white: {
-//     active:string,
-//     default:string,
-//   },
-//   transparent: {
-//     active:string,
-//     default:string,
-//   },
-// }
-export type BgColorScheme = 'white' | 'transparent';
 
 export interface TopItemProps extends TopItemContent {
   className?: string;
@@ -27,7 +13,9 @@ export interface TopItemProps extends TopItemContent {
   bgColor?: string;
 }
 
-const LINK_STYLE_COLORS_SCHEME = {
+type BgColorScheme = 'white' | 'transparent';
+
+const LINK_STYLE_COLORS_SCHEME: Record<BgColorScheme, { active: string; default: string }> = {
   white: {
     active: 'border-primary-main rounded-md',
     default: 'border-transparent',
