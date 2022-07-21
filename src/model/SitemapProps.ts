@@ -5,6 +5,7 @@ import type { LinkProps } from './LinkProps';
  * @required ["text", "href"]
  */
 export interface TopMenuItem extends LinkProps {
+  /** @title Ссылки */
   items?: LinkProps[];
 }
 
