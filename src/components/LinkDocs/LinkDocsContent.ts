@@ -16,11 +16,11 @@ export interface LinkDocsItem extends LinkProps {
 /**
  * @title Список документов
  */
-export interface LinkDocsContent extends Pick<BaseTileCommonProps, 'align' | 'title'> {
+export interface LinkDocsContent extends Pick<BaseTileCommonProps, 'title' | 'align'> {
+  /** @title Отображение списка */
+  columnsMode?: LinkColumnsMode;
   /** @title Название иконки */
   icon?: IconName;
   /** @title Список */
   documents?: LinkDocsItem[];
-  /** @title Отображение списка */
-  columnsMode?: LinkColumnsMode;
 }

@@ -11,9 +11,31 @@ export const HEADLINE: HeadlineContent = {
 };
 
 export default {
-  default: <Headline context={context} {...HEADLINE} />,
-  'left white': <Headline context={context} {...HEADLINE} align="left" bgColor="bg-white" />,
+  default: (
+    <div className="container grid grid-cols-12">
+      <Headline className="col-span-12" context={context} {...HEADLINE} />
+    </div>
+  ),
+  'left white': (
+    <div className="container grid grid-cols-12">
+      <Headline
+        className="col-span-12"
+        context={context}
+        {...HEADLINE}
+        align="left"
+        bgColor="bg-white"
+      />
+    </div>
+  ),
   'right transparent': (
-    <Headline context={context} {...HEADLINE} align="right" bgColor="transparent" />
+    <div className="container grid grid-cols-12">
+      <Headline
+        className="col-span-12"
+        context={context}
+        {...HEADLINE}
+        align="right"
+        bgColor="transparent"
+      />
+    </div>
   ),
 };

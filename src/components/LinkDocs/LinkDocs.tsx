@@ -49,7 +49,7 @@ export const LinkDocs = JSX<LinkDocsProps>(
                   role="listitem"
                   {...linkProps}
                 >
-                  {icon && <Icon className="mr-2.5" name={icon} width="24px" height="24px" />}
+                  {icon && <Icon className="mr-2.5 h-fit" name={icon} width="24px" height="24px" />}
                   <span className="self-center">
                     {text}
                     <span className="text-secondary-text group-hover:text-primary-main">

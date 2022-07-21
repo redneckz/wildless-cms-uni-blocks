@@ -13,7 +13,10 @@ export interface ButtonAdditionalProps {
 }
 
 export interface ButtonProps extends ButtonAdditionalProps, LinkProps {
-  /** @title Текст */
+  /**
+   * @title Текст
+   * @default Кнопка
+   */
   text?: string;
   version?: ButtonVersion;
 }
@@ -23,6 +26,8 @@ export interface ButtonWithIconProps extends ButtonProps {
   aboveText?: string;
   /** @hidden */
   appendLeft?: any;
-  /** @hidden */
+  /** @title Закругленные углы */
   rounded?: boolean;
+  /** @hidden */
+  asSVG?: boolean;
 }

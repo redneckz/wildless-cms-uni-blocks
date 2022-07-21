@@ -63,9 +63,6 @@ const columns: TariffsTableColumn[] = [
       [
         {
           label: 'Бесплатно',
-          list: {
-            items: ['item 1', 'item 2', 'item 3'],
-          },
         },
       ],
       [
@@ -97,15 +94,7 @@ const columns: TariffsTableColumn[] = [
         },
       ],
       [{ label: 'Нет' }],
-      [
-        { label: 'До 20%' },
-        {
-          list: {
-            isDotted: false,
-            items: ['item 1', 'item 2', 'item 3'],
-          },
-        },
-      ],
+      [{ label: 'До 20%' }],
       [
         {
           label: 'Бесплатно',
@@ -149,7 +138,7 @@ const columns: TariffsTableColumn[] = [
 
 export default {
   default: (
-    <div className="w-[1280px]">
+    <div className="container grid grid-cols-12">
       <TariffsTable
         className="col-span-12"
         title="Другие дебетовые карты Россельхозбанка"
@@ -160,7 +149,7 @@ export default {
     </div>
   ),
   '1 column': (
-    <div className="w-[1280px]">
+    <div className="container grid grid-cols-12">
       <TariffsTable
         className="col-span-12"
         title="Другие дебетовые карты Россельхозбанка"
@@ -171,7 +160,7 @@ export default {
     </div>
   ),
   '2 columns': (
-    <div className="w-[1280px]">
+    <div className="container grid grid-cols-12">
       <TariffsTable
         className="col-span-12"
         title="Другие дебетовые карты Россельхозбанка"
@@ -182,7 +171,7 @@ export default {
     </div>
   ),
   '3 columns': (
-    <div className="w-[1280px]">
+    <div className="container grid grid-cols-12">
       <TariffsTable
         className="col-span-12"
         title="Другие дебетовые карты Россельхозбанка"

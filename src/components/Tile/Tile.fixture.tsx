@@ -25,7 +25,7 @@ const image4: Picture = {
 
 export default {
   credit: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <Tile
         context={context}
         className="col-span-8"
@@ -47,15 +47,18 @@ export default {
     </div>
   ),
   mortgage: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <Tile
         context={context}
         version="secondary"
         className="col-span-4"
         title="Ипотека"
-        description={
-          'Широкий выбор ипотечных программ с государственной поддержкой. Специальные предложения от 12,2 %'
-        }
+        items={[
+          'Качественные фермерские продукты напрямую от производителей',
+          'Самая большая база сельских туров по России',
+          'Площадки для создания комфортной жизни за городом',
+          'Подробная база вакансий для жителей сельской местности',
+        ]}
         buttons={[
           {
             href: 'https://rshb.ru',
@@ -68,7 +71,7 @@ export default {
     </div>
   ),
   'credit-card': (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <Tile
         context={context}
         className="col-span-6"
@@ -87,7 +90,7 @@ export default {
     </div>
   ),
   premium: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <Tile
         context={context}
         className="col-span-6"
@@ -108,7 +111,7 @@ export default {
     </div>
   ),
   ecosystem: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <Tile
         context={context}
         className="col-span-12 pr-28"

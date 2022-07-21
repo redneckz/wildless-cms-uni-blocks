@@ -4,7 +4,7 @@ import { MobileAppTile } from './MobileAppTile';
 
 export default {
   default: (
-    <div className="grid grid-cols-12">
+    <div className="container grid grid-cols-12">
       <MobileAppTile
         context={context}
         className="col-span-4"
@@ -18,6 +18,7 @@ export default {
             text: 'App Store',
             icon: 'AppleIcon',
             href: '#',
+            asSVG: true,
             version: 'secondary',
           },
           {
@@ -25,6 +26,7 @@ export default {
             text: 'Google Play',
             icon: 'PlayMarketIcon',
             href: '#',
+            asSVG: true,
             version: 'secondary',
           },
         ]}

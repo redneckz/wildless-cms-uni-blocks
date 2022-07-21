@@ -1,7 +1,7 @@
 import { readdirSync, statSync } from 'fs';
 import { join } from 'path';
+import { jsBasename } from '../utils/jsBasename';
 import { withoutExt } from '../utils/withoutExt';
-import { jsBasename } from './jsBasename';
 
 interface Options {
   include: RegExp[];

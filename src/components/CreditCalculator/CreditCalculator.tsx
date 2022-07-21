@@ -27,7 +27,7 @@ const STEP_MONEY = 1000;
 const STEP_MONTHS = 1;
 const DEFAULT_PAYMENT_TYPE = 'annuity';
 
-const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
+const borderStyle = 'border-solid border-[3px] border-primary-main rounded-md';
 
 export const CreditCalculator = JSX<CreditCalculatorProps>(
   ({ context, className, directoryName }) => {
@@ -72,12 +72,10 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
     }
 
     return (
-      <section className={`font-sans text-primary-text bg-white p-4 w-[847px] ${className}`}>
-        <div
-          className={`box-border p-[49px] pr-[53px] flex flex-col justify-between ${borderStyle}`}
-        >
+      <section className={`font-sans text-primary-text p-10 bg-white ${className || ''}`}>
+        <div className={`box-border p-[49px] pr-[56px] mx-auto w-max ${borderStyle}`}>
           <div className="flex justify-between ">
-            <div className="grow mr-[42px] w-[465px]">
+            <div className="mr-[42px]">
               <InputRange
                 title="Желаемая сумма кредита, ₽"
                 items={[
@@ -115,7 +113,7 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
                 onChange={setIsInsuranceChecked}
               />
             </div>
-            <div className="basis-[226px] shrink-0 box-border h-fit p-9 bg-primary-main rounded-md text-white">
+            <div className="box-border h-fit p-9 bg-primary-main rounded-md text-white">
               <div className="text-base mb-[18px]">Наше предложение</div>
               <div className="text-sm opacity-60">Ежемесячный платёж</div>
               <div className="text-lg mb-3">

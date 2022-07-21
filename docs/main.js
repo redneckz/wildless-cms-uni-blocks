@@ -5041,6 +5041,29 @@ module.exports = parent;
 
 /***/ }),
 
+/***/ 2089:
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7537);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3645);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "/*! tailwindcss v3.1.4 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }", "",{"version":3,"sources":["webpack://./cosmos.common.css"],"names":[],"mappings":"AAAA,+DAAc,CAAd,iBAAA,sBAAc,CAAd,qBAAc,CAAd,eAAA,eAAc,CAAd,KAAA,6BAAc,CAAd,uMAAc,CAAd,eAAc,CAAd,eAAc,CAAd,aAAc,CAAd,UAAc,CAAd,KAAA,mBAAc,CAAd,QAAc,CAAd,GAAA,oBAAc,CAAd,aAAc,CAAd,QAAc,CAAd,oBAAA,wCAAc,CAAd,gCAAc,CAAd,kBAAA,iBAAc,CAAd,mBAAc,CAAd,EAAA,aAAc,CAAd,uBAAc,CAAd,SAAA,kBAAc,CAAd,kBAAA,mGAAc,CAAd,aAAc,CAAd,MAAA,aAAc,CAAd,QAAA,aAAc,CAAd,aAAc,CAAd,iBAAc,CAAd,uBAAc,CAAd,IAAA,aAAc,CAAd,IAAA,SAAc,CAAd,MAAA,wBAAc,CAAd,oBAAc,CAAd,aAAc,CAAd,sCAAA,aAAc,CAAd,mBAAc,CAAd,cAAc,CAAd,mBAAc,CAAd,mBAAc,CAAd,QAAc,CAAd,SAAc,CAAd,cAAA,mBAAc,CAAd,gDAAA,yBAAc,CAAd,4BAAc,CAAd,qBAAc,CAAd,gBAAA,YAAc,CAAd,iBAAA,eAAc,CAAd,SAAA,uBAAc,CAAd,wDAAA,WAAc,CAAd,cAAA,4BAAc,CAAd,mBAAc,CAAd,4BAAA,uBAAc,CAAd,6BAAA,yBAAc,CAAd,YAAc,CAAd,QAAA,iBAAc,CAAd,mDAAA,QAAc,CAAd,SAAA,QAAc,CAAd,gBAAA,SAAc,CAAd,WAAA,eAAc,CAAd,QAAc,CAAd,SAAc,CAAd,SAAA,eAAc,CAAd,mDAAA,aAAc,CAAd,SAAc,CAAd,yCAAA,aAAc,CAAd,SAAc,CAAd,qBAAA,cAAc,CAAd,UAAA,cAAc,CAAd,+CAAA,aAAc,CAAd,qBAAc,CAAd,UAAA,WAAc,CAAd,cAAc,CAAd,iBAAA,uBAAc,CAAd,uBAAc,CAAd,kBAAc,CAAd,kBAAc,CAAd,aAAc,CAAd,aAAc,CAAd,aAAc,CAAd,cAAc,CAAd,cAAc,CAAd,YAAc,CAAd,YAAc,CAAd,iBAAc,CAAd,qCAAc,CAAd,cAAc,CAAd,mBAAc,CAAd,qBAAc,CAAd,sBAAc,CAAd,uBAAc,CAAd,iBAAc,CAAd,0BAAc,CAAd,2BAAc,CAAd,mCAAc,CAAd,iCAAc,CAAd,0BAAc,CAAd,qBAAc,CAAd,6BAAc,CAAd,oBAAc,CAAd,0BAAc,CAAd,wBAAc,CAAd,yBAAc,CAAd,0BAAc,CAAd,sBAAc,CAAd,uBAAc,CAAd,wBAAc,CAAd,qBAAc,CAAd,mBAAA,uBAAc,CAAd,uBAAc,CAAd,kBAAc,CAAd,kBAAc,CAAd,aAAc,CAAd,aAAc,CAAd,aAAc,CAAd,cAAc,CAAd,cAAc,CAAd,YAAc,CAAd,YAAc,CAAd,iBAAc,CAAd,qCAAc,CAAd,cAAc,CAAd,mBAAc,CAAd,qBAAc,CAAd,sBAAc,CAAd,uBAAc,CAAd,iBAAc,CAAd,0BAAc,CAAd,2BAAc,CAAd,mCAAc,CAAd,iCAAc,CAAd,0BAAc,CAAd,qBAAc,CAAd,6BAAc,CAAd,oBAAc,CAAd,0BAAc,CAAd,wBAAc,CAAd,yBAAc,CAAd,0BAAc,CAAd,sBAAc,CAAd,uBAAc,CAAd,wBAAc,CAAd,qBAAc,CAAd,WAAA,uBAAc,CAAd,uBAAc,CAAd,kBAAc,CAAd,kBAAc,CAAd,aAAc,CAAd,aAAc,CAAd,aAAc,CAAd,cAAc,CAAd,cAAc,CAAd,YAAc,CAAd,YAAc,CAAd,iBAAc,CAAd,qCAAc,CAAd,cAAc,CAAd,mBAAc,CAAd,qBAAc,CAAd,sBAAc,CAAd,uBAAc,CAAd,iBAAc,CAAd,0BAAc,CAAd,2BAAc,CAAd,mCAAc,CAAd,iCAAc,CAAd,0BAAc,CAAd,qBAAc,CAAd,6BAAc,CAAd,oBAAc,CAAd,0BAAc,CAAd,wBAAc,CAAd,yBAAc,CAAd,0BAAc,CAAd,sBAAc,CAAd,uBAAc,CAAd,wBAAc,CAAd,qBAAc","sourcesContent":["@tailwind base;\n"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ 2943:
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
@@ -5134,7 +5157,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "@font-face{font-display:swap;font-fami
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_postcss_loader_dist_cjs_js_fonts_ubuntu_ubuntu_css__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo2]{--color-primary-main:255,204,0;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo3]{--color-primary-main:225,186,30;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo4]{--color-primary-main:233,191,23;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.container{margin-left:auto;margin-right:auto;width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.inset-x-0{left:0;right:0}.top-1{top:.25rem}.right-1{right:.25rem}.top-7{top:1.75rem}.right-7{right:1.75rem}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.top-4{top:1rem}.right-4{right:1rem}.left-0{left:0}.top-1\\/2{top:50%}.left-8{left:2rem}.left-1{left:.25rem}.-bottom-2{bottom:-.5rem}.top-8{top:2rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-3{margin-bottom:.75rem;margin-top:.75rem}.mb-2\\.5{margin-bottom:.625rem}.mb-2{margin-bottom:.5rem}.mb-5{margin-bottom:1.25rem}.mb-4{margin-bottom:1rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-5{margin-top:1.25rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.mb-9{margin-bottom:2.25rem}.mt-4{margin-top:1rem}.mr-6{margin-right:1.5rem}.mb-\\[18px\\]{margin-bottom:18px}.mr-\\[42px\\]{margin-right:42px}.mt-\\[23px\\]{margin-top:23px}.mb-7{margin-bottom:1.75rem}.mt-3{margin-top:.75rem}.mb-3{margin-bottom:.75rem}.mr-3{margin-right:.75rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.mb-\\[26px\\]{margin-bottom:26px}.mt-0{margin-top:0}.mr-2\\.5{margin-right:.625rem}.ml-4{margin-left:1rem}.ml-5{margin-left:1.25rem}.mb-3\\.5{margin-bottom:.875rem}.mb-1{margin-bottom:.25rem}.mt-1\\.5{margin-top:.375rem}.mt-1{margin-top:.25rem}.mb-0\\.5{margin-bottom:.125rem}.mb-0{margin-bottom:0}.ml-3{margin-left:.75rem}.ml-px{margin-left:1px}.mt-0\\.5{margin-top:.125rem}.ml-0\\.5{margin-left:.125rem}.ml-0{margin-left:0}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[24px\\]{height:24px}.h-12{height:3rem}.h-\\[70px\\]{height:70px}.h-\\[63px\\]{height:63px}.h-8{height:2rem}.h-fit{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.h-10{height:2.5rem}.h-\\[38px\\]{height:38px}.h-\\[1px\\]{height:1px}.h-\\[90px\\]{height:90px}.h-\\[48px\\]{height:48px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-\\[8px\\]{height:8px}.h-\\[6px\\]{height:6px}.h-5{height:1.25rem}.h-\\[2px\\]{height:2px}.max-h-0{max-height:0}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[420px\\]{min-height:420px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[300px\\]{min-height:300px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[360px\\]{min-height:360px}.min-h-\\[8px\\]{min-height:8px}.min-h-\\[6px\\]{min-height:6px}.min-h-12{min-height:3rem}.w-\\[24px\\]{width:24px}.w-full{width:100%}.w-\\[70px\\]{width:70px}.w-\\[1280px\\]{width:1280px}.w-\\[84px\\]{width:84px}.w-\\[200px\\]{width:200px}.w-80{width:20rem}.w-\\[63px\\]{width:63px}.w-8{width:2rem}.w-\\[847px\\]{width:847px}.w-\\[465px\\]{width:465px}.w-\\[75px\\]{width:75px}.w-\\[280px\\]{width:280px}.w-\\[235px\\]{width:235px}.w-\\[38px\\]{width:38px}.w-\\[364px\\]{width:364px}.w-\\[260px\\]{width:260px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[48px\\]{width:48px}.w-\\[50px\\]{width:50px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-\\[354px\\]{width:354px}.w-12{width:3rem}.w-4{width:1rem}.w-\\[8px\\]{width:8px}.w-\\[6px\\]{width:6px}.w-\\[36px\\]{width:36px}.w-5{width:1.25rem}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[260px\\]{min-width:260px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[8px\\]{min-width:8px}.min-w-\\[6px\\]{min-width:6px}.min-w-12{min-width:3rem}.max-w-\\[170px\\]{max-width:170px}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[308px\\]{max-width:308px}.max-w-\\[490px\\]{max-width:490px}.max-w-\\[149px\\]{max-width:149px}.flex-1{flex:1 1 0%}.flex-shrink-0,.shrink-0{flex-shrink:0}.flex-grow,.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-\\[226px\\]{flex-basis:226px}.basis-\\[calc\\(50\\%-20px\\)\\]{flex-basis:calc(50% - 20px)}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.list-none{list-style-type:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3\\.5{gap:.875rem}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.gap-32{gap:8rem}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem}.gap-y-\\[26px\\]{row-gap:26px}.gap-x-\\[101px\\]{-moz-column-gap:101px;column-gap:101px}.self-start{align-self:flex-start}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.whitespace-pre-line{white-space:pre-line}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-x-0{border-left-width:0;border-right-width:0}.border-y-0{border-bottom-width:0;border-top-width:0}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-t-0{border-top-width:0}.border-b-0{border-bottom-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-primary-text{--tw-border-opacity:1;border-color:rgba(28,28,28,var(--tw-border-opacity))}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff;--tw-gradient-to:hsla(0,0%,100%,0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.to-transparent{--tw-gradient-to:transparent}.fill-secondary-light{fill:#f5f7f9}.p-\\[50px\\]{padding:50px}.p-0{padding:0}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-4{padding:1rem}.p-\\[49px\\]{padding:49px}.p-9{padding:2.25rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-14{padding:3.5rem}.p-\\[12px\\]{padding:12px}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-\\[9px\\]{padding-bottom:9px;padding-top:9px}.px-0{padding-left:0;padding-right:0}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.px-20{padding-left:5rem;padding-right:5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.py-4{padding-bottom:1rem;padding-top:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-4{padding-right:1rem}.pl-4,.px-4{padding-left:1rem}.pr-32{padding-right:8rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.pr-2\\.5{padding-right:.625rem}.pr-2{padding-right:.5rem}.pb-5{padding-bottom:1.25rem}.pb-2{padding-bottom:.5rem}.pl-\\[50px\\]{padding-left:50px}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-\\[46px\\]{padding-bottom:46px}.pt-6{padding-top:1.5rem}.pt-0{padding-top:0}.pr-\\[53px\\]{padding-right:53px}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pt-10{padding-top:2.5rem}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pb-\\[2px\\]{padding-bottom:2px}.pt-1{padding-top:.25rem}.pl-10{padding-left:2.5rem}.pr-\\[14px\\]{padding-right:14px}.pt-1\\.5{padding-top:.375rem}.pl-1{padding-left:.25rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.align-middle{vertical-align:middle}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-lg{font-size:2.188rem;line-height:3rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title{font-size:2rem;line-height:2.5rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-normal{font-weight:400}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-4{line-height:1rem}.leading-5{line-height:1.25rem}.leading-\\[14px\\]{line-height:14px}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.opacity-60{opacity:.6}.opacity-0{opacity:0}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}input[type=range].slider{-webkit-appearance:none;background:transparent;background-image:linear-gradient(#42ab44,#42ab44);background-repeat:no-repeat;border-radius:5px;height:4px}input[type=range].slider::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}input[type=range].slider::-moz-range-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:12px;width:12px}input[type=range].slider::-ms-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}.first\\:pt-7:first-child{padding-top:1.75rem}.first\\:pl-0:first-child{padding-left:0}.first\\:pt-5:first-child{padding-top:1.25rem}.last\\:mb-0:last-child{margin-bottom:0}.last\\:border-b-0:last-child{border-bottom-width:0}.last\\:pb-7:last-child{padding-bottom:1.75rem}.last\\:pb-5:last-child{padding-bottom:1.25rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.checked\\:border-primary-main:checked{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.checked\\:bg-primary-main:checked{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:fill-primary-main:hover{fill:rgba(var(--color-primary-main),1)}.hover\\:fill-secondary-hover:hover{fill:rgba(var(--color-secondary-hover),1)}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.group:last-child .group-last\\:last\\:pb-0:last-child{padding-bottom:0}.group:hover .group-hover\\:text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.peer:checked~.peer-checked\\:block{display:block}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo2'] {\n  --color-primary-main: 255, 204, 0;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo3'] {\n  --color-primary-main: 225, 186, 30;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo4'] {\n  --color-primary-main: 233, 191, 23;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n\n  input[type='range'].slider {\n    -webkit-appearance: none;\n    height: 4px;\n    background: transparent;\n    border-radius: 5px;\n    background-image: linear-gradient(#42ab44, #42ab44);\n    background-repeat: no-repeat;\n  }\n\n  input[type='range'].slider::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-moz-range-thumb {\n    height: 12px;\n    width: 12px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-ms-thumb {\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n}\n",null],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "[data-theme=pc]{--color-primary-main:66,171,68;--color-primary-hover:36,131,65;--color-primary-active:36,95,52;--color-secondary-hover:216,242,217;--color-secondary-active:197,226,198;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=bc]{--color-primary-main:131,184,62;--color-primary-hover:92,146,29;--color-primary-active:60,94,16;--color-secondary-hover:232,244,217;--color-secondary-active:216,227,202;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo]{--color-primary-main:221,182,61;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo2]{--color-primary-main:255,204,0;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo3]{--color-primary-main:225,186,30;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}[data-theme=eo4]{--color-primary-main:233,191,23;--color-primary-hover:187,151,39;--color-primary-active:126,99,12;--color-secondary-hover:241,236,221;--color-secondary-active:229,222,199;--color-gradient-from:141,189,76;--color-gradient-to:69,172,69}.container{margin-left:auto;margin-right:auto;width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.absolute{position:absolute}.relative{position:relative}.sticky{position:-webkit-sticky;position:sticky}.inset-x-0{left:0;right:0}.top-1{top:.25rem}.right-1{right:.25rem}.top-7{top:1.75rem}.right-7{right:1.75rem}.top-0{top:0}.right-0{right:0}.bottom-0{bottom:0}.top-4{top:1rem}.right-4{right:1rem}.left-0{left:0}.top-1\\/2{top:50%}.left-8{left:2rem}.left-1{left:.25rem}.-bottom-2{bottom:-.5rem}.top-8{top:2rem}.z-10{z-index:10}.col-span-12{grid-column:span 12/span 12}.col-span-8{grid-column:span 8/span 8}.col-span-4{grid-column:span 4/span 4}.col-span-6{grid-column:span 6/span 6}.m-0{margin:0}.mx-auto{margin-left:auto;margin-right:auto}.mx-7{margin-left:1.75rem;margin-right:1.75rem}.-mx-20{margin-left:-5rem;margin-right:-5rem}.my-4{margin-bottom:1rem;margin-top:1rem}.mx-1{margin-left:.25rem;margin-right:.25rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.my-3{margin-bottom:.75rem;margin-top:.75rem}.mb-2\\.5{margin-bottom:.625rem}.mb-2{margin-bottom:.5rem}.mb-5{margin-bottom:1.25rem}.mt-4{margin-top:1rem}.mt-9{margin-top:2.25rem}.mt-auto{margin-top:auto}.ml-7{margin-left:1.75rem}.mt-5{margin-top:1.25rem}.mt-2\\.5{margin-top:.625rem}.mt-2{margin-top:.5rem}.mb-9{margin-bottom:2.25rem}.mb-4{margin-bottom:1rem}.mb-\\[18px\\]{margin-bottom:18px}.mr-6{margin-right:1.5rem}.mr-\\[42px\\]{margin-right:42px}.mt-\\[23px\\]{margin-top:23px}.mb-7{margin-bottom:1.75rem}.mt-3{margin-top:.75rem}.mb-3{margin-bottom:.75rem}.mr-3{margin-right:.75rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mb-8{margin-bottom:2rem}.mb-6{margin-bottom:1.5rem}.mt-6{margin-top:1.5rem}.mr-8{margin-right:2rem}.ml-auto{margin-left:auto}.mr-5{margin-right:1.25rem}.mr-7{margin-right:1.75rem}.mt-0{margin-top:0}.mb-\\[26px\\]{margin-bottom:26px}.mr-2\\.5{margin-right:.625rem}.ml-4{margin-left:1rem}.ml-5{margin-left:1.25rem}.mb-3\\.5{margin-bottom:.875rem}.mb-1{margin-bottom:.25rem}.mt-1\\.5{margin-top:.375rem}.mt-1{margin-top:.25rem}.mb-0\\.5{margin-bottom:.125rem}.mb-0{margin-bottom:0}.ml-3{margin-left:.75rem}.ml-px{margin-left:1px}.mt-0\\.5{margin-top:.125rem}.ml-0\\.5{margin-left:.125rem}.ml-0{margin-left:0}.ml-2\\.5{margin-left:.625rem}.box-border{box-sizing:border-box}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-\\[24px\\]{height:24px}.h-12{height:3rem}.h-\\[70px\\]{height:70px}.h-\\[63px\\]{height:63px}.h-8{height:2rem}.h-fit{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.h-10{height:2.5rem}.h-\\[38px\\]{height:38px}.h-\\[1px\\]{height:1px}.h-\\[90px\\]{height:90px}.h-\\[48px\\]{height:48px}.h-4{height:1rem}.h-\\[50px\\]{height:50px}.h-\\[3px\\]{height:3px}.h-0\\.5{height:.125rem}.h-0{height:0}.h-\\[100px\\]{height:100px}.h-\\[6px\\]{height:6px}.h-5{height:1.25rem}.h-\\[2px\\]{height:2px}.max-h-0{max-height:0}.max-h-12{max-height:3rem}.min-h-\\[70px\\]{min-height:70px}.min-h-\\[63px\\]{min-height:63px}.min-h-\\[32px\\]{min-height:32px}.min-h-\\[90px\\]{min-height:90px}.min-h-\\[420px\\]{min-height:420px}.min-h-\\[50px\\]{min-height:50px}.min-h-\\[100px\\]{min-height:100px}.min-h-\\[300px\\]{min-height:300px}.min-h-\\[320px\\]{min-height:320px}.min-h-\\[360px\\]{min-height:360px}.min-h-\\[6px\\]{min-height:6px}.min-h-12{min-height:3rem}.w-\\[24px\\]{width:24px}.w-full{width:100%}.w-\\[70px\\]{width:70px}.w-\\[84px\\]{width:84px}.w-80{width:20rem}.w-\\[63px\\]{width:63px}.w-\\[200px\\]{width:200px}.w-8{width:2rem}.w-max{width:-webkit-max-content;width:-moz-max-content;width:max-content}.w-\\[75px\\]{width:75px}.w-\\[280px\\]{width:280px}.w-\\[38px\\]{width:38px}.w-\\[364px\\]{width:364px}.w-\\[260px\\]{width:260px}.w-\\[125px\\]{width:125px}.w-\\[90px\\]{width:90px}.w-\\[48px\\]{width:48px}.w-\\[50px\\]{width:50px}.w-\\[1280px\\]{width:1280px}.w-\\[100px\\]{width:100px}.w-\\[276px\\]{width:276px}.w-12{width:3rem}.w-\\[354px\\]{width:354px}.w-4{width:1rem}.w-\\[6px\\]{width:6px}.w-\\[36px\\]{width:36px}.w-5{width:1.25rem}.w-10{width:2.5rem}.min-w-\\[70px\\]{min-width:70px}.min-w-\\[63px\\]{min-width:63px}.min-w-\\[364px\\]{min-width:364px}.min-w-\\[260px\\]{min-width:260px}.min-w-\\[32px\\]{min-width:32px}.min-w-\\[90px\\]{min-width:90px}.min-w-\\[600px\\]{min-width:600px}.min-w-\\[50px\\]{min-width:50px}.min-w-\\[100px\\]{min-width:100px}.min-w-\\[6px\\]{min-width:6px}.min-w-12{min-width:3rem}.max-w-\\[170px\\]{max-width:170px}.max-w-\\[600px\\]{max-width:600px}.max-w-\\[47rem\\]{max-width:47rem}.max-w-\\[580px\\]{max-width:580px}.max-w-\\[292px\\]{max-width:292px}.max-w-\\[308px\\]{max-width:308px}.max-w-\\[490px\\]{max-width:490px}.max-w-\\[149px\\]{max-width:149px}.flex-none{flex:none}.flex-1{flex:1 1 0%}.flex-shrink-0,.shrink-0{flex-shrink:0}.flex-grow,.grow{flex-grow:1}.grow-0{flex-grow:0}.basis-\\[calc\\(50\\%-20px\\)\\]{flex-basis:calc(50% - 20px)}.basis-full{flex-basis:100%}.basis-0{flex-basis:0px}.-translate-x-full{--tw-translate-x:-100%}.-translate-x-full,.rotate-180{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-180{--tw-rotate:180deg}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@-webkit-keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}@keyframes progress{0%{transform:translateX(-100%)}to{transform:translateX(0)}}.animate-slide{-webkit-animation:progress linear;animation:progress linear}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize{resize:both}.list-none{list-style-type:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.items-stretch{align-items:stretch}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3\\.5{gap:.875rem}.gap-3{gap:.75rem}.gap-5{gap:1.25rem}.gap-4{gap:1rem}.gap-1{gap:.25rem}.gap-\\[54px\\]{gap:54px}.gap-11{gap:2.75rem}.gap-\\[14px\\]{gap:14px}.gap-2{gap:.5rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-5{-moz-column-gap:1.25rem;column-gap:1.25rem}.gap-y-\\[26px\\]{row-gap:26px}.gap-x-\\[101px\\]{-moz-column-gap:101px;column-gap:101px}.self-start{align-self:flex-start}.self-center{align-self:center}.overflow-hidden{overflow:hidden}.whitespace-pre-line{white-space:pre-line}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-3xl{border-radius:1.5rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.rounded-b-md{border-bottom-left-radius:.375rem;border-bottom-right-radius:.375rem}.rounded-tl-lg{border-top-left-radius:.5rem}.rounded-bl-3xl{border-bottom-left-radius:1.5rem}.rounded-br-3xl{border-bottom-right-radius:1.5rem}.border{border-width:1px}.border-0{border-width:0}.border-\\[3px\\]{border-width:3px}.border-2{border-width:2px}.border-y-0{border-bottom-width:0;border-top-width:0}.border-x-0{border-left-width:0;border-right-width:0}.border-y{border-top-width:1px}.border-b,.border-y{border-bottom-width:1px}.border-b-0{border-bottom-width:0}.border-t-0{border-top-width:0}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.border-solid{border-style:solid}.border-none{border-style:none}.border-primary-text{--tw-border-opacity:1;border-color:rgba(28,28,28,var(--tw-border-opacity))}.border-main-divider{--tw-border-opacity:1;border-color:rgba(235,237,240,var(--tw-border-opacity))}.border-main-stroke{--tw-border-opacity:1;border-color:rgba(201,202,204,var(--tw-border-opacity))}.border-primary-main{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.border-main{--tw-border-opacity:1;border-color:rgba(240,244,240,var(--tw-border-opacity))}.border-black{--tw-border-opacity:1;border-color:rgb(0 0 0/var(--tw-border-opacity))}.border-transparent{border-color:transparent}.border-y-main-divider{--tw-border-opacity:1;border-bottom-color:rgba(235,237,240,var(--tw-border-opacity));border-top-color:rgba(235,237,240,var(--tw-border-opacity))}.bg-primary-main{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-main{--tw-bg-opacity:1;background-color:rgba(240,244,240,var(--tw-bg-opacity))}.bg-secondary-text{--tw-bg-opacity:1;background-color:rgba(125,126,127,var(--tw-bg-opacity))}.bg-secondary-light{--tw-bg-opacity:1;background-color:rgba(245,247,249,var(--tw-bg-opacity))}.bg-main-divider{--tw-bg-opacity:1;background-color:rgba(235,237,240,var(--tw-bg-opacity))}.bg-inherit{background-color:inherit}.bg-white\\/30{background-color:hsla(0,0%,100%,.3)}.bg-primary-main\\/10{background-color:rgba(var(--color-primary-main),.1)}.bg-secondary-dark{--tw-bg-opacity:1;background-color:rgba(226,228,229,var(--tw-bg-opacity))}.bg-opacity-to-white{background-image:linear-gradient(270deg,#fff 34.89%,hsla(0,0%,100%,0) 92.52%);}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-main-gradient-start{--tw-gradient-from:rgba(var(--color-gradient-from),1);--tw-gradient-to:rgba(var(--color-gradient-from),0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-white{--tw-gradient-from:#fff;--tw-gradient-to:hsla(0,0%,100%,0);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-main-gradient-end{--tw-gradient-to:rgba(var(--color-gradient-to),1)}.to-transparent{--tw-gradient-to:transparent}.fill-secondary-light{fill:#f5f7f9}.p-\\[50px\\]{padding:50px}.p-0{padding:0}.p-12{padding:3rem}.p-10{padding:2.5rem}.p-20{padding:5rem}.p-\\[49px\\]{padding:49px}.p-9{padding:2.25rem}.p-4{padding:1rem}.p-7{padding:1.75rem}.p-2{padding:.5rem}.p-14{padding:3.5rem}.p-\\[12px\\]{padding:12px}.p-\\[10px\\]{padding:10px}.p-\\[26px\\]{padding:26px}.px-9{padding-left:2.25rem;padding-right:2.25rem}.py-\\[9px\\]{padding-bottom:9px;padding-top:9px}.px-0{padding-left:0;padding-right:0}.py-5{padding-bottom:1.25rem;padding-top:1.25rem}.py-\\[50px\\]{padding-bottom:50px;padding-top:50px}.py-\\[11px\\]{padding-bottom:11px;padding-top:11px}.px-7{padding-left:1.75rem;padding-right:1.75rem}.py-7{padding-bottom:1.75rem;padding-top:1.75rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-10{padding-bottom:2.5rem;padding-top:2.5rem}.px-20{padding-left:5rem;padding-right:5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\\.5{padding-bottom:.125rem;padding-top:.125rem}.py-0{padding-bottom:0;padding-top:0}.px-\\[88px\\]{padding-left:88px;padding-right:88px}.py-4{padding-bottom:1rem;padding-top:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-\\[13px\\]{padding-bottom:13px;padding-top:13px}.px-4{padding-right:1rem}.pl-4,.px-4{padding-left:1rem}.pl-12{padding-left:3rem}.pr-\\[6\\%\\]{padding-right:6%}.pr-2\\.5{padding-right:.625rem}.pr-2{padding-right:.5rem}.pb-5{padding-bottom:1.25rem}.pb-2{padding-bottom:.5rem}.pl-\\[50px\\]{padding-left:50px}.pr-\\[50px\\]{padding-right:50px}.pt-7{padding-top:1.75rem}.pb-\\[46px\\]{padding-bottom:46px}.pt-6{padding-top:1.5rem}.pt-0{padding-top:0}.pr-\\[56px\\]{padding-right:56px}.pl-11{padding-left:2.75rem}.pt-4{padding-top:1rem}.pb-8{padding-bottom:2rem}.pt-\\[3px\\]{padding-top:3px}.pt-\\[30px\\]{padding-top:30px}.pb-7{padding-bottom:1.75rem}.pt-5{padding-top:1.25rem}.pb-\\[5px\\]{padding-bottom:5px}.pt-\\[5px\\]{padding-top:5px}.pt-10{padding-top:2.5rem}.pb-\\[50px\\]{padding-bottom:50px}.pr-\\[7\\.5rem\\]{padding-right:7.5rem}.pl-2\\.5{padding-left:.625rem}.pt-2\\.5{padding-top:.625rem}.pb-1\\.5{padding-bottom:.375rem}.pr-\\[6\\.25rem\\]{padding-right:6.25rem}.pl-2{padding-left:.5rem}.pt-2{padding-top:.5rem}.pb-1{padding-bottom:.25rem}.pb-\\[2px\\]{padding-bottom:2px}.pt-1{padding-top:.25rem}.pl-10{padding-left:2.5rem}.pr-\\[14px\\]{padding-right:14px}.pt-1\\.5{padding-top:.375rem}.pl-1{padding-left:.25rem}.pr-4{padding-right:1rem}.pt-0\\.5{padding-top:.125rem}.pr-3{padding-right:.75rem}.pr-28{padding-right:7rem}.pr-9{padding-right:2.25rem}.pr-\\[4\\.75rem\\]{padding-right:4.75rem}.pr-\\[9\\.4rem\\]{padding-right:9.4rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.align-middle{vertical-align:middle}.font-sans{font-family:Ubuntu,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.375rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1.125rem}.text-lg{font-size:2.188rem;line-height:3rem}.text-xxs{font-size:.625rem;line-height:.625rem}.text-title-sm{font-size:1.75rem;line-height:2.5rem}.text-title-lg{font-size:2.5rem;line-height:3rem}.text-title{font-size:2rem;line-height:2.5rem}.text-title-xs{font-size:1.5rem;line-height:1.875rem}.font-normal{font-weight:400}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-4{line-height:1rem}.leading-5{line-height:1.25rem}.leading-\\[14px\\]{line-height:14px}.text-secondary-text{--tw-text-opacity:1;color:rgba(125,126,127,var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.text-white\\/80{color:hsla(0,0%,100%,.8)}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.opacity-80{opacity:.8}.opacity-60{opacity:.6}.opacity-0{opacity:0}.shadow-\\[0_8px_32px_0px_\\#00000014\\]{--tw-shadow:0 8px 32px 0px #00000014;--tw-shadow-colored:0 8px 32px 0px var(--tw-shadow-color)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\],.shadow-\\[0_8px_32px_0px_\\#00000014\\]{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\\[0_4px_25px_rgba\\(0\\2c 0\\2c 0\\2c 0\\.07\\)\\]{--tw-shadow:0 4px 25px rgba(0,0,0,.07);--tw-shadow-colored:0 4px 25px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-300{transition-duration:.3s}.duration-1000{transition-duration:1s}.rotate-180{transform:rotate(180deg)}.-translate-x-full{transform:translateX(-100%)}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}.horizontal-list{-webkit-overflow-scrolling:touch;display:flex;overflow-x:scroll;overscroll-behavior:contain;scroll-snap-type:x mandatory;touch-action:pan-x}.horizontal-list-item{flex-shrink:0;scroll-snap-align:start;scroll-snap-stop:always;width:100%}input[type=range].slider{-webkit-appearance:none;background:transparent;background-image:linear-gradient(#42ab44,#42ab44);background-repeat:no-repeat;border-radius:5px;height:4px}input[type=range].slider::-webkit-slider-thumb{-webkit-appearance:none;background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}input[type=range].slider::-moz-range-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:12px;width:12px}input[type=range].slider::-ms-thumb{background:#fff;border:3px solid #42ab44;border-radius:50%;box-shadow:none;cursor:pointer;height:18px;width:18px}.first\\:pt-7:first-child{padding-top:1.75rem}.first\\:pl-0:first-child{padding-left:0}.first\\:pt-5:first-child{padding-top:1.25rem}.last\\:mb-0:last-child{margin-bottom:0}.last\\:border-b-0:last-child{border-bottom-width:0}.last\\:pb-7:last-child{padding-bottom:1.75rem}.last\\:pb-5:last-child{padding-bottom:1.25rem}.visited\\:text-secondary-text:visited{color:rgba(125,126,127,var(--tw-text-opacity))}.checked\\:border-primary-main:checked{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.checked\\:bg-primary-main:checked{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-main),var(--tw-bg-opacity))}.hover\\:border-primary-main:hover{--tw-border-opacity:1;border-color:rgba(var(--color-primary-main),var(--tw-border-opacity))}.hover\\:bg-primary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-hover),var(--tw-bg-opacity))}.hover\\:bg-secondary-hover:hover{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-hover),var(--tw-bg-opacity))}.hover\\:fill-primary-main:hover{fill:rgba(var(--color-primary-main),1)}.hover\\:fill-secondary-hover:hover{fill:rgba(var(--color-secondary-hover),1)}.hover\\:text-primary-main:hover{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.hover\\:text-primary-text:hover{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.active\\:bg-primary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-primary-active),var(--tw-bg-opacity))}.active\\:bg-secondary-active:active{--tw-bg-opacity:1;background-color:rgba(var(--color-secondary-active),var(--tw-bg-opacity))}.group:last-child .group-last\\:last\\:pb-0:last-child{padding-bottom:0}.group:hover .group-hover\\:text-primary-main{--tw-text-opacity:1;color:rgba(var(--color-primary-main),var(--tw-text-opacity))}.group:hover .group-hover\\:text-primary-text{--tw-text-opacity:1;color:rgba(28,28,28,var(--tw-text-opacity))}.peer:checked~.peer-checked\\:block{display:block}@media (min-width:1280px) and (max-width:1535px){.xl\\:w-\\[220px\\]{width:220px}.xl\\:gap-8{gap:2rem}.xl\\:gap-5{gap:1.25rem}}", "",{"version":3,"sources":["webpack://./src/common.css","<no source>"],"names":[],"mappings":"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","sourcesContent":["@import '../fonts/ubuntu/ubuntu.css';\n\n/* Private clients | Green */\n[data-theme='pc'] {\n  --color-primary-main: 66, 171, 68;\n  --color-primary-hover: 36, 131, 65;\n  --color-primary-active: 36, 95, 52;\n  --color-secondary-hover: 216, 242, 217;\n  --color-secondary-active: 197, 226, 198;\n  --color-gradient-from: 141, 189, 76;\n  --color-gradient-to: 69, 172, 69;\n}\n/* Business clients | Light-Green */\n[data-theme='bc'] {\n  --color-primary-main: 131, 184, 62;\n  --color-primary-hover: 92, 146, 29;\n  --color-primary-active: 60, 94, 16;\n  --color-secondary-hover: 232, 244, 217;\n  --color-secondary-active: 216, 227, 202;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme bc */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme bc */\n}\n/* Ecosystem own | Yellow */\n[data-theme='eo'] {\n  --color-primary-main: 221, 182, 61;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo2'] {\n  --color-primary-main: 255, 204, 0;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo3'] {\n  --color-primary-main: 225, 186, 30;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n[data-theme='eo4'] {\n  --color-primary-main: 233, 191, 23;\n  --color-primary-hover: 187, 151, 39;\n  --color-primary-active: 126, 99, 12;\n  --color-secondary-hover: 241, 236, 221;\n  --color-secondary-active: 229, 222, 199;\n  --color-gradient-from: 141, 189, 76; /* TODO: change color to theme eo */\n  --color-gradient-to: 69, 172, 69; /* TODO: change color to theme eo */\n}\n\n@tailwind components;\n@tailwind utilities;\n\n@layer utilities {\n  .rotate-180 {\n    transform: rotate(180deg);\n  }\n\n  .-translate-x-full {\n    transform: translateX(-100%);\n  }\n\n  /* Chrome, Safari and Opera */\n  .no-scrollbar::-webkit-scrollbar {\n    display: none;\n  }\n\n  .no-scrollbar {\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n  }\n\n  .horizontal-list {\n    display: flex;\n    overflow-x: scroll;\n    overscroll-behavior: contain;\n    -webkit-overflow-scrolling: touch;\n    touch-action: pan-x;\n    scroll-snap-type: x mandatory;\n  }\n\n  .horizontal-list-item {\n    flex-shrink: 0;\n    scroll-snap-align: start;\n    scroll-snap-stop: always;\n    width: 100%;\n  }\n\n  input[type='range'].slider {\n    -webkit-appearance: none;\n    height: 4px;\n    background: transparent;\n    border-radius: 5px;\n    background-image: linear-gradient(#42ab44, #42ab44);\n    background-repeat: no-repeat;\n  }\n\n  input[type='range'].slider::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-moz-range-thumb {\n    height: 12px;\n    width: 12px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n\n  input[type='range'].slider::-ms-thumb {\n    height: 18px;\n    width: 18px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: none;\n    border: 3px solid #42ab44;\n  }\n}\n",null],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31050,7 +31073,7 @@ if (false) { var webpackRendererConnect; }
 
 /***/ }),
 
-/***/ 9883:
+/***/ 7395:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -31082,9 +31105,9 @@ var insertStyleElement_default = /*#__PURE__*/__webpack_require__.n(insertStyleE
 // EXTERNAL MODULE: ./node_modules/style-loader/dist/runtime/styleTagTransform.js
 var styleTagTransform = __webpack_require__(4589);
 var styleTagTransform_default = /*#__PURE__*/__webpack_require__.n(styleTagTransform);
-// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/common.css
-var common = __webpack_require__(3762);
-;// CONCATENATED MODULE: ./src/common.css
+// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./cosmos.common.css
+var cjs_js_cosmos_common = __webpack_require__(2089);
+;// CONCATENATED MODULE: ./cosmos.common.css
 
       
       
@@ -31106,7 +31129,38 @@ options.setAttributes = (setAttributesWithoutAttributes_default());
 options.domAPI = (styleDomAPI_default());
 options.insertStyleElement = (insertStyleElement_default());
 
-var update = injectStylesIntoStyleTag_default()(common/* default */.Z, options);
+var update = injectStylesIntoStyleTag_default()(cjs_js_cosmos_common/* default */.Z, options);
+
+
+
+
+       /* harmony default export */ const cosmos_common = (cjs_js_cosmos_common/* default */.Z && cjs_js_cosmos_common/* default.locals */.Z.locals ? cjs_js_cosmos_common/* default.locals */.Z.locals : undefined);
+
+// EXTERNAL MODULE: ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/common.css
+var common = __webpack_require__(3762);
+;// CONCATENATED MODULE: ./src/common.css
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var common_options = {};
+
+common_options.styleTagTransform = (styleTagTransform_default());
+common_options.setAttributes = (setAttributesWithoutAttributes_default());
+
+      common_options.insert = insertBySelector_default().bind(null, "head");
+    
+common_options.domAPI = (styleDomAPI_default());
+common_options.insertStyleElement = (insertStyleElement_default());
+
+var common_update = injectStylesIntoStyleTag_default()(common/* default */.Z, common_options);
 
 
 
@@ -31153,10 +31207,10 @@ const JSX = Component => {
 
 
 
-// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
-var jsx_runtime = __webpack_require__(5893);
 // EXTERNAL MODULE: ./node_modules/react/index.js
 var react = __webpack_require__(7294);
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(5893);
 ;// CONCATENATED MODULE: ./src/utils/getGeolocation.ts
 const getGeolocation = async () => new Promise((resolve) => navigator.geolocation.getCurrentPosition(({ coords }) => resolve(coords)));
 
@@ -31196,8 +31250,7 @@ function DaDataAPI(baseURL = '') {
 
 
 
-const { jsx: setup_fixture_jsx, jsxs: setup_fixture_jsxs } = jsx_runtime;
-setup(setup_fixture_jsx, setup_fixture_jsxs);
+setup(jsx_runtime.jsx, jsx_runtime.jsxs);
 const TEST_ORIGIN = 'http://localhost:5001';
 const DaData = DaDataAPI('https://10.80.4.9');
 const context = {
@@ -31263,98 +31316,53 @@ const mobileContext = {
     }),
 };
 
-;// CONCATENATED MODULE: ./src/utils/url.ts
-const MOBILE_URL_PATH = '/mobile';
-const isURL = (href) => href?.includes('//');
-const isHrefActive = (href, router, cmp = (href, baseHref) => href === baseHref) => {
-    return cmp(withoutQuery(href), withoutMobilePath(withoutQuery(isURL(href) ? router.href : router.pathname)));
-};
-const withoutQuery = (href) => (href || '').replace(/\/?\?.*/, '');
-const withoutMobilePath = (href) => (href || '').replace(MOBILE_URL_PATH, '');
-const getOrigin = (href) => {
-    if (!isURL(href)) {
-        return undefined;
-    }
-    const url = href;
-    const protoSeparator = '//';
-    const endOfProto = url.indexOf(protoSeparator);
-    const endOfOrigin = url.indexOf('/', endOfProto + protoSeparator.length);
-    return endOfOrigin !== -1 ? url.substring(0, endOfOrigin) : url;
-};
-const adjustHref = (href, router) => {
-    if (!href) {
-        return href;
-    }
-    const relativeHref = toRelativeHref(href, router);
-    const isMobilePage = router?.pathname.startsWith(MOBILE_URL_PATH);
-    return isMobilePage && !isURL(relativeHref) ? `${MOBILE_URL_PATH}${relativeHref}` : relativeHref;
-};
-const toRelativeHref = (href, router) => {
-    if (!href) {
-        return href;
-    }
-    const origin = getOrigin(router?.href);
-    return origin ? href.replace(origin, '') || '/' : href;
-};
+;// CONCATENATED MODULE: ./src/ui-kit/Title/TitleProps.ts
+var SizeTableClass;
+(function (SizeTableClass) {
+    SizeTableClass["XL"] = "text-title-lg";
+    SizeTableClass["L"] = "text-title";
+    SizeTableClass["M"] = "text-title-sm";
+    SizeTableClass["S"] = "text-title-xs";
+})(SizeTableClass || (SizeTableClass = {}));
 
-;// CONCATENATED MODULE: ./src/hooks/useLink.ts
-
-const defaultHandlerDecorator = (handler) => handler;
-function useLink({ router, handlerDecorator = defaultHandlerDecorator, }, link) {
-    const href = adjustHref(link.href, router);
-    return {
-        ...link,
-        href,
-        ariaLabel: link.text,
-        onClick: handlerDecorator((ev) => {
-            const isLocalHref = href && !isURL(href);
-            const isLocalTarget = !link.target || link.target === '_self';
-            if (isLocalHref && isLocalTarget) {
-                ev.preventDefault();
-                router.push(href);
-            }
-        }, link),
-    };
-}
-
-;// CONCATENATED MODULE: ./src/ui-kit/BlockItem/BlockItem.tsx
+;// CONCATENATED MODULE: ./src/ui-kit/Title/Title.tsx
 
 
-const listStyleMap = {
-    primary: 'bg-primary-main w-[8px] h-[8px] min-w-[8px] min-h-[8px] mt-2 rounded-full',
-    secondary: 'bg-secondary-text w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
+
+const Title = JSX(({ size = 'L', className, children, ...rest }) => {
+    const Tag = size === 'XL' ? 'h1' : 'h2';
+    return (jsx(Tag, { className: getClasses(SizeTableClass[size], className), ...rest, children: children }));
+});
+const getClasses = (...classes) => classes.filter(Boolean).join(' ');
+
+;// CONCATENATED MODULE: ./src/components/Headline/Headline.tsx
+
+
+
+const alignText = {
+    left: 'text-left',
+    center: 'text-center',
+    right: 'text-right',
 };
-const textStyleMap = {
-    primary: 'text-primary-text',
-    secondary: 'text-secondary-text',
-};
-const BlockItem = JSX(({ className, isDotted = true, text, children, version = 'primary' }) => {
-    return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [isDotted && jsx("div", { className: `inline-block mr-3 ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mr-3 ${textStyleMap[version]}`, children: text || children })] }));
+const Headline = JSX(({ bgColor = 'transparent', align = 'left', className, title, description }) => {
+    const textClasses = alignText[align];
+    return (jsxs("section", { className: `p-[50px] ${bgColor} ${className || ''} `, children: [title && (jsx(Title, { size: "L", className: `text-primary-text mt-0 font-medium ${textClasses}`, children: title })), description && (jsx("p", { className: `font-normal text-base mt-4 ${textClasses}`, children: description }))] }));
 });
 
-;// CONCATENATED MODULE: ./src/ui-kit/Button/Button.tsx
+;// CONCATENATED MODULE: ./src/components/Headline/Headline.fixture.tsx
 
 
-const buttonStyleMap = {
-    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
-    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
+
+const HEADLINE = {
+    title: 'Своя кредитная карта',
+    description: 'Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.',
+    align: 'center',
+    bgColor: 'transparent',
 };
-const buttonDisabledStyleMap = {
-    primary: 'bg-secondary-dark text-secondary-text',
-    secondary: 'bg-secondary-light text-secondary-text',
-};
-const styleButton = 'inline-block text-center font-sans select-none';
-const Button = JSX(({ className, text, aboveText, appendLeft, href, target, onClick, children, disabled, rounded, version = 'none', ariaLabel, ...rest }) => {
-    const buttonInner = children ?? (jsx(ButtonInner, { text: text, aboveText: aboveText, appendLeft: appendLeft, rounded: rounded }));
-    if (disabled) {
-        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabIndex: "-1", className: `${styleButton} ${buttonDisabledStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, children: buttonInner }));
-    }
-    return (jsx("a", { className: `${styleButton} cursor-pointer no-underline ${buttonStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, role: !href ? 'button' : 'link', ...rest, children: buttonInner }));
-});
-const ButtonInner = JSX(({ text, aboveText, appendLeft, rounded }) => {
-    const withoutText = !text && !aboveText && Boolean(appendLeft);
-    const buttonInnerClasses = `flex items-center justify-center ${withoutText ? 'h-12 w-12 min-h-12 min-w-12' : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`} ${rounded ? 'rounded-full' : ''}`;
-    return (jsxs("div", { className: buttonInnerClasses, children: [appendLeft ? appendLeft : null, !withoutText ? (jsxs("div", { children: [jsx("div", { className: "text-xxs text-left", children: aboveText }), jsx("div", { className: "text-sm font-medium text-left", children: text })] })) : null] }));
+/* harmony default export */ const Headline_fixture = ({
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: "col-span-12", context: context, ...HEADLINE }) })),
+    'left white': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: "col-span-12", context: context, ...HEADLINE, align: "left", bgColor: "bg-white" }) })),
+    'right transparent': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Headline, { className: "col-span-12", context: context, ...HEADLINE, align: "right", bgColor: "transparent" }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/ProjectSettings.ts
@@ -31393,119 +31401,12 @@ const projectSettings = new (class {
 
 
 
-const Icon = JSX(({ className, name, alt = `Icon ${name}`, title = alt, asSVG, ...imgProps }) => {
+const Icon = JSX(({ className = '', name, alt = `Icon ${name}`, title = alt, asSVG, ...imgProps }) => {
     const href = `${projectSettings.CDN || ''}icons/${name}.svg`;
     if (asSVG) {
         return (jsxs("svg", { className: className, ...imgProps, "aria-hidden": "true", children: [title ? jsx("title", { children: title }) : null, alt ? jsx("desc", { children: alt }) : null, jsx("use", { href: `${href}#icon`, xlinkHref: `${href}#icon` })] }));
     }
     return (jsx("img", { className: className, src: href, alt: alt, title: title, ...imgProps, "aria-hidden": "true" }));
-});
-
-;// CONCATENATED MODULE: ./src/ui-kit/Img.tsx
-
-
-const Img = JSX(({ className, image }) => (jsxs("picture", { className: `${className || ''}`, children: [image.sources?.length
-            ? image.sources.map(({ src, format }, index) => (jsx("source", { srcSet: src, type: formatToMimeType(format) }, `${index}_${src}`)))
-            : null, jsx("img", { src: image.src, alt: image.alt || image.title, title: image.title, ...image?.size })] })));
-function formatToMimeType(format) {
-    return format ? `image/${String(format)}` : undefined;
-}
-
-;// CONCATENATED MODULE: ./src/ui-kit/Title/TitleProps.ts
-var SizeTableClass;
-(function (SizeTableClass) {
-    SizeTableClass["XL"] = "text-title-lg";
-    SizeTableClass["L"] = "text-title";
-    SizeTableClass["M"] = "text-title-sm";
-    SizeTableClass["S"] = "text-title-xs";
-})(SizeTableClass || (SizeTableClass = {}));
-
-;// CONCATENATED MODULE: ./src/ui-kit/Title/Title.tsx
-
-
-
-const Title = JSX(({ size = 'L', className, children, ...rest }) => {
-    const Tag = size === 'XL' ? 'h1' : 'h2';
-    return (jsx(Tag, { className: getClasses(SizeTableClass[size], className), ...rest, children: children }));
-});
-const getClasses = (...classes) => classes.filter(Boolean).join(' ');
-
-;// CONCATENATED MODULE: ./src/utils/getColSpan.ts
-const getColSpan = (className) => {
-    const colSpanPrefix = 'col-span-';
-    const colSpanStr = className.split(/\s+/).find((_) => _.startsWith(colSpanPrefix));
-    return colSpanStr ? parseInt(colSpanStr.substring(colSpanPrefix.length), 10) : 12;
-};
-
-;// CONCATENATED MODULE: ./src/components/BaseTile/BaseTile.tsx
-
-
-
-
-
-
-
-
-
-const alignBlock = {
-    left: 'items-start',
-    center: 'items-center',
-    right: 'items-end',
-};
-const alignText = {
-    left: 'text-left',
-    center: 'text-center',
-    right: 'text-right',
-};
-const TITLE_CLASSES = 'font-medium m-0 mb-4 whitespace-pre-wrap max-w-[600px]';
-const BaseTile = JSX(({ className, context, title, titleSize, description, children, buttons, image, items, version = 'primary', align = 'left', }) => {
-    const router = context.useRouter();
-    const { handlerDecorator } = context;
-    return (jsxs("div", { className: `font-sans flex flex-col grow h-full ${alignBlock[align]}`, children: [title && (jsx(Title, { size: titleSize || getTitleSizeByClassName(className), className: `${TITLE_CLASSES} ${version === 'primary' ? 'text-primary-text' : ''}`, children: title })), jsxs("div", { className: "flex grow justify-between w-full", children: [jsxs("div", { className: `flex flex-col justify-between ${alignBlock[align]}`, children: [jsxs("div", { children: [description ? (jsx("div", { className: `font-normal text-base max-w-[600px] ${alignText[align]}`, children: description })) : null, children, items?.length ? renderItems(items, version) : null] }), buttons?.length ? (jsx("div", { className: "flex mt-9 gap-3", children: buttons.map((button, index) => renderButton(useLink({ router, handlerDecorator }, button), index)) })) : null] }), image?.src && jsx(Img, { className: "mt-auto ml-7", image: image })] })] }));
-});
-function getTitleSizeByClassName(className = '') {
-    const colSpan = getColSpan(className);
-    if (colSpan <= 4) {
-        return 'S';
-    }
-    else if (colSpan <= 8) {
-        return 'M';
-    }
-    else {
-        return 'L';
-    }
-}
-function renderItems(items = [], version) {
-    return (jsx("section", { className: "max-w-[600px] mt-5", role: "list", children: items.map((_, i) => (jsx(BlockItem, { className: i ? 'mt-2.5' : '', text: _, version: version }, String(i)))) }));
-}
-function renderButton({ icon, ...button }, i) {
-    if (!button?.text)
-        return;
-    return icon ? (jsx(Button, { appendLeft: jsx(Icon, { name: icon, width: "24", height: "24" }), ...button }, String(i))) : (jsx(Button, { ...button }, String(i)));
-}
-
-;// CONCATENATED MODULE: ./src/components/Headline/Headline.tsx
-
-
-
-const Headline = JSX(({ bgColor = 'bg-white', className, ...props }) => {
-    return (jsx("section", { className: `p-10 ${bgColor} ${className || ''} `, children: jsx(BaseTile, { ...props }) }));
-});
-
-;// CONCATENATED MODULE: ./src/components/Headline/Headline.fixture.tsx
-
-
-
-const HEADLINE = {
-    title: 'Своя кредитная карта',
-    description: 'Карта работает в 180 странах мира. Бесплатное снятие наличных в любых банкоматах.',
-    align: 'center',
-    bgColor: 'transparent',
-};
-/* harmony default export */ const Headline_fixture = ({
-    default: jsx(Headline, { context: context, ...HEADLINE }),
-    'left white': jsx(Headline, { context: context, ...HEADLINE, align: "left", bgColor: "bg-white" }),
-    'right transparent': (jsx(Headline, { context: context, ...HEADLINE, align: "right", bgColor: "transparent" })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/LinkDocs/LinkDocs.tsx
@@ -31531,7 +31432,7 @@ const LinkDocs = JSX(({ className, title, align, documents, icon, columnsMode = 
     return (jsxs("section", { className: `font-sans p-[50px] bg-white ${className}`, children: [title && (jsx(Title, { className: `font-medium mt-0 ${titleMarginsStyleMap[columnsMode]} ${titleAlignStyleMap[align ?? 'center']}`, children: title })), jsx("div", { className: `flex ${containerClasses}`, role: "list", children: documents?.length
                     ? documents.map(({ text, fileSize, ...linkProps }, i) => (jsxs("a", { className: `group flex text-sm align-middle h-fit
                    text-primary-text no-underline hover:text-primary-main
-                   ${columnsMode === 'double' ? 'basis-[calc(50%-20px)]' : ''}`, role: "listitem", ...linkProps, children: [icon && jsx(Icon, { className: "mr-2.5", name: icon, width: "24px", height: "24px" }), jsxs("span", { className: "self-center", children: [text, jsx("span", { className: "text-secondary-text group-hover:text-primary-main", children: linkProps?.href && formatSuffix(getExtFromHref(linkProps.href), fileSize) })] })] }, String(i))))
+                   ${columnsMode === 'double' ? 'basis-[calc(50%-20px)]' : ''}`, role: "listitem", ...linkProps, children: [icon && jsx(Icon, { className: "mr-2.5 h-fit", name: icon, width: "24px", height: "24px" }), jsxs("span", { className: "self-center", children: [text, jsx("span", { className: "text-secondary-text group-hover:text-primary-main", children: linkProps?.href && formatSuffix(getExtFromHref(linkProps.href), fileSize) })] })] }, String(i))))
                     : null })] }));
 });
 const getExtFromHref = (href) => {
@@ -31591,11 +31492,27 @@ const LINK_DOCS_NO_ICON = {
     icon: undefined,
 };
 /* harmony default export */ const LinkDocs_fixture = ({
-    'two columns (default)': jsx(LinkDocs, { context: context, ...LINK_DOCS }),
-    'one column': jsx(LinkDocs, { context: context, ...LINK_DOCS_ONE_COLUMN }),
-    'another icon': jsx(LinkDocs, { context: context, ...LINK_DOCS_ANOTHER_ICON }),
-    'no icon and title': jsx(LinkDocs, { context: context, ...LINK_DOCS_NO_ICON }),
+    'two columns (default)': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS }) })),
+    'one column': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS_ONE_COLUMN }) })),
+    'another icon': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS_ANOTHER_ICON }) })),
+    'no icon and title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(LinkDocs, { className: "col-span-12", context: context, ...LINK_DOCS_NO_ICON }) })),
 });
+
+;// CONCATENATED MODULE: ./src/ui-kit/Img.tsx
+
+
+const Img = JSX(({ className, image: { size, ...image } }) => {
+    const style = {
+        width: size?.width ? `${size?.width}px` : '100%',
+        height: size?.height ? `${size?.height}px` : '100%',
+    };
+    return (jsxs("picture", { className: `flex-none ${className || ''}`, children: [image.sources?.length
+                ? image.sources.map(({ src, format }, index) => (jsx("source", { srcSet: src, type: formatToMimeType(format) }, `${index}_${src}`)))
+                : null, jsx("img", { src: image.src, alt: image.alt || image.title, title: image.title, style: style, ...size })] }));
+});
+function formatToMimeType(format) {
+    return format ? `image/${String(format)}` : undefined;
+}
 
 ;// CONCATENATED MODULE: ./src/components/PictureText/PictureText.tsx
 
@@ -31640,7 +31557,7 @@ const PICTURE_TEXT = {
     image: PictureText_fixture_image,
 };
 /* harmony default export */ const PictureText_fixture = ({
-    default: jsx(PictureText, { context: context, ...PICTURE_TEXT }),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(PictureText, { className: "col-span-12", context: context, ...PICTURE_TEXT }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/TextBlock/TextBlock.tsx
@@ -31694,7 +31611,7 @@ const TEXT_BLOCK = {
     title: 'Все карты Россельхозбанка работают',
     description: "Если не планируете поездку за границу, продолжайте пользоваться картой Своя. Для поездок за границу можно заказать карту 'Кредитная карта Своя Union Pay' на сайте и в приложении Россельхозбанка",
 };
-/* harmony default export */ const TextBlock_fixture = (jsxs("div", { className: "font-sans overflow-hidden", children: [jsxs("div", { children: [jsx("p", { children: "Private clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "pc", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "big", image: TextBlock_fixture_image }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "none" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Business clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "bc", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Ecosystem own" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "eo", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] })] }));
+/* harmony default export */ const TextBlock_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsxs("div", { className: "font-sans overflow-hidden col-span-12", children: [jsxs("div", { children: [jsx("p", { children: "Private clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "pc", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "big", image: TextBlock_fixture_image }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "none" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Business clients" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "bc", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] }), jsxs("div", { children: [jsx("p", { children: "Ecosystem own" }), jsxs("div", { className: "flex flex-col gap-6", "data-theme": "eo", children: [jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "primary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary", iconVersion: "small" }), jsx(TextBlock, { context: context, ...TEXT_BLOCK, blockVersion: "secondary-light", iconVersion: "small" })] })] })] }) }));
 
 ;// CONCATENATED MODULE: ./src/components/Accordion/AccordionBlocks.tsx
 
@@ -31707,7 +31624,6 @@ const AccordionBlocks = {
     TextBlock: TextBlock,
     PictureText: PictureText,
 };
-/* harmony default export */ const Accordion_AccordionBlocks = (AccordionBlocks);
 
 ;// CONCATENATED MODULE: ./src/components/Accordion/AccordionItem.tsx
 
@@ -31733,10 +31649,10 @@ const AccordionItem = JSX(({ label, blocks, context }) => {
 });
 const renderBlock = (block, i, context) => {
     const type = block?.accordionBlockType;
-    if (!type || !(type in Accordion_AccordionBlocks)) {
+    if (!type || !(type in AccordionBlocks)) {
         return null;
     }
-    const AccordionBlock = Accordion_AccordionBlocks[type];
+    const AccordionBlock = AccordionBlocks[type];
     return (jsx("div", { className: "mb-5 last:mb-0", children: jsx(AccordionBlock, { context: context, ...block }) }, `block_${i}`));
 };
 const getContentBlock = ({ target }) => target.tagName === 'BUTTON' ? target.nextSibling : target.parentNode.nextSibling;
@@ -31796,7 +31712,7 @@ const propsTextBlock = {
         },
     ],
 };
-/* harmony default export */ const Accordion_fixture = (jsx(Accordion, { ...propsTextBlock }));
+/* harmony default export */ const Accordion_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Accordion, { className: "col-span-12", ...propsTextBlock }) }));
 
 ;// CONCATENATED MODULE: ./src/components/BenefitsBlock/BenefitsBlock.tsx
 
@@ -31814,28 +31730,28 @@ const renderStep = (benefit, i) => {
 
 
 
-/* harmony default export */ const BenefitsBlock_fixture = (jsx(BenefitsBlock, { context: context, title: "\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430", benefits: [
-        {
-            label: 'Без комиссии',
-            description: 'Комиссия за выдачу кредита не взимается. Допускается полное или частичное погашение кредита',
-            icon: 'ClockIcon',
-        },
-        {
-            label: 'Оформление по паспорту',
-            description: 'Обеспечение не требуется. Кредит можно получить на любые цели',
-            icon: 'SignDocsIcon',
-        },
-        {
-            label: 'Без залога и поручительства',
-            description: 'Единовременное перечисление суммы кредита в полном объёме на текущий счет в Банке',
-            icon: 'ComfortableCompIcon',
-        },
-        {
-            label: 'Деньги за 3 дня',
-            description: 'Рассмотрение заявки с момента предоставления полного комплекта документов',
-            icon: 'ActualBalanceIcon',
-        },
-    ] }));
+/* harmony default export */ const BenefitsBlock_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(BenefitsBlock, { context: context, className: "col-span-12", title: "\u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430", benefits: [
+            {
+                label: 'Без комиссии',
+                description: 'Комиссия за выдачу кредита не взимается. Допускается полное или частичное погашение кредита',
+                icon: 'ClockIcon',
+            },
+            {
+                label: 'Оформление по паспорту',
+                description: 'Обеспечение не требуется. Кредит можно получить на любые цели',
+                icon: 'SignDocsIcon',
+            },
+            {
+                label: 'Без залога и поручительства',
+                description: 'Единовременное перечисление суммы кредита в полном объёме на текущий счет в Банке',
+                icon: 'ComfortableCompIcon',
+            },
+            {
+                label: 'Деньги за 3 дня',
+                description: 'Рассмотрение заявки с момента предоставления полного комплекта документов',
+                icon: 'ActualBalanceIcon',
+            },
+        ] }) }));
 
 ;// CONCATENATED MODULE: ./src/hooks/useComparisonTableScroll.ts
 const useComparisonTableScroll = ({ colData, colsLengthForScroll, activeCardIndex, setActiveCardIndex, }) => {
@@ -31846,6 +31762,85 @@ const useComparisonTableScroll = ({ colData, colsLengthForScroll, activeCardInde
     const showPrevButton = isScrollAvailable && activeCardIndex > 0;
     return { nextClick, prevClick, isScrollAvailable, showNextButton, showPrevButton };
 };
+
+;// CONCATENATED MODULE: ./src/utils/url.ts
+const MOBILE_URL_PATH = '/mobile';
+const isURL = (href) => href?.includes('//');
+const isHrefActive = (href, router, cmp = (href, baseHref) => href === baseHref) => {
+    return cmp(withoutQuery(href), withoutMobilePath(withoutQuery(isURL(href) ? router.href : router.pathname)));
+};
+const withoutQuery = (href) => (href || '').replace(/\/?\?.*/, '');
+const withoutMobilePath = (href) => (href || '').replace(MOBILE_URL_PATH, '');
+const getOrigin = (href) => {
+    if (!isURL(href)) {
+        return undefined;
+    }
+    const url = href;
+    const protoSeparator = '//';
+    const endOfProto = url.indexOf(protoSeparator);
+    const endOfOrigin = url.indexOf('/', endOfProto + protoSeparator.length);
+    return endOfOrigin !== -1 ? url.substring(0, endOfOrigin) : url;
+};
+const adjustHref = (href, router) => {
+    if (!href) {
+        return href;
+    }
+    const relativeHref = toRelativeHref(href, router);
+    const isMobilePage = router?.pathname.startsWith(MOBILE_URL_PATH);
+    return isMobilePage && !isURL(relativeHref) ? `${MOBILE_URL_PATH}${relativeHref}` : relativeHref;
+};
+const toRelativeHref = (href, router) => {
+    if (!href) {
+        return href;
+    }
+    const origin = getOrigin(router?.href);
+    return origin ? href.replace(origin, '') || '/' : href;
+};
+
+;// CONCATENATED MODULE: ./src/hooks/useLink.ts
+
+const defaultHandlerDecorator = (handler) => handler;
+function useLink({ router, handlerDecorator = defaultHandlerDecorator, }, link) {
+    const href = adjustHref(link.href, router);
+    return {
+        ...link,
+        href,
+        ariaLabel: link.text,
+        onClick: handlerDecorator((ev) => {
+            const isLocalHref = href && !isURL(href);
+            const isLocalTarget = !link.target || link.target === '_self';
+            if (isLocalHref && isLocalTarget) {
+                ev.preventDefault();
+                router.push(href);
+            }
+        }, link),
+    };
+}
+
+;// CONCATENATED MODULE: ./src/ui-kit/Button/Button.tsx
+
+
+const buttonStyleMap = {
+    primary: 'text-white bg-primary-main hover:bg-primary-hover active:bg-primary-active',
+    secondary: 'text-primary-main bg-secondary-light hover:bg-secondary-hover active:bg-secondary-active',
+};
+const buttonDisabledStyleMap = {
+    primary: 'bg-secondary-dark text-secondary-text',
+    secondary: 'bg-secondary-light text-secondary-text',
+};
+const styleButton = 'inline-block text-center font-sans select-none';
+const Button = JSX(({ className, text, aboveText, appendLeft, href, target, onClick, children, disabled, rounded, version = 'none', ariaLabel, ...rest }) => {
+    const buttonInner = children ?? (jsx(ButtonInner, { text: text, aboveText: aboveText, appendLeft: appendLeft, rounded: rounded }));
+    if (disabled) {
+        return (jsx("div", { role: "button", "aria-disabled": "true", "aria-label": ariaLabel, tabIndex: "-1", className: `${styleButton} ${buttonDisabledStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, children: buttonInner }));
+    }
+    return (jsx("a", { className: `${styleButton} cursor-pointer no-underline ${buttonStyleMap[version] || ''} ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`, href: href, target: target, onClick: onClick, "aria-label": ariaLabel, role: !href ? 'button' : 'link', ...rest, children: buttonInner }));
+});
+const ButtonInner = JSX(({ text, aboveText, appendLeft, rounded }) => {
+    const withoutText = !text && !aboveText && Boolean(appendLeft);
+    const buttonInnerClasses = `flex items-center justify-center ${withoutText ? 'h-12 w-12 min-h-12 min-w-12' : `px-8 gap-2 ${aboveText ? 'py-2' : 'py-[13px]'}`} ${rounded ? 'rounded-full' : ''}`;
+    return (jsxs("div", { className: buttonInnerClasses, children: [appendLeft ? appendLeft : null, !withoutText ? (jsxs("div", { children: [jsx("div", { className: "text-xxs text-left", children: aboveText }), jsx("div", { className: "text-sm font-medium text-left", children: text })] })) : null] }));
+});
 
 ;// CONCATENATED MODULE: ./src/ui-kit/SVG.tsx
 
@@ -32152,11 +32147,11 @@ const columns2 = [
     },
 ];
 /* harmony default export */ const ComparisonTable_fixture = ({
-    'with images': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) }) })),
-    'with images and hidden rows': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", visibleRowLength: 3, context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) }) })),
-    'with images and colored first column': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", visibleRowLength: 3, isColoredFirstColumn: true, context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) }) })),
-    'with icons': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: Array(2).fill(columns2).flat() }) }) })),
-    'with icons and two cols': (jsx("div", { className: "w-[1280px]", children: jsx("div", { className: "grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: columns2.slice(0, 2) }) }) })),
+    'with images': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) })),
+    'with images and hidden rows': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", visibleRowLength: 3, context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) })),
+    'with images and colored first column': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", visibleRowLength: 3, isColoredFirstColumn: true, context: context, rowHeaders: rowHeaders, columns: Array(2).fill(columns).flat() }) })),
+    'with icons': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: Array(2).fill(columns2).flat() }) })),
+    'with icons and two cols': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ComparisonTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0432\u043A\u043B\u0430\u0434\u044B \u0438 \u0441\u0431\u0435\u0440\u0435\u0436\u0435\u043D\u0438\u044F", context: context, rowHeaders: rowHeaders2, columns: columns2.slice(0, 2) }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/hooks/useCreditCalculatorData.ts
@@ -32184,8 +32179,7 @@ const CHECK_PATHS = [
         fill: 'white',
     },
 ];
-const Checkbox = JSX(({ text, checked, onChange, className }) => (jsx("div", { className: className, children: jsxs("label", { className: "flex items-center cursor-pointer relative", children: [jsx("input", { className: `peer appearance-none w-5 h-5 border-solid border rounded border-black
-                    checked:bg-primary-main checked:border-primary-main m-0`, type: "checkbox", onChange: (e) => {
+const Checkbox = JSX(({ text, checked, onChange, className }) => (jsx("div", { className: className, children: jsxs("label", { className: "flex items-center cursor-pointer relative", children: [jsx("input", { className: `peer appearance-none w-5 h-5 border-solid border ${checked ? 'border-black' : 'border-main-stroke'} rounded checked:bg-primary-main checked:border-primary-main m-0`, type: "checkbox", onChange: (e) => {
                     onChange(e.target.checked);
                 }, checked: checked }), jsx(SVG, { paths: CHECK_PATHS, className: "hidden absolute left-1 ml-px peer-checked:block", width: "11", height: "9", fill: "white", viewBox: "0 0 11 9" }), text ? (jsx("span", { className: "font-sans ml-3 text-sm leading-5 cursor-pointer", children: text })) : null] }) })));
 
@@ -32215,7 +32209,7 @@ const InputRange = JSX(({ className, title, items = [], min = 1, max = 100, step
             onChange(max);
     };
     return (jsxs("div", { className: className, children: [jsxs("label", { className: "block relative", children: [title ? (jsx("span", { className: "absolute text-xs text-secondary-text top-1 mt-0.5 pl-4 ml-0.5", children: title })) : null, jsx("input", { className: `m-0 font-sans text-sm w-full h-12 border border-solid border-main-stroke rounded-md
-                        outline-none p-0 pl-4 m-0 box-border text-primary-text ${title ? 'pt-4' : ''}`, value: addSpacesBetweenNumbers(value), onChange: (e) => handleChange(e.target.value), onBlur: handleBlur }), jsx("div", { className: "absolute inset-x-0 mt-0.5 top-8 px-4", children: jsx("input", { className: "box-border w-full m-0 cursor-pointer slider", type: "range", min: min, max: max, step: step, value: value, onChange: (e) => handleChange(e.target.value), style: inputStyle }) })] }), jsx("div", { className: "flex justify-between my-3", children: items.map((item, i) => (jsx("span", { className: "text-xs leading-[14px] text-secondary-text pl-4", children: item }, String(i)))) })] }));
+                        outline-none p-0 pl-4 m-0 box-border text-primary-text ${title ? 'pt-4' : ''}`, value: addSpacesBetweenNumbers(value), onChange: (e) => handleChange(e.target.value), onBlur: handleBlur }), jsx("div", { className: "absolute inset-x-0 top-8 px-4", children: jsx("input", { className: "box-border w-full m-0 cursor-pointer slider", type: "range", min: min, max: max, step: step, value: value, onChange: (e) => handleChange(e.target.value), style: inputStyle }) })] }), jsx("div", { className: "flex justify-between my-3", children: items.map((item, i) => (jsx("span", { className: "text-xs leading-[14px] text-secondary-text pl-4", children: item }, String(i)))) })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/utils/clamp.ts
@@ -32297,7 +32291,7 @@ const getMonthlyPayment = (params) => {
 const STEP_MONEY = 1000;
 const STEP_MONTHS = 1;
 const DEFAULT_PAYMENT_TYPE = 'annuity';
-const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
+const borderStyle = 'border-solid border-[3px] border-primary-main rounded-md';
 const CreditCalculator = JSX(({ context, className, directoryName }) => {
     const [moneyValue, setMoneyValue] = context.useState(undefined);
     const [monthsValue, setMonthsValue] = context.useState(undefined);
@@ -32327,13 +32321,72 @@ const CreditCalculator = JSX(({ context, className, directoryName }) => {
     function handleButtonClick(value) {
         setMonthsValue(clamp(value * MONTHS_IN_YEAR, minMonths, maxMonths));
     }
-    return (jsx("section", { className: `font-sans text-primary-text bg-white p-4 w-[847px] ${className}`, children: jsxs("div", { className: `box-border p-[49px] pr-[53px] flex flex-col justify-between ${borderStyle}`, children: [jsxs("div", { className: "flex justify-between ", children: [jsxs("div", { className: "grow mr-[42px] w-[465px]", children: [jsx(InputRange, { title: "\u0416\u0435\u043B\u0430\u0435\u043C\u0430\u044F \u0441\u0443\u043C\u043C\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u20BD", items: [
+    return (jsx("section", { className: `font-sans text-primary-text p-10 bg-white ${className || ''}`, children: jsxs("div", { className: `box-border p-[49px] pr-[56px] mx-auto w-max ${borderStyle}`, children: [jsxs("div", { className: "flex justify-between ", children: [jsxs("div", { className: "mr-[42px]", children: [jsx(InputRange, { title: "\u0416\u0435\u043B\u0430\u0435\u043C\u0430\u044F \u0441\u0443\u043C\u043C\u0430 \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u20BD", items: [
                                         `От ${addSpacesBetweenNumbers(minSum)} рублей`,
                                         `До ${addSpacesBetweenNumbers(maxSum)} рублей`,
-                                    ], min: minSum, max: maxSum, step: STEP_MONEY, value: moneyValue || defaultSum, onChange: setMoneyValue }), jsx(InputRange, { className: "mt-[23px]", title: "\u0421\u0440\u043E\u043A \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u043C\u0435\u0441\u044F\u0446\u0435\u0432", items: ['Или выберите из предложенных вариантов ниже'], min: minMonths, max: maxMonths, step: STEP_MONTHS, value: monthsValue || defaultMonths, onChange: setMonthsValue }), jsx("div", { className: "flex mb-7", children: creditTermYears.map((number, i) => CreditCalculator_renderButton(number, i, handleButtonClick)) }), jsx(Checkbox, { text: "\u041F\u043E\u043B\u0443\u0447\u0430\u044E \u043F\u0435\u043D\u0441\u0438\u044E \u043D\u0430 \u043A\u0430\u0440\u0442\u0443 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", checked: isAnnuityChecked, onChange: setIsAnnuityChecked }), jsx(Checkbox, { className: "mt-3 mb-7", text: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u044F \u0437\u0430\u0449\u0438\u0442\u0430", checked: isInsuranceChecked, onChange: setIsInsuranceChecked })] }), jsxs("div", { className: "basis-[226px] shrink-0 box-border h-fit p-9 bg-primary-main rounded-md text-white", children: [jsx("div", { className: "text-base mb-[18px]", children: "\u041D\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx("div", { className: "text-sm opacity-60", children: "\u0415\u0436\u0435\u043C\u0435\u0441\u044F\u0447\u043D\u044B\u0439 \u043F\u043B\u0430\u0442\u0451\u0436" }), jsxs("div", { className: "text-lg mb-3", children: [addSpacesBetweenNumbers(Math.round(montlyPayment)), " \u20BD"] }), jsx("div", { className: "text-sm opacity-60", children: "\u0421\u0442\u0430\u0432\u043A\u0430" }), jsxs("div", { className: "text-lg", children: [rate, " %"] })] })] }), jsxs("div", { className: "flex items-center", children: [jsx(Button, { className: "mr-3", text: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443", version: "primary", href: "#" }), jsx("div", { className: "w-80 text-xxs leading-4 text-secondary-text", "aria-label": "\u0421\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u0437\u0430\u044F\u0432\u043A\u0443, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0424\u0417 \u00AB\u041E \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\u00BB" })] })] }) }));
+                                    ], min: minSum, max: maxSum, step: STEP_MONEY, value: moneyValue || defaultSum, onChange: setMoneyValue }), jsx(InputRange, { className: "mt-[23px]", title: "\u0421\u0440\u043E\u043A \u043A\u0440\u0435\u0434\u0438\u0442\u0430, \u043C\u0435\u0441\u044F\u0446\u0435\u0432", items: ['Или выберите из предложенных вариантов ниже'], min: minMonths, max: maxMonths, step: STEP_MONTHS, value: monthsValue || defaultMonths, onChange: setMonthsValue }), jsx("div", { className: "flex mb-7", children: creditTermYears.map((number, i) => renderButton(number, i, handleButtonClick)) }), jsx(Checkbox, { text: "\u041F\u043E\u043B\u0443\u0447\u0430\u044E \u043F\u0435\u043D\u0441\u0438\u044E \u043D\u0430 \u043A\u0430\u0440\u0442\u0443 \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", checked: isAnnuityChecked, onChange: setIsAnnuityChecked }), jsx(Checkbox, { className: "mt-3 mb-7", text: "\u041A\u043E\u043C\u043F\u043B\u0435\u043A\u0441\u043D\u0430\u044F \u0441\u0442\u0440\u0430\u0445\u043E\u0432\u0430\u044F \u0437\u0430\u0449\u0438\u0442\u0430", checked: isInsuranceChecked, onChange: setIsInsuranceChecked })] }), jsxs("div", { className: "box-border h-fit p-9 bg-primary-main rounded-md text-white", children: [jsx("div", { className: "text-base mb-[18px]", children: "\u041D\u0430\u0448\u0435 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u0435" }), jsx("div", { className: "text-sm opacity-60", children: "\u0415\u0436\u0435\u043C\u0435\u0441\u044F\u0447\u043D\u044B\u0439 \u043F\u043B\u0430\u0442\u0451\u0436" }), jsxs("div", { className: "text-lg mb-3", children: [addSpacesBetweenNumbers(Math.round(montlyPayment)), " \u20BD"] }), jsx("div", { className: "text-sm opacity-60", children: "\u0421\u0442\u0430\u0432\u043A\u0430" }), jsxs("div", { className: "text-lg", children: [rate, " %"] })] })] }), jsxs("div", { className: "flex items-center", children: [jsx(Button, { className: "mr-3", text: "\u041E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u044F\u0432\u043A\u0443", version: "primary", href: "#" }), jsx("div", { className: "w-80 text-xxs leading-4 text-secondary-text", "aria-label": "\u0421\u043E\u0433\u043B\u0430\u0448\u0435\u043D\u0438\u0435 \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445", children: "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u044F \u0437\u0430\u044F\u0432\u043A\u0443, \u0432\u044B \u0441\u043E\u0433\u043B\u0430\u0448\u0430\u0435\u0442\u0435\u0441\u044C \u043D\u0430 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0443 \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445 \u0441\u043E\u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E \u0442\u0440\u0435\u0431\u043E\u0432\u0430\u043D\u0438\u044F\u043C \u0424\u0417 \u00AB\u041E \u043F\u0435\u0440\u0441\u043E\u043D\u0430\u043B\u044C\u043D\u044B\u0445 \u0434\u0430\u043D\u043D\u044B\u0445\u00BB" })] })] }) }));
 });
-function CreditCalculator_renderButton(number, i, handleClick) {
+function renderButton(number, i, handleClick) {
     return (jsx("button", { className: "bg-secondary-light rounded-3xl h-10 w-[75px] box-border mr-2 flex items-center justify-center cursor-pointer border-none", onClick: () => handleClick(number), children: jsxs("span", { className: "font-semibold text-sm", children: [number, " ", number === 1 ? 'год' : number > 4 ? 'лет' : 'года'] }) }, String(i)));
+}
+
+;// CONCATENATED MODULE: ./src/utils/getColSpan.ts
+const getColSpan = (className) => {
+    const colSpanPrefix = 'col-span-';
+    const colSpanStr = className.split(/\s+/).find((_) => _.startsWith(colSpanPrefix));
+    return colSpanStr ? parseInt(colSpanStr.substring(colSpanPrefix.length), 10) : 12;
+};
+
+;// CONCATENATED MODULE: ./src/ui-kit/BlockItem/BlockItem.tsx
+
+
+const listStyleMap = {
+    primary: 'bg-secondary-text w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
+    secondary: 'bg-white w-[6px] h-[6px] min-w-[6px] min-h-[6px] mt-2.5 rounded-full',
+};
+const textStyleMap = {
+    primary: 'text-secondary-text',
+    secondary: '',
+};
+const BlockItem = JSX(({ className, isDotted = true, text, children, version = 'primary' }) => {
+    return (jsxs("div", { className: `inline-block flex ${className || ''}`, role: "listitem", children: [isDotted && jsx("div", { className: `inline-block mr-3 ${listStyleMap[version]}` }), jsx("span", { className: `text-base font-normal font-sans mr-3 ${textStyleMap[version]}`, children: text || children })] }));
+});
+
+;// CONCATENATED MODULE: ./src/components/BaseTile/BaseTile.tsx
+
+
+
+
+
+
+
+
+
+const TITLE_CLASSES = 'font-medium m-0 whitespace-pre-wrap max-w-[600px]';
+const BaseTile = JSX(({ className, context, title, titleSize, description, children, buttons, image, items, version = 'primary', }) => {
+    const router = context.useRouter();
+    const { handlerDecorator } = context;
+    return (jsxs("div", { className: `font-sans flex flex-col grow h-full items-start`, children: [title && (jsx(Title, { size: titleSize || getTitleSizeByClassName(className), className: `${TITLE_CLASSES} ${version === 'primary' ? 'text-primary-text' : ''}`, children: title })), jsxs("div", { className: `flex grow w-full justify-between`, children: [jsxs("div", { className: `flex flex-col justify-between items-start`, children: [jsxs("div", { children: [description ? (jsx("div", { className: `font-normal text-base mt-4 max-w-[600px]`, children: description })) : null, children, items?.length ? renderItems(items, version) : null] }), buttons?.length ? (jsx("div", { className: "flex mt-9 gap-3", children: buttons.map((button, index) => BaseTile_renderButton(useLink({ router, handlerDecorator }, button), index)) })) : null] }), image?.src && jsx(Img, { className: "mt-auto ml-7", image: image })] })] }));
+});
+function getTitleSizeByClassName(className = '') {
+    const colSpan = getColSpan(className);
+    if (colSpan <= 4) {
+        return 'S';
+    }
+    else if (colSpan <= 8) {
+        return 'M';
+    }
+    else {
+        return 'L';
+    }
+}
+function renderItems(items = [], version) {
+    return (jsx("section", { className: "max-w-[600px] mt-5", role: "list", children: items.map((_, i) => (jsx(BlockItem, { className: i ? 'mt-2.5' : '', text: _, version: version }, String(i)))) }));
+}
+function BaseTile_renderButton({ icon, asSVG, ...button }, i) {
+    if (!button?.text)
+        return;
+    return icon ? (jsx(Button, { appendLeft: jsx(Icon, { name: icon, asSVG: true, width: "24", height: "24" }), ...button }, String(i))) : (jsx(Button, { ...button }, String(i)));
 }
 
 ;// CONCATENATED MODULE: ./src/components/Tile/Tile.tsx
@@ -32430,7 +32483,7 @@ const Logo = JSX(({ className, href, children, targetBlank }) => {
 const SearchBar = JSX(({ className, context }) => {
     const { term, setTerm } = context.useSearch();
     const [inputHasFocus, setInputHasFocus] = context.useState(false);
-    return (jsxs("form", { className: `relative ${className || ''}`, children: [jsxs("div", { className: "absolute rounded h-full flex items-center justify-center pl-4 max-w-[170px] gap-3.5 pointer-events-none", children: [jsx("div", { className: "w-[24px] h-[24px]", children: jsx(Icon, { name: "LoupeIcon", width: "24", height: "24" }) }), !term && (jsx("label", { htmlFor: "search-bar-input", className: "font-sans font-normal text-base text-secondary-text", children: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443" }))] }), jsx("input", { id: "search-bar-input", className: `${inputHasFocus ? 'border-primary-text' : ''} pr-32 h-12 pl-12 w-full font-sans font-normal text-base text-black border border-solid border-main-divider rounded h-full box-border outline-none pr-[6%]`, value: term, onChange: (e) => setTerm(e.target.value), onFocus: (e) => setInputHasFocus(true), onBlur: (e) => setInputHasFocus(false), type: "text", name: "search-bar-input" }), inputHasFocus && (jsx("button", { type: "submit", version: "primary", className: "absolute font-sans font-normal cursor-pointer text-sm hover:bg-primary-hover active:bg-primary-active border-none px-9 py-[9px] rounded top-1 right-1 outline-none text-secondary-text text-white bg-primary-main", onClick: (e) => {
+    return (jsxs("form", { className: `relative ${className || ''}`, children: [jsxs("div", { className: "absolute rounded h-full flex items-center justify-center pl-4 max-w-[170px] gap-3.5 pointer-events-none", children: [jsx("div", { className: "w-[24px] h-[24px]", children: jsx(Icon, { name: "LoupeIcon", width: "24", height: "24" }) }), !term && (jsx("label", { htmlFor: "search-bar-input", className: "font-sans font-normal text-base text-secondary-text", children: "\u041F\u043E\u0438\u0441\u043A \u043F\u043E \u0441\u0430\u0439\u0442\u0443" }))] }), jsx("input", { id: "search-bar-input", className: `${inputHasFocus ? 'border-primary-text' : 'border-main-divider'} h-12 pl-12 w-full font-sans font-normal text-base text-black border border-solid rounded h-full box-border outline-none pr-[6%]`, value: term, onChange: (e) => setTerm(e.target.value), onFocus: (e) => setInputHasFocus(true), onBlur: (e) => setInputHasFocus(false), type: "text", name: "search-bar-input" }), inputHasFocus && (jsx("button", { type: "submit", className: "absolute font-sans font-normal cursor-pointer text-sm bg-primary-main hover:bg-primary-hover active:bg-primary-active border-none px-9 py-[9px] rounded top-1 right-1 outline-none text-secondary-text text-white", onClick: (e) => {
                     e.preventDefault();
                     console.log('click');
                 }, children: "\u041D\u0430\u0439\u0442\u0438" }))] }));
@@ -32516,7 +32569,7 @@ const Sitemap = JSX(({ className, items, context }) => {
 });
 const renderColumn = (c, index, { router, handlerDecorator }) => {
     const { text, href, items, target } = c;
-    return (jsxs("div", { className: "flex flex-col w-[235px] gap-[14px]", children: [jsx("a", { className: "block font-sans font-medium text-base text-primary-text no-underline", href: href, target: target || '_self', children: text || `Раздел ${index}` }), items?.map((_, i) => (jsx(ColumnItem, { ...useLink({ router, handlerDecorator }, _) }, String(i))))] }, String(index)));
+    return (jsxs("div", { className: "flex flex-col gap-[14px]", children: [jsx("a", { className: "block font-sans font-medium text-base text-primary-text no-underline", href: href, target: target || '_self', children: text || `Раздел ${index}` }), items?.map((_, i) => (jsx(ColumnItem, { ...useLink({ router, handlerDecorator }, _), index: i }, String(i))))] }, String(index)));
 };
 const ColumnItem = JSX(({ text, href, target, index }) => (jsx("a", { className: "block font-sans font-normal text-base text-secondary-text hover:text-primary-main no-underline", href: href, target: target || '_self', children: text || `Раздел ${index}` })));
 
@@ -32572,17 +32625,18 @@ const TextInformationLink = JSX(({ className, index, text, href, target, onClick
 const LEFT_COL_WIDTH_FULL_HD = 'w-[280px]';
 const LEFT_COL_WIDTH_SMALL_DESKTOP = 'xl:w-[220px]';
 const Footer = JSX(({ className, documents, relatedEnterprises, contacts, socialMedia, topItems, context }) => {
-    return (jsxs("footer", { className: `${className} px-9 py-10 bg-white`, children: [jsxs("div", { className: "flex items-stretch gap-32 pb-8 xl:gap-8", children: [jsx(Logo, { className: `${LEFT_COL_WIDTH_FULL_HD} ${LEFT_COL_WIDTH_SMALL_DESKTOP}` }), jsx(SearchBar, { context: context, className: "grow" })] }), jsxs("div", { className: "flex items-stretch gap-32 xl:gap-8", children: [jsx(Contacts, { className: `${LEFT_COL_WIDTH_FULL_HD} shrink-0 overflow-hidden ${LEFT_COL_WIDTH_SMALL_DESKTOP}`, items: contacts, context: context, hasButton: true }), jsx(Sitemap, { className: "pt-[3px]", context: context, items: topItems })] }), jsx(SocialMedia, { media: socialMedia, context: context }), jsx(HorizontalNavigation, { links: relatedEnterprises, context: context }), jsx(TextInformation, { links: documents, context: context })] }));
+    return (jsxs("footer", { className: `px-9 py-10 bg-white ${className || ''}`, children: [jsxs("div", { className: "flex items-stretch gap-[54px] pb-8 xl:gap-8", children: [jsx(Logo, { className: `${LEFT_COL_WIDTH_FULL_HD} ${LEFT_COL_WIDTH_SMALL_DESKTOP}` }), jsx(SearchBar, { context: context, className: "grow" })] }), jsxs("div", { className: "flex items-stretch gap-[54px] xl:gap-8", children: [jsx(Contacts, { className: `${LEFT_COL_WIDTH_FULL_HD} shrink-0 overflow-hidden ${LEFT_COL_WIDTH_SMALL_DESKTOP}`, items: contacts, context: context, hasButton: true }), jsx(Sitemap, { className: "pt-[3px]", context: context, items: topItems })] }), jsx(SocialMedia, { media: socialMedia, context: context }), jsx(HorizontalNavigation, { links: relatedEnterprises, context: context }), jsx(TextInformation, { links: documents, context: context })] }));
 });
 
-;// CONCATENATED MODULE: ./src/components/Gallery/GalleryInner.tsx
-
-
-
-
-
-
-
+;// CONCATENATED MODULE: ./src/components/Gallery/constants.ts
+const cardVersionMap = {
+    primary: 'text-secondary-text',
+    secondary: '',
+};
+const galleryLengthForScrollMap = {
+    normal: 3,
+    mini: 4,
+};
 const cardStyleMap = {
     normal: 'min-w-[364px] w-[364px]',
     mini: 'min-w-[260px] w-[260px]',
@@ -32591,34 +32645,56 @@ const cardWidthMap = {
     normal: 380,
     mini: 276,
 };
-const galleryLengthForScrollMap = {
-    normal: 3,
-    mini: 4,
-};
-const GalleryInner = JSX(({ title, description, context, cards = [], className, version = 'normal' }) => {
+
+;// CONCATENATED MODULE: ./src/components/Gallery/GalleryCardInner.tsx
+
+
+
+
+
+
+const GalleryCardInner = JSX(({ title, description, image, items, button, version }) => {
+    const cardVersionClasses = cardVersionMap[version ?? 'primary'];
+    return (jsxs("div", { children: [jsxs("div", { children: [image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: image }) })) : null, title && renderCardTitle(title, description, items), description && (jsx("div", { className: `font-normal text-sm mt-2 ${cardVersionClasses}`, children: description })), items?.length ? (jsx("section", { className: `max-w-[308px] mt-2 ${cardVersionClasses}`, role: "list", children: items.map((item, i) => renderItem(item, i, version)) })) : null] }), button?.href && jsx(Button, { className: "mt-6", ...button })] }));
+});
+function renderCardTitle(title, description, items) {
+    return (jsx("div", { className: `font-medium text-xl m-0 ${!description && !items?.length ? 'text-center' : ''}`, children: title }));
+}
+function renderItem(item, i, version) {
+    return (jsx(BlockItem, { version: version ?? 'primary', children: jsx("span", { className: "text-sm", children: item }) }, String(i)));
+}
+
+;// CONCATENATED MODULE: ./src/components/Gallery/GalleryContainer.tsx
+
+
+
+
+
+
+const GalleryContainer = JSX(({ context, title, description, cards = [], version = 'normal', activeCardIndex }) => {
+    return (jsxs("div", { children: [jsx("div", { className: "absolute top-0 left-0 bottom-0 w-[84px] bg-gradient-to-r from-white to-transparent" }), jsxs("div", { className: "flex flex-col items-center mb-8", children: [title ? jsx(Title, { className: "font-medium m-0 text-center", children: title }) : null, description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-2.5", children: description })) : null] }), jsx("div", { className: `flex ${cards?.length <= galleryLengthForScrollMap[version] ? 'justify-center' : ''} duration-1000`, style: { transform: `translateX(-${activeCardIndex * cardWidthMap[version]}px)` }, role: "list", children: cards?.map((card, i) => renderCard({ card, version, context }, i)) })] }));
+});
+function renderCard({ card, version, context }, i) {
+    return (jsx(Tile, { context: context, className: `box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between
+        items-stretch ${cardStyleMap[version]} w-full col-span-4`, version: card.version, children: jsx(GalleryCardInner, { ...card }) }, String(i)));
+}
+
+;// CONCATENATED MODULE: ./src/components/Gallery/GalleryInner.tsx
+
+
+
+
+
+const GalleryInner = JSX(({ context, cards = [], className, version = 'normal', ...rest }) => {
     const [activeCardIndex, setActiveCardIndex] = context.useState(0);
-    function handleNextClick() {
-        setActiveCardIndex(activeCardIndex + 1);
-    }
-    function handlePrevClick() {
-        setActiveCardIndex(activeCardIndex - 1);
-    }
+    const handleNextClick = () => setActiveCardIndex(activeCardIndex + 1);
+    const handlePrevClick = () => setActiveCardIndex(activeCardIndex - 1);
     const isGalleryScrollAvailable = cards?.length > galleryLengthForScrollMap[version];
     const showNextButton = isGalleryScrollAvailable &&
         cards?.length - activeCardIndex > galleryLengthForScrollMap[version];
     const showPrevButton = isGalleryScrollAvailable && activeCardIndex > 0;
-    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-12 py-[50px] overflow-hidden ${className}`, children: [jsxs("div", { className: "flex flex-col items-center mb-8", children: [title ? jsx(Title, { className: "font-medium m-0 text-center", children: title }) : null, description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { 
-                // Need to place all cards at the center if count of cards less than 4
-                className: `flex ${cards?.length <= galleryLengthForScrollMap[version] ? 'justify-center' : ''} duration-1000`, 
-                // All cards has same width
-                style: { transform: `translateX(-${activeCardIndex * cardWidthMap[version]}px)` }, role: "list", children: cards?.map((card, i) => renderCard(card, i, version)) }), jsx("div", { className: "absolute top-0 left-0 bottom-0 w-[84px] bg-gradient-to-r from-white to-transparent" }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8 rotate-180", onClick: handlePrevClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-10", onClick: handleNextClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" })), jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })] }));
+    return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-[50px] overflow-hidden ${className}`, children: [jsx(GalleryContainer, { context: context, cards: cards, version: version, activeCardIndex: activeCardIndex, ...rest }), showPrevButton && (jsx(ArrowButton, { className: "absolute top-1/2 left-8 rotate-180", onClick: handlePrevClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043B\u0435\u0432\u043E" })), showNextButton && (jsx(ArrowButton, { className: "absolute top-1/2 right-1 z-10", onClick: handleNextClick, ariaLabel: "\u041F\u0440\u043E\u043B\u0438\u0441\u0442\u0430\u0442\u044C \u0432\u043F\u0440\u0430\u0432\u043E" })), jsx("div", { className: "absolute top-0 right-0 bottom-0 w-[84px] bg-opacity-to-white" })] }));
 });
-function renderCard(card, i, version) {
-    return (jsxs("div", { className: `box-border border-solid border rounded-md border-main-divider p-7 mx-2 flex flex-col justify-between items-stretch ${cardStyleMap[version]} w-full`, role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? (jsx("section", { className: "max-w-[308px] mt-2", role: "list", children: card.items.map(renderItem) })) : null] }), card.href ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.href })) : null] }, String(i)));
-}
-function renderItem(item, i) {
-    return (jsx(BlockItem, { children: jsx("span", { className: "text-sm text-secondary-text", children: item }) }, String(i)));
-}
 
 ;// CONCATENATED MODULE: ./src/components/Gallery/Gallery.tsx
 
@@ -32726,19 +32802,6 @@ const renderShimmer = (size = 3) => goldenSequence(100, size)
 const renderShimmerItem = (width = 100, index) => (jsx("div", { style: { width: `${width}%` }, className: "h-4 mt-2 bg-secondary-light" }, String(index)));
 const goldenSequence = (first, size) => [first].concat(size > 0 ? goldenSequence(first / GOLDEN_RATIO, size - 1) : []);
 
-;// CONCATENATED MODULE: ./src/components/ProductBlock/ProductBlockInner.tsx
-
-
-
-
-
-const ProductBlockInner = JSX(({ className, context, title, titleSize, description, benefits, buttons, image, items }) => {
-    return (jsxs("div", { className: `flex grow justify-between items-stretch ${className || ''}`, children: [jsx("div", { className: 'flex flex-col', children: jsx(BaseTile, { context: context, title: title, titleSize: titleSize || 'XL', description: description, items: items, buttons: buttons, children: benefits?.length ? (jsx("div", { className: "flex gap-6 mt-6 mb-3.5", children: benefits.map(ProductBlockInner_renderBenefit) })) : null }) }), image?.src && jsx(Img, { className: "mt-auto", image: image })] }));
-});
-function ProductBlockInner_renderBenefit(benefit, i) {
-    return (jsxs("div", { className: "flex gap-4 items-center", children: [benefit.icon && (jsx(Icon, { className: "w-[50px] h-[50px] min-w-[50px] min-h-[50px] bg-main rounded-full p-[10px] box-border", name: benefit.icon, width: "24", height: "24" })), jsxs("div", { className: "flex gap-1 flex-col h-full max-w-[149px]", children: [jsx("h4", { className: "font-medium text-primary-text text-xl m-0", children: benefit.label }), benefit.description && (jsx("div", { className: "font-normal text-sm text-secondary-text", children: benefit.description }))] })] }, String(i)));
-}
-
 ;// CONCATENATED MODULE: ./src/ui-kit/Breadcrumb.tsx
 
 
@@ -32756,6 +32819,31 @@ function joinList(sep) {
     return (list) => list.reduce((acc, el, i) => (acc.length ? acc.concat({ ...sep, key: i }, el) : [el]), []);
 }
 
+;// CONCATENATED MODULE: ./src/components/ProductBlock/ProductBlockInner.tsx
+
+
+
+
+
+const benefitIconBgStyleMap = {
+    primary: 'bg-main',
+    secondary: 'bg-white/30',
+};
+const benefitTitleStyleMap = {
+    primary: 'text-primary-text',
+    secondary: 'text-white',
+};
+const benefitDescStyleMap = {
+    primary: 'text-secondary-text',
+    secondary: 'text-white',
+};
+const ProductBlockInner = JSX(({ className, context, title, titleSize, description, benefits, buttons, image, items, version = 'primary', }) => {
+    return (jsxs("div", { className: `flex grow justify-between items-stretch ${className || ''}`, children: [jsx("div", { className: 'flex flex-col', children: jsx(BaseTile, { context: context, title: title, titleSize: titleSize || 'XL', description: description, items: items, buttons: buttons, version: version, children: benefits?.length ? (jsx("div", { className: "flex gap-6 mt-6 mb-3.5", children: benefits.map((_, i) => ProductBlockInner_renderBenefit(_, i, version)) })) : null }) }), image?.src && jsx(Img, { className: "mt-auto", image: image })] }));
+});
+function ProductBlockInner_renderBenefit(benefit, i, version) {
+    return (jsxs("div", { className: "flex gap-4 items-center", children: [benefit.icon && (jsx(Icon, { className: `w-[50px] h-[50px] min-w-[50px] min-h-[50px] rounded-full p-[10px] box-border ${benefitIconBgStyleMap[version]}`, name: benefit.icon, width: "24", height: "24" })), jsxs("div", { className: "flex gap-1 flex-col h-full max-w-[149px]", children: [jsx("h4", { className: `font-medium text-xl m-0 ${benefitTitleStyleMap[version]}`, children: benefit.label }), benefit.description && (jsx("div", { className: `font-normal text-sm ${benefitDescStyleMap[version]}`, children: benefit.description }))] })] }, String(i)));
+}
+
 ;// CONCATENATED MODULE: ./src/components/ProductBlock/ProductBlock.tsx
 
 
@@ -32763,11 +32851,19 @@ function joinList(sep) {
 
 
 
+const productBlockStyleMap = {
+    primary: 'bg-white text-primary-text',
+    secondary: 'bg-primary-main text-white',
+};
+const breadcrumbsStyleMap = {
+    primary: 'text-secondary-text',
+    secondary: 'text-white/80',
+};
 const ProductBlock = JSX((props) => {
-    const { context, className, breadcrumbs } = props;
+    const { context, className, breadcrumbs, version = 'primary' } = props;
     const router = context.useRouter();
     const { handlerDecorator } = context;
-    return (jsxs("section", { className: `font-sans bg-white pt-10 pl-[50px] pb-[50px] pr-[7.5rem] box-border min-h-[420px] ${className || ''}`, children: [breadcrumbs?.length ? (jsx("div", { className: "text-xs mb-6", children: joinList(jsx("span", { className: "text-secondary-text mx-2", children: "/" }))(breadcrumbs.map((breadcrumb, i) => (jsx(Breadcrumb, { ...useLink({ router, handlerDecorator }, { className: 'text-secondary-text', ...breadcrumb }) }, String(i))))) })) : null, jsx(ProductBlockInner, { ...props })] }));
+    return (jsxs("section", { className: `font-sans pt-10 pl-[50px] pb-[50px] pr-[7.5rem] box-border min-h-[420px] ${className || ''} ${productBlockStyleMap[version]}`, children: [breadcrumbs?.length ? (jsx("div", { className: "text-xs mb-6", children: joinList(jsx("span", { className: `mx-2 ${breadcrumbsStyleMap[version]}`, children: "/" }))(breadcrumbs.map((breadcrumb, i) => (jsx(Breadcrumb, { ...useLink({ router, handlerDecorator }, { className: breadcrumbsStyleMap[version], ...breadcrumb }) }, String(i))))) })) : null, jsx(ProductBlockInner, { ...props })] }));
 });
 
 ;// CONCATENATED MODULE: ./src/components/ProductGallery/ProductGallery.tsx
@@ -32972,7 +33068,7 @@ const Gallery_mobile_Gallery = JSX(({ title, description, cards = [], className 
     return (jsxs("section", { className: `relative font-sans text-primary-text bg-white p-4 overflow-hidden ${className}`, children: [jsxs("div", { className: "flex flex-col items-center mb-8", children: [jsx(Title, { className: "font-medium m-0 text-centers", children: title }), description ? (jsx("div", { className: "font-normal text-base max-w-[600px] mt-3", children: description })) : null] }), jsx("div", { className: "horizontal-list no-scrollbar", role: "list", children: cards?.map(Gallery_mobile_renderCard) })] }));
 });
 function Gallery_mobile_renderCard(card, key) {
-    return (jsxs("div", { className: "box-border horizontal-list-item border-solid border rounded-md border-main-divider p-4 mx-1 flex flex-col justify-between items-stretch", role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? Gallery_mobile_renderItems(card.items) : null] }), card.href ? (jsx(Button, { className: "mt-6", text: "\u041F\u043E\u0434\u0440\u043E\u0431\u043D\u0435\u0435", version: "secondary", href: card.href })) : null] }, key));
+    return (jsxs("div", { className: "box-border horizontal-list-item border-solid border rounded-md border-main-divider p-4 mx-1 flex flex-col justify-between items-stretch", role: "listitem", children: [jsxs("div", { children: [card.image?.src ? (jsx("div", { className: "flex justify-center", children: jsx(Img, { className: "mb-6", image: card.image }) })) : null, card.title ? (jsx("h4", { className: `font-medium text-xl m-0 ${!card.description && !card.items?.length ? 'text-center' : ''}`, children: card.title })) : null, card.description ? (jsx("div", { className: "font-normal text-sm text-secondary-text mt-2", children: card.description })) : null, card.items?.length ? Gallery_mobile_renderItems(card.items) : null] }), card?.button?.href ? jsx(Button, { className: "mt-6", ...card.button }) : null] }, key));
 }
 function Gallery_mobile_renderItems(items = []) {
     return (jsx("section", { className: "max-w-[308px] mt-2", role: "list", children: items.map((item, i) => (jsx(BlockItem, { children: jsx("span", { className: "text-sm text-secondary-text", children: item }) }, String(i)))) }));
@@ -33127,14 +33223,14 @@ const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { 
 
 
 
-/* harmony default export */ const CreditCalculator_fixture = (jsx(CreditCalculator, { context: context, directoryName: "credit-calculator-data" }));
+/* harmony default export */ const CreditCalculator_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(CreditCalculator, { className: "col-span-12", context: context, directoryName: "credit-calculator-data" }) }));
 
 ;// CONCATENATED MODULE: ./src/components/ExchangeRateTile/ExchangeRateTile.fixture.tsx
 
 
 
 /* harmony default export */ const ExchangeRateTile_fixture = ({
-    default: (jsx("div", { className: "grid grid-cols-12", children: jsx(ExchangeRateTile, { context: context, className: "col-span-4" }) })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ExchangeRateTile, { context: context, className: "col-span-4" }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/Footer/Footer.fixture.tsx
@@ -33142,257 +33238,261 @@ const blockDecorator = ({ blockClassName, block, render }, i) => (jsxs("div", { 
 
 
 const DEFAULT_ORIGIN = 'https://rshb.ru/';
-/* harmony default export */ const Footer_fixture = (jsx(Footer, { topItems: [
-        {
-            href: DEFAULT_ORIGIN,
-            text: 'Частным клиентам',
-            target: '_blank',
-            items: [
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Кредитные карты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Дебетовые карты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Кредиты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Ипотека',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Вклады и сбережения',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Инвестиции',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Страхование',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Премиальным клиентам',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Биометрическая регистрация',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Перевод денег',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Обмен денег',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Акции',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Тарифы',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Архивная информация',
-                },
-            ],
-        },
-        {
-            href: DEFAULT_ORIGIN,
-            text: 'Бизнес клиентам',
-            target: '_blank',
-            items: [
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'РКО',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Кредиты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Депозиты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Эквайринг',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Банковские карты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'ВЭД',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Инвестиции',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Обмен валюты',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Страхование',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Партнёрские программы',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Онлайн-сервисы',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Акции',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Тарифы',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Архивная информация',
-                },
-            ],
-        },
-        {
-            href: DEFAULT_ORIGIN,
-            text: 'О банке',
-            target: '_blank',
-            items: [
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'О банке',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Новости',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Офисы и отделения',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Карьера в банке',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Пресс-центр',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Кредитным организациям',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Закупки',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Непрофильные/Профильные нецелевые активы',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Инсайдерам',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Противодействие коррупции',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Меры безопасности',
-                },
-                {
-                    href: DEFAULT_ORIGIN,
-                    text: 'Залоговое имущество',
-                },
-            ],
-        },
-    ], socialMedia: [{ href: 'https://t.me' }, { href: 'https://vk.com' }, { href: 'https://ok.ru' }], contacts: [
-        {
-            text: '+7 (495) 787-7-787',
-            description: 'Для звонков из-за границы',
-            type: 'tel',
-        },
-        {
-            text: 'example@example.com',
-            description: 'Для писем',
-            type: 'email',
-        },
-        {
-            text: '7787',
-            description: 'Абонентам МТС, Мегафон, Билайн и Tele2',
-            type: 'tel',
-        },
-    ], relatedEnterprises: [
-        {
-            text: 'РСХБ Страхование',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'РСХБ Страхование жизни',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'РСХБ Управление активами',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'РСХБ Лизинг',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'РСХБ Факторинг',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-    ], documents: [
-        {
-            text: 'Информация о процентных ставках по договорам банковского вклада с физическими лицами',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'Раскрытие информации профессиональным участником рынка ценных бумаг',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'Раскрытие информации',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'Удостоверяющий центр',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-        {
-            text: 'Финансовая культура',
-            href: DEFAULT_ORIGIN,
-            target: '_blank',
-        },
-    ], context: context }));
+/* harmony default export */ const Footer_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Footer, { className: "col-span-12", topItems: [
+            {
+                href: DEFAULT_ORIGIN,
+                text: 'Частным клиентам',
+                target: '_blank',
+                items: [
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Кредитные карты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Дебетовые карты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Кредиты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Ипотека',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Вклады и сбережения',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Инвестиции',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Страхование',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Премиальным клиентам',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Биометрическая регистрация',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Перевод денег',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Обмен денег',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Акции',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Тарифы',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Архивная информация',
+                    },
+                ],
+            },
+            {
+                href: DEFAULT_ORIGIN,
+                text: 'Бизнес клиентам',
+                target: '_blank',
+                items: [
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'РКО',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Кредиты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Депозиты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Эквайринг',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Банковские карты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'ВЭД',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Инвестиции',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Обмен валюты',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Страхование',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Партнёрские программы',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Онлайн-сервисы',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Акции',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Тарифы',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Архивная информация',
+                    },
+                ],
+            },
+            {
+                href: DEFAULT_ORIGIN,
+                text: 'О банке',
+                target: '_blank',
+                items: [
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'О банке',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Новости',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Офисы и отделения',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Карьера в банке',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Пресс-центр',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Кредитным организациям',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Закупки',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Непрофильные/Профильные нецелевые активы',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Инсайдерам',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Противодействие коррупции',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Меры безопасности',
+                    },
+                    {
+                        href: DEFAULT_ORIGIN,
+                        text: 'Залоговое имущество',
+                    },
+                ],
+            },
+        ], socialMedia: [
+            { href: 'https://t.me' },
+            { href: 'https://vk.com' },
+            { href: 'https://ok.ru' },
+        ], contacts: [
+            {
+                text: '+7 (495) 787-7-787',
+                description: 'Для звонков из-за границы',
+                type: 'tel',
+            },
+            {
+                text: 'example@example.com',
+                description: 'Для писем',
+                type: 'email',
+            },
+            {
+                text: '7787',
+                description: 'Абонентам МТС, Мегафон, Билайн и Tele2',
+                type: 'tel',
+            },
+        ], relatedEnterprises: [
+            {
+                text: 'РСХБ Страхование',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'РСХБ Страхование жизни',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'РСХБ Управление активами',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'РСХБ Лизинг',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'РСХБ Факторинг',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+        ], documents: [
+            {
+                text: 'Информация о процентных ставках по договорам банковского вклада с физическими лицами',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'Раскрытие информации профессиональным участником рынка ценных бумаг',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'Раскрытие информации',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'Удостоверяющий центр',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+            {
+                text: 'Финансовая культура',
+                href: DEFAULT_ORIGIN,
+                target: '_blank',
+            },
+        ], context: context }) }));
 
 ;// CONCATENATED MODULE: ./src/components/Gallery/Gallery.fixture.tsx
 
@@ -33406,6 +33506,13 @@ const Gallery_fixture_image = {
         width: 140,
         height: 140,
     },
+    title: 'money',
+};
+const buttonPrimary = {
+    href: '/credit-cards',
+    text: 'Подробнее',
+    target: '_blank',
+    version: 'secondary',
 };
 const defaultItems = [
     'Качественные фермерские продукты напрямую от производителей',
@@ -33421,35 +33528,28 @@ const defaultProps = {
             title: 'Более 5000 товаров',
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: 'Более 1000 развлечений',
             description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: 'Фермерские продукты',
             description: 'Высокий процент даже при небольшой сумме денежных средств',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: '«Моя выгода»',
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
-            items: defaultItems,
-        },
-        {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
-            image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
     ],
@@ -33463,31 +33563,25 @@ const textAndButtonProps = {
             title: 'Более 5000 товаров',
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
         },
         {
             title: 'Более 1000 развлечений',
             description: 'Порядок и условия предоставления в соответствии с 106 ФЗ',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
         },
         {
             title: 'Фермерские продукты',
             description: 'Высокий процент даже при небольшой сумме денежных средств',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
         },
         {
             title: '«Моя выгода»',
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
-        },
-        {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
-            image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
         },
     ],
 };
@@ -33499,31 +33593,25 @@ const listAndButtonProps = {
         {
             title: 'Более 5000 товаров',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: 'Более 1000 развлечений',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: 'Фермерские продукты',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
         {
             title: '«Моя выгода»',
             image: Gallery_fixture_image,
-            href: '/credit-cards',
-            items: defaultItems,
-        },
-        {
-            title: 'Фермерские продукты',
-            image: Gallery_fixture_image,
-            href: '/credit-cards',
+            button: buttonPrimary,
             items: defaultItems,
         },
     ],
@@ -33553,11 +33641,6 @@ const textAndNoButtonProps = {
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: Gallery_fixture_image,
         },
-        {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
-            image: Gallery_fixture_image,
-        },
     ],
 };
 const onlyTitleProps = {
@@ -33581,19 +33664,15 @@ const onlyTitleProps = {
             title: '«Моя выгода»',
             image: Gallery_fixture_image,
         },
-        {
-            title: 'Фермерские продукты',
-            image: Gallery_fixture_image,
-        },
     ],
 };
 /* harmony default export */ const Gallery_fixture = ({
-    default: jsx(Gallery, { ...defaultProps }),
-    'text and button': jsx(Gallery, { ...textAndButtonProps }),
-    'list and button': jsx(Gallery, { ...listAndButtonProps }),
-    'text and no button': jsx(Gallery, { ...textAndNoButtonProps }),
-    'only title': jsx(Gallery, { ...onlyTitleProps }),
-    mobile: jsx(Gallery_mobile_Gallery, { ...defaultProps }),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...defaultProps }) })),
+    'text and button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...textAndButtonProps }) })),
+    'list and button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...listAndButtonProps }) })),
+    'text and no button': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...textAndNoButtonProps }) })),
+    'only title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery, { className: "col-span-12", ...onlyTitleProps }) })),
+    mobile: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Gallery_mobile_Gallery, { className: "col-span-12", ...defaultProps }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/Header/Header.fixture.tsx
@@ -33617,7 +33696,7 @@ const onlyTitleProps = {
 
 
 
-/* harmony default export */ const LikeControl_fixture = (jsx(LikeControl, { context: context }));
+/* harmony default export */ const LikeControl_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(LikeControl, { className: "col-span-12", context: context }) }));
 
 ;// CONCATENATED MODULE: ./src/components/MiniGallery/MiniGallery.fixture.tsx
 
@@ -33630,6 +33709,7 @@ const MiniGallery_fixture_image = {
         width: 120,
         height: 70,
     },
+    title: 'domovoj-kupon',
 };
 const MiniGallery_fixture_defaultProps = {
     title: 'Вы можете оплатить бонусными баллами',
@@ -33656,16 +33736,6 @@ const MiniGallery_fixture_defaultProps = {
             description: 'Время копить: ставка растет в зависимости от срока нахождения средств на Счете!',
             image: MiniGallery_fixture_image,
         },
-        {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
-            image: MiniGallery_fixture_image,
-        },
-        {
-            title: 'Фермерские продукты',
-            description: 'Высокий процент даже при небольшой сумме денежных средств',
-            image: MiniGallery_fixture_image,
-        },
     ],
 };
 const MiniGallery_fixture_onlyTitleProps = {
@@ -33689,19 +33759,11 @@ const MiniGallery_fixture_onlyTitleProps = {
             title: '«Моя выгода»',
             image: MiniGallery_fixture_image,
         },
-        {
-            title: 'Фермерские продукты',
-            image: MiniGallery_fixture_image,
-        },
-        {
-            title: 'Фермерские продукты',
-            image: MiniGallery_fixture_image,
-        },
     ],
 };
 /* harmony default export */ const MiniGallery_fixture = ({
-    default: jsx(MiniGallery, { ...MiniGallery_fixture_defaultProps }),
-    'only title': jsx(MiniGallery, { ...MiniGallery_fixture_onlyTitleProps }),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(MiniGallery, { className: "col-span-12", ...MiniGallery_fixture_defaultProps }) })),
+    'only title': (jsx("div", { className: "container grid grid-cols-12", children: jsx(MiniGallery, { className: "col-span-12", ...MiniGallery_fixture_onlyTitleProps }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/MobileAppTile/MobileAppTile.fixture.tsx
@@ -33709,7 +33771,7 @@ const MiniGallery_fixture_onlyTitleProps = {
 
 
 /* harmony default export */ const MobileAppTile_fixture = ({
-    default: (jsx("div", { className: "grid grid-cols-12", children: jsx(MobileAppTile, { context: context, className: "col-span-4", qr: {
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(MobileAppTile, { context: context, className: "col-span-4", qr: {
                 href: 'https://rshbnaturaldbo.onelink.me/qhkF/f182074f?af_qr=true',
                 src: 'data:image/png;base64,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',
             }, buttons: [
@@ -33718,6 +33780,7 @@ const MiniGallery_fixture_onlyTitleProps = {
                     text: 'App Store',
                     icon: 'AppleIcon',
                     href: '#',
+                    asSVG: true,
                     version: 'secondary',
                 },
                 {
@@ -33725,6 +33788,7 @@ const MiniGallery_fixture_onlyTitleProps = {
                     text: 'Google Play',
                     icon: 'PlayMarketIcon',
                     href: '#',
+                    asSVG: true,
                     version: 'secondary',
                 },
             ] }) })),
@@ -33734,7 +33798,7 @@ const MiniGallery_fixture_onlyTitleProps = {
 
 
 
-/* harmony default export */ const Placeholder_fixture = (jsx(Placeholder, { context: context, title: "\u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0439 \u0431\u043B\u043E\u043A" }));
+/* harmony default export */ const Placeholder_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(Placeholder, { className: "col-span-12", context: context, title: "\u041D\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043D\u044B\u0439 \u0431\u043B\u043E\u043A" }) }));
 
 ;// CONCATENATED MODULE: ./src/components/ProductBlock/ProductBlock.fixture.tsx
 
@@ -33750,66 +33814,109 @@ const ProductBlock_fixture_image = {
     },
 };
 /* harmony default export */ const ProductBlock_fixture = ({
-    default: (jsx(ProductBlock, { context: context, title: 'Потребительский кредит наличными', description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", breadcrumbs: [
-            {
-                text: 'Главная',
-                href: '/',
-            },
-            {
-                text: 'Кредитные карты',
-                href: '/credit',
-            },
-            {
-                text: 'Кредитная карта Своя Union Pay',
-            },
-        ], benefits: [
-            {
-                label: 'До 5 млн ₽',
-                description: 'Кредитный лимит',
-                icon: 'EmptyWalletIcon',
-            },
-            {
-                label: 'От 16,9%',
-                description: 'Ставка по кредиту',
-                icon: 'PercentageSquareIcon',
-            },
-            {
-                label: 'До 5 лет',
-                description: 'Срок кредитования',
-                icon: 'CalendarIcon',
-            },
-        ], buttons: [
-            {
-                href: 'https://rshb.ru',
-                text: 'Оформить карту',
-                target: '_blank',
-                version: 'primary',
-            },
-            {
-                href: 'https://rshb.ru',
-                text: 'Подробнее',
-                target: '_blank',
-                version: 'secondary',
-            },
-        ], image: ProductBlock_fixture_image })),
-    'with items': (jsx(ProductBlock, { context: context, title: 'Оплата проходит \nв 180 странах мира', breadcrumbs: [], description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", items: [
-            'Совершайте любые личные покупки',
-            'Используйте корпоративную карту как обычную дебетовую, если вы ИП',
-            'Расходы для бизнеса на УСН 15% позволят снизить налоговую базу',
-        ], buttons: [
-            {
-                href: 'https://rshb.ru',
-                text: 'Оформить карту',
-                target: '_blank',
-                version: 'primary',
-            },
-            {
-                href: 'https://rshb.ru',
-                text: 'Подробнее',
-                target: '_blank',
-                version: 'secondary',
-            },
-        ], image: ProductBlock_fixture_image })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductBlock, { className: "col-span-12", context: context, title: 'Потребительский кредит наличными', description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", breadcrumbs: [
+                {
+                    text: 'Главная',
+                    href: '/',
+                },
+                {
+                    text: 'Кредитные карты',
+                    href: '/credit',
+                },
+                {
+                    text: 'Кредитная карта Своя Union Pay',
+                },
+            ], benefits: [
+                {
+                    label: 'До 5 млн ₽',
+                    description: 'Кредитный лимит',
+                    icon: 'EmptyWalletIcon',
+                },
+                {
+                    label: 'От 16,9%',
+                    description: 'Ставка по кредиту',
+                    icon: 'PercentageSquareIcon',
+                },
+                {
+                    label: 'До 5 лет',
+                    description: 'Срок кредитования',
+                    icon: 'CalendarIcon',
+                },
+            ], buttons: [
+                {
+                    href: 'https://rshb.ru',
+                    text: 'Оформить карту',
+                    target: '_blank',
+                    version: 'primary',
+                },
+                {
+                    href: 'https://rshb.ru',
+                    text: 'Подробнее',
+                    target: '_blank',
+                    version: 'secondary',
+                },
+            ], image: ProductBlock_fixture_image }) })),
+    secondary: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductBlock, { context: context, className: "col-span-12", title: 'Потребительский кредит наличными', version: 'secondary', description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", breadcrumbs: [
+                {
+                    text: 'Главная',
+                    href: '/',
+                },
+                {
+                    text: 'Кредитные карты',
+                    href: '/credit',
+                },
+                {
+                    text: 'Кредитная карта Своя Union Pay',
+                    href: '#',
+                },
+            ], benefits: [
+                {
+                    label: 'До 5 млн ₽',
+                    description: 'Кредитный лимит',
+                    icon: 'EmptyWalletWhiteIcon',
+                },
+                {
+                    label: 'От 16,9%',
+                    description: 'Ставка по кредиту',
+                    icon: 'PercentageSquareWhiteIcon',
+                },
+                {
+                    label: 'До 5 лет',
+                    description: 'Срок кредитования',
+                    icon: 'CalendarWhiteIcon',
+                },
+            ], buttons: [
+                {
+                    href: 'https://rshb.ru',
+                    text: 'Оформить карту',
+                    target: '_blank',
+                    version: 'secondary',
+                },
+                {
+                    href: 'https://rshb.ru',
+                    text: 'Подробнее',
+                    target: '_blank',
+                    version: 'primary',
+                },
+            ], image: ProductBlock_fixture_image }) })),
+    'with items': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductBlock, { className: "col-span-12", context: context, title: 'Оплата проходит \nв 180 странах мира', breadcrumbs: [], description: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430\u043B\u0438\u0447\u043D\u044B\u043C\u0438 \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430. \u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438. \u041D\u0443\u0436\u0435\u043D \u0442\u043E\u043B\u044C\u043A\u043E \u043F\u0430\u0441\u043F\u043E\u0440\u0442.", items: [
+                'Совершайте любые личные покупки',
+                'Используйте корпоративную карту как обычную дебетовую, если вы ИП',
+                'Расходы для бизнеса на УСН 15% позволят снизить налоговую базу',
+            ], buttons: [
+                {
+                    href: 'https://rshb.ru',
+                    text: 'Оформить карту',
+                    target: '_blank',
+                    version: 'primary',
+                },
+                {
+                    href: 'https://rshb.ru',
+                    text: 'Подробнее',
+                    target: '_blank',
+                    version: 'secondary',
+                },
+            ], image: ProductBlock_fixture_image }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/ProductGallery/ProductGallery.fixture.tsx
@@ -33841,100 +33948,100 @@ const creditCard = {
         height: 280,
     },
 };
-/* harmony default export */ const ProductGallery_fixture = (jsx(ProductGallery, { context: context, slides: [
-        {
-            nav: {
-                title: 'Деньги на любые цели',
-                desc: 'Ставка от 12,5% годовых на срок до 5 лет',
+/* harmony default export */ const ProductGallery_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductGallery, { className: "col-span-12", context: context, slides: [
+            {
+                nav: {
+                    title: 'Деньги на любые цели',
+                    desc: 'Ставка от 12,5% годовых на срок до 5 лет',
+                },
+                productBlock: {
+                    title: 'Ставка от 12,5% годовых на срок до 5 лет!»',
+                    items: [
+                        'Потребительский кредит по специальной процентной ставке',
+                        'Получите деньги без залога и поручительства',
+                        'Кредитный лимит до 5 млн рублей',
+                    ],
+                    buttons: [
+                        {
+                            href: 'https://rshb.ru',
+                            text: 'Подробнее',
+                            target: '_blank',
+                            version: 'primary',
+                        },
+                    ],
+                    image: moneyImage,
+                },
             },
-            productBlock: {
-                title: 'Ставка от 12,5% годовых на срок до 5 лет!»',
-                items: [
-                    'Потребительский кредит по специальной процентной ставке',
-                    'Получите деньги без залога и поручительства',
-                    'Кредитный лимит до 5 млн рублей',
-                ],
-                buttons: [
-                    {
-                        href: 'https://rshb.ru',
-                        text: 'Подробнее',
-                        target: '_blank',
-                        version: 'primary',
-                    },
-                ],
-                image: moneyImage,
+            {
+                nav: {
+                    title: 'Для людей в возрасте',
+                    desc: 'Ставка от 12,5% годовых на срок до 3 лет',
+                },
+                productBlock: {
+                    title: 'Ставка от 12,5% годовых на срок до 3 лет!»',
+                    items: [
+                        'Потребительский кредит по специальной процентной ставке',
+                        'Получите деньги без залога и поручительства',
+                        'Кредитный лимит до 5 млн рублей',
+                    ],
+                    buttons: [
+                        {
+                            href: 'https://rshb.ru',
+                            text: 'Подробнее',
+                            target: '_blank',
+                            version: 'primary',
+                        },
+                    ],
+                    image: worker,
+                },
             },
-        },
-        {
-            nav: {
-                title: 'Для людей в возрасте',
-                desc: 'Ставка от 12,5% годовых на срок до 3 лет',
+            {
+                nav: {
+                    title: 'Выгодно покупать',
+                    desc: 'Дополнительные бонусные баллы за покупки',
+                },
+                productBlock: {
+                    title: 'Дополнительные бонусные баллы за покупки!»',
+                    items: [
+                        'Потребительский кредит по специальной процентной ставке',
+                        'Получите деньги без залога и поручительства',
+                        'Кредитный лимит до 5 млн рублей',
+                    ],
+                    buttons: [
+                        {
+                            href: 'https://rshb.ru',
+                            text: 'Подробнее',
+                            target: '_blank',
+                            version: 'primary',
+                        },
+                    ],
+                    image: creditCard,
+                },
             },
-            productBlock: {
-                title: 'Ставка от 12,5% годовых на срок до 3 лет!»',
-                items: [
-                    'Потребительский кредит по специальной процентной ставке',
-                    'Получите деньги без залога и поручительства',
-                    'Кредитный лимит до 5 млн рублей',
-                ],
-                buttons: [
-                    {
-                        href: 'https://rshb.ru',
-                        text: 'Подробнее',
-                        target: '_blank',
-                        version: 'primary',
-                    },
-                ],
-                image: worker,
+            {
+                nav: {
+                    title: 'Карты Unionpay',
+                    desc: 'Кэшбэк до 20% у партнеров',
+                },
+                productBlock: {
+                    title: 'Карты Unionpay»',
+                    items: [
+                        'Потребительский кредит по специальной процентной ставке',
+                        'Получите деньги без залога и поручительства',
+                        'Кредитный лимит до 5 млн рублей',
+                    ],
+                    buttons: [
+                        {
+                            href: 'https://rshb.ru',
+                            text: 'Подробнее',
+                            target: '_blank',
+                            version: 'primary',
+                        },
+                    ],
+                    image: creditCard,
+                },
             },
-        },
-        {
-            nav: {
-                title: 'Выгодно покупать',
-                desc: 'Дополнительные бонусные баллы за покупки',
-            },
-            productBlock: {
-                title: 'Дополнительные бонусные баллы за покупки!»',
-                items: [
-                    'Потребительский кредит по специальной процентной ставке',
-                    'Получите деньги без залога и поручительства',
-                    'Кредитный лимит до 5 млн рублей',
-                ],
-                buttons: [
-                    {
-                        href: 'https://rshb.ru',
-                        text: 'Подробнее',
-                        target: '_blank',
-                        version: 'primary',
-                    },
-                ],
-                image: creditCard,
-            },
-        },
-        {
-            nav: {
-                title: 'Карты Unionpay',
-                desc: 'Кэшбэк до 20% у партнеров',
-            },
-            productBlock: {
-                title: 'Карты Unionpay»',
-                items: [
-                    'Потребительский кредит по специальной процентной ставке',
-                    'Получите деньги без залога и поручительства',
-                    'Кредитный лимит до 5 млн рублей',
-                ],
-                buttons: [
-                    {
-                        href: 'https://rshb.ru',
-                        text: 'Подробнее',
-                        target: '_blank',
-                        version: 'primary',
-                    },
-                ],
-                image: creditCard,
-            },
-        },
-    ] }));
+        ] }) }));
 
 ;// CONCATENATED MODULE: ./src/components/ProductTile/ProductTile.fixture.tsx
 
@@ -33956,7 +34063,7 @@ const building = {
     format: 'webp',
 };
 /* harmony default export */ const ProductTile_fixture = ({
-    credit: (jsx("div", { className: "grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-6", title: "\u0410\u043A\u0446\u0438\u044F! \u201C\u041A\u0440\u0435\u0434\u0438\u0442 \u041D\u0430 \u0432\u0441\u0435, \u0447\u0442\u043E \u0445\u043E\u0447\u0435\u0442\u0441\u044F!\u201D", description: "\u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438, \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430", benefits: [
+    credit: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-6", title: "\u0410\u043A\u0446\u0438\u044F! \u201C\u041A\u0440\u0435\u0434\u0438\u0442 \u041D\u0430 \u0432\u0441\u0435, \u0447\u0442\u043E \u0445\u043E\u0447\u0435\u0442\u0441\u044F!\u201D", description: "\u041F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043D\u0430 \u043B\u044E\u0431\u044B\u0435 \u0446\u0435\u043B\u0438, \u0431\u0435\u0437 \u0437\u0430\u043B\u043E\u0433\u0430 \u0438 \u043F\u043E\u0440\u0443\u0447\u0438\u0442\u0435\u043B\u044C\u0441\u0442\u0432\u0430", benefits: [
                 {
                     label: 'Кредитный лимит',
                     description: 'до 5 млн Р',
@@ -33976,7 +34083,7 @@ const building = {
                     version: 'secondary',
                 },
             ], image: cardWithMoney }) })),
-    pension: (jsx("div", { className: "grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-6", title: "\u0410\u043A\u0446\u0438\u044F! \u201C\u041F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439 \u043A\u0440\u0435\u0434\u0438\u0442\u201D", description: 'Потребительский кредит на любые цели, без залога и поручительства', benefits: [
+    pension: (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-6", title: "\u0410\u043A\u0446\u0438\u044F! \u201C\u041F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439 \u043A\u0440\u0435\u0434\u0438\u0442\u201D", description: 'Потребительский кредит на любые цели, без залога и поручительства', benefits: [
                 {
                     label: 'Кредитный лимит',
                     description: 'до 3 млн Р',
@@ -33997,7 +34104,7 @@ const building = {
                     version: 'secondary',
                 },
             ], image: letterWithMoney }) })),
-    'credit-card': (jsx("div", { className: "grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-8", title: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043F\u043E\u0434 \u0437\u0430\u043B\u043E\u0433 \u043D\u0435\u0434\u0432\u0438\u0436\u0438\u043C\u043E\u0441\u0442\u0438", description: 'Без переоформления залогой недвижимости на банк', benefits: [
+    'credit-card': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-8", title: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043F\u043E\u0434 \u0437\u0430\u043B\u043E\u0433 \u043D\u0435\u0434\u0432\u0438\u0436\u0438\u043C\u043E\u0441\u0442\u0438", description: 'Без переоформления залогой недвижимости на банк', benefits: [
                 {
                     label: 'Кредитный лимит',
                     description: 'до 10 млн Р',
@@ -34018,7 +34125,7 @@ const building = {
                     version: 'secondary',
                 },
             ], image: building }) })),
-    'pension-credit': (jsx("div", { className: "grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-4", title: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439", description: 'Для людей в возрасте до 75 лет', benefits: [
+    'pension-credit': (jsx("div", { className: "container grid grid-cols-12", children: jsx(ProductTile, { context: context, className: "col-span-4", title: "\u041A\u0440\u0435\u0434\u0438\u0442 \u043F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439", description: 'Для людей в возрасте до 75 лет', benefits: [
                 {
                     label: 'Кредитный лимит',
                     description: 'до 3 млн Р',
@@ -34046,7 +34153,7 @@ const building = {
 
 
 /* harmony default export */ const PromoTile_fixture = ({
-    default: (jsx("div", { className: "grid grid-cols-12", children: jsx(PromoTile, { context: context, className: "col-span-4", title: "\u0410\u043A\u0446\u0438\u0438 \u0438 \u0441\u043F\u0435\u0446\u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u044F", description: "\u041F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043F\u043E \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043D\u043E\u0439 \u0441\u0442\u0430\u0432\u043A\u0435", version: "secondary", date: "2022-04-16", buttons: [
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(PromoTile, { context: context, className: "col-span-4", title: "\u0410\u043A\u0446\u0438\u0438 \u0438 \u0441\u043F\u0435\u0446\u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0435\u043D\u0438\u044F", description: "\u041F\u0435\u043D\u0441\u0438\u043E\u043D\u043D\u044B\u0439 \u043A\u0440\u0435\u0434\u0438\u0442 \u043F\u043E \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0439 \u043F\u0440\u043E\u0446\u0435\u043D\u0442\u043D\u043E\u0439 \u0441\u0442\u0430\u0432\u043A\u0435", version: "secondary", date: "2022-04-16", buttons: [
                 {
                     text: 'Все акции',
                     href: '/credits',
@@ -34059,43 +34166,20 @@ const building = {
 
 
 
-const title = 'Рассчитайте условия на онлайн-калькуляторе и оставьте заявку на потребительский кредит';
-const steps = [
-    {
-        label: 'Заявка на кредит',
-        description: 'Оставьте онлайн-заявку\nна потребительский кредит',
-    },
-    {
-        label: 'В случае одобрения',
-        description: 'Менеджер свяжется с вами\nи согласует встречу',
-    },
-    {
-        label: 'Получение наличных',
-        description: 'Получите наличные\nв отделении банка',
-    },
-];
-const hybridStepHeadings = [
-    {
-        label: 'Заявка на кредит',
-        description: 'Оставьте онлайн-заявку\nна потребительский кредит',
-    },
-    {
-        label: 'В случае одобрения',
-    },
-    {
-        description: 'Получите наличные\nв отделении банка',
-    },
-];
-const icons = ['MoneyIcon', 'UserIcon', 'DocIcon'];
-const iconSteps = steps.map((item, i) => ({ ...item, icon: icons[i] }));
-/* harmony default export */ const StepsBlock_fixture = ({
-    default: jsx(StepsBlock, { context: context, title: title, steps: steps }),
-    '2 steps': jsx(StepsBlock, { context: context, title: title, steps: steps.slice(0, 2) }),
-    'no lines': jsx(StepsBlock, { context: context, title: title, steps: steps, showLines: false }),
-    'hybrid step headings': jsx(StepsBlock, { context: context, title: title, steps: hybridStepHeadings }),
-    'with icons': jsx(StepsBlock, { context: context, title: title, steps: iconSteps }),
-    'no heading': jsx(StepsBlock, { context: context, steps: steps }),
-});
+/* harmony default export */ const StepsBlock_fixture = (jsx("div", { className: "container grid grid-cols-12", children: jsx(StepsBlock, { className: "col-span-12", context: context, title: "\u0420\u0430\u0441\u0441\u0447\u0438\u0442\u0430\u0439\u0442\u0435 \u0443\u0441\u043B\u043E\u0432\u0438\u044F \u043D\u0430 \u043E\u043D\u043B\u0430\u0439\u043D-\u043A\u0430\u043B\u044C\u043A\u0443\u043B\u044F\u0442\u043E\u0440\u0435 \u0438 \u043E\u0441\u0442\u0430\u0432\u044C\u0442\u0435 \u0437\u0430\u044F\u0432\u043A\u0443 \u043D\u0430 \u043F\u043E\u0442\u0440\u0435\u0431\u0438\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439 \u043A\u0440\u0435\u0434\u0438\u0442", steps: [
+            {
+                label: 'Заявка на кредит',
+                description: 'Оставьте онлайн-заявку на потребительский кредит',
+            },
+            {
+                label: 'В случае одобрения',
+                description: 'Менеджер свяжется с вами и согласует встречу',
+            },
+            {
+                label: 'Получение наличных',
+                description: 'Получите наличные в отделении банка',
+            },
+        ] }) }));
 
 ;// CONCATENATED MODULE: ./src/components/TariffsTable/TariffsTable.fixture.tsx
 
@@ -34159,9 +34243,6 @@ const TariffsTable_fixture_columns = [
             [
                 {
                     label: 'Бесплатно',
-                    list: {
-                        items: ['item 1', 'item 2', 'item 3'],
-                    },
                 },
             ],
             [
@@ -34193,15 +34274,7 @@ const TariffsTable_fixture_columns = [
                 },
             ],
             [{ label: 'Нет' }],
-            [
-                { label: 'До 20%' },
-                {
-                    list: {
-                        isDotted: false,
-                        items: ['item 1', 'item 2', 'item 3'],
-                    },
-                },
-            ],
+            [{ label: 'До 20%' }],
             [
                 {
                     label: 'Бесплатно',
@@ -34242,10 +34315,10 @@ const TariffsTable_fixture_columns = [
     },
 ];
 /* harmony default export */ const TariffsTable_fixture = ({
-    default: (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: Array(2).fill(TariffsTable_fixture_columns).flat() }) })),
-    '1 column': (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 1) }) })),
-    '2 columns': (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 2) }) })),
-    '3 columns': (jsx("div", { className: "w-[1280px]", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 3) }) })),
+    default: (jsx("div", { className: "container grid grid-cols-12", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: Array(2).fill(TariffsTable_fixture_columns).flat() }) })),
+    '1 column': (jsx("div", { className: "container grid grid-cols-12", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 1) }) })),
+    '2 columns': (jsx("div", { className: "container grid grid-cols-12", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 2) }) })),
+    '3 columns': (jsx("div", { className: "container grid grid-cols-12", children: jsx(TariffsTable, { className: "col-span-12", title: "\u0414\u0440\u0443\u0433\u0438\u0435 \u0434\u0435\u0431\u0435\u0442\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B \u0420\u043E\u0441\u0441\u0435\u043B\u044C\u0445\u043E\u0437\u0431\u0430\u043D\u043A\u0430", context: context, rowHeaders: TariffsTable_fixture_rowHeaders, columns: TariffsTable_fixture_columns.slice(0, 3) }) })),
 });
 
 ;// CONCATENATED MODULE: ./src/components/Tile/Tile.fixture.tsx
@@ -34269,7 +34342,7 @@ const image4 = {
     format: 'webp',
 };
 /* harmony default export */ const Tile_fixture = ({
-    credit: (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-8", title: "\u041A\u0440\u0435\u0434\u0438\u0442\u044B", items: [
+    credit: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-8", title: "\u041A\u0440\u0435\u0434\u0438\u0442\u044B", items: [
                 'Кредитный лимит до 10 млн ₽',
                 'Кредиты наличными на любые цели',
                 'Получите деньги без залога и поручителей',
@@ -34280,7 +34353,12 @@ const image4 = {
                     version: 'secondary',
                 },
             ], image: Tile_fixture_image }) })),
-    mortgage: (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, version: "secondary", className: "col-span-4", title: "\u0418\u043F\u043E\u0442\u0435\u043A\u0430", description: 'Широкий выбор ипотечных программ с государственной поддержкой. Специальные предложения от 12,2 %', buttons: [
+    mortgage: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Tile, { context: context, version: "secondary", className: "col-span-4", title: "\u0418\u043F\u043E\u0442\u0435\u043A\u0430", items: [
+                'Качественные фермерские продукты напрямую от производителей',
+                'Самая большая база сельских туров по России',
+                'Площадки для создания комфортной жизни за городом',
+                'Подробная база вакансий для жителей сельской местности',
+            ], buttons: [
                 {
                     href: 'https://rshb.ru',
                     text: 'Подробнее',
@@ -34288,7 +34366,7 @@ const image4 = {
                     version: 'secondary',
                 },
             ] }) })),
-    'credit-card': (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-6", title: "\u0411\u0430\u043D\u043A\u043E\u0432\u0441\u043A\u0438\u0435 \u043F\u043B\u0430\u0441\u0442\u0438\u043A\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B", items: ['Счета в разных валютах', 'Бесплатное обслуживание', 'Кэшбэк до 15% от покупок'], buttons: [
+    'credit-card': (jsx("div", { className: "container grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-6", title: "\u0411\u0430\u043D\u043A\u043E\u0432\u0441\u043A\u0438\u0435 \u043F\u043B\u0430\u0441\u0442\u0438\u043A\u043E\u0432\u044B\u0435 \u043A\u0430\u0440\u0442\u044B", items: ['Счета в разных валютах', 'Бесплатное обслуживание', 'Кэшбэк до 15% от покупок'], buttons: [
                 {
                     href: 'https://rshb.ru',
                     text: 'Подробнее',
@@ -34296,7 +34374,7 @@ const image4 = {
                     version: 'secondary',
                 },
             ], image: Tile_fixture_image2 }) })),
-    premium: (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-6", title: "\u041F\u0440\u0435\u043C\u0438\u0430\u043B\u044C\u043D\u044B\u0435 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B", description: 'Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус', buttons: [
+    premium: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-6", title: "\u041F\u0440\u0435\u043C\u0438\u0430\u043B\u044C\u043D\u044B\u0435 \u043F\u0440\u043E\u0434\u0443\u043A\u0442\u044B", description: 'Выделенные зоны обслуживания и персональный финансовый консультант. Полный спектр премиальных продуктов, подчеркивающих ваш статус', buttons: [
                 {
                     href: 'https://rshb.ru',
                     text: 'Подробнее',
@@ -34304,7 +34382,7 @@ const image4 = {
                     version: 'secondary',
                 },
             ], image: Tile_fixture_image3 }) })),
-    ecosystem: (jsx("div", { className: "grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-12 pr-28", title: "\u042D\u043A\u043E\u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u00AB\u0421\u0412\u041E\u0415\u00BB, \u0441\u043E\u0437\u0434\u0430\u043D\u043D\u0430\u044F \u0434\u043B\u044F \u043B\u044E\u0434\u0435\u0439", items: [
+    ecosystem: (jsx("div", { className: "container grid grid-cols-12", children: jsx(Tile, { context: context, className: "col-span-12 pr-28", title: "\u042D\u043A\u043E\u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u00AB\u0421\u0412\u041E\u0415\u00BB, \u0441\u043E\u0437\u0434\u0430\u043D\u043D\u0430\u044F \u0434\u043B\u044F \u043B\u044E\u0434\u0435\u0439", items: [
                 'Качественные фермерские продукты напрямую от производителей',
                 'Самая большая база сельских туров по России',
                 'Площадки для создания комфортной жизни за городом',
@@ -34372,47 +34450,51 @@ const image4 = {
  */
 var IconMap;
 (function (IconMap) {
-    IconMap[IconMap["ActualBalanceIcon"] = 0] = "ActualBalanceIcon";
-    IconMap[IconMap["AppleIcon"] = 1] = "AppleIcon";
-    IconMap[IconMap["CalendarCircleIcon"] = 2] = "CalendarCircleIcon";
-    IconMap[IconMap["CalendarIcon"] = 3] = "CalendarIcon";
-    IconMap[IconMap["CardIcon"] = 4] = "CardIcon";
-    IconMap[IconMap["CardPosIcon"] = 5] = "CardPosIcon";
-    IconMap[IconMap["CardTickIcon"] = 6] = "CardTickIcon";
-    IconMap[IconMap["ClockIcon"] = 7] = "ClockIcon";
-    IconMap[IconMap["ComfortableCompIcon"] = 8] = "ComfortableCompIcon";
-    IconMap[IconMap["DiscountShape"] = 9] = "DiscountShape";
-    IconMap[IconMap["DocIcon"] = 10] = "DocIcon";
-    IconMap[IconMap["DocumentText"] = 11] = "DocumentText";
-    IconMap[IconMap["DollarIcon"] = 12] = "DollarIcon";
-    IconMap[IconMap["EmptyWalletChangeIcon"] = 13] = "EmptyWalletChangeIcon";
-    IconMap[IconMap["EmptyWalletIcon"] = 14] = "EmptyWalletIcon";
-    IconMap[IconMap["EuroIcon"] = 15] = "EuroIcon";
-    IconMap[IconMap["GlassIcon"] = 16] = "GlassIcon";
-    IconMap[IconMap["GridIcon"] = 17] = "GridIcon";
-    IconMap[IconMap["JCBIcon"] = 18] = "JCBIcon";
-    IconMap[IconMap["LoupeIcon"] = 19] = "LoupeIcon";
-    IconMap[IconMap["MasterCardIcon"] = 20] = "MasterCardIcon";
-    IconMap[IconMap["MinusIcon"] = 21] = "MinusIcon";
-    IconMap[IconMap["MirIcon"] = 22] = "MirIcon";
-    IconMap[IconMap["MoneyIcon"] = 23] = "MoneyIcon";
-    IconMap[IconMap["MonitorMobileIcon"] = 24] = "MonitorMobileIcon";
-    IconMap[IconMap["NewDocIcon"] = 25] = "NewDocIcon";
-    IconMap[IconMap["OkIcon"] = 26] = "OkIcon";
-    IconMap[IconMap["PassSendIcon"] = 27] = "PassSendIcon";
-    IconMap[IconMap["PercentageSquareIcon"] = 28] = "PercentageSquareIcon";
-    IconMap[IconMap["PlayMarketIcon"] = 29] = "PlayMarketIcon";
-    IconMap[IconMap["PlusIcon"] = 30] = "PlusIcon";
-    IconMap[IconMap["Profile2UserIcon"] = 31] = "Profile2UserIcon";
-    IconMap[IconMap["ProfileIcon"] = 32] = "ProfileIcon";
-    IconMap[IconMap["ShieldTickIcon"] = 33] = "ShieldTickIcon";
-    IconMap[IconMap["SignDocsIcon"] = 34] = "SignDocsIcon";
-    IconMap[IconMap["TelegramIcon"] = 35] = "TelegramIcon";
-    IconMap[IconMap["UnionPayIcon"] = 36] = "UnionPayIcon";
-    IconMap[IconMap["UserIcon"] = 37] = "UserIcon";
-    IconMap[IconMap["VisaIcon"] = 38] = "VisaIcon";
-    IconMap[IconMap["VKIcon"] = 39] = "VKIcon";
-    IconMap[IconMap["WalletIcon"] = 40] = "WalletIcon";
+    IconMap[IconMap[""] = 0] = "";
+    IconMap[IconMap["ActualBalanceIcon"] = 1] = "ActualBalanceIcon";
+    IconMap[IconMap["AppleIcon"] = 2] = "AppleIcon";
+    IconMap[IconMap["CalendarCircleIcon"] = 3] = "CalendarCircleIcon";
+    IconMap[IconMap["CalendarIcon"] = 4] = "CalendarIcon";
+    IconMap[IconMap["CalendarWhiteIcon"] = 5] = "CalendarWhiteIcon";
+    IconMap[IconMap["CardIcon"] = 6] = "CardIcon";
+    IconMap[IconMap["CardPosIcon"] = 7] = "CardPosIcon";
+    IconMap[IconMap["CardTickIcon"] = 8] = "CardTickIcon";
+    IconMap[IconMap["ClockIcon"] = 9] = "ClockIcon";
+    IconMap[IconMap["ComfortableCompIcon"] = 10] = "ComfortableCompIcon";
+    IconMap[IconMap["DiscountShape"] = 11] = "DiscountShape";
+    IconMap[IconMap["DocIcon"] = 12] = "DocIcon";
+    IconMap[IconMap["DocumentText"] = 13] = "DocumentText";
+    IconMap[IconMap["DollarIcon"] = 14] = "DollarIcon";
+    IconMap[IconMap["EmptyWalletChangeIcon"] = 15] = "EmptyWalletChangeIcon";
+    IconMap[IconMap["EmptyWalletIcon"] = 16] = "EmptyWalletIcon";
+    IconMap[IconMap["EmptyWalletWhiteIcon"] = 17] = "EmptyWalletWhiteIcon";
+    IconMap[IconMap["EuroIcon"] = 18] = "EuroIcon";
+    IconMap[IconMap["GlassIcon"] = 19] = "GlassIcon";
+    IconMap[IconMap["GridIcon"] = 20] = "GridIcon";
+    IconMap[IconMap["JCBIcon"] = 21] = "JCBIcon";
+    IconMap[IconMap["LoupeIcon"] = 22] = "LoupeIcon";
+    IconMap[IconMap["MasterCardIcon"] = 23] = "MasterCardIcon";
+    IconMap[IconMap["MinusIcon"] = 24] = "MinusIcon";
+    IconMap[IconMap["MirIcon"] = 25] = "MirIcon";
+    IconMap[IconMap["MoneyIcon"] = 26] = "MoneyIcon";
+    IconMap[IconMap["MonitorMobileIcon"] = 27] = "MonitorMobileIcon";
+    IconMap[IconMap["NewDocIcon"] = 28] = "NewDocIcon";
+    IconMap[IconMap["OkIcon"] = 29] = "OkIcon";
+    IconMap[IconMap["PassSendIcon"] = 30] = "PassSendIcon";
+    IconMap[IconMap["PercentageSquareIcon"] = 31] = "PercentageSquareIcon";
+    IconMap[IconMap["PercentageSquareWhiteIcon"] = 32] = "PercentageSquareWhiteIcon";
+    IconMap[IconMap["PlayMarketIcon"] = 33] = "PlayMarketIcon";
+    IconMap[IconMap["PlusIcon"] = 34] = "PlusIcon";
+    IconMap[IconMap["Profile2UserIcon"] = 35] = "Profile2UserIcon";
+    IconMap[IconMap["ProfileIcon"] = 36] = "ProfileIcon";
+    IconMap[IconMap["ShieldTickIcon"] = 37] = "ShieldTickIcon";
+    IconMap[IconMap["SignDocsIcon"] = 38] = "SignDocsIcon";
+    IconMap[IconMap["TelegramIcon"] = 39] = "TelegramIcon";
+    IconMap[IconMap["UnionPayIcon"] = 40] = "UnionPayIcon";
+    IconMap[IconMap["UserIcon"] = 41] = "UserIcon";
+    IconMap[IconMap["VisaIcon"] = 42] = "VisaIcon";
+    IconMap[IconMap["VKIcon"] = 43] = "VKIcon";
+    IconMap[IconMap["WalletIcon"] = 44] = "WalletIcon";
 })(IconMap || (IconMap = {}));
 
 ;// CONCATENATED MODULE: ./src/ui-kit/Icon/Icon.fixture.tsx
@@ -34467,6 +34549,7 @@ var IconMap;
 
 // Keeping global imports here is superior to making them bundle entry points
 // because this way they become hot-reloadable.
+
 
 
 
@@ -35682,6 +35765,7 @@ if (true) {
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
+var __webpack_unused_export__;
 /** @license React v17.0.2
  * react-jsx-runtime.production.min.js
  *
@@ -35690,7 +35774,7 @@ if (true) {
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-__webpack_require__(7418);var f=__webpack_require__(7294),g=60103;exports.Fragment=60107;if("function"===typeof Symbol&&Symbol.for){var h=Symbol.for;g=h("react.element");exports.Fragment=h("react.fragment")}var m=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,n=Object.prototype.hasOwnProperty,p={key:!0,ref:!0,__self:!0,__source:!0};
+__webpack_require__(7418);var f=__webpack_require__(7294),g=60103;__webpack_unused_export__=60107;if("function"===typeof Symbol&&Symbol.for){var h=Symbol.for;g=h("react.element");__webpack_unused_export__=h("react.fragment")}var m=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,n=Object.prototype.hasOwnProperty,p={key:!0,ref:!0,__self:!0,__source:!0};
 function q(c,a,k){var b,d={},e=null,l=null;void 0!==k&&(e=""+k);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(l=a.ref);for(b in a)n.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:g,type:c,key:e,ref:l,props:d,_owner:m.current}}exports.jsx=q;exports.jsxs=q;
 
 
@@ -40532,7 +40616,7 @@ mount();
 
 function mount() {
   // Use dynamic import to load updated modules upon hot reloading
-  var _require = __webpack_require__(9883),
+  var _require = __webpack_require__(7395),
       rendererConfig = _require.rendererConfig,
       fixtures = _require.fixtures,
       decorators = _require.decorators;

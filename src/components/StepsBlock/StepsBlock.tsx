@@ -1,9 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { Step, StepsBlockContent } from './StepsBlockContent';
 import type { UniBlockProps } from '../../types';
 import { Icon } from '../../ui-kit/Icon/Icon';
 import { Title } from '../../ui-kit/Title/Title';
 import { joinList } from '../../utils/joinList';
+import type { Step, StepsBlockContent } from './StepsBlockContent';
 
 export interface StepsBlockProps extends StepsBlockContent, UniBlockProps {}
 

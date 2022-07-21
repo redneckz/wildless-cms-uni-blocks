@@ -15,8 +15,9 @@ export const Checkbox = JSX<CheckboxProps>(({ text, checked, onChange, className
   <div className={className}>
     <label className="flex items-center cursor-pointer relative">
       <input
-        className={`peer appearance-none w-5 h-5 border-solid border rounded border-black
-                    checked:bg-primary-main checked:border-primary-main m-0`}
+        className={`peer appearance-none w-5 h-5 border-solid border ${
+          checked ? 'border-black' : 'border-main-stroke'
+        } rounded checked:bg-primary-main checked:border-primary-main m-0`}
         type="checkbox"
         onChange={(e) => {
           onChange(e.target.checked);

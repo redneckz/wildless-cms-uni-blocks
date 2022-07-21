@@ -3,11 +3,9 @@ import { LinkDocs } from '../LinkDocs/LinkDocs';
 import { PictureText } from '../PictureText/PictureText';
 import { TextBlock } from '../TextBlock/TextBlock';
 
-const AccordionBlocks = {
+export const AccordionBlocks = {
   Headline,
   LinkDocs,
   TextBlock,
   PictureText,
 };
-
-export default AccordionBlocks;
