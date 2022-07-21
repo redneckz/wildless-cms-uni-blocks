@@ -23,8 +23,8 @@ export const SearchBar = JSX<UniBlockProps>(({ className, context }) => {
       <input
         id="search-bar-input"
         className={`${
-          inputHasFocus ? 'border-primary-text' : ''
-        } pr-32 h-12 pl-12 w-full font-sans font-normal text-base text-black border border-solid border-main-divider rounded h-full box-border outline-none pr-[6%]`}
+          inputHasFocus ? 'border-primary-text' : 'border-main-divider'
+        } h-12 pl-12 w-full font-sans font-normal text-base text-black border border-solid rounded h-full box-border outline-none pr-[6%]`}
         value={term}
         onChange={(e) => setTerm(e.target.value)}
         onFocus={(e) => setInputHasFocus(true)}
@@ -35,8 +35,7 @@ export const SearchBar = JSX<UniBlockProps>(({ className, context }) => {
       {inputHasFocus && (
         <button
           type="submit"
-          version="primary"
-          className="absolute font-sans font-normal cursor-pointer text-sm hover:bg-primary-hover active:bg-primary-active border-none px-9 py-[9px] rounded top-1 right-1 outline-none text-secondary-text text-white bg-primary-main"
+          className="absolute font-sans font-normal cursor-pointer text-sm bg-primary-main hover:bg-primary-hover active:bg-primary-active border-none px-9 py-[9px] rounded top-1 right-1 outline-none text-secondary-text text-white"
           onClick={(e) => {
             e.preventDefault();
             console.log('click');

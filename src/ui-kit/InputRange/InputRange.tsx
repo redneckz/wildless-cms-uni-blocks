@@ -39,7 +39,7 @@ export const InputRange = JSX<InputRangeProps>(
             onChange={(e) => handleChange(e.target.value)}
             onBlur={handleBlur}
           />
-          <div className="absolute inset-x-0 mt-0.5 top-8 px-4">
+          <div className="absolute inset-x-0 top-8 px-4">
             <input
               className="box-border w-full m-0 cursor-pointer slider"
               type="range"

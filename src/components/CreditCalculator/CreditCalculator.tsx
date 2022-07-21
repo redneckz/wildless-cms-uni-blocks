@@ -27,7 +27,7 @@ const STEP_MONEY = 1000;
 const STEP_MONTHS = 1;
 const DEFAULT_PAYMENT_TYPE = 'annuity';
 
-const borderStyle = 'border-solid border-3 border-primary-main rounded-md';
+const borderStyle = 'border-solid border-[3px] border-primary-main rounded-md';
 
 export const CreditCalculator = JSX<CreditCalculatorProps>(
   ({ context, className, directoryName }) => {
@@ -72,7 +72,7 @@ export const CreditCalculator = JSX<CreditCalculatorProps>(
     }
 
     return (
-      <section className={`font-sans text-primary-text bg-white p-4 w-[847px] ${className}`}>
+      <section className={`font-sans text-primary-text bg-white p-4 w-[847px] ${className || ''}`}>
         <div
           className={`box-border p-[49px] pr-[53px] flex flex-col justify-between ${borderStyle}`}
         >
