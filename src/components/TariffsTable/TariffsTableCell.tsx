@@ -16,11 +16,9 @@ export const TariffsTableCell = JSX<TariffsTableCellProps>(({ cell, isLastRow })
     isLastRow ? 'border-t-0 rounded-b-md' : ''
   }`;
 
-  const cellClasses = `h-full ${DIVIDER_CLASSES}`;
-
   return (
     <div className={cellWrapperClasses} role="cell">
-      <div className={cellClasses}>{cell.map((item, i) => renderCellInner(item, i))}</div>
+      <div>{cell.map((item, i) => renderCellInner(item, i))}</div>
     </div>
   );
 });

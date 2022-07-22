@@ -24,7 +24,12 @@ export const TariffsTableRow = JSX<TariffsTableRowProps>(
         >
           <div className="flex items-center text-primary-text">
             {header?.icon && (
-              <Icon className="pr-[14px]" name={header.icon} width="24px" height="24px" />
+              <Icon
+                className="mr-[14px] max-w-6 max-h-6"
+                name={header.icon}
+                width="24px"
+                height="24px"
+              />
             )}
             {header?.title}
           </div>
