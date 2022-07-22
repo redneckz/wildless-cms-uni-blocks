@@ -22,7 +22,14 @@ export type { Img, ImgSource, Picture } from './model/Picture';
 export { projectSettings } from './ProjectSettings';
 export type { ProjectSettings } from './ProjectSettings';
 export type { SitemapProps as SitemapContent } from './services/sitemap/SitemapProps';
-export type { BlockDef, ContentPageDef, ContentPageMeta, UniBlockProps } from './types';
+export type {
+  BlockDef,
+  ContentPageDef,
+  ContentPageMeta,
+  Slot,
+  SlotsMap,
+  UniBlockProps,
+} from './types';
 export { Icon } from './ui-kit/Icon/Icon';
 export { joinList } from './utils/joinList';
 export * as url from './utils/url';
