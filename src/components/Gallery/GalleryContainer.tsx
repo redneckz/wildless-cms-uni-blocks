@@ -51,6 +51,7 @@ function renderCard({ card, version, context }: GalleryCardData, i: number) {
         items-stretch ${cardStyleMap[version]} w-full col-span-4`}
       version={card.version}
       key={String(i)}
+      role="listitem"
     >
       <GalleryCardInner {...card} />
     </Tile>

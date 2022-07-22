@@ -17,7 +17,6 @@ export enum IconMap {
   'ClockIcon',
   'ComfortableCompIcon',
   'CreditCardsIcon',
-  'DiscountShapeIcon',
   'DocIcon',
   'DocumentTextIcon',
   'DollarIcon',
