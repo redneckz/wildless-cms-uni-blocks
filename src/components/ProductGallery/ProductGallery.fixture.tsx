@@ -1,7 +1,7 @@
 import { context } from '../../setup-fixture';
 
-import { ProductGallery } from './ProductGallery';
 import type { Picture } from '../../model/Picture';
+import { ProductGallery } from './ProductGallery';
 
 const moneyImage: Picture = {
   src: 'money-1.png',
@@ -14,7 +14,7 @@ const moneyImage: Picture = {
 };
 
 const worker: Picture = {
-  src: 'worker.png',
+  src: 'money-2.png',
   format: 'webp',
   size: {
     width: 280,

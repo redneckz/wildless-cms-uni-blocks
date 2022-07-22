@@ -5,7 +5,9 @@ import { getColSpan } from '../../utils/getColSpan';
 import { BaseTile } from '../BaseTile/BaseTile';
 import type { TileContent } from '../Tile/TileContent';
 
-export interface TileProps extends TileContent, UniBlockProps {}
+export interface TileProps extends TileContent, UniBlockProps {
+  role?: string;
+}
 
 const tileStyleMap: Record<BlockVersion, string> = {
   primary: 'bg-white text-primary-text',
@@ -13,13 +15,14 @@ const tileStyleMap: Record<BlockVersion, string> = {
 };
 
 export const Tile = JSX<TileProps>((props) => {
-  const { children, className, version = 'primary' } = props;
+  const { children, className, version = 'primary', role } = props;
 
   return (
     <section
       className={`font-sans p-9 box-border ${className || ''} ${
         tileStyleMap[version]
       } ${getContainerPaddingRight(className)} ${getContainerMinHeight(className)} `}
+      role={role}
     >
       <BaseTile {...props}>{children}</BaseTile>
     </section>
