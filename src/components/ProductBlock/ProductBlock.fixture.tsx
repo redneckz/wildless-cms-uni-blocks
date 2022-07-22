@@ -1,7 +1,8 @@
 import { context } from '../../setup-fixture';
 
-import { ProductBlock } from './ProductBlock';
 import type { Picture } from '../../model/Picture';
+import { ProductBlock } from './ProductBlock';
+import { ProductBlock as MobileProductBlock } from './ProductBlock.mobile';
 
 const image: Picture = {
   src: 'money-1.png',
@@ -94,6 +95,53 @@ export default {
             text: 'Подробнее',
             target: '_blank',
             version: 'secondary',
+          },
+        ]}
+        image={image}
+      />
+    </div>
+  ),
+  mobile: (
+    <div className="container grid grid-cols-12">
+      <MobileProductBlock
+        className="col-span-12"
+        context={context}
+        title={'Акция «Кредит на все, что\nхочется!»'}
+        description="Кредит наличными без залога и поручительства. Потребительский кредит на любые цели. Нужен только паспорт."
+        items={[
+          'Совершайте любые личные покупки',
+          'Используйте корпоративную карту как обычную дебетовую, если вы ИП',
+          'Расходы для бизнеса на УСН 15% позволят снизить налоговую базу',
+        ]}
+        benefits={[
+          {
+            label: 'До 5 млн ₽',
+            description: 'Кредитный лимит',
+            icon: 'EmptyWalletIcon',
+          },
+          {
+            label: 'От 16,9%',
+            description: 'Ставка по кредиту',
+            icon: 'PercentageSquareIcon',
+          },
+          {
+            label: 'До 5 лет',
+            description: 'Срок кредитования',
+            icon: 'CalendarIcon',
+          },
+        ]}
+        buttons={[
+          {
+            href: 'https://rshb.ru',
+            text: 'Оформить карту',
+            target: '_blank',
+            version: 'primary',
+          },
+          {
+            href: 'https://rshb.ru',
+            text: 'Оформить карту',
+            target: '_blank',
+            version: 'primary',
           },
         ]}
         image={image}

@@ -1,10 +1,10 @@
 import { JSX } from '@redneckz/uni-jsx';
-import type { ProductBlockContent } from './ProductBlockContent';
-import { ProductBlockInner } from './ProductBlockInner';
+import { useLink } from '../../hooks/useLink';
 import type { UniBlockProps } from '../../types';
 import { Breadcrumb } from '../../ui-kit/Breadcrumb';
-import { useLink } from '../../hooks/useLink';
 import { joinList } from '../../utils/joinList';
+import type { ProductBlockContent } from './ProductBlockContent';
+import { ProductBlockInner } from './ProductBlockInner';
 
 export interface ProductBlockProps extends ProductBlockContent, UniBlockProps {}
 

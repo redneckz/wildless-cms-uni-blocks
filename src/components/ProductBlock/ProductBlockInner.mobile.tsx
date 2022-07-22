@@ -1,9 +1,9 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../../types';
-import { Img } from '../../ui-kit/Img';
-import { BaseTile } from '../BaseTile/BaseTile';
+import { Img as MobileImg } from '../../ui-kit/Img.mobile';
+import { BaseTile as MobileBaseTile } from '../BaseTile/BaseTile.mobile';
 import type { ProductBlockInnerCommonProps } from './ProductBlockContent';
-import { renderBenefit } from './renderBenefit';
+import { renderBenefit as mobileRenderBenefit } from './renderBenefit.mobile';
 
 export interface ProductBlockInnerProps extends ProductBlockInnerCommonProps, UniBlockProps {
   isMobile?: boolean;
@@ -12,9 +12,9 @@ export interface ProductBlockInnerProps extends ProductBlockInnerCommonProps, Un
 export const ProductBlockInner = JSX<ProductBlockInnerProps>(
   ({ className, context, title, titleSize, description, benefits, buttons, image, items }) => {
     return (
-      <div className={`'flex grow justify-between items-stretch' ${className || ''}`}>
-        <div className="flex flex-col">
-          <BaseTile
+      <div className={`${className || ''}`}>
+        <div>
+          <MobileBaseTile
             context={context}
             title={title}
             titleSize={titleSize || 'XL'}
@@ -23,11 +23,15 @@ export const ProductBlockInner = JSX<ProductBlockInnerProps>(
             buttons={buttons}
           >
             {benefits?.length ? (
-              <div className="flex gap-6 mt-6 mb-3.5">{benefits.map(renderBenefit)}</div>
+              <div className="my-5">{benefits.map(mobileRenderBenefit)}</div>
             ) : null}
-          </BaseTile>
+          </MobileBaseTile>
         </div>
-        {image?.src && <Img className="mt-auto" image={image} />}
+        {image?.src && (
+          <div className="mt-5">
+            <MobileImg image={image} />
+          </div>
+        )}
       </div>
     );
   },

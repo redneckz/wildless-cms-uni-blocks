@@ -1,7 +1,7 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../../types';
 import { Title } from '../../ui-kit/Title/Title';
-import { BaseTileInner } from './BaseTileInner';
+import { BaseTileInner as MobileBaseTileInner } from './BaseTileInner.mobile';
 import type { AlignType, BaseTileCommonProps } from './BaseTileProps';
 import { getTitleSizeByClassName } from './getTitleSizeByClassName';
 
@@ -39,7 +39,7 @@ export const BaseTile = JSX<BaseTileProps>(
             {title}
           </Title>
         )}
-        <BaseTileInner
+        <MobileBaseTileInner
           context={context}
           buttons={buttons}
           image={image}

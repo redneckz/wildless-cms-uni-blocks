@@ -49,9 +49,9 @@ export const Button = JSX<ButtonCommonProps>(
           aria-disabled="true"
           aria-label={ariaLabel}
           tabIndex="-1"
-          className={`inline-block ${styleButton} ${buttonDisabledStyleMap[version] || ''} ${
-            rounded ? 'rounded-full' : 'rounded-md'
-          } ${className || ''}`}
+          className={`block mb-2.5 last:mb-0 ${styleButton} ${
+            buttonDisabledStyleMap[version] || ''
+          } ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`}
         >
           {buttonInner}
         </div>
@@ -60,7 +60,7 @@ export const Button = JSX<ButtonCommonProps>(
 
     return (
       <a
-        className={`${styleButton} inline-block cursor-pointer no-underline ${
+        className={`${styleButton} block mb-2.5 last:mb-0 cursor-pointer no-underline ${
           buttonStyleMap[version] || ''
         } ${rounded ? 'rounded-full' : 'rounded-md'} ${className || ''}`}
         href={href}
