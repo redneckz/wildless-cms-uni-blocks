@@ -9,14 +9,14 @@
     "url": "https://foo.com/bar/baz"
   },
   "date": "2022-04-08",
-  "style": ["p-20", "pt-0", "gap-5", "bg-secondary-light"],
+  "style": ["bg-secondary-light"],
   "likeControl": true,
   "slots": {
     "header": {
+      "style": ["mb-5", "shadow-[0_8px_32px_0px_#00000014]"],
       "blocks": [
         {
           "type": "Header",
-          "style": ["-mx-20", "mb-5", "shadow-[0_8px_32px_0px_#00000014]"],
           "content": {
             "defaultLocation": "Москва"
           }
