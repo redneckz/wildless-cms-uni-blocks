@@ -108,8 +108,8 @@
                 }
               ],
               "image": {
-                "src": "worker.png",
-                "title": "Рабочий",
+                "src": "money-2.png",
+                "title": "Деньги",
                 "format": "webp",
                 "alt": "Кредит наличными",
                 "size": {
@@ -1856,7 +1856,7 @@
           {
             "label": "Кредит на общих условиях",
             "description": "До 5 млн ₽ на общих условиях получения кредита",
-            "icon": "DiscountShapeIcon"
+            "icon": "DocumentTextIcon"
           }
         ],
         "image": {
