@@ -1,5 +1,6 @@
 import { JSX } from '@redneckz/uni-jsx';
 import type { UniBlockProps } from '../types';
+import { Button } from './Button/Button';
 import { Icon } from './Icon/Icon';
 
 export const SearchBar = JSX<UniBlockProps>(({ className, context }) => {
@@ -29,16 +30,17 @@ export const SearchBar = JSX<UniBlockProps>(({ className, context }) => {
         type="text"
         name="search-bar-input"
       />
-      <button
-        type="submit"
-        className="invisible peer-focus:visible absolute font-sans font-normal cursor-pointer text-sm bg-primary-main hover:bg-primary-hover active:bg-primary-active border-none px-9 py-[9px] rounded top-1 right-1 outline-none text-secondary-text text-white"
+      <Button
+        version="primary"
+        text="Найти"
+        className="invisible peer-focus:visible absolute top-1 right-1"
         onClick={(e) => {
           e.preventDefault();
           console.log('click');
         }}
       >
-        Найти
-      </button>
+        <div className="font-normal text-sm px-9 py-[9px]">Найти</div>
+      </Button>
     </form>
   );
 });
