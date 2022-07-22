@@ -25,7 +25,7 @@ export const PICTURE_TEXT: PictureTextContent = {
     {
       label: 'Кредит на общих условиях',
       description: 'До 5 млн ₽ на общих условиях получения кредита',
-      icon: 'DiscountShapeIcon',
+      icon: 'DocumentTextIcon',
     },
   ],
   image,
